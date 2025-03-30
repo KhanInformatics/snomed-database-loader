@@ -1,28 +1,47 @@
-# SNOMED CT DATABASE
+# SNOMED CT Database
 
-MSSQL SQL Scripts to create and populate a MSSQL database with a SNOMED CT terminology release
+SQL Server scripts to create and populate a Microsoft SQL Server database with a SNOMED CT terminology release.
 
 ## Minimum Specification
 
-- MSSQL 2008
+- Microsoft SQL Server 2008 or later
 
-# Creating the SNOMED CT DB schema on MS SQL
+## Creating the SNOMED CT Database Schema
 
-- Create an empty DB and execute manually script create-database-mssql.sql against it
+1. Create an empty database SNOMEDCT
+2. Manually execute the `create-database-mssql.sql` script against it.
 
-## Diffences from the PostgreSQL version
+## Differences from the PostgreSQL Version
 
-- TSQL check for table presentse
-- Changes `uniqueidentifier` for `uuid`
+- T-SQL checks for table presence
+- Uses `uniqueidentifier` instead of `uuid`
 
 ## Manual Installation
 
-- Unpack Full version of SNOMED CT files
-- Copy import.bat into root folder where Full SNOMED CR files were updacked (the root has "Documentation" and "Full" folders only)
-- execute import.bat
-- import.sql script will be generated. Execute it againt desired MS SQL DB 
+1. Unpack the full version of the SNOMED CT files (both Monolith and Primary Care Snapshot) into a folder named `SNOMEDCT`.
+2. Create the database schema by executing `create_snomed_tables.sql`.
+3. Run `Generate-MonolithSnapshot.ps1` to generate `import.sql`.
+4. Execute `import.sql` to perform the full snapshot import.
 
-You may use sqlcmd to execute import.sql
-sqlcmd -b -I -S [server IP/name, port] -d [DB name] -U [User] -P [Password] -i import.sql
+## Securely Storing the TRUD API Key
 
-Note: If you recieve message that "... Operating system error code 5(Access is denied.)" - please follow https://stackoverflow.com/questions/14555262/cannot-bulk-load-operating-system-error-code-5-access-is-denied
+Instead of saving your TRUD API key in plain text, store it securely in Windows Credential Manager using the PowerShell `CredentialManager` module. Here's how:
+
+### 1. Install the CredentialManager Module
+
+Open PowerShell and run:
+
+```powershell
+Install-Module -Name CredentialManager -Scope CurrentUser
+```
+
+### 2. Store Your API Key
+
+Run the following (replace `"your_api_key_here"` with your actual API key):
+
+```powershell
+New-StoredCredential -Target "TRUD_API" -UserName "dummy" -Password "your_api_key_here" -Persist LocalMachine
+```
+
+> **Note:**  
+> The `UserName` parameter is required but not used for the API key, so you can safely use a dummy value.
