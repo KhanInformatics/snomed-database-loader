@@ -1,5 +1,21 @@
 /* create the Full S-CT data tables */
+-- Transact-SQL script to create table structure for SNOMED terminology tables
+-- Copyright Chris Tillman 2018, licensed under GPL any version
 
+-- Cannot drop database if you're already in it
+USE master;
+GO
+
+ALTER DATABASE snomedct SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+GO
+
+DROP DATABASE snomedct;
+GO
+
+CREATE DATABASE snomedct;
+GO
+
+USE snomedct;
 
 IF EXISTS(SELECT 1 FROM information_schema.tables WHERE table_name = 'curr_concept_f') DROP TABLE curr_concept_f;
 create table curr_concept_f(
