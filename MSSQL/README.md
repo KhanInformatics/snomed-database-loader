@@ -1,5 +1,5 @@
 
-# SNOMED CT Database
+# SNOMED CT Database using SQL Sql Sever
 
 SQL Server scripts to create and populate a Microsoft SQL Server database with a SNOMED CT terminology release.
 
@@ -154,4 +154,3 @@ if ($cred) {
 ```
 
 This snippet displays your TRUD API key in green text if it is found, or an error message in red if it is not.
-```
