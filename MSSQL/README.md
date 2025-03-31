@@ -132,7 +132,7 @@ Once updated, your scripts that retrieve the API key using `Get-StoredCredential
 
 ## Checking the TRUD API Key
 
-If you are having issues with the TRUD API key, you can use this snippet to display the stored API key:
+If you are having issues with the TRUD API key, you can use this snippet to display the stored API key using powershell:
 
 ```powershell
 # Requires the CredentialManager module
