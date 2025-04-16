@@ -1,8 +1,8 @@
 ﻿# Import the CredentialManager module
 Import-Module CredentialManager
 
-# Get the base directory (where the script is located)
-$baseDir = $PSScriptRoot
+# Get the base directory where the logs and releases are stored.
+$baseDir = "C:\SNOMEDCT"
 
 # Retrieve the TRUD API key from Credential Manager (target: TRUD_API)
 $credential = Get-StoredCredential -Target "TRUD_API"
