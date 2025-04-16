@@ -1,14 +1,27 @@
-# SNOMED CT Database Scripts
+This repository provides scripts specifically for building and maintaining a SNOMED CT database instance using the Monolith and UK Primary Care snapshots released via NHS TRUD.
 
-The scripts in this repository can be used to create and populate a MYSQL, PostgreSQL, MSSQL or NEO4J database with a SNOMED CT terminology release distributed in the **RF2 distribution format**.
+It supports loading data into a variety of databases, with a full end-to-end automated workflow for Microsoft SQL Server, including:
 
-Please see the relevant sub-directories for each of the different database load scripts:
+Checking for new releases via the TRUD API
 
-- [MYSQL](MySQL/)
-- [MYSQL with optimizedviews](mysql-loader-with-optimized-views/)
-- [NEO4J](NEO4J/)
-- [PostgreSQL](PostgreSQL/)
-- [MSSQL](MSSQL/)
-- [Python DataFrame](python-dataframe/)
+Downloading and extracting release files
 
-If you have any scripts for other databases, please fork this repository and create the pull request to submit any contributions.
+Generating and executing BULK INSERT SQL scripts for snapshot import
+
+Supported targets include:
+
+MSSQL – Fully automated (PowerShell-driven)
+
+MySQL
+
+MySQL with optimized views
+
+PostgreSQL
+
+Neo4j
+
+Python DataFrame
+
+⚠️ This repository is not a general-purpose RF2 loader. It is purpose-built for loading the Monolith and UK Primary Care Snapshot releases into a local database instance for analytics, reporting, or interoperability work.
+
+Contributions are welcome — feel free to fork the repo and submit a pull request if you'd like to add or improve support for other environments.
