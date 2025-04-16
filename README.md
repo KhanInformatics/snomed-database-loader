@@ -8,7 +8,7 @@ It supports loading data into a variety of databases, with a full end-to-end **a
 - Downloading and extracting release files
 - Generating and executing `BULK INSERT` SQL scripts for snapshot import
 
-## Supported Targets only include:
+## Supported Targets
 **MSSQL** – Fully automated (PowerShell-driven)
 
 
