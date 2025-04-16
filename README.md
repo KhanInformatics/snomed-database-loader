@@ -9,7 +9,8 @@ It supports loading data into a variety of databases, with a full end-to-end **a
 - Generating and executing `BULK INSERT` SQL scripts for snapshot import
 
 ## Supported Targets
-**MSSQL** – Fully automated (PowerShell-driven)
+- [**MSSQL** – Fully automated (PowerShell-driven)](https://github.com/KhanInformatics/snomed-database-loader/tree/master/MSSQL)
+
 
 
 > ⚠️ This repository is **not** a general-purpose RF2 loader. It is purpose-built for loading the **Monolith** and **UK Primary Care Snapshot** releases into a local database instance for analytics, reporting, or interoperability work.
