@@ -1,7 +1,7 @@
 ﻿# Save this as Generate-AndRun-AllSnapshots.ps1
 
-# Get the directory where this script is located
-$baseDir = $PSScriptRoot
+# Get the base directory where the logs and releases are stored.
+$baseDir = "C:\SNOMEDCT"
 Write-Host "Script base directory: $baseDir"
 
 # Define the CurrentReleases folder path (where the TRUD releases have been extracted)

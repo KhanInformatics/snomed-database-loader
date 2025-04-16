@@ -1,18 +1,26 @@
 ﻿# Save this as Download-SnomedReleases.ps1
 
-# Get the base directory (where the script is located)
-$baseDir = $PSScriptRoot
+# Import the CredentialManager module (ensure it's installed)
+Import-Module CredentialManager
+
+# Get the base directory where the logs and releases are stored.
+$baseDir = "C:\SNOMEDCT"
 Write-Host "Script base directory: $baseDir"
 
-# Read the TRUD API key from TRUDAPIKey.txt (in the same folder as the script)
-$keyFile = Join-Path $baseDir "TRUDAPIKey.txt"
-if (-Not (Test-Path $keyFile)) {
-    Write-Error "TRUD API key file not found at $keyFile"
+# Retrieve the TRUD API key from Credential Manager (target: TRUD_API)
+$credential = Get-StoredCredential -Target "TRUD_API"
+if (-not $credential) {
+    Write-Error "TRUD_API credential not found. Please store your API key in Credential Manager under the target 'TRUD_API'."
     exit
 }
-$apiKey = Get-Content $keyFile -ErrorAction Stop | ForEach-Object { $_.Trim() }
+
+# Convert the SecureString API key to plain text
+$apiKey = [Runtime.InteropServices.Marshal]::PtrToStringAuto(
+    [Runtime.InteropServices.Marshal]::SecureStringToBSTR($credential.Password)
+)
+
 if (-not $apiKey) {
-    Write-Error "API key is empty. Please check $keyFile."
+    Write-Error "API key is empty. Please verify your stored credential."
     exit
 }
 
