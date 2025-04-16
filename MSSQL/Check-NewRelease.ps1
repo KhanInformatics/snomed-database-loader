@@ -1,44 +1,125 @@
-﻿# Import the CredentialManager module
+﻿# Save this as Check-NewRelease.ps1
+
+# Import the CredentialManager module
 Import-Module CredentialManager
 
-# ---- Determine the script’s own folder, no matter where it's launched from ----
+# Determine the folder where this script lives
 $scriptDir = $PSScriptRoot
-# (Alternative if you ever need compatibility with older PS versions:
-#  $scriptDir = Split-Path -Path $MyInvocation.MyCommand.Definition -Parent
-# )
+Write-Host "Script directory: $scriptDir"
 
-Write-Host "Script folder: $scriptDir"
-
-# Retrieve the TRUD API key…
+# Retrieve the TRUD API key from Credential Manager (target: TRUD_API)
 $credential = Get-StoredCredential -Target "TRUD_API"
-…    
+if (-not $credential) {
+    Write-Error "Could not retrieve the API key from Credential Manager. Please store it under the target 'TRUD_API'."
+    exit
+}
 
-# Point the JSON cache at the script’s folder
+# Convert the SecureString to plain text
+$apiKey = [Runtime.InteropServices.Marshal]::PtrToStringAuto(
+    [Runtime.InteropServices.Marshal]::SecureStringToBSTR($credential.Password)
+)
+
+# Create a masked version of the API key for logging
+if ($apiKey.Length -ge 8) {
+    $maskedKey = $apiKey.Substring(0,4) + ("*" * ($apiKey.Length - 8)) + $apiKey.Substring($apiKey.Length - 4,4)
+} else {
+    $maskedKey = $apiKey
+}
+Write-Host "Retrieved API Key: $maskedKey (Length: $($apiKey.Length))"
+
+# Define the SNOMED CT items to monitor
+$items = @(
+    @{ Name = "SnomedCT_Monolith";      ItemNumber = "1799" },
+    @{ Name = "SnomedCT_UKPrimaryCare"; ItemNumber = "659" }
+)
+
+# Base API URL for TRUD
+$baseApiUrl = "https://isd.digital.nhs.uk/trud/api/v1/keys/$apiKey/items"
+Write-Host "Base API URL: $baseApiUrl"
+
+# JSON cache beside this script
 $lastReleaseFile = Join-Path $scriptDir "LastRelease.json"
-Write-Host "Using JSON cache: $lastReleaseFile"
+Write-Host "Using cache file: $lastReleaseFile"
 
-# … your existing load/compare logic …
+# Load previous release records if they exist; initialize an empty hashtable otherwise.
+$lastReleases = @{}
+if (Test-Path $lastReleaseFile) {
+    $temp = Get-Content $lastReleaseFile -Raw | ConvertFrom-Json
+    if ($temp) {
+        foreach ($prop in $temp.PSObject.Properties) {
+            $lastReleases[$prop.Name] = $prop.Value
+        }
+    }
+}
 
+# Flag to indicate if any new release is found
+$newReleaseFound = $false
+
+# Loop through each item and query its latest release
+foreach ($item in $items) {
+    $itemName   = $item.Name
+    $itemNumber = $item.ItemNumber
+    $url        = "$baseApiUrl/$itemNumber/releases?latest"
+
+    Write-Host "Querying TRUD API for $itemName (item #$itemNumber): $url"
+    try {
+        $response = Invoke-RestMethod -Uri $url -Method Get -ErrorAction Stop
+    } catch {
+        Write-Error "Error querying TRUD for ${itemName}: $($_.Exception.Message)"
+        continue
+    }
+
+    if ($response.releases.Count -eq 0) {
+        Write-Host "No releases found for $itemName."
+        continue
+    }
+
+    # Use the first (latest) release from the response
+    $latestRelease    = $response.releases[0]
+    $currentReleaseId = $latestRelease.id
+
+    Write-Host "$itemName latest release ID: $currentReleaseId"
+
+    if ($lastReleases.ContainsKey($itemName)) {
+        if ($lastReleases[$itemName] -ne $currentReleaseId) {
+            Write-Host "New release detected for ${itemName}: Previous ID = $($lastReleases[$itemName]), New ID = $currentReleaseId" -ForegroundColor Yellow
+            $newReleaseFound = $true
+        } else {
+            Write-Host "No new release for $itemName."
+        }
+    } else {
+        Write-Host "No previous record for ${itemName}. Treating as new release." -ForegroundColor Yellow
+        $newReleaseFound = $true
+    }
+
+    # Update our record with the current release ID
+    $lastReleases[$itemName] = $currentReleaseId
+}
+
+# Save updated release record back to the JSON file
+$lastReleases | ConvertTo-Json | Out-File $lastReleaseFile -Encoding UTF8
+
+# If a new release was detected, run the download and import scripts
 if ($newReleaseFound) {
-    Write-Host "New release(s) detected. Initiating download and import."
+    Write-Host "New release(s) detected. Initiating download and import process." -ForegroundColor Green
 
-    # Look for the other scripts right next to this one:
+    # Helper scripts must live alongside this one
     $downloadScript = Join-Path $scriptDir "Download-SnomedReleases.ps1"
     $importScript   = Join-Path $scriptDir "Generate-AndRun-AllSnapshots.ps1"
 
     if (Test-Path $downloadScript) {
-        Write-Host "Running $downloadScript"
+        Write-Host "Running $downloadScript..."
         & $downloadScript
     } else {
-        Write-Error "Cannot find: $downloadScript"
+        Write-Error "Helper script not found: $downloadScript"
     }
 
     if (Test-Path $importScript) {
-        Write-Host "Running $importScript"
+        Write-Host "Running $importScript..."
         & $importScript
     } else {
-        Write-Error "Cannot find: $importScript"
+        Write-Error "Helper script not found: $importScript"
     }
 } else {
-    Write-Host "No new releases detected."
+    Write-Host "No new releases detected. No action taken."
 }
