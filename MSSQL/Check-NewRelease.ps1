@@ -4,6 +4,12 @@ Import-Module CredentialManager
 # Get the base directory (where the script is located)
 $baseDir = $PSScriptRoot
 
+# Directory to store state (LastRelease.json) and logs
+$dataDir = "C:\\SNOMEDCT"
+if (-not (Test-Path $dataDir)) {
+    New-Item -ItemType Directory -Path $dataDir -Force | Out-Null
+}
+
 # Retrieve the TRUD API key from Credential Manager (target: TRUD_API)
 $credential = Get-StoredCredential -Target "TRUD_API"
 if (-not $credential) {
@@ -40,8 +46,8 @@ $items = @(
 $baseApiUrl = "https://isd.digital.nhs.uk/trud/api/v1/keys/$apiKey/items"
 Write-Host "Base API URL: $baseApiUrl"
 
-# File to store last-known release IDs per item (as JSON)
-$lastReleaseFile = Join-Path $baseDir "LastRelease.json"
+# File to store last-known release IDs per item (as JSON) -- now in C:\SNOMEDCT
+$lastReleaseFile = Join-Path $dataDir "LastRelease.json"
 
 # Load previous release records if they exist; otherwise, initialize an empty hashtable.
 $lastReleases = @{}
@@ -105,12 +111,8 @@ foreach ($item in $items) {
 # Save the updated release record back to the JSON file.
 $lastReleases | ConvertTo-Json | Out-File $lastReleaseFile -Encoding UTF8
 
-# Define log file path to reside explicitly in C:\SNOMEDCT
-$logFileDir = "C:\\SNOMEDCT"
-if (-not (Test-Path $logFileDir)) {
-    New-Item -ItemType Directory -Path $logFileDir -Force | Out-Null
-}
-$logFile = "$logFileDir\\CheckNewRelease.log"
+# Define log file path (also in C:\SNOMEDCT)
+$logFile = Join-Path $dataDir "CheckNewRelease.log"
 $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
 
 if ($newReleaseFound) {
