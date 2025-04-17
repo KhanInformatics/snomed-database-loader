@@ -1,9 +1,9 @@
 
 ---
 
-## Useful SQL Queries
+## Useful SNOMEDCT SQL Queries
 
-Below are two ready‑made queries you can copy‑and‑paste directly into SSMS (or another SQL client). They assume the data has already been loaded into the **SNOMEDCT** database and that the standard table names from `create_snomed_tables.sql` are in use.
+Below are useful queries you can copy‑and‑paste directly into SSMS (or another SQL client). They assume the data has already been loaded into the **SNOMEDCT** database and that the standard table names from `create_snomed_tables.sql` are in use.
 
 ### 1  Check the row counts of the current snapshot tables
 
