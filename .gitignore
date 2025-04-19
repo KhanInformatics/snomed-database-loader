@@ -5,3 +5,4 @@ tmp*
 .DS_Store
 *.zip
 .vscode/settings.json
+Snomed-loader — Visual Studio Code.code-workspace
