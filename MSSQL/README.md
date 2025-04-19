@@ -24,23 +24,22 @@ We recommend creating a dedicated folder `C:\SNOMEDCT`. You only need to create 
 ```
 C:\
 └── SNOMEDCT
-    ├── Downloads                 # Temporary .zip files (auto‑deleted after extraction)
-    ├── CurrentReleases           # Extracted RF2 releases awaiting import
-    │   ├── SnomedCT_InternationalRF2_YYYYMMDD
-    │   │   └── Snapshot
-    │   └── SnomedCT_UKClinicalRF2_YYYYMMDD
-    ├── import.sql                # Auto‑generated BULK INSERT script
-    └── CheckNewRelease.log       # Execution log created by Check-NewRelease.ps1
-    └── LastRelease.json          # Tracks the latest release processed
+    ├── Check-NewRelease.ps1
+    ├── Download-SnomedReleases.ps1
+    ├── Generate-AndRun-AllSnapshots.ps1
+    ├── create_snomed_tables.sql
+    ├── create-database-mssql.sql
+    └── README.md
 ```
 
-### What Each Folder / File Is For
+Within this folder:
 
-- **Downloads** – Temporary holding area for the raw `.zip` files downloaded from TRUD; the automation deletes them after extraction.  
-- **CurrentReleases** – Extracted RF2 content, stored in date‑stamped sub‑folders so you can review what will be imported.  
-- **import.sql** – Auto‑generated BULK INSERT script created by *Generate‑AndRun‑AllSnapshots.ps1*.  
-- **LastRelease.json** – Records the release IDs already imported so they aren't processed twice.  
-- **CheckNewRelease.log** – Log file produced each time *Check‑NewRelease.ps1* runs (helpful for troubleshooting).
+- **Check-NewRelease.ps1** – Checks the TRUD API for new SNOMED CT releases  
+- **Download-SnomedReleases.ps1** – Downloads and extracts the release files  
+- **Generate-AndRun-AllSnapshots.ps1** – Builds and runs the SQL import script  
+- **create_snomed_tables.sql** – Defines the schema for SNOMED CT tables  
+- **create-database-mssql.sql** – Creates the `SNOMEDCT` database (if desired)  
+- **README.md** – This readme file
 
 During automated operation, additional folders will be created:
 
