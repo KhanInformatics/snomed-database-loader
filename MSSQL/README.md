@@ -30,29 +30,17 @@ C:\
     │   │   └── Snapshot
     │   └── SnomedCT_UKClinicalRF2_YYYYMMDD
     ├── import.sql                # Auto‑generated BULK INSERT script
-<<<<<<< HEAD
     └── CheckNewRelease.log       # Execution log created by Check-NewRelease.ps1
-=======
->>>>>>> 415499f68178edf31e5132514fe6f2fc019c4085
     └── LastRelease.json          # Tracks the latest release processed
 ```
 
 ### What Each Folder / File Is For
-<<<<<<< HEAD
 
 - **Downloads** – Temporary holding area for the raw `.zip` files downloaded from TRUD; the automation deletes them after extraction.  
 - **CurrentReleases** – Extracted RF2 content, stored in date‑stamped sub‑folders so you can review what will be imported.  
 - **import.sql** – Auto‑generated BULK INSERT script created by *Generate‑AndRun‑AllSnapshots.ps1*.  
 - **LastRelease.json** – Records the release IDs already imported so they aren't processed twice.  
 - **CheckNewRelease.log** – Log file produced each time *Check‑NewRelease.ps1* runs (helpful for troubleshooting).
-=======
-
-- **Downloads** – Temporary holding area for the raw `.zip` files downloaded from TRUD; the automation deletes them after extraction.  
-- **CurrentReleases** – Extracted RF2 content, stored in date‑stamped sub‑folders so you can review what will be imported.  
-- **import.sql** – Auto‑generated BULK INSERT script created by *Generate‑AndRun‑AllSnapshots.ps1*.  
-- **LastRelease.json** – Records the release IDs already imported so they aren't processed twice.
-
->>>>>>> 415499f68178edf31e5132514fe6f2fc019c4085
 
 During automated operation, additional folders will be created:
 
