@@ -24,5 +24,5 @@ LEFT JOIN curr_description_f d2         -- Join to description table again to ge
     ON d2.conceptid = c2.id
     AND d2.typeid = '900000000000003001' -- Type ID for Fully Specified Name (FSN)
     AND d2.active = '1'                  -- Only active descriptions
-WHERE s.refsetid = '999011611000230101'  -- Specific reference set being queried
+WHERE s.refsetid = '999004851000230104'  -- Specific reference set being queried
   AND s.active = '1';                    -- Only active members of the reference set

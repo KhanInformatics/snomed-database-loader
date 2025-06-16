@@ -155,3 +155,5 @@ if ($cred) {
 ```
 
 This snippet displays your TRUD API key in green text if it is found, or an error message in red if it is not.
+
+

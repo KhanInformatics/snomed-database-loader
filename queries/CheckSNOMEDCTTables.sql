@@ -1,5 +1,6 @@
 use SNOMEDCT
 go
+
 SELECT  
     t.name AS TableName,
     SUM(p.row_count) AS TotalRows
@@ -21,4 +22,5 @@ WHERE t.name IN (
 )
   AND p.index_id IN (0,1)
 GROUP BY t.name
-ORDER BY t.name;
+ORDER BY t.name
+
