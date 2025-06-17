@@ -1,7 +1,6 @@
+# SNOMED CT Database using SQL Server
 
-# SNOMED CT Database using SQL Sql Sever
-
-SQL Server scripts to create and populate a Microsoft SQL Server database with a SNOMED CT terminology release.
+SQL Server scripts to create and populate a Microsoft SQL Server database with a SNOMED CT terminology release, including Primary Care Domain (PCD) reference sets.
 
 ## Minimum Specification
 
@@ -12,6 +11,45 @@ SQL Server scripts to create and populate a Microsoft SQL Server database with a
 1. Create an empty database named **SNOMEDCT**.
 2. Manually execute the `create-database-mssql.sql` script against it.
 
+## Data Sources Supported
+
+This implementation supports loading data from multiple NHS TRUD releases:
+
+### Core SNOMED CT Data
+- **International Release (Monolith)** - Complete SNOMED CT terminology
+- **UK Primary Care Snapshot** - UK-specific primary care extensions
+
+### Primary Care Domain (PCD) Data
+- **PCD Refset Content** - Reference sets organized by output and version
+- **Ruleset Mappings** - Full name mappings for clinical areas (e.g., Asthma, Diabetes, Vaccination programmes)
+- **Service Mappings** - Service classifications (Core Contract, Enhanced Services, Network Contract DES, etc.)
+- **Output Descriptions** - Detailed descriptions and metadata for PCD indicators
+
+## Loading PCD Data
+
+Use the dedicated `Load-PCD-Refset-Content.ps1` script to import Primary Care Domain data:
+
+```powershell
+.\Load-PCD-Refset-Content.ps1
+```
+
+This script creates and populates the following tables:
+- `PCD_Refset_Content_by_Output` - Primary refset content organized by output
+- `PCD_Refset_Content_V2` - Alternative refset content structure
+- `PCD_Ruleset_Full_Name_Mappings_V2` - Clinical area and programme mappings
+- `PCD_Service_Full_Name_Mappings_V2` - Service type classifications
+- `PCD_Output_Descriptions_V2` - Output descriptions and metadata
+
+### PCD Data Validation
+
+After loading PCD data, use the validation script to verify data integrity:
+
+```powershell
+.\Quick-PCD-Validation.ps1
+```
+
+This script compares record counts between source files and database tables to ensure complete and accurate imports.
+
 ## Differences from the PostgreSQL Version
 
 - T-SQL checks for table presence.
@@ -19,18 +57,31 @@ SQL Server scripts to create and populate a Microsoft SQL Server database with a
 
 ## File Structure
 
-We recommend creating a dedicated folder `C:\SNOMEDCT`. You only need to create the `C:\SNOMEDCT` folder; the automation scripts will build and populate the necessary sub‑folders automatically the first time they run. A typical layout (after one full import cycle) looks like this:
+We recommend creating a dedicated folder `C:\SNOMEDCT`. You only need to create the `C:\SNOMEDCT` folder; the automation scripts will build and populate the necessary sub‑folders automatically the first time they run. For PCD data, ensure the following files are present in the Downloads folder:
+
+- `20250521_PCD_Refset_Content_by_Output.txt`
+- `20250521_PCD_Refset_Content_V2.txt` 
+- `20250521_PCD_Ruleset_Full_Name_Mappings_V2.txt`
+- `20250521_PCD_Service_Full_Name_Mappings_V2.txt`
+- `20250521_PCD_Output_Descriptions_V2.txt`
+
+A typical layout (after one full import cycle) looks like this:
 
 ```
 C:\
 └── SNOMEDCT
-    ├── Downloads                 # Temporary .zip files (auto‑deleted after extraction)
+    ├── Downloads                 # Contains PCD source files and temporary .zip files
+    │   ├── 20250521_PCD_Refset_Content_by_Output.txt
+    │   ├── 20250521_PCD_Refset_Content_V2.txt
+    │   ├── 20250521_PCD_Ruleset_Full_Name_Mappings_V2.txt
+    │   ├── 20250521_PCD_Service_Full_Name_Mappings_V2.txt
+    │   └── 20250521_PCD_Output_Descriptions_V2.txt
     ├── CurrentReleases           # Extracted RF2 releases awaiting import
     │   ├── SnomedCT_InternationalRF2_YYYYMMDD
     │   │   └── Snapshot
     │   └── SnomedCT_UKClinicalRF2_YYYYMMDD
     ├── import.sql                # Auto‑generated BULK INSERT script
-    └── CheckNewRelease.log       # Execution log created by Check-NewRelease.ps1
+    ├── CheckNewRelease.log       # Execution log created by Check-NewRelease.ps1
     └── LastRelease.json          # Tracks the latest release processed
 ```
 
@@ -155,5 +206,136 @@ if ($cred) {
 ```
 
 This snippet displays your TRUD API key in green text if it is found, or an error message in red if it is not.
+
+## PCD Database Tables
+
+The Primary Care Domain (PCD) import creates five tables containing reference sets and mappings for primary care indicators:
+
+### Core Content Tables
+
+#### `PCD_Refset_Content_by_Output`
+Contains the main PCD reference set content organized by output indicators.
+- **Output_ID** - Unique identifier for the output/indicator
+- **SNOMED_Code** - SNOMED CT concept code
+- **Output_Description** - Description of the clinical output/indicator
+- **PCD_Refset_ID** - PCD reference set identifier  
+- **Cluster** - Clinical grouping/cluster identifier
+- **Usage**: Primary table for mapping SNOMED codes to primary care outputs
+
+#### `PCD_Refset_Content_V2`
+Alternative structure for PCD reference set content with different organization.
+- **SNOMED_Code** - SNOMED CT concept code
+- **Output_Description** - Description of the clinical output
+- **Output_Type** - Classification of the output type
+- **PCD_Refset_ID** - PCD reference set identifier
+- **Usage**: Alternative view of PCD content for different use cases
+
+### Mapping and Reference Tables
+
+#### `PCD_Ruleset_Full_Name_Mappings_V2`
+Maps ruleset IDs to their full descriptive names.
+- **Ruleset_ID** - Short identifier (e.g., '6IN1', 'Asthma')
+- **Ruleset_Short_Name** - Short descriptive name
+- **Ruleset_Full_Name** - Complete descriptive name (e.g., '6-in-1 Vaccination Programme')
+- **Usage**: Provides human-readable names for clinical areas and programmes
+
+#### `PCD_Service_Full_Name_Mappings_V2`
+Maps service type codes to their full descriptions.
+- **Service_ID** - Service code (e.g., 'CC', 'ES', 'NCD')
+- **Service_Short_Name** - Abbreviated service name
+- **Service_Full_Name** - Complete service description (e.g., 'Core Contract (CC)')
+- **Usage**: Classifies different types of primary care services
+
+#### `PCD_Output_Descriptions_V2`  
+Provides detailed descriptions and metadata for PCD outputs.
+- **Output_ID** - Unique output identifier
+- **Output_Description** - Detailed description of the output/indicator
+- **Output_Type** - Classification or type of the output
+- **Usage**: Comprehensive metadata for understanding PCD indicators
+
+### Data Relationships
+
+```
+PCD_Refset_Content_by_Output
+├── Links to PCD_Output_Descriptions_V2 (via Output_ID)
+└── Contains SNOMED codes for clinical concepts
+
+PCD_Refset_Content_V2
+├── Alternative structure for same content
+└── Links to PCD_Output_Descriptions_V2 (via Output_ID)
+
+PCD_Ruleset_Full_Name_Mappings_V2
+└── Provides names for clinical programmes/areas
+
+PCD_Service_Full_Name_Mappings_V2
+└── Classifies service delivery types
+```
+
+## Additional PowerShell Scripts
+
+### PCD-Specific Scripts
+
+#### `Load-PCD-Refset-Content.ps1`
+**Purpose:** Loads Primary Care Domain reference sets and mappings into the database.
+
+**Features:**
+- Creates PCD database tables with appropriate schemas
+- Imports data from 5 different PCD source files
+- Handles multiple delimiter formats (tab-separated, comma-separated)
+- Provides detailed progress reporting and error handling
+- Includes data quality validation and record counting
+- Automatically truncates tables before import to prevent duplicates
+
+**Usage:**
+```powershell
+.\Load-PCD-Refset-Content.ps1 [-server "ServerName"] [-database "DatabaseName"]
+```
+
+#### `Quick-PCD-Validation.ps1`
+**Purpose:** Validates PCD data imports by comparing source files with database tables.
+
+**Features:**
+- Compares record counts between source files and database tables
+- Displays sample records from both source and database
+- Provides summary report of validation results
+- Identifies missing or duplicate records
+- Generates timestamped validation reports
+
+**Usage:**
+```powershell
+.\Quick-PCD-Validation.ps1 [-server "ServerName"] [-database "DatabaseName"]
+```
+
+**Example Output:**
+```
+PCD Data Import Validation Report
+Generated: 06/17/2025 20:12:24
+
+Validating: PCD_Refset_Content_by_Output
+  Source: 318427 records
+  Sample: 6IN1001 3IN1VAC_COD 3-in-1 Diphtheria, tetanus, and polio vaccine...
+  Table: 318427 records
+  Status: Perfect match
+
+SUMMARY:
+  Successful: 5
+  Issues: 0
+All validations passed!
+```
+
+### Integration with Existing Workflow
+
+The PCD scripts complement the existing SNOMED CT workflow:
+
+1. **Standard SNOMED CT Import** (existing scripts)
+   - `Check-NewRelease.ps1` - Check for new TRUD releases
+   - `Download-SnomedReleases.ps1` - Download and extract releases  
+   - `Generate-AndRun-AllSnapshots.ps1` - Import core SNOMED CT data
+
+2. **PCD Import** (new scripts)
+   - `Load-PCD-Refset-Content.ps1` - Import PCD reference sets
+   - `Quick-PCD-Validation.ps1` - Validate PCD imports
+
+This allows you to maintain both core SNOMED CT terminology and primary care domain extensions in a single database instance.
 
 
