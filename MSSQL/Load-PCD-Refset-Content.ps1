@@ -150,17 +150,20 @@ BEGIN
     DROP TABLE PCD_Refset_Content_V2;
 END
 
--- Create the table with appropriate data types
+-- Create the table with appropriate data types (6 columns to match actual data file)
 CREATE TABLE PCD_Refset_Content_V2 (
+    Cluster_ID VARCHAR(50) NOT NULL,
+    Cluster_Description VARCHAR(500) NOT NULL,
     SNOMED_code VARCHAR(255) NOT NULL,
     SNOMED_code_description VARCHAR(500) NOT NULL,
     PCD_Refset_ID VARCHAR(18) NOT NULL,
-    PCD_Refset_Description VARCHAR(500) NOT NULL
+    Service_and_Ruleset VARCHAR(500) NOT NULL
 );
 
 -- Optional: Add indexes for better query performance
 CREATE INDEX IX_PCD_Refset_Content_V2_SNOMED_code ON PCD_Refset_Content_V2(SNOMED_code);
 CREATE INDEX IX_PCD_Refset_Content_V2_PCD_Refset_ID ON PCD_Refset_Content_V2(PCD_Refset_ID);
+CREATE INDEX IX_PCD_Refset_Content_V2_Cluster_ID ON PCD_Refset_Content_V2(Cluster_ID);
 "@
 Invoke-Sqlcmd -ServerInstance $server -Database $database -Query $queryCreate2
 
@@ -170,7 +173,7 @@ Write-Host "Created table: $table2"
 Invoke-Sqlcmd -ServerInstance $server -Database $database -Query "TRUNCATE TABLE $table2"
 
 # Robust import for second table: read file line by line and map columns explicitly to match actual headers
-# File structure for V2: SNOMED_code | SNOMED_code_description | PCD Refset ID | PCD Refset Description
+# File structure for V2: Cluster_ID | Cluster_Description | SNOMED_code | SNOMED_code_description | PCD Refset ID | Service_and_Ruleset
 
 Write-Host "Starting data import process for $table2..."
 $lines2 = Get-Content $file2 | Select-Object -Skip 1
@@ -188,19 +191,19 @@ foreach ($line in $lines2) {
     # Progress indicator
     if ($processedCount2 % 1000 -eq 0) {
         Write-Host "Processed $processedCount2 / $totalLines2 records for $table2..."
-    }
-
-    $fields = $line -split "`t", 4
-    $SNOMED_code = $fields[0]
-    $SNOMED_code_description = $fields[1]
-    $PCD_Refset_ID = $fields[2]
-    $PCD_Refset_Description = $fields[3]
+    }    $fields = $line -split "`t", 6
+    $Cluster_ID = $fields[0]
+    $Cluster_Description = $fields[1]
+    $SNOMED_code = $fields[2]
+    $SNOMED_code_description = $fields[3]
+    $PCD_Refset_ID = $fields[4]
+    $Service_and_Ruleset = $fields[5]
 
     # Skip rows with empty required fields
     if ([string]::IsNullOrWhiteSpace($SNOMED_code) -or 
         [string]::IsNullOrWhiteSpace($SNOMED_code_description) -or 
         [string]::IsNullOrWhiteSpace($PCD_Refset_ID) -or 
-        [string]::IsNullOrWhiteSpace($PCD_Refset_Description)) {
+        [string]::IsNullOrWhiteSpace($Cluster_ID)) {
         Write-Host "Skipping row $processedCount2 with empty required fields"
         $skippedCount2++
         continue
@@ -209,12 +212,14 @@ foreach ($line in $lines2) {
     try {
         # Insert new record into second table
         $query = @"
-        INSERT INTO $table2 (SNOMED_code, SNOMED_code_description, PCD_Refset_ID, PCD_Refset_Description)
+        INSERT INTO $table2 (Cluster_ID, Cluster_Description, SNOMED_code, SNOMED_code_description, PCD_Refset_ID, Service_and_Ruleset)
         VALUES (
+            '$(($Cluster_ID) -replace '''', '''''')',
+            '$(($Cluster_Description) -replace '''', '''''')',
             '$(($SNOMED_code) -replace '''', '''''')',
             '$(($SNOMED_code_description) -replace '''', '''''')',
             '$(($PCD_Refset_ID) -replace '''', '''''')',
-            '$(($PCD_Refset_Description) -replace '''', '''''')'
+            '$(($Service_and_Ruleset) -replace '''', '''''')'
         )
 "@
         Invoke-Sqlcmd -ServerInstance $server -Database $database -Query $query
@@ -311,12 +316,16 @@ BEGIN
 END
 
 CREATE TABLE PCD_Output_Descriptions_V2 (
+    Service_ID VARCHAR(50) NOT NULL,
+    Ruleset_ID VARCHAR(255) NOT NULL,
     Output_ID VARCHAR(50) NOT NULL,
-    Output_Description VARCHAR(1000) NOT NULL,
-    Output_Type VARCHAR(1000) NOT NULL
+    Output_Description VARCHAR(2000) NOT NULL,
+    Output_Type VARCHAR(10) NOT NULL
 );
 
-CREATE INDEX IX_PCD_Output_Descriptions_ID ON PCD_Output_Descriptions_V2(Output_ID);
+CREATE INDEX IX_PCD_Output_Descriptions_Service_ID ON PCD_Output_Descriptions_V2(Service_ID);
+CREATE INDEX IX_PCD_Output_Descriptions_Ruleset_ID ON PCD_Output_Descriptions_V2(Ruleset_ID);
+CREATE INDEX IX_PCD_Output_Descriptions_Output_ID ON PCD_Output_Descriptions_V2(Output_ID);
 "@
 Invoke-Sqlcmd -ServerInstance $server -Database $database -Query $queryCreate5
 
@@ -551,15 +560,17 @@ foreach ($line in $lines5) {
     # Progress indicator
     if ($processedCount5 % 1000 -eq 0) {
         Write-Host "Processed $processedCount5 / $totalLines5 records for $table5..."
-    }
-
-    $fields = $line -split "`t", 3
-    $Output_ID = $fields[0]
-    $Output_Description = $fields[1]
-    $Output_Type = $fields[2]
+    }    $fields = $line -split "`t", 5
+    $Service_ID = $fields[0]
+    $Ruleset_ID = $fields[1]
+    $Output_ID = $fields[2]
+    $Output_Description = $fields[3]
+    $Output_Type = $fields[4]
 
     # Skip rows with empty required fields
-    if ([string]::IsNullOrWhiteSpace($Output_ID) -or 
+    if ([string]::IsNullOrWhiteSpace($Service_ID) -or 
+        [string]::IsNullOrWhiteSpace($Ruleset_ID) -or
+        [string]::IsNullOrWhiteSpace($Output_ID) -or 
         [string]::IsNullOrWhiteSpace($Output_Description) -or 
         [string]::IsNullOrWhiteSpace($Output_Type)) {
         Write-Host "Skipping row $processedCount5 with empty required fields"
@@ -570,8 +581,10 @@ foreach ($line in $lines5) {
     try {
         # Insert new record into fifth table
         $query = @"
-        INSERT INTO $table5 (Output_ID, Output_Description, Output_Type)
+        INSERT INTO $table5 (Service_ID, Ruleset_ID, Output_ID, Output_Description, Output_Type)
         VALUES (
+            '$(($Service_ID) -replace '''', '''''')',
+            '$(($Ruleset_ID) -replace '''', '''''')',
             '$(($Output_ID) -replace '''', '''''')',
             '$(($Output_Description) -replace '''', '''''')',
             '$(($Output_Type) -replace '''', '''''')'
@@ -604,12 +617,16 @@ Write-Host "Total records in ${table5}: $($result5.RecordCount)"
 $qualityQuery5 = @"
 SELECT 
     COUNT(*) as TotalRecords,
+    COUNT(DISTINCT Service_ID) as UniqueServiceIds,
+    COUNT(DISTINCT Ruleset_ID) as UniqueRulesetIds,
     COUNT(DISTINCT Output_ID) as UniqueOutputIds
 FROM $table5
 "@
 $qualityResult5 = Invoke-Sqlcmd -ServerInstance $server -Database $database -Query $qualityQuery5
 Write-Host "Data quality summary for ${table5}:"
 Write-Host "  Total Records: $($qualityResult5.TotalRecords)"
+Write-Host "  Unique Service IDs: $($qualityResult5.UniqueServiceIds)"
+Write-Host "  Unique Ruleset IDs: $($qualityResult5.UniqueRulesetIds)"
 Write-Host "  Unique Output IDs: $($qualityResult5.UniqueOutputIds)"
 
 Write-Host "All PCD files loaded successfully."
