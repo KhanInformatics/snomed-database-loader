@@ -1,7 +1,7 @@
 USE SNOMEDCT;
 GO
 
-DECLARE @RefsetId NVARCHAR(18) = '999026651000230100';
+DECLARE @RefsetId NVARCHAR(18) = '999012891000230104';
 SELECT
     s.refsetid                                 AS RefsetId,
     c2.active                                  AS RefsetIsActive,
