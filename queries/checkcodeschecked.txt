@@ -1,0 +1,12 @@
+248411000000105 |Atrial fibrillation annual review (regime/therapy)|
+715851000000102 |Examination findings (record artifact)|
+735259005 |Congestive heart failure, hypertension, age 2, diabetes mellitus, stroke 2, vascular disease, age, sex category stroke risk score (observable entity)|
+717121000000105 |History (record artifact)|
+912661000000103 |Novel oral anticoagulant declined (situation)|
+912881000000108 |Novel oral anticoagulant not indicated (situation)|
+125411000119107 |History of mechanical aortic valve replacement (situation)|
+134398004 |Warfarin declined (situation)|
+315061006 |Warfarin contraindicated (situation)|
+717381000000109 |Excepted from atrial fibrillation quality indicators - informed dissent (finding)|
+715941000000109 |Excepted from atrial fibrillation quality indicators - patient unsuitable (finding)|
+717371000000107 |Plan (record artifact)|
