@@ -1,0 +1,7 @@
+Write-Error: O:\GitHub\snomed-database-loader\DMD\Import-DMDData-Batched.ps1:81:5
+Line |
+  81 |      Invoke-BatchedInsert -TableName "vtm" -Columns "(vtmid,invalid,nm …
+     |      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Failed to insert batch 1: Violation of PRIMARY KEY constraint 'PK__vtm__A1E2A89098B1DF16'. Cannot insert duplicate key in object 'dbo.vtm'. The duplicate key value is (1204436008). The statement has been terminated.  
+     | Msg 2627, Level 14, State 1, Procedure , Line 1.
+

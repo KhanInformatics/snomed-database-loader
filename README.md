@@ -1,75 +1,156 @@
-# SNOMED CT Database Loader
+# NHS Terminology Database Loaders
 
-This repository provides scripts specifically for building and maintaining a **SNOMED CT database instance** using the **Monolith**, **UK Primary Care**, and **Primary Care Domain (PCD)** snapshots released via **NHS TRUD**. I created this in an effort to learn how to maintain and use the different downloads available from the TRUD.
+This repository provides comprehensive scripts for building and maintaining **NHS terminology databases** using releases from **NHS TRUD**. It includes automated workflows for both **SNOMED CT** and **DM+D (Dictionary of Medicines and Devices)** data.
 
-It supports loading data into a variety of databases, with a full end-to-end **automated workflow for Microsoft SQL Server**, including:
+## Supported Terminologies
+
+### SNOMED CT Database Loader
+- **Monolith**: Complete international SNOMED CT terminology
+- **UK Primary Care**: UK-specific primary care extensions  
+- **Primary Care Domain (PCD)**: Primary care reference sets and mappings
+
+### DM+D Database Loader  
+- **NHS DM+D**: Complete medicines and devices hierarchy
+- **Supplementary Data**: BNF codes, ATC classifications, GTIN mappings
+- **Commercial Data**: Suppliers, licensing, Drug Tariff information
+
+Both workflows support loading data into SQL Server with full end-to-end automation including:
 
 - Checking for new releases via the TRUD API
-- Downloading and extracting release files
-- Generating and executing `BULK INSERT` SQL scripts for snapshot import
-- Loading Primary Care Domain (PCD) reference sets and mappings
+- Downloading and extracting release files  
+- Processing data files and generating import scripts
+- Data validation and integrity checking
 
 ## Supported Targets
-- [**MSSQL** – Fully automated (PowerShell-driven)](https://github.com/KhanInformatics/snomed-database-loader/tree/master/MSSQL)
+- [**MSSQL/SNOMED CT** – Fully automated (PowerShell-driven)](https://github.com/KhanInformatics/snomed-database-loader/tree/master/MSSQL)
+- [**DMD** – Complete DM+D workflow (PowerShell-driven)](https://github.com/KhanInformatics/snomed-database-loader/tree/master/DMD)
+
+## Quick Start
+
+### SNOMED CT Database  
+```powershell
+cd MSSQL
+.\Complete-SnomedWorkflow.ps1
+```
+
+### DM+D Database
+```powershell  
+cd DMD
+.\Complete-DMDWorkflow.ps1
+```
+
+### Both Databases
+```powershell
+# Set up SNOMED CT first
+cd MSSQL  
+.\Complete-SnomedWorkflow.ps1
+
+# Then set up DM+D
+cd ..\DMD
+.\Complete-DMDWorkflow.ps1
+```
 
 ## Key Features
 
-### Core SNOMED CT Data
+### SNOMED CT Workstream (`MSSQL/`)
 - **International Release (Monolith)** - Complete SNOMED CT terminology
-- **UK Primary Care Snapshot** - UK-specific primary care extensions
+- **UK Primary Care Snapshot** - UK-specific primary care extensions  
+- **Primary Care Domain (PCD)** - Reference sets mapped to outputs and indicators
+- **RF2 Format Processing** - Concepts, descriptions, relationships, and reference sets
+- **Automated BULK INSERT** - High-performance SQL Server loading
 
-### Primary Care Domain (PCD) Support
-- **PCD Refset Content** - Primary care domain reference sets mapped to outputs
-- **Ruleset Mappings** - Full name mappings for PCD rulesets (e.g., vaccination programmes, clinical areas)
-- **Service Mappings** - Service type classifications (Core Contract, Enhanced Services, etc.)
-- **Output Descriptions** - Detailed descriptions of PCD outputs and indicators
+### DM+D Workstream (`DMD/`)
+- **Complete Product Hierarchy** - VTM → VMP → AMP → VMPP → AMPP structure
+- **Clinical Classifications** - BNF codes, ATC codes, SNOMED CT mappings
+- **Commercial Information** - Suppliers, licensing authorities, Drug Tariff data
+- **Prescribing Support** - Controlled drugs, sugar-free alternatives, pack sizes
+- **XML Processing** - Native handling of NHS DM+D XML format
 
-> ⚠️ This repository is **not** a general-purpose RF2 loader. It is purpose-built for loading the **Monolith**, **UK Primary Care Snapshot**, and **Primary Care Domain** releases into a local database instance for analytics, reporting, or interoperability work.
+> 💡 **Integration Ready**: Both workstreams use the same TRUD API credentials and can be cross-referenced via SNOMED CT mappings for comprehensive clinical terminology coverage.
 
-### PCD V2 Table Schema (SQL Server)
+### DM+D Database Schema
 
-After recent fixes, the PCD reference set content table matches the actual six-column data structure from the source file:
+The DM+D database implements the official NHS DM+D Data Model R2 v4.0:
 
-- `PCD_Refset_Content_V2`
-   - `Cluster_ID` VARCHAR(50)
-   - `Cluster_Description` VARCHAR(500)
-   - `SNOMED_code` VARCHAR(255)
-   - `SNOMED_code_description` VARCHAR(500)
-   - `PCD_Refset_ID` VARCHAR(50)
-   - `Service_and_Ruleset` VARCHAR(500)
+**Core Entity Tables:**
+- `vtm` - Virtual Therapeutic Moieties (active ingredients)
+- `vmp` - Virtual Medical Products (generic products)  
+- `amp` - Actual Medical Products (branded products)
+- `vmpp` - Virtual Medical Product Packs (generic packs)
+- `ampp` - Actual Medical Product Packs (commercial packs)
 
-Recommended indexes:
-- `IX_PCD_Refset_Content_V2_SNOMED_code (SNOMED_code)`
-- `IX_PCD_Refset_Content_V2_PCD_Refset_ID (PCD_Refset_ID)`
-- `IX_PCD_Refset_Content_V2_Cluster_ID (Cluster_ID)`
+**Clinical Data:**
+- `vmp_ingredient` - Active ingredient compositions and strengths
+- `vmp_drugroute` - Administration routes (oral, injection, etc.)
+- `vmp_drugform` - Pharmaceutical forms (tablet, capsule, etc.)
+- `dmd_bnf` - British National Formulary classifications
+- `dmd_atc` - Anatomical Therapeutic Chemical codes
+- `dmd_snomed` - SNOMED CT concept mappings
 
-Contributions are welcome — feel free to fork the repo and submit a pull request if you'd like to add or improve support for other environments.
+**Commercial Data:**
+- `lookup` - Reference data for suppliers, licensing authorities, etc.
+- `gtin` - Global Trade Item Numbers for supply chain integration
+- `ampp_drugtariffinfo` - NHS Drug Tariff pricing information
 
-## Complete Workflow
+### SNOMED CT Schema (PCD V2)
 
-### Initial Setup
-1. **Database Preparation**
-   - Create empty `SNOMEDCT` database in SQL Server
-   - Execute `MSSQL/create-database-mssql.sql` to create schema
-   - Store TRUD API key in Windows Credential Manager
+The PCD reference set content table matches the actual six-column data structure:
 
-2. **File Structure Setup**
-   - Create `C:\SNOMEDCT` folder
-   - Place PCD source files in `C:\SNOMEDCT\Downloads\` folder
+- `PCD_Refset_Content_V2` - Primary care domain indicators
+   - `Cluster_ID`, `Cluster_Description` - Clinical area groupings
+   - `SNOMED_code`, `SNOMED_code_description` - Linked terminology
+   - `PCD_Refset_ID`, `Service_and_Ruleset` - QOF and service mappings
 
-### Standard Data Loading
-1. **Core SNOMED CT Data**
+Contributions are welcome — feel free to fork the repo and submit a pull request if you'd like to add or improve support for other environments or database platforms.
+
+## Complete Workflows
+
+### Prerequisites (Both Workstreams)
+- **SQL Server** - Local or remote instance with sufficient storage
+- **TRUD API Key** - Stored in Windows Credential Manager as 'TRUD_API'  
+- **PowerShell 5.1+** - With SqlServer module installed
+- **Storage Space** - ~5GB for SNOMED CT, ~2GB for DM+D
+
+### SNOMED CT Workflow (`MSSQL/`)
+
+**Automated Setup:**
+```powershell
+cd MSSQL
+.\Complete-SnomedWorkflow.ps1
+```
+
+**Manual Steps:**
+1. **Check and Download**
    ```powershell
-   cd MSSQL
-   .\Check-NewRelease.ps1          # Check for new releases
-   .\Download-SnomedReleases.ps1   # Download and extract
-   .\Generate-AndRun-AllSnapshots.ps1  # Import core data
+   .\Check-NewRelease.ps1          # Check for updates
+   .\Download-SnomedReleases.ps1   # Download from TRUD
    ```
 
-2. **Primary Care Domain Data**
+2. **Import Data**  
    ```powershell
-   .\Load-PCD-Refset-Content.ps1   # Import PCD reference sets
-   .\Quick-PCD-Validation.ps1      # Validate import
+   .\Generate-AndRun-AllSnapshots.ps1  # Core SNOMED CT data
+   .\Load-PCD-Refset-Content.ps1       # Primary Care Domain
+   ```
+
+### DM+D Workflow (`DMD/`)
+
+**Automated Setup:**
+```powershell
+cd DMD  
+.\Complete-DMDWorkflow.ps1
+```
+
+**Manual Steps:**
+1. **Check and Download**
+   ```powershell
+   .\Check-NewDMDRelease.ps1       # Check for updates
+   .\Download-DMDReleases.ps1      # Download from TRUD
+   ```
+
+2. **Process and Import**
+   ```powershell  
+   .\Process-DMDData.ps1           # Process XML and import
+   .\Validate-DMDImport.ps1        # Validate data integrity
    ```
 
 ### Data Validation and Queries
@@ -114,7 +195,73 @@ Contributions are welcome — feel free to fork the repo and submit a pull reque
 
 > **Note:** The `Queries/` folder contains additional examples including COPD, CHD, and other clinical area cluster queries. See `Queries/Readme.md` for more detailed query patterns and explanations of duplicate rows when joining with Output_ID/Output_Description columns.
 
-### Maintenance
-- Re-run `Check-NewRelease.ps1` periodically for SNOMED CT updates
-- PCD data updates require manual file replacement and re-import
-- Use validation scripts after any data updates
+## Integration and Cross-Referencing
+
+The SNOMED CT and DM+D databases are designed to work together:
+
+### Linked Clinical Terminology
+```sql  
+-- Find SNOMED CT concepts for DM+D products
+SELECT 
+    v.nm as dmd_product_name,
+    ds.snomed_conceptid,
+    d.term as snomed_preferred_term
+FROM dmd.dbo.vmp v
+JOIN dmd.dbo.dmd_snomed ds ON v.vpid = ds.dmd_id 
+JOIN snomedct.dbo.curr_description_f d ON ds.snomed_conceptid = d.conceptid
+WHERE v.invalid = 0 AND d.active = '1' AND d.typeid = '900000000000003001';
+```
+
+### Primary Care Integration
+```sql
+-- Link PCD indicators to DM+D therapeutic areas  
+SELECT 
+    p.Cluster_Description as pcd_indicator,
+    v.nm as related_dmd_product,
+    t.nm as therapeutic_ingredient
+FROM snomedct.dbo.PCD_Refset_Content_V2 p
+JOIN dmd.dbo.dmd_snomed ds ON p.SNOMED_code = ds.snomed_conceptid
+JOIN dmd.dbo.vmp v ON ds.dmd_id = v.vpid AND ds.dmd_type = 'VMP'
+JOIN dmd.dbo.vtm t ON v.vtmid = t.vtmid
+WHERE v.invalid = 0 AND t.invalid = 0;
+```
+
+## Maintenance and Updates
+
+### Regular Update Schedule
+- **SNOMED CT**: Check monthly (releases every 6 months + UK updates)
+- **DM+D**: Check weekly (releases every Monday at 4:00 AM)  
+- **PCD**: Check quarterly (updates as QOF requirements change)
+
+### Automated Monitoring
+```powershell
+# Create scheduled tasks for automated checking
+schtasks /create /tn "Check SNOMED Updates" /tr "C:\Scripts\MSSQL\Check-NewRelease.ps1" /sc weekly /d MON /st 08:00
+schtasks /create /tn "Check DM+D Updates" /tr "C:\Scripts\DMD\Check-NewDMDRelease.ps1" /sc weekly /d MON /st 08:30
+```
+
+### Backup and Recovery
+- **Full Backup**: Both databases after successful updates
+- **Differential**: Daily backups during active development
+- **Transaction Log**: Every 15 minutes for production systems
+- **Restore Testing**: Monthly validation of backup integrity
+
+## Use Cases and Applications
+
+### Clinical Decision Support
+- **Drug-Drug Interactions**: Cross-reference active ingredients
+- **Therapeutic Alternatives**: Find products with same VTM  
+- **Prescribing Guidance**: Sugar-free, gluten-free options
+- **Dose Calculations**: Unit dose information from DM+D
+
+### Quality Improvement  
+- **QOF Reporting**: PCD indicators linked to prescribing data
+- **Formulary Management**: BNF classification analysis
+- **Cost Analysis**: Drug Tariff pricing with utilization data
+- **Audit Support**: Prescribing pattern analysis
+
+### Integration Projects
+- **EPR Systems**: Terminology services for clinical systems
+- **Prescribing Systems**: Product selection and validation
+- **Pharmacy Systems**: Dispensing and stock management
+- **Reporting Platforms**: Clinical and financial analytics
