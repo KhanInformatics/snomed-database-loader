@@ -1,0 +1,4298 @@
+[
+  {
+    "Cluster_ID": "HLTHAP_COD",
+    "Cluster_Description": "Health action plan provided codes",
+    "SNOMED_code": "413163007",
+    "SNOMED_code_description": "Learning disabilities health action plan reviewed (procedure)"
+  },
+  {
+    "Cluster_ID": "HLTHAP_COD",
+    "Cluster_Description": "Health action plan provided codes",
+    "SNOMED_code": "712491005",
+    "SNOMED_code_description": "Completion of learning disabilities health action plan (procedure)"
+  },
+  {
+    "Cluster_ID": "HLTHCHK_COD",
+    "Cluster_Description": "Learning disability (LD) health check codes",
+    "SNOMED_code": "199751000000100",
+    "SNOMED_code_description": "Learning disabilities annual health assessment (procedure)"
+  },
+  {
+    "Cluster_ID": "HLTHCHK_COD",
+    "Cluster_Description": "Learning disability (LD) health check codes",
+    "SNOMED_code": "413126003",
+    "SNOMED_code_description": "Learning disabilities health assessment (procedure)"
+  },
+  {
+    "Cluster_ID": "HLTHCHK_COD",
+    "Cluster_Description": "Learning disability (LD) health check codes",
+    "SNOMED_code": "442127005",
+    "SNOMED_code_description": "Examination of learning disabled patient (procedure)"
+  },
+  {
+    "Cluster_ID": "HLTHCHKDEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive a learning disability (LD) health check",
+    "SNOMED_code": "514021000000103",
+    "SNOMED_code_description": "Learning disabilities annual health assessment declined (situation)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "10007009",
+    "SNOMED_code_description": "Coffin-Siris syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1003367004",
+    "SNOMED_code_description": "Molybdenum cofactor deficiency complementation group A (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1003368009",
+    "SNOMED_code_description": "Molybdenum cofactor deficiency complementation group B (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1003370000",
+    "SNOMED_code_description": "Microphthalmos due to Fryns syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1003373003",
+    "SNOMED_code_description": "Microcephaly with simplified gyral pattern (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1003374009",
+    "SNOMED_code_description": "Microlissencephaly (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1003387003",
+    "SNOMED_code_description": "Molybdenum cofactor deficiency complementation group C (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1003389000",
+    "SNOMED_code_description": "Mosaic 1q duplication (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1003409002",
+    "SNOMED_code_description": "Maternal 15q11q13 deletion (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1010630006",
+    "SNOMED_code_description": "X-linked complicated corpus callosum dysgenesis (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1089701000000105",
+    "SNOMED_code_description": "Profound intellectual development disorder without impairment of behaviour (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1089711000000107",
+    "SNOMED_code_description": "Profound intellectual development disorder with significant impairment of behaviour (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1089721000000101",
+    "SNOMED_code_description": "Profound intellectual development disorder with minimal impairment of behaviour (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1089731000000104",
+    "SNOMED_code_description": "Profound intellectual development disorder with impairment of behaviour (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1089741000000108",
+    "SNOMED_code_description": "Severe intellectual development disorder without significant impairment of behaviour (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1089751000000106",
+    "SNOMED_code_description": "Severe intellectual development disorder with significant impairment of behaviour (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1089761000000109",
+    "SNOMED_code_description": "Severe intellectual development disorder with minimal impairment of behaviour (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1089771000000102",
+    "SNOMED_code_description": "Severe intellectual development disorder with impairment of behaviour (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1089781000000100",
+    "SNOMED_code_description": "Moderate intellectual development disorder without significant impairment of behaviour (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1089791000000103",
+    "SNOMED_code_description": "Moderate intellectual development disorder with significant impairment of behaviour (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1089811000000102",
+    "SNOMED_code_description": "Moderate intellectual development disorder with minimal impairment of behaviour (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1089821000000108",
+    "SNOMED_code_description": "Moderate intellectual development disorder with impairment of behaviour (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1089831000000105",
+    "SNOMED_code_description": "Mild intellectual development disorder without significant impairment of behaviour (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1089841000000101",
+    "SNOMED_code_description": "Mild intellectual development disorder with significant impairment of behaviour (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1089851000000103",
+    "SNOMED_code_description": "Mild intellectual development disorder with minimal impairment of behaviour (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1093991000000101",
+    "SNOMED_code_description": "Mild intellectual development disorder with impairment of behaviour (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1094001000000106",
+    "SNOMED_code_description": "Intellectual development disorder without significant impairment of behaviour (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1094011000000108",
+    "SNOMED_code_description": "Intellectual development disorder with significant impairment of behaviour (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1094021000000102",
+    "SNOMED_code_description": "Intellectual development disorder with minimal impairment of behaviour (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1094031000000100",
+    "SNOMED_code_description": "Intellectual development disorder with impairment of behaviour (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "109478007",
+    "SNOMED_code_description": "Kohlschutter's syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "110359009",
+    "SNOMED_code_description": "Intellectual disability (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "111303009",
+    "SNOMED_code_description": "SjÃ¶gren-Larsson syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "111502003",
+    "SNOMED_code_description": "Fukuyama congenital muscular dystrophy (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "111504002",
+    "SNOMED_code_description": "Walker-Warburg congenital muscular dystrophy (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1141661004",
+    "SNOMED_code_description": "Neurocutaneous melanosis (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1156584007",
+    "SNOMED_code_description": "X-linked intellectual disability hypotonic face syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1167375003",
+    "SNOMED_code_description": "Microcephaly, corpus callosum and cerebellar vermis hypoplasia, facial dysmorphism, intellectual disability syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1169355000",
+    "SNOMED_code_description": "Brain malformations, musculoskeletal abnormalities, facial dysmorphism, intellectual disability syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1172586007",
+    "SNOMED_code_description": "Ocular anomalies, axonal neuropathy, developmental delay syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1172626003",
+    "SNOMED_code_description": "Telomere maintenance 2-related intellectual disability, neurodevelopmental disorder (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1172628002",
+    "SNOMED_code_description": "TBC1 domain containing kinase-related intellectual disability syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1172629005",
+    "SNOMED_code_description": "Severe growth deficiency, strabismus, extensive dermal melanocytosis, intellectual disability syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1172630000",
+    "SNOMED_code_description": "Global developmental delay, neuro-ophthalmological abnormalities, seizures, intellectual disability syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1172691004",
+    "SNOMED_code_description": "Chloride voltage-gated channel 4-related X-linked intellectual disability syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1172697000",
+    "SNOMED_code_description": "X-linked female restricted facial dysmorphism, short stature, choanal atresia, intellectual disability (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1172698005",
+    "SNOMED_code_description": "Recurrent metabolic encephalomyopathic crises, rhabdomyolysis, cardiac arrhythmia, intellectual disability syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1177167002",
+    "SNOMED_code_description": "Intellectual disability, seizures, abnormal gait, facial dysmorphism syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1179301003",
+    "SNOMED_code_description": "Dual specificity tyrosine phosphorylation regulated kinase 1A-related intellectual disability syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1179408008",
+    "SNOMED_code_description": "Chromodomain helicase dna-binding protein 3- related developmental delay, speech delay, intellectual disability, abnormalities of vision, facial dysmorphism syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1186713004",
+    "SNOMED_code_description": "Growth delay, intellectual disability, hepatopathy syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1186729007",
+    "SNOMED_code_description": "Intellectual disability, cardiac anomalies, short stature, joint laxity syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1187038009",
+    "SNOMED_code_description": "Non-specific syndromic intellectual disability (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1187041000",
+    "SNOMED_code_description": "Stromal antigen 1-related intellectual disability, facial dysmorphism, gastroesophageal reflux syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1187042007",
+    "SNOMED_code_description": "Early-onset seizures, distal limb anomalies, facial dysmorphism, global developmental delay syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1187043002",
+    "SNOMED_code_description": "Psychomotor regression, oculomotor apraxia, movement disorder, nephropathy syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1187045009",
+    "SNOMED_code_description": "Aicardi Goutieres syndrome type 1 (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1187046005",
+    "SNOMED_code_description": "Aicardi Goutieres syndrome type 2 (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1187047001",
+    "SNOMED_code_description": "Aicardi Goutieres syndrome type 3 (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1187048006",
+    "SNOMED_code_description": "Aicardi Goutieres syndrome type 4 (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1187049003",
+    "SNOMED_code_description": "Aicardi Goutieres syndrome type 5 (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1187114007",
+    "SNOMED_code_description": "Micrognathia, recurrent infections, behavioral abnormalities, mild intellectual disability syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1187171005",
+    "SNOMED_code_description": "Solute carrier family 39 member 8 congenital disorder of glycosylation (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1187210007",
+    "SNOMED_code_description": "Intellectual disability, epilepsy, extrapyramidal syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1187247007",
+    "SNOMED_code_description": "WW domain containing adaptor with coiled-coil-related facial dysmorphism, developmental delay, behavioral abnormalities syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1187249005",
+    "SNOMED_code_description": "VPS11 core subunit of CORVET and HOPS complexes-related autosomal recessive hypomyelinating leukodystrophy (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1187277001",
+    "SNOMED_code_description": "Short stature, brachydactyly, obesity, global developmental delay syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1187278006",
+    "SNOMED_code_description": "Spastic paraplegia, severe developmental delay, epilepsy syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1187303004",
+    "SNOMED_code_description": "Progressive spondyloepimetaphyseal dysplasia, short stature, short fourth metatarsals, intellectual disability syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1187304005",
+    "SNOMED_code_description": "Macrocephaly, intellectual disability, neurodevelopmental disorder, small thorax syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1187470001",
+    "SNOMED_code_description": "Autosomal recessive spastic paraplegia type 75 (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1197052008",
+    "SNOMED_code_description": "Mitochondrial deoxyribonucleic acid depletion syndrome encephalomyopathic form with methylmalonic aciduria (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1197148005",
+    "SNOMED_code_description": "Sanjad Sakati syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1197588008",
+    "SNOMED_code_description": "X-linked microcephaly, growth retardation, prognathism, cryptorchidism syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1197591008",
+    "SNOMED_code_description": "Severe intellectual disability, hypotonia, strabismus, coarse face, planovalgus syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1208341008",
+    "SNOMED_code_description": "Severe oculo-renal-cerebellar syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1208344000",
+    "SNOMED_code_description": "Fryns Smeets Thiry syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1208481000",
+    "SNOMED_code_description": "Progressive cerebello-cerebral atrophy (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1208488006",
+    "SNOMED_code_description": "Special AT-rich sequence-binding protein 2-associated syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1208987006",
+    "SNOMED_code_description": "Pleckstrin homology domain interacting protein-related behavioral problems, intellectual disability, obesity, dysmorphic features syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1217228004",
+    "SNOMED_code_description": "X-linked intellectual disability, cerebellar hypoplasia, spondyloepiphyseal dysplasia syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1217229007",
+    "SNOMED_code_description": "Craniofacial dysplasia, short stature, ectodermal anomalies, intellectual disability syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1220589007",
+    "SNOMED_code_description": "Keppen Lubinsky syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1220594007",
+    "SNOMED_code_description": "Pierpont syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1220597000",
+    "SNOMED_code_description": "Retinitis pigmentosa, juvenile cataract, short stature, intellectual disability syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1222656005",
+    "SNOMED_code_description": "Synaptic Ras GTPase activating protein 1-related developmental and epileptic encephalopathy (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1222657001",
+    "SNOMED_code_description": "Prune exopolyphosphatase 1-related neurological syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1222672002",
+    "SNOMED_code_description": "3-methylglutaconic aciduria type 9 (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1222706005",
+    "SNOMED_code_description": "Anterior maxillary protrusion, strabismus, intellectual disability syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1222710008",
+    "SNOMED_code_description": "Neurodevelopmental disorder, craniofacial dysmorphism, cardiac defect, skeletal anomalies syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1228886008",
+    "SNOMED_code_description": "9q33.3q34.11 microdeletion syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1229873009",
+    "SNOMED_code_description": "17q24.2 microdeletion syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1229875002",
+    "SNOMED_code_description": "9q21.13 microdeletion syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1229891004",
+    "SNOMED_code_description": "20q11.2 microdeletion syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1229895008",
+    "SNOMED_code_description": "8q24.3 microdeletion syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1229946007",
+    "SNOMED_code_description": "MAGE family member L2-related Prader-Willi-like syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1230376005",
+    "SNOMED_code_description": "Contactin associated protein 2-related developmental and epileptic encephalopathy (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1236843008",
+    "SNOMED_code_description": "Phosphodiesterase 4D haploinsufficiency syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1237418002",
+    "SNOMED_code_description": "Spastic tetraplegia, thin corpus callosum, progressive postnatal microcephaly syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1237420004",
+    "SNOMED_code_description": "X-linked intellectual disability, global development delay, facial dysmorphism, sacral caudal remnant syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1237421000",
+    "SNOMED_code_description": "Pyrroline-5-carboxylate reductase 2 related microcephaly, progressive leukoencephalopathy (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1237619001",
+    "SNOMED_code_description": "Fatty acyl-coenzyme A reductase 1 deficiency (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1237623009",
+    "SNOMED_code_description": "Congenital insensitivity to pain with severe intellectual disability (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1239331000000100",
+    "SNOMED_code_description": "Significant intellectual disability (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1251453008",
+    "SNOMED_code_description": "Lamb Shaffer syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1254650002",
+    "SNOMED_code_description": "Microcephaly, corpus callosum hypoplasia, intellectual disability, facial dysmorphism syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1254654006",
+    "SNOMED_code_description": "X-linked intellectual disability, hypotonia, movement disorder syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1255319004",
+    "SNOMED_code_description": "Autosomal dominant intellectual disability, craniofacial anomalies, cardiac defects syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1255335006",
+    "SNOMED_code_description": "X-linked intellectual disability, short stature, overweight syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1258972007",
+    "SNOMED_code_description": "Baraitser Winter cerebrofrontofacial syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1260095004",
+    "SNOMED_code_description": "Menke Hennekam syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1260097007",
+    "SNOMED_code_description": "Pumilio RNA binding family member 1-associated developmental disability, ataxia, seizure syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1260128008",
+    "SNOMED_code_description": "Tryptophanyl tRNA synthetase 2, mitochondrial-related combined oxidative phosphorylation defect (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1260143005",
+    "SNOMED_code_description": "Megalencephaly, severe kyphoscoliosis, overgrowth syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1260195002",
+    "SNOMED_code_description": "Glutamate ionotropic receptor NMDA type subunit 2B-related developmental delay, intellectual disability, autism spectrum disorder (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1260390003",
+    "SNOMED_code_description": "Dystonia due to Lesch Nyhan syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1260450002",
+    "SNOMED_code_description": "Infantile multisystem neurologic, endocrine, pancreatic disease (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1269224009",
+    "SNOMED_code_description": "Craniosynostosis, microretrognathia, severe intellectual disability syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1269233006",
+    "SNOMED_code_description": "Posterior-predominant lissencephaly, broad flat pons and medulla-midline crossing defects syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1295485009",
+    "SNOMED_code_description": "Aldehyde dehydrogenase 18 family member A1-related de Barsy syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1295529002",
+    "SNOMED_code_description": "Xp21 deletion syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1299154002",
+    "SNOMED_code_description": "Cyclin dependent kinase 13-related congenital heart defects, intellectual disability, facial dysmorphism syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1300131002",
+    "SNOMED_code_description": "Neurexin 1-related severe neurodevelopmental disorder, motor stereotypies, chronic constipation, sleep-wake cycle disturbance (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1300132009",
+    "SNOMED_code_description": "Clark Baraitser syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1300133004",
+    "SNOMED_code_description": "Kelch like family member 7-related Bohring Opitz-like syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1300188000",
+    "SNOMED_code_description": "Congenital pontocerebellar hypoplasia type 11 (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1300192007",
+    "SNOMED_code_description": "Congenital pontocerebellar hypoplasia type 14 (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1300198006",
+    "SNOMED_code_description": "SWI/SNF related, matrix associated, actin dependent regulator of chromatin, subfamily A, member 2-related blepharophimosis, intellectual disability syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "1393001",
+    "SNOMED_code_description": "Lenz-Majewski hyperostosis syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "14091009",
+    "SNOMED_code_description": "12p partial trisomy syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "17827007",
+    "SNOMED_code_description": "Cross syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "205615000",
+    "SNOMED_code_description": "Trisomy 21- meiotic nondisjunction (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "205616004",
+    "SNOMED_code_description": "Trisomy 21- mitotic nondisjunction mosaicism (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "205699007",
+    "SNOMED_code_description": "Klinefelter's syndrome, XXYY (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "21111006",
+    "SNOMED_code_description": "Complete trisomy 13 syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "21634003",
+    "SNOMED_code_description": "Borjeson-Forssman-Lehmann syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "230312006",
+    "SNOMED_code_description": "Aicardi Goutieres syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "230418006",
+    "SNOMED_code_description": "Lennox-Gastaut syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "230782004",
+    "SNOMED_code_description": "Dysequilibrium syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "232059000",
+    "SNOMED_code_description": "Laurence-Moon syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "234146006",
+    "SNOMED_code_description": "Hennekam lymphangiectasia-lymphedema syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "23501004",
+    "SNOMED_code_description": "Arginase deficiency (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "237614004",
+    "SNOMED_code_description": "Bird-headed dwarfism with progressive ataxia, insulin-resistant diabetes, goiter, and primary gonadal insufficiency (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "237961001",
+    "SNOMED_code_description": "L-2-hydroxyglutaric aciduria (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "238026007",
+    "SNOMED_code_description": "Infantile GM1 gangliosidosis (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "238047006",
+    "SNOMED_code_description": "Beta-D-mannosidosis (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "238048001",
+    "SNOMED_code_description": "Alpha-N-acetylgalactosaminidase deficiency (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "238051008",
+    "SNOMED_code_description": "Sialuria (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "238069004",
+    "SNOMED_code_description": "Acyl-coenzyme A oxidase deficiency (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "238905009",
+    "SNOMED_code_description": "Encephalocraniocutaneous lipomatosis (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "239031000",
+    "SNOMED_code_description": "Orofacial-digital syndrome IV (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "239032007",
+    "SNOMED_code_description": "Berlin syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "24308003",
+    "SNOMED_code_description": "Cystathionine beta-synthase deficiency (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "253133004",
+    "SNOMED_code_description": "Hydrocephalus with anomaly of aqueduct of Sylvius (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "253176002",
+    "SNOMED_code_description": "Gillespie syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "254099008",
+    "SNOMED_code_description": "Desbuquois syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "254123002",
+    "SNOMED_code_description": "Dysosteosclerosis (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "254264002",
+    "SNOMED_code_description": "Partial trisomy 21 in Down's syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "254268004",
+    "SNOMED_code_description": "Partial trisomy 13 in Patau's syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "270890001",
+    "SNOMED_code_description": "Deletion of short arm of chromosome 18 (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "275263003",
+    "SNOMED_code_description": "Klinefelter's syndrome XXXY (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "275264009",
+    "SNOMED_code_description": "Klinefelter's syndrome XXXXY (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "29352008",
+    "SNOMED_code_description": "Thanatophoric dysplasia (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "29692004",
+    "SNOMED_code_description": "Combined molybdoflavoprotein enzyme deficiency (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "297233004",
+    "SNOMED_code_description": "3-Methylglutaconic aciduria type 4 (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "297256008",
+    "SNOMED_code_description": "Glycerol kinase deficiency - isolated (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "3073006",
+    "SNOMED_code_description": "Ruvalcaba syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "31216003",
+    "SNOMED_code_description": "Profound intellectual disability (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "31220004",
+    "SNOMED_code_description": "Cobalamin D disease (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "34566007",
+    "SNOMED_code_description": "Sialic acid storage disease, severe infantile type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "35691006",
+    "SNOMED_code_description": "Combined deficiency of sialidase AND beta galactosidase (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "360943000",
+    "SNOMED_code_description": "Deficiency of carnosinase (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "371045000",
+    "SNOMED_code_description": "Translocation Down syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "38847009",
+    "SNOMED_code_description": "XXXXY syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "389157002",
+    "SNOMED_code_description": "Thanatophoric dysplasia, type 1 (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "389158007",
+    "SNOMED_code_description": "Thanatophoric dysplasia, type 2 (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "401046009",
+    "SNOMED_code_description": "Nicolaides-Baraitser syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "401315004",
+    "SNOMED_code_description": "Smith-Magenis syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "40291001",
+    "SNOMED_code_description": "Mietens syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "40354009",
+    "SNOMED_code_description": "De Lange syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "403554008",
+    "SNOMED_code_description": "Oculocerebrocutaneous syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "403760006",
+    "SNOMED_code_description": "XXYY syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "403770008",
+    "SNOMED_code_description": "Cardio-facio-cutaneous syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "403782004",
+    "SNOMED_code_description": "Ichthyosis follicularis with alopecia and photophobia (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "403838000",
+    "SNOMED_code_description": "Jung syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "40700009",
+    "SNOMED_code_description": "Severe intellectual disability (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "41040004",
+    "SNOMED_code_description": "Complete trisomy 21 syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "412787009",
+    "SNOMED_code_description": "Intellectual disability, congenital heart disease, blepharophimosis, blepharoptosis and hypoplastic teeth (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "416075005",
+    "SNOMED_code_description": "On learning disability register (finding)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "419097006",
+    "SNOMED_code_description": "Glycogen storage disease due to lysosomal associated membrane protein 2 deficiency (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "4199009",
+    "SNOMED_code_description": "18p partial trisomy syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "422437002",
+    "SNOMED_code_description": "X-linked intellectual disability with marfanoid habitus (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "43916004",
+    "SNOMED_code_description": "Mucopolysaccharidosis type VII (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "43929004",
+    "SNOMED_code_description": "Smith-Lemli-Opitz syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "4409006",
+    "SNOMED_code_description": "Adenosylcobalamin and methylcobalamin synthesis defect (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "441944007",
+    "SNOMED_code_description": "Oto-onycho-peroneal syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "442511009",
+    "SNOMED_code_description": "Progressive encephalopathy with edema, hypsarrhythmia and optic atrophy syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "45582004",
+    "SNOMED_code_description": "Rubinstein-Taybi syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "4887000",
+    "SNOMED_code_description": "Hypertyrosinemia, Richner-Hanhart type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "49748000",
+    "SNOMED_code_description": "Succinate-semialdehyde dehydrogenase deficiency (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "508171000000105",
+    "SNOMED_code_description": "Severe learning disability (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "51500006",
+    "SNOMED_code_description": "Complete trisomy 18 syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "54036001",
+    "SNOMED_code_description": "Oto-palato-digital syndrome, type I (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "54954004",
+    "SNOMED_code_description": "Aspartylglucosaminuria (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "56604005",
+    "SNOMED_code_description": "Cohen syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "57917004",
+    "SNOMED_code_description": "Seckel syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "58112007",
+    "SNOMED_code_description": "Mannosidosis, type II (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "58256000",
+    "SNOMED_code_description": "Dihydropteridine reductase deficiency (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "59252009",
+    "SNOMED_code_description": "de Barsey syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "59636002",
+    "SNOMED_code_description": "Pelizaeus-Merzbacher disease, connatal variant (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "61152003",
+    "SNOMED_code_description": "Moderate intellectual disability (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "62311004",
+    "SNOMED_code_description": "Mannosidosis, type I (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "62985007",
+    "SNOMED_code_description": "Hereditary insensitivity to pain with anhidrosis (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "63247009",
+    "SNOMED_code_description": "Williams syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "64716005",
+    "SNOMED_code_description": "Fucosidosis (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "65327002",
+    "SNOMED_code_description": "Mucopolysaccharidosis type I-H (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "65524005",
+    "SNOMED_code_description": "Mannosidosis (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "66351003",
+    "SNOMED_code_description": "Fetal trimethadione syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "66758006",
+    "SNOMED_code_description": "Acrodysostosis (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "66937008",
+    "SNOMED_code_description": "Glycogen storage disease, type III (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "68618008",
+    "SNOMED_code_description": "Rett syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "698290008",
+    "SNOMED_code_description": "X-linked creatine deficiency (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "699298009",
+    "SNOMED_code_description": "Blepharophimosis, intellectual disability syndrome, Say-Barber-Biesecker-Young-Simpson type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "699306003",
+    "SNOMED_code_description": "Chromosome 1p36 deletion syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "699316006",
+    "SNOMED_code_description": "Myhre syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "699669001",
+    "SNOMED_code_description": "Renpenning syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "70173007",
+    "SNOMED_code_description": "5p partial monosomy syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "702327009",
+    "SNOMED_code_description": "Monocarboxylate transporter 8 deficiency (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "702344008",
+    "SNOMED_code_description": "Pitt-Hopkins syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "702354007",
+    "SNOMED_code_description": "X-linked intellectual developmental disorder Christianson type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "702356009",
+    "SNOMED_code_description": "X-linked intellectual disability-psychosis-macroorchidism syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "702357000",
+    "SNOMED_code_description": "Chromosome 2q37 deletion syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "702367005",
+    "SNOMED_code_description": "Genitopatellar syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "702379005",
+    "SNOMED_code_description": "Hypomyelination and congenital cataract (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "702412005",
+    "SNOMED_code_description": "X-linked intellectual deficit-dystonia-dysarthria syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "702416008",
+    "SNOMED_code_description": "X-linked intellectual disability Snyder type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "702418009",
+    "SNOMED_code_description": "Diaphragmatic hernia-exomphalos-hypertelorism syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "702432006",
+    "SNOMED_code_description": "Diaphragmatic hernia, abnormal face and distal limb anomalies (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "702433001",
+    "SNOMED_code_description": "Congenital cataracts, facial dysmorphism and neuropathy (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "702439002",
+    "SNOMED_code_description": "Agenesis of corpus callosum with peripheral neuropathy (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "702816000",
+    "SNOMED_code_description": "Methyl-cytosine phosphate guanine binding protein-2 duplication syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "703389002",
+    "SNOMED_code_description": "Calcium/calmodulin-dependent serine protein kinase related intellectual disability (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "703526007",
+    "SNOMED_code_description": "Progressive epilepsy-intellectual disability syndrome Finnish type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "707276009",
+    "SNOMED_code_description": "Hoyeraal-Hreidarsson syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "709490002",
+    "SNOMED_code_description": "Desmosterolosis (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "711543008",
+    "SNOMED_code_description": "Mandibulofacial dysostosis with microcephaly (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "715342005",
+    "SNOMED_code_description": "Alpha thalassemia X-linked intellectual disability syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "715369006",
+    "SNOMED_code_description": "Autosomal recessive cerebelloparenchymal disorder type 3 (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "715409005",
+    "SNOMED_code_description": "Trigonocephaly C syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "715427008",
+    "SNOMED_code_description": "Acromelic frontonasal dysplasia (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "715428003",
+    "SNOMED_code_description": "Skeletal dysplasia with epilepsy and short stature syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "715438008",
+    "SNOMED_code_description": "Distal partial deletion of long arm of chromosome 11 (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "715441004",
+    "SNOMED_code_description": "McDonough syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "715462003",
+    "SNOMED_code_description": "Microcephalus co-occurrent with cervical spine fusion anomaly (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "715464002",
+    "SNOMED_code_description": "Microcephalus microcornea syndrome of Seemanova type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "715482004",
+    "SNOMED_code_description": "Microcephalic primordial dwarfism of Toriello type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "715487005",
+    "SNOMED_code_description": "Autosomal recessive distal osteolysis syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "715491000",
+    "SNOMED_code_description": "Autosomal recessive spastic paraplegia type 11 (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "715533002",
+    "SNOMED_code_description": "Microcephaly, microphthalmia, ectrodactyly of lower limbs and prognathism syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "715628009",
+    "SNOMED_code_description": "Intellectual disability, truncal obesity, retinal dystrophy and micropenis syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "715951007",
+    "SNOMED_code_description": "Acrocallosal syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "715980003",
+    "SNOMED_code_description": "Encephalopathy due to sulfite oxidase deficiency (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "715981004",
+    "SNOMED_code_description": "Autosomal recessive primary microcephaly (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "715983001",
+    "SNOMED_code_description": "Ring chromosome 8 syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "715989002",
+    "SNOMED_code_description": "Congenital cataract with intellectual disability and anal atresia and urinary defect syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "716024001",
+    "SNOMED_code_description": "Goniodysgenesis with intellectual disability and short stature syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "716089008",
+    "SNOMED_code_description": "Craniofacial digital and genital anomalies syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "716090004",
+    "SNOMED_code_description": "Short stature with craniofacial anomalies and genital hypoplasia syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "716096005",
+    "SNOMED_code_description": "Hypospadias and intellectual disability syndrome Goldblatt type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "716107009",
+    "SNOMED_code_description": "Early onset parkinsonism and intellectual disability syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "716108004",
+    "SNOMED_code_description": "Macrocephaly with spastic paraplegia and dysmorphism syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "716112005",
+    "SNOMED_code_description": "Microcephaly with deafness and intellectual disability syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "716174001",
+    "SNOMED_code_description": "Oculocerebral hypopigmentation syndrome of Preus type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "716189005",
+    "SNOMED_code_description": "Osteoporosis and macrocephaly with blindness and joint hypermobility syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "716191002",
+    "SNOMED_code_description": "Alopecia and intellectual disability syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "716200002",
+    "SNOMED_code_description": "Arginine vasopressin resistance, intracranial calcification, short stature, facial dysmorphism syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "716334004",
+    "SNOMED_code_description": "Intellectual disability and short stature with hand contracture and genital anomaly syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "716381003",
+    "SNOMED_code_description": "8p23.1 microdeletion syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "716387004",
+    "SNOMED_code_description": "2q31.1 microdeletion syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "716456000",
+    "SNOMED_code_description": "3q29 microdeletion syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "716515000",
+    "SNOMED_code_description": "1q41q42 microdeletion syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "716683005",
+    "SNOMED_code_description": "17q21.31 microduplication syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "716862002",
+    "SNOMED_code_description": "Proteus like syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "716996008",
+    "SNOMED_code_description": "Hypoplasia of corpus callosum, intellectual disability, adducted thumbs, spasticity, hydrocephalus syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "716997004",
+    "SNOMED_code_description": "Joubert syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "716998009",
+    "SNOMED_code_description": "Joubert syndrome with ocular defect (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "716999001",
+    "SNOMED_code_description": "Joubert syndrome with renal defect (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "717049005",
+    "SNOMED_code_description": "Trisomy 17p (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "717157006",
+    "SNOMED_code_description": "Trisomy 10p (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "717181004",
+    "SNOMED_code_description": "Hyperprolinemia type 2 (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "717222003",
+    "SNOMED_code_description": "Microphthalmia with ankyloblepharon and intellectual disability syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "717335009",
+    "SNOMED_code_description": "Mosaic trisomy 8 syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "717338006",
+    "SNOMED_code_description": "Koolen De Vries syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "717632002",
+    "SNOMED_code_description": "X-linked lissencephaly with agenesis of corpus callosum and genital anomaly syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "717633007",
+    "SNOMED_code_description": "Distal monosomy 1q syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "717763008",
+    "SNOMED_code_description": "Chudley Lowry Hoar syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "717822006",
+    "SNOMED_code_description": "Goldberg Shprintzen megacolon syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "717824007",
+    "SNOMED_code_description": "Progressive arterial occlusive disease, hypertension, heart defect, bone fragility, brachysyndactyly syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "717887003",
+    "SNOMED_code_description": "Biemond syndrome type 2 (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "717945001",
+    "SNOMED_code_description": "Brain anomaly, severe intellectual disability, ectodermal dysplasia, skeletal deformity, ear anomaly, kidney dysplasia syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "717977003",
+    "SNOMED_code_description": "Lissencephaly syndrome Norman Roberts type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "718188007",
+    "SNOMED_code_description": "8p inverted duplication deletion syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "718189004",
+    "SNOMED_code_description": "Recombinant chromosome 8 syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "718212006",
+    "SNOMED_code_description": "Mitochondrial encephalocardiomyopathy due to transmembrane protein 70 mutation (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "718226002",
+    "SNOMED_code_description": "Wolf Hirschhorn syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "718228001",
+    "SNOMED_code_description": "Fetal iodine syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "718393002",
+    "SNOMED_code_description": "Atypical Rett syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "718556007",
+    "SNOMED_code_description": "Cranio-cerebello-cardiac dysplasia syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "718558008",
+    "SNOMED_code_description": "Mevalonic aciduria (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "718573009",
+    "SNOMED_code_description": "Achalasia microcephaly syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "718577005",
+    "SNOMED_code_description": "X-linked intellectual disability Atkin type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "718615003",
+    "SNOMED_code_description": "8q21.11 microdeletion syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "718680001",
+    "SNOMED_code_description": "Oro-facial digital syndrome type 9 (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "718681002",
+    "SNOMED_code_description": "Oro-facial digital syndrome type 11 (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "718687003",
+    "SNOMED_code_description": "Distal monosomy 10q syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "718688008",
+    "SNOMED_code_description": "Distal monosomy 6p (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "718766002",
+    "SNOMED_code_description": "Spondyloepiphyseal dysplasia, craniosynostosis, cleft palate, cataract and intellectual disability syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "718845002",
+    "SNOMED_code_description": "X-linked intellectual disability with ataxia and apraxia syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "718846001",
+    "SNOMED_code_description": "X-linked intellectual disability Zorick type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "718847005",
+    "SNOMED_code_description": "X-linked neurodegenerative syndrome Hamel type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "718848000",
+    "SNOMED_code_description": "Fried syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "718849008",
+    "SNOMED_code_description": "X-linked neurodegenerative syndrome Bertini type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "718880003",
+    "SNOMED_code_description": "Zellweger-like syndrome without peroxisomal anomaly (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "718881004",
+    "SNOMED_code_description": "Chromosome Xq27.3q28 duplication syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "718897009",
+    "SNOMED_code_description": "X-linked intellectual disability Seemanova type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "718900002",
+    "SNOMED_code_description": "Syndromic X-linked intellectual disability type 11 (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "718905007",
+    "SNOMED_code_description": "X-linked intellectual disability Shrimpton type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "718908009",
+    "SNOMED_code_description": "X-linked intellectual disability Siderius type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "718909001",
+    "SNOMED_code_description": "X-linked intellectual disability Stevenson type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "718910006",
+    "SNOMED_code_description": "X-linked intellectual disability Stocco Dos Santos type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "718911005",
+    "SNOMED_code_description": "X-linked intellectual disability Stoll type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "718912003",
+    "SNOMED_code_description": "X-linked intellectual disability Turner type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "718914002",
+    "SNOMED_code_description": "X-linked intellectual disability Van Esch type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719009006",
+    "SNOMED_code_description": "X-linked intellectual disability Wilson type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719010001",
+    "SNOMED_code_description": "X-linked intellectual disability Schimke type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719011002",
+    "SNOMED_code_description": "X-linked intellectual disability Pai type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719012009",
+    "SNOMED_code_description": "X-linked intellectual disability Miles Carpenter type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719013004",
+    "SNOMED_code_description": "X-linked intellectual disability Cilliers type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719016007",
+    "SNOMED_code_description": "X-linked intellectual disability Cantagrel type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719017003",
+    "SNOMED_code_description": "X-linked intellectual disability Armfield type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719018008",
+    "SNOMED_code_description": "X-linked intellectual disability Abidi type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719020006",
+    "SNOMED_code_description": "Pallister W syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719043002",
+    "SNOMED_code_description": "Vertebral abnormality, anal atresia, cardiac abnormality, tracheo-esophageal fistula, renal anomaly, limb defect syndrome with hydrocephalus (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719046005",
+    "SNOMED_code_description": "12q14 microdeletion syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719047001",
+    "SNOMED_code_description": "14q11.2 microdeletion syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719069008",
+    "SNOMED_code_description": "Shprintzen Goldberg craniosynostosis syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719097002",
+    "SNOMED_code_description": "Branchioskeletogenital syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719102004",
+    "SNOMED_code_description": "Congenital cataract with ataxia and deafness syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719136005",
+    "SNOMED_code_description": "X-linked intellectual disability with cerebellar hypoplasia syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719137001",
+    "SNOMED_code_description": "X-linked intellectual disability with corpus callosum agenesis and spastic quadriparesis syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719138006",
+    "SNOMED_code_description": "X-linked intellectual disability with cubitus valgus and dysmorphism syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719139003",
+    "SNOMED_code_description": "X-linked Dandy-Walker malformation with intellectual disability, basal ganglia disease and seizure syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719140001",
+    "SNOMED_code_description": "X-linked intellectual disability with dysmorphism and cerebral atrophy syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719155005",
+    "SNOMED_code_description": "X-linked intellectual disability and epilepsy with progressive joint contracture and facial dysmorphism syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719156006",
+    "SNOMED_code_description": "X-linked intellectual disability with hypogammaglobulinemia and progressive neurological deterioration syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719157002",
+    "SNOMED_code_description": "X-linked intellectual disability and hypotonia with facial dysmorphism and aggressive behavior syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719160009",
+    "SNOMED_code_description": "Syndromic X-linked intellectual disability type 7 (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719161008",
+    "SNOMED_code_description": "Syndromic X-linked intellectual disability due to jumonji at-rich interactive domain 1c mutation (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719162001",
+    "SNOMED_code_description": "Radioulnar synostosis with microcephaly and scoliosis syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719212004",
+    "SNOMED_code_description": "Smith Fineman Myers syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719378009",
+    "SNOMED_code_description": "Microcephalus with brachydactyly and kyphoscoliosis syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719380003",
+    "SNOMED_code_description": "Microcephalus cardiomyopathy syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719396000",
+    "SNOMED_code_description": "Microcephalus and intellectual disability with phalangeal and neurological anomaly syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719403003",
+    "SNOMED_code_description": "Leukoencephalopathy co-occurrent with bilateral anterior temporal lobe cysts (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719427001",
+    "SNOMED_code_description": "15q11q13 microduplication syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719450007",
+    "SNOMED_code_description": "Disorder of sex development with intellectual disability syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719574007",
+    "SNOMED_code_description": "14q12 microdeletion syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719575008",
+    "SNOMED_code_description": "15q14 microdeletion syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719576009",
+    "SNOMED_code_description": "16p11.2p12.2 microdeletion syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719577000",
+    "SNOMED_code_description": "16p13.11 microdeletion syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719599008",
+    "SNOMED_code_description": "19q13.11 microdeletion syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719600006",
+    "SNOMED_code_description": "1p21.3 microdeletion syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719646006",
+    "SNOMED_code_description": "8p11.2 deletion syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719649004",
+    "SNOMED_code_description": "1q44 microdeletion syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719651000",
+    "SNOMED_code_description": "2p15p16.1 microdeletion syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719652007",
+    "SNOMED_code_description": "2p21 microdeletion syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719657001",
+    "SNOMED_code_description": "2q23.1 microdeletion syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719658006",
+    "SNOMED_code_description": "2q24 microdeletion syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719659003",
+    "SNOMED_code_description": "2q32q33 microdeletion syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719660008",
+    "SNOMED_code_description": "4q21 microdeletion syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719661007",
+    "SNOMED_code_description": "5q14.3 microdeletion syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719662000",
+    "SNOMED_code_description": "6p22 microdeletion syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719663005",
+    "SNOMED_code_description": "6q25 microdeletion syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719665003",
+    "SNOMED_code_description": "5q35 microduplication syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719666002",
+    "SNOMED_code_description": "6q terminal deletion syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719686003",
+    "SNOMED_code_description": "Distal monosomy 10p (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719688002",
+    "SNOMED_code_description": "Multiple epiphyseal dysplasia Al-Gazali type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719800009",
+    "SNOMED_code_description": "Deafness, onychodystrophy, osteodystrophy, intellectual disability syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719808002",
+    "SNOMED_code_description": "Chromosome Xp11.3 microdeletion syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719810000",
+    "SNOMED_code_description": "X-linked intellectual disability with seizure and psoriasis syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719811001",
+    "SNOMED_code_description": "X-linked intellectual disability Cabezas type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719812008",
+    "SNOMED_code_description": "X-linked intellectual disability with plagiocephaly syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719819004",
+    "SNOMED_code_description": "Xeroderma pigmentosum and Cockayne syndrome complex (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719824001",
+    "SNOMED_code_description": "Vici syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719825000",
+    "SNOMED_code_description": "X-linked intellectual disability, macrocephaly, macroorchidism syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719826004",
+    "SNOMED_code_description": "X-linked intellectual disability with acromegaly and hyperactivity syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719834005",
+    "SNOMED_code_description": "Wilson Turner syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719909009",
+    "SNOMED_code_description": "Chromosome Xq28 trisomy (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "719947004",
+    "SNOMED_code_description": "Craniofacial dysmorphism with coloboma of eye and corpus callosum agenesis syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "720401009",
+    "SNOMED_code_description": "Cystic fibrosis with gastritis and megaloblastic anemia syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "720408003",
+    "SNOMED_code_description": "Acrofrontofacionasal dysostosis (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "720419000",
+    "SNOMED_code_description": "Acrofacial dysostosis Catania type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "720468000",
+    "SNOMED_code_description": "Aniridia and intellectual disability syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "720517001",
+    "SNOMED_code_description": "Ataxia with deafness and intellectual disability syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "720520009",
+    "SNOMED_code_description": "Attenuated ChÃ©diak-Higashi syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "720523006",
+    "SNOMED_code_description": "Autosomal recessive limb girdle muscular dystrophy type 2K (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "720635002",
+    "SNOMED_code_description": "Cerebro-facio-thoracic dysplasia (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "720639008",
+    "SNOMED_code_description": "Coloboma, congenital heart disease, ichthyosiform dermatosis, intellectual disability ear anomaly syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "720748007",
+    "SNOMED_code_description": "Aural atresia with multiple congenital anomalies and intellectual disability syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "720815000",
+    "SNOMED_code_description": "Capra DeMarco syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "720851007",
+    "SNOMED_code_description": "Chondrodysplasia with disorder of sex development syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "720941007",
+    "SNOMED_code_description": "Asparagine-linked glycosylation 1 congenital disorder of glycosylation (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "720954000",
+    "SNOMED_code_description": "Filippi syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "720955004",
+    "SNOMED_code_description": "Fine Lubinsky syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "720957007",
+    "SNOMED_code_description": "Deafness with skeletal dysplasia and lip granuloma syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "720978005",
+    "SNOMED_code_description": "Asparagine-linked glycosylation 9 congenital disorder of glycosylation (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "720979002",
+    "SNOMED_code_description": "Alopecia, contracture, dwarfism, intellectual disability syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "720980004",
+    "SNOMED_code_description": "Alopecia, psychomotor epilepsy, periodontal pyorrhea, intellectual disability syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "720981000",
+    "SNOMED_code_description": "Alopecia and intellectual disability with hypergonadotropic hypogonadism syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "720982007",
+    "SNOMED_code_description": "Alport syndrome, intellectual disability, midface hypoplasia, elliptocytosis syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "720987001",
+    "SNOMED_code_description": "Aniridia, ptosis, intellectual disability, familial obesity syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "721007005",
+    "SNOMED_code_description": "Hair defect with photosensitivity and intellectual disability syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "721008000",
+    "SNOMED_code_description": "Hall Riggs syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "721017000",
+    "SNOMED_code_description": "Postaxial polydactyly and intellectual disability syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "721085000",
+    "SNOMED_code_description": "Deafness, enamel hypoplasia, nail defect syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "721086004",
+    "SNOMED_code_description": "Deafness, genital anomaly, metacarpal and metatarsal synostosis syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "721087008",
+    "SNOMED_code_description": "Deafness and intellectual disability Martin Probst type syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "721089006",
+    "SNOMED_code_description": "Dentinogenesis imperfecta, short stature, hearing loss, intellectual disability syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "721092005",
+    "SNOMED_code_description": "Developmental malformation, deafness, dystonia syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "721099001",
+    "SNOMED_code_description": "Adult polyglucosan body disease (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "721146009",
+    "SNOMED_code_description": "Intellectual disability, epilepsy, bulbous nose syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "721147000",
+    "SNOMED_code_description": "Hidrotic ectodermal dysplasia Halal type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "721207002",
+    "SNOMED_code_description": "Seizure, sensorineural deafness, ataxia, intellectual disability, electrolyte imbalance syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "721208007",
+    "SNOMED_code_description": "Ectodermal dysplasia with blindness syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "721224008",
+    "SNOMED_code_description": "Holmes Gang syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "721231007",
+    "SNOMED_code_description": "Hydrocephalus with obesity and hypogonadism syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "721841001",
+    "SNOMED_code_description": "Hypogonadism with mitral valve prolapse and intellectual disability syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "721847002",
+    "SNOMED_code_description": "Joubert syndrome with congenital hepatic fibrosis (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "721862000",
+    "SNOMED_code_description": "Joubert syndrome with oculorenal defect (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "721875000",
+    "SNOMED_code_description": "Juberg Marsidi syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "721881008",
+    "SNOMED_code_description": "Microduplication Xp11.22p11.23 syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "721973006",
+    "SNOMED_code_description": "Lipodystrophy, intellectual disability, deafness syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "722002002",
+    "SNOMED_code_description": "Intellectual disability, balding, patella luxation, acromicria syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "722003007",
+    "SNOMED_code_description": "Intellectual disability with cataract and kyphosis syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "722031003",
+    "SNOMED_code_description": "Kapur Toriello syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "722033000",
+    "SNOMED_code_description": "Macrocephaly, short stature, paraplegia syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "722035007",
+    "SNOMED_code_description": "Intellectual disability, enteropathy, deafness, peripheral neuropathy, ichthyosis, keratoderma syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "722037004",
+    "SNOMED_code_description": "Intellectual disability, epileptic seizures, hypogonadism and hypogenitalism, microcephaly, obesity syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "722055008",
+    "SNOMED_code_description": "Oculopalatocerebral syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "722056009",
+    "SNOMED_code_description": "Oculocerebrofacial syndrome Kaufman type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "722065002",
+    "SNOMED_code_description": "Okamoto syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "722110003",
+    "SNOMED_code_description": "Osteogenesis imperfecta, retinopathy, seizures, intellectual disability syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "722111004",
+    "SNOMED_code_description": "Osteopenia, myopia, hearing loss, intellectual disability, facial dysmorphism syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "722209002",
+    "SNOMED_code_description": "Spastic paraplegia, intellectual disability, palmoplantar hyperkeratosis syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "722213009",
+    "SNOMED_code_description": "Severe X-linked intellectual disability Gustavson type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "722231005",
+    "SNOMED_code_description": "Perlman syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "722282008",
+    "SNOMED_code_description": "Agenesis of corpus callosum, intellectual disability, coloboma, micrognathia syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "722375007",
+    "SNOMED_code_description": "Bamforth Lazarus syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "722379001",
+    "SNOMED_code_description": "Congenital cataract with hypertrichosis and intellectual disability syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "722380003",
+    "SNOMED_code_description": "Congenital cataract with intellectual disability and hypogonadotropic hypogonadism syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "722381004",
+    "SNOMED_code_description": "Congenital cataract, nephropathy, encephalopathy syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "722385008",
+    "SNOMED_code_description": "Cerebral dysgenesis, neuropathy, ichthyosis, palmoplantar keratoderma syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "722451006",
+    "SNOMED_code_description": "Gomez Lopez Hernandez syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "722454003",
+    "SNOMED_code_description": "Intellectual disability, craniofacial dysmorphism, hypogonadism, diabetes mellitus syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "722455002",
+    "SNOMED_code_description": "Intellectual disability, hypoplastic corpus callosum, preauricular tag syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "722456001",
+    "SNOMED_code_description": "Intellectual disability, developmental delay, contracture syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "722458000",
+    "SNOMED_code_description": "Matthew Wood syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "722459008",
+    "SNOMED_code_description": "Male hypergonadotropic hypogonadism, intellectual disability, skeletal anomaly syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "722478008",
+    "SNOMED_code_description": "Skeletal dysplasia with intellectual disability syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "723304001",
+    "SNOMED_code_description": "Microcephaly, seizure, intellectual disability, heart disease syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "723332005",
+    "SNOMED_code_description": "Isodicentric chromosome 15 syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "723333000",
+    "SNOMED_code_description": "Faciocardiorenal syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "723336008",
+    "SNOMED_code_description": "Fallot complex with intellectual disability and growth delay syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "723403008",
+    "SNOMED_code_description": "Microbrachycephaly, ptosis, cleft lip syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "723410002",
+    "SNOMED_code_description": "N syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "723441001",
+    "SNOMED_code_description": "Non-progressive cerebellar ataxia with intellectual disability (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "723501008",
+    "SNOMED_code_description": "Renier Gabreels Jasper syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "723504000",
+    "SNOMED_code_description": "Ramos Arroyo syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "723676007",
+    "SNOMED_code_description": "Severe intellectual disability, epilepsy, anal anomaly, distal phalangeal hypoplasia syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "723824005",
+    "SNOMED_code_description": "Autosomal recessive spastic paraplegia type 54 (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "723994004",
+    "SNOMED_code_description": "Seizures and intellectual disability due to hydroxylysinuria syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "724001005",
+    "SNOMED_code_description": "Retinitis pigmentosa, intellectual disability, deafness, hypogenitalism syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "724070005",
+    "SNOMED_code_description": "Paternal 20q13.2q13.3 microdeletion syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "724091002",
+    "SNOMED_code_description": "Neuroectodermal melanolysosomal disease (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "724096007",
+    "SNOMED_code_description": "Congenital disorder of glycosylation type 1f (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "724098008",
+    "SNOMED_code_description": "Monosomy 9q22.3 syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "724174003",
+    "SNOMED_code_description": "Moebius syndrome, axonal neuropathy, hypogonadotropic hypogonadism syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "724207001",
+    "SNOMED_code_description": "Kleefstra syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "724228005",
+    "SNOMED_code_description": "Infantile choroidocerebral calcification syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "724385009",
+    "SNOMED_code_description": "Growth delay due to insulin-like growth factor type 1 deficiency (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "725029001",
+    "SNOMED_code_description": "Frontonasal dysplasia with alopecia and genital anomaly syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "725140007",
+    "SNOMED_code_description": "Temple Baraitser syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "725163002",
+    "SNOMED_code_description": "X-linked spasticity, intellectual disability, epilepsy syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "725289009",
+    "SNOMED_code_description": "5-amino-4-imidazole carboxamide ribosiduria (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "725296006",
+    "SNOMED_code_description": "Mucolipidosis type IV (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "725461009",
+    "SNOMED_code_description": "Microcephalic osteodysplastic primordial dwarfism types I and III (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "725906006",
+    "SNOMED_code_description": "Intellectual disability Buenos Aires type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "725908007",
+    "SNOMED_code_description": "Neurofaciodigitorenal syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "725912001",
+    "SNOMED_code_description": "X-linked intellectual disability Brooks type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "726031001",
+    "SNOMED_code_description": "Cerebellar ataxia, intellectual disability, optic atrophy, skin abnormalities syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "726606003",
+    "SNOMED_code_description": "Autosomal recessive spastic paraplegia type 32 (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "726670008",
+    "SNOMED_code_description": "Weaver Williams syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "726709001",
+    "SNOMED_code_description": "Intellectual disability, cataract, calcified pinna, myopathy syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "726723004",
+    "SNOMED_code_description": "Ring chromosome 13 syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "726727003",
+    "SNOMED_code_description": "X-linked intellectual disability Hedera type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "726732002",
+    "SNOMED_code_description": "X-linked intellectual disability Nascimento type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "732246009",
+    "SNOMED_code_description": "X-linked intellectual disability, limb spasticity, retinal dystrophy, arginine vasopressin deficiency (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "732251003",
+    "SNOMED_code_description": "Cortical blindness, intellectual disability, polydactyly syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "73284007",
+    "SNOMED_code_description": "Marshall-Smith syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "732932004",
+    "SNOMED_code_description": "Autosomal recessive spastic paraplegia type 18 (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "732954002",
+    "SNOMED_code_description": "Osteopenia, intellectual disability, sparse hair syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "732961003",
+    "SNOMED_code_description": "Branchial dysplasia, intellectual disability, inguinal hernia syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "733031004",
+    "SNOMED_code_description": "Epilepsy, microcephaly, skeletal dysplasia syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "733032006",
+    "SNOMED_code_description": "Epilepsy telangiectasia syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "733037000",
+    "SNOMED_code_description": "German syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "733044009",
+    "SNOMED_code_description": "Dermatoleukodystrophy (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "733049004",
+    "SNOMED_code_description": "Encephalopathy, intracerebral calcification, retinal degeneration syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "733072002",
+    "SNOMED_code_description": "Alaninuria, microcephaly, dwarfism, enamel hypoplasia, diabetes mellitus syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "733085004",
+    "SNOMED_code_description": "Congenital disorder of glycosylation type 1p (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "733086003",
+    "SNOMED_code_description": "Pseudoprogeria syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "733089005",
+    "SNOMED_code_description": "Spastic paraplegia, nephritis, deafness syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "733090001",
+    "SNOMED_code_description": "Microcephalus, digital anomaly, intellectual disability syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "733097003",
+    "SNOMED_code_description": "Ichthyosis, intellectual disability, dwarfism, renal impairment syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "733110004",
+    "SNOMED_code_description": "Van den Bosch syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "733111000",
+    "SNOMED_code_description": "Congenital disorder of glycosylation type 1w (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "733112007",
+    "SNOMED_code_description": "Congenital disorder of glycosylation type 1x (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "733115009",
+    "SNOMED_code_description": "Congenital disorder of glycosylation type 1y (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "733117001",
+    "SNOMED_code_description": "Thumb stiffness, brachydactyly, intellectual disability syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "733417008",
+    "SNOMED_code_description": "Facial dysmorphism, macrocephaly, myopia, Dandy-Walker malformation syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "733419006",
+    "SNOMED_code_description": "Metaphyseal dysostosis, intellectual disability, conductive deafness syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "733450008",
+    "SNOMED_code_description": "Carbohydrate deficient glycoprotein syndrome type 2 due to deficiency of mannosidase alpha class 1B member 1 (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "733455003",
+    "SNOMED_code_description": "Spastic paraplegia, glaucoma, intellectual disability syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "733520002",
+    "SNOMED_code_description": "20q13.33 microdeletion syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "733522005",
+    "SNOMED_code_description": "Megalocornea with intellectual disability syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "733601006",
+    "SNOMED_code_description": "Congenital disorder of glycosylation type 1q (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "733605002",
+    "SNOMED_code_description": "XY type gonadal dysgenesis with associated anomalies syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "733625003",
+    "SNOMED_code_description": "48,XYYY syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "734016004",
+    "SNOMED_code_description": "17p11.2 microduplication syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "734017008",
+    "SNOMED_code_description": "Ectodermal dysplasia, intellectual disability, central nervous system malformation syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "734028007",
+    "SNOMED_code_description": "49,XYYYY syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "734029004",
+    "SNOMED_code_description": "Distal 22q11.2 microdeletion syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "734349003",
+    "SNOMED_code_description": "Alpha-thalassemia intellectual disability syndrome linked to chromosome 16 (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "74008005",
+    "SNOMED_code_description": "Partial trisomy of short arm of chromosome 5 (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "74653006",
+    "SNOMED_code_description": "Cobalamin C disease (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "763136000",
+    "SNOMED_code_description": "Charcot-Marie-Tooth disease, deafness, intellectual disability syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "763186006",
+    "SNOMED_code_description": "Grubben, De Cock, Borghgraef syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "763278004",
+    "SNOMED_code_description": "Facial dysmorphism, cleft palate, loose skin syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "763320005",
+    "SNOMED_code_description": "Craniofaciofrontodigital syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "763344007",
+    "SNOMED_code_description": "Cerebellar ataxia, intellectual disability, oculomotor apraxia, cerebellar cysts syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "763350002",
+    "SNOMED_code_description": "Intellectual disability, obesity, brain malformation, facial dysmorphism syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "763404001",
+    "SNOMED_code_description": "Ichthyosis, alopecia, eclabion, ectropion, intellectual disability syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "763529005",
+    "SNOMED_code_description": "Distal monosomy 7q36 syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "763530000",
+    "SNOMED_code_description": "Distal monosomy 9p syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "763615003",
+    "SNOMED_code_description": "Aortic arch anomaly, facial dysmorphism, intellectual disability syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "763618001",
+    "SNOMED_code_description": "Wiedemann Steiner syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "763626009",
+    "SNOMED_code_description": "Intellectual disability due to nutritional deficiency (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "763665007",
+    "SNOMED_code_description": "Craniodigital syndrome and intellectual disability syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "763717004",
+    "SNOMED_code_description": "Sporadic fetal brain disruption sequence (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "763722004",
+    "SNOMED_code_description": "Hypotonia, speech impairment, severe cognitive delay syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "763741001",
+    "SNOMED_code_description": "Intellectual disability, alacrima, achalasia syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "763742008",
+    "SNOMED_code_description": "Intellectual disability, polydactyly, uncombable hair syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "763743003",
+    "SNOMED_code_description": "Intellectual disability, spasticity, ectrodactyly syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "763744009",
+    "SNOMED_code_description": "Intellectual disability, brachydactyly, Pierre Robin syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "763745005",
+    "SNOMED_code_description": "Intellectual disability Wolff type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "763773007",
+    "SNOMED_code_description": "Macrocephaly and developmental delay syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "763795006",
+    "SNOMED_code_description": "Malan overgrowth syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "763797003",
+    "SNOMED_code_description": "Agenesis of corpus callosum and abnormal genitalia syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "763860004",
+    "SNOMED_code_description": "Otofaciocervical syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "763861000",
+    "SNOMED_code_description": "Pachygyria, intellectual disability, epilepsy syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "764455002",
+    "SNOMED_code_description": "Cognitive impairment, coarse facies, heart defects, obesity, pulmonary involvement, short stature, skeletal dysplasia syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "764466009",
+    "SNOMED_code_description": "Mosaic trisomy 14 syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "764711007",
+    "SNOMED_code_description": "Xq12-q13.3 duplication syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "764861005",
+    "SNOMED_code_description": "Intellectual disability Birk-Barel type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "764950001",
+    "SNOMED_code_description": "Cryptorchidism, arachnodactyly, intellectual disability syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "764959000",
+    "SNOMED_code_description": "Intellectual disability, myopathy, short stature, endocrine defect syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "764989007",
+    "SNOMED_code_description": "Mosaic trisomy 9 syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "765089003",
+    "SNOMED_code_description": "Focal epilepsy, intellectual disability, cerebro-cerebellar malformation syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "765142003",
+    "SNOMED_code_description": "Proximal 16p11.2 microduplication syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "765325002",
+    "SNOMED_code_description": "Peripheral demyelinating neuropathy, central dysmyelinating leukodystrophy, Waardenburg syndrome, Hirschsprung disease (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "765434008",
+    "SNOMED_code_description": "Human immunodeficiency virus type I enhancer binding protein 2 related intellectual disability (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "765471005",
+    "SNOMED_code_description": "X-linked intellectual disability, hypogonadism, ichthyosis, obesity, short stature syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "765753004",
+    "SNOMED_code_description": "Autosomal recessive spastic paraplegia type 45 (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "765758008",
+    "SNOMED_code_description": "Microcephalic primordial dwarfism Montreal type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "765761009",
+    "SNOMED_code_description": "Brachydactyly, mesomelia, intellectual disability, heart defect syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "766051001",
+    "SNOMED_code_description": "Distal trisomy 17q syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "766716004",
+    "SNOMED_code_description": "Monosomy 13q34 syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "766753005",
+    "SNOMED_code_description": "Nijmegen breakage syndrome-like disorder (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "766760004",
+    "SNOMED_code_description": "Small ring X chromosome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "766870005",
+    "SNOMED_code_description": "Epiphyseal dysplasia, hearing loss, dysmorphism syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "766871009",
+    "SNOMED_code_description": "Diencephalic mesencephalic junction dysplasia (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "766874001",
+    "SNOMED_code_description": "Cono-spondylar dysplasia (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "768473009",
+    "SNOMED_code_description": "Purine rich element binding protein A syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "768677000",
+    "SNOMED_code_description": "Protein phosphatase 2 regulatory subunit b (b56) delta-related intellectual disability (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "76880004",
+    "SNOMED_code_description": "Angelman syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "768927001",
+    "SNOMED_code_description": "Trisomy 1q syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "770401007",
+    "SNOMED_code_description": "10q22.3q23.3 microdeletion syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "770411000",
+    "SNOMED_code_description": "Distal monosomy 19p13.3 (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "770564004",
+    "SNOMED_code_description": "Microcephalic primordial dwarfism Alazami type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "770566002",
+    "SNOMED_code_description": "Monosomy 13q14 syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "770595006",
+    "SNOMED_code_description": "Ring chromosome 12 syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "770663003",
+    "SNOMED_code_description": "Tetrasomy 11q24.1 (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "770678005",
+    "SNOMED_code_description": "Progressive encephalopathy with edema, hypsarrhythmia, and optic atrophy-like syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "770679002",
+    "SNOMED_code_description": "Polyneuropathy, intellectual disability, acromicria, premature menopause syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "770719004",
+    "SNOMED_code_description": "3q27.3 microdeletion syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "770750002",
+    "SNOMED_code_description": "Intellectual disability, seizures, macrocephaly, obesity syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "770755007",
+    "SNOMED_code_description": "Intellectual disability, seizures, hypotonia, ophthalmologic, skeletal anomalies syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "770901001",
+    "SNOMED_code_description": "Autosomal recessive intellectual disability, motor dysfunction, multiple joint contracture syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "770907002",
+    "SNOMED_code_description": "Kagami Ogata syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "770908007",
+    "SNOMED_code_description": "49,XXXYY syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "770948004",
+    "SNOMED_code_description": "Rhizomelic syndrome Urbach type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "771072001",
+    "SNOMED_code_description": "Monosomy 9p (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "771149000",
+    "SNOMED_code_description": "Hepatic fibrosis, renal cyst, intellectual disability syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "771178004",
+    "SNOMED_code_description": "Edinburgh malformation syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "771262009",
+    "SNOMED_code_description": "Pseudoleprechaunism syndrome Patterson type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "771336003",
+    "SNOMED_code_description": "Polymicrogyria with optic nerve hypoplasia (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "771337007",
+    "SNOMED_code_description": "1q21.1 microduplication syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "771472009",
+    "SNOMED_code_description": "Developmental and speech delay due to SRY-box 5 deficiency (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "771512003",
+    "SNOMED_code_description": "Autism spectrum disorder due to AUTS2 activator of transcription and developmental regulator deficiency (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "771516000",
+    "SNOMED_code_description": "Solute carrier family 35 member A2 congenital disorder of glycosylation (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "772127009",
+    "SNOMED_code_description": "White Sutton syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "772224009",
+    "SNOMED_code_description": "Warburg micro syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "773230003",
+    "SNOMED_code_description": "Cyclin-dependent kinase-like 5 deficiency (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "773274001",
+    "SNOMED_code_description": "X-linked intellectual disability, craniofacioskeletal syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "773325004",
+    "SNOMED_code_description": "Distal 7q11.23 microduplication syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "773329005",
+    "SNOMED_code_description": "CK syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "773394007",
+    "SNOMED_code_description": "Autosomal recessive frontotemporal pachygyria (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "773400009",
+    "SNOMED_code_description": "Severe feeding difficulties, failure to thrive, microcephaly due to ASXL transcriptional regulator 3 deficiency syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "773405004",
+    "SNOMED_code_description": "Intellectual disability with strabismus syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "773419004",
+    "SNOMED_code_description": "Severe intellectual disability, short stature, behavioral abnormalities, facial dysmorphism syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "773498006",
+    "SNOMED_code_description": "Autosomal recessive cerebellar ataxia, epilepsy, intellectual disability syndrome due to TUD deficiency (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "773581009",
+    "SNOMED_code_description": "Intellectual disability, craniofacial dysmorphism, cryptorchidism syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "773587008",
+    "SNOMED_code_description": "X-linked intellectual disability, cardiomegaly, congestive heart failure syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "773663004",
+    "SNOMED_code_description": "Rapid-onset childhood obesity, hypothalamic dysfunction, hypoventilation, autonomic dysregulation syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "773665006",
+    "SNOMED_code_description": "Hypogonadotropic hypogonadism, severe microcephaly, sensorineural hearing loss, dysmorphism syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "773670004",
+    "SNOMED_code_description": "Distal Xq28 microduplication syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "773699009",
+    "SNOMED_code_description": "Pitt Hopkins-like syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "773769008",
+    "SNOMED_code_description": "Ataxia, photosensitivity, short stature syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "773772001",
+    "SNOMED_code_description": "Rare non-syndromic intellectual disability (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "774068004",
+    "SNOMED_code_description": "AT-hook DNA binding motif containing 1-related intellectual disability, obstructive sleep apnea, mild dysmorphism syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "778001003",
+    "SNOMED_code_description": "Potassium voltage-gated channel subfamily Q member 2 related epileptic encephalopathy (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "778005007",
+    "SNOMED_code_description": "Duplication of pituitary gland (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "778011005",
+    "SNOMED_code_description": "Severe intellectual disability and progressive spastic paraplegia (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "782676009",
+    "SNOMED_code_description": "Distal trisomy 18q (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "782723007",
+    "SNOMED_code_description": "Severe intellectual disability, progressive spastic diplegia syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "782736007",
+    "SNOMED_code_description": "Intellectual disability, facial dysmorphism syndrome due to SET domain containing 5 haploinsufficiency (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "782753000",
+    "SNOMED_code_description": "Intellectual disability, coarse face, macrocephaly, cerebellar hypotrophy syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "782755007",
+    "SNOMED_code_description": "Primary microcephaly, mild intellectual disability, young-onset diabetes syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "782772000",
+    "SNOMED_code_description": "Congenital muscular dystrophy with intellectual disability and severe epilepsy (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "782877002",
+    "SNOMED_code_description": "Xp22.13p22.2 duplication syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "782886007",
+    "SNOMED_code_description": "Infantile spasms, psychomotor retardation, progressive brain atrophy, basal ganglia disease syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "782916003",
+    "SNOMED_code_description": "Dermotrichic syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "782941005",
+    "SNOMED_code_description": "Richieri Costa-da Silva syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "782945001",
+    "SNOMED_code_description": "Ophthalmoplegia, intellectual disability, lingua scrotalis syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "783005002",
+    "SNOMED_code_description": "Severe microbrachycephaly, intellectual disability, athetoid cerebral palsy syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "783060009",
+    "SNOMED_code_description": "Autosomal recessive cerebellar ataxia, psychomotor delay syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "783061008",
+    "SNOMED_code_description": "Facial dysmorphism, developmental delay, behavioral abnormalities syndrome due to 10p11.21p12.31 microdeletion (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "783094006",
+    "SNOMED_code_description": "Autosomal recessive spastic paraplegia type 14 (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "78311009",
+    "SNOMED_code_description": "Histidine transport defect (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "78317008",
+    "SNOMED_code_description": "XXXY syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "783174004",
+    "SNOMED_code_description": "Congenital muscular dystrophy with intellectual disability (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "783619003",
+    "SNOMED_code_description": "Dual specificity tyrosine phosphorylation regulated kinase 1A-related intellectual disability syndrome due to 21q22.13q22.2 microdeletion (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "783702009",
+    "SNOMED_code_description": "X-linked intellectual disability due to glutamate ionotropic receptor AMPA type subunit 3 mutations (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "783703004",
+    "SNOMED_code_description": "White matter hypoplasia, corpus callosum agenesis, intellectual disability syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "783718003",
+    "SNOMED_code_description": "Paternal uniparental disomy of chromosome X (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "783735004",
+    "SNOMED_code_description": "Maternal uniparental disomy of chromosome X (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "784373007",
+    "SNOMED_code_description": "Beta-mercaptolactate cysteine disulfiduria (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "784381008",
+    "SNOMED_code_description": "Autosomal recessive cutis laxa type 2A (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "787093004",
+    "SNOMED_code_description": "Developmental delay, facial dysmorphism syndrome due to mediator complex subunit 13 like deficiency (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "788417006",
+    "SNOMED_code_description": "Alopecia, epilepsy, intellectual disability syndrome Moynahan type (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "79385002",
+    "SNOMED_code_description": "Lowe syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "80651009",
+    "SNOMED_code_description": "Aicardi's syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "80734006",
+    "SNOMED_code_description": "Marinesco-SjÃ¶gren syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "816067005",
+    "SNOMED_code_description": "Diabetes, hypogonadism, deafness, intellectual disability syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "82699004",
+    "SNOMED_code_description": "Dyggve-Melchior-Clausen syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "838441009",
+    "SNOMED_code_description": "Intellectual disability, aphasia, shuffling gait, adducted thumbs syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "840505007",
+    "SNOMED_code_description": "Down syndrome co-occurrent with leukemoid reaction associated transient neonatal pustulosis (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "86765009",
+    "SNOMED_code_description": "Mild intellectual disability (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "86997002",
+    "SNOMED_code_description": "Ring chromosome 10 syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "870262000",
+    "SNOMED_code_description": "Pervasive developmental disorder with disorder of intellectual development without loss of previously acquired skills (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "870264004",
+    "SNOMED_code_description": "Pervasive developmental disorder with disorder of intellectual development and pervasive impairment of functional language without loss of previously acquired skills (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "870265003",
+    "SNOMED_code_description": "Pervasive developmental disorder with disorder of intellectual development with loss of previously acquired skills (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "870266002",
+    "SNOMED_code_description": "Pervasive developmental disorder with disorder of intellectual development and marked impairment of functional language with loss of previously acquired skills (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "870267006",
+    "SNOMED_code_description": "Pervasive developmental disorder with disorder of intellectual development and marked impairment of functional language without loss of previously acquired skills (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "870268001",
+    "SNOMED_code_description": "Pervasive developmental disorder with disorder of intellectual development and complete impairment of functional language without loss of previously acquired skills (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "870269009",
+    "SNOMED_code_description": "Pervasive developmental disorder with disorder of intellectual development and absence of functional language with loss of previously acquired skills (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "870270005",
+    "SNOMED_code_description": "Pervasive developmental disorder with disorder of intellectual development and complete impairment of functional language with loss of previously acquired skills (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "874931001",
+    "SNOMED_code_description": "Severe achondroplasia, developmental delay, acanthosis nigricans syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "87607002",
+    "SNOMED_code_description": "Pelizaeus-Merzbacher disease, classic form (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "879919001",
+    "SNOMED_code_description": "Bilateral megalencephaly (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "879937000",
+    "SNOMED_code_description": "Alpha-N-acetylgalactosaminidase deficiency type 1 (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "880065001",
+    "SNOMED_code_description": "Alpha-N-acetylgalactosaminidase deficiency type 2 (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "880066000",
+    "SNOMED_code_description": "Alpha-N-acetylgalactosaminidase deficiency type 3 (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "880081006",
+    "SNOMED_code_description": "12q15 deletion syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "88393000",
+    "SNOMED_code_description": "Sanfilippo syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "8849004",
+    "SNOMED_code_description": "Uridine diphosphate glucose-4-epimerase deficiency (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "890118006",
+    "SNOMED_code_description": "Mowat-Wilson syndrome due to monosomy 2q22 (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "890123006",
+    "SNOMED_code_description": "3p25.3 deletion syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "890130000",
+    "SNOMED_code_description": "9q34 deletion syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "890221004",
+    "SNOMED_code_description": "Acrocardiofacial syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "890285006",
+    "SNOMED_code_description": "Bilateral frontal polymicrogyria (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "890286007",
+    "SNOMED_code_description": "Bilateral frontoparietal polymicrogyria (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "890433006",
+    "SNOMED_code_description": "Cockayne syndrome type 1 (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "890434000",
+    "SNOMED_code_description": "Cockayne syndrome type 2 (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "89392001",
+    "SNOMED_code_description": "Prader-Willi syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "931001000000105",
+    "SNOMED_code_description": "Significant learning disability (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "9527009",
+    "SNOMED_code_description": "Tetrasomy 12p syndrome (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "984661000000105",
+    "SNOMED_code_description": "Mild learning disability (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "984671000000103",
+    "SNOMED_code_description": "Moderate learning disability (disorder)"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "SNOMED_code": "984681000000101",
+    "SNOMED_code_description": "Profound learning disability (disorder)"
+  },
+  {
+    "Cluster_ID": "LDREM_COD",
+    "Cluster_Description": "Learning disability (LD) excluded codes",
+    "SNOMED_code": "984051000000100",
+    "SNOMED_code_description": "Learning disability excluded (situation)"
+  }
+]
