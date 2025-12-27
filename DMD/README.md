@@ -90,17 +90,25 @@ gtin             - Global Trade Item Numbers
    ```
 
 3. **Create Database Schema**
-   ```sql
-   sqlcmd -S "YourServer\Instance" -i "create-database-dmd.sql"
+   ```powershell
+   # Run the corrected schema creation script
+   sqlcmd -S "YourServer\Instance" -E -i "create-database-dmd.sql"
    ```
 
-4. **Process XML and Import Data**
+4. **Import All Data**
    ```powershell
-   .\Process-DMDData.ps1 -ServerInstance "YourServer\Instance"
+   # Use the standalone imports for complete data loading
+   cd StandaloneImports
+   .\Run-AllImports.ps1 -ServerInstance "YourServer\Instance"
    ```
 
 5. **Validate Import**
    ```powershell
+   # Validate with random sampling
+   cd ..
+   .\Validate-RandomSamples.ps1 -SamplesPerTable 5
+   
+   # Or run full validation
    .\Validate-DMDImport.ps1 -ServerInstance "YourServer\Instance"
    ```
 
@@ -110,10 +118,12 @@ DM+D releases are published weekly (typically Mondays at 4:00 AM):
 
 ```powershell
 # Weekly update routine
-.\Check-NewDMDRelease.ps1      # Check for updates
-.\Download-DMDReleases.ps1     # Download if new release found
-.\Process-DMDData.ps1          # Process and import
-.\Validate-DMDImport.ps1       # Validate data integrity
+.\Check-NewDMDRelease.ps1           # Check for updates
+.\Download-DMDReleases.ps1          # Download if new release found
+cd StandaloneImports
+.\Run-AllImports.ps1                # Import all data (~5 minutes)
+cd ..
+.\Validate-RandomSamples.ps1        # Validate data integrity
 ```
 
 ## File Structure
@@ -121,16 +131,35 @@ DM+D releases are published weekly (typically Mondays at 4:00 AM):
 ```
 DMD/
 ├── README.md                       # This documentation
+├── create-database-dmd.sql         # Corrected database schema (Nov 2025)
 ├── Complete-DMDWorkflow.ps1        # One-command setup script
 ├── Check-NewDMDRelease.ps1         # Check for new TRUD releases  
 ├── Download-DMDReleases.ps1        # Download from TRUD
-├── Process-DMDData.ps1             # Process XML and import
+├── Clear-DMDTables.ps1             # Clear all DM+D tables
 ├── Validate-DMDImport.ps1          # Validate imported data
-├── create-database-dmd.sql         # Database schema creation
+├── Validate-RandomSamples.ps1      # Random sample validation
+├── Cleanup-ObsoleteFiles.ps1       # Repository cleanup utility
+├── SampleQueries.sql               # Sample queries
+├── IMPLEMENTATION_SUMMARY.md       # Implementation notes
+├── StandaloneImports/              # ⭐ All import scripts
+│   ├── Run-AllImports.ps1          # Main import orchestrator
+│   ├── Import-VTM.ps1              # Virtual Therapeutic Moieties
+│   ├── Import-VMP.ps1              # Virtual Medical Products
+│   ├── Import-AMP.ps1              # Actual Medical Products
+│   ├── Import-VMPP.ps1             # Virtual Product Packs
+│   ├── Import-AMPP.ps1             # Actual Product Packs
+│   ├── Import-Ingredient.ps1       # Ingredient substances
+│   ├── Import-Lookup.ps1           # Reference data
+│   ├── Import-VMP-Ingredients.ps1  # VMP ingredient relationships
+│   ├── Import-VMP-DrugRoutes.ps1   # Administration routes
+│   ├── Import-VMP-DrugForms.ps1    # Pharmaceutical forms
+│   ├── Import-BNF.ps1              # BNF codes
+│   ├── Import-ATC.ps1              # ATC codes
+│   ├── Import-GTIN.ps1             # Barcode data
+│   └── README.md                   # Import documentation
 ├── SQL/                            # Additional SQL scripts
 └── Queries/                        # Sample queries and analysis
-    ├── SampleQueries.sql           # Basic exploration queries
-    └── AdvancedAnalysis.sql        # Complex analysis queries
+    └── SampleQueries.sql           # Basic exploration queries
 ```
 
 ## Configuration
