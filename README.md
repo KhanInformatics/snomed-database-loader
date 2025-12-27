@@ -14,7 +14,12 @@ This repository provides comprehensive scripts for building and maintaining **NH
 - **Supplementary Data**: BNF codes, ATC classifications, GTIN mappings
 - **Commercial Data**: Suppliers, licensing, Drug Tariff information
 
-Both workflows support loading data into SQL Server with full end-to-end automation including:
+### Data Migration Workbench (DMWB)
+- **NHS DMWB**: Data migration tools and utilities
+- **Mapping Tools**: SNOMED CT terminology mapping support
+- **Validation Utilities**: Data migration validation and quality checking
+
+All workflows support loading data into SQL Server with full end-to-end automation including:
 
 - Checking for new releases via the TRUD API
 - Downloading and extracting release files  
@@ -24,6 +29,7 @@ Both workflows support loading data into SQL Server with full end-to-end automat
 ## Supported Targets
 - [**MSSQL/SNOMED CT** – Fully automated (PowerShell-driven)](https://github.com/KhanInformatics/snomed-database-loader/tree/master/MSSQL)
 - [**DMD** – Complete DM+D workflow (PowerShell-driven)](https://github.com/KhanInformatics/snomed-database-loader/tree/master/DMD)
+- [**DMWB** – Data Migration Workbench tools (PowerShell-driven)](https://github.com/KhanInformatics/snomed-database-loader/tree/master/DMWB)
 
 ## Quick Start
 
@@ -39,7 +45,13 @@ cd DMD
 .\Complete-DMDWorkflow.ps1
 ```
 
-### Both Databases
+### Data Migration Workbench
+```powershell
+cd DMWB
+.\Complete-DMWBWorkflow.ps1
+```
+
+### All Terminologies
 ```powershell
 # Set up SNOMED CT first
 cd MSSQL  
@@ -48,13 +60,18 @@ cd MSSQL
 # Then set up DM+D
 cd ..\DMD
 .\Complete-DMDWorkflow.ps1
+
+# Finally, download DMWB tools
+cd ..\DMWB
+.\Complete-DMWBWorkflow.ps1
 ```
 
 ## Key Features
 
 ### SNOMED CT Workstream (`MSSQL/`)
 - **International Release (Monolith)** - Complete SNOMED CT terminology
-- **UK Primary Care Snapshot** - UK-specific primary care extensions  
+- **UK Primary Care Snapshot** - UK-specific primary care extensions
+- **UK Drug Extension** - SNOMED CT UK Drug Extension in RF2 format (DM+D concepts)
 - **Primary Care Domain (PCD)** - Reference sets mapped to outputs and indicators
 - **RF2 Format Processing** - Concepts, descriptions, relationships, and reference sets
 - **Automated BULK INSERT** - High-performance SQL Server loading
@@ -68,7 +85,14 @@ cd ..\DMD
 - **Fast Import** - Complete database import in ~5 minutes
 - **Validated Accuracy** - 100% data accuracy verified against XML sources
 
-> 💡 **Integration Ready**: Both workstreams use the same TRUD API credentials and can be cross-referenced via SNOMED CT mappings for comprehensive clinical terminology coverage.
+### Data Migration Workbench (`DMWB/`)
+- **Migration Tools** - Comprehensive data migration utilities and tools
+- **SNOMED CT Support** - Terminology mapping and migration support
+- **Validation Framework** - Data quality and migration validation
+- **Automated Download** - Latest DMWB releases from TRUD
+- **Ready-to-Use** - No database setup required, tools ready after download
+
+> 💡 **Integration Ready**: All workstreams use the same TRUD API credentials and can be cross-referenced via SNOMED CT mappings for comprehensive clinical terminology coverage.
 
 ### DM+D Database Schema
 
@@ -105,13 +129,13 @@ The PCD reference set content table matches the actual six-column data structure
 
 Contributions are welcome — feel free to fork the repo and submit a pull request if you'd like to add or improve support for other environments or database platforms.
 
-## Complete Workflows
+### Complete Workflows
 
-### Prerequisites (Both Workstreams)
-- **SQL Server** - Local or remote instance with sufficient storage
+### Prerequisites (All Workstreams)
+- **SQL Server** - Local or remote instance with sufficient storage (not required for DMWB)
 - **TRUD API Key** - Stored in Windows Credential Manager as 'TRUD_API'  
-- **PowerShell 5.1+** - With SqlServer module installed
-- **Storage Space** - ~5GB for SNOMED CT, ~2GB for DM+D
+- **PowerShell 5.1+** - With SqlServer module installed (for SNOMED CT and DM+D)
+- **Storage Space** - ~7GB for SNOMED CT (including UK Drug Extension), ~2GB for DM+D, ~500MB for DMWB
 
 ### SNOMED CT Workflow (`MSSQL/`)
 
@@ -130,7 +154,7 @@ cd MSSQL
 
 2. **Import Data**  
    ```powershell
-   .\Generate-AndRun-AllSnapshots.ps1  # Core SNOMED CT data
+   .\Generate-AndRun-AllSnapshots.ps1  # Core SNOMED CT data (includes UK Drug Extension)
    .\Load-PCD-Refset-Content.ps1       # Primary Care Domain
    ```
 
@@ -170,6 +194,27 @@ cd DMD
    
    # Or run full validation
    .\Validate-DMDImport.ps1 -ServerInstance "YourServer\Instance"
+   ```
+
+### Data Migration Workbench Workflow (`DMWB/`)
+
+**Automated Setup:**
+```powershell
+cd DMWB
+.\Complete-DMWBWorkflow.ps1
+```
+
+**Manual Steps:**
+1. **Check and Download**
+   ```powershell
+   .\Check-NewDMWBRelease.ps1      # Check for updates
+   .\Download-DMWBReleases.ps1     # Download from TRUD
+   ```
+
+2. **Access Tools**
+   ```powershell
+   # DMWB tools are available in:
+   C:\DMWB\CurrentReleases\
    ```
 
 ### Data Validation and Queries

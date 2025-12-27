@@ -25,7 +25,7 @@ if ($snapshotFolders.Count -eq 0) {
 # Global header for the SQL script
 $outputFile = "C:\SNOMEDCT\import.sql"
 $header = @"
--- Generating BULK INSERTS for Monolith + UK Primary Care Snapshot
+-- Generating BULK INSERTS for Monolith + UK Primary Care + UK Drug Extension Snapshot
 USE snomedct;
 GO
 TRUNCATE TABLE curr_concept_f;
@@ -45,11 +45,13 @@ TRUNCATE TABLE curr_extendedmaprefset_f;
 Set-Content -Path $outputFile -Value $header
 
 # Mapping of file prefixes to database table names
+# Supports Monolith, UK Primary Care, and UK Drug Extension RF2 formats
 $mapping = @{
     "sct2_Concept"                 = "curr_concept_f"
     "sct2_Description"             = "curr_description_f"
     "sct2_TextDefinition"          = "curr_textdefinition_f"
     "sct2_Relationship"            = "curr_relationship_f"
+    "sct2_RelationshipConcreteValues" = "curr_relationship_f"
     "sct2_StatedRelationship"      = "curr_stated_relationship_f"
     "der2_cRefset_Language"        = "curr_langrefset_f"
     "der2_Refset_Simple"           = "curr_simplerefset_f"

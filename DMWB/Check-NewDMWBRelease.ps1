@@ -1,5 +1,5 @@
-# Check for New DM+D Releases from TRUD
-# Save this as Check-NewDMDRelease.ps1
+# Check for New Data Migration Workbench Releases from TRUD
+# Save this as Check-NewDMWBRelease.ps1
 
 # Import the CredentialManager module (ensure it's installed)
 Import-Module CredentialManager
@@ -21,21 +21,17 @@ if (-not $apiKey) {
     exit
 }
 
-# Define the DM+D items to check
-# Correct TRUD Item Numbers for dm+d:
-# Item 24: NHSBSA dm+d (Dictionary of Medicines and Devices - Main data)
-# Item 25: NHSBSA dm+d BONUS (BNF and ATC codes - Supplementary data)
-# Item 105: SNOMED CT UK Drug Extension (NOT dm+d - this is SNOMED CT)
+# Define the Data Migration Workbench item to check
+# Item 98: NHS Data Migration Workbench
 $items = @(
-    @{ Name = "NHSBSA dm+d (Main)"; ItemNumber = "24" },
-    @{ Name = "NHSBSA dm+d BONUS (Supplementary)"; ItemNumber = "25" }
+    @{ Name = "NHS Data Migration Workbench"; ItemNumber = "98" }
 )
 
 # Base API URL for TRUD
 $baseApiUrl = "https://isd.digital.nhs.uk/trud/api/v1/keys/$apiKey/items"
 
 # Check for release tracking file
-$releaseTrackingFile = "C:\DMD\last_checked_releases.json"
+$releaseTrackingFile = "C:\DMWB\last_checked_releases.json"
 $lastCheckedReleases = @{}
 
 if (Test-Path $releaseTrackingFile) {
@@ -50,7 +46,7 @@ if (Test-Path $releaseTrackingFile) {
 $newReleasesFound = $false
 $allReleaseInfo = @{}
 
-Write-Host "=== DM+D Release Check - $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') ===" -ForegroundColor Cyan
+Write-Host "=== Data Migration Workbench Release Check - $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') ===" -ForegroundColor Cyan
 
 foreach ($item in $items) {
     $itemNumber = $item.ItemNumber
@@ -99,44 +95,34 @@ foreach ($item in $items) {
             $isNewRelease = $true
         }
     } else {
-        # First time checking this item
+        # First time checking - consider it new
         $isNewRelease = $true
     }
     
     if ($isNewRelease) {
-        Write-Host "  ⚡ NEW RELEASE DETECTED!" -ForegroundColor Magenta
+        Write-Host "  ⭐ NEW RELEASE DETECTED!" -ForegroundColor Magenta
         $newReleasesFound = $true
         
         if ($lastCheckedReleases.ContainsKey($itemNumber)) {
-            $lastDate = [DateTime]::Parse($lastCheckedReleases[$itemNumber].releaseDate)
-            Write-Host "  Previous Release Date: $($lastDate.ToString('yyyy-MM-dd'))" -ForegroundColor Gray
-        } else {
-            Write-Host "  This is the first time checking this item" -ForegroundColor Gray
+            $lastRelease = $lastCheckedReleases[$itemNumber]
+            Write-Host "  Previous Release: $($lastRelease.name)" -ForegroundColor Gray
+            Write-Host "  Previous Date: $($lastRelease.releaseDate)" -ForegroundColor Gray
         }
     } else {
-        Write-Host "  No new release (already checked)" -ForegroundColor Gray
+        Write-Host "  No new release (same as last check)" -ForegroundColor Gray
     }
 }
 
-# Save the current release information for next check
-$dmdDir = "C:\DMD"
-if (-not (Test-Path $dmdDir)) {
-    New-Item -ItemType Directory -Path $dmdDir | Out-Null
-}
+# Update the tracking file with current release information
+$allReleaseInfo | ConvertTo-Json | Set-Content $releaseTrackingFile
+Write-Host "`nRelease tracking information updated: $releaseTrackingFile" -ForegroundColor Cyan
 
-$allReleaseInfo | ConvertTo-Json -Depth 3 | Set-Content $releaseTrackingFile
-
+# Summary
 Write-Host "`n=== Summary ===" -ForegroundColor Cyan
 if ($newReleasesFound) {
-    Write-Host "🔄 New DM+D releases are available!" -ForegroundColor Green
-    Write-Host "Run Download-DMDReleases.ps1 to download the latest releases." -ForegroundColor Yellow
-    
-    # Check next release schedule  
-    Write-Host "`n📅 DM+D Release Schedule:" -ForegroundColor Cyan
-    Write-Host "  • Main dm+d releases: Weekly (typically Monday 4:00 AM)" -ForegroundColor White
-    Write-Host "  • Next scheduled release: Monday $(Get-Date (Get-Date).AddDays(8 - [int](Get-Date).DayOfWeek) -Format 'yyyy-MM-dd') at 4:00 AM" -ForegroundColor White
+    Write-Host "New releases are available! Run Download-DMWBReleases.ps1 to download them." -ForegroundColor Green
 } else {
-    Write-Host "✅ No new releases found. All checked items are up to date." -ForegroundColor Green
+    Write-Host "No new releases detected. You have the latest version." -ForegroundColor Yellow
 }
 
-Write-Host "`n💡 Tip: You can automate this check by scheduling this script to run daily." -ForegroundColor Cyan
+Write-Host "`nDone." -ForegroundColor Cyan

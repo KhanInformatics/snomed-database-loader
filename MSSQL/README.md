@@ -16,8 +16,10 @@ SQL Server scripts to create and populate a Microsoft SQL Server database with a
 This implementation supports loading data from multiple NHS TRUD releases:
 
 ### Core SNOMED CT Data
-- **International Release (Monolith)** - Complete SNOMED CT terminology
-- **UK Primary Care Snapshot** - UK-specific primary care extensions
+- **International Release (Monolith)** - Complete SNOMED CT terminology (TRUD Item 1799)
+- **UK Primary Care Snapshot** - UK-specific primary care extensions (TRUD Item 659)
+- **UK Drug Extension** - SNOMED CT UK Drug Extension, RF2 format (TRUD Item 105)
+- **International Edition (Standalone)** - Pure International SNOMED CT without UK extensions (TRUD Item 4)
 
 ### Primary Care Domain (PCD) Data
 - **PCD Refset Content** - Reference sets organized by output and version
@@ -49,6 +51,51 @@ After loading PCD data, use the validation script to verify data integrity:
 ```
 
 This script compares record counts between source files and database tables to ensure complete and accurate imports.
+
+## Loading International Edition (Separate Database)
+
+If you need access to the pure International SNOMED CT terminology without UK extensions (e.g., for international description IDs), you can load the International Edition into a separate database.
+
+### Step 1: Subscribe to International Edition on TRUD
+
+1. Go to [TRUD International Edition](https://isd.digital.nhs.uk/trud/users/authenticated/filters/0/categories/4/items/4/releases)
+2. Subscribe to **Item 4: SNOMED CT International Edition**
+3. The download script will automatically include it
+
+### Step 2: Create the International Database
+
+```powershell
+# Run the database creation script
+sqlcmd -S "SILENTPRIORY\SQLEXPRESS" -i "create-database-international.sql"
+```
+
+This creates a separate database named `snomedct_int` with the same table structure as the main database.
+
+### Step 3: Download and Import
+
+```powershell
+# Download all releases (now includes International Edition - Item 4)
+.\Download-SnomedReleases.ps1
+
+# Generate and run the import for International Edition only
+.\Generate-AndRun-InternationalSnapshot.ps1
+```
+
+### Why Use a Separate International Database?
+
+- **International Description IDs** - The UK Monolith contains UK Extension descriptions but may not include all International descriptions
+- **Cross-referencing** - Compare UK vs International content
+- **Description ID Lookups** - Find International description text by ID (e.g., `207516010`)
+
+### Example Query
+
+```sql
+-- Search for a description by ID in International Edition
+USE snomedct_int;
+SELECT id, conceptid, CAST(term AS VARCHAR(200)) as term 
+FROM curr_description_f 
+WHERE id = '207516010';
+```
 
 ## Differences from the PostgreSQL Version
 
@@ -96,7 +143,10 @@ C:\
 During automated operation, additional folders will be created:
 
 - **Downloads** – Temporary location for downloaded ZIP files  
-- **CurrentReleases** – Contains extracted releases before importing  
+- **CurrentReleases** – Contains extracted releases before importing
+  - Monolith release folder (e.g., `uk_sct2mo_39.6.0_20250312000001Z`)
+  - UK Primary Care release folder (e.g., `uk_sct2pc_54.0.0_20241205000000Z`)
+  - UK Drug Extension release folder (e.g., `uk_sct2drug_XX.X.X_YYYYMMDDHHMMSS`)  
 
 ## Manual Installation
 
@@ -124,6 +174,9 @@ The automatic installation process uses three PowerShell scripts that work toget
    - **Purpose:**  
      Downloads the latest TRUD release files (ZIP archives), extracts them, and organizes the extracted data into a folder named **CurrentReleases**.
    - **Process:**  
+     - Downloads SNOMED CT International (Monolith) - TRUD Item 1799
+     - Downloads UK Primary Care Snapshot - TRUD Item 659
+     - Downloads UK Drug Extension - TRUD Item 105
      - Downloads each ZIP file to a temporary folder (e.g. `C:\SNOMEDCT\Downloads`).
      - Unzips the downloaded files.
      - Moves the extracted folders into the **CurrentReleases** folder.
@@ -131,10 +184,11 @@ The automatic installation process uses three PowerShell scripts that work toget
 
 3. **Generate-AndRun-AllSnapshots.ps1**  
    - **Purpose:**  
-     Automatically generates a SQL script (`import.sql`) containing BULK INSERT statements to import SNOMED CT data, and then executes it to update the database.
+     Automatically generates a SQL script (`import.sql`) containing BULK INSERT statements to import SNOMED CT data from all three sources (Monolith, UK Primary Care, and UK Drug Extension), and then executes it to update the database.
    - **Process:**  
      - Recursively searches the **CurrentReleases** folder for folders named `Snapshot`.
      - Uses a mapping (based on file name prefixes) to create BULK INSERT statements for the corresponding tables.
+     - Handles all RF2 file types including drug extension concepts, descriptions, and relationships.
      - Writes a global header (which truncates existing data) and all BULK INSERT statements to `import.sql`.
      - Executes the SQL script (using `sqlcmd` or `Invoke-Sqlcmd`) to load the data into the `SNOMEDCT` database.
 

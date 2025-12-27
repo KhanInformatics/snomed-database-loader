@@ -39,7 +39,8 @@ Write-Host "Retrieved API Key: $maskedKey (Length: $($apiKey.Length))"
 # Define the SNOMED CT items you want to monitor.
 $items = @(
     @{ Name = "SnomedCT_Monolith"; ItemNumber = "1799" },
-    @{ Name = "SnomedCT_UKPrimaryCare"; ItemNumber = "659" }
+    @{ Name = "SnomedCT_UKPrimaryCare"; ItemNumber = "659" },
+    @{ Name = "SnomedCT_UKDrugExtension"; ItemNumber = "105" }
 )
 
 # Base API URL for TRUD

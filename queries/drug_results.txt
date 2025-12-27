@@ -1,0 +1,3 @@
+Changed database context to 'snomedct'.
+Msg 306, Level 16, State 2, Server SilentPriory\SQLEXPRESS, Line 43
+The text, ntext, and image data types cannot be compared or sorted, except when using IS NULL or LIKE operator.

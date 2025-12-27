@@ -1,10 +1,11 @@
-﻿# Save this as Download-SnomedReleases.ps1
+# Download Data Migration Workbench Releases from TRUD
+# Save this as Download-DMWBReleases.ps1
 
 # Import the CredentialManager module (ensure it's installed)
 Import-Module CredentialManager
 
 # Get the base directory where the logs and releases are stored.
-$baseDir = "C:\SNOMEDCT"
+$baseDir = "C:\DMWB"
 Write-Host "Script base directory: $baseDir"
 
 # Retrieve the TRUD API key from Credential Manager (target: TRUD_API)
@@ -24,23 +25,17 @@ if (-not $apiKey) {
     exit
 }
 
-# Define the SNOMED CT items you want to download.
-# - Monolith: Item number 1799 (UK Edition combined - includes International + UK Extension)
-# - UK Primary Care: Item number 659
-# - UK Drug Extension: Item number 105
-# - International Edition: Item number 4 (standalone International SNOMED CT)
+# Define the Data Migration Workbench item to download
+# Item number 98: NHS Data Migration Workbench
 $items = @(
-    @{ Name = "SnomedCT_Monolith"; ItemNumber = "1799" },
-    @{ Name = "SnomedCT_UKPrimaryCare"; ItemNumber = "659" },
-    @{ Name = "SnomedCT_UKDrugExtension"; ItemNumber = "105" },
-    @{ Name = "SnomedCT_International"; ItemNumber = "4" }
+    @{ Name = "NHS_DMWB"; ItemNumber = "98" }
 )
 
 # Base API URL for TRUD
 $baseApiUrl = "https://isd.digital.nhs.uk/trud/api/v1/keys/$apiKey/items"
 
 # Define download and output locations
-$downloadDir = "C:\SNOMEDCT\Downloads"
+$downloadDir = "C:\DMWB\Downloads"
 $currentReleasesDir = Join-Path $baseDir "CurrentReleases"
 
 # Ensure download folder exists
@@ -124,4 +119,5 @@ foreach ($item in $items) {
     }
 }
 
-Write-Host "`n✅ All SNOMED CT releases downloaded, extracted, and moved to CurrentReleases."
+Write-Host "`n✅ Data Migration Workbench release downloaded, extracted, and moved to CurrentReleases."
+Write-Host "Next step: The DMWB tools are ready to use in: $currentReleasesDir"
