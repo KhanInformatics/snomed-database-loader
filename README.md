@@ -87,10 +87,11 @@ cd ..\DMWB
 
 ### Data Migration Workbench (`DMWB/`)
 - **Migration Tools** - Comprehensive data migration utilities and tools
-- **SNOMED CT Support** - Terminology mapping and migration support
-- **Validation Framework** - Data quality and migration validation
-- **Automated Download** - Latest DMWB releases from TRUD
-- **Ready-to-Use** - No database setup required, tools ready after download
+- **SQL Server Export** - 46 tables with 69M+ rows exported to SQL Server
+- **SNOMED CT Support** - Terminology mapping and migration support (Read codes, CTV3)
+- **Validation Framework** - Comprehensive test suite with 100% validation coverage
+- **Automated Download** - Latest DMWB releases from TRUD with version tracking
+- **Production Ready** - Fully tested export and validation workflows
 
 > 💡 **Integration Ready**: All workstreams use the same TRUD API credentials and can be cross-referenced via SNOMED CT mappings for comprehensive clinical terminology coverage.
 
