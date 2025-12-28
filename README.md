@@ -27,9 +27,9 @@ All workflows support loading data into SQL Server with full end-to-end automati
 - Data validation and integrity checking
 
 ## Supported Targets
-- [**MSSQL/SNOMED CT** – Fully automated (PowerShell-driven)](https://github.com/KhanInformatics/snomed-database-loader/tree/master/MSSQL)
-- [**DMD** – Complete DM+D workflow (PowerShell-driven)](https://github.com/KhanInformatics/snomed-database-loader/tree/master/DMD)
-- [**DMWB** – Data Migration Workbench tools (PowerShell-driven)](https://github.com/KhanInformatics/snomed-database-loader/tree/master/DMWB)
+- [**MSSQL/SNOMED CT** – Fully automated (PowerShell-driven)](https://github.com/KhanInformatics/snomed-database-loader/tree/main/MSSQL)
+- [**DMD** – Complete DM+D workflow (PowerShell-driven)](https://github.com/KhanInformatics/snomed-database-loader/tree/main/DMD)
+- [**DMWB** – Data Migration Workbench tools (PowerShell-driven)](https://github.com/KhanInformatics/snomed-database-loader/tree/main/DMWB)
 
 ## Quick Start
 
