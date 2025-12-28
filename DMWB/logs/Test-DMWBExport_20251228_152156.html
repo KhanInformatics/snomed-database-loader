@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DMWB Export Test Report</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        .header { background: #0078d4; color: white; padding: 20px; border-radius: 5px; margin-bottom: 20px; }
+        .summary { background: white; padding: 20px; border-radius: 5px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .summary-stats { display: flex; justify-content: space-around; margin-top: 15px; }
+        .stat { text-align: center; }
+        .stat-value { font-size: 36px; font-weight: bold; }
+        .stat-label { color: #666; margin-top: 5px; }
+        .pass { color: #107c10; }
+        .fail { color: #d13438; }
+        .warn { color: #ff8c00; }
+        table { width: 100%; border-collapse: collapse; background: white; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 20px; }
+        th { background: #f0f0f0; padding: 12px; text-align: left; font-weight: 600; border-bottom: 2px solid #ddd; }
+        td { padding: 10px; border-bottom: 1px solid #eee; }
+        tr:hover { background: #f9f9f9; }
+        .status-badge { padding: 4px 12px; border-radius: 12px; font-weight: 600; font-size: 11px; }
+        .badge-pass { background: #dff6dd; color: #107c10; }
+        .badge-fail { background: #fde7e9; color: #d13438; }
+        .badge-warn { background: #fff4ce; color: #8a6300; }
+        .category-section { background: white; padding: 15px; border-radius: 5px; margin-bottom: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .category-header { font-size: 18px; font-weight: 600; margin-bottom: 10px; color: #333; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>DMWB Export Test Report</h1>
+        <p>Generated: 2025-12-28 15:22:03</p>
+        <p>Database: DMWB_Export @ localhost\SQLEXPRESS</p>
+    </div>
+    
+    <div class="summary">
+        <h2>Test Summary</h2>
+        <div class="summary-stats">
+            <div class="stat">
+                <div class="stat-value pass">52</div>
+                <div class="stat-label">Passed</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value fail">0</div>
+                <div class="stat-label">Failed</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value warn">0</div>
+                <div class="stat-label">Warnings</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">52</div>
+                <div class="stat-label">Total Tests</div>
+            </div>
+        </div>
+    </div>    <div class="category-section">
+        <div class="category-header">Database Structure</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Test</th>
+                    <th>Status</th>
+                    <th>Expected</th>
+                    <th>Actual</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td>Table Count</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>>=40 tables</td>
+                    <td>46 tables</td>
+                    <td></td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="category-section">
+        <div class="category-header">Known Mappings</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Test</th>
+                    <th>Status</th>
+                    <th>Expected</th>
+                    <th>Actual</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td>Read Code G58..</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>84114007</td>
+                    <td>84114007</td>
+                    <td>Heart failure</td>
+                </tr>                <tr>
+                    <td>Read Code C10..</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>73211009</td>
+                    <td>73211009</td>
+                    <td>Diabetes mellitus</td>
+                </tr>                <tr>
+                    <td>Read Code G30..</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>57054005</td>
+                    <td>57054005</td>
+                    <td>Acute myocardial infarction</td>
+                </tr>                <tr>
+                    <td>Read Code G802.</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>266267005</td>
+                    <td>266267005</td>
+                    <td>Deep vein phlebitis of leg</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="category-section">
+        <div class="category-header">Relationships</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Test</th>
+                    <th>Status</th>
+                    <th>Expected</th>
+                    <th>Actual</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td>Diabetes Mellitus Children</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>>0 children</td>
+                    <td>16 children</td>
+                    <td></td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="category-section">
+        <div class="category-header">Row Counts</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Test</th>
+                    <th>Status</th>
+                    <th>Expected</th>
+                    <th>Actual</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td>DMWB NHS Data Migration Maps.mdb :: CTV3RCTMAP</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>445473 rows</td>
+                    <td>445473 rows</td>
+                    <td></td>
+                </tr>                <tr>
+                    <td>DMWB NHS Data Migration Maps.mdb :: CTV3SCTMAP</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>445473 rows</td>
+                    <td>445473 rows</td>
+                    <td></td>
+                </tr>                <tr>
+                    <td>DMWB NHS Data Migration Maps.mdb :: ICD</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>19267 rows</td>
+                    <td>19267 rows</td>
+                    <td></td>
+                </tr>                <tr>
+                    <td>DMWB NHS Data Migration Maps.mdb :: ICDHIER</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>19267 rows</td>
+                    <td>19267 rows</td>
+                    <td></td>
+                </tr>                <tr>
+                    <td>DMWB NHS Data Migration Maps.mdb :: ICDSCTMAP</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>37729 rows</td>
+                    <td>37729 rows</td>
+                    <td></td>
+                </tr>                <tr>
+                    <td>DMWB NHS Data Migration Maps.mdb :: ICDTC</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>77965 rows</td>
+                    <td>77965 rows</td>
+                    <td></td>
+                </tr>                <tr>
+                    <td>DMWB NHS Data Migration Maps.mdb :: MAPVERSIONS</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>10 rows</td>
+                    <td>10 rows</td>
+                    <td></td>
+                </tr>                <tr>
+                    <td>DMWB NHS Data Migration Maps.mdb :: OPCS</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>11686 rows</td>
+                    <td>11686 rows</td>
+                    <td></td>
+                </tr>                <tr>
+                    <td>DMWB NHS Data Migration Maps.mdb :: OPCSHIER</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>11686 rows</td>
+                    <td>11686 rows</td>
+                    <td></td>
+                </tr>                <tr>
+                    <td>DMWB NHS Data Migration Maps.mdb :: OPCSSCTMAP</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>20816 rows</td>
+                    <td>20816 rows</td>
+                    <td></td>
+                </tr>                <tr>
+                    <td>DMWB NHS Data Migration Maps.mdb :: OPCSTC</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>44789 rows</td>
+                    <td>44789 rows</td>
+                    <td></td>
+                </tr>                <tr>
+                    <td>DMWB NHS Data Migration Maps.mdb :: RCTCTV3MAP</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>102066 rows</td>
+                    <td>102066 rows</td>
+                    <td></td>
+                </tr>                <tr>
+                    <td>DMWB NHS Data Migration Maps.mdb :: RCTSCTMAP</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>102057 rows</td>
+                    <td>102057 rows</td>
+                    <td></td>
+                </tr>                <tr>
+                    <td>DMWB NHS Data Migration Maps.mdb :: SCTICDMAP</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>117992 rows</td>
+                    <td>117992 rows</td>
+                    <td></td>
+                </tr>                <tr>
+                    <td>DMWB NHS Data Migration Maps.mdb :: SCTOPCSMAP</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>71730 rows</td>
+                    <td>71730 rows</td>
+                    <td></td>
+                </tr>                <tr>
+                    <td>DMWB NHS Public Code Usage.mdb :: SCTFREQ</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>1133250 rows</td>
+                    <td>1133250 rows</td>
+                    <td></td>
+                </tr>                <tr>
+                    <td>DMWB NHS READ.mdb :: CTV3</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>395650 rows</td>
+                    <td>395650 rows</td>
+                    <td></td>
+                </tr>                <tr>
+                    <td>DMWB NHS READ.mdb :: ctv3_rmf</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>55272 rows</td>
+                    <td>55272 rows</td>
+                    <td></td>
+                </tr>                <tr>
+                    <td>DMWB NHS READ.mdb :: ctv3_term</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>351470 rows</td>
+                    <td>351470 rows</td>
+                    <td></td>
+                </tr>                <tr>
+                    <td>DMWB NHS READ.mdb :: CTV3EQV</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>803372 rows</td>
+                    <td>803372 rows</td>
+                    <td></td>
+                </tr>                <tr>
+                    <td>DMWB NHS READ.mdb :: CTV3HIER</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>287969 rows</td>
+                    <td>287969 rows</td>
+                    <td></td>
+                </tr>                <tr>
+                    <td>DMWB NHS READ.mdb :: CTV3TC</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>2241382 rows</td>
+                    <td>2241382 rows</td>
+                    <td></td>
+                </tr>                <tr>
+                    <td>DMWB NHS READ.mdb :: RCT</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>175017 rows</td>
+                    <td>175017 rows</td>
+                    <td></td>
+                </tr>                <tr>
+                    <td>DMWB NHS READ.mdb :: RCTEQV</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>336712 rows</td>
+                    <td>336712 rows</td>
+                    <td></td>
+                </tr>                <tr>
+                    <td>DMWB NHS READ.mdb :: RCTHIER</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>157280 rows</td>
+                    <td>157280 rows</td>
+                    <td></td>
+                </tr>                <tr>
+                    <td>DMWB NHS READ.mdb :: RCTTC</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>664554 rows</td>
+                    <td>664554 rows</td>
+                    <td></td>
+                </tr>                <tr>
+                    <td>DMWB NHS SNOMED History.mdb :: SCTCHIST</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>0 rows</td>
+                    <td>0 rows</td>
+                    <td></td>
+                </tr>                <tr>
+                    <td>DMWB NHS SNOMED History.mdb :: SCTEQV</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>112217 rows</td>
+                    <td>112217 rows</td>
+                    <td></td>
+                </tr>                <tr>
+                    <td>DMWB NHS SNOMED History.mdb :: SCTHIST</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>352610 rows</td>
+                    <td>352610 rows</td>
+                    <td></td>
+                </tr>                <tr>
+                    <td>DMWB NHS SNOMED History.mdb :: SCTHREL</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>348238 rows</td>
+                    <td>348238 rows</td>
+                    <td></td>
+                </tr>                <tr>
+                    <td>DMWB NHS SNOMED History.mdb :: SCTMETA</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>1141797 rows</td>
+                    <td>1141797 rows</td>
+                    <td></td>
+                </tr>                <tr>
+                    <td>DMWB NHS SNOMED History.mdb :: SCTSUBST</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>0 rows</td>
+                    <td>0 rows</td>
+                    <td></td>
+                </tr>                <tr>
+                    <td>DMWB NHS SNOMED History.mdb :: SUBSETLIST</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>1507 rows</td>
+                    <td>1507 rows</td>
+                    <td></td>
+                </tr>                <tr>
+                    <td>DMWB NHS SNOMED History.mdb :: SUBSETS</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>461419 rows</td>
+                    <td>461419 rows</td>
+                    <td></td>
+                </tr>                <tr>
+                    <td>DMWB NHS SNOMED History.mdb :: SUBSETS_RD</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>2652514 rows</td>
+                    <td>2652514 rows</td>
+                    <td></td>
+                </tr>                <tr>
+                    <td>DMWB NHS SNOMED Lexicon.mdb :: TOKENINDEX</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>12951424 rows</td>
+                    <td>12951424 rows</td>
+                    <td></td>
+                </tr>                <tr>
+                    <td>DMWB NHS SNOMED Lexicon.mdb :: TOKENS</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>127220 rows</td>
+                    <td>127220 rows</td>
+                    <td></td>
+                </tr>                <tr>
+                    <td>DMWB NHS SNOMED Lexicon.mdb :: WEQ</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>25349 rows</td>
+                    <td>25349 rows</td>
+                    <td></td>
+                </tr>                <tr>
+                    <td>DMWB NHS SNOMED Query Table.mdb :: SCTQT</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>22918684 rows</td>
+                    <td>22918684 rows</td>
+                    <td></td>
+                </tr>                <tr>
+                    <td>DMWB NHS SNOMED Transitive Closure.mdb :: SCTTC</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>11637305 rows</td>
+                    <td>11637305 rows</td>
+                    <td></td>
+                </tr>                <tr>
+                    <td>DMWB NHS SNOMED.mdb :: SCT</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>3337614 rows</td>
+                    <td>3337614 rows</td>
+                    <td></td>
+                </tr>                <tr>
+                    <td>DMWB NHS SNOMED.mdb :: SCTHIER</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>1476926 rows</td>
+                    <td>1476926 rows</td>
+                    <td></td>
+                </tr>                <tr>
+                    <td>DMWB NHS SNOMED.mdb :: SCTMODREL</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>137 rows</td>
+                    <td>137 rows</td>
+                    <td></td>
+                </tr>                <tr>
+                    <td>DMWB NHS SNOMED.mdb :: SCTMRCM</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>277 rows</td>
+                    <td>277 rows</td>
+                    <td></td>
+                </tr>                <tr>
+                    <td>DMWB NHS SNOMED.mdb :: SCTREL</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>3430701 rows</td>
+                    <td>3430701 rows</td>
+                    <td></td>
+                </tr>                <tr>
+                    <td>DMWB NHS SNOMED.mdb :: VERSIONS</td>
+                    <td><span class="status-badge badge-pass">PASS</span></td>
+                    <td>6 rows</td>
+                    <td>6 rows</td>
+                    <td></td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div style="text-align: center; color: #666; margin-top: 30px; padding-top: 20px; border-top: 1px solid #ddd;">
+        <p>DMWB Export Validation - 2025-12-28</p>
+        <p>Log: O:\GitHub\snomed-database-loader\DMWB\Test-DMWBExport_20251228_152156.log</p>
+    </div>
+</body>
+</html>

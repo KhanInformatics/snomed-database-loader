@@ -1,0 +1,37 @@
+[2025-12-27 22:37:07] [INFO] ========================================================
+[2025-12-27 22:37:07] [INFO] DMWB Access to SQL Server Export Tool
+[2025-12-27 22:37:07] [INFO] ========================================================
+[2025-12-27 22:37:07] [INFO] Server: localhost\SQLEXPRESS
+[2025-12-27 22:37:07] [INFO] Database: DMWB_Export
+[2025-12-27 22:37:07] [INFO] Source: C:\DMWB\CurrentReleases
+[2025-12-27 22:37:07] [INFO] 
+[2025-12-27 22:37:07] [INFO] Testing SQL Server connection...
+[2025-12-27 22:37:07] [SUCCESS] Connected to: Microsoft SQL Server 2022 (RTM-GDR) (KB5068407) - 16.0.1160....
+[2025-12-27 22:37:07] [INFO] Creating database 'DMWB_Export'...
+[2025-12-27 22:37:07] [WARN] Dropping existing database...
+[2025-12-27 22:37:08] [SUCCESS] Database 'DMWB_Export' created successfully
+[2025-12-27 22:37:08] [INFO] Found 9 Access database files
+[2025-12-27 22:37:08] [INFO] 
+[2025-12-27 22:37:08] [PROGRESS] ========================================================
+[2025-12-27 22:37:08] [PROGRESS] [1/9] Processing: DMWB NHS Data Migration Maps.mdb
+[2025-12-27 22:37:08] [PROGRESS] ========================================================
+[2025-12-27 22:37:08] [PROGRESS] Found 15 tables
+[2025-12-27 22:37:40] [SUCCESS]   ✓ Exported CTV3RCTMAP -> DMWB_NHS_Data_Migration_Maps_CTV3RCTMAP (445473 rows)
+[2025-12-27 22:38:08] [SUCCESS]   ✓ Exported CTV3SCTMAP -> DMWB_NHS_Data_Migration_Maps_CTV3SCTMAP (445473 rows)
+[2025-12-27 22:38:09] [SUCCESS]   ✓ Exported ICD -> DMWB_NHS_Data_Migration_Maps_ICD (19267 rows)
+[2025-12-27 22:38:10] [SUCCESS]   ✓ Exported ICDHIER -> DMWB_NHS_Data_Migration_Maps_ICDHIER (19267 rows)
+[2025-12-27 22:38:13] [SUCCESS]   ✓ Exported ICDSCTMAP -> DMWB_NHS_Data_Migration_Maps_ICDSCTMAP (37729 rows)
+[2025-12-27 22:38:16] [SUCCESS]   ✓ Exported ICDTC -> DMWB_NHS_Data_Migration_Maps_ICDTC (77965 rows)
+[2025-12-27 22:38:16] [SUCCESS]   ✓ Exported MAPVERSIONS -> DMWB_NHS_Data_Migration_Maps_MAPVERSIONS (10 rows)
+[2025-12-27 22:38:16] [SUCCESS]   ✓ Exported OPCS -> DMWB_NHS_Data_Migration_Maps_OPCS (11686 rows)
+[2025-12-27 22:38:17] [SUCCESS]   ✓ Exported OPCSHIER -> DMWB_NHS_Data_Migration_Maps_OPCSHIER (11686 rows)
+[2025-12-27 22:38:18] [SUCCESS]   ✓ Exported OPCSSCTMAP -> DMWB_NHS_Data_Migration_Maps_OPCSSCTMAP (20816 rows)
+[2025-12-27 22:38:20] [SUCCESS]   ✓ Exported OPCSTC -> DMWB_NHS_Data_Migration_Maps_OPCSTC (44789 rows)
+[2025-12-27 22:38:28] [SUCCESS]   ✓ Exported RCTCTV3MAP -> DMWB_NHS_Data_Migration_Maps_RCTCTV3MAP (102066 rows)
+[2025-12-27 22:38:35] [SUCCESS]   ✓ Exported RCTSCTMAP -> DMWB_NHS_Data_Migration_Maps_RCTSCTMAP (102057 rows)
+[2025-12-27 22:38:42] [SUCCESS]   ✓ Exported SCTICDMAP -> DMWB_NHS_Data_Migration_Maps_SCTICDMAP (117992 rows)
+[2025-12-27 22:38:46] [SUCCESS]   ✓ Exported SCTOPCSMAP -> DMWB_NHS_Data_Migration_Maps_SCTOPCSMAP (71730 rows)
+[2025-12-27 22:38:46] [PROGRESS] ========================================================
+[2025-12-27 22:38:46] [PROGRESS] [2/9] Processing: DMWB NHS Public Code Usage.mdb
+[2025-12-27 22:38:46] [PROGRESS] ========================================================
+[2025-12-27 22:38:46] [PROGRESS] Found 1 tables

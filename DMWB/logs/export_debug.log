@@ -1,0 +1,277 @@
+
+SourceDatabase : DMWB NHS Data Migration Maps.mdb
+SourceTable    : CTV3RCTMAP
+SqlTable       : DMWB_NHS_Data_Migration_Maps_CTV3RCTMAP
+RowCount       : 445473
+Status         : Success
+
+SourceDatabase : DMWB NHS Data Migration Maps.mdb
+SourceTable    : CTV3SCTMAP
+SqlTable       : DMWB_NHS_Data_Migration_Maps_CTV3SCTMAP
+RowCount       : 445473
+Status         : Success
+
+SourceDatabase : DMWB NHS Data Migration Maps.mdb
+SourceTable    : ICD
+SqlTable       : DMWB_NHS_Data_Migration_Maps_ICD
+RowCount       : 19267
+Status         : Success
+
+SourceDatabase : DMWB NHS Data Migration Maps.mdb
+SourceTable    : ICDHIER
+SqlTable       : DMWB_NHS_Data_Migration_Maps_ICDHIER
+RowCount       : 19267
+Status         : Success
+
+SourceDatabase : DMWB NHS Data Migration Maps.mdb
+SourceTable    : ICDSCTMAP
+SqlTable       : DMWB_NHS_Data_Migration_Maps_ICDSCTMAP
+RowCount       : 37729
+Status         : Success
+
+SourceDatabase : DMWB NHS Data Migration Maps.mdb
+SourceTable    : ICDTC
+SqlTable       : DMWB_NHS_Data_Migration_Maps_ICDTC
+RowCount       : 77965
+Status         : Success
+
+SourceDatabase : DMWB NHS Data Migration Maps.mdb
+SourceTable    : MAPVERSIONS
+SqlTable       : DMWB_NHS_Data_Migration_Maps_MAPVERSIONS
+RowCount       : 10
+Status         : Success
+
+SourceDatabase : DMWB NHS Data Migration Maps.mdb
+SourceTable    : OPCS
+SqlTable       : DMWB_NHS_Data_Migration_Maps_OPCS
+RowCount       : 11686
+Status         : Success
+
+SourceDatabase : DMWB NHS Data Migration Maps.mdb
+SourceTable    : OPCSHIER
+SqlTable       : DMWB_NHS_Data_Migration_Maps_OPCSHIER
+RowCount       : 11686
+Status         : Success
+
+SourceDatabase : DMWB NHS Data Migration Maps.mdb
+SourceTable    : OPCSSCTMAP
+SqlTable       : DMWB_NHS_Data_Migration_Maps_OPCSSCTMAP
+RowCount       : 20816
+Status         : Success
+
+SourceDatabase : DMWB NHS Data Migration Maps.mdb
+SourceTable    : OPCSTC
+SqlTable       : DMWB_NHS_Data_Migration_Maps_OPCSTC
+RowCount       : 44789
+Status         : Success
+
+SourceDatabase : DMWB NHS Data Migration Maps.mdb
+SourceTable    : RCTCTV3MAP
+SqlTable       : DMWB_NHS_Data_Migration_Maps_RCTCTV3MAP
+RowCount       : 102066
+Status         : Success
+
+SourceDatabase : DMWB NHS Data Migration Maps.mdb
+SourceTable    : RCTSCTMAP
+SqlTable       : DMWB_NHS_Data_Migration_Maps_RCTSCTMAP
+RowCount       : 102057
+Status         : Success
+
+SourceDatabase : DMWB NHS Data Migration Maps.mdb
+SourceTable    : SCTICDMAP
+SqlTable       : DMWB_NHS_Data_Migration_Maps_SCTICDMAP
+RowCount       : 117992
+Status         : Success
+
+SourceDatabase : DMWB NHS Data Migration Maps.mdb
+SourceTable    : SCTOPCSMAP
+SqlTable       : DMWB_NHS_Data_Migration_Maps_SCTOPCSMAP
+RowCount       : 71730
+Status         : Success
+
+SourceDatabase : DMWB NHS Public Code Usage.mdb
+SourceTable    : SCTFREQ
+SqlTable       : DMWB_NHS_Public_Code_Usage_SCTFREQ
+RowCount       : 1133250
+Status         : Success
+
+SourceDatabase : DMWB NHS READ.mdb
+SourceTable    : CTV3
+SqlTable       : DMWB_NHS_READ_CTV3
+RowCount       : 395650
+Status         : Success
+
+SourceDatabase : DMWB NHS READ.mdb
+SourceTable    : ctv3_rmf
+SqlTable       : DMWB_NHS_READ_ctv3_rmf
+RowCount       : 55272
+Status         : Success
+
+SourceDatabase : DMWB NHS READ.mdb
+SourceTable    : ctv3_term
+SqlTable       : DMWB_NHS_READ_ctv3_term
+RowCount       : 351470
+Status         : Success
+
+SourceDatabase : DMWB NHS READ.mdb
+SourceTable    : CTV3EQV
+SqlTable       : DMWB_NHS_READ_CTV3EQV
+RowCount       : 803372
+Status         : Success
+
+SourceDatabase : DMWB NHS READ.mdb
+SourceTable    : CTV3HIER
+SqlTable       : DMWB_NHS_READ_CTV3HIER
+RowCount       : 287969
+Status         : Success
+
+SourceDatabase : DMWB NHS READ.mdb
+SourceTable    : CTV3TC
+SqlTable       : DMWB_NHS_READ_CTV3TC
+RowCount       : 2241382
+Status         : Success
+
+SourceDatabase : DMWB NHS READ.mdb
+SourceTable    : RCT
+SqlTable       : DMWB_NHS_READ_RCT
+RowCount       : 175017
+Status         : Success
+
+SourceDatabase : DMWB NHS READ.mdb
+SourceTable    : RCTEQV
+SqlTable       : DMWB_NHS_READ_RCTEQV
+RowCount       : 336712
+Status         : Success
+
+SourceDatabase : DMWB NHS READ.mdb
+SourceTable    : RCTHIER
+SqlTable       : DMWB_NHS_READ_RCTHIER
+RowCount       : 157280
+Status         : Success
+
+SourceDatabase : DMWB NHS READ.mdb
+SourceTable    : RCTTC
+SqlTable       : DMWB_NHS_READ_RCTTC
+RowCount       : 664554
+Status         : Success
+
+SourceDatabase : DMWB NHS SNOMED History.mdb
+SourceTable    : SCTCHIST
+SqlTable       : DMWB_NHS_SNOMED_History_SCTCHIST
+RowCount       : 0
+Status         : Success
+
+SourceDatabase : DMWB NHS SNOMED History.mdb
+SourceTable    : SCTEQV
+SqlTable       : DMWB_NHS_SNOMED_History_SCTEQV
+RowCount       : 112217
+Status         : Success
+
+SourceDatabase : DMWB NHS SNOMED History.mdb
+SourceTable    : SCTHIST
+SqlTable       : DMWB_NHS_SNOMED_History_SCTHIST
+RowCount       : 352610
+Status         : Success
+
+SourceDatabase : DMWB NHS SNOMED History.mdb
+SourceTable    : SCTHREL
+SqlTable       : DMWB_NHS_SNOMED_History_SCTHREL
+RowCount       : 348238
+Status         : Success
+
+SourceDatabase : DMWB NHS SNOMED History.mdb
+SourceTable    : SCTMETA
+SqlTable       : DMWB_NHS_SNOMED_History_SCTMETA
+RowCount       : 1141797
+Status         : Success
+
+SourceDatabase : DMWB NHS SNOMED History.mdb
+SourceTable    : SCTSUBST
+SqlTable       : DMWB_NHS_SNOMED_History_SCTSUBST
+RowCount       : 0
+Status         : Success
+
+SourceDatabase : DMWB NHS SNOMED History.mdb
+SourceTable    : SUBSETLIST
+SqlTable       : DMWB_NHS_SNOMED_History_SUBSETLIST
+RowCount       : 1507
+Status         : Success
+
+SourceDatabase : DMWB NHS SNOMED History.mdb
+SourceTable    : SUBSETS
+SqlTable       : DMWB_NHS_SNOMED_History_SUBSETS
+RowCount       : 461419
+Status         : Success
+
+SourceDatabase : DMWB NHS SNOMED History.mdb
+SourceTable    : SUBSETS_RD
+SqlTable       : DMWB_NHS_SNOMED_History_SUBSETS_RD
+RowCount       : 2652514
+Status         : Success
+
+SourceDatabase : DMWB NHS SNOMED Lexicon.mdb
+SourceTable    : TOKENINDEX
+SqlTable       : DMWB_NHS_SNOMED_Lexicon_TOKENINDEX
+RowCount       : 12951424
+Status         : Success
+
+SourceDatabase : DMWB NHS SNOMED Lexicon.mdb
+SourceTable    : TOKENS
+SqlTable       : DMWB_NHS_SNOMED_Lexicon_TOKENS
+RowCount       : 127220
+Status         : Success
+
+SourceDatabase : DMWB NHS SNOMED Lexicon.mdb
+SourceTable    : WEQ
+SqlTable       : DMWB_NHS_SNOMED_Lexicon_WEQ
+RowCount       : 25349
+Status         : Success
+
+SourceDatabase : DMWB NHS SNOMED Query Table.mdb
+SourceTable    : SCTQT
+SqlTable       : DMWB_NHS_SNOMED_Query_Table_SCTQT
+RowCount       : 22918684
+Status         : Success
+
+SourceDatabase : DMWB NHS SNOMED Transitive Closure.mdb
+SourceTable    : SCTTC
+SqlTable       : DMWB_NHS_SNOMED_Transitive_Closure_SCTTC
+RowCount       : 11637305
+Status         : Success
+
+SourceDatabase : DMWB NHS SNOMED.mdb
+SourceTable    : SCT
+SqlTable       : DMWB_NHS_SNOMED_SCT
+RowCount       : 3337614
+Status         : Success
+
+SourceDatabase : DMWB NHS SNOMED.mdb
+SourceTable    : SCTHIER
+SqlTable       : DMWB_NHS_SNOMED_SCTHIER
+RowCount       : 1476926
+Status         : Success
+
+SourceDatabase : DMWB NHS SNOMED.mdb
+SourceTable    : SCTMODREL
+SqlTable       : DMWB_NHS_SNOMED_SCTMODREL
+RowCount       : 137
+Status         : Success
+
+SourceDatabase : DMWB NHS SNOMED.mdb
+SourceTable    : SCTMRCM
+SqlTable       : DMWB_NHS_SNOMED_SCTMRCM
+RowCount       : 277
+Status         : Success
+
+SourceDatabase : DMWB NHS SNOMED.mdb
+SourceTable    : SCTREL
+SqlTable       : DMWB_NHS_SNOMED_SCTREL
+RowCount       : 3430701
+Status         : Success
+
+SourceDatabase : DMWB NHS SNOMED.mdb
+SourceTable    : VERSIONS
+SqlTable       : DMWB_NHS_SNOMED_VERSIONS
+RowCount       : 6
+Status         : Success
+
