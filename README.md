@@ -30,8 +30,17 @@ All workflows support loading data into SQL Server with full end-to-end automati
 - [**MSSQL/SNOMED CT** – Fully automated (PowerShell-driven)](https://github.com/KhanInformatics/snomed-database-loader/tree/main/MSSQL)
 - [**DMD** – Complete DM+D workflow (PowerShell-driven)](https://github.com/KhanInformatics/snomed-database-loader/tree/main/DMD)
 - [**DMWB** – Data Migration Workbench tools (PowerShell-driven)](https://github.com/KhanInformatics/snomed-database-loader/tree/main/DMWB)
+- [**Automation** – Scheduled weekly updates with email notifications](AUTOMATION.md)
 
 ## Quick Start
+
+### Automated Weekly Updates (Recommended)
+```powershell
+# One-time setup - configure and install scheduled task
+notepad .\Config\TerminologyConfig.json     # Edit settings
+.\Weekly-TerminologyUpdate.ps1 -WhatIf  # Test run
+.\Install-WeeklyUpdateTask.ps1       # Install (requires Admin)
+```
 
 ### SNOMED CT Database  
 ```powershell
@@ -293,7 +302,32 @@ WHERE v.invalid = 0 AND t.invalid = 0;
 
 ## Maintenance and Updates
 
-### Regular Update Schedule
+### Automated Weekly Updates
+
+The repository includes a fully automated update system that:
+- Checks NHS TRUD for new releases weekly
+- Downloads and imports new data automatically  
+- Validates imports against source files
+- Sends HTML email reports with status
+
+**Quick Setup:**
+```powershell
+# Configure (edit paths, database, email settings)
+notepad .\Config\TerminologyConfig.json
+
+# Test the workflow
+.\Weekly-TerminologyUpdate.ps1 -WhatIf
+
+# Install as scheduled task (requires Admin)
+.\Install-WeeklyUpdateTask.ps1
+```
+
+📖 **See [AUTOMATION.md](AUTOMATION.md) for complete documentation including:**
+- System architecture and flow diagrams
+- Configuration reference
+- Troubleshooting guide
+
+### Manual Update Schedule
 - **SNOMED CT**: Check monthly (releases every 6 months + UK updates)
 - **DM+D**: Check weekly (releases every Monday at 4:00 AM)  
 - **PCD**: Check quarterly (updates as QOF requirements change)

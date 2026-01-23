@@ -42,7 +42,7 @@
 
 [CmdletBinding()]
 param(
-    [string]$SettingsPath = "$PSScriptRoot\Terminologysettings.json",
+    [string]$SettingsPath = "$PSScriptRoot\Config\Terminologysettings.json",
     [int]$SnomedSamples = 20,
     [int]$DmdSamples = 10,
     [switch]$ValidateSnomed,

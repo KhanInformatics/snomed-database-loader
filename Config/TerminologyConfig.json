@@ -1,0 +1,55 @@
+{
+    "paths": {
+        "snomedBase": "C:\\SNOMEDCT",
+        "dmdBase": "C:\\DMD",
+        "dmwbBase": "C:\\DMWB",
+        "logsBase": "C:\\TerminologyLogs"
+    },
+    "database": {
+        "serverInstance": "SILENTPRIORY\\SQLEXPRESS",
+        "snomedDatabase": "snomedct",
+        "snomedIntDatabase": "snomedct_int",
+        "dmdDatabase": "dmd"
+    },
+    "credentials": {
+        "trudApiTarget": "TRUD_API"
+    },
+    "trudItems": {
+        "snomedMonolith": 1799,
+        "snomedUkPrimaryCare": 659,
+        "snomedUkDrugExtension": 105,
+        "snomedInternational": 4,
+        "dmdMain": 24,
+        "dmdBonus": 25,
+        "dmwb": 98
+    },
+    "validation": {
+        "dmdSamplesPerTable": 100,
+        "snomedSamplesPerTable": 50,
+        "validateAgainstLocalSnomed": true
+    },
+    "notifications": {
+        "enabled": true,
+        "smtpServer": "smtp.gmail.com",
+        "smtpPort": 587,
+        "smtpUseSsl": true,
+        "smtpCredentialTarget": "SMTP_CREDENTIALS",
+        "fromAddress": "mik786@gmail.com",
+        "toAddresses": [
+            "mik786@gmail.com"
+        ],
+        "subjectPrefix": "[Terminology Update]"
+    },
+    "schedule": {
+        "dayOfWeek": "Saturday",
+        "timeOfDay": "12:00",
+        "taskName": "WeeklyTerminologyUpdate"
+    },
+    "options": {
+        "runParallel": false,
+        "stopOnError": false,
+        "retryOnFailure": true,
+        "maxRetries": 2,
+        "retryDelaySeconds": 300
+    }
+}

@@ -1,8 +1,36 @@
+# Temporary files
 tmp*
-.project
 *.pyc
+
+# IDE/Editor
+.project
 .idea/
-.DS_Store
-*.zip
 .vscode/settings.json
 Snomed-loader — Visual Studio Code.code-workspace
+
+# OS
+.DS_Store
+
+# Archives (downloaded releases)
+*.zip
+
+# Logs
+*.log
+logs/
+
+# Tracking files (machine-specific)
+LastImportedRelease.json
+last_*.json
+*_checked_releases.json
+
+# Query results/outputs
+*_results.txt
+checkcodes.txt
+checkcodeschecked.txt
+
+# Data files (too large for repo)
+Queries/*.csv
+Queries/*.json
+!Config/TerminologyConfig.json
+!Config/Terminologysettings.json
+!package.json
