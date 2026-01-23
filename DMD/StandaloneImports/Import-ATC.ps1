@@ -1,5 +1,5 @@
 param(
-    [string]$XmlPath = "C:\DMD\CurrentReleases\nhsbsa_dmd_11.1.0_20251110000001",
+    [string]$BonusPath = "C:\DMD\CurrentReleases\nhsbsa_dmdbonus_11.1.0_20251110000001",
     [string]$ServerInstance = "SILENTPRIORY\SQLEXPRESS",
     [string]$DatabaseName = "dmd",
     [int]$BatchSize = 500
@@ -67,7 +67,6 @@ function Invoke-BatchedInsert {
 Write-Host "`n===== ATC Code Import =====" -ForegroundColor Cyan
 
 # ATC codes are in the BNF bonus file (NOT in VMP file!)
-$BonusPath = "C:\DMD\CurrentReleases\nhsbsa_dmdbonus_11.1.0_20251110000001"
 $BnfFiles = Get-ChildItem -Path $BonusPath -Filter "f_bnf1_*.xml" -Recurse -ErrorAction SilentlyContinue
 if ($BnfFiles.Count -eq 0) {
     Write-Error "BNF file not found in $BonusPath"

@@ -1,0 +1,11 @@
+{
+  "nhsOntologySettings": {
+    "terminologyServerUrl": "https://ontology.nhs.uk/production1/fhir",
+    "authUrl": "https://ontology.nhs.uk/authorisation/auth/realms/nhs-digital-terminology/protocol/openid-connect/token",
+    "clientId": "BOB_ICB_Consumer",
+    "clientSecret": "7fb1309c-cc22-4a77-a242-bd75bd349d7c",
+    "enableOntologyLookup": true,
+    "timeoutSeconds": 60,
+    "maxRetries": 3
+  }
+}

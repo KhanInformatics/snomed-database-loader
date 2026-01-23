@@ -12,7 +12,8 @@ GO
 -- ========================================================================
 
 -- Query PCD clusters:
-DECLARE @ClusterID NVARCHAR(50) = 'VITKANTAGCON_COD';
+-- Valid Clopidogrel-related clusters: CLO_COD, CLODEC_COD, TXCLO_COD, XCLO_COD
+DECLARE @ClusterID NVARCHAR(50) = 'CLO_COD';
 
 SELECT DISTINCT 
     SNOMED_code,
@@ -22,6 +23,33 @@ SELECT DISTINCT
 FROM PCD_Refset_Content_V2
 WHERE Cluster_ID = @ClusterID
 ORDER BY SNOMED_code;
+
+-- ========================================================================
+-- CLODRUG_COD - Clopidogrel Drug Reference Set (12463801000001107)
+-- ========================================================================
+-- This is a Drug Extension Reference Set, NOT a PCD cluster
+-- Query using curr_simplerefset_f table:
+
+DECLARE @RefsetID VARCHAR(20) = '12463801000001107';  -- CLODRUG_COD
+
+SELECT
+    s.referencedcomponentid AS SNOMED_code,
+    CAST(d.term AS NVARCHAR(500)) AS DrugName_FSN,
+    CAST(pt.term AS NVARCHAR(500)) AS DrugName_Preferred,
+    c.active AS ConceptIsActive
+FROM curr_simplerefset_f s
+JOIN curr_concept_f c ON s.referencedcomponentid = c.id
+LEFT JOIN curr_description_f d 
+    ON d.conceptid = c.id
+    AND d.typeid = '900000000000003001'  -- FSN
+    AND d.active = '1'
+LEFT JOIN curr_description_f pt
+    ON pt.conceptid = c.id  
+    AND pt.typeid = '900000000000013009'  -- Preferred term
+    AND pt.active = '1'
+WHERE s.refsetid = @RefsetID
+  AND s.active = '1'
+ORDER BY CAST(pt.term AS NVARCHAR(500));
 
 -- ========================================================================
 -- DRUG EXTENSION REFERENCE SETS

@@ -161,14 +161,22 @@ The automatic installation process uses three PowerShell scripts that work toget
 
 ### Script Overview
 
-1. **Check-NewRelease.ps1**  
+**Automation Flow:**
+```
+Check-NewRelease.ps1 → Download-SnomedReleases.ps1 → Generate-AndRun-AllSnapshots.ps1
+```
+
+1. **Check-NewRelease.ps1** *(Main Entry Point)*  
    - **Purpose:**  
-     Checks the TRUD API for the latest release of each SNOMED CT item (e.g. Monolith and UK Primary Care).
+     Checks the TRUD API for the latest release of each SNOMED CT item (e.g. Monolith and UK Primary Care) and orchestrates the full import workflow.
    - **Process:**  
      - Retrieves the TRUD API key securely from Windows Credential Manager.
      - Constructs the TRUD API URL using the API key and item number.
      - Compares the current release ID (or release date) with a locally stored record (in `LastRelease.json`).
-     - If a new release is detected (or if no previous record exists), it triggers the download and import scripts.
+     - If a new release is detected (or if no previous record exists):
+       1. Automatically calls **Download-SnomedReleases.ps1** to download the releases.
+       2. Automatically calls **Generate-AndRun-AllSnapshots.ps1** to import the data.
+       3. Runs validation queries and logs row counts for key tables to `CheckNewRelease.log`.
 
 2. **Download-SnomedReleases.ps1**  
    - **Purpose:**  

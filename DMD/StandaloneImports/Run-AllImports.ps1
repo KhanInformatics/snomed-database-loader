@@ -17,20 +17,21 @@ Write-Host ""
 $startTime = Get-Date
 
 # Define import order (respecting foreign key dependencies)
+# UsesBonus indicates scripts that need BonusPath instead of XmlPath
 $imports = @(
-    @{Name="VTM (Virtual Therapeutic Moieties)"; Script="Import-VTM.ps1"; Table="vtm"; Expected=3223}
-    @{Name="VMP (Virtual Medicinal Products)"; Script="Import-VMP.ps1"; Table="vmp"; Expected=24390}
-    @{Name="AMP (Actual Medicinal Products)"; Script="Import-AMP.ps1"; Table="amp"; Expected=164893}
-    @{Name="VMPP (Virtual Medicinal Product Packs)"; Script="Import-VMPP.ps1"; Table="vmpp"; Expected=36932}
-    @{Name="AMPP (Actual Medicinal Product Packs)"; Script="Import-AMPP.ps1"; Table="ampp"; Expected=184331}
-    @{Name="Ingredient"; Script="Import-Ingredient.ps1"; Table="ingredient"; Expected=4490}
-    @{Name="Lookup"; Script="Import-Lookup.ps1"; Table="lookup"; Expected=3806}
-    @{Name="VMP Ingredients"; Script="Import-VMP-Ingredients.ps1"; Table="vmp_ingredient"; Expected=26723}
-    @{Name="VMP Drug Routes"; Script="Import-VMP-DrugRoutes.ps1"; Table="vmp_drugroute"; Expected=22600}
-    @{Name="VMP Drug Forms"; Script="Import-VMP-DrugForms.ps1"; Table="vmp_drugform"; Expected=20869}
-    @{Name="BNF Codes"; Script="Import-BNF.ps1"; Table="dmd_bnf"; Expected=17297}
-    @{Name="ATC Codes"; Script="Import-ATC.ps1"; Table="dmd_atc"; Expected=20330}
-    @{Name="GTIN (Barcodes)"; Script="Import-GTIN.ps1"; Table="gtin"; Expected=97633}
+    @{Name="VTM (Virtual Therapeutic Moieties)"; Script="Import-VTM.ps1"; Table="vtm"; Expected=3223; UsesBonus=$false}
+    @{Name="VMP (Virtual Medicinal Products)"; Script="Import-VMP.ps1"; Table="vmp"; Expected=24390; UsesBonus=$false}
+    @{Name="AMP (Actual Medicinal Products)"; Script="Import-AMP.ps1"; Table="amp"; Expected=164893; UsesBonus=$false}
+    @{Name="VMPP (Virtual Medicinal Product Packs)"; Script="Import-VMPP.ps1"; Table="vmpp"; Expected=36932; UsesBonus=$false}
+    @{Name="AMPP (Actual Medicinal Product Packs)"; Script="Import-AMPP.ps1"; Table="ampp"; Expected=184331; UsesBonus=$false}
+    @{Name="Ingredient"; Script="Import-Ingredient.ps1"; Table="ingredient"; Expected=4490; UsesBonus=$false}
+    @{Name="Lookup"; Script="Import-Lookup.ps1"; Table="lookup"; Expected=3806; UsesBonus=$false}
+    @{Name="VMP Ingredients"; Script="Import-VMP-Ingredients.ps1"; Table="vmp_ingredient"; Expected=26723; UsesBonus=$false}
+    @{Name="VMP Drug Routes"; Script="Import-VMP-DrugRoutes.ps1"; Table="vmp_drugroute"; Expected=22600; UsesBonus=$false}
+    @{Name="VMP Drug Forms"; Script="Import-VMP-DrugForms.ps1"; Table="vmp_drugform"; Expected=20869; UsesBonus=$false}
+    @{Name="BNF Codes"; Script="Import-BNF.ps1"; Table="dmd_bnf"; Expected=17297; UsesBonus=$true}
+    @{Name="ATC Codes"; Script="Import-ATC.ps1"; Table="dmd_atc"; Expected=20330; UsesBonus=$true}
+    @{Name="GTIN (Barcodes)"; Script="Import-GTIN.ps1"; Table="gtin"; Expected=97633; UsesBonus=$true}
 )
 
 $results = @()
@@ -56,8 +57,12 @@ foreach ($import in $imports) {
     $importStart = Get-Date
     
     try {
-        # Run the import script
-        & $scriptFile -XmlPath $XmlPath -ServerInstance $ServerInstance -DatabaseName $DatabaseName
+        # Run the import script with appropriate path parameter
+        if ($import.UsesBonus) {
+            & $scriptFile -BonusPath $BonusPath -ServerInstance $ServerInstance -DatabaseName $DatabaseName
+        } else {
+            & $scriptFile -XmlPath $XmlPath -ServerInstance $ServerInstance -DatabaseName $DatabaseName
+        }
         
         # Verify count
         $query = "SELECT COUNT(*) as cnt FROM $($import.Table)"

@@ -117,6 +117,20 @@ foreach ($item in $items) {
         }
         Move-Item -Path $extractDir -Destination $destinationDir
         Write-Host "Moved to: $destinationDir"
+        
+        # Extract any nested ZIP files (e.g., BNF.zip in bonus folder)
+        $nestedZips = Get-ChildItem -Path $destinationDir -Filter "*.zip" -Recurse
+        foreach ($nestedZip in $nestedZips) {
+            Write-Host "Extracting nested ZIP: $($nestedZip.Name)..."
+            $nestedExtractDir = $nestedZip.DirectoryName
+            try {
+                Expand-Archive -Path $nestedZip.FullName -DestinationPath $nestedExtractDir -Force
+                Remove-Item $nestedZip.FullName -Force
+                Write-Host "  Extracted and removed: $($nestedZip.Name)"
+            } catch {
+                Write-Warning "Could not extract nested ZIP $($nestedZip.Name): $($_.Exception.Message)"
+            }
+        }
     } catch {
         Write-Error "Error moving folder: $($_.Exception.Message)"
     }
