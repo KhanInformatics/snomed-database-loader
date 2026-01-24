@@ -111,7 +111,7 @@
                         <table class="table table-sm mb-0">
                             <tr>
                                 <th style="width: 40%">Version</th>
-                                <td><code>@(_data.Snomed?.ReleaseVersion ?? "N/A")</code></td>
+                                <td>@FormatSnomedVersion(_data.Snomed?.ReleaseVersion)</td>
                             </tr>
                             <tr>
                                 <th>Concepts</th>
@@ -168,7 +168,7 @@
                         <table class="table table-sm mb-3">
                             <tr>
                                 <th style="width: 40%">Version</th>
-                                <td><code>@(_data.Dmd?.ReleaseVersion ?? "N/A")</code></td>
+                                <td>@FormatDmdVersion(_data.Dmd?.ReleaseVersion)</td>
                             </tr>
                             <tr>
                                 <th>VTMs</th>
@@ -384,5 +384,59 @@
         public bool Success { get; set; }
         public string? Details { get; set; }
         public string? Duration { get; set; }
+    }
+
+    // ========================================================
+    // VERSION FORMATTING HELPERS
+    // ========================================================
+    
+    /// <summary>
+    /// Formats SNOMED version (e.g., "20260114" → "14 Jan 2026")
+    /// </summary>
+    private string FormatSnomedVersion(string? version)
+    {
+        if (string.IsNullOrEmpty(version)) return "N/A";
+        
+        // SNOMED versions are YYYYMMDD format
+        if (version.Length >= 8 && DateTime.TryParseExact(
+            version.Substring(0, 8), 
+            "yyyyMMdd", 
+            null, 
+            System.Globalization.DateTimeStyles.None, 
+            out var date))
+        {
+            return date.ToString("d MMM yyyy");
+        }
+        
+        return version;
+    }
+
+    /// <summary>
+    /// Formats DM+D version (e.g., "nhsbsa_dmd_1.3.0_20260119000001" → "v1.3.0 (19 Jan 2026)")
+    /// </summary>
+    private string FormatDmdVersion(string? version)
+    {
+        if (string.IsNullOrEmpty(version)) return "N/A";
+        
+        // Pattern: nhsbsa_dmd_X.X.X_YYYYMMDDHHMMSS
+        var match = System.Text.RegularExpressions.Regex.Match(
+            version, 
+            @"nhsbsa_dmd(?:bonus)?_([\d.]+)_(\d{8})");
+        
+        if (match.Success)
+        {
+            var semver = match.Groups[1].Value;
+            var dateStr = match.Groups[2].Value;
+            
+            if (DateTime.TryParseExact(dateStr, "yyyyMMdd", null, 
+                System.Globalization.DateTimeStyles.None, out var date))
+            {
+                return $"v{semver} ({date:d MMM yyyy})";
+            }
+            
+            return $"v{semver}";
+        }
+        
+        return version;
     }
 }
