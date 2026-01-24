@@ -1,0 +1,388 @@
+@* ============================================================
+   TERMINOLOGY DASHBOARD - BLOB STORAGE VERSION
+   ============================================================
+   
+   This Blazor component reads directly from Azure Blob Storage.
+   No API or database required - just a static JSON file!
+   
+   Setup:
+   1. Create a storage account in Azure
+   2. Create a container named "terminology-reports"
+   3. Set container access level to "Blob (anonymous read)"
+   4. Update the BlobUrl below with your storage account name
+   
+   Add to your Blazor app's Pages folder.
+   ============================================================ *@
+
+@page "/terminology"
+@page "/terminology-dashboard"
+@using System.Text.Json
+@using System.Text.Json.Serialization
+@inject HttpClient Http
+
+<PageTitle>Terminology Updates</PageTitle>
+
+<div class="container-fluid">
+    <h1 class="mb-4">🏥 Terminology Updates Dashboard</h1>
+    
+    @if (_loading)
+    {
+        <div class="d-flex align-items-center">
+            <div class="spinner-border text-primary me-3" role="status"></div>
+            <span>Loading dashboard data...</span>
+        </div>
+    }
+    else if (_error != null)
+    {
+        <div class="alert alert-danger">
+            <h5>⚠️ Error Loading Data</h5>
+            <p>@_error</p>
+            <button class="btn btn-outline-danger btn-sm" @onclick="LoadData">Retry</button>
+        </div>
+    }
+    else if (_data != null)
+    {
+        <!-- Last Updated Banner -->
+        <div class="alert @(_data.LatestRun?.OverallSuccess == true ? "alert-success" : "alert-danger") d-flex justify-content-between align-items-center">
+            <div>
+                <strong>Last Update:</strong> @(_data.LatestRun?.StartTime?.ToString("dddd, dd MMMM yyyy 'at' HH:mm") ?? "Unknown")
+                <span class="badge @(_data.LatestRun?.OverallSuccess == true ? "bg-success" : "bg-danger") ms-2">
+                    @(_data.LatestRun?.OverallSuccess == true ? "SUCCESS" : "FAILED")
+                </span>
+            </div>
+            <small class="text-muted">Data exported: @_data.ExportedAt?.ToString("dd MMM yyyy HH:mm")</small>
+        </div>
+
+        <!-- Stats Row -->
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <div class="card text-white bg-primary h-100">
+                    <div class="card-body text-center">
+                        <h6 class="card-subtitle mb-2">Duration</h6>
+                        <h2 class="mb-0">@(_data.LatestRun?.DurationFormatted ?? "—")</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-white bg-info h-100">
+                    <div class="card-body text-center">
+                        <h6 class="card-subtitle mb-2">Updates Found</h6>
+                        <h2 class="mb-0">@(_data.LatestRun?.UpdatesFound ?? 0)</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-white @(_data.LatestRun?.ErrorCount > 0 ? "bg-danger" : "bg-success") h-100">
+                    <div class="card-body text-center">
+                        <h6 class="card-subtitle mb-2">Errors</h6>
+                        <h2 class="mb-0">@(_data.LatestRun?.ErrorCount ?? 0)</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-white bg-secondary h-100">
+                    <div class="card-body text-center">
+                        <h6 class="card-subtitle mb-2">Server</h6>
+                        <h5 class="mb-0">@(_data.LatestRun?.ServerName ?? "—")</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SNOMED CT and DM+D Cards -->
+        <div class="row">
+            <!-- SNOMED CT Card -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h5 class="mb-0">🔬 SNOMED CT</h5>
+                        @if (_data.Snomed?.NewRelease == true)
+                        {
+                            <span class="badge bg-warning text-dark">NEW RELEASE</span>
+                        }
+                        else
+                        {
+                            <span class="badge @(_data.Snomed?.Success == true ? "bg-success" : "bg-secondary")">
+                                @(_data.Snomed?.Success == true ? "OK" : "—")
+                            </span>
+                        }
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-sm mb-0">
+                            <tr>
+                                <th style="width: 40%">Version</th>
+                                <td><code>@(_data.Snomed?.ReleaseVersion ?? "N/A")</code></td>
+                            </tr>
+                            <tr>
+                                <th>Concepts</th>
+                                <td>@(_data.Snomed?.ConceptCount?.ToString("N0") ?? "—")</td>
+                            </tr>
+                            <tr>
+                                <th>Descriptions</th>
+                                <td>@(_data.Snomed?.DescriptionCount?.ToString("N0") ?? "—")</td>
+                            </tr>
+                            <tr>
+                                <th>Relationships</th>
+                                <td>@(_data.Snomed?.RelationshipCount?.ToString("N0") ?? "—")</td>
+                            </tr>
+                        </table>
+                        
+                        @if (_data.Snomed?.Steps?.Any() == true)
+                        {
+                            <hr />
+                            <h6>Steps</h6>
+                            <ul class="list-unstyled mb-0 small">
+                                @foreach (var step in _data.Snomed.Steps)
+                                {
+                                    <li>
+                                        @(step.Success ? "✅" : "❌") @step.Name
+                                        @if (!string.IsNullOrEmpty(step.Details))
+                                        {
+                                            <span class="text-muted">— @step.Details</span>
+                                        }
+                                    </li>
+                                }
+                            </ul>
+                        }
+                    </div>
+                </div>
+            </div>
+
+            <!-- DM+D Card -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h5 class="mb-0">💊 DM+D</h5>
+                        @if (_data.Dmd?.NewRelease == true)
+                        {
+                            <span class="badge bg-warning text-dark">NEW RELEASE</span>
+                        }
+                        else
+                        {
+                            <span class="badge @(_data.Dmd?.Success == true ? "bg-success" : "bg-secondary")">
+                                @(_data.Dmd?.Success == true ? "OK" : "—")
+                            </span>
+                        }
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-sm mb-3">
+                            <tr>
+                                <th style="width: 40%">Version</th>
+                                <td><code>@(_data.Dmd?.ReleaseVersion ?? "N/A")</code></td>
+                            </tr>
+                            <tr>
+                                <th>VTMs</th>
+                                <td>@(_data.Dmd?.VtmCount?.ToString("N0") ?? "—")</td>
+                            </tr>
+                            <tr>
+                                <th>VMPs</th>
+                                <td>@(_data.Dmd?.VmpCount?.ToString("N0") ?? "—")</td>
+                            </tr>
+                            <tr>
+                                <th>AMPs</th>
+                                <td>@(_data.Dmd?.AmpCount?.ToString("N0") ?? "—")</td>
+                            </tr>
+                            <tr>
+                                <th>VMPPs</th>
+                                <td>@(_data.Dmd?.VmppCount?.ToString("N0") ?? "—")</td>
+                            </tr>
+                            <tr>
+                                <th>AMPPs</th>
+                                <td>@(_data.Dmd?.AmppCount?.ToString("N0") ?? "—")</td>
+                            </tr>
+                        </table>
+                        
+                        <!-- Validation Rates -->
+                        @if (_data.Dmd?.XmlValidationRate != null || _data.Dmd?.SnomedValidationRate != null)
+                        {
+                            <h6>Validation</h6>
+                            <div class="row">
+                                @if (_data.Dmd?.XmlValidationRate != null)
+                                {
+                                    <div class="col-6">
+                                        <div class="progress mb-1" style="height: 20px;">
+                                            <div class="progress-bar bg-success" style="width: @(_data.Dmd.XmlValidationRate)%">
+                                                @(_data.Dmd.XmlValidationRate)%
+                                            </div>
+                                        </div>
+                                        <small class="text-muted">XML Validation</small>
+                                    </div>
+                                }
+                                @if (_data.Dmd?.SnomedValidationRate != null)
+                                {
+                                    <div class="col-6">
+                                        <div class="progress mb-1" style="height: 20px;">
+                                            <div class="progress-bar @(_data.Dmd.SnomedValidationRate >= 90 ? "bg-success" : "bg-warning")" 
+                                                 style="width: @(_data.Dmd.SnomedValidationRate)%">
+                                                @(_data.Dmd.SnomedValidationRate.Value.ToString("F1"))%
+                                            </div>
+                                        </div>
+                                        <small class="text-muted">SNOMED Validation</small>
+                                    </div>
+                                }
+                            </div>
+                        }
+                        
+                        @if (_data.Dmd?.Steps?.Any() == true)
+                        {
+                            <hr />
+                            <h6>Steps</h6>
+                            <ul class="list-unstyled mb-0 small">
+                                @foreach (var step in _data.Dmd.Steps)
+                                {
+                                    <li>
+                                        @(step.Success ? "✅" : "❌") @step.Name
+                                        @if (!string.IsNullOrEmpty(step.Details))
+                                        {
+                                            <span class="text-muted">— @step.Details</span>
+                                        }
+                                    </li>
+                                }
+                            </ul>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Errors Section -->
+        @if (_data.Errors?.Any() == true)
+        {
+            <div class="card border-danger mb-4">
+                <div class="card-header bg-danger text-white">
+                    <h5 class="mb-0">⚠️ Errors (@_data.Errors.Count)</h5>
+                </div>
+                <div class="card-body">
+                    <ul class="mb-0">
+                        @foreach (var error in _data.Errors)
+                        {
+                            <li class="text-danger">@error</li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        }
+
+        <!-- Footer -->
+        <div class="text-muted small text-center">
+            <p>
+                Run ID: <code>@_data.RunId</code> |
+                Export Version: @_data.ExportVersion
+            </p>
+        </div>
+    }
+</div>
+
+@code {
+    // ========================================================
+    // CONFIGURATION
+    // ========================================================
+    // SAS URL with read-only token (valid until 2027-01-24)
+    // Note: For production, store this in appsettings.json and inject IConfiguration
+    private const string BlobUrl = "https://snomedviewerstorage.blob.core.windows.net/terminology-reports/terminology-dashboard.json?se=2027-01-24T18%3A23%3A36Z&sp=r&sv=2022-11-02&sr=b&sig=SrGQHHnfejRc89tMgNE9npmOlMi6r7CiMQFrjitrFrU%3D";
+    
+    private DashboardData? _data;
+    private bool _loading = true;
+    private string? _error;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadData();
+    }
+
+    private async Task LoadData()
+    {
+        _loading = true;
+        _error = null;
+        StateHasChanged();
+
+        try
+        {
+            // Add cache-busting parameter to avoid stale data
+            var url = $"{BlobUrl}?_={DateTime.UtcNow.Ticks}";
+            _data = await Http.GetFromJsonAsync<DashboardData>(url, new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            });
+        }
+        catch (HttpRequestException ex)
+        {
+            _error = $"Failed to load data: {ex.Message}. Check that the blob URL is correct and accessible.";
+        }
+        catch (JsonException ex)
+        {
+            _error = $"Failed to parse JSON: {ex.Message}";
+        }
+        catch (Exception ex)
+        {
+            _error = $"Unexpected error: {ex.Message}";
+        }
+        finally
+        {
+            _loading = false;
+            StateHasChanged();
+        }
+    }
+
+    // ========================================================
+    // DATA MODELS
+    // ========================================================
+    
+    public class DashboardData
+    {
+        public DateTime? ExportedAt { get; set; }
+        public string? RunId { get; set; }
+        public string? ExportVersion { get; set; }
+        public LatestRunData? LatestRun { get; set; }
+        public SnomedData? Snomed { get; set; }
+        public DmdData? Dmd { get; set; }
+        public List<string>? Errors { get; set; }
+    }
+
+    public class LatestRunData
+    {
+        public string? RunId { get; set; }
+        public DateTime? StartTime { get; set; }
+        public DateTime? EndTime { get; set; }
+        public string? DurationFormatted { get; set; }
+        public bool? OverallSuccess { get; set; }
+        public int? UpdatesFound { get; set; }
+        public string? ServerName { get; set; }
+        public int? ErrorCount { get; set; }
+    }
+
+    public class SnomedData
+    {
+        public bool? Success { get; set; }
+        public bool? NewRelease { get; set; }
+        public string? ReleaseVersion { get; set; }
+        public long? ConceptCount { get; set; }
+        public long? DescriptionCount { get; set; }
+        public long? RelationshipCount { get; set; }
+        public List<StepData>? Steps { get; set; }
+    }
+
+    public class DmdData
+    {
+        public bool? Success { get; set; }
+        public bool? NewRelease { get; set; }
+        public string? ReleaseVersion { get; set; }
+        public int? VtmCount { get; set; }
+        public int? VmpCount { get; set; }
+        public int? AmpCount { get; set; }
+        public int? VmppCount { get; set; }
+        public int? AmppCount { get; set; }
+        public int? IngredientCount { get; set; }
+        public decimal? XmlValidationRate { get; set; }
+        public decimal? SnomedValidationRate { get; set; }
+        public List<StepData>? Steps { get; set; }
+    }
+
+    public class StepData
+    {
+        public string? Name { get; set; }
+        public bool Success { get; set; }
+        public string? Details { get; set; }
+        public string? Duration { get; set; }
+    }
+}

@@ -1,55 +1,68 @@
 {
-    "paths": {
-        "snomedBase": "C:\\SNOMEDCT",
-        "dmdBase": "C:\\DMD",
-        "dmwbBase": "C:\\DMWB",
-        "logsBase": "C:\\TerminologyLogs"
-    },
-    "database": {
-        "serverInstance": "SILENTPRIORY\\SQLEXPRESS",
-        "snomedDatabase": "snomedct",
-        "snomedIntDatabase": "snomedct_int",
-        "dmdDatabase": "dmd"
-    },
-    "credentials": {
-        "trudApiTarget": "TRUD_API"
-    },
-    "trudItems": {
-        "snomedMonolith": 1799,
-        "snomedUkPrimaryCare": 659,
-        "snomedUkDrugExtension": 105,
-        "snomedInternational": 4,
-        "dmdMain": 24,
-        "dmdBonus": 25,
-        "dmwb": 98
-    },
-    "validation": {
-        "dmdSamplesPerTable": 100,
-        "snomedSamplesPerTable": 50,
-        "validateAgainstLocalSnomed": true
-    },
-    "notifications": {
-        "enabled": true,
-        "smtpServer": "smtp.gmail.com",
-        "smtpPort": 587,
-        "smtpUseSsl": true,
-        "smtpCredentialTarget": "SMTP_CREDENTIALS",
-        "fromAddress": "mik786@gmail.com",
-        "toAddresses": [
-            "mik786@gmail.com"
-        ],
-        "subjectPrefix": "[Terminology Update]"
-    },
-    "schedule": {
-        "dayOfWeek": "Saturday",
-        "timeOfDay": "12:00",
-        "taskName": "WeeklyTerminologyUpdate"
-    },
-    "options": {
-        "runParallel": false,
-        "stopOnError": false,
-        "retryOnFailure": true,
-        "maxRetries": 2,
-        "retryDelaySeconds": 300
-    }
+  "paths": {
+    "snomedBase": "C:\\SNOMEDCT",
+    "dmdBase": "C:\\DMD",
+    "dmwbBase": "C:\\DMWB",
+    "logsBase": "C:\\TerminologyLogs"
+  },
+  "database": {
+    "serverInstance": "SILENTPRIORY\\SQLEXPRESS",
+    "snomedDatabase": "snomedct",
+    "snomedIntDatabase": "snomedct_int",
+    "dmdDatabase": "dmd"
+  },
+  "credentials": {
+    "trudApiTarget": "TRUD_API"
+  },
+  "trudItems": {
+    "snomedMonolith": 1799,
+    "snomedUkPrimaryCare": 659,
+    "snomedUkDrugExtension": 105,
+    "snomedInternational": 4,
+    "dmdMain": 24,
+    "dmdBonus": 25,
+    "dmwb": 98
+  },
+  "validation": {
+    "dmdSamplesPerTable": 100,
+    "snomedSamplesPerTable": 50,
+    "validateAgainstLocalSnomed": true
+  },
+  "notifications": {
+    "enabled": true,
+    "smtpServer": "smtp.gmail.com",
+    "smtpPort": 587,
+    "smtpUseSsl": true,
+    "smtpCredentialTarget": "SMTP_CREDENTIALS",
+    "fromAddress": "mik786@gmail.com",
+    "toAddresses": [
+      "mik786@gmail.com"
+    ],
+    "subjectPrefix": "[Terminology Update]"
+  },
+  "schedule": {
+    "dayOfWeek": "Saturday",
+    "timeOfDay": "12:00",
+    "taskName": "WeeklyTerminologyUpdate"
+  },
+  "options": {
+    "runParallel": false,
+    "stopOnError": false,
+    "retryOnFailure": true,
+    "maxRetries": 2,
+    "retryDelaySeconds": 300
+  },
+  "azureReporting": {
+    "enabled": true,
+    "server": "azuresnnomedct.database.windows.net",
+    "database": "ReportingServer",
+    "connectionString": "Server=tcp:azuresnnomedct.database.windows.net,1433;Initial Catalog=ReportingServer;Encrypt=True;TrustServerCertificate=False;Connection Timeout=60;Authentication=Active Directory Default"
+  },
+  "azureBlobStorage": {
+    "enabled": true,
+    "storageAccount": "snomedviewerstorage",
+    "containerName": "terminology-reports",
+    "blobName": "terminology-dashboard.json",
+    "keyCredentialTarget": "AZURE_STORAGE_KEY"
+  }
 }

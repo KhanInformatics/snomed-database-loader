@@ -492,6 +492,44 @@ if ($results.Errors.Count -gt 0) {
 # Stop transcript
 Stop-Transcript | Out-Null
 
+# Export to Azure SQL Reporting Database
+if (-not $WhatIf) {
+    Write-Host ""
+    Write-Host "Exporting to Azure SQL..." -ForegroundColor Yellow
+    $exportScript = Join-Path $scriptDir "Export-ReportToAzure.ps1"
+    if (Test-Path $exportScript) {
+        try {
+            $exportResult = & $exportScript -Results $results -ConfigPath $ConfigPath
+            if ($exportResult.Success) {
+                Write-Host "Report exported to Azure SQL (Run ID: $($exportResult.RunId))" -ForegroundColor Green
+            }
+        } catch {
+            Write-Warning "Failed to export to Azure SQL: $_"
+            $results.Errors += "Azure SQL export failed: $_"
+        }
+    } else {
+        Write-Warning "Export-ReportToAzure.ps1 not found - skipping Azure export"
+    }
+}
+
+# Export to Azure Blob Storage (for instant dashboard access)
+if (-not $WhatIf) {
+    Write-Host ""
+    Write-Host "Exporting to Azure Blob Storage..." -ForegroundColor Yellow
+    $blobScript = Join-Path $scriptDir "Export-ReportToBlob.ps1"
+    if (Test-Path $blobScript) {
+        try {
+            $blobResult = & $blobScript -Results $results -ConfigPath $ConfigPath
+            if ($blobResult.Success) {
+                Write-Host "Dashboard JSON uploaded to: $($blobResult.BlobUrl)" -ForegroundColor Green
+            }
+        } catch {
+            Write-Warning "Failed to export to Blob Storage: $_"
+            # Don't add to errors - blob export is optional
+        }
+    }
+}
+
 # Send notification
 if (-not $SkipNotification -and -not $WhatIf) {
     Write-Host ""

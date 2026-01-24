@@ -1,0 +1,287 @@
+@* ============================================================
+   TERMINOLOGY REPORTING - BLAZOR DASHBOARD COMPONENT
+   ============================================================
+   
+   Add this to your Blazor app's Pages folder.
+   Requires: HttpClient configured in Program.cs
+   
+   Example: builder.Services.AddScoped(sp => new HttpClient { 
+       BaseAddress = new Uri("https://your-api-url/") 
+   });
+   ============================================================ *@
+
+@page "/terminology-dashboard"
+@using System.Text.Json
+@inject HttpClient Http
+
+<PageTitle>Terminology Updates Dashboard</PageTitle>
+
+<h1>🏥 Terminology Updates Dashboard</h1>
+
+@if (_loading)
+{
+    <div class="alert alert-info">
+        <span class="spinner-border spinner-border-sm" role="status"></span>
+        Loading dashboard data...
+    </div>
+}
+else if (_error != null)
+{
+    <div class="alert alert-danger">
+        <strong>Error:</strong> @_error
+    </div>
+}
+else if (_dashboard != null)
+{
+    <!-- Stats Cards -->
+    <div class="row mb-4">
+        <div class="col-md-3">
+            <div class="card bg-primary text-white">
+                <div class="card-body">
+                    <h5 class="card-title">Total Runs</h5>
+                    <h2>@_dashboard.TotalRuns</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-success text-white">
+                <div class="card-body">
+                    <h5 class="card-title">Successful</h5>
+                    <h2>@_dashboard.SuccessfulRuns</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-danger text-white">
+                <div class="card-body">
+                    <h5 class="card-title">Failed</h5>
+                    <h2>@_dashboard.FailedRuns</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-info text-white">
+                <div class="card-body">
+                    <h5 class="card-title">Last Success</h5>
+                    <h6>@(_dashboard.LastSuccessfulUpdate?.ToString("dd MMM yyyy") ?? "N/A")</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Latest Run -->
+    @if (_dashboard.LatestRun != null)
+    {
+        var latest = _dashboard.LatestRun;
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">Latest Run</h5>
+                <span class="badge @(latest.OverallSuccess ? "bg-success" : "bg-danger")">
+                    @(latest.OverallSuccess ? "SUCCESS" : "FAILED")
+                </span>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <table class="table table-sm">
+                            <tr>
+                                <th>Started:</th>
+                                <td>@latest.StartTime.ToString("dd MMM yyyy HH:mm")</td>
+                            </tr>
+                            <tr>
+                                <th>Duration:</th>
+                                <td>@latest.DurationFormatted</td>
+                            </tr>
+                            <tr>
+                                <th>Server:</th>
+                                <td>@latest.ServerName</td>
+                            </tr>
+                            <tr>
+                                <th>Updates Found:</th>
+                                <td>@latest.UpdatesFound</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-md-3">
+                        <h6>SNOMED CT</h6>
+                        <table class="table table-sm">
+                            <tr>
+                                <th>Version:</th>
+                                <td>@(latest.SnomedVersion ?? "N/A")</td>
+                            </tr>
+                            <tr>
+                                <th>Concepts:</th>
+                                <td>@(latest.ConceptCount?.ToString("N0") ?? "N/A")</td>
+                            </tr>
+                            <tr>
+                                <th>New Release:</th>
+                                <td>
+                                    @if (latest.SnomedNewRelease == true)
+                                    {
+                                        <span class="badge bg-warning">Yes</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="text-muted">No</span>
+                                    }
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-md-3">
+                        <h6>DM+D</h6>
+                        <table class="table table-sm">
+                            <tr>
+                                <th>Version:</th>
+                                <td>@(latest.DmdVersion ?? "N/A")</td>
+                            </tr>
+                            <tr>
+                                <th>VMPs:</th>
+                                <td>@(latest.VmpCount?.ToString("N0") ?? "N/A")</td>
+                            </tr>
+                            <tr>
+                                <th>AMPs:</th>
+                                <td>@(latest.AmpCount?.ToString("N0") ?? "N/A")</td>
+                            </tr>
+                            <tr>
+                                <th>Validation:</th>
+                                <td>@(latest.SnomedValidationRate?.ToString("F1") ?? "N/A")%</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                @if (latest.ErrorCount > 0)
+                {
+                    <div class="alert alert-warning mt-2 mb-0">
+                        <strong>@latest.ErrorCount error(s)</strong> occurred during this run.
+                    </div>
+                }
+            </div>
+        </div>
+    }
+
+    <!-- Recent Runs Table -->
+    <div class="card">
+        <div class="card-header">
+            <h5 class="mb-0">Recent Runs</h5>
+        </div>
+        <div class="card-body">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Duration</th>
+                        <th>Status</th>
+                        <th>SNOMED</th>
+                        <th>DM+D</th>
+                        <th>Updates</th>
+                        <th>Errors</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var run in _dashboard.RecentRuns)
+                    {
+                        <tr>
+                            <td>@run.StartTime.ToString("dd MMM yyyy HH:mm")</td>
+                            <td>@run.DurationFormatted</td>
+                            <td>
+                                <span class="badge @(run.OverallSuccess ? "bg-success" : "bg-danger")">
+                                    @(run.OverallSuccess ? "OK" : "FAIL")
+                                </span>
+                            </td>
+                            <td>
+                                @if (run.SnomedNewRelease == true)
+                                {
+                                    <span class="badge bg-info">NEW: @run.SnomedVersion</span>
+                                }
+                                else
+                                {
+                                    <span class="text-muted">@(run.SnomedVersion ?? "—")</span>
+                                }
+                            </td>
+                            <td>
+                                @if (run.DmdNewRelease == true)
+                                {
+                                    <span class="badge bg-info">NEW: @run.DmdVersion</span>
+                                }
+                                else
+                                {
+                                    <span class="text-muted">@(run.DmdVersion ?? "—")</span>
+                                }
+                            </td>
+                            <td>@run.UpdatesFound</td>
+                            <td>
+                                @if (run.ErrorCount > 0)
+                                {
+                                    <span class="badge bg-danger">@run.ErrorCount</span>
+                                }
+                                else
+                                {
+                                    <span class="text-success">0</span>
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+}
+
+@code {
+    private DashboardDto? _dashboard;
+    private bool _loading = true;
+    private string? _error;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            _dashboard = await Http.GetFromJsonAsync<DashboardDto>("api/dashboard");
+        }
+        catch (Exception ex)
+        {
+            _error = ex.Message;
+        }
+        finally
+        {
+            _loading = false;
+        }
+    }
+
+    // DTO classes (should match API models)
+    public class DashboardDto
+    {
+        public UpdateSummary? LatestRun { get; set; }
+        public List<UpdateSummary> RecentRuns { get; set; } = new();
+        public int TotalRuns { get; set; }
+        public int SuccessfulRuns { get; set; }
+        public int FailedRuns { get; set; }
+        public DateTime? LastSuccessfulUpdate { get; set; }
+    }
+
+    public class UpdateSummary
+    {
+        public Guid RunId { get; set; }
+        public DateTime StartTime { get; set; }
+        public DateTime? EndTime { get; set; }
+        public string? DurationFormatted { get; set; }
+        public bool OverallSuccess { get; set; }
+        public int UpdatesFound { get; set; }
+        public string ServerName { get; set; } = string.Empty;
+        public bool WhatIfMode { get; set; }
+        public bool? SnomedSuccess { get; set; }
+        public bool? SnomedNewRelease { get; set; }
+        public string? SnomedVersion { get; set; }
+        public long? ConceptCount { get; set; }
+        public long? DescriptionCount { get; set; }
+        public bool? DmdSuccess { get; set; }
+        public bool? DmdNewRelease { get; set; }
+        public string? DmdVersion { get; set; }
+        public int? VmpCount { get; set; }
+        public int? AmpCount { get; set; }
+        public decimal? XmlValidationRate { get; set; }
+        public decimal? SnomedValidationRate { get; set; }
+        public int ErrorCount { get; set; }
+    }
+}
