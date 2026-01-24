@@ -391,7 +391,7 @@
     // ========================================================
     
     /// <summary>
-    /// Formats SNOMED version (e.g., "uk_sct2mo_41.4.0_20260114000001Z" → "uk_sct2mo_41.4.0 (14 Jan 2026)")
+    /// Formats SNOMED version (e.g., "uk_sct2mo_41.4.0_20260114000001Z" → "14 Jan 2026 (uk_sct2mo_41.4.0)")
     /// </summary>
     private string FormatSnomedVersion(string? version)
     {
@@ -410,7 +410,7 @@
             if (DateTime.TryParseExact(dateStr, "yyyyMMdd", null, 
                 System.Globalization.DateTimeStyles.None, out var date))
             {
-                return $"{releaseId} ({date:d MMM yyyy})";
+                return $"{date:d MMM yyyy} ({releaseId})";
             }
             
             return releaseId;
@@ -431,7 +431,7 @@
     }
 
     /// <summary>
-    /// Formats DM+D version (e.g., "nhsbsa_dmd_1.3.0_20260119000001" → "v1.3.0 (19 Jan 2026)")
+    /// Formats DM+D version (e.g., "nhsbsa_dmd_1.3.0_20260119000001" → "19 Jan 2026 (v1.3.0)")
     /// </summary>
     private string FormatDmdVersion(string? version)
     {
@@ -450,7 +450,7 @@
             if (DateTime.TryParseExact(dateStr, "yyyyMMdd", null, 
                 System.Globalization.DateTimeStyles.None, out var date))
             {
-                return $"v{semver} ({date:d MMM yyyy})";
+                return $"{date:d MMM yyyy} (v{semver})";
             }
             
             return $"v{semver}";
