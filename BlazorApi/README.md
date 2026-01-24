@@ -10,6 +10,9 @@ Two approaches for displaying terminology update data in a Blazor app:
 - `Export-ReportToBlob.ps1` uploads a JSON file to Azure Blob Storage after each update
 - Blazor component reads the JSON directly - no API, no database!
 - Super fast: ~100ms load time
+- Versions displayed in human-readable format:
+  - SNOMED: `14 Jan 2026 (uk_sct2mo_41.4.0)`
+  - DM+D: `19 Jan 2026 (v1.3.0)`
 
 ### Setup
 
@@ -18,12 +21,17 @@ Two approaches for displaying terminology update data in a Blazor app:
 3. Done! Navigate to `/terminology-dashboard`
 
 ### Files
-- `TerminologyDashboardBlob.razor` - Complete dashboard component
+- `TerminologyDashboardBlob.razor` - Complete dashboard component with version formatting
 - `Export-ReportToBlob.ps1` - PowerShell script that uploads JSON to blob
 
 ### Regenerating SAS Token (when it expires)
 ```powershell
-$connString = (Get-Content .\Config\TerminologyConfig.json | ConvertFrom-Json).azureBlobStorage.connectionString
+# Get storage key from Credential Manager
+$cred = Get-StoredCredential -Target "AZURE_STORAGE_KEY"
+$storageKey = $cred.GetNetworkCredential().Password
+$connString = "DefaultEndpointsProtocol=https;AccountName=snomedviewerstorage;AccountKey=$storageKey;EndpointSuffix=core.windows.net"
+
+# Generate new SAS URL valid for 1 year
 $expiry = (Get-Date).AddYears(1).ToString("yyyy-MM-ddTHH:mm:ssZ")
 az storage blob generate-sas --account-name snomedviewerstorage --container-name "terminology-reports" --name "terminology-dashboard.json" --permissions r --expiry $expiry --connection-string $connString --full-uri -o tsv
 ```
@@ -93,12 +101,16 @@ dotnet run
     "startTime": "2026-01-24T17:35:43",
     "durationFormatted": "00:05:23",
     "overallSuccess": true,
-    "snomedVersion": "20250115",
-    "conceptCount": 1234567,
-    "dmdVersion": "5.2.0_20250115",
-    "vmpCount": 15678,
-    "ampCount": 98765,
-    "snomedValidationRate": 92.80,
+    "snomedVersion": "uk_sct2mo_41.4.0_20260114000001Z",
+    "conceptCount": 1142522,
+    "descriptionCount": 3340226,
+    "relationshipCount": 9041683,
+    "dmdVersion": "nhsbsa_dmd_1.3.0_20260119000001",
+    "vtmCount": 3223,
+    "vmpCount": 24428,
+    "ampCount": 165247,
+    "vmppCount": 37006,
+    "amppCount": 184753,
     "errorCount": 0
   },
   "recentRuns": [...],
@@ -109,12 +121,51 @@ dotnet run
 }
 ```
 
+## Example Blob JSON
+
+The blob stores raw version strings which are formatted by the Blazor component:
+
+```json
+{
+  "runId": "8bbda915-7b3a-4ff6-81fd-168147f2c9d0",
+  "exportedAt": "2026-01-24T19:25:10",
+  "snomed": {
+    "success": true,
+    "newRelease": false,
+    "releaseVersion": "uk_sct2mo_41.4.0_20260114000001Z",
+    "conceptCount": 1142522,
+    "descriptionCount": 3340226,
+    "relationshipCount": 9041683
+  },
+  "dmd": {
+    "success": true,
+    "newRelease": false,
+    "releaseVersion": "nhsbsa_dmd_1.3.0_20260119000001",
+    "vtmCount": 3223,
+    "vmpCount": 24428,
+    "ampCount": 165247,
+    "vmppCount": 37006,
+    "amppCount": 184753
+  },
+  "latestRun": {
+    "overallSuccess": true,
+    "durationFormatted": "01:00:00",
+    "serverName": "SILENTPRIORY",
+    "errorCount": 0
+  },
+  "errors": []
+}
+```
+
 ## Blazor Dashboard Components
 
 ### TerminologyDashboardBlob.razor (Option A)
 - Reads directly from Azure Blob Storage
 - No API required
 - Instant load, no cold-start
+- **Version formatting built-in**:
+  - `uk_sct2mo_41.4.0_20260114000001Z` → `14 Jan 2026 (uk_sct2mo_41.4.0)`
+  - `nhsbsa_dmd_1.3.0_20260119000001` → `19 Jan 2026 (v1.3.0)`
 
 ### TerminologyDashboard.razor (Option B)
 - Calls REST API backed by Azure SQL
