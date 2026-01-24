@@ -391,21 +391,40 @@
     // ========================================================
     
     /// <summary>
-    /// Formats SNOMED version (e.g., "20260114" → "14 Jan 2026")
+    /// Formats SNOMED version (e.g., "uk_sct2mo_41.4.0_20260114000001Z" → "uk_sct2mo_41.4.0 (14 Jan 2026)")
     /// </summary>
     private string FormatSnomedVersion(string? version)
     {
         if (string.IsNullOrEmpty(version)) return "N/A";
         
-        // SNOMED versions are YYYYMMDD format
+        // Pattern: uk_sct2XX_X.X.X_YYYYMMDDHHMMSSZ (e.g., uk_sct2mo_41.4.0_20260114000001Z)
+        var match = System.Text.RegularExpressions.Regex.Match(
+            version, 
+            @"(uk_sct2\w+_[\d.]+)_(\d{8})");
+        
+        if (match.Success)
+        {
+            var releaseId = match.Groups[1].Value;
+            var dateStr = match.Groups[2].Value;
+            
+            if (DateTime.TryParseExact(dateStr, "yyyyMMdd", null, 
+                System.Globalization.DateTimeStyles.None, out var date))
+            {
+                return $"{releaseId} ({date:d MMM yyyy})";
+            }
+            
+            return releaseId;
+        }
+        
+        // Fallback for old YYYYMMDD format
         if (version.Length >= 8 && DateTime.TryParseExact(
             version.Substring(0, 8), 
             "yyyyMMdd", 
             null, 
             System.Globalization.DateTimeStyles.None, 
-            out var date))
+            out var fallbackDate))
         {
-            return date.ToString("d MMM yyyy");
+            return fallbackDate.ToString("d MMM yyyy");
         }
         
         return version;
