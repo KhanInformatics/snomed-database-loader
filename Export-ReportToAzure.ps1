@@ -305,6 +305,140 @@ INSERT INTO update_steps (
 
 #endregion
 
+#region Insert dmwb_updates record
+
+if ($Results.DMWB) {
+    $dmwb = $Results.DMWB
+    
+    $totalTables = if ($dmwb.TableCounts) { $dmwb.TableCounts.Count } else { 0 }
+    $totalRecords = if ($dmwb.TableCounts) { ($dmwb.TableCounts.Values | Measure-Object -Sum).Sum } else { 0 }
+    
+    $dmwbQuery = @"
+IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'dmwb_updates')
+BEGIN
+    CREATE TABLE dmwb_updates (
+        id INT IDENTITY(1,1) PRIMARY KEY,
+        run_id UNIQUEIDENTIFIER NOT NULL,
+        success BIT NOT NULL DEFAULT 0,
+        new_release BIT NOT NULL DEFAULT 0,
+        release_version NVARCHAR(200),
+        release_date NVARCHAR(50),
+        release_name NVARCHAR(500),
+        total_tables INT,
+        total_records INT,
+        created_at DATETIME DEFAULT GETDATE()
+    )
+END;
+INSERT INTO dmwb_updates (
+    run_id, success, new_release, release_version, release_date, release_name,
+    total_tables, total_records
+) VALUES (
+    '$RunId',
+    $(Get-SafeBit $dmwb.Success),
+    $(Get-SafeBit $dmwb.NewRelease),
+    $(Get-SafeString $dmwb.ReleaseVersion 200),
+    $(Get-SafeString $dmwb.ReleaseDate 50),
+    $(Get-SafeString $dmwb.ReleaseName 500),
+    $(Get-SafeInt $totalTables),
+    $(Get-SafeInt $totalRecords)
+)
+"@
+    
+    Write-Host "  Inserting dmwb_updates..." -NoNewline
+    if (Invoke-AzureSql -ConnectionString $connectionString -Query $dmwbQuery) {
+        Write-Host " OK" -ForegroundColor Green
+    } else {
+        Write-Host " FAILED" -ForegroundColor Red
+    }
+    
+    # Insert steps
+    if ($dmwb.Steps) {
+        $stepOrder = 0
+        foreach ($step in $dmwb.Steps) {
+            $stepOrder++
+            $stepDurationSec = if ($step.Duration) {
+                try { [int][timespan]::Parse("00:$($step.Duration)").TotalSeconds } catch { 0 }
+            } else { 0 }
+            
+            $stepQuery = @"
+INSERT INTO update_steps (
+    run_id, terminology_type, step_name, step_order, success, details, duration_seconds, duration_formatted
+) VALUES (
+    '$RunId', 'DMWB', $(Get-SafeString $step.Name 100), $stepOrder,
+    $(Get-SafeBit $step.Success), $(Get-SafeString $step.Details 500),
+    $stepDurationSec, $(Get-SafeString $step.Duration 10)
+)
+"@
+            Invoke-AzureSql -ConnectionString $connectionString -Query $stepQuery | Out-Null
+        }
+        Write-Host "  Inserted $stepOrder DMWB steps" -ForegroundColor Gray
+    }
+}
+
+#endregion
+
+#region Insert pcd_validations record
+
+if ($Results.PCD) {
+    $pcd = $Results.PCD
+    
+    $pcdQuery = @"
+IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'pcd_validations')
+BEGIN
+    CREATE TABLE pcd_validations (
+        id INT IDENTITY(1,1) PRIMARY KEY,
+        run_id UNIQUEIDENTIFIER NOT NULL,
+        success BIT NOT NULL DEFAULT 0,
+        tables_checked INT,
+        tables_passed INT,
+        validation_rate DECIMAL(5,2),
+        created_at DATETIME DEFAULT GETDATE()
+    )
+END;
+INSERT INTO pcd_validations (
+    run_id, success, tables_checked, tables_passed, validation_rate
+) VALUES (
+    '$RunId',
+    $(Get-SafeBit $pcd.Success),
+    $(Get-SafeInt $pcd.TablesChecked),
+    $(Get-SafeInt $pcd.TablesPassed),
+    $(Get-SafeDecimal $pcd.ValidationRate)
+)
+"@
+    
+    Write-Host "  Inserting pcd_validations..." -NoNewline
+    if (Invoke-AzureSql -ConnectionString $connectionString -Query $pcdQuery) {
+        Write-Host " OK" -ForegroundColor Green
+    } else {
+        Write-Host " FAILED" -ForegroundColor Red
+    }
+    
+    # Insert steps
+    if ($pcd.Steps) {
+        $stepOrder = 0
+        foreach ($step in $pcd.Steps) {
+            $stepOrder++
+            $stepDurationSec = if ($step.Duration) {
+                try { [int][timespan]::Parse("00:$($step.Duration)").TotalSeconds } catch { 0 }
+            } else { 0 }
+            
+            $stepQuery = @"
+INSERT INTO update_steps (
+    run_id, terminology_type, step_name, step_order, success, details, duration_seconds, duration_formatted
+) VALUES (
+    '$RunId', 'PCD', $(Get-SafeString $step.Name 100), $stepOrder,
+    $(Get-SafeBit $step.Success), $(Get-SafeString $step.Details 500),
+    $stepDurationSec, $(Get-SafeString $step.Duration 10)
+)
+"@
+            Invoke-AzureSql -ConnectionString $connectionString -Query $stepQuery | Out-Null
+        }
+        Write-Host "  Inserted $stepOrder PCD steps" -ForegroundColor Gray
+    }
+}
+
+#endregion
+
 #region Insert errors
 
 if ($Results.Errors -and $Results.Errors.Count -gt 0) {

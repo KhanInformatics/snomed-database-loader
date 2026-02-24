@@ -104,6 +104,8 @@ $dashboardJson = @{
         success        = [bool](Get-SafeValue $Results.SNOMED?.Success $false)
         newRelease     = [bool](Get-SafeValue $Results.SNOMED?.NewRelease $false)
         releaseVersion = Get-SafeValue $Results.SNOMED?.ReleaseVersion
+        releaseDate    = Get-SafeValue $Results.SNOMED?.ReleaseDate
+        releaseName    = Get-SafeValue $Results.SNOMED?.ReleaseName
         conceptCount   = Get-SafeValue $Results.SNOMED?.RowCounts?["curr_concept_f"] $Results.SNOMED?.ConceptCount
         descriptionCount = Get-SafeValue $Results.SNOMED?.RowCounts?["curr_description_f"] $Results.SNOMED?.DescriptionCount
         relationshipCount = Get-SafeValue $Results.SNOMED?.RowCounts?["curr_relationship_f"]
@@ -134,6 +136,63 @@ $dashboardJson = @{
         snomedValidationRate = Get-SafeValue $Results.DMD?.SnomedValidationRate
         steps = @(
             ($Results.DMD?.Steps ?? @()) | ForEach-Object {
+                @{
+                    name     = $_.Name
+                    success  = [bool]$_.Success
+                    details  = $_.Details
+                    duration = $_.Duration
+                }
+            }
+        )
+    }
+    
+    # DMWB details
+    dmwb = @{
+        success        = [bool](Get-SafeValue $Results.DMWB?.Success $false)
+        newRelease     = [bool](Get-SafeValue $Results.DMWB?.NewRelease $false)
+        releaseVersion = Get-SafeValue $Results.DMWB?.ReleaseVersion
+        releaseDate    = Get-SafeValue $Results.DMWB?.ReleaseDate
+        releaseName    = Get-SafeValue $Results.DMWB?.ReleaseName
+        tableCounts    = $(
+            $tc = @{}
+            if ($Results.DMWB?.TableCounts) {
+                foreach ($key in $Results.DMWB.TableCounts.Keys) {
+                    $tc[$key] = $Results.DMWB.TableCounts[$key]
+                }
+            }
+            $tc
+        )
+        totalTables    = Get-SafeValue $Results.DMWB?.TableCounts?.Count 0
+        totalRecords   = $(if ($Results.DMWB?.TableCounts) { ($Results.DMWB.TableCounts.Values | Measure-Object -Sum).Sum } else { 0 })
+        steps = @(
+            ($Results.DMWB?.Steps ?? @()) | ForEach-Object {
+                @{
+                    name     = $_.Name
+                    success  = [bool]$_.Success
+                    details  = $_.Details
+                    duration = $_.Duration
+                }
+            }
+        )
+    }
+    
+    # PCD Refset details
+    pcd = @{
+        success        = [bool](Get-SafeValue $Results.PCD?.Success $false)
+        tablesChecked  = Get-SafeValue $Results.PCD?.TablesChecked 0
+        tablesPassed   = Get-SafeValue $Results.PCD?.TablesPassed 0
+        validationRate = Get-SafeValue $Results.PCD?.ValidationRate 0
+        tableCounts    = $(
+            $tc = @{}
+            if ($Results.PCD?.TableCounts) {
+                foreach ($key in $Results.PCD.TableCounts.Keys) {
+                    $tc[$key] = $Results.PCD.TableCounts[$key]
+                }
+            }
+            $tc
+        )
+        steps = @(
+            ($Results.PCD?.Steps ?? @()) | ForEach-Object {
                 @{
                     name     = $_.Name
                     success  = [bool]$_.Success

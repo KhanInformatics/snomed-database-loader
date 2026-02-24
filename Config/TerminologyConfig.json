@@ -9,7 +9,8 @@
     "serverInstance": "SILENTPRIORY\\SQLEXPRESS",
     "snomedDatabase": "snomedct",
     "snomedIntDatabase": "snomedct_int",
-    "dmdDatabase": "dmd"
+    "dmdDatabase": "dmd",
+    "dmwbDatabase": "DMWB_Export"
   },
   "credentials": {
     "trudApiTarget": "TRUD_API"
@@ -56,7 +57,7 @@
     "enabled": true,
     "server": "azuresnnomedct.database.windows.net",
     "database": "ReportingServer",
-    "connectionString": "Server=tcp:azuresnnomedct.database.windows.net,1433;Initial Catalog=ReportingServer;Encrypt=True;TrustServerCertificate=False;Connection Timeout=60;Authentication=Active Directory Default"
+    "connectionString": "Server=tcp:azuresnnomedct.database.windows.net,1433;Initial Catalog=ReportingServer;User ID=TerminologyUpdater;Password=TermUpd@SNOMED2026!;Encrypt=True;TrustServerCertificate=False;Connection Timeout=240;"
   },
   "azureBlobStorage": {
     "enabled": true,

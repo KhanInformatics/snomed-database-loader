@@ -52,6 +52,33 @@ After loading PCD data, use the validation script to verify data integrity:
 
 This script compares record counts between source files and database tables to ensure complete and accurate imports.
 
+### Automated PCD Validation
+
+PCD validation is integrated into the weekly terminology update orchestrator (`Weekly-TerminologyUpdate.ps1`). Each automated run:
+
+1. **Validates** all 5 PCD tables exist and contain data
+2. **Compares** database row counts against source files in `C:\SNOMEDCT\Downloads\`
+3. **Reports** validation rate (percentage of tables passing)
+4. **Sends** results via email, Azure Blob, and Azure SQL
+
+```powershell
+# Run PCD validation as part of the full weekly cycle
+.\Weekly-TerminologyUpdate.ps1
+
+# Run PCD validation only
+.\Weekly-TerminologyUpdate.ps1 -SkipSNOMED -SkipDMD -SkipDMWB
+
+# Skip PCD in the weekly cycle
+.\Weekly-TerminologyUpdate.ps1 -SkipPCD
+```
+
+The PCD results appear in:
+- **Email report**: PCD section with table status (OK/Empty/Missing) and validation rate
+- **Azure Blob**: `pcd` object in the JSON dashboard file
+- **Azure SQL**: `pcd_validations` table with validation metrics
+
+See [AUTOMATION.md](../AUTOMATION.md) for full automation documentation.
+
 ## Loading International Edition (Separate Database)
 
 If you need access to the pure International SNOMED CT terminology without UK extensions (e.g., for international description IDs), you can load the International Edition into a separate database.

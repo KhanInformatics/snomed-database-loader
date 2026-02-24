@@ -120,7 +120,11 @@ function Build-HtmlReport {
         $html += "</table>"
         
         if ($Results.SNOMED.NewRelease) {
-            $html += "<p><strong>New Release:</strong> $($Results.SNOMED.ReleaseVersion)</p>"
+            $versionText = $Results.SNOMED.ReleaseVersion
+            if ($Results.SNOMED.ReleaseDate) {
+                $versionText += " (Released: $($Results.SNOMED.ReleaseDate))"
+            }
+            $html += "<p><strong>New Release:</strong> $versionText</p>"
         } else {
             $html += "<p><em>No new release available</em></p>"
         }
@@ -172,6 +176,70 @@ function Build-HtmlReport {
         }
         if ($Results.DMD.SnomedValidationRate) {
             $html += "<p><strong>SNOMED CT Validation Rate:</strong> $($Results.DMD.SnomedValidationRate)%</p>"
+        }
+    }
+
+    # DMWB Section
+    if ($Results.DMWB) {
+        $dmwbStatus = if ($Results.DMWB.Success) { '<span class="success">&#10003;</span>' } else { '<span class="failure">&#10007;</span>' }
+        $html += @"
+        
+        <h2>$dmwbStatus Data Migration Workbench (DMWB)</h2>
+        <table>
+            <tr><th>Step</th><th>Status</th><th>Details</th><th>Duration</th></tr>
+"@
+        foreach ($step in $Results.DMWB.Steps) {
+            $stepStatus = if ($step.Success) { '<span class="success">&#10003; Completed</span>' } else { '<span class="failure">&#10007; Failed</span>' }
+            $html += "<tr><td>$($step.Name)</td><td>$stepStatus</td><td>$($step.Details)</td><td>$($step.Duration)</td></tr>"
+        }
+        $html += "</table>"
+        
+        if ($Results.DMWB.NewRelease) {
+            $versionText = $Results.DMWB.ReleaseName
+            if ($Results.DMWB.ReleaseDate) {
+                $versionText += " (Released: $($Results.DMWB.ReleaseDate))"
+            }
+            $html += "<p><strong>New Release:</strong> $versionText</p>"
+        } else {
+            $html += "<p><em>No new release available</em></p>"
+        }
+        
+        if ($Results.DMWB.TableCounts -and $Results.DMWB.TableCounts.Count -gt 0) {
+            $html += "<p><strong>Table Counts:</strong></p><table><tr><th>Table</th><th>Records</th></tr>"
+            foreach ($table in $Results.DMWB.TableCounts.Keys | Sort-Object) {
+                $count = $Results.DMWB.TableCounts[$table]
+                $html += "<tr><td>$table</td><td>$($count.ToString('N0'))</td></tr>"
+            }
+            $html += "</table>"
+        }
+    }
+
+    # PCD Refset Section
+    if ($Results.PCD) {
+        $pcdStatus = if ($Results.PCD.Success) { '<span class="success">&#10003;</span>' } else { '<span class="failure">&#10007;</span>' }
+        $html += @"
+        
+        <h2>$pcdStatus Primary Care Domain (PCD) Refsets</h2>
+        <table>
+            <tr><th>Step</th><th>Status</th><th>Details</th><th>Duration</th></tr>
+"@
+        foreach ($step in $Results.PCD.Steps) {
+            $stepStatus = if ($step.Success) { '<span class="success">&#10003; Completed</span>' } else { '<span class="failure">&#10007; Failed</span>' }
+            $html += "<tr><td>$($step.Name)</td><td>$stepStatus</td><td>$($step.Details)</td><td>$($step.Duration)</td></tr>"
+        }
+        $html += "</table>"
+        
+        if ($Results.PCD.TableCounts -and $Results.PCD.TableCounts.Count -gt 0) {
+            $validationColor = if ($Results.PCD.ValidationRate -ge 100) { "success" } elseif ($Results.PCD.ValidationRate -ge 80) { "warning" } else { "failure" }
+            $html += "<p><strong>PCD Validation:</strong> <span class='$validationColor'>$($Results.PCD.TablesPassed)/$($Results.PCD.TablesChecked) tables OK ($($Results.PCD.ValidationRate)%)</span></p>"
+            $html += "<table><tr><th>Table</th><th>Records</th><th>Status</th></tr>"
+            foreach ($table in $Results.PCD.TableCounts.Keys | Sort-Object) {
+                $count = $Results.PCD.TableCounts[$table]
+                $statusCell = if ($count -gt 0) { '<span class="success">&#10003; OK</span>' } elseif ($count -eq 0) { '<span class="warning">Empty</span>' } else { '<span class="failure">Missing</span>' }
+                $countText = if ($count -ge 0) { $count.ToString('N0') } else { "N/A" }
+                $html += "<tr><td>$($table.Replace('PCD_',''))</td><td>$countText</td><td>$statusCell</td></tr>"
+            }
+            $html += "</table>"
         }
     }
 

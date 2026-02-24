@@ -147,6 +147,29 @@ The blob stores raw version strings which are formatted by the Blazor component:
     "vmppCount": 37006,
     "amppCount": 184753
   },
+  "dmwb": {
+    "success": true,
+    "newRelease": false,
+    "releaseVersion": "nhs_dmwb_10.1.0_20241015000001Z",
+    "releaseDate": "2024-10-15",
+    "releaseName": "NHS Data Migration Workbench Release 2024.1",
+    "totalTables": 46,
+    "totalRecords": 53431533,
+    "tableCounts": { "TOKENINDEX": 7426233, "SCTQT": 22980116, "...": "..." }
+  },
+  "pcd": {
+    "success": true,
+    "tablesChecked": 5,
+    "tablesPassed": 5,
+    "validationRate": 100.0,
+    "tableCounts": {
+      "PCD_Refset_Content_by_Output": 318427,
+      "PCD_Refset_Content_V2": 15987,
+      "PCD_Ruleset_Full_Name_Mappings_V2": 55,
+      "PCD_Service_Full_Name_Mappings_V2": 6,
+      "PCD_Output_Descriptions_V2": 302
+    }
+  },
   "latestRun": {
     "overallSuccess": true,
     "durationFormatted": "01:00:00",
@@ -166,6 +189,8 @@ The blob stores raw version strings which are formatted by the Blazor component:
 - **Version formatting built-in**:
   - `uk_sct2mo_41.4.0_20260114000001Z` → `14 Jan 2026 (uk_sct2mo_41.4.0)`
   - `nhsbsa_dmd_1.3.0_20260119000001` → `19 Jan 2026 (v1.3.0)`
+- **DMWB section**: Release name, date, total tables/rows
+- **PCD section**: Validation rate, table status (OK/Empty/Missing)
 
 ### TerminologyDashboard.razor (Option B)
 - Calls REST API backed by Azure SQL
@@ -185,6 +210,10 @@ This gives you the best of both worlds!
 ### Architecture
 ```
 Weekly Update → Export-ReportToAzure.ps1 → Azure SQL (history)
+             │                              ├── snomed_updates
+             │                              ├── dmd_updates
+             │                              ├── dmwb_updates
+             │                              └── pcd_validations
              ↘ Export-ReportToBlob.ps1  → Azure Blob (instant)
                                               ↓
                               Blazor App → TerminologyDashboardBlob.razor

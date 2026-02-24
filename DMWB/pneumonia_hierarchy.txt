@@ -1,0 +1,117 @@
+COMPLETE SNOMED CT HIERARCHY: Clinical finding → Pneumonia
+(All relationships verified via transitive closure queries)
+
+                                    404684003
+                                Clinical finding
+                                        |
+                    +-------------------+-------------------+
+                    |                   |                   |
+               64572001            106048009           302292003
+                Disease         Respiratory finding  Finding of trunk
+                    |                   |                   |
+        +-----------+-----------+       |       +-----------+-----------+
+        |           |           |       |       |                       |
+   362965005   40733004    128139000    |  609623002               128121009
+   Disorder    Infectious  Inflammatory |  Finding of              Disorder
+   of body     disease     disorder     |  upper trunk             of trunk
+   system          |           |        |       |                       |
+        |          |           |        |   +---+---+           +-------+-------+
+        |          |           |        |   |       |           |               |
+        |          |      363170005     |298705000 609622007   302292003    64572001
+        |          |      Inflammation  |Finding   Disorder    (shared)     (shared)
+        |          |      of structures |thoracic  thoracic
+        |          |           |        |region    segment
+        |          |      363169009     |   |          |
+        |          |      Inflammation  |   +----+-----+
+        |          |      of organs     |        |
+        |          |           |        |   118946009
+        |          |           |        |   Disorder of
+        |          |           |        |   thorax
+        |          |      363171009     |        |
+        |          |      Inflammation  |        |
+        |          |      body systems  |        |
+        |          |           |        |        |
+        +----------+-----------+--------+--------+
+                   |                    |
+              373405005            301230006
+              Inflammatory         Lung finding
+              resp system               |
+                   |            +--------+--------+
+                   |            |                 |
+              363180009    301226008         406123005
+              Inflammatory  Lower resp       Viscus finding
+              resp tract    finding          (→404684003)
+                   |            |
+              128997002         |
+              Inflammatory      |
+              lower resp        |
+                   |            |
+                   |            +---------------+
+                   |                            |
+                   |                       50043002
+                   |                       Disorder of
+                   |                       resp system
+                   |                            |
+                   |                   +--------+--------+
+                   |                   |                 |
+                   |              128272009         275498002
+                   |              Disorder          Resp tract
+                   |              lower resp        infection
+                   |                   |                 |
+                   |          +--------+--------+        +----------+
+                   |          |                 |                   |
+                   |     19829001          50417007            40733004
+                   |     Disorder          Lower resp          (shared from
+                   |     of lung           tract infect        Infectious disease)
+                   |          |                 |
+                   |          +--------+--------+
+                   |                   |
+                   +-------------------+
+                                       |
+                               +-------+-------+
+                               |               |
+                          205237003       128601007
+                          Pneumonitis     Infectious disease
+                                |         of lung
+                                |               |
+                                +-------+-------+
+                                        |
+                                  233604007
+                                  PNEUMONIA
+
+
+KEY INSIGHTS:
+
+1. ROOT: 404684003 Clinical finding (all clinical concepts descend from here)
+
+2. THREE MAIN BRANCHES to Pneumonia:
+   - Disease branch (64572001)
+   - Respiratory finding branch (106048009)
+   - Finding of trunk branch (302292003)
+
+3. IMMEDIATE PARENTS OF PNEUMONIA (verified):
+   - 205237003 Pneumonitis
+   - 128601007 Infectious disease of lung
+
+4. IMMEDIATE PARENTS OF PNEUMONITIS (verified):
+   - 19829001 Disorder of lung
+   - 128997002 Inflammatory disorder of lower respiratory tract
+   - 363169009 Inflammation of specific body organs
+
+5. IMMEDIATE PARENTS OF INFECTIOUS DISEASE OF LUNG (verified):
+   - 19829001 Disorder of lung (SHARED with Pneumonitis path!)
+   - 50417007 Lower respiratory tract infection
+
+6. POLYHIERARCHY EXAMPLES:
+   - "Disorder of lung" is reached via MULTIPLE paths
+   - "40733004 Infectious disease" feeds into the tree at multiple points
+   - Concepts can be classified anatomically AND by disease process simultaneously
+
+7. TOTAL ANCESTORS: 28 unique concepts between Pneumonia and Clinical finding
+
+8. PATH DEPTH: Approximately 6-8 levels depending on which branch
+
+
+This demonstrates why transitive closure is essential - finding all these relationships
+via recursive queries would require dozens of database round-trips and complex CTEs.
+The TC table provides instant lookup for all 28 ancestor relationships.

@@ -40,6 +40,12 @@ All workflows support loading data into SQL Server with full end-to-end automati
 notepad .\Config\TerminologyConfig.json     # Edit settings
 .\Weekly-TerminologyUpdate.ps1 -WhatIf  # Test run
 .\Install-WeeklyUpdateTask.ps1       # Install (requires Admin)
+
+# Run individual workstreams
+.\Weekly-TerminologyUpdate.ps1 -SkipDMD -SkipDMWB -SkipPCD     # SNOMED only
+.\Weekly-TerminologyUpdate.ps1 -SkipSNOMED -SkipDMWB -SkipPCD  # DMD only
+.\Weekly-TerminologyUpdate.ps1 -SkipSNOMED -SkipDMD -SkipPCD   # DMWB only
+.\Weekly-TerminologyUpdate.ps1 -SkipSNOMED -SkipDMD -SkipDMWB  # PCD only
 ```
 
 ### SNOMED CT Database  
@@ -307,8 +313,11 @@ WHERE v.invalid = 0 AND t.invalid = 0;
 The repository includes a fully automated update system that:
 - Checks NHS TRUD for new releases weekly
 - Downloads and imports new data automatically  
+- Exports DMWB Access databases to SQL Server (46 tables, 53M+ rows)
+- Validates PCD reference sets against source files
 - Validates imports against source files
 - Sends HTML email reports with status
+- Exports dashboard data to Azure Blob Storage and Azure SQL
 
 **Quick Setup:**
 ```powershell
@@ -325,11 +334,14 @@ notepad .\Config\TerminologyConfig.json
 📖 **See [AUTOMATION.md](AUTOMATION.md) for complete documentation including:**
 - System architecture and flow diagrams
 - Configuration reference
+- DMWB and PCD integration details
+- Azure reporting (Blob Storage and SQL)
 - Troubleshooting guide
 
 ### Manual Update Schedule
 - **SNOMED CT**: Check monthly (releases every 6 months + UK updates)
 - **DM+D**: Check weekly (releases every Monday at 4:00 AM)  
+- **DMWB**: Check annually (releases as Data Migration Workbench is updated)
 - **PCD**: Check quarterly (updates as QOF requirements change)
 
 ### Automated Monitoring

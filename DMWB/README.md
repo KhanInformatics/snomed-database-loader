@@ -205,7 +205,39 @@ cd O:\GitHub\snomed-database-loader\DMWB
 
 ## Integration with Other Workflows
 
-The DMWB can be used alongside SNOMED CT and DM+D databases:
+### Automated Weekly Updates
+
+The DMWB is fully integrated into the weekly terminology update orchestrator (`Weekly-TerminologyUpdate.ps1`). When the automation runs, it:
+
+1. **Checks TRUD** for new DMWB releases (Item 98)
+2. **Downloads** new releases if detected
+3. **Exports** Access databases to SQL Server (46 tables, 53M+ rows)
+4. **Validates** exported table counts
+5. **Reports** results via email, Azure Blob, and Azure SQL
+
+```powershell
+# Run DMWB update as part of the full weekly cycle
+.\Weekly-TerminologyUpdate.ps1
+
+# Run DMWB update only
+.\Weekly-TerminologyUpdate.ps1 -SkipSNOMED -SkipDMD -SkipPCD
+
+# Skip DMWB in the weekly cycle
+.\Weekly-TerminologyUpdate.ps1 -SkipDMWB
+```
+
+The DMWB results appear in:
+- **Email report**: DMWB section with release info, table counts, and step status
+- **Azure Blob**: `dmwb` object in the JSON dashboard file
+- **Azure SQL**: `dmwb_updates` table with export metrics
+
+> **Note**: The DMWB export can take ~50 minutes for 53M+ rows. The orchestrator handles this automatically and includes the export time in the overall run duration.
+
+See [AUTOMATION.md](../AUTOMATION.md) for full automation documentation.
+
+### Manual Integration
+
+The DMWB can also be used alongside SNOMED CT and DM+D databases manually:
 
 ```powershell
 # Complete setup of all terminologies

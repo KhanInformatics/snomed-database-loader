@@ -1,0 +1,190 @@
+Changed database context to 'dmd'.
+All Hydroxychloroquine Products (AMPs):
+=====================================================
+AMP_ID,Product_Name,Status,Generic_Product_VMP
+------,------------,------,-------------------
+8535311000001106,Hydroxychloroquine 100mg/5ml oral solution,Active,Hydroxychloroquine 100mg/5ml oral solution
+8536611000001106,Hydroxychloroquine 100mg/5ml oral suspension,Active,Hydroxychloroquine 100mg/5ml oral suspension
+12567111000001103,Hydroxychloroquine 108mg/5ml oral solution,Active,Hydroxychloroquine 108mg/5ml oral solution
+8534811000001103,Hydroxychloroquine 120mg/5ml oral solution,Active,Hydroxychloroquine 120mg/5ml oral solution
+8535811000001102,Hydroxychloroquine 120mg/5ml oral suspension,Active,Hydroxychloroquine 120mg/5ml oral suspension
+8536911000001100,Hydroxychloroquine 150mg/5ml oral solution,Active,Hydroxychloroquine 150mg/5ml oral solution
+8537211000001106,Hydroxychloroquine 150mg/5ml oral suspension,Active,Hydroxychloroquine 150mg/5ml oral suspension
+12567411000001108,Hydroxychloroquine 15mg/5ml oral solution,Active,Hydroxychloroquine 15mg/5ml oral solution
+12567711000001102,Hydroxychloroquine 160mg/5ml oral solution,Active,Hydroxychloroquine 160mg/5ml oral solution
+37090811000001106,Hydroxychloroquine 200mg tablets,Active,Hydroxychloroquine 200mg tablets
+16054711000001104,Hydroxychloroquine 200mg tablets,Active,Hydroxychloroquine 200mg tablets
+17176311000001102,Hydroxychloroquine 200mg tablets,Active,Hydroxychloroquine 200mg tablets
+18109211000001104,Hydroxychloroquine 200mg tablets,Active,Hydroxychloroquine 200mg tablets
+20476911000001105,Hydroxychloroquine 200mg tablets,Active,Hydroxychloroquine 200mg tablets
+20507211000001102,Hydroxychloroquine 200mg tablets,Active,Hydroxychloroquine 200mg tablets
+20565811000001105,Hydroxychloroquine 200mg tablets,Active,Hydroxychloroquine 200mg tablets
+22045011000001103,Hydroxychloroquine 200mg tablets,Active,Hydroxychloroquine 200mg tablets
+32407811000001102,Hydroxychloroquine 200mg tablets,Active,Hydroxychloroquine 200mg tablets
+24155411000001107,Hydroxychloroquine 200mg tablets,Active,Hydroxychloroquine 200mg tablets
+29719411000001105,Hydroxychloroquine 200mg tablets,Active,Hydroxychloroquine 200mg tablets
+29874411000001104,Hydroxychloroquine 200mg tablets,Active,Hydroxychloroquine 200mg tablets
+38375911000001109,Hydroxychloroquine 200mg tablets,Active,Hydroxychloroquine 200mg tablets
+38734111000001106,Hydroxychloroquine 200mg tablets,Active,Hydroxychloroquine 200mg tablets
+38946511000001104,Hydroxychloroquine 200mg tablets,Active,Hydroxychloroquine 200mg tablets
+8538411000001109,Hydroxychloroquine 200mg/5ml oral solution,Active,Hydroxychloroquine 200mg/5ml oral solution
+8539611000001103,Hydroxychloroquine 200mg/5ml oral suspension,Active,Hydroxychloroquine 200mg/5ml oral suspension
+12568011000001103,Hydroxychloroquine 20mg/5ml oral solution,Active,Hydroxychloroquine 20mg/5ml oral solution
+12568311000001100,Hydroxychloroquine 22mg/5ml oral solution,Active,Hydroxychloroquine 22mg/5ml oral solution
+12568711000001101,Hydroxychloroquine 250mg/5ml oral solution,Active,Hydroxychloroquine 250mg/5ml oral solution
+12569211000001103,Hydroxychloroquine 25mg/5ml oral solution,Active,Hydroxychloroquine 25mg/5ml oral solution
+39079311000001107,Hydroxychloroquine 300mg tablets,Active,Hydroxychloroquine 300mg tablets
+40358311000001102,Hydroxychloroquine 300mg tablets,Active,Hydroxychloroquine 300mg tablets
+38702911000001105,Hydroxychloroquine 300mg tablets,Active,Hydroxychloroquine 300mg tablets
+12569511000001100,Hydroxychloroquine 30mg/5ml oral solution,Active,Hydroxychloroquine 30mg/5ml oral solution
+8537811000001107,Hydroxychloroquine 35mg/5ml oral solution,Active,Hydroxychloroquine 35mg/5ml oral solution
+8539511000001102,Hydroxychloroquine 35mg/5ml oral suspension,Active,Hydroxychloroquine 35mg/5ml oral suspension
+12570111000001107,Hydroxychloroquine 36mg/5ml oral solution,Active,Hydroxychloroquine 36mg/5ml oral solution
+12570411000001102,Hydroxychloroquine 400mg/5ml oral solution,Active,Hydroxychloroquine 400mg/5ml oral solution
+34675811000001106,Hydroxychloroquine 400mg/5ml oral suspension,Active,Hydroxychloroquine 400mg/5ml oral suspension
+12570811000001100,Hydroxychloroquine 40mg/5ml oral solution,Active,Hydroxychloroquine 40mg/5ml oral solution
+8537511000001109,Hydroxychloroquine 50mg/5ml oral solution,Active,Hydroxychloroquine 50mg/5ml oral solution
+8538311000001102,Hydroxychloroquine 50mg/5ml oral suspension,Active,Hydroxychloroquine 50mg/5ml oral suspension
+12571311000001104,Hydroxychloroquine 53.33mg/5ml oral solution,Active,Hydroxychloroquine 53.33mg/5ml oral solution
+12571911000001103,Hydroxychloroquine 60mg/5ml oral solution,Active,Hydroxychloroquine 60mg/5ml oral solution
+12572511000001102,Hydroxychloroquine 65mg/5ml oral solution,Active,Hydroxychloroquine 65mg/5ml oral solution
+12573111000001100,Hydroxychloroquine 70mg/5ml oral solution,Active,Hydroxychloroquine 70mg/5ml oral solution
+8539811000001104,Hydroxychloroquine 75mg/5ml oral solution,Active,Hydroxychloroquine 75mg/5ml oral solution
+8540811000001109,Hydroxychloroquine 75mg/5ml oral suspension,Active,Hydroxychloroquine 75mg/5ml oral suspension
+12573411000001105,Hydroxychloroquine 80mg/5ml oral solution,Active,Hydroxychloroquine 80mg/5ml oral solution
+12573711000001104,Hydroxychloroquine 85mg/5ml oral solution,Active,Hydroxychloroquine 85mg/5ml oral solution
+663811000001107,Plaquenil 200mg tablets,Active,Hydroxychloroquine 200mg tablets
+17042211000001101,Quinoric 200mg tablets,Active,Hydroxychloroquine 200mg tablets
+
+(52 rows affected)
+ 
+Branded Hydroxychloroquine Products:
+=====================================================
+AMP_ID,Product_Name,Status
+------,------------,------
+663811000001107,Plaquenil 200mg tablets,Active
+17042211000001101,Quinoric 200mg tablets,Active
+
+(2 rows affected)
+ 
+Products by Formulation:
+=====================================================
+Formulation,Count
+-----------,-----
+Oral Solution,24
+Tablet,20
+Oral Suspension,8
+
+(3 rows affected)
+ 
+Hydroxychloroquine Tablet Strengths:
+=====================================================
+Strength,Number_of_Products
+--------,------------------
+200mg,17
+300mg,3
+
+(2 rows affected)
+ 
+Virtual Medical Products (Generic Concepts):
+=====================================================
+VMP_ID,Generic_Product,Status,VTM_Name
+------,---------------,------,--------
+8558711000001102,Hydroxychloroquine 100mg/5ml oral solution,Active,Hydroxychloroquine
+8558811000001105,Hydroxychloroquine 100mg/5ml oral suspension,Active,Hydroxychloroquine
+12623711000001108,Hydroxychloroquine 108mg/5ml oral solution,Active,Hydroxychloroquine
+8558911000001100,Hydroxychloroquine 120mg/5ml oral solution,Active,Hydroxychloroquine
+8559011000001109,Hydroxychloroquine 120mg/5ml oral suspension,Active,Hydroxychloroquine
+8559111000001105,Hydroxychloroquine 150mg/5ml oral solution,Active,Hydroxychloroquine
+8559211000001104,Hydroxychloroquine 150mg/5ml oral suspension,Active,Hydroxychloroquine
+12635711000001106,Hydroxychloroquine 15mg/5ml oral solution,Active,Hydroxychloroquine
+12623811000001100,Hydroxychloroquine 160mg/5ml oral solution,Active,Hydroxychloroquine
+42295211000001108,Hydroxychloroquine 200mg tablets,Active,Hydroxychloroquine
+8559911000001108,Hydroxychloroquine 200mg/5ml oral solution,Active,Hydroxychloroquine
+8560011000001105,Hydroxychloroquine 200mg/5ml oral suspension,Active,Hydroxychloroquine
+12623911000001105,Hydroxychloroquine 20mg/5ml oral solution,Active,Hydroxychloroquine
+12624011000001108,Hydroxychloroquine 22mg/5ml oral solution,Active,Hydroxychloroquine
+12624111000001109,Hydroxychloroquine 250mg/5ml oral solution,Active,Hydroxychloroquine
+12624211000001103,Hydroxychloroquine 25mg/5ml oral solution,Active,Hydroxychloroquine
+38812411000001102,Hydroxychloroquine 300mg tablets,Active,Hydroxychloroquine
+12624311000001106,Hydroxychloroquine 30mg/5ml oral solution,Active,Hydroxychloroquine
+8559311000001107,Hydroxychloroquine 35mg/5ml oral solution,Active,Hydroxychloroquine
+8559411000001100,Hydroxychloroquine 35mg/5ml oral suspension,Active,Hydroxychloroquine
+12624411000001104,Hydroxychloroquine 36mg/5ml oral solution,Active,Hydroxychloroquine
+12624511000001100,Hydroxychloroquine 400mg/5ml oral solution,Active,Hydroxychloroquine
+34683611000001101,Hydroxychloroquine 400mg/5ml oral suspension,Active,Hydroxychloroquine
+12624611000001101,Hydroxychloroquine 40mg/5ml oral solution,Active,Hydroxychloroquine
+8559511000001101,Hydroxychloroquine 50mg/5ml oral solution,Active,Hydroxychloroquine
+8559611000001102,Hydroxychloroquine 50mg/5ml oral suspension,Active,Hydroxychloroquine
+12624711000001105,Hydroxychloroquine 53.33mg/5ml oral solution,Active,Hydroxychloroquine
+12624811000001102,Hydroxychloroquine 60mg/5ml oral solution,Active,Hydroxychloroquine
+12624911000001107,Hydroxychloroquine 65mg/5ml oral solution,Active,Hydroxychloroquine
+12625011000001107,Hydroxychloroquine 70mg/5ml oral solution,Active,Hydroxychloroquine
+8559711000001106,Hydroxychloroquine 75mg/5ml oral solution,Active,Hydroxychloroquine
+8559811000001103,Hydroxychloroquine 75mg/5ml oral suspension,Active,Hydroxychloroquine
+12625111000001108,Hydroxychloroquine 80mg/5ml oral solution,Active,Hydroxychloroquine
+12625211000001102,Hydroxychloroquine 85mg/5ml oral solution,Active,Hydroxychloroquine
+
+(34 rows affected)
+ 
+Hydroxychloroquine Product Packs (AMPPs):
+=====================================================
+AMPP_ID,Pack_Name,Product_Name,Status
+-------,---------,------------,------
+8535511000001100,Hydroxychloroquine 100mg/5ml oral solution (Special Order) 1 ml,Hydroxychloroquine 100mg/5ml oral solution,Active
+8536711000001102,Hydroxychloroquine 100mg/5ml oral suspension (Special Order) 1 ml,Hydroxychloroquine 100mg/5ml oral suspension,Active
+12567211000001109,Hydroxychloroquine 108mg/5ml oral solution (Special Order) 1 ml,Hydroxychloroquine 108mg/5ml oral solution,Active
+8535211000001103,Hydroxychloroquine 120mg/5ml oral solution (Special Order) 1 ml,Hydroxychloroquine 120mg/5ml oral solution,Active
+8535911000001107,Hydroxychloroquine 120mg/5ml oral suspension (Special Order) 1 ml,Hydroxychloroquine 120mg/5ml oral suspension,Active
+8537011000001101,Hydroxychloroquine 150mg/5ml oral solution (Special Order) 1 ml,Hydroxychloroquine 150mg/5ml oral solution,Active
+8537311000001103,Hydroxychloroquine 150mg/5ml oral suspension (Special Order) 1 ml,Hydroxychloroquine 150mg/5ml oral suspension,Active
+12567511000001107,Hydroxychloroquine 15mg/5ml oral solution (Special Order) 1 ml,Hydroxychloroquine 15mg/5ml oral solution,Active
+12567811000001105,Hydroxychloroquine 160mg/5ml oral solution (Special Order) 1 ml,Hydroxychloroquine 160mg/5ml oral solution,Active
+17176511000001108,Hydroxychloroquine 200mg tablets (A A H Pharmaceuticals Ltd) 60 tablet,Hydroxychloroquine 200mg tablets,Active
+38734211000001100,Hydroxychloroquine 200mg tablets (Accord-UK Ltd) 60 tablet 6 x 10 tablets,Hydroxychloroquine 200mg tablets,Active
+20507311000001105,Hydroxychloroquine 200mg tablets (Alliance Healthcare (Distribution) Ltd) 60 tablet,Hydroxychloroquine 200mg tablets,Active
+20565911000001100,Hydroxychloroquine 200mg tablets (Blackrock Pharmaceuticals Ltd) 60 tablet 6 x 10 tablets,Hydroxychloroquine 200mg tablets,Active
+16054811000001107,Hydroxychloroquine 200mg tablets (Bristol Laboratories Ltd) 60 tablet 6 x 10 tablets,Hydroxychloroquine 200mg tablets,Active
+24155511000001106,Hydroxychloroquine 200mg tablets (DE Pharmaceuticals) 60 tablet,Hydroxychloroquine 200mg tablets,Active
+38376011000001101,Hydroxychloroquine 200mg tablets (Ipca Laboratories UK Ltd) 60 tablet 6 x 10 tablets,Hydroxychloroquine 200mg tablets,Active
+32407911000001107,Hydroxychloroquine 200mg tablets (Kent Pharma (UK) Ltd) 60 tablet,Hydroxychloroquine 200mg tablets,Active
+37091011000001109,Hydroxychloroquine 200mg tablets (Mawdsley-Brooks & Company Ltd) 60 tablet,Hydroxychloroquine 200mg tablets,Active
+38946611000001100,Hydroxychloroquine 200mg tablets (Medihealth (Northern) Ltd) 60 tablet,Hydroxychloroquine 200mg tablets,Active
+18109311000001107,Hydroxychloroquine 200mg tablets (Phoenix Healthcare Distribution Ltd) 60 tablet,Hydroxychloroquine 200mg tablets,Active
+29874511000001100,Hydroxychloroquine 200mg tablets (Sigma Pharmaceuticals Plc) 60 tablet,Hydroxychloroquine 200mg tablets,Active
+20477011000001109,Hydroxychloroquine 200mg tablets (Teva UK Ltd) 60 tablet 6 x 10 tablets,Hydroxychloroquine 200mg tablets,Active
+22045111000001102,Hydroxychloroquine 200mg tablets (Waymade Healthcare Plc) 60 tablet,Hydroxychloroquine 200mg tablets,Active
+29719511000001109,Hydroxychloroquine 200mg tablets (Zentiva Pharma UK Ltd) 60 tablet 6 x 10 tablets,Hydroxychloroquine 200mg tablets,Active
+8538711000001103,Hydroxychloroquine 200mg/5ml oral solution (Special Order) 1 ml,Hydroxychloroquine 200mg/5ml oral solution,Active
+8540711000001101,Hydroxychloroquine 200mg/5ml oral suspension (Drug Tariff Special Order) 1 ml,Hydroxychloroquine 200mg/5ml oral suspension,Active
+29562811000001104,Hydroxychloroquine 200mg/5ml oral suspension (Drug Tariff Special Order) 100 ml,Hydroxychloroquine 200mg/5ml oral suspension,Active
+12568111000001102,Hydroxychloroquine 20mg/5ml oral solution (Special Order) 1 ml,Hydroxychloroquine 20mg/5ml oral solution,Active
+12568411000001107,Hydroxychloroquine 22mg/5ml oral solution (Special Order) 1 ml,Hydroxychloroquine 22mg/5ml oral solution,Active
+12568811000001109,Hydroxychloroquine 250mg/5ml oral solution (Special Order) 1 ml,Hydroxychloroquine 250mg/5ml oral solution,Active
+12569311000001106,Hydroxychloroquine 25mg/5ml oral solution (Special Order) 1 ml,Hydroxychloroquine 25mg/5ml oral solution,Active
+39079411000001100,Hydroxychloroquine 300mg tablets (Alliance Healthcare (Distribution) Ltd) 30 tablet 3 x 10 tablets,Hydroxychloroquine 300mg tablets,Active
+38703011000001102,Hydroxychloroquine 300mg tablets (Blackrock Pharmaceuticals Ltd) 30 tablet 3 x 10 tablets,Hydroxychloroquine 300mg tablets,Active
+40358411000001109,Hydroxychloroquine 300mg tablets (DE Pharmaceuticals) 30 tablet,Hydroxychloroquine 300mg tablets,Active
+12569611000001101,Hydroxychloroquine 30mg/5ml oral solution (Special Order) 1 ml,Hydroxychloroquine 30mg/5ml oral solution,Active
+8537911000001102,Hydroxychloroquine 35mg/5ml oral solution (Special Order) 1 ml,Hydroxychloroquine 35mg/5ml oral solution,Active
+8539911000001109,Hydroxychloroquine 35mg/5ml oral suspension (Special Order) 1 ml,Hydroxychloroquine 35mg/5ml oral suspension,Active
+12570211000001101,Hydroxychloroquine 36mg/5ml oral solution (Special Order) 1 ml,Hydroxychloroquine 36mg/5ml oral solution,Active
+12570511000001103,Hydroxychloroquine 400mg/5ml oral solution (Special Order) 1 ml,Hydroxychloroquine 400mg/5ml oral solution,Active
+34676011000001109,Hydroxychloroquine 400mg/5ml oral suspension (Special Order) 1 ml,Hydroxychloroquine 400mg/5ml oral suspension,Active
+12571111000001101,Hydroxychloroquine 40mg/5ml oral solution (Special Order) 1 ml,Hydroxychloroquine 40mg/5ml oral solution,Active
+8537711000001104,Hydroxychloroquine 50mg/5ml oral solution (Special Order) 1 ml,Hydroxychloroquine 50mg/5ml oral solution,Active
+8538811000001106,Hydroxychloroquine 50mg/5ml oral suspension (Special Order) 1 ml,Hydroxychloroquine 50mg/5ml oral suspension,Active
+30622211000001102,Hydroxychloroquine 50mg/5ml oral suspension (Special Order) 300 ml,Hydroxychloroquine 50mg/5ml oral suspension,Active
+30622311000001105,Hydroxychloroquine 50mg/5ml oral suspension (Special Order) 500 ml,Hydroxychloroquine 50mg/5ml oral suspension,Active
+12571411000001106,Hydroxychloroquine 53.33mg/5ml oral solution (Special Order) 1 ml,Hydroxychloroquine 53.33mg/5ml oral solution,Active
+12572011000001105,Hydroxychloroquine 60mg/5ml oral solution (Special Order) 1 ml,Hydroxychloroquine 60mg/5ml oral solution,Active
+12572711000001107,Hydroxychloroquine 65mg/5ml oral solution (Special Order) 1 ml,Hydroxychloroquine 65mg/5ml oral solution,Active
+12573211000001106,Hydroxychloroquine 70mg/5ml oral solution (Special Order) 1 ml,Hydroxychloroquine 70mg/5ml oral solution,Active
+8540111000001102,Hydroxychloroquine 75mg/5ml oral solution (Special Order) 1 ml,Hydroxychloroquine 75mg/5ml oral solution,Active
+8540911000001104,Hydroxychloroquine 75mg/5ml oral suspension (Special Order) 1 ml,Hydroxychloroquine 75mg/5ml oral suspension,Active
+12573511000001109,Hydroxychloroquine 80mg/5ml oral solution (Special Order) 1 ml,Hydroxychloroquine 80mg/5ml oral solution,Active
+12573811000001107,Hydroxychloroquine 85mg/5ml oral solution (Special Order) 1 ml,Hydroxychloroquine 85mg/5ml oral solution,Active
+2384311000001106,Plaquenil 200mg tablets (Sanofi) 60 tablet 6 x 10 tablets,Plaquenil 200mg tablets,Active
+17042311000001109,Quinoric 200mg tablets (Bristol Laboratories Ltd) 60 tablet 6 x 10 tablets,Quinoric 200mg tablets,Active
+
+(55 rows affected)
