@@ -31,6 +31,8 @@ checkcodeschecked.txt
 # Data files (too large for repo)
 Queries/*.csv
 Queries/*.json
-!Config/TerminologyConfig.json
-!Config/Terminologysettings.json
 !package.json
+
+# Local config with environment-specific values (use *.example.json as templates)
+Config/TerminologyConfig.json
+Config/Terminologysettings.json

@@ -6,7 +6,7 @@
     "logsBase": "C:\\TerminologyLogs"
   },
   "database": {
-    "serverInstance": "SILENTPRIORY\\SQLEXPRESS",
+    "serverInstance": "YOUR_HOST\\SQLEXPRESS",
     "snomedDatabase": "snomedct",
     "snomedIntDatabase": "snomedct_int",
     "dmdDatabase": "dmd",
@@ -31,13 +31,13 @@
   },
   "notifications": {
     "enabled": true,
-    "smtpServer": "smtp.gmail.com",
+    "smtpServer": "smtp.example.com",
     "smtpPort": 587,
     "smtpUseSsl": true,
     "smtpCredentialTarget": "SMTP_CREDENTIALS",
-    "fromAddress": "mik786@gmail.com",
+    "fromAddress": "you@example.com",
     "toAddresses": [
-      "mik786@gmail.com"
+      "you@example.com"
     ],
     "subjectPrefix": "[Terminology Update]"
   },
@@ -54,15 +54,15 @@
     "retryDelaySeconds": 300
   },
   "azureReporting": {
-    "enabled": true,
-    "server": "azuresnnomedct.database.windows.net",
-    "database": "ReportingServer",
+    "enabled": false,
+    "server": "YOUR_SERVER.database.windows.net",
+    "database": "YOUR_REPORTING_DB",
     "sqlCredentialTarget": "AZURE_SQL_REPORTING",
     "connectionTimeout": 240
   },
   "azureBlobStorage": {
-    "enabled": true,
-    "storageAccount": "snomedviewerstorage",
+    "enabled": false,
+    "storageAccount": "YOUR_STORAGE_ACCOUNT",
     "containerName": "terminology-reports",
     "blobName": "terminology-dashboard.json",
     "keyCredentialTarget": "AZURE_STORAGE_KEY"
