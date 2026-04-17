@@ -16,10 +16,13 @@
     Path to DMWB folder with .mdb files (default: C:\DMWB\CurrentReleases)
 
 .PARAMETER SqlUser
-    SQL Server username (default: sa)
+    SQL Server username. If omitted, read from Windows Credential Manager target in -SqlCredentialTarget.
 
 .PARAMETER SqlPassword
-    SQL Server password (default: redfive5)
+    SQL Server password. If omitted, read from Windows Credential Manager target in -SqlCredentialTarget.
+
+.PARAMETER SqlCredentialTarget
+    Windows Credential Manager target name to read SQL user/password from when not passed explicitly (default: DMWB_SQL).
 
 .EXAMPLE
     .\Test-DMWBExport.ps1
@@ -33,9 +36,20 @@ param(
     [string]$ServerInstance = "localhost\SQLEXPRESS",
     [string]$DatabaseName = "DMWB_Export",
     [string]$SourcePath = "C:\DMWB\CurrentReleases",
-    [string]$SqlUser = "sa",
-    [string]$SqlPassword = "redfive5"
+    [string]$SqlUser,
+    [string]$SqlPassword,
+    [string]$SqlCredentialTarget = "DMWB_SQL"
 )
+
+if (-not $SqlUser -or -not $SqlPassword) {
+    Import-Module CredentialManager -ErrorAction Stop
+    $storedCred = Get-StoredCredential -Target $SqlCredentialTarget
+    if (-not $storedCred) {
+        throw "SQL credentials not found. Pass -SqlUser/-SqlPassword or store a credential in Windows Credential Manager under target '$SqlCredentialTarget'."
+    }
+    $SqlUser = $storedCred.UserName
+    $SqlPassword = $storedCred.GetNetworkCredential().Password
+}
 
 $ErrorActionPreference = "Continue"
 

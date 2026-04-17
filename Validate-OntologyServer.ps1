@@ -186,11 +186,25 @@ Write-Host "Server: $($ontologySettings.terminologyServerUrl)"
 Write-Host "Client: $($ontologySettings.clientId)"
 Write-Host ""
 
+# Resolve client secret from Windows Credential Manager
+if (-not $ontologySettings.clientSecretTarget) {
+    Write-Error "nhsOntologySettings.clientSecretTarget must be set (Windows Credential Manager target name)"
+    exit 1
+}
+
+Import-Module CredentialManager -ErrorAction Stop
+$ontologyCred = Get-StoredCredential -Target $ontologySettings.clientSecretTarget
+if (-not $ontologyCred) {
+    Write-Error "NHS Ontology client secret not found in Credential Manager: $($ontologySettings.clientSecretTarget)"
+    exit 1
+}
+$clientSecret = $ontologyCred.GetNetworkCredential().Password
+
 # Get OAuth token
 Write-Host "Authenticating with NHS Ontology Server..." -NoNewline
 $token = Get-OAuthToken -AuthUrl $ontologySettings.authUrl `
                         -ClientId $ontologySettings.clientId `
-                        -ClientSecret $ontologySettings.clientSecret
+                        -ClientSecret $clientSecret
 
 if (-not $token) {
     Write-Host " FAILED" -ForegroundColor Red

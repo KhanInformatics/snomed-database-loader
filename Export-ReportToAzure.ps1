@@ -108,12 +108,25 @@ if (-not $config.azureReporting) {
     return $false
 }
 
-$connectionString = $config.azureReporting.connectionString
+$azureReporting = $config.azureReporting
 
-if ([string]::IsNullOrEmpty($connectionString)) {
-    Write-Error "Azure SQL connection string is empty"
+if (-not $azureReporting.sqlCredentialTarget) {
+    Write-Error "azureReporting.sqlCredentialTarget must be set in config (Windows Credential Manager target name)"
     return $false
 }
+
+Import-Module CredentialManager -ErrorAction Stop
+$sqlCred = Get-StoredCredential -Target $azureReporting.sqlCredentialTarget
+if (-not $sqlCred) {
+    Write-Error "Azure SQL credentials not found in Credential Manager: $($azureReporting.sqlCredentialTarget)"
+    return $false
+}
+
+$sqlUser = $sqlCred.UserName
+$sqlPassword = $sqlCred.GetNetworkCredential().Password
+$connectionTimeout = if ($azureReporting.connectionTimeout) { $azureReporting.connectionTimeout } else { 240 }
+
+$connectionString = "Server=tcp:$($azureReporting.server),1433;Initial Catalog=$($azureReporting.database);User ID=$sqlUser;Password=$sqlPassword;Encrypt=True;TrustServerCertificate=False;Connection Timeout=$connectionTimeout;"
 
 Write-Host "  Target: $($config.azureReporting.server)/$($config.azureReporting.database)" -ForegroundColor Gray
 

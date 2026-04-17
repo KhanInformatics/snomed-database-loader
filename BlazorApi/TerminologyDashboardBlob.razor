@@ -19,6 +19,7 @@
 @using System.Text.Json
 @using System.Text.Json.Serialization
 @inject HttpClient Http
+@inject IConfiguration Configuration
 
 <PageTitle>Terminology Updates</PageTitle>
 
@@ -277,10 +278,12 @@
     // ========================================================
     // CONFIGURATION
     // ========================================================
-    // SAS URL with read-only token (valid until 2027-01-24)
-    // Note: For production, store this in appsettings.json and inject IConfiguration
-    private const string BlobUrl = "https://snomedviewerstorage.blob.core.windows.net/terminology-reports/terminology-dashboard.json?se=2027-01-24T18%3A23%3A36Z&sp=r&sv=2022-11-02&sr=b&sig=SrGQHHnfejRc89tMgNE9npmOlMi6r7CiMQFrjitrFrU%3D";
-    
+    // Read-only SAS URL is read from configuration (appsettings.json or user-secrets).
+    // Key: "TerminologyDashboard:BlobSasUrl"
+    private string BlobUrl => Configuration["TerminologyDashboard:BlobSasUrl"]
+        ?? throw new InvalidOperationException(
+            "Missing config key 'TerminologyDashboard:BlobSasUrl'. Set it via user-secrets or appsettings (not committed).");
+
     private DashboardData? _data;
     private bool _loading = true;
     private string? _error;

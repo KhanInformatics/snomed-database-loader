@@ -24,10 +24,22 @@ param(
     [string]$ServerInstance = "localhost\SQLEXPRESS",
     [string]$DatabaseName = "DMWB_Export",
     [string]$SourcePath = "C:\DMWB\CurrentReleases",
-    [string]$SqlUser = "sa",
-    [string]$SqlPassword = "redfive5",
+    [string]$SqlUser,
+    [string]$SqlPassword,
+    [string]$SqlCredentialTarget = "DMWB_SQL",
     [switch]$DropExisting
 )
+
+# Resolve SQL credentials from Windows Credential Manager if not explicitly provided
+if (-not $SqlUser -or -not $SqlPassword) {
+    Import-Module CredentialManager -ErrorAction Stop
+    $storedCred = Get-StoredCredential -Target $SqlCredentialTarget
+    if (-not $storedCred) {
+        throw "SQL credentials not found. Pass -SqlUser/-SqlPassword or store a credential in Windows Credential Manager under target '$SqlCredentialTarget'."
+    }
+    $SqlUser = $storedCred.UserName
+    $SqlPassword = $storedCred.GetNetworkCredential().Password
+}
 
 $ErrorActionPreference = "Stop"
 
