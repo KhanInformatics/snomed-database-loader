@@ -1,0 +1,696 @@
+@page "/"
+
+<PageTitle>Khan Clinical Informatics</PageTitle>
+
+<main class="editorial-home">
+    <section class="editorial-surface" aria-labelledby="home-title">
+        <header class="editorial-nav" aria-label="Homepage navigation">
+            <a class="wordmark" href="/">Khan Clinical Informatics</a>
+            <nav class="page-links" aria-label="On-page navigation">
+                <a href="/search">Work</a>
+                <a href="/about">About</a>
+                <a href="#expertise">Expertise</a>
+                <a href="/contact">Contact</a>
+            </nav>
+        </header>
+
+        <div class="hero-grid">
+            <div class="hero-copy">
+                <p class="hero-kicker">Clinical safety · Informatics · Terminology</p>
+                <h1 id="home-title">
+                    <span>Clinical safety</span>
+                    <span>made visible</span>
+                </h1>
+                <p class="hero-lead">Safer systems. Clearer clinical data.</p>
+                <a class="primary-action" href="/search">
+                    <span>Explore the work</span>
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <div class="clinical-visual" aria-hidden="true">
+                <svg viewBox="0 0 760 560" role="img" focusable="false">
+                    <defs>
+                        <linearGradient id="pulse-fade" x1="0" x2="1">
+                            <stop offset="0" stop-color="#3156bd" stop-opacity="0" />
+                            <stop offset="0.16" stop-color="#3156bd" stop-opacity="0.55" />
+                            <stop offset="0.5" stop-color="#0d3f9e" stop-opacity="1" />
+                            <stop offset="0.84" stop-color="#3156bd" stop-opacity="0.55" />
+                            <stop offset="1" stop-color="#3156bd" stop-opacity="0" />
+                        </linearGradient>
+                        <radialGradient id="radar-wash">
+                            <stop offset="0" stop-color="#e8efff" stop-opacity="0.8" />
+                            <stop offset="0.56" stop-color="#f5f7fb" stop-opacity="0.35" />
+                            <stop offset="1" stop-color="#fbfaf7" stop-opacity="0" />
+                        </radialGradient>
+                        <pattern id="micro-grid" width="28" height="28" patternUnits="userSpaceOnUse">
+                            <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#8da0c4" stroke-opacity="0.1" stroke-width="1" />
+                        </pattern>
+                        <filter id="soft-glow" x="-100%" y="-100%" width="300%" height="300%">
+                            <feGaussianBlur stdDeviation="5" result="blur" />
+                            <feMerge>
+                                <feMergeNode in="blur" />
+                                <feMergeNode in="SourceGraphic" />
+                            </feMerge>
+                        </filter>
+                    </defs>
+
+                    <rect x="0" y="0" width="760" height="560" fill="url(#micro-grid)" />
+                    <circle cx="315" cy="332" r="238" fill="url(#radar-wash)" />
+
+                    <g class="radar-rings" fill="none" stroke="#6f84ad">
+                        <circle cx="315" cy="332" r="78" />
+                        <circle cx="315" cy="332" r="116" />
+                        <circle cx="315" cy="332" r="156" />
+                        <circle cx="315" cy="332" r="197" />
+                        <path d="M315 90V524M73 332H625" />
+                        <path d="M144 161L486 503M144 503L486 161" />
+                    </g>
+
+                    <g class="data-constellation" fill="none" stroke="#6f84ad" stroke-width="1.2">
+                        <path d="M84 416L149 370L207 428L276 367L356 420L445 363L523 413L603 354L692 403" />
+                        <path d="M118 180L196 258L262 206L338 272L402 219L493 286L555 236" stroke-dasharray="3 6" />
+                    </g>
+
+                    <g class="data-dots">
+                        <circle cx="84" cy="416" r="5" />
+                        <circle cx="149" cy="370" r="4" />
+                        <circle cx="207" cy="428" r="6" />
+                        <circle cx="276" cy="367" r="3.5" />
+                        <circle cx="356" cy="420" r="5" />
+                        <circle cx="445" cy="363" r="4" />
+                        <circle cx="523" cy="413" r="6" />
+                        <circle cx="603" cy="354" r="4" />
+                        <circle cx="692" cy="403" r="5" />
+                    </g>
+
+                    <g class="terminology-tree" aria-label="Clinical terminology hierarchy">
+                        <g class="tree-feeders">
+                            <path d="M403 166H478C499 166 506 174 518 174" stroke-dasharray="3 5" />
+                            <path d="M403 166V220" />
+                            <path d="M430 242V264H518" stroke-dasharray="3 5" />
+                            <circle cx="403" cy="166" r="3.5" class="feeder-node feeder-node-strong" />
+                            <circle cx="403" cy="220" r="4" class="feeder-node feeder-node-strong" />
+                            <circle cx="430" cy="242" r="4" class="feeder-node" />
+                            <circle cx="518" cy="264" r="3" class="feeder-node feeder-node-soft" />
+                        </g>
+
+                        <path class="tree-spine" d="M536 30V46C536 54 532 58 524 58C520 58 518 62 518 68V264" />
+                        <path class="tree-branches" d="M518 82H540M518 112H540M518 142H540M518 172H540M518 202H540M518 232H540M518 262H540" />
+
+                        <circle cx="536" cy="30" r="5.5" class="tree-root" />
+                        <circle cx="540" cy="82" r="3.5" />
+                        <circle cx="540" cy="112" r="3.5" />
+                        <circle cx="540" cy="142" r="3.5" />
+                        <circle cx="540" cy="172" r="3.5" />
+                        <circle cx="540" cy="202" r="3.5" />
+                        <circle cx="540" cy="232" r="3.5" />
+                        <circle cx="540" cy="262" r="3.5" />
+
+                        <text x="552" y="27" class="tree-title">Clinical</text>
+                        <text x="552" y="44" class="tree-title">Terminology</text>
+                        <text x="552" y="87">Entity</text>
+                        <text x="552" y="117">Finding</text>
+                        <text x="552" y="147">Procedure</text>
+                        <text x="552" y="177">Situation</text>
+                        <text x="552" y="207">Qualifier</text>
+                        <text x="552" y="237">Context</text>
+                        <text x="552" y="267">Disposition</text>
+                    </g>
+
+                    <g class="pulse-line" fill="none" stroke="url(#pulse-fade)" stroke-linecap="round" stroke-linejoin="round">
+                        <path class="pulse-ghost" d="M0 332H95L111 317L126 346L145 332H199L215 315L230 348L250 332H274L292 299L313 397L337 205L361 375L382 304L404 345L426 332H470L488 316L506 348L527 332H583L601 312L619 350L640 332H760" />
+                        <path class="pulse-main" d="M0 332H95L111 317L126 346L145 332H199L215 315L230 348L250 332H274L292 299L313 397L337 205L361 375L382 304L404 345L426 332H470L488 316L506 348L527 332H583L601 312L619 350L640 332H760" />
+                    </g>
+                </svg>
+            </div>
+        </div>
+
+        <div id="expertise" class="expertise-strip" aria-label="Areas of expertise">
+            <a class="expertise-item" href="/about">
+                <span class="expertise-icon" aria-hidden="true">
+                    <i class="fas fa-shield-alt"></i>
+                </span>
+                <span class="expertise-copy">
+                    <strong>Clinical safety</strong>
+                    <small>Designing safer care through better information.</small>
+                </span>
+            </a>
+
+            <a class="expertise-item" href="/about">
+                <span class="expertise-icon" aria-hidden="true">
+                    <i class="fas fa-share-nodes"></i>
+                </span>
+                <span class="expertise-copy">
+                    <strong>Informatics</strong>
+                    <small>Turning complex data into usable knowledge.</small>
+                </span>
+            </a>
+
+            <a class="expertise-item" href="/search">
+                <span class="expertise-icon" aria-hidden="true">
+                    <i class="fas fa-book-open"></i>
+                </span>
+                <span class="expertise-copy">
+                    <strong>Terminology</strong>
+                    <small>Building shared language for safer systems.</small>
+                </span>
+            </a>
+        </div>
+    </section>
+</main>
+
+<style>
+    .editorial-home {
+        --paper: #fbfaf7;
+        --paper-deep: #f4f1eb;
+        --navy: #0b2855;
+        --ink: #172b49;
+        --muted: #53637b;
+        --blue: #0d55d9;
+        --blue-deep: #073eaa;
+        --line: rgba(20, 48, 92, 0.14);
+        width: auto;
+        min-height: 100vh;
+        margin: -15px;
+        padding: clamp(0.65rem, 1.6vw, 1.4rem);
+        overflow-x: hidden;
+        color: var(--ink);
+        background:
+            radial-gradient(circle at 11% 18%, rgba(55, 98, 188, 0.08), transparent 24rem),
+            #f3f5f8;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    .editorial-home *,
+    .editorial-home *::before,
+    .editorial-home *::after {
+        box-sizing: border-box;
+    }
+
+    .editorial-home a {
+        text-decoration: none;
+    }
+
+    .editorial-surface {
+        position: relative;
+        display: flex;
+        min-height: calc(100vh - clamp(1.3rem, 3.2vw, 2.8rem));
+        flex-direction: column;
+        overflow: hidden;
+        border: 1px solid rgba(20, 48, 92, 0.09);
+        border-radius: clamp(0.8rem, 1.5vw, 1.35rem);
+        background:
+            linear-gradient(180deg, rgba(255, 255, 255, 0.52), rgba(255, 255, 255, 0) 30%),
+            var(--paper);
+        box-shadow:
+            0 24px 60px -42px rgba(24, 43, 76, 0.48),
+            0 4px 14px rgba(24, 43, 76, 0.06);
+    }
+
+    .editorial-surface::after {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        pointer-events: none;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.018'/%3E%3C/svg%3E");
+        content: "";
+    }
+
+    .editorial-nav,
+    .hero-grid,
+    .expertise-strip {
+        position: relative;
+        z-index: 1;
+    }
+
+    .editorial-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        padding: clamp(1.35rem, 2.7vw, 2.35rem) clamp(1.4rem, 4.6vw, 4.5rem);
+        border-bottom: 1px solid rgba(20, 48, 92, 0.08);
+    }
+
+    .wordmark {
+        color: var(--navy);
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: clamp(1rem, 1.55vw, 1.28rem);
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        white-space: nowrap;
+    }
+
+    .wordmark:hover,
+    .wordmark:focus-visible {
+        color: var(--blue);
+    }
+
+    .page-links {
+        display: flex;
+        align-items: center;
+        gap: clamp(1rem, 3.3vw, 3rem);
+    }
+
+    .page-links a {
+        position: relative;
+        padding: 0.25rem 0;
+        color: var(--ink);
+        font-size: 0.9rem;
+        font-weight: 550;
+    }
+
+    .page-links a::after {
+        position: absolute;
+        right: 0;
+        bottom: -0.2rem;
+        left: 0;
+        height: 1px;
+        background: var(--blue);
+        content: "";
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 180ms ease;
+    }
+
+    .page-links a:hover,
+    .page-links a:focus-visible {
+        color: var(--blue);
+    }
+
+    .page-links a:hover::after,
+    .page-links a:focus-visible::after {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+
+    .hero-grid {
+        display: grid;
+        flex: 1;
+        grid-template-columns: minmax(34rem, 1.06fr) minmax(30rem, 0.94fr);
+        align-items: center;
+        gap: clamp(0.5rem, 3vw, 3rem);
+        min-height: 39rem;
+        padding: clamp(2.5rem, 6vw, 6.25rem) clamp(1.4rem, 4.6vw, 4.5rem) clamp(1.75rem, 4vw, 3.5rem);
+    }
+
+    .hero-copy {
+        position: relative;
+        z-index: 2;
+        max-width: 38rem;
+    }
+
+    .hero-kicker {
+        margin: 0 0 1.2rem;
+        color: var(--blue-deep);
+        font-size: 0.72rem;
+        font-weight: 750;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+    }
+
+    .hero-copy h1 {
+        max-width: 9.5ch;
+        margin: 0;
+        color: var(--navy);
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: clamp(3.6rem, 5.2vw, 6rem);
+        font-weight: 400;
+        letter-spacing: -0.052em;
+        line-height: 0.98;
+    }
+
+    .hero-copy h1:focus {
+        outline: none;
+    }
+
+    .hero-copy h1 span {
+        display: block;
+        white-space: nowrap;
+    }
+
+    .hero-lead {
+        margin: clamp(1.6rem, 3vw, 2.6rem) 0 0;
+        color: var(--muted);
+        font-size: clamp(1.12rem, 1.7vw, 1.45rem);
+        font-weight: 400;
+        letter-spacing: -0.015em;
+    }
+
+    .primary-action {
+        display: inline-flex;
+        align-items: center;
+        gap: 1.2rem;
+        margin-top: clamp(1.8rem, 3.5vw, 2.8rem);
+        padding: 0.95rem 1.25rem 0.95rem 1.45rem;
+        border: 1px solid rgba(7, 62, 170, 0.1);
+        border-radius: 0.52rem;
+        color: #fff;
+        background: linear-gradient(135deg, var(--blue) 0%, #0648c6 100%);
+        font-size: 0.96rem;
+        font-weight: 650;
+        box-shadow: 0 15px 26px -15px rgba(13, 85, 217, 0.75);
+        transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+    }
+
+    .primary-action:hover,
+    .primary-action:focus-visible {
+        color: #fff;
+        background: linear-gradient(135deg, #0b4cc5 0%, #043891 100%);
+        box-shadow: 0 18px 30px -14px rgba(13, 85, 217, 0.9);
+        transform: translateY(-2px);
+    }
+
+    .primary-action i {
+        font-size: 0.82rem;
+        transition: transform 180ms ease;
+    }
+
+    .primary-action:hover i {
+        transform: translateX(4px);
+    }
+
+    .clinical-visual {
+        position: relative;
+        min-width: 0;
+        margin-right: clamp(-4.5rem, -4vw, -1.5rem);
+    }
+
+    .clinical-visual::before {
+        position: absolute;
+        top: 18%;
+        right: 16%;
+        width: 46%;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background: rgba(93, 126, 195, 0.08);
+        filter: blur(38px);
+        content: "";
+    }
+
+    .clinical-visual svg {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: auto;
+        overflow: visible;
+    }
+
+    .radar-rings {
+        opacity: 0.27;
+        stroke-width: 1;
+    }
+
+    .radar-rings circle:nth-child(2),
+    .radar-rings circle:nth-child(4) {
+        stroke-dasharray: 3 8;
+    }
+
+    .data-constellation {
+        opacity: 0.35;
+    }
+
+    .data-dots circle {
+        fill: #234b9b;
+        opacity: 0.55;
+    }
+
+    .data-dots circle:nth-child(3n) {
+        fill: #0b3b8c;
+        opacity: 0.9;
+    }
+
+    .terminology-tree {
+        fill: none;
+        stroke: #6a82b2;
+        stroke-width: 1.3;
+    }
+
+    .terminology-tree path {
+        opacity: 0.86;
+    }
+
+    .terminology-tree .tree-spine,
+    .terminology-tree .tree-branches {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+
+    .terminology-tree .tree-feeders {
+        opacity: 0.42;
+    }
+
+    .terminology-tree .tree-feeders path {
+        opacity: 1;
+    }
+
+    .terminology-tree circle {
+        fill: var(--paper);
+        stroke: #4c68a2;
+        stroke-width: 1.4;
+    }
+
+    .terminology-tree .feeder-node {
+        fill: #8193b5;
+        stroke: none;
+    }
+
+    .terminology-tree .feeder-node-strong {
+        fill: #234b9b;
+    }
+
+    .terminology-tree .feeder-node-soft {
+        fill: #b2bdd1;
+    }
+
+    .terminology-tree .tree-root {
+        fill: #1849a5;
+        stroke: #1849a5;
+        filter: url(#soft-glow);
+    }
+
+    .terminology-tree text {
+        fill: #425879;
+        stroke: none;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    .terminology-tree .tree-title {
+        fill: var(--navy);
+        font-size: 14px;
+        font-weight: 750;
+    }
+
+    .pulse-main {
+        stroke-width: 3;
+    }
+
+    .pulse-ghost {
+        opacity: 0.22;
+        stroke-width: 12;
+        filter: url(#soft-glow);
+    }
+
+    .expertise-strip {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        margin: 0 clamp(1.4rem, 4.6vw, 4.5rem);
+        padding: clamp(1.65rem, 3vw, 2.5rem) 0 clamp(1.8rem, 3.4vw, 2.9rem);
+        border-top: 1px solid var(--line);
+    }
+
+    .expertise-item {
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr);
+        align-items: start;
+        gap: 1rem;
+        min-width: 0;
+        padding: 0 clamp(1rem, 2.8vw, 2.8rem);
+        color: var(--ink);
+    }
+
+    .expertise-item:first-child {
+        padding-left: 0;
+    }
+
+    .expertise-item:last-child {
+        padding-right: 0;
+    }
+
+    .expertise-item + .expertise-item {
+        border-left: 1px solid var(--line);
+    }
+
+    .expertise-icon {
+        display: grid;
+        width: 2.5rem;
+        height: 2.5rem;
+        flex: 0 0 auto;
+        place-items: center;
+        border: 1px solid rgba(13, 85, 217, 0.28);
+        border-radius: 50%;
+        color: var(--blue);
+        font-size: 1rem;
+        transition: color 180ms ease, background 180ms ease, transform 180ms ease;
+    }
+
+    .expertise-copy {
+        display: grid;
+        gap: 0.32rem;
+        min-width: 0;
+    }
+
+    .expertise-copy strong {
+        color: var(--navy);
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 1.12rem;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+    }
+
+    .expertise-copy small {
+        max-width: 27ch;
+        color: var(--muted);
+        font-size: 0.78rem;
+        line-height: 1.55;
+    }
+
+    .expertise-item:hover,
+    .expertise-item:focus-visible {
+        color: var(--ink);
+    }
+
+    .expertise-item:hover .expertise-icon,
+    .expertise-item:focus-visible .expertise-icon {
+        color: #fff;
+        background: var(--blue);
+        transform: translateY(-2px);
+    }
+
+    @@media (max-width: 1350px) {
+        .hero-grid {
+            grid-template-columns: minmax(27rem, 1fr) minmax(25rem, 1fr);
+        }
+
+        .hero-copy h1 {
+            font-size: clamp(3.4rem, 5.4vw, 5.25rem);
+        }
+
+        .terminology-tree text {
+            font-size: 12px;
+        }
+    }
+
+    @@media (max-width: 880px) {
+        .editorial-nav {
+            align-items: flex-start;
+        }
+
+        .hero-grid {
+            grid-template-columns: 1fr;
+            min-height: 0;
+            padding-top: 3.5rem;
+        }
+
+        .hero-copy {
+            max-width: 42rem;
+        }
+
+        .hero-copy h1 {
+            max-width: 10ch;
+            font-size: clamp(3.35rem, 9vw, 5.5rem);
+        }
+
+        .clinical-visual {
+            width: min(100%, 46rem);
+            margin: -2rem auto -1rem;
+        }
+
+        .expertise-strip {
+            grid-template-columns: 1fr;
+            padding-block: 0.5rem;
+        }
+
+        .expertise-item,
+        .expertise-item:first-child,
+        .expertise-item:last-child {
+            padding: 1.25rem 0;
+        }
+
+        .expertise-item + .expertise-item {
+            border-top: 1px solid var(--line);
+            border-left: 0;
+        }
+
+        .expertise-copy small {
+            max-width: none;
+        }
+    }
+
+    @@media (max-width: 620px) {
+        .editorial-home {
+            padding: 0;
+            background: var(--paper);
+        }
+
+        .editorial-surface {
+            min-height: 100vh;
+            border: 0;
+            border-radius: 0;
+            box-shadow: none;
+        }
+
+        .editorial-nav {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .page-links {
+            width: 100%;
+            justify-content: space-between;
+            gap: 0.75rem;
+            overflow-x: auto;
+        }
+
+        .page-links a {
+            font-size: 0.82rem;
+        }
+
+        .hero-grid {
+            padding-top: 2.8rem;
+        }
+
+        .hero-kicker {
+            max-width: 26ch;
+            line-height: 1.55;
+        }
+
+        .hero-copy h1 {
+            font-size: clamp(2.65rem, 11vw, 4rem);
+        }
+
+        .clinical-visual {
+            width: 115%;
+            margin: -1rem -7.5% -0.75rem;
+        }
+
+        .terminology-tree text {
+            font-size: 12px;
+        }
+
+        .primary-action {
+            width: 100%;
+            justify-content: space-between;
+        }
+    }
+
+    @@media (prefers-reduced-motion: reduce) {
+        .editorial-home * {
+            scroll-behavior: auto !important;
+            transition: none !important;
+        }
+    }
+</style>

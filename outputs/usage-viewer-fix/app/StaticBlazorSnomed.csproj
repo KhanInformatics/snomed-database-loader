@@ -1,0 +1,63 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <BlazorWebAssemblyPreserveCollationData>false</BlazorWebAssemblyPreserveCollationData>
+    <BlazorWebAssemblyJiterpreter>false</BlazorWebAssemblyJiterpreter>
+  </PropertyGroup>
+
+  <!-- These files are runtime dependencies, even though no Razor file references them directly. -->
+  <Target Name="ValidateSnomedUsageAssets" BeforeTargets="PrepareForBuild;ComputeFilesToPublish"
+          Condition="'$(DesignTimeBuild)' != 'true'">
+    <PropertyGroup>
+      <_UsageManifest>$(MSBuildProjectDirectory)/wwwroot/data/snomed-usage/manifest.json</_UsageManifest>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(_UsageManifest)')"
+           Text="SNOMED usage manifest is missing. Restore wwwroot/data/snomed-usage or regenerate it using the instructions in Usage data/README.md." />
+    <PropertyGroup>
+      <_UsageManifestJson>$([System.IO.File]::ReadAllText('$(_UsageManifest)'))</_UsageManifestJson>
+      <_UsageDatasetVersion>$([System.Text.RegularExpressions.Regex]::Match('$(_UsageManifestJson)', '&quot;datasetVersion&quot;\s*:\s*&quot;([^&quot;]+)&quot;').Groups[1].Value)</_UsageDatasetVersion>
+      <_UsageBucketCount>$([System.Text.RegularExpressions.Regex]::Match('$(_UsageManifestJson)', '&quot;bucketCount&quot;\s*:\s*(\d+)').Groups[1].Value)</_UsageBucketCount>
+    </PropertyGroup>
+    <Error Condition="'$(_UsageDatasetVersion)' == '' Or '$(_UsageBucketCount)' == '' Or '$(_UsageBucketCount)' == '0'"
+           Text="SNOMED usage manifest is missing a valid datasetVersion or bucketCount." />
+    <ItemGroup>
+      <_UsageShards Include="$(MSBuildProjectDirectory)/wwwroot/data/snomed-usage/$(_UsageDatasetVersion)/*.json" />
+    </ItemGroup>
+    <Error Condition="'@(_UsageShards->Count())' != '$(_UsageBucketCount)'"
+           Text="SNOMED usage dataset $(_UsageDatasetVersion) is incomplete: expected $(_UsageBucketCount) JSON shards, found @(_UsageShards->Count()). Restore or regenerate the complete dataset before building or publishing." />
+  </Target>
+
+  <ItemGroup>
+    <!-- The data generator is a separate executable project under this repository root. -->
+    <Compile Remove="Tools\**\*.cs" />
+    <Content Remove="Tools\**\*" />
+    <EmbeddedResource Remove="Tools\**\*" />
+    <None Remove="Tools\**\*" />
+
+    <!-- Azure uploads the published wwwroot, so put its routing config at that output root. -->
+    <Content Update="staticwebapp.config.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <TargetPath>wwwroot\staticwebapp.config.json</TargetPath>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.0" PrivateAssets="all" />
+    <PackageReference Include="Syncfusion.Blazor.Buttons" Version="29.2.10" />
+    <PackageReference Include="Syncfusion.Blazor.Grid" Version="29.2.10" />
+    <PackageReference Include="Syncfusion.Blazor.Inputs" Version="29.2.10" />
+    <!-- Additional Syncfusion packages for better design-time experience -->
+    <PackageReference Include="Syncfusion.Blazor.Core" Version="29.2.10" />
+    <PackageReference Include="Syncfusion.Blazor.Data" Version="29.2.10" />
+    <!-- Scheduler package for calendar UI -->
+    <PackageReference Include="Syncfusion.Blazor.Schedule" Version="29.2.10" />
+    <!-- Diagram package for SNOMED hierarchy visualization -->
+    <PackageReference Include="Syncfusion.Blazor.Diagram" Version="29.2.10" />
+  </ItemGroup>
+
+</Project>

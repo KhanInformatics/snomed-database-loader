@@ -1,0 +1,619 @@
+@page "/snomed-hierarchy"
+@inject AzureFunctionService AzureFunctionService
+@inject IJSRuntime JSRuntime
+
+@using Syncfusion.Blazor
+@using Syncfusion.Blazor.Diagram
+@using Syncfusion.Blazor.Buttons
+@using Syncfusion.Blazor.Inputs
+@using StaticBlazorSnomed.Models
+
+<PageTitle>SNOMED CT Hierarchy Visualization</PageTitle>
+
+<!-- Page Header Section -->
+<div class="page-header-wrapper">
+    <div class="page-header">
+        <div class="page-header-content">
+            <div class="page-header-main">
+                <h4 class="page-title mb-1">SNOMED CT Hierarchy Visualization</h4>
+                <p class="page-subtitle mb-0">Explore hierarchical relationships between SNOMED CT concepts</p>
+            </div>
+            <div class="page-header-actions">
+                <span class="created-by">Created by Imran Khan</span>
+                <a href="https://github.com" target="_blank" class="github-link">
+                    <i class="fab fa-github fa-lg"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid" style="margin-top: 0; padding-top: 1rem;">
+    <!-- Search Section -->
+    <div class="content-section">
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <div class="card border-primary search-card" style="box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <div class="card-header bg-primary text-white py-2">
+                        <h6 class="mb-0 small">Search SNOMED Concept</h6>
+                    </div>
+                    <div class="card-body py-3">
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold mb-2">SNOMED CT Concept ID:</label>
+                            <SfTextBox @bind-Value="conceptIdInput" 
+                                      Placeholder="Enter SNOMED CT Concept ID (e.g., 233604007 for Pneumonia)"
+                                      CssClass="form-control">
+                            </SfTextBox>
+                            <small class="form-text text-muted mt-1 d-block">
+                                Enter a valid SNOMED CT concept ID to visualize its hierarchy.
+                                @if (string.IsNullOrEmpty(conceptIdInput))
+                                {
+                                    <br><span class="text-muted">Try: </span>
+                                    <a href="#" @onclick="@(() => SetExampleConcept("233604007"))" @onclick:preventDefault="true" class="example-link">Pneumonia (233604007)</a>
+                                    <span class="text-muted"> | </span>
+                                    <a href="#" @onclick="@(() => SetExampleConcept("73211009"))" @onclick:preventDefault="true" class="example-link">Diabetes mellitus (73211009)</a>
+                                    <span class="text-muted"> | </span>
+                                    <a href="#" @onclick="@(() => SetExampleConcept("22298006"))" @onclick:preventDefault="true" class="example-link">MI (22298006)</a>
+                                }
+                            </small>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label small fw-bold mb-2">Descendant Depth:</label>
+                                <SfNumericTextBox TValue="int" @bind-Value="descendantDepth" Min="0" Max="5" Step="1" CssClass="form-control"></SfNumericTextBox>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label small fw-bold mb-2">View Mode:</label>
+                                <select class="form-select form-select-sm" @bind="viewMode">
+                                    <option value="both">Ancestors & Descendants</option>
+                                    <option value="ancestors">Ancestors Only</option>
+                                    <option value="descendants">Descendants Only</option>
+                                    <option value="direct">Direct Parents & Children</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-2 mt-3">
+                            <SfButton @onclick="LoadHierarchy" 
+                                     Disabled="@(isLoading || string.IsNullOrWhiteSpace(conceptIdInput))"
+                                     CssClass="e-primary"
+                                     IconCss="e-icons e-search">
+                                @if (isLoading)
+                                {
+                                    <span class="spinner-border spinner-border-sm me-2" role="status"></span>
+                                }
+                                LOAD HIERARCHY
+                            </SfButton>
+                            <SfButton @onclick="ClearDiagram" 
+                                     CssClass="e-outline"
+                                     IconCss="e-icons e-clear">
+                                CLEAR
+                            </SfButton>
+                            <SfButton @onclick="FitToPage" 
+                                     CssClass="e-outline"
+                                     IconCss="e-icons e-zoom-to-fit"
+                                     Disabled="@(nodes.Count == 0)">
+                                FIT TO PAGE
+                            </SfButton>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Info Panel -->
+            <div class="col-md-6">
+                @if (selectedNode != null)
+                {
+                    <div class="card border-info" style="box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <div class="card-header bg-info text-white py-2">
+                            <h6 class="mb-0 small">Selected Concept Details</h6>
+                        </div>
+                        <div class="card-body py-3">
+                            <table class="table table-sm table-borderless mb-0">
+                                <tr>
+                                    <td class="fw-bold text-muted" style="width: 140px;">Concept ID:</td>
+                                    <td><code>@selectedNode.ConceptId</code></td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold text-muted">Term:</td>
+                                    <td>@selectedNode.Term</td>
+                                </tr>
+                                @if (!string.IsNullOrEmpty(selectedNode.FullySpecifiedName))
+                                {
+                                    <tr>
+                                        <td class="fw-bold text-muted">FSN:</td>
+                                        <td>@selectedNode.FullySpecifiedName</td>
+                                    </tr>
+                                }
+                                <tr>
+                                    <td class="fw-bold text-muted">Status:</td>
+                                    <td>
+                                        <span class="badge @(selectedNode.IsActive ? "bg-success" : "bg-danger")">
+                                            @(selectedNode.IsActive ? "Active" : "Inactive")
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold text-muted">Depth:</td>
+                                    <td>@selectedNode.Depth</td>
+                                </tr>
+                                @if (selectedNode.HasChildren)
+                                {
+                                    <tr>
+                                        <td class="fw-bold text-muted">Children:</td>
+                                        <td>@selectedNode.ChildCount</td>
+                                    </tr>
+                                }
+                            </table>
+                            <div class="mt-2">
+                                <a href="@($"https://browser.ihtsdotools.org/?perspective=full&conceptId1={selectedNode.ConceptId}")" 
+                                   target="_blank" class="btn btn-sm btn-outline-primary">
+                                    <i class="fas fa-external-link-alt me-1"></i> View in SNOMED Browser
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                }
+                else if (hierarchyResponse != null)
+                {
+                    <div class="card border-secondary" style="box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <div class="card-header bg-secondary text-white py-2">
+                            <h6 class="mb-0 small">Hierarchy Summary</h6>
+                        </div>
+                        <div class="card-body py-3">
+                            @if (hierarchyResponse.RootConcept != null)
+                            {
+                                <p class="mb-2"><strong>Root Concept:</strong> @hierarchyResponse.RootConcept.Term</p>
+                            }
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="text-center p-2 bg-light rounded">
+                                        <div class="fs-4 fw-bold text-primary">@hierarchyResponse.TotalAncestorCount</div>
+                                        <small class="text-muted">Ancestors</small>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="text-center p-2 bg-light rounded">
+                                        <div class="fs-4 fw-bold text-success">@hierarchyResponse.TotalDescendantCount</div>
+                                        <small class="text-muted">Descendants</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-muted small mt-2 mb-0">Click on a node in the diagram to see details.</p>
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <div class="card border-secondary" style="box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <div class="card-header bg-secondary text-white py-2">
+                            <h6 class="mb-0 small">Instructions</h6>
+                        </div>
+                        <div class="card-body py-3">
+                            <p class="small mb-2">This tool visualizes SNOMED CT hierarchical relationships:</p>
+                            <ul class="small mb-0">
+                                <li><strong>Ancestors</strong> - Parent concepts (IS-A relationships going up)</li>
+                                <li><strong>Descendants</strong> - Child concepts (IS-A relationships going down)</li>
+                                <li><strong>Polyhierarchy</strong> - Concepts can have multiple parents</li>
+                            </ul>
+                            <hr class="my-2">
+                            <p class="small text-muted mb-0">
+                                <i class="fas fa-info-circle me-1"></i>
+                                Uses local SNOMED CT database with transitive closure for fast hierarchy queries.
+                            </p>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+    <!-- Error Message -->
+    @if (!string.IsNullOrEmpty(errorMessage))
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <i class="fas fa-exclamation-triangle me-2"></i>
+            @errorMessage
+            <button type="button" class="btn-close" @onclick="@(() => errorMessage = null)"></button>
+        </div>
+    }
+
+    <!-- Diagram Section -->
+    <div class="content-section mt-3">
+        <div class="card" style="box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <div class="card-header bg-light py-2 d-flex justify-content-between align-items-center">
+                <h6 class="mb-0 small">
+                    <i class="fas fa-project-diagram me-2"></i>
+                    Hierarchy Diagram
+                    @if (nodes.Count > 0)
+                    {
+                        <span class="badge bg-secondary ms-2">@nodes.Count nodes</span>
+                    }
+                </h6>
+                <div class="btn-group btn-group-sm">
+                    <button class="btn btn-outline-secondary" @onclick="ZoomIn" title="Zoom In">
+                        <i class="fas fa-search-plus"></i>
+                    </button>
+                    <button class="btn btn-outline-secondary" @onclick="ZoomOut" title="Zoom Out">
+                        <i class="fas fa-search-minus"></i>
+                    </button>
+                    <button class="btn btn-outline-secondary" @onclick="FitToPage" title="Fit to Page">
+                        <i class="fas fa-expand"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="card-body p-0" style="height: 600px; overflow: hidden;">
+                @if (nodes.Count > 0)
+                {
+                    <SfDiagramComponent @ref="diagram"
+                                       Width="100%"
+                                       Height="600px"
+                                       Nodes="@nodes"
+                                       Connectors="@connectors"
+                                       NodeCreating="@OnNodeCreating"
+                                       ConnectorCreating="@OnConnectorCreating"
+                                       SelectionChanged="@OnSelectionChanged">
+                        <SnapSettings Constraints="SnapConstraints.None"></SnapSettings>
+                        <Layout Type="LayoutType.HierarchicalTree" 
+                                Orientation="LayoutOrientation.TopToBottom"
+                                HorizontalSpacing="50"
+                                VerticalSpacing="60">
+                        </Layout>
+                        <ScrollSettings ScrollLimit="ScrollLimitMode.Infinity"></ScrollSettings>
+                    </SfDiagramComponent>
+                }
+                else
+                {
+                    <div class="d-flex align-items-center justify-content-center h-100 text-muted">
+                        <div class="text-center">
+                            <i class="fas fa-sitemap fa-4x mb-3 text-secondary"></i>
+                            <p class="mb-0">Enter a SNOMED CT concept ID and click "Load Hierarchy" to visualize</p>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+    <!-- Legend -->
+    <div class="content-section mt-3">
+        <div class="card" style="box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <div class="card-body py-2">
+                <div class="d-flex flex-wrap gap-4 align-items-center justify-content-center">
+                    <div class="d-flex align-items-center">
+                        <div style="width: 20px; height: 20px; background-color: #ff6b6b; border-radius: 4px; margin-right: 8px;"></div>
+                        <small>Root Concept (Searched)</small>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div style="width: 20px; height: 20px; background-color: #4dabf7; border-radius: 4px; margin-right: 8px;"></div>
+                        <small>Ancestor (Parent)</small>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div style="width: 20px; height: 20px; background-color: #69db7c; border-radius: 4px; margin-right: 8px;"></div>
+                        <small>Descendant (Child)</small>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div style="width: 20px; height: 20px; background-color: #868e96; border-radius: 4px; margin-right: 8px;"></div>
+                        <small>Inactive Concept</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private SfDiagramComponent? diagram;
+    private string conceptIdInput = "";
+    private int descendantDepth = 2;
+    private string viewMode = "both";
+    private bool isLoading = false;
+    private string? errorMessage;
+    
+    private SnomedHierarchyResponse? hierarchyResponse;
+    private SnomedHierarchyNode? selectedNode;
+    
+    private DiagramObjectCollection<Node> nodes = new DiagramObjectCollection<Node>();
+    private DiagramObjectCollection<Connector> connectors = new DiagramObjectCollection<Connector>();
+    
+    // Dictionary to track node data for selection
+    private Dictionary<string, SnomedHierarchyNode> nodeDataMap = new Dictionary<string, SnomedHierarchyNode>();
+
+    private void SetExampleConcept(string conceptId)
+    {
+        conceptIdInput = conceptId;
+    }
+
+    private async Task LoadHierarchy()
+    {
+        if (string.IsNullOrWhiteSpace(conceptIdInput))
+        {
+            errorMessage = "Please enter a SNOMED CT concept ID.";
+            return;
+        }
+
+        isLoading = true;
+        errorMessage = null;
+        selectedNode = null;
+        
+        try
+        {
+            hierarchyResponse = await AzureFunctionService.GetSnomedHierarchyAsync(
+                conceptIdInput.Trim(), 
+                null, 
+                descendantDepth);
+
+            if (!string.IsNullOrEmpty(hierarchyResponse.Error))
+            {
+                errorMessage = hierarchyResponse.Error;
+                return;
+            }
+
+            BuildDiagram();
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Error loading hierarchy: {ex.Message}";
+            Console.WriteLine($"LoadHierarchy error: {ex}");
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private void BuildDiagram()
+    {
+        nodes.Clear();
+        connectors.Clear();
+        nodeDataMap.Clear();
+
+        if (hierarchyResponse == null) return;
+
+        // Add root concept
+        if (hierarchyResponse.RootConcept != null)
+        {
+            AddNode(hierarchyResponse.RootConcept, "root");
+        }
+
+        // Add ancestors based on view mode
+        if (viewMode == "both" || viewMode == "ancestors")
+        {
+            foreach (var ancestor in hierarchyResponse.Ancestors)
+            {
+                AddNode(ancestor, "ancestor");
+            }
+        }
+
+        // Add direct parents for "direct" mode
+        if (viewMode == "direct")
+        {
+            foreach (var parent in hierarchyResponse.DirectParents)
+            {
+                AddNode(parent, "ancestor");
+                // Connect to root
+                if (hierarchyResponse.RootConcept != null)
+                {
+                    AddConnector(parent.ConceptId, hierarchyResponse.RootConcept.ConceptId);
+                }
+            }
+        }
+
+        // Add descendants based on view mode
+        if (viewMode == "both" || viewMode == "descendants")
+        {
+            foreach (var descendant in hierarchyResponse.Descendants)
+            {
+                AddNode(descendant, "descendant");
+                // Connect to parent
+                if (!string.IsNullOrEmpty(descendant.ParentId))
+                {
+                    AddConnector(descendant.ParentId, descendant.ConceptId);
+                }
+            }
+        }
+
+        // Add direct children for "direct" mode
+        if (viewMode == "direct")
+        {
+            foreach (var child in hierarchyResponse.DirectChildren)
+            {
+                AddNode(child, "descendant");
+                // Connect from root
+                if (hierarchyResponse.RootConcept != null)
+                {
+                    AddConnector(hierarchyResponse.RootConcept.ConceptId, child.ConceptId);
+                }
+            }
+        }
+
+        // Add ancestor connections (if not in direct mode)
+        if (viewMode != "direct" && hierarchyResponse.RootConcept != null)
+        {
+            foreach (var ancestor in hierarchyResponse.Ancestors)
+            {
+                if (!string.IsNullOrEmpty(ancestor.ParentId))
+                {
+                    AddConnector(ancestor.ParentId, ancestor.ConceptId);
+                }
+            }
+            
+            // Connect direct parents to root
+            foreach (var parent in hierarchyResponse.DirectParents)
+            {
+                AddConnector(parent.ConceptId, hierarchyResponse.RootConcept.ConceptId);
+            }
+        }
+
+        StateHasChanged();
+    }
+
+    private void AddNode(SnomedHierarchyNode nodeData, string nodeType)
+    {
+        // Skip if already added
+        if (nodeDataMap.ContainsKey(nodeData.ConceptId)) return;
+        
+        nodeDataMap[nodeData.ConceptId] = nodeData;
+
+        var fillColor = nodeType switch
+        {
+            "root" => "#ff6b6b",
+            "ancestor" => "#4dabf7",
+            "descendant" => "#69db7c",
+            _ => "#868e96"
+        };
+
+        if (!nodeData.IsActive)
+        {
+            fillColor = "#868e96";
+        }
+
+        // Truncate term for display
+        var displayTerm = nodeData.Term.Length > 30 
+            ? nodeData.Term.Substring(0, 27) + "..." 
+            : nodeData.Term;
+
+        var node = new Node
+        {
+            ID = nodeData.ConceptId,
+            Width = 200,
+            Height = 60,
+            Shape = new BasicShape { Type = NodeShapes.Basic, Shape = NodeBasicShapes.Rectangle, CornerRadius = 8 },
+            Style = new ShapeStyle 
+            { 
+                Fill = fillColor, 
+                StrokeColor = "#333333", 
+                StrokeWidth = 1 
+            },
+            Annotations = new DiagramObjectCollection<ShapeAnnotation>
+            {
+                new ShapeAnnotation
+                {
+                    Content = displayTerm,
+                    Style = new TextStyle
+                    {
+                        Color = "white",
+                        FontSize = 11,
+                        Bold = true,
+                        TextWrapping = Syncfusion.Blazor.Diagram.TextWrap.Wrap
+                    },
+                    Offset = new DiagramPoint { X = 0.5, Y = 0.35 }
+                },
+                new ShapeAnnotation
+                {
+                    Content = nodeData.ConceptId,
+                    Style = new TextStyle
+                    {
+                        Color = "rgba(255,255,255,0.8)",
+                        FontSize = 9
+                    },
+                    Offset = new DiagramPoint { X = 0.5, Y = 0.7 }
+                }
+            }
+        };
+
+        nodes.Add(node);
+    }
+
+    private void AddConnector(string sourceId, string targetId)
+    {
+        var connectorId = $"{sourceId}-{targetId}";
+        
+        // Skip if connector already exists
+        if (connectors.Any(c => c.ID == connectorId)) return;
+
+        var connector = new Connector
+        {
+            ID = connectorId,
+            SourceID = sourceId,
+            TargetID = targetId,
+            Type = ConnectorSegmentType.Orthogonal,
+            Style = new ShapeStyle
+            {
+                StrokeColor = "#666666",
+                StrokeWidth = 2
+            },
+            TargetDecorator = new DecoratorSettings
+            {
+                Shape = DecoratorShape.Arrow,
+                Width = 10,
+                Height = 10,
+                Style = new ShapeStyle
+                {
+                    Fill = "#666666",
+                    StrokeColor = "#666666"
+                }
+            }
+        };
+
+        connectors.Add(connector);
+    }
+
+    private void OnNodeCreating(IDiagramObject obj)
+    {
+        if (obj is Node node)
+        {
+            node.Constraints = NodeConstraints.Default & ~NodeConstraints.Rotate;
+        }
+    }
+
+    private void OnConnectorCreating(IDiagramObject obj)
+    {
+        if (obj is Connector connector)
+        {
+            connector.Constraints = ConnectorConstraints.Default & ~ConnectorConstraints.DragSourceEnd & ~ConnectorConstraints.DragTargetEnd;
+        }
+    }
+
+    private void OnSelectionChanged(Syncfusion.Blazor.Diagram.SelectionChangedEventArgs args)
+    {
+        if (args.NewValue?.Count > 0 && args.NewValue[0] is Node node)
+        {
+            if (nodeDataMap.TryGetValue(node.ID, out var nodeData))
+            {
+                selectedNode = nodeData;
+                StateHasChanged();
+            }
+        }
+        else
+        {
+            selectedNode = null;
+            StateHasChanged();
+        }
+    }
+
+    private async Task ClearDiagram()
+    {
+        nodes.Clear();
+        connectors.Clear();
+        nodeDataMap.Clear();
+        hierarchyResponse = null;
+        selectedNode = null;
+        errorMessage = null;
+        conceptIdInput = "";
+        await Task.CompletedTask;
+    }
+
+    private void ZoomIn()
+    {
+        if (diagram != null)
+        {
+            diagram.Zoom(1.2, null);
+        }
+    }
+
+    private void ZoomOut()
+    {
+        if (diagram != null)
+        {
+            diagram.Zoom(0.8, null);
+        }
+    }
+
+    private void FitToPage()
+    {
+        if (diagram != null)
+        {
+            diagram.FitToPage();
+        }
+    }
+}

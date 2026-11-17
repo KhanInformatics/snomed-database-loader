@@ -1,0 +1,646 @@
+@page "/search"
+@using StaticBlazorSnomed.Models
+@using Syncfusion.Blazor
+@using Syncfusion.Blazor.Buttons
+@using Syncfusion.Blazor.Inputs
+@using System.Text.Json
+@using System.Globalization
+@inject AzureFunctionService AzureFunctionService
+@inject IJSRuntime JSRuntime
+
+<PageTitle>SNOMED CT NHS API Search</PageTitle>
+
+<!-- Page Header Section - positioned to align with sidebar -->
+<div class="page-header-wrapper">
+    <div class="page-header">
+        <div class="page-header-content">
+            <div class="page-header-main">
+                <h4 class="page-title mb-1">SNOMED CT NHS API Search</h4>
+                <p class="page-subtitle mb-0">Search SNOMED CT terminology using the NHS Ontology API</p>
+            </div>
+            <div class="page-header-actions">
+                <span class="created-by">Created by Imran Khan</span>
+                <a href="https://github.com" target="_blank" class="github-link">
+                    <i class="fab fa-github fa-lg"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid" style="margin-top: 0; padding-top: 1rem;">
+    <!-- Search Section -->
+    <div class="content-section">
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="snomedCode" class="form-label fw-bold">SNOMED CT Identifier (SCTID):</label>
+                                <SfTextBox @bind-Value="searchTerm" 
+                                          Placeholder="Enter SCTID (e.g., 183930009)"
+                                          Width="100%"
+                                          CssClass="snomed-input-compact"
+                                          @onkeypress="HandleKeyPress">
+                                </SfTextBox>
+                                <small class="form-text text-muted">Enter a numeric SNOMED CT Identifier for NHS API lookup</small>
+                                
+                                <div class="d-flex gap-2 mt-3">
+                                    <SfButton @onclick="SearchNHSAPI" 
+                                             Disabled="@isLoadingNHS"
+                                             CssClass="e-primary search-btn">
+                                        @if (isLoadingNHS)
+                                        {
+                                            <span class="spinner-border spinner-border-sm me-2" role="status"></span>
+                                        }
+                                        SEARCH
+                                    </SfButton>
+                                    <SfButton @onclick="ClearResults" 
+                                             CssClass="e-outline search-btn">
+                                        CLEAR
+                                    </SfButton>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="info-panel">
+                                    <div class="info-panel-header">
+                                        <i class="fas fa-info-circle text-primary me-2"></i>
+                                        <strong>About this NHS Ontology API</strong>
+                                    </div>
+                                    <div class="info-panel-content">
+                                        <p class="info-text">
+                                            This tool searches uses Azure Functions to call <strong>NHS Ontology API</strong> to retrieve detailed SNOMED CT concept information directly from NHS Digital's official terminology servers.
+                                        </p>
+                                        <div class="info-highlight">
+                                            <h6 class="info-subtitle">SNOMED CT Identifier (SCTID)</h6>
+                                            <p class="info-detail">
+                                                The SCTID is the unique numeric identifier for clinical concepts. Terms like "SNOMED Code" and "Concept ID" refer to the same identifier within the SNOMED CT framework.
+                                            </p>
+                                        </div>
+                                        <div class="info-highlight">
+                                            <h6 class="info-subtitle">NHS Ontology Servers</h6>
+                                            <p class="info-detail">
+                                                NHS Digital maintains official SNOMED CT terminology servers that provide authoritative, up-to-date clinical terminology data for UK healthcare systems.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading indicator -->
+    @if (isLoadingNHS)
+    {
+        <div class="text-center py-4">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <p class="mt-2 text-muted">Searching NHS API...</p>
+        </div>
+    }
+
+    <!-- Error Display -->
+    @if (!string.IsNullOrEmpty(errorMessage))
+    {
+        <div class="alert alert-danger" role="alert">
+            <i class="fas fa-exclamation-triangle me-2"></i>
+            <strong>Error:</strong> @errorMessage
+        </div>
+    }
+
+    @if (nhsApiResult != null)
+    {
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <span class="fw-bold">NHS API Result for SCTID: @nhsApiResult.SnomedCode</span>
+                        <span class="badge bg-success">@nhsApiResult.Source</span>
+                    </div>
+                    <div class="card-body">
+                        <dl class="row compact-results">
+                            @{
+                                var versionInfo = GetVersionInfoFromRawResponse(nhsApiResult.RawResponse);
+                            }
+                            @if (!string.IsNullOrEmpty(versionInfo.Version) || !string.IsNullOrEmpty(versionInfo.ReleaseDate))
+                            {
+                                <dt class="col-sm-3">SNOMED CT Version:</dt>
+                                <dd class="col-sm-9">
+                                    @if (!string.IsNullOrEmpty(versionInfo.Version))
+                                    {
+                                        <span class="text-muted">UK Edition: </span><code class="text-info">@versionInfo.Version</code>
+                                    }
+                                    @if (!string.IsNullOrEmpty(versionInfo.ReleaseDate))
+                                    {
+                                        <br /><small class="text-muted">Release Date: @versionInfo.ReleaseDate</small>
+                                    }
+                                </dd>
+                            }
+                            
+                            <dt class="col-sm-3">SCTID:</dt>
+                            <dd class="col-sm-9"><code class="fw-bold text-primary">@nhsApiResult.SnomedCode</code></dd>
+                            
+                            <dt class="col-sm-3">Term:</dt>
+                            <dd class="col-sm-9"><strong class="procedure-description">@nhsApiResult.Term</strong></dd>
+                            
+                            <dt class="col-sm-3">Fully Specified Name:</dt>
+                            <dd class="col-sm-9">@nhsApiResult.FullySpecifiedName</dd>
+                            
+                            <dt class="col-sm-3">Timestamp:</dt>
+                            <dd class="col-sm-9"><small class="text-muted">@nhsApiResult.Timestamp.ToString("yyyy-MM-dd HH:mm:ss") UTC</small></dd>
+                        </dl>
+                        
+                        @if (nhsApiResult.Error == true && !string.IsNullOrEmpty(nhsApiResult.ErrorMessage))
+                        {
+                            <div class="alert alert-warning mt-3">
+                                <i class="fas fa-exclamation-triangle me-2"></i>
+                                <strong>API Notice:</strong> @nhsApiResult.ErrorMessage
+                            </div>
+                        }
+                        
+                        <div class="mt-3">
+                            <SfButton @onclick="ToggleRawResponse" 
+                                     CssClass="e-outline e-small">
+                                <i class="fas fa-code me-1"></i>@(showRawResponse ? "Hide" : "View") Raw FHIR Response
+                            </SfButton>
+                        </div>
+                        
+                        @if (showRawResponse)
+                        {
+                            <div class="mt-2">
+                                <div class="card card-body bg-light">
+                                    <pre class="mb-0" style="max-height: 300px; overflow-y: auto;"><code>@nhsApiResult.RawResponse</code></pre>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+    @if (searchResults != null && searchResults.Any())
+    {
+        <div class="row">
+            <div class="col-12">
+                <div class="alert alert-info">
+                    <i class="fas fa-info-circle me-2"></i>
+                    <strong>Note:</strong> Regular search results are no longer supported. Please use NHS API search above.
+                </div>
+            </div>
+        </div>
+    }
+    else if (hasSearched && !isLoadingNHS && nhsApiResult == null && string.IsNullOrEmpty(errorMessage))
+    {
+        <div class="alert alert-info mt-4">
+            <i class="fas fa-search me-2"></i>
+            No results found for SCTID "<strong>@searchTerm</strong>". Please verify the identifier is valid and numeric.
+        </div>
+    }
+
+    @if (selectedConcept != null)
+    {
+        <div class="modal fade show d-block" tabindex="-1" style="background-color: rgba(0,0,0,0.5);">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Concept Details</h5>
+                        <button type="button" class="btn-close" @onclick="CloseDetails"></button>
+                    </div>
+                    <div class="modal-body">
+                        <dl class="row">
+                            <dt class="col-sm-3">SCTID:</dt>
+                            <dd class="col-sm-9"><code>@selectedConcept.ConceptId</code></dd>
+                            
+                            <dt class="col-sm-3">Term:</dt>
+                            <dd class="col-sm-9">@selectedConcept.Term</dd>
+                            
+                            <dt class="col-sm-3">FSN:</dt>
+                            <dd class="col-sm-9">@selectedConcept.FullySpecifiedName</dd>
+                            
+                            <dt class="col-sm-3">Description:</dt>
+                            <dd class="col-sm-9">@selectedConcept.Description</dd>
+                            
+                            <dt class="col-sm-3">Status:</dt>
+                            <dd class="col-sm-9">
+                                <span class="badge @(selectedConcept.IsActive ? "bg-success" : "bg-secondary")">
+                                    @(selectedConcept.IsActive ? "Active" : "Inactive")
+                                </span>
+                            </dd>
+                            
+                            @if (selectedConcept.Synonyms?.Any() == true)
+                            {
+                                <dt class="col-sm-3">Synonyms:</dt>
+                                <dd class="col-sm-9">
+                                    @foreach (var synonym in selectedConcept.Synonyms)
+                                    {
+                                        <span class="badge bg-light text-dark me-1">@synonym</span>
+                                    }
+                                </dd>
+                            }
+                        </dl>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" @onclick="CloseDetails">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@code {
+    private string searchTerm = "";
+    private List<SnomedModel>? searchResults;
+    private SnomedModel? selectedConcept;
+    private NHSSnomedResponse? nhsApiResult;
+    private bool isLoadingNHS = false;
+    private bool hasSearched = false;
+    private bool showRawResponse = false;
+    private string errorMessage = "";
+
+    private async Task SearchNHSAPI()
+    {
+        // Clear previous state first
+        errorMessage = "";
+        
+        if (string.IsNullOrWhiteSpace(searchTerm))
+        {
+            errorMessage = "Please enter a SNOMED CT Identifier (SCTID) for NHS API search";
+            return;
+        }
+
+        // Debug: Let's see what we're actually getting
+        Console.WriteLine($"Search term: '{searchTerm}'");
+        Console.WriteLine($"Trimmed: '{searchTerm.Trim()}'");
+        Console.WriteLine($"Length: {searchTerm.Trim().Length}");
+        
+        var trimmedTerm = searchTerm.Trim();
+        var isNumeric = System.Text.RegularExpressions.Regex.IsMatch(trimmedTerm, @"^\d+$");
+        Console.WriteLine($"Is numeric: {isNumeric}");
+
+        // Validate that the search term is numeric for NHS API
+        if (!isNumeric)
+        {
+            errorMessage = $"NHS API search requires a numeric SNOMED CT Identifier (SCTID) (e.g., 183930009). Got: '{trimmedTerm}'";
+            return;
+        }
+
+        // Only set hasSearched = true when we actually start the API call
+        isLoadingNHS = true;
+        hasSearched = true;
+        nhsApiResult = null;
+        showRawResponse = false;
+        
+        try
+        {
+            nhsApiResult = await AzureFunctionService.GetSnomedFromNHSAPIAsync(searchTerm.Trim());
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Failed to retrieve NHS API data: {ex.Message}";
+            nhsApiResult = null;
+        }
+        finally
+        {
+            isLoadingNHS = false;
+        }
+    }
+
+    private void ClearResults()
+    {
+        searchTerm = "";
+        nhsApiResult = null;
+        searchResults = null;
+        selectedConcept = null;
+        errorMessage = "";
+        hasSearched = false;
+        showRawResponse = false;
+    }
+
+    private void ToggleRawResponse()
+    {
+        showRawResponse = !showRawResponse;
+    }
+
+    private async Task ViewDetails(string conceptId)
+    {
+        try
+        {
+            selectedConcept = await AzureFunctionService.GetSnomedByIdAsync(conceptId);
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Failed to load concept details: {ex.Message}";
+        }
+    }
+
+    private void CloseDetails()
+    {
+        selectedConcept = null;
+    }
+
+    private async Task HandleKeyPress(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter")
+        {
+            // Force a state update to ensure searchTerm is current
+            StateHasChanged();
+            await Task.Delay(1); // Small delay to ensure state is updated
+            await SearchNHSAPI();
+        }
+    }
+
+    private (string Version, string ReleaseDate) GetVersionInfoFromRawResponse(string rawResponse)
+    {
+        if (string.IsNullOrEmpty(rawResponse))
+            return (string.Empty, string.Empty);
+
+        try
+        {
+            using var doc = JsonDocument.Parse(rawResponse);
+            var root = doc.RootElement;
+            
+            string version = string.Empty;
+            string releaseDate = string.Empty;
+
+            if (root.TryGetProperty("parameter", out var parameters))
+            {
+                foreach (var param in parameters.EnumerateArray())
+                {
+                    if (param.TryGetProperty("name", out var nameElement))
+                    {
+                        var name = nameElement.GetString();
+                        
+                        // Look for version information
+                        if (name == "version" && param.TryGetProperty("valueString", out var versionElement))
+                        {
+                            var versionString = versionElement.GetString();
+                            // Extract from string like "http://snomed.info/sct/83821000000107/version/20250702"
+                            if (versionString?.Contains("/version/") == true)
+                            {
+                                var versionParts = versionString.Split('/');
+                                if (versionParts.Length >= 4)
+                                {
+                                    var moduleId = versionParts[versionParts.Length - 3]; // 83821000000107
+                                    var releaseDatePart = versionParts[versionParts.Length - 1]; // 20250702
+                                    
+                                    version = moduleId; // Show just the module ID
+                                    
+                                    // Convert YYYYMMDD to readable format for release date
+                                    if (releaseDatePart.Length == 8 && long.TryParse(releaseDatePart, out _))
+                                    {
+                                        if (DateTime.TryParseExact(releaseDatePart, "yyyyMMdd", null, DateTimeStyles.None, out var versionDate))
+                                        {
+                                            releaseDate = versionDate.ToString("MMMM d, yyyy");
+                                        }
+                                    }
+                                }
+                            }
+                            break; // Found version, no need to continue
+                        }
+                    }
+                }
+            }
+
+            return (version, releaseDate);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error parsing version info: {ex.Message}");
+            return (string.Empty, string.Empty);
+        }
+    }
+}
+
+<style>
+    /* Page Header Styles - copied from ClusterSearch for consistency */
+    .page-header-wrapper {
+        padding: 0;
+        margin: 0;
+        border-bottom: 1px solid #dee2e6;
+        background-color: #f8f9fa;
+    }
+    .page-header {
+        padding: 15px;
+        height: 42px !important;
+        min-height: 42px !important;
+        max-height: 42px !important;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        max-width: 100%;
+        margin: 0;
+    }
+    .page-header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+    .page-header-main {
+        flex-grow: 1;
+        min-width: 0;
+        margin-right: 20px;
+    }
+    .page-title {
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: #333;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 0;
+        line-height: 1.1;
+    }
+    .page-subtitle {
+        font-size: 0.75rem;
+        color: #6c757d;
+        margin: 0;
+        line-height: 1.1;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .page-header-actions {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        flex-shrink: 0;
+        margin-left: auto;
+        justify-content: flex-end;
+        min-width: fit-content;
+    }
+    .created-by {
+        font-size: 0.8rem;
+        color: #6c757d;
+        font-style: italic;
+        white-space: nowrap;
+    }
+    .github-link {
+        display: inline-flex;
+        align-items: center;
+        padding: 5px;
+        border-radius: 4px;
+        transition: background-color 0.2s;
+    }
+    .github-link:hover {
+        background-color: #f8f9fa;
+        text-decoration: none;
+    }
+    .github-link i {
+        color: #333;
+    }
+    .github-link:hover i {
+        color: #000;
+    }
+    
+    /* Input and Button Styles */
+    .snomed-input-compact {
+        font-family: 'Courier New', monospace !important;
+        font-size: 0.9rem;
+        border: 2px solid #e0e6ed;
+        border-radius: 6px;
+        padding: 6px 12px;
+        height: 38px !important;
+        line-height: 1.4;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+    }
+    .snomed-input-compact:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+    /* Override Syncfusion input styling to center text vertically */
+    .snomed-input-compact .e-input {
+        padding: 0 !important;
+        line-height: 1.4 !important;
+        height: auto !important;
+        display: flex !important;
+        align-items: center !important;
+    }
+    .search-btn {
+        height: 38px !important;
+        min-height: 38px !important;
+        padding: 8px 16px !important;
+        font-size: 0.85rem !important;
+        font-weight: 500 !important;
+        white-space: nowrap;
+        border-radius: 6px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        line-height: 1;
+    }
+    .form-label {
+        margin-bottom: 5px;
+        display: block;
+        height: 20px;
+    }
+    .form-text {
+        margin-top: 3px;
+        display: block;
+        height: 16px;
+        font-size: 0.75rem;
+    }
+    .btn-primary {
+        background-color: #0d6efd;
+        border-color: #0d6efd;
+        font-size: 0.8rem;
+        padding: 4px 8px;
+        white-space: nowrap;
+    }
+    .btn-primary:hover {
+        background-color: #0b5ed7;
+        border-color: #0a58ca;
+    }
+    .procedure-description {
+        color: #343a40 !important;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    .compact-results {
+        margin-bottom: 0;
+    }
+    .compact-results dt,
+    .compact-results dd {
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+        margin-bottom: 0;
+        line-height: 1.3;
+    }
+    .compact-results dt {
+        font-weight: 600;
+        color: #495057;
+        font-size: 0.9rem;
+    }
+    .compact-results dd {
+        font-size: 0.9rem;
+    }
+    
+    /* Info Panel Styles */
+    .info-panel {
+        background: linear-gradient(135deg, #f8fafe 0%, #f0f4ff 100%);
+        border: 1px solid #e3eaf7;
+        border-radius: 8px;
+        padding: 16px;
+        height: fit-content;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    .info-panel-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+        font-size: 0.95rem;
+        color: #2c5aa0;
+        font-weight: 600;
+    }
+    .info-panel-content {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+    .info-text {
+        color: #495057;
+        margin-bottom: 12px;
+        font-size: 0.83rem;
+    }
+    .info-highlight {
+        background-color: rgba(255,255,255,0.6);
+        border-left: 3px solid #007bff;
+        padding: 8px 10px;
+        margin-bottom: 8px;
+        border-radius: 0 4px 4px 0;
+    }
+    .info-subtitle {
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: #2c5aa0;
+        margin-bottom: 4px;
+        margin-top: 0;
+    }
+    .info-detail {
+        font-size: 0.75rem;
+        color: #6c757d;
+        margin-bottom: 0;
+        line-height: 1.4;
+    }
+    .table-hover tbody tr:hover {
+        background-color: #f8f9fa !important;
+    }
+    .table > :not(caption) > * > * {
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+    .table {
+        margin-bottom: 0;
+    }
+</style>

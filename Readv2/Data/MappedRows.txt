@@ -1,0 +1,1318 @@
+Exclusion_Category|SNOMED_ConceptID|Preferred_Term|ReadV2Code|ReadV2Term|MappingSource|MatchLevel|MatchScore
+------------------|----------------|--------------|----------|----------|-------------|----------|----------
+Sexually Transmitted Disease|160281003|FH: Syphilis|1232|FH: Syphilis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|137684006|FH: Syphilis|1232.|FH: Syphilis|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|160282005|FH: Gonorrhea|1233|FH: Gonorrhoea|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|137685007|FH: Gonorrhoea|1233.|FH: Gonorrhoea|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|266974005|Human immunodeficiency virus (HIV) risk lifestyle|13N5.|HIV risk lifestyle|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|200631000000105|Sexual contact with high risk partner|13N9.|Sexual contact with high risk partner|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|275881005|H/O sexually transmitted infection|1415|H/O: venereal disease|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|138691006|H/O: venereal disease|1415.|H/O: venereal disease|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|472954000|History of chlamydial infection|14150|H/O: chlamydia infection|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|764281000000109|H/O: gonorrhoea|14151|H/O: gonorrhoea|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|872251000000104|H/O: genital warts|14152|H/O: genital warts|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|872271000000108|H/O: genital herpes|14153|H/O: genital herpes|DMWB|DMWB_CROSSMAP|1.000
+Assisted Fertilisation|765291000000105|History of in-vitro fertilisation|14e..|History of in-vitro fertilisation|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|371237000|Syphilitic skin disorder|14F..|H/O: skin disorder|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|829691000000100|H/O hepatitis C antiviral drug therapy|14i..|H/O hepatitis C antiviral drug therapy|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|407560009|At risk of sexually transmitted infection|14OP.|At risk of sexually transmitted infection|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|702479006|At high risk of sexually transmitted infection|14OP0|At high risk of sexually transmitted infection|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|702480009|At low risk of sexually transmitted infection|14OP1|At low risk of sexually transmitted infection|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|713651007|History of pregnancy with abortive outcome|1543|H/O: abortion|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|161756005|H/O: 1 abortion|15432|H/O: 1 abortion|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|161757001|H/O: 2 abortions|15433|H/O: 2 abortions|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|161758006|H/O: 3 abortions|15434|H/O: 3 abortions|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|161759003|H/O: 4 abortions|15435|H/O: 4 abortions|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|161760008|H/O: 5 abortions|15436|H/O: 5 abortions|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|161761007|H/O: 6 abortions|15437|H/O: 6 abortions|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|161762000|H/O: abortion NOS|1543Z|H/O: abortion NOS|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|412758008|History of medical termination of pregnancy|1547|H/O: medical termination of pregnancy|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|111461000000109|H/O: medical termination of pregnancy|1547.|H/O: medical termination of pregnancy|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|117911000000107|H/O: medical termination of pregnancy|1547.|H/O: medical termination of pregnancy|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|271954000|Failed attempted medical termination of pregnancy|1547.|H/O: medical termination of pregnancy|SEMANTIC|TOKEN_OVERLAP|.600
+Termination of Pregnancy|285409006|Medical termination of pregnancy|1547.|H/O: medical termination of pregnancy|SEMANTIC|TOKEN_OVERLAP|1.000
+Termination of Pregnancy|447972007|Medical termination of pregnancy using prostaglandin|1547.|H/O: medical termination of pregnancy|SEMANTIC|TOKEN_OVERLAP|.600
+Termination of Pregnancy|339111000000100|Private referral for medical termination of pregnancy|1547.|H/O: medical termination of pregnancy|SEMANTIC|TOKEN_OVERLAP|.600
+Termination of Pregnancy|339101000000102|Referral for medical termination of pregnancy|1547.|H/O: medical termination of pregnancy|SEMANTIC|TOKEN_OVERLAP|.750
+Termination of Pregnancy|439163006|Referral for medical termination of pregnancy|1547.|H/O: medical termination of pregnancy|SEMANTIC|TOKEN_OVERLAP|.750
+Gender Related Issues|282272009|Gender reassignment patient|1K4..|Gender reassignment patient|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|164029004|O/E - Argyll Robertson pupils|2BG3.|O/E - Argyll Robertson pupils|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|164811005|Special female test normal|3183|Special female test normal|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|164826007|Special male test abnormal|3194|Special male test abnormal|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|707998009|Assessment for termination of pregnancy|389B.|Assessment for termination of pregnancy|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|312874009|Taking penile swab|41F..|Taking of swab|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|1015571000000106|TPI (syphilis) test|438..|Syphilis infectious titre test|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|165780000|Syphilis titre test negative|4381|Syphilis titre test negative|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|165781001|Syphilis titer test positive|4382|Syphilis titre test positive|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|143187000|Syphilis titre test positive|4382.|Syphilis titre test positive|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|1028721000000102|Wassermann reaction|4383|Wassermann's test (W.R.)|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|165782008|Wassermann's test|4383.|Wassermann's test (W.R.)|SEMANTIC|TOKEN_OVERLAP|1.000
+Sexually Transmitted Disease|1015581000000108|VDRL (Venereal Disease Research Laboratory) test|4384|V.D.R.L. test|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|252407006|TPI - Treponema pallidum immobilisation test|4385|T.P.I test|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1015591000000105|Fluorescent treponemal antibody test|4386|Fluorescent treponemal antibody test|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|9232009|FTA(Abs) - Fluorescent treponemal antibody test|4386.|Fluorescent treponemal antibody test|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|1015601000000104|Treponema pallidum haemagglutination test|4387|Treponema pallidum haemaglutination test|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|991941000000103|Treponema pallidum particle inhibition test|4388|Treponema pallidum particle inhibition test|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|401262008|Treponema pallidum particle agglutination test|4388.|Treponema pallidum particle inhibition test|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|991951000000100|Syphilis serology|4389|Syphilis serology|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|165787002|Syphilis serology|4389.|Syphilis serology|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|143194002|Syphilis serology|4389.|Syphilis serology|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|40675008|Syphilis serology|4389.|Syphilis serology|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|390879000|Treponema pallidum ELISA negative|438A.|Treponema pallidum ELISA negative|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|390880002|Treponema pallidum ELISA positive|438B.|Treponema pallidum ELISA positive|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|992931000000104|Treponema pallidum particle agglutination test|438C.|Treponema pallidum particle agglutination test|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1005361000000109|Treponema pallidum gelatin agglutination test|438D.|Treponema pallidum gelatin agglutination test|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1018861000000106|Total Treponema antibody level|438E.|Total treponema antibody level|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1002021000000108|Treponema pallidum total antibodies measurement|438F.|Treponema pallidum total antibodies measurement|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|269828009|Syphilis infectious titre test|438Z.|Syphilis titre test NOS|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|415732003|Total treponema antibody level|43aO.|Total anticardiolipin antibody level|SEMANTIC|TOKEN_OVERLAP|.600
+Sexually Transmitted Disease|165803005|Blood sent: SH-antigen test|43B1.|Blood sent: SH-antigen test|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|46898007|Serologic test for herpes simplex|43bS.|Serologic test for herpes simplex|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1027831000000105|Human immunodeficiency virus test|43C..|HTLV-3 antibody test|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|165814008|Blood sent for HTLV-3 serology|43C1.|Blood sent for HTLV-3 serology|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|165815009|HIV negative|43C2.|HTLV-3 antibody negative|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|165816005|HIV positive|43C3.|HTLV-3 antibody positive|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|248981000000107|Human immunodeficiency virus test equivocal|43C4.|Human immunodeficiency virus test equivocal|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|250514000|Human immunodeficiency virus antibody titre measurement|43CZ.|HTLV-3 antibody NOS|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1014171000000103|HIV (human immunodeficiency virus) antibody/antigen (Duo)|43d5.|HIV antibody/antigen (Duo)|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1014181000000101|HTLV 1 (human T-lymphotropic virus 1) antibody level|43d6.|HTLV 1 antibody level|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|998861000000101|HTLV 2 (human T-lymphotropic virus 2) antibody level|43dc.|HTLV 2 antibody level|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1005081000000102|Herpes simplex IgM level|43de.|Herpes simplex IgM level|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1014251000000101|Herpes simplex antibody level|43dE.|Herpes simplex antibody level|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1013481000000106|Herpes simplex IgG level|43dm.|Herpes simplex IgG level|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|992041000000109|Gonorrhoea titre test|43E6.|Gonorrhoea infect. titre test|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|12271006|Complement fixation test for syphilis|43e9.|Brucella complement fixation test|SEMANTIC|TOKEN_OVERLAP|.600
+Sexually Transmitted Disease|315182002|Psittacosis lymphogranuloma venereum antibody level|43ec.|Psittacosis antibody level|SEMANTIC|TOKEN_OVERLAP|.600
+Sexually Transmitted Disease|1023351000000100|Chlamydia trachomatis L2 antibody level|43eC.|Chlamydia trachomatis L2 antibody level|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1023371000000109|Chlamydia antibody level|43eE.|Chlamydia antibody level|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1029021000000105|Syphilis IgG level|43ef.|Syphilis IgG level|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1031371000000108|Chlamydia group CFT (complement fixation test)|43eF.|Chlamydia group complement fixation test|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|992711000000105|Treponema pallidum IgG level|43eh.|Treponema pallidum IgG level|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|992721000000104|Treponema pallidum IgM level|43ei.|Treponema pallidum IgM level|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|995221000000102|VDRL (Venereal Disease Research Laboratory) titre|43ej.|VDRL titre|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1023411000000108|Chlamydia trachomatis IgG level|43eJ.|Chlamydia trachomatis IgG level|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1028971000000100|Fluorescent treponemal antibody absorption IgG level|43eO.|Fluorescent treponemal antibody absorption IgG level|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1028981000000103|Fluorescent treponemal antibody absorption IgM level|43eP.|Fluorescent treponemal antibody absorption IgM level|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|999001000000101|Chlamydia trachomatis IgM level|43ez.|Chlamydia trachomatis IgM level|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1026621000000109|Chlamydia trachomatis PCR|43h0.|Chlamydia trachomatis polymerase chain reaction|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1026641000000102|HIV (human immunodeficiency virus) 1 PCR (polymerase chain reaction)|43h2.|HIV 1 PCR|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1026651000000104|Herpes simplex polymerase chain reaction|43h4.|Herpes simplex polymerase chain reaction|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1026661000000101|Neisseria gonorrhoeae polymerase chain reaction|43h6.|Neisseria gonorrhoeae polymerase chain reaction|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1030231000000108|Human immunodeficiency virus proviral deoxyribonucleic acid polymerase chain reaction|43h9.|HIV proviral deoxyribonucleic acid polymerase chain reaction|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|998611000000102|Chlamydia trachomatis nucleic acid detection assay|43j1.|Chlamydia trachomatis nucleic acid detection|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1000261000000105|Chlamydia trachomatis (lymphogranuloma venereum serovar) deoxyribonucleic acid detection|43j10|Chlamydia trachomatis (LGV serovar) DNA detection|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|817771000000106|Chlamydia trachomatis detection by nucleic acid amplification test|43j11|Chlamydia trachomatis detection by NAAT|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1030521000000108|Herpes simplex nucleic acid detection assay|43j6.|Herpes simplex nucleic acid detection|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1008421000000104|Herpes simplex DNA (deoxyribonucleic acid) detection assay|43j61|Herpes simplex deoxyribonucleic acid detection assay|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1008351000000102|HIV (human immunodeficiency virus) 1 ribonucleic acid detection assay|43j7.|HIV 1 nucleic acid detection|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|398579006|HIV 1 nucleic acid assay|43j70|HIV 1 nucleic acid detection assay|SEMANTIC|TOKEN_OVERLAP|.800
+Sexually Transmitted Disease|907191000000100|HIV 1 nucleic acid detection assay|43j70|HIV 1 nucleic acid detection assay|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|907201000000103|HIV 1 nucleic acid detection assay|43j70|HIV 1 nucleic acid detection assay|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|1008361000000104|HIV (human immunodeficiency virus) 1 provirus DNA (deoxyribonucleic acid) detection assay|43j71|HIV 1 provirus deoxyribonucleic acid detection assay|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|934551000000101|HIV 1 ribonucleic acid detection assay|43j72|HIV 1 ribonucleic acid detection assay|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|934561000000103|HIV 1 ribonucleic acid detection assay|43j72|HIV 1 ribonucleic acid detection assay|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|1008331000000109|HTLV 1 (human T-lymphotropic virus 1) RNA (ribonucleic acid) detection assay|43j8.|HTLV 1 nucleic acid detection|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1008341000000100|HTLV 1 (human T-lymphotropic virus 1) provirus DNA (deoxyribonucleic acid) detection assay|43j81|HTLV 1 provirus deoxyribonucleic acid detection assay|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|998651000000103|Neisseria gonorrhoeae nucleic acid detection assay|43jA.|Neisseria gonorrhoeae nucleic acid detection|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|907521000000109|Neisseria gonorrhoeae nucleic acid detection assay|43jA0|Neisseria gonorrhoeae nucleic acid detection assay|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|907531000000106|Neisseria gonorrhoeae nucleic acid detection assay|43jA0|Neisseria gonorrhoeae nucleic acid detection assay|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|134235001|Neisseria gonorrhoeae nucleic acid detection|43jA0|Neisseria gonorrhoeae nucleic acid detection assay|SEMANTIC|TOKEN_OVERLAP|.833
+Sexually Transmitted Disease|366781005|Neisseria gonorrhoeae nucleic acid detection|43jA0|Neisseria gonorrhoeae nucleic acid detection assay|SEMANTIC|TOKEN_OVERLAP|.833
+Sexually Transmitted Disease|366859006|Neisseria gonorrhoeae nucleic acid detection|43jA0|Neisseria gonorrhoeae nucleic acid detection assay|SEMANTIC|TOKEN_OVERLAP|.833
+Sexually Transmitted Disease|1008311000000101|HTLV 2 (human T-lymphotropic virus 2) RNA (ribonucleic acid) detection assay|43jE.|HTLV 2 nucleic acid detection|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1008321000000107|HTLV 2 (human T-lymphotropic virus 2) provirus DNA (deoxyribonucleic acid) detection assay|43jE1|HTLV 2 provirus deoxyribonucleic acid detection assay|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1002681000000104|Chlamydia deoxyribonucleic acid detection|43jK.|Chlamydia deoxyribonucleic acid detection|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1008291000000102|HTLV (human T-lymphotropic virus) RNA (ribonucleic acid) detection assay|43jr.|Human T-lymphotropic virus nucleic acid detection|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1008301000000103|HTLV (human T-lymphotropic virus) provirus DNA (deoxyribonucleic acid) detection assay|43jr1|HTLV provirus deoxyribonucleic acid detection assay|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1029701000000104|Human herpes virus 6 nucleic acid detection assay|43jt.|Human herpes virus 6 nucleic acid detection|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1008391000000105|Human herpesvirus 6 DNA (deoxyribonucleic acid) detection assay|43jt1|Human herpesvirus 6 deoxyribonucleic acid detection assay|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1029711000000102|Human herpes virus 7 nucleic acid detection assay|43ju.|Human herpes virus 7 nucleic acid detection|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1008381000000108|Human herpesvirus 7 DNA (deoxyribonucleic acid) detection assay|43ju1|Human herpesvirus 7 deoxyribonucleic acid detection assay|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1029721000000108|Human herpes virus 8 nucleic acid detection assay|43jv.|Human herpes virus 8 nucleic acid detection|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1008371000000106|Human herpesvirus 8 DNA (deoxyribonucleic acid) detection assay|43jv1|Human herpesvirus 8 deoxyribonucleic acid detection assay|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1029511000000109|Human papilloma virus nucleic acid detection assay|43jY.|Human papilloma virus nucleic acid detection|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1008271000000101|Human papilloma virus deoxyribonucleic acid detection assay|43jY1|Human papilloma virus deoxyribonucleic acid detection assay|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|27494001|HIV2 antibody level|43mJ.|Yo antibody level|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|166107004|HIV2 antibody level|43mJ.|Yo antibody level|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|143475002|HIV2 antibody level|43mJ.|Yo antibody level|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|143474003|HIV1 antibody level|43mJ.|Yo antibody level|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|166106008|HIV1 antibody level|43mJ.|Yo antibody level|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|28804003|HIV1 antibody level|43mJ.|Yo antibody level|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|1011651000000101|Chlamydia trachomatis IgA level|43n9.|Chlamydia trachomatis IgA level|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1031431000000104|Chlamydia antigen test|43U..|Chlamydia antigen test|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|310862001|Chlamydia antigen by enzyme-linked immunosorbent assay|43U0.|Chlamydia antigen by ELISA|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|314527009|Chlamydia antigen enzyme-linked immunosorbent assay positive|43U1.|Chlamydia antigen ELISA positive|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|314526000|Chlamydia antigen enzyme-linked immunosorbent assay negative|43U2.|Chlamydia antigen ELISA negative|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1005381000000100|Chlamydia trachomatis antigen test|43U3.|Chlamydia trachomatis antigen test|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|413079006|Chlamydia PCR positive|43U4.|Chlamydia PCR positive|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|247371000000107|Chlamydia test equivocal|43U7.|Chlamydia test equivocal|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|201441000000107|Chlamydia test positive|43U8.|Chlamydia test positive|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|448374002|Chlamydia trachomatis NAAT (nucleic acid amplification test) inhibitory|43U9.|Chlamydia trachomatis NAAT inhibitory|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|996081000000100|HIV (human immunodeficiency virus) ribonucleic acid/deoxyribonucleic acid ratio|43w3.|Human immunodeficiency virus RNA/DNA ratio|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1029781000000109|Herpes simplex virus type 1 nucleic acid detection assay|43w4.|Herpes simplex virus type 1 nucleic acid detection|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1008411000000105|Herpes simplex type 1 deoxyribonucleic acid detection assay|43w41|Herpes simplex type 1 deoxyribonucleic acid detection assay|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1003991000000103|Herpes simplex virus type 2 nucleic acid detection assay|43w5.|Herpes simplex virus type 2 nucleic acid detection|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1008401000000108|Herpes simplex type 2 deoxyribonucleic acid detection assay|43w51|Herpes simplex type 2 deoxyribonucleic acid detection assay|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1008801000000105|HIV1 (human immunodeficiency virus 1) antibody level|43W7.|HIV1 antibody level|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1008811000000107|HIV2 (human immunodeficiency virus 2) antibody level|43W8.|HIV2 antibody level|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|818821000000104|Treponema pallidum detection by nucleic acid amplification test|43wA.|Treponema pallidum detection by NAAT|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1004141000000107|Treponema pallidum deoxyribonucleic acid detection|43wB.|Treponema pallidum deoxyribonucleic acid detection|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1014121000000102|HIV (human immunodeficiency virus) antibody level|43WK.|Human immunodeficiency virus antibody level|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|998731000000100|Treponema pallidum reagin antibody level|43WL.|Treponema pallidum reagin antibody level|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|998741000000109|Chlamydia group antibody level|43WM.|Chlamydia group antibody level|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|415798001|Urine chlamydia trachomatis test positive|46H6.|Urine chlamydia trachomatis test positive|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|415797006|Urine chlamydia trachomatis test negative|46H7.|Urine chlamydia trachomatis test negative|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1011071000000104|Neisseria gonorrhoeae culture|4J2D.|Neisseria gonorrhoeae culture|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|998701000000106|HIV (human immunodeficiency virus) viral load|4J34.|HIV viral load|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|998711000000108|HIV (human immunodeficiency virus) p24 antigen level|4J35.|HIV p24 antigen level|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|998721000000102|Herpes simplex antigen (enzyme immunoassay)|4J36.|Herpes simplex antigen (EIA)|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1021331000000108|Herpes simplex virus isolation|4J3C.|Herpes simplex virus isolation|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|998171000000102|Human immunodeficiency virus viral load by log rank|4J3F.|Human immunodeficiency virus viral load by log rank|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1010871000000101|HIV (human immunodeficiency virus) drug resistance test|4J3N.|Human immunodeficiency virus drug resistance test|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1007761000000101|Human immunodeficiency virus type 1 subtype identification|4J3P.|Human immunodeficiency virus type 1 subtype identification|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1007841000000109|Human immunodeficiency virus IgG avidity|4J3Q.|Human immunodeficiency virus IgG avidity|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|200731000000100|Trichomonas seen|4J54.|Trichomonas seen|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|200741000000109|Trichomonas not seen|4J55.|Trichomonas not seen|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|996221000000106|Human T-lymphotropic virus (1 and 2) serology|4JDc.|Human T-lymphotropic virus (1&2) serology|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1009781000000101|Chlamydia serology|4JDM.|Chlamydia serology|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1009791000000104|Human herpes virus serology|4JDN.|Human herpes virus serology|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1020841000000100|HIV (human immunodeficiency virus) serology|4JDT.|HIV serology|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|754591000000103|Rapid human immunodeficiency virus antibody test|4JDT0|Rapid human immunodeficiency virus antibody test|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|707982002|Taking throat swab for Chlamydia test|4JF42|Throat swab for chlamydia|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|707983007|Taking throat swab for gonorrhea|4JF43|Throat swab for gonorrhoea|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|776641000000101|Anal swab for gonorrhoea|4JH6.|Anal swab|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|776651000000103|Anal swab for gonorrhoea|4JH6.|Anal swab|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|168326009|Anal swab culture negative|4JH61|Anal swab culture negative|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|472859009|Taking anal swab for Chlamydia test|4JH63|Anal swab for chlamydia|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|472860004|Taking anal swab for gonorrhea|4JH64|Anal swab for gonorrhoea|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|168343007|Urethral swab culture positive|4JK10|Urethral swab culture positive|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|168348003|HVS culture - trichomonas vaginalis|4JK22|HVS culture - trichomonas vaginalis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|168359007|Penile swab taken|4JK8.|Penile swab taken|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|168361003|Penile swab culture positive|4JK80|Penile swab culture positive|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|390784004|Taking endocervical swab for Chlamydia test|4JK9.|Endocervical chlamydia swab|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|390785003|Taking urethral swab for Chlamydia test|4JKA.|Urethral chlamydia swab|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|400993006|Taking cervical swab for Neisseria gonorrhoeae test|4JKB.|Gonococcal cervical swab|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|401002001|Taking urethral swab for Neisseria gonorrhoeae test|4JKC.|Gonococcal urethral swab|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|200761000000105|LVS (low vaginal swab) for chlamydia taken by patient|4JKD.|Low vaginal swab for chlamydia taken by patient|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|400994000|Taking swab for Neisseria gonorrhoeae test|4JLA.|Gonococcal swab|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|285586000|Taking swab for Chlamydia test|4JLC.|Chlamydia swab|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|247401000000109|Gonorrhoea test equivocal|4JQ9.|Gonorrhoea test equivocal|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|247411000000106|Gonorrhoea test positive|4JQA.|Gonorrhoea test positive|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|993791000000109|Treponema screening test|4JR4.|Treponema screening test|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|992781000000103|HIV (human immunodeficiency virus) screening test|4JR7.|HIV screening test|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1024481000000104|Viral hepatitis screening test|4JRF.|Viral hepatitis screening test|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1046211000000102|Treponema pallidum microscopy|4JSD.|Treponema pallidum microscopy|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1046231000000105|Neisseria gonorrhoeae microscopy|4JSE.|Neisseria gonorrhoeae microscopy|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|888111000000103|Cervical smear - human papillomavirus positive|4K2R.|Cervical smear - human papillomavirus positive|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|168417005|Cervical smear - trichomonas|4K33.|Cervical smear - trichomonas|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|269963000|Cervical smear - viral inflammation unspecified|4K35.|Cerv.smear - viral infl.unsp.|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|269964006|Cervical smear - wart virus|4K36.|Cervical smear - wart virus|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|168421003|Cervical smear - herpes|4K37.|Cervical smear - herpes|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|168424006|Cervical smear - koilocytosis|4K3A.|Cervical smear: koilocytosis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|444451006|Exposure to sexually transmissible disorder|65P7.|Venereal disease contact|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|444356002|Exposure to Human immunodeficiency virus|65P8.|AIDS contact|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|444418002|Exposure to Chlamydia trachomatis|65PJ.|Chlamydia trachomatis contact|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|444376008|Exposure to gonorrhea|65PK.|Gonorrhoea contact|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|444380003|Exposure to Treponema pallidum|65PN.|Syphilis contact|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|200401000000102|Trichomonas vaginalis contact|65PP.|Trichomonas vaginalis contact|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|444487004|Exposure to anogenital Herpes simplex virus|65PQ.|Genital herpes simplex contact|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|200681000000109|HIV (human immunodeficiency virus) contact|65PR.|Human immunodeficiency virus contact|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|95061000000106|At risk of sexually transmitted infection|65PS.|Sexually transmitted infection contact|SEMANTIC|TOKEN_OVERLAP|.600
+Sexually Transmitted Disease|99931000000102|At risk of sexually transmitted infection|65PS.|Sexually transmitted infection contact|SEMANTIC|TOKEN_OVERLAP|.600
+Sexually Transmitted Disease|281635007|Sexually transmitted infection contact|65PS.|Sexually transmitted infection contact|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|170490008|Gonorrhea carrier|65Q8.|Gonorrhoea carrier|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1094401000000104|Sexually transmitted disease carrier|65Q9.|Venereal disease carrier NOS|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|699433000|Human immunodeficiency virus (HIV) carrier|65QA.|AIDS carrier|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|170530008|Notification of AIDS|65VE.|Notification of AIDS|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|504871000000109|Human immunodeficiency virus monitoring|66j..|Human immunodeficiency virus monitoring|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|504901000000109|Human immunodeficiency virus annual review|66j0.|Human immunodeficiency virus annual review|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|10383002|Counselling for termination of pregnancy|6776|Preg. termination counselling|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|225326008|Post-termination counseling|67760|Post-termination counselling|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|225327004|Pre-termination counseling|67761|Pre-termination counselling|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1290441000000101|Advice given about monkeypox|677B.|Advice about treatment given|SEMANTIC|TOKEN_OVERLAP|.600
+Sexually Transmitted Disease|200641000000101|Chlamydia screening counselling|677L.|Chlamydia screening counselling|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|200801000000100|Gonorrhoea screening counselling|677M.|Gonorrhoea screening counselling|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|200901000000108|HIV (human immunodeficiency virus) screening counselling|677N.|HIV screening counselling|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|204661000000108|Syphilis screening counselling|677P.|Syphilis screening counselling|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|204671000000101|Hepatitis C screening counselling|677Q.|Hepatitis C screening counselling|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|204681000000104|Hepatitis B screening counselling|677R.|Hepatitis B screening counselling|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|439057000|Education about sexually transmitted disease prevention|679K9|Education about prevention of sexually transmitted disease|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|208071000000103|Syphilis screening offered|6812.|Screening offered|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|171121004|HIV screening test|6827|AIDS (HTLV-III) screening|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|171128005|Sexually transmitted infection screening|6832|Venereal disease screening|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|442487003|Screening for Chlamydia trachomatis|683C.|Chlamydia trachomatis screening|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|391144006|Human papillomavirus test consent given|685N.|HPV - Human papillomavirus test consent given|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|412761009|Urine screen for chlamydia|68K7.|Urine screen for chlamydia|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|449013002|Cauterisation of anal wart|77323|Cauterisation of perianal warts NEC|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|174342008|Cryotherapy to perianal warts|77324|Cryotherapy to perianal warts|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|174343003|Painting of perianal warts|77325|Painting of perianal warts|DMWB|DMWB_CROSSMAP|1.000
+Gender Related Issues|176532008|Construction of penis|7C220|Construction of penis|DMWB|DMWB_CROSSMAP|1.000
+Assisted Fertilisation|312645003|Percutaneous epididymal sperm aspiration|7C263|Percutaneous epididymal sperm aspiration|DMWB|DMWB_CROSSMAP|1.000
+Assisted Fertilisation|236364009|Micro-epididymal sperm aspiration|7C264|Micro-epididymal sperm aspiration|DMWB|DMWB_CROSSMAP|1.000
+Assisted Fertilisation|229971000000102|Testicular sperm extraction|7C265|Testicular sperm extraction|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|176610008|Painting of vulval warts|7D035|Painting of vulval warts|DMWB|DMWB_CROSSMAP|1.000
+Gender Related Issues|176687003|Colpoplasty|7D16.|Plastic operations on vagina|DMWB|DMWB_CROSSMAP|1.000
+Gender Related Issues|265619004|Colpopoiesis|7D160|Construction of vagina|DMWB|DMWB_CROSSMAP|1.000
+Gender Related Issues|176691008|McIndoe vaginoplasty|7D163|Reconstruction of vagina with skin graft|DMWB|DMWB_CROSSMAP|1.000
+Assisted Fertilisation|177038005|Endoscopic transurethral ultrasound directed oocyte recovery|7e+240|Endoscopic transurethral ultrasound directed oocyte recovery|DMWB|DMWB_CROSSMAP|1.000
+Assisted Fertilisation|177039002|Endoscopic transvesical oocyte recovery|7e+241|Endoscopic transvesical oocyte recovery|DMWB|DMWB_CROSSMAP|1.000
+Assisted Fertilisation|265082003|Laparoscopic oocyte recovery|7e+242|Laparoscopic oocyte recovery|DMWB|DMWB_CROSSMAP|1.000
+Assisted Fertilisation|177042008|Transvaginal oocyte recovery|7e+243|Transvaginal oocyte recovery|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|18302006|Hysterotomy and termination of pregnancy|7e+66|Hysterotomy and termination of pregnancy|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|265062002|Dilation of cervix uteri and curettage of products of conception from uterus|7e+70|Dilation cervix uteri & curettage products conception uterus|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|386641000|Therapeutic abortion procedure|7e+83|Extraction of menses|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|391897002|Aspiration curettage of uterus for termination of pregnancy|7e+84|Suction termination of pregnancy|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|29682007|Dilatation and evacuation termination of pregnancy|7e+85|Dilation of cervix and extraction termination of pregnancy|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|386639001|Termination of pregnancy|7e+86|Termination of pregnancy NEC|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|176821001|Dilation cervix uteri and curettage products of conception (& [termination] or [retained])|7E070|Dilation cervix uteri & curettage products conception uterus|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|176830009|Extraction of menses|7E083|Extraction of menses|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|149997001|Suction termination of pregnancy|7E084|Suction termination of pregnancy|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|302375005|Surgical termination of pregnancy|7E086|Termination of pregnancy NEC|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|53638009|Therapeutic termination of pregnancy|7E086|Termination of pregnancy NEC|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|57797005|Termination of pregnancy|7E086|Termination of pregnancy NEC|SEMANTIC|NORMALISED|.950
+Termination of Pregnancy|438767006|Termination of pregnancy contraindicated|7E086|Termination of pregnancy NEC|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|339291000000104|Termination of pregnancy contraindicated|7E086|Termination of pregnancy NEC|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|176831008|Termination of pregnancy NEC|7E086|Termination of pregnancy NEC|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|149998006|Termination of pregnancy operation NOS|7E086|Termination of pregnancy NEC|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|287955003|Termination of pregnancy operation NOS|7E086|Termination of pregnancy NEC|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|694901000000104|Termination of pregnancy operation NOS|7E086|Termination of pregnancy NEC|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|174801000000103|Referral for termination of pregnancy|7E086|Termination of pregnancy NEC|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|170141000000103|Referral for termination of pregnancy|7E086|Termination of pregnancy NEC|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|152229008|Requests pregnancy termination|7E086|Termination of pregnancy NEC|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|18391007|Elective termination of pregnancy|7E086|Termination of pregnancy NEC|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|780721000000107|Pregnancy termination care|7E086|Termination of pregnancy NEC|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|763801000000101|Pregnancy termination care|7E086|Termination of pregnancy NEC|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|148244006|Pregnancy termination counselling|7E086|Termination of pregnancy NEC|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|310062002|Pregnancy termination service|7E086|Termination of pregnancy NEC|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|185019006|Reason for termination of pregnancy|7E086|Termination of pregnancy NEC|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|153232001|Reason for termination of pregnancy|7E086|Termination of pregnancy NEC|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|267296001|Legal termination of pregnancy|7E086|Termination of pregnancy NEC|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|149995009|Operative termination of pregnancy|7E086|Termination of pregnancy NEC|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|714812005|Induced termination of pregnancy|7E086|Termination of pregnancy NEC|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|315929005|[V]Admission for termination of pregnancy|7E086|Termination of pregnancy NEC|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|768721000000107|Assessment for termination of pregnancy|7E086|Termination of pregnancy NEC|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|768731000000109|Assessment for termination of pregnancy|7E086|Termination of pregnancy NEC|SEMANTIC|TOKEN_OVERLAP|.667
+Assisted Fertilisation|176843009|Gamete intrauterine transfer|7E0A.|Introduction of gamete into uterine cavity|DMWB|DMWB_CROSSMAP|1.000
+Assisted Fertilisation|75456002|Embryo transfer|7E0A0|Implantation of fertilised egg into uterus|DMWB|DMWB_CROSSMAP|1.000
+Assisted Fertilisation|176844003|Intracervical artificial insemination|7E0A1|Intracervical artificial insemination|DMWB|DMWB_CROSSMAP|1.000
+Assisted Fertilisation|265064001|Intrauterine artificial insemination|7E0A2|Intrauterine artificial insemination|DMWB|DMWB_CROSSMAP|1.000
+Assisted Fertilisation|426968007|Intrauterine insemination with superovulation using partner sperm|7E0A3|Intrauterine insemination superovulation partner sperm|DMWB|DMWB_CROSSMAP|1.000
+Assisted Fertilisation|425644009|Intrauterine insemination with superovulation using donor sperm|7E0A4|Intrauterine insemination superovulation using donor sperm|DMWB|DMWB_CROSSMAP|1.000
+Assisted Fertilisation|426389008|Intrauterine insemination without superovulation using partner sperm|7E0A5|Intrauterine insemination without superovulat partner sperm|DMWB|DMWB_CROSSMAP|1.000
+Assisted Fertilisation|426250000|Intrauterine insemination without superovulation using donor sperm|7E0A6|Intrauterine insemination without superovulation donor sperm|DMWB|DMWB_CROSSMAP|1.000
+Assisted Fertilisation|233111000000108|Transfer of embryo to uterus|7E0A7|Transfer of embryo to uterus|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|176849008|Introduction of abortifacient into uterine cavity|7E0B.|Introduction of abortifacient into uterine cavity|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|176850008|Intra-amniotic prostaglandin instillation|7E0B0|Intraamniotic injection of prostaglandin|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|450678004|Intraamniotic injection of abortifacient|7E0B1|Intraamniotic injection of abortifacient NEC|SEMANTIC|NORMALISED|.950
+Termination of Pregnancy|176852000|Extra-amniotic prostaglandin instillation|7E0B2|Extraamniotic injection of prostaglandin|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|450679007|Extraamniotic injection of abortifacient|7E0B3|Extraamniotic injection of abortifacient NEC|SEMANTIC|NORMALISED|.950
+Termination of Pregnancy|176854004|Insertion of prostaglandin abortifacient suppository|7E0B4|Insertion of prostaglandin abortifacient pessary|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|285434006|Insertion of abortifacient suppository|7E0B5|Insertion of abortifacient pessary NEC|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|176857006|Introduction of abortifacient into uterine cavity NOS|7E0Bz|Introduction of abortifacient into uterine cavity NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|569441000000102|Introduction of abortifacient into uterine cavity NOS|7E0Bz|Introduction of abortifacient into uterine cavity NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|176856002|Other specified introduction of abortifacient into uterine cavity|7E0Bz|Introduction of abortifacient into uterine cavity NOS|SEMANTIC|TOKEN_OVERLAP|.833
+Termination of Pregnancy|572641000000101|Other specified introduction of abortifacient into uterine cavity|7E0Bz|Introduction of abortifacient into uterine cavity NOS|SEMANTIC|TOKEN_OVERLAP|.833
+Assisted Fertilisation|448543003|Transmyometrial transfer of embryo to uterus|7E0J0|Transmyometrial transfer of embryo to uterus|DMWB|DMWB_CROSSMAP|1.000
+Assisted Fertilisation|176996001|Endoscopic intrafallopian transfer of gamete|7E1F2|Endoscopic intrafallopian transfer of gamete|DMWB|DMWB_CROSSMAP|1.000
+Assisted Fertilisation|177037000|Oocyte recovery|7E24.|Oocyte recovery|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|265633004|Selective destruction of foetus|7F02.|Selective destruction of fetus|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|177095006|Early selective feticide|7F020|Early selective feticide|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|177096007|Late selective feticide|7F021|Late selective feticide|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|177097003|Selective feticide NEC|7F022|Selective feticide NEC|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|561991000000100|Selective feticide NEC|7F022|Selective feticide NEC|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|562001000000102|Other specified selective destruction of fetus|7F02y|Other specified selective destruction of fetus|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|177098008|Other specified selective destruction of fetus|7F02y|Other specified selective destruction of fetus|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|177099000|Selective destruction of fetus NOS|7F02z|Selective destruction of fetus NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|656231000000102|Selective destruction of fetus NOS|7F02z|Selective destruction of fetus NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|906211000000103|Destruction of fetus|7F09.|Destruction of fetus|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|1287687008|Destruction of fetus|7F09z|Unspecified destruction of fetus|SEMANTIC|TOKEN_OVERLAP|1.000
+Termination of Pregnancy|917351000000108|Destruction of fetus|7F09z|Unspecified destruction of fetus|SEMANTIC|TOKEN_OVERLAP|1.000
+Termination of Pregnancy|917361000000106|Destruction of fetus|7F09z|Unspecified destruction of fetus|SEMANTIC|TOKEN_OVERLAP|1.000
+Termination of Pregnancy|917371000000104|Destruction of fetus|7F09z|Unspecified destruction of fetus|SEMANTIC|TOKEN_OVERLAP|1.000
+Termination of Pregnancy|917381000000102|Destruction of fetus|7F09z|Unspecified destruction of fetus|SEMANTIC|TOKEN_OVERLAP|1.000
+Termination of Pregnancy|917391000000100|Destruction of fetus|7F09z|Unspecified destruction of fetus|SEMANTIC|TOKEN_OVERLAP|1.000
+Sexually Transmitted Disease|1303533008|Painting of perineal warts|7G094|Painting of warts NEC|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|236834006|Cryotherapy of vulval wart|7G097|Cryotherapy to wart|SEMANTIC|TOKEN_OVERLAP|.667
+Gender Related Issues|719670005|Sex reassignment surgery|7L0B.|Operations for sexual transformation|DMWB|DMWB_CROSSMAP|1.000
+Gender Related Issues|51427007|Combined operation for transformation from male to female|7L0B0|Combined operations for transformation from male to female|DMWB|DMWB_CROSSMAP|1.000
+Gender Related Issues|42775008|Combined operation for transformation from female to male|7L0B1|Combined operations for transformation from female to male|DMWB|DMWB_CROSSMAP|1.000
+Gender Related Issues|441524006|Construction of scrotum|7L0B3|Construction of scrotum|DMWB|DMWB_CROSSMAP|1.000
+Gender Related Issues|24878005|Gender assignment surgery|7L0By|Other specified operation for sexual transformation|DMWB|DMWB_CROSSMAP|1.000
+Gender Related Issues|149785007|Operation for sexual transformation NOS|7L0Bz|Operation for sexual transformation NOS|SEMANTIC|EXACT|1.000
+Gender Related Issues|180061002|Operation for sexual transformation NOS|7L0Bz|Operation for sexual transformation NOS|SEMANTIC|EXACT|1.000
+Gender Related Issues|637621000000104|Operation for sexual transformation NOS|7L0Bz|Operation for sexual transformation NOS|SEMANTIC|EXACT|1.000
+Gender Related Issues|544321000000107|Other specified operation for sexual transformation|7L0Bz|Operation for sexual transformation NOS|SEMANTIC|TOKEN_OVERLAP|.750
+Gender Related Issues|180060001|Other specified operation for sexual transformation|7L0Bz|Operation for sexual transformation NOS|SEMANTIC|TOKEN_OVERLAP|.750
+Assisted Fertilisation|52637005|In vitro fertilisation procedure|7M0h.|In vitro fertilisation (IVF)|DMWB|DMWB_CROSSMAP|1.000
+Assisted Fertilisation|427664000|IVF - In vitro fertilisation using donor sperm|7M0h0|IVF with donor sperm|DMWB|DMWB_CROSSMAP|1.000
+Assisted Fertilisation|425866000|In vitro fertilization using donor eggs|7M0h1|IVF with donor eggs|DMWB|DMWB_CROSSMAP|1.000
+Assisted Fertilisation|425901007|IVF - In vitro fertilisation with intracytoplasmic sperm injection (ICSI)|7M0h2|IVF with intracytoplasmic sperm injection (ICSI)|DMWB|DMWB_CROSSMAP|1.000
+Assisted Fertilisation|426914002|IVF - In vitro fertilisation with intracytoplasmic sperm injection (ICSI) and donor egg|7M0h3|IVF intracytoplasmic sperm injection (ICSI) and donor egg|DMWB|DMWB_CROSSMAP|1.000
+Assisted Fertilisation|426417003|IVF - In vitro fertilisation with pre-implantation genetic diagnosis|7M0h4|IVF with pre-implantation for genetic diagnosis|DMWB|DMWB_CROSSMAP|1.000
+Assisted Fertilisation|711544002|IVF (in vitro fertilisation) with surrogacy|7M0h5|IVF with surrogacy|DMWB|DMWB_CROSSMAP|1.000
+Assisted Fertilisation|232141000000104|Other specified in vitro fertilisation|7M0hy|Other specified in vitro fertilisation (IVF)|SEMANTIC|TOKEN_OVERLAP|.750
+Assisted Fertilisation|268771000000104|Other specified in vitro fertilisation (IVF)|7M0hy|Other specified in vitro fertilisation (IVF)|SEMANTIC|EXACT|1.000
+Assisted Fertilisation|10231000132102|IVF - in-vitro fertilisation pregnancy|7M0hz|In vitro fertilisation (IVF) NOS|SEMANTIC|TOKEN_OVERLAP|.750
+Assisted Fertilisation|268781000000102|In vitro fertilisation (IVF) NOS|7M0hz|In vitro fertilisation (IVF) NOS|SEMANTIC|EXACT|1.000
+Assisted Fertilisation|309096008|Harvest of reproductive tissue|7M2Ez|Harvest of other tissue NOS|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|58056005|Syphilis of mitral valve|7N400|[SO]Mitral valve|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|42770003|Syphilis of tricuspid valve|7N402|[SO]Tricuspid valve|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|45058001|Syphilis of pulmonary valve|7N403|[SO]Pulmonary valve|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|230091000000109|Human immunodeficiency virus blood test|7P1A0|Human immunodeficiency virus blood test|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|176855003|Insertion of abortifacient suppository NEC|8139.|Insertion of suppository|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|768841000000107|Post exposure prophylaxis after sexual exposure|8B6e.|Post exposure prophylaxis after sexual exposure|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|829241000000108|12 week virologic response to hepatitis C treatment|8BB5.|12 week virologic response to hepatitis C treatment|DMWB|DMWB_CROSSMAP|1.000
+Assisted Fertilisation|65046005|Infertility therapy|8C8..|Treatment for infertility|DMWB|DMWB_CROSSMAP|1.000
+Assisted Fertilisation|58533008|AI - Artificial insemination|8C81.|Artificial insemination|DMWB|DMWB_CROSSMAP|1.000
+Assisted Fertilisation|183036001|Female infertility therapy|8C82.|Female infertility therapy|DMWB|DMWB_CROSSMAP|1.000
+Assisted Fertilisation|183037005|Male infertility therapy|8C83.|Male infertility therapy|DMWB|DMWB_CROSSMAP|1.000
+Assisted Fertilisation|232151000000101|In vitro fertilisation NOS|8C84.|In vitro fertilisation procedure|SEMANTIC|TOKEN_OVERLAP|.667
+Assisted Fertilisation|268701000000107|In vitro fertilisation procedure|8C84.|In vitro fertilisation procedure|SEMANTIC|EXACT|1.000
+Assisted Fertilisation|393132003|In vitro fertilisation procedure|8C84.|In vitro fertilisation procedure|SEMANTIC|EXACT|1.000
+Assisted Fertilisation|394083005|In vitro fertilisation procedure|8C84.|In vitro fertilisation procedure|SEMANTIC|EXACT|1.000
+Assisted Fertilisation|765301000000109|History of in-vitro fertilisation procedure|8C84.|In vitro fertilisation procedure|SEMANTIC|TOKEN_OVERLAP|.750
+Assisted Fertilisation|236912008|GIFT - Gamete intrafallopian transfer|8C85.|Gamete intrafallopian transfer|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|198781000000103|Patient advised to notify sexual partners of sexual transmitted infection|8CAd.|Pt ad notify sexual partners of sexual transmitted infection|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|183083004|Patient advised about the risks of HIV|8CAE.|Patient advised about the risks of HIV|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|386394001|Pregnancy termination care|8Cg..|Pregnancy termination care|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|835401000000109|Discussion about human immunodeficiency virus post exposure prophylaxis|8CP9.|Discussion about HIV post exposure prophylaxis|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|183606009|Referral for counseling for termination of pregnancy|8H7W.|Refer to TOP counselling|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|864511000000102|Sexually transmitted infection in-house follow-up|8HBQ0|Sexually transmitted infection in-house follow-up|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|306591007|Discharge from genitourinary medicine service|8HgG.|Discharge from service|SEMANTIC|TOKEN_OVERLAP|.600
+Termination of Pregnancy|769411000000104|Self referral to termination of pregnancy service|8Hh3.|Self referral to termination of pregnancy service|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|415262008|Referral for termination of pregnancy|8HHV.|Referral for termination of pregnancy|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|306123006|Referral to genitourinary medicine service|8HkC.|Referral to nuclear medicine service|SEMANTIC|TOKEN_OVERLAP|.600
+Sexually Transmitted Disease|817381000000107|Referral to community human immunodeficiency virus nurse specialist|8Hle.|Referral to community HIV nurse specialist|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|415272006|Referral to genitourinary clinic|8HTa.|Referral to genitourinary clinic|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|170241000000108|Referral to genitourinary clinic|8HTE.|Referral to other clinic|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|174901000000106|Referral to genitourinary clinic|8HTE.|Referral to other clinic|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|412712007|Referral to sexually transmitted infections clinic|8HTR.|Referral to sexually transmitted infections clinic|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|183905006|Private referral to venereologist|8HVP.|Private referral to venereologist|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|306325006|Referral to genitourinary nurse|8HW..|Referral by nurse|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|306033001|Referral by genitourinary nurse|8HW..|Referral by nurse|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|200651000000103|Gonorrhoea screening declined|8I3o.|Gonorrhoea screening declined|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|202261000000101|Syphilis screening declined|8I3t.|Syphilis screening declined|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|412718006|Chlamydia screening declined|8I3T.|Chlamydia screening declined|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|218611000000102|Gonorrhoea screening declined|8IH3.|Screening declined|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|218621000000108|Gonorrhoea screening declined|8IH3.|Screening declined|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|184005004|Requests pregnancy termination|8M6..|Requests pregnancy termination|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|9391000000101|HSA1 therapeutic abortion green form|956..|Form A - therapeutic abortion|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|9401000000103|HSA1 form eligible|9561|Form A - eligible|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|9411000000101|HSA1 form signed|9562|Form A - signed|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|9421000000107|HSA1 form refused to sign|9563|Form A - refused to sign|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|10671000000104|Form A therapeutic abortion - refused to sign|9563.|Form A - refused to sign|SEMANTIC|TOKEN_OVERLAP|.600
+Termination of Pregnancy|13961000000108|HSA1 form status|956Z.|Form A - NOS|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|310506006|Reason for termination of pregnancy|9Ea..|Reason for termination of pregnancy|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|185020000|Risk to the life of the pregnant woman greater than if the pregnancy was terminated|9Ea0.|Risk life pregnant woman greater than if pregnancy terminatd|SEMANTIC|TOKEN_OVERLAP|.700
+Sexually Transmitted Disease|355251000000105|Urine neisseria gonorrhoeae test positive|9ka..|Urine neisseria gonorrhoeae test positive - enhan serv admin|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|355281000000104|Urine neisseria gonorrhoeae test negative|9kb..|Urine neisseria gonorrhoeae test negative - enhan serv admin|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|166401000000102|Specialised sexual health enhanced services administration|9kF..|Specialised sexual health - enhanced services administration|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|166491000000109|Specialised sexual health enhanced service completed|9kF0.|Specialised sexual health - enhanced service completed|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|355161000000101|Patient reviewed following treatment for sexually transmitted disease|9kF1.|Patient reviewed following treatment for STD - enh ser admin|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|362881000000103|Urine screen for gonorrhoea|9kF2.|Urine screen for gonorrhoea - enhanced services administratn|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|363091000000104|Counselling for genital herpes screening|9kF3.|Counselling for genital herpes screening - enhanc serv admin|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|355221000000100|Syphilis screen 3 months post treatment|9kF4.|Syphilis screen 3 month post treatment - enhanced serv admin|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|355651000000107|Syphilis screen 6 months post treatment|9kF5.|Syphilis screen 6 month post treatment - enhanced serv admin|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|355681000000101|Syphilis screen 1 year post treatment|9kF6.|Syphilis screen 1 year post treatment - enhanced serv admin|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|364771000000102|Treatment of recurrent genital herpes|9kF8.|Treatment of recurrent genital herpes - enhanced services ad|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|504931000000103|HIV (Human immunodeficiency virus) positive general health check service declined - enhanced services administration|9kl..|HIV pos gen health check serv declind - enhanc service admin|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|894621000000106|Human immunodeficiency virus infection monitoring invitation|9mN..|Human immunodeficiency virus infection monitoring invitation|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|894641000000104|Human immunodeficiency virus infection monitoring telephone invitation|9mN0.|HIV infection monitoring telephone invitation|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|894661000000103|Human immunodeficiency virus infection monitoring first telephone invitation|9mN00|HIV infection monitoring first telephone invitation|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|894781000000104|Human immunodeficiency virus infection monitoring second telephone invitation|9mN01|HIV infection monitoring second telephone invitation|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|894801000000103|Human immunodeficiency virus infection monitoring third telephone invitation|9mN02|HIV infection monitoring third telephone invitation|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|185180001|Seen in GU medicine clinic|9N0L.|Seen in GU medicine clinic|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|839551000000107|Consultation for complex sexual health need|9Na4.|Consultation for complex sexual health need|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|503241000000102|Did not attend genitourinary medicine clinic|9NiP.|Did not attend genitourinary medicine clinic|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|786221000000101|In-house genitourinary medicine|9NJu.|In-house genitourinary medicine|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|786251000000106|In-house genitourinary medicine first appointment|9NJu0|In-house genitourinary medicine first appointment|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|787781000000107|In-house genitourinary medicine follow-up appointment|9NJu1|In-house genitourinary medicine follow-up appointment|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|787801000000108|In-house genitourinary medicine discharge|9NJu2|In-house genitourinary medicine discharge|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|305489005|Under care of GU medicine physician|9NNf.|Under care of physician|SEMANTIC|TOKEN_OVERLAP|.750
+Sexually Transmitted Disease|305562003|Under care of genitourinary nurse|9NNg.|Under care of nurse|SEMANTIC|TOKEN_OVERLAP|.750
+Sexually Transmitted Disease|305739003|Seen by genitourinary nurse|9Nt0.|Seen by nurse|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|862191000000107|Seen by community HIV (human immunodeficiency virus) nurse|9Nt10|Seen by community HIV (human immunodeficiency virus) nurse|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|1103711000000100|HIV (human immunodeficiency virus) test offered|9Op0.|HIV screening offered|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|200591000000105|Chlamydia test offered|9Oq0.|Chlamydia test offered|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|202241000000102|Syphilis screening offered|9Oq1.|Syphilis screening offered|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|504751000000108|Chlamydia screening programme test kit issued|9Oq4.|Chlamydia screening programme test kit issued|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|835261000000109|Sexually transmitted infection screening offered|9OqB.|Sexually transmitted infection screening offered|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|67915005|Intestinal trichomoniasis|A063.|Intestinal trichomoniasis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|33839006|Genital herpes simplex|A541.|Genital herpes simplex|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|10754701000119100|Genital herpes in childbirth|A5410|Genital herpes unspecified|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|27420004|Herpetic vulvovaginitis|A5411|Herpetic vulvovaginitis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|59819007|Herpes simplex vulvitis|A5412|Herpetic ulceration of vulva|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|10227000|Herpetic infection of penis|A5413|Herpetic infection of penis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|186537009|Herpesviral infection of perianal skin and rectum|A5414|Herpesviral infection of perianal skin and rectum|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|186538004|Anogenital herpesviral infection|A5415|Anogenital herpesviral infection|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|440714005|Genital herpes simplex type 1|A5416|Genital herpes simplex type 1|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|423391007|Genital herpes simplex type 2|A5417|Genital herpes simplex type 2|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|439912007|Recurrent genital herpes simplex type 1|A5418|Recurrent genital herpes simplex type 1|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|439913002|Recurrent genital herpes simplex type 2|A5419|Recurrent genital herpes simplex type 2|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|402894005|Recurrent genital herpes simplex|A541z|Genital herpes simplex NOS|SEMANTIC|TOKEN_OVERLAP|.750
+Sexually Transmitted Disease|186536000|Genital herpes unspecified (& [simplex group])|A541z|Genital herpes simplex NOS|SEMANTIC|TOKEN_OVERLAP|.750
+Sexually Transmitted Disease|104011000119109|Genital herpes simplex in pregnancy|A541z|Genital herpes simplex NOS|SEMANTIC|TOKEN_OVERLAP|.750
+Sexually Transmitted Disease|359814004|Monkey pox|A57y5|Monkeypox|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|543791000000108|Other viral or chlamydial diseases|A7...|Other viral and chlamydial diseases|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|57019003|Verruca vulgaris|A781.|Viral warts|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|266113007|Genital warts|A7812|Genital warts|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|266114001|Perianal warts|A7813|Perianal warts|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|868341000000102|Recurrent genital warts|A7817|Recurrent genital warts|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|422241000|Cytomegalic inclusion disease associated with AIDS|A785.|Cytomegalic inclusion disease|SEMANTIC|TOKEN_OVERLAP|.600
+Sexually Transmitted Disease|62479008|AIDS|A788.|Acquired immune deficiency syndrome|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|111880001|Acute HIV infection|A7880|Acute human immunodeficiency virus infection|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|91947003|Asymptomatic human immunodeficiency virus infection|A7881|Asymptomatic human immunodeficiency virus infection|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|95892003|Persistent generalized lymphadenopathy caused by human immunodeficiency virus|A7882|HIV infection with persistent generalised lymphadenopathy|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|186706006|Human immunodeficiency virus infection constitutional disease|A7883|Human immunodeficiency virus with constitutional disease|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|186707002|Human immunodeficiency virus infection with neurological disease|A7884|Human immunodeficiency virus with neurological disease|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|186708007|Human immunodeficiency virus infection with secondary clinical infectious disease|A7885|Human immunodeficiency virus with secondary infection|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|713572001|Malignant neoplastic disease co-occurrent with human immunodeficiency virus infection|A7886|Human immunodeficiency virus with secondary cancers|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|943041000000105|HIV (human immunodeficiency virus) disease resulting in haematological and immunological abnormalities|A788U|HIV disease result/haematological+immunologic abnorms,NEC|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|86406008|HIV - Human immunodeficiency virus infection|A788V|HIV disease resulting in multiple diseases CE|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|664701000000103|Human immunodeficiency virus with other clinical findings|A788y|Human immunodeficiency virus with other clinical findings|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|186714000|Human immunodeficiency virus with other clinical findings|A788y|Human immunodeficiency virus with other clinical findings|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|186727001|Human immunodeficiency virus infection wasting syndrome|A788z|Acquired human immunodeficiency virus infection syndrome NOS|SEMANTIC|TOKEN_OVERLAP|.714
+Sexually Transmitted Disease|40780007|Human immunodeficiency virus 1 infection|A788z|Acquired human immunodeficiency virus infection syndrome NOS|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|79019005|Human immunodeficiency virus II infection|A788z|Acquired human immunodeficiency virus infection syndrome NOS|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|713444005|Hemophagocytic syndrome with human immunodeficiency virus infection|A788z|Acquired human immunodeficiency virus infection syndrome NOS|SEMANTIC|TOKEN_OVERLAP|.714
+Sexually Transmitted Disease|577001000000106|Acquired human immunodeficiency virus infection syndrome NOS|A788z|Acquired human immunodeficiency virus infection syndrome NOS|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|186715004|Acquired human immunodeficiency virus infection syndrome NOS|A788z|Acquired human immunodeficiency virus infection syndrome NOS|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|713695001|Nephrotic syndrome co-occurrent with human immunodeficiency virus infection|A788z|Acquired human immunodeficiency virus infection syndrome NOS|SEMANTIC|TOKEN_OVERLAP|.625
+Sexually Transmitted Disease|81000119104|Symptomatic human immunodeficiency virus infection|A789.|Human immunodef virus resulting in other disease|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|420818005|Mycobacteriosis with acquired immunodeficiency syndrome|A7890|HIV disease resulting in mycobacterial infection|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|420403001|Pneumocystosis with acquired immunodeficiency syndrome|A7893|HIV disease resulting in Pneumocystis carinii pneumonia|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|420524008|Kaposi's sarcoma with acquired immunodeficiency syndrome|A7895|HIV disease resulting in Kaposi's sarcoma|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|713897006|Burkitt's lymphoma co-occurrent with human immunodeficiency virus infection|A7896|HIV disease resulting in Burkitt's lymphoma|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|442537007|Non-Hodgkin lymphoma associated with Human immunodeficiency virus infection|A7897|HIV dis resulting oth types of non-Hodgkin's lymphoma|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|186725009|HIV disease resulting in multiple malignant neoplasms|A7898|HIV disease resulting in multiple malignant neoplasms|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|421671002|Pneumonia with acquired immunodeficiency syndrome|A7899|HIV disease resulting in lymphoid interstitial pneumonitis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|422003001|Cachexia associated with AIDS|A789A|HIV disease resulting in wasting syndrome|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|105629000|Chlamydial infection|A78A.|Chlamydial infection|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|186729003|Chlamydial infection of lower genitourinary tract|A78A0|Chlamydial infection of lower genitourinary tract|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|232403001|Chlamydial pharyngitis|A78A1|Chlamydial infection of pharynx|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|186731007|Chlamydial infection of anus and rectum|A78A2|Chlamydial infection of anus and rectum|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|312099009|Genitourinary chlamydia infection|A78A3|Chlamydial inf of pelviperitoneum oth genitourinary organs|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|231861005|Chlamydial conjunctivitis|A78A4|Chlamydial conjunctivitis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|105635000|Retrovirus infection|A798.|Retrovirus infection|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|240532009|Human papillomavirus infection|A79B.|Human papilloma virus infection|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|8098009|Sexually transmitted infectious disease|A9...|Syphilis and other venereal diseases|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|35742006|Congenital syphilis|A90..|Congenital syphilis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|266125005|Early congenital syphilis, symptomatic (less than 2 years)|A900.|Early congenital syphilis with symptoms|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|186833000|Early congenital syphilis - latent|A901.|Early latent congenital syphilis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|4359001|Early congenital syphilis|A902.|Early congenital syphilis NOS|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|44568006|Syphilitic interstitial keratitis|A903.|Syphilitic interstitial keratitis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|266126006|Late congenital neurosyphilis|A904.|Juvenile neurosyphilis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|32735002|Congenital syphilitic encephalitis|A9041|Congenital syphilitic encephalitis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|6267005|Congenital syphilitic meningitis|A9042|Congenital syphilitic meningitis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|82323002|Juvenile syphilis|A905.|Other late congenital syphilis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|87318008|Congenital syphilis with gumma|A9050|Congenital syphilitic gumma|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|86443005|Hutchinson's teeth|A9051|Hutchinson's teeth|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|77782006|Syphilitic saddle nose|A9052|Syphilitic saddle nose|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|186842007|Late congenital syphilitic oculopathy|A9053|Late congenital syphilitic oculopathy|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|608531000000108|Other late congenital syphilis|A905z|Other late congenital syphilis NOS|SEMANTIC|NORMALISED|.950
+Sexually Transmitted Disease|186840004|Other late congenital syphilis|A905z|Other late congenital syphilis NOS|SEMANTIC|NORMALISED|.950
+Sexually Transmitted Disease|186843002|Other late congenital syphilis NOS|A905z|Other late congenital syphilis NOS|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|608541000000104|Other late congenital syphilis NOS|A905z|Other late congenital syphilis NOS|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|827006|Late congenital syphilis, latent (+ sero., - C.S.F., 2 years OR more)|A906.|Latent late congenital syphilis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|608551000000101|Unspecified late congenital syphilis|A907.|Unspecified late congenital syphilis|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|186844008|Unspecified late congenital syphilis|A907.|Unspecified late congenital syphilis|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|154380005|Congenital syphilis|A90z.|Congenital syphilis NOS|SEMANTIC|NORMALISED|.950
+Sexually Transmitted Disease|186845009|Congenital syphilis NOS|A90z.|Congenital syphilis NOS|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|546161000000109|Congenital syphilis NOS|A90z.|Congenital syphilis NOS|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|186846005|Early symptomatic syphilis|A91..|Early symptomatic syphilis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|186847001|Primary genital syphilis|A910.|Primary genital syphilis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|31015008|Primary anal syphilis|A911.|Primary anal syphilis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|266127002|Primary syphilis|A912.|Other primary syphilis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|27460003|Primary breast syphilis|A9120|Primary breast syphilis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|54274001|Primary finger syphilis|A9121|Primary finger syphilis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|28198007|Primary lip syphilis|A9122|Primary lip syphilis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|10345003|Primary tonsil syphilis|A9123|Primary tonsil syphilis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|154381009|Primary syphilis|A912z|Other primary syphilis NOS|SEMANTIC|TOKEN_OVERLAP|1.000
+Sexually Transmitted Disease|266209006|Primary syphilis|A912z|Other primary syphilis NOS|SEMANTIC|TOKEN_OVERLAP|1.000
+Sexually Transmitted Disease|237447001|Primary syphilis of nipple|A912z|Other primary syphilis NOS|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|58433006|Primary genital syphilis|A912z|Other primary syphilis NOS|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|240556008|Primary extragenital syphilis|A912z|Other primary syphilis NOS|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|186848006|Other primary syphilis|A912z|Other primary syphilis NOS|SEMANTIC|NORMALISED|.950
+Sexually Transmitted Disease|546171000000102|Other primary syphilis|A912z|Other primary syphilis NOS|SEMANTIC|NORMALISED|.950
+Sexually Transmitted Disease|546181000000100|Other primary syphilis NOS|A912z|Other primary syphilis NOS|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|186849003|Other primary syphilis NOS|A912z|Other primary syphilis NOS|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|186850003|Secondary syphilis of skin and mucous membrane|A913.|Secondary syphilis of skin or mucus membranes|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|77028001|Secondary syphilis of anus|A9130|Secondary syphilis of anus|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|60528006|Secondary syphilis of mouth|A9131|Secondary syphilis of mouth|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|51960003|Secondary syphilis of pharynx|A9132|Secondary syphilis of pharynx|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|59233003|Secondary syphilis of skin|A9133|Secondary syphilis of skin|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|81339006|Secondary syphilis of tonsils|A9134|Secondary syphilis of tonsils|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|52414005|Secondary syphilis of vulva|A9135|Secondary syphilis of vulva|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|186852006|Secondary syphilis of skin or mucus membranes NOS|A913z|Secondary syphilis of skin or mucus membranes NOS|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|546191000000103|Secondary syphilis of skin or mucus membranes NOS|A913z|Secondary syphilis of skin or mucus membranes NOS|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|59934002|Adenopathy due to secondary syphilis|A914.|Adenopathy due to secondary syphilis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|186854007|Uveitis due to secondary syphilis|A915.|Uveitis due to secondary syphilis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|410478005|Ocular syphilis|A9150|Syphilitic uveitis unspecified|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|66281009|Secondary syphilitic chorioretinitis|A9151|Secondary syphilitic chorioretinitis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|30080002|Secondary syphilitic iridocyclitis|A9152|Secondary syphilitic iridocyclitis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|70983007|Secondary syphilitic uveitis|A915z|Secondary syphilitic uveitis NOS|SEMANTIC|NORMALISED|.950
+Sexually Transmitted Disease|186857000|Secondary syphilitic uveitis NOS|A915z|Secondary syphilitic uveitis NOS|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|546211000000104|Secondary syphilitic uveitis NOS|A915z|Secondary syphilitic uveitis NOS|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|546201000000101|Syphilitic uveitis unspecified|A915z|Secondary syphilitic uveitis NOS|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|186855008|Syphilitic uveitis unspecified|A915z|Secondary syphilitic uveitis NOS|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|266129004|Secondary syphilis of viscera or bone|A916.|Secondary syphilis of viscera or bone|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|69595007|Secondary syphilitic periostitis|A9160|Secondary syphilitic periostitis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|80770009|Secondary syphilis of liver|A9161|Secondary syphilitic hepatitis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|58227000|Secondary syphilis of viscera|A916z|Secondary syphilis of viscera and bone NOS|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|186861006|Secondary syphilis relapse|A917.|Secondary syphilis relapse|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|240557004|Secondary syphilis|A918.|Other forms of secondary syphilis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|186863009|Acute secondary syphilitic meningitis|A9180|Acute secondary syphilitic meningitis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|59307008|Syphilitic alopecia|A9181|Syphilitic alopecia|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|154382002|Secondary syphilis|A918z|Other secondary syphilis NOS|SEMANTIC|TOKEN_OVERLAP|1.000
+Sexually Transmitted Disease|86747005|Secondary syphilis, relapse|A918z|Other secondary syphilis NOS|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|275379000|Secondary syphilis of viscera|A918z|Other secondary syphilis NOS|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|111822006|Secondary syphilis of other viscera|A918z|Other secondary syphilis NOS|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|186864003|Other secondary syphilis NOS|A918z|Other secondary syphilis NOS|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|561721000000101|Other secondary syphilis NOS|A918z|Other secondary syphilis NOS|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|186862004|Other forms of secondary syphilis|A918z|Other secondary syphilis NOS|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|546231000000107|Other forms of secondary syphilis|A918z|Other secondary syphilis NOS|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|266128007|Rash of secondary syphilis|A918z|Other secondary syphilis NOS|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|402952006|Anetoderma secondary to syphilis|A918z|Other secondary syphilis NOS|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|402947001|Late secondary syphilis|A918z|Other secondary syphilis NOS|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|186851004|Secondary syphilis of skin|A919.|Unspecified secondary syphilis|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|1052322008|Secondary syphilis of eye|A919.|Unspecified secondary syphilis|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|186865002|Unspecified secondary syphilis|A919.|Unspecified secondary syphilis|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|561731000000104|Unspecified secondary syphilis|A919.|Unspecified secondary syphilis|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|186867005|Latent early syphilis|A92..|Latent early syphilis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|186868000|Serological relapse after treatment of latent early syphilis|A920.|Serological relapse after treatment of latent early syphilis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|266130009|Acquired syphilis - early latent|A92z.|Latent early syphilis NOS|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|83883001|Cardiovascular syphilis|A93..|Cardiovascular syphilis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|12232008|Syphilitic aneurysm of aorta|A930.|Syphilitic aortic aneurysm|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|20735004|Syphilis-associated aortitis|A931.|Syphilitic aortitis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|67391006|Syphilitic endocarditis|A932.|Syphilitic endocarditis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|186876003|Syphilitic endocarditis of aortic valve|A9320|Syphilitic endocarditis of unspecified valve|SEMANTIC|TOKEN_OVERLAP|.750
+Sexually Transmitted Disease|186874000|Syphilitic endocarditis of unspecified valve|A9320|Syphilitic endocarditis of unspecified valve|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|561751000000106|Syphilitic endocarditis of unspecified valve|A9320|Syphilitic endocarditis of unspecified valve|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|186873006|Syphilitic: [endocarditis] or [valve disease]|A9320|Syphilitic endocarditis of unspecified valve|SEMANTIC|TOKEN_OVERLAP|.750
+Sexually Transmitted Disease|266132001|Syphilitic endocarditis|A9320|Syphilitic endocarditis of unspecified valve|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|186875004|Syphilitic endocarditis of mitral valve|A9321|Syphilitic endocarditis of mitral valve|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|278480000|Syphilitic endocarditis of aortic valve|A9322|Syphilitic endocarditis of aortic valve|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|186877007|Syphilitic endocarditis of tricuspid valve|A9323|Syphilitic endocarditis of tricuspid valve|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|186878002|Syphilitic endocarditis of pulmonary valve|A9324|Syphilitic endocarditis of pulmonary valve|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|186879005|Syphilitic endocarditis of heart valve NOS|A932z|Syphilitic endocarditis of heart valve NOS|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|576991000000100|Syphilitic endocarditis of heart valve NOS|A932z|Syphilitic endocarditis of heart valve NOS|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|577011000000108|Other specified cardiovascular system syphilis|A93y.|Other specified cardiovascular system syphilis|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|186880008|Other specified cardiovascular system syphilis|A93y.|Other specified cardiovascular system syphilis|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|3589003|Syphilitic pericarditis|A93y0|Syphilitic pericarditis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|4082005|Myocarditis caused by Treponema pallidum|A93y1|Syphilitic myocarditis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|186882000|Other specified cardiovascular system syphilis NOS|A93yz|Other specified cardiovascular system syphilis NOS|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|561761000000109|Other specified cardiovascular system syphilis NOS|A93yz|Other specified cardiovascular system syphilis NOS|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|186883005|Cardiovascular syphilis NOS|A93z.|Cardiovascular syphilis NOS|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|561771000000102|Cardiovascular syphilis NOS|A93z.|Cardiovascular syphilis NOS|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|195526002|Late cardiovascular syphilis|A93z.|Cardiovascular syphilis NOS|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|266131008|Late cardiovascular syphilis|A93z.|Cardiovascular syphilis NOS|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|26039008|Neurosyphilis|A94..|Neurosyphilis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|316841006|Tabes dorsalis - neurosyphilis|A940.|Tabes dorsalis - neurosyphilis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|51928006|Paralytic dementia|A941.|General paresis - neurosyphilis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|301086002|Syphilitic meningitis|A942.|Syphilitic meningitis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|37754005|Asymptomatic neurosyphilis|A943.|Asymptomatic neurosyphilis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|266133006|Late quaternary neurosyphilis|A94y.|Other specified neurosyphilis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|26135000|Syphilitic encephalitis|A94y0|Syphilitic encephalitis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|38523005|Syphilitic parkinsonism|A94y1|Syphilitic parkinsonism|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|77939001|Syphilitic disseminated retinochoroiditis|A94y2|Syphilitic disseminated retinochoroiditis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|22386003|Syphilitic optic atrophy|A94y3|Syphilitic optic atrophy|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|36276008|Syphilitic retrobulbar neuritis|A94y4|Syphilitic retrobulbar neuritis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|19206003|Syphilitic acoustic neuritis|A94y5|Syphilitic acoustic neuritis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|186893003|Rupture of syphilitic cerebral aneurysm|A94y6|Rupture of syphilitic cerebral aneurysm|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|186884004|Neurosyphilis|A94z.|Neurosyphilis NOS|SEMANTIC|NORMALISED|.950
+Sexually Transmitted Disease|72083004|Late syphilis|A95..|Other forms of late syphilis with symptoms|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|11338007|Syphilitic episcleritis|A950.|Syphilitic episcleritis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|8555001|Syphilis of lung|A951.|Syphilis of lung|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|34964002|Peritonitis - syphilitic|A952.|Syphilitic peritonitis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|86028001|Syphilis of liver|A953.|Syphilis of liver|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|59530001|Renal syphilis|A954.|Syphilis of kidney|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|50528008|Syphilis of bone|A955.|Syphilis of bone|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|88943008|Syphilis of muscle|A956.|Syphilis of muscle|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|186899004|Syphilis of synovium, tendon or bursa|A957.|Syphilis of synovium, tendon or bursa|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|37430004|Syphilis of synovium|A9570|Syphilis of synovium|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|49923008|Syphilis of tendon|A9571|Syphilis of tendon|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|23550005|Syphilis of bursa|A9572|Syphilis of bursa|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|186900009|Syphilis of synovium, tendon or bursa NOS|A957z|Syphilis of synovium, tendon or bursa NOS|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|562101000000101|Syphilis of synovium, tendon or bursa NOS|A957z|Syphilis of synovium, tendon or bursa NOS|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|562111000000104|Other specified late syphilis|A95y.|Other specified late syphilis|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|186901008|Other specified late syphilis|A95y.|Other specified late syphilis|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|577061000000105|Late symptomatic syphilis NOS|A95z.|Late symptomatic syphilis NOS|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|186902001|Late symptomatic syphilis NOS|A95z.|Late symptomatic syphilis NOS|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|389351000000106|[X]Other symptomatic late syphilis|A95z.|Late symptomatic syphilis NOS|SEMANTIC|TOKEN_OVERLAP|1.000
+Sexually Transmitted Disease|187357004|[X]Other symptomatic late syphilis|A95z.|Late symptomatic syphilis NOS|SEMANTIC|TOKEN_OVERLAP|1.000
+Sexually Transmitted Disease|186903006|Late latent syphilis|A96..|Late latent syphilis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|76272004|Syphilis|A97..|Other and unspecified syphilis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|186905004|Late syphilis unspecified|A970.|Late syphilis unspecified|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|577071000000103|Late syphilis unspecified|A970.|Late syphilis unspecified|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|276200006|Late syphilis|A970.|Late syphilis unspecified|SEMANTIC|NORMALISED|.950
+Sexually Transmitted Disease|444150000|Latent syphilis|A971.|Latent syphilis unspecified|SEMANTIC|NORMALISED|.950
+Sexually Transmitted Disease|67125004|Latent syphilis (+ sero.)|A971.|Latent syphilis unspecified|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|567541000000109|Latent syphilis unspecified|A971.|Latent syphilis unspecified|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|186906003|Latent syphilis unspecified|A971.|Latent syphilis unspecified|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|154379007|Syphilis|A97z.|Syphilis NOS|SEMANTIC|NORMALISED|.950
+Sexually Transmitted Disease|186907007|Syphilis NOS|A97z.|Syphilis NOS|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|567551000000107|Syphilis NOS|A97z.|Syphilis NOS|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|15628003|GC - Gonococcus infection|A98..|Gonococcal infections|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|54825009|Acute gonorrhoea of lower genitourinary tract|A980.|Acute gonorrhoea of lower genitourinary tract|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|80604007|Acute gonococcal bartholinitis|A9800|Acute gonococcal Bartholinitis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|29864006|Acute gonococcal urethritis|A9801|Acute gonococcal urethritis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|2390000|Acute gonococcal vulvovaginitis|A9802|Acute gonococcal vulvovaginitis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|186908002|Acute gonorrhea of lower genitourinary tract|A980z|Acute gonorrhoea of lower genitourinary tract NOS|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|577091000000104|Acute gonorrhoea of lower genitourinary tract NOS|A980z|Acute gonorrhoea of lower genitourinary tract NOS|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|186909005|Acute gonorrhoea of lower genitourinary tract NOS|A980z|Acute gonorrhoea of lower genitourinary tract NOS|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|50970007|Acute gonorrhoea of upper genitourinary tract|A981.|Acute gonorrhoea of upper genitourinary tract|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|186910000|Acute gonorrhoea of upper genitourinary tract|A9810|Acute unspecified gonorrhoea of upper genitourinary tract|SEMANTIC|TOKEN_OVERLAP|1.000
+Sexually Transmitted Disease|186914009|Acute gonorrhea upper genitourinary tract NOS|A9810|Acute unspecified gonorrhoea of upper genitourinary tract|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|186911001|Acute unspecified gonorrhoea of upper genitourinary tract|A9810|Acute unspecified gonorrhoea of upper genitourinary tract|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|566351000000104|Acute unspecified gonorrhoea of upper genitourinary tract|A9810|Acute unspecified gonorrhoea of upper genitourinary tract|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|24868007|Bladder gonorrhoea - acute|A9811|Acute gonococcal cystitis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|111806005|Acute gonococcal prostatitis|A9812|Acute gonococcal prostatitis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|30168008|Acute gonococcal epididymo-orchitis|A9813|Acute gonococcal epididymo-orchitis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|65049003|Acute gonococcal seminal vesiculitis|A9814|Acute gonococcal seminal vesiculitis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|20943002|Acute gonococcal cervicitis|A9815|Acute gonococcal cervicitis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|65295003|Acute gonococcal endometritis|A9816|Acute gonococcal endometritis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|45377007|Acute gonococcal salpingitis|A9817|Acute gonococcal salpingitis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|577111000000109|Acute gonorrhoea upper genitourinary tract NOS|A981z|Acute gonorrhoea upper genitourinary tract NOS|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|186915005|Chronic gonorrhoea of lower genitourinary tract|A982.|Chronic gonorrhoea lower genitourinary tract|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|12373006|Chronic gonococcal bartholinitis|A9820|Chronic gonococcal bartholinitis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|44412000|Chronic inflammation of urethra caused by Neisseria gonorrhoeae|A9821|Chronic gonococcal urethritis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|11906007|Chronic gonococcal vulvovaginitis|A9822|Chronic gonococcal vulvovaginitis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|64389005|Chronic gonorrhea of lower genitourinary tract|A982z|Chronic gonorrhoea of lower genitourinary tract NOS|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|186916006|Chronic gonorrhoea of lower genitourinary tract NOS|A982z|Chronic gonorrhoea of lower genitourinary tract NOS|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|615651000000106|Chronic gonorrhoea of lower genitourinary tract NOS|A982z|Chronic gonorrhoea of lower genitourinary tract NOS|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|80388004|Chronic gonorrhea of upper genitourinary tract|A983.|Chronic gonorrhoea of upper genitourinary tract|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|186918007|Chronic unspecified gonorrhoea of upper genitourinary tract|A9830|Chronic unspecified gonorrhoea of upper genitourinary tract|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|566361000000101|Chronic unspecified gonorrhoea of upper genitourinary tract|A9830|Chronic unspecified gonorrhoea of upper genitourinary tract|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|88813005|Chronic gonococcal cystitis|A9831|Chronic gonococcal cystitis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|60893000|Chronic gonococcal prostatitis|A9832|Chronic gonococcal prostatitis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|35526001|Chronic gonococcal epididymo-orchitis|A9833|Chronic gonococcal epididymo-orchitis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|23975003|Chronic gonococcal seminal vesiculitis|A9834|Chronic gonococcal seminal vesiculitis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|76802005|Chronic gonococcal cervicitis|A9835|Chronic gonococcal cervicitis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|31999004|Uterus - chronic gonorrhoea|A9836|Chronic gonococcal endometritis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|53529004|Chronic gonococcal salpingitis|A9837|Chronic gonococcal salpingitis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|186921009|Chronic gonorrhea of upper genitourinary tract NOS|A983z|Chronic gonorrhoea of upper genitourinary tract NOS|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|186917002|Chronic gonorrhoea of upper genitourinary tract|A983z|Chronic gonorrhoea of upper genitourinary tract NOS|SEMANTIC|NORMALISED|.950
+Sexually Transmitted Disease|547711000000106|Chronic gonorrhoea of upper genitourinary tract NOS|A983z|Chronic gonorrhoea of upper genitourinary tract NOS|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|35876006|Gonococcal eye infection|A984.|Gonococcal eye infection|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|28438004|Opthalmia neonatorum caused by Neisseria|A9840|Neonatal gonococcal conjunctivits|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|111807001|Gonococcal endophthalmia|A9842|Gonococcal endophthalmia|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|40149008|Gonococcal keratitis|A9843|Gonococcal keratitis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|44743006|Gonococcal joint infection|A985.|Gonococcal joint infection|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|266138002|Gonococcal synovitis or tenosynovitis|A9851|Gonococcal synovitis or tenosynovitis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|46699001|Bursitis caused by Neisseria gonorrhoeae|A9852|Gonococcal bursitis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|53664003|Gonococcal spondylitis|A9853|Gonococcal spondylitis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|74372003|Gonococcal pharyngitis|A986.|Gonococcal pharynx infection|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|42746002|Gonorrhoea of rectum|A987.|Gonococcal proctitis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|186931002|Gonorrhoea of anus|A9870|Gonococcal anal infection|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|60335002|Gonococcal keratosis|A98y0|Gonococcal keratosis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|151004|Meningitis due to gonococcus|A98y1|Gonococcal meningitis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|90428001|Gonococcal pericarditis|A98y2|Gonococcal pericarditis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|61048000|Gonococcal endocarditis|A98y3|Gonococcal endocarditis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|9241004|Gonococcal heart disease|A98y4|Other gonococcal heart disease|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|186939000|Gonococcal peritonitis|A98y5|Gonococcal peritonitis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|237041005|Fitz-Hugh and Curtis syndrome|A98y6|Fitzhugh Curtis syndrome|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|634361000000106|Other venereal diseases|A99..|Other venereal diseases|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|186944007|Other venereal diseases|A99..|Other venereal diseases|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|266143009|Chancroid|A990.|Chancroid|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|186946009|Nicholas Favre disease|A991.|Lymphogranuloma venereum|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|446594000|Pharyngeal lymphogranuloma venereum|A9910|Pharyngeal lymphogranuloma venereum|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|447372001|Rectal lymphogranuloma venereum|A9911|Rectal lymphogranuloma venereum|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|28867007|Granuloma inguinale|A992.|Granuloma inguinale|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|67224007|Reiter's disease|A993.|Reiter's disease / syndrome|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|84619001|Nongonococcal urethritis|A994.|Nonspecific urethritis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|444458000|Exposure to nonspecific genital infection|A995.|Nonspecific genital infection|SEMANTIC|TOKEN_OVERLAP|.750
+Sexually Transmitted Disease|634371000000104|Other specified venereal diseases|A99y.|Other specified venereal diseases|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|186948005|Other specified venereal diseases|A99y.|Other specified venereal diseases|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|286883009|Other venereal/spirochaete disease|A99z.|Venereal disease NOS|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|673581000000108|Other venereal/spirochaete disease|A99z.|Venereal disease NOS|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|276972005|Statutory venereal disease|A99z.|Venereal disease NOS|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|611051000000101|Venereal disease NOS|A99z.|Venereal disease NOS|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|186949002|Venereal disease NOS|A99z.|Venereal disease NOS|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|154392005|Venereal/spirochaete disease NOS|A99z.|Venereal disease NOS|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|697521000000107|Venereal/spirochaete disease NOS|A99z.|Venereal disease NOS|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|286884003|Venereal/spirochete disease NOS|A99z.|Venereal disease NOS|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|161418008|H/O: [venereal disease] or [STD]|A99z.|Venereal disease NOS|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|266124009|Syphilis and other venereal diseases|A9y..|Other specified syphilis or other venereal diseases|SEMANTIC|TOKEN_OVERLAP|.750
+Sexually Transmitted Disease|689371000000106|Syphilis and other venereal diseases|A9y..|Other specified syphilis or other venereal diseases|SEMANTIC|TOKEN_OVERLAP|.750
+Sexually Transmitted Disease|186950002|Other specified syphilis or other venereal diseases|A9y..|Other specified syphilis or other venereal diseases|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|607311000000107|Other specified syphilis or other venereal diseases|A9y..|Other specified syphilis or other venereal diseases|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|156133009|Pregnancy with venereal disease (& [gonorrhoea] or [syphilis])|A9z..|Syphilis or venereal disease NOS|SEMANTIC|TOKEN_OVERLAP|.600
+Sexually Transmitted Disease|607321000000101|Syphilis or venereal disease NOS|A9z..|Syphilis or venereal disease NOS|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|186951003|Syphilis or venereal disease NOS|A9z..|Syphilis or venereal disease NOS|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|170469000|Venereal disease contact (& [gonorrhea] or [syphilis])|A9z..|Syphilis or venereal disease NOS|SEMANTIC|TOKEN_OVERLAP|.600
+Sexually Transmitted Disease|41116009|Spirochaetal infection|AA...|Other spirochaetal diseases|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|56335008|Trichomonas infection|AD1..|Trichomoniasis - trichomonas|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|35089004|TV - Trichomonas vaginalis infection|AD10.|Urogenital trichomonas|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|81598001|Trichomonal vulvovaginitis|AD101|Trichomonal vulvovaginitis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|30116001|Trichomonal urethritis|AD102|Trichomonal urethritis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|71590000|Trichomonal prostatitis|AD103|Trichomonal prostatitis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|71011005|Infestation by Phthirus pubis|AD22.|Phthirus pubis - pubic lice|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|240594008|Genital mycoplasma infection|Ayu3V|[X]Mycoplasma infection, unspecified|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|187348005|[X]Infections with a predominantly sexual mode of transmission|Ayu4.|[X]Infections with a predominantly sexual mode of transmiss|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|455491000000109|[X]Infections with a predominantly sexual mode of transmission|Ayu4.|[X]Infections with a predominantly sexual mode of transmiss|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|413891000000100|[X]Early congenital syphilis, unspecified|Ayu40|[X]Early congenital syphilis, unspecified|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|187349002|[X]Early congenital syphilis, unspecified|Ayu40|[X]Early congenital syphilis, unspecified|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|186834006|Early congenital syphilis NOS|Ayu40|[X]Early congenital syphilis, unspecified|SEMANTIC|NORMALISED|.950
+Sexually Transmitted Disease|629031000000102|Early congenital syphilis NOS|Ayu40|[X]Early congenital syphilis, unspecified|SEMANTIC|NORMALISED|.950
+Sexually Transmitted Disease|186832005|Early congenital syphilis with symptoms|Ayu40|[X]Early congenital syphilis, unspecified|SEMANTIC|TOKEN_OVERLAP|.750
+Sexually Transmitted Disease|721583004|Mucocutaneous early congenital syphilis|Ayu40|[X]Early congenital syphilis, unspecified|SEMANTIC|TOKEN_OVERLAP|.750
+Sexually Transmitted Disease|735515000|Symptomatic late congenital syphilis|Ayu41|[X]Other late congenital syphilis, symptomatic|SEMANTIC|TOKEN_OVERLAP|1.000
+Sexually Transmitted Disease|187350002|[X]Other late congenital syphilis, symptomatic|Ayu41|[X]Other late congenital syphilis, symptomatic|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|401931000000108|[X]Other late congenital syphilis, symptomatic|Ayu41|[X]Other late congenital syphilis, symptomatic|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|427851000000108|[X]Late congenital syphilis, unspecified|Ayu42|[X]Late congenital syphilis, unspecified|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|187351003|[X]Late congenital syphilis, unspecified|Ayu42|[X]Late congenital syphilis, unspecified|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|1142095003|Late congenital cardiovascular syphilis|Ayu42|[X]Late congenital syphilis, unspecified|SEMANTIC|TOKEN_OVERLAP|.750
+Sexually Transmitted Disease|240553000|Late congenital neurovascular syphilis|Ayu42|[X]Late congenital syphilis, unspecified|SEMANTIC|TOKEN_OVERLAP|.750
+Sexually Transmitted Disease|187352005|[X]Congenital syphilis, unspecified|Ayu43|[X]Congenital syphilis, unspecified|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|464571000000100|[X]Congenital syphilis, unspecified|Ayu43|[X]Congenital syphilis, unspecified|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|187353000|[X]Primary syphilis of other sites|Ayu44|[X]Primary syphilis of other sites|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|452801000000105|[X]Primary syphilis of other sites|Ayu44|[X]Primary syphilis of other sites|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|399271000000106|[X]Other secondary syphilis|Ayu45|[X]Other secondary syphilis|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|187354006|[X]Other secondary syphilis|Ayu45|[X]Other secondary syphilis|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|63751007|Secondary syphilis of bone|Ayu45|[X]Other secondary syphilis|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|275378008|Secondary syphilis of bone|Ayu45|[X]Other secondary syphilis|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|57334003|Symptomatic early syphilis|Ayu46|[X]Early syphilis, unspecified|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|186869008|Latent early syphilis NOS|Ayu46|[X]Early syphilis, unspecified|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|561741000000108|Latent early syphilis NOS|Ayu46|[X]Early syphilis, unspecified|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|187355007|[X]Early syphilis, unspecified|Ayu46|[X]Early syphilis, unspecified|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|186866001|[X]Early syphilis, unspecified|Ayu46|[X]Early syphilis, unspecified|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|430481000000103|[X]Early syphilis, unspecified|Ayu46|[X]Early syphilis, unspecified|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|396271000000102|[X]Early syphilis, unspecified|Ayu46|[X]Early syphilis, unspecified|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|396281000000100|[X]Neurosyphilis, unspecified|Ayu47|[X]Neurosyphilis, unspecified|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|278481001|Quaternary syphilis|Ayu48|[X]Other symptomatic late syphilis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|788998009|Ocular late syphilis|Ayu49|[X]Late syphilis, unspecified|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|187358009|[X]Late syphilis, unspecified|Ayu49|[X]Late syphilis, unspecified|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|461961000000102|[X]Late syphilis, unspecified|Ayu49|[X]Late syphilis, unspecified|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|1010615002|Late syphilis of lung|Ayu49|[X]Late syphilis, unspecified|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|788975001|Late syphilis of skin|Ayu49|[X]Late syphilis, unspecified|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|187359001|[X]Syphilis, unspecified|Ayu4A|[X]Syphilis, unspecified|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|409411000000106|[X]Syphilis, unspecified|Ayu4A|[X]Syphilis, unspecified|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|438971000000108|[X]Other gonococcal infections|Ayu4B|[X]Other gonococcal infections|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|390531000000100|[X]Gonococcal infection, unspecified|Ayu4C|[X]Gonococcal infection, unspecified|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|762257007|Disseminated gonococcal infection|Ayu4C|[X]Gonococcal infection, unspecified|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|240571007|Neonatal gonococcal infection|Ayu4C|[X]Gonococcal infection, unspecified|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|478751000000103|[X]Sexually transmitted chlamydial infection of other sites|Ayu4D|[X]Sexually transmitted chlamydial infection of other sites|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|187362003|[X]Sexually transmitted chlamydial infection of other sites|Ayu4D|[X]Sexually transmitted chlamydial infection of other sites|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|187366000|[X]Other specified predominantly sexually transmitted diseases|Ayu4H|[X]Other specifd predominantly sexually transmitted diseases|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|425641000000100|[X]Other specified predominantly sexually transmitted diseases|Ayu4H|[X]Other specifd predominantly sexually transmitted diseases|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|154378004|Sexually transmitted diseases|Ayu4H|[X]Other specifd predominantly sexually transmitted diseases|SEMANTIC|TOKEN_OVERLAP|.600
+Sexually Transmitted Disease|15927341000119106|Sexually transmitted disease carrier|Ayu4J|[X]Unspecified sexually transmitted disease|SEMANTIC|TOKEN_OVERLAP|.750
+Sexually Transmitted Disease|25681007|Sexually transmitted disease clinic|Ayu4J|[X]Unspecified sexually transmitted disease|SEMANTIC|TOKEN_OVERLAP|.750
+Sexually Transmitted Disease|10759841000119104|Sexually transmitted disease in childbirth|Ayu4J|[X]Unspecified sexually transmitted disease|SEMANTIC|TOKEN_OVERLAP|.750
+Sexually Transmitted Disease|339191000000109|Sexually transmitted disease prevention education|Ayu4J|[X]Unspecified sexually transmitted disease|SEMANTIC|TOKEN_OVERLAP|.600
+Sexually Transmitted Disease|187367009|[X]Unspecified sexually transmitted disease|Ayu4J|[X]Unspecified sexually transmitted disease|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|431891000000106|[X]Unspecified sexually transmitted disease|Ayu4J|[X]Unspecified sexually transmitted disease|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|445563009|Counseling for sexually transmitted disease|Ayu4J|[X]Unspecified sexually transmitted disease|SEMANTIC|TOKEN_OVERLAP|.750
+Sexually Transmitted Disease|402081000000102|[X]Chlamydial infection of genitourinary tract, unspecified|Ayu4K|[X]Chlamydial infection of genitourinary tract, unspecified|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|444011000000109|[X]Chlamydial infection of genitourinary tract, unspecified|Ayu4K|[X]Chlamydial infection of genitourinary tract, unspecified|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|186735003|[X]Chlamydial infection of genitourinary tract, unspecified|Ayu4K|[X]Chlamydial infection of genitourinary tract, unspecified|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|187368004|[X]Chlamydial infection of genitourinary tract, unspecified|Ayu4K|[X]Chlamydial infection of genitourinary tract, unspecified|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|237109002|Vulval warts|Ayu4L|[X]Vulval warts|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|298128008|Perineal wart|Ayu4M|[X]Perineal warts|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|471481000000108|[X]Other diseases caused by chlamydiae|Ayu6.|[X]Other diseases caused by chlamydiae|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|240590004|Neonatal chlamydial infection|Ayu62|[X]Chlamydial infection, unspecified|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|406581000|Gonococcal infection of the central nervous system|Ayu8F|[X]Unspecified viral infection/central nervous system|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|860874006|Enteritis due to human immunodeficiency virus disease|AyuC.|[X]Human immunodeficiency virus disease|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|1142055000|Human immunodeficiency virus modified skin disease|AyuC.|[X]Human immunodeficiency virus disease|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|550891000000106|Human immunodeficiency virus resulting in other disease|AyuC.|[X]Human immunodeficiency virus disease|SEMANTIC|TOKEN_OVERLAP|.800
+Sexually Transmitted Disease|1193752001|Human immunodeficiency virus disease enteritis of intestine|AyuC.|[X]Human immunodeficiency virus disease|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|468931000000102|[X]Human immunodeficiency virus disease|AyuC.|[X]Human immunodeficiency virus disease|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|187438009|[X]Human immunodeficiency virus disease|AyuC.|[X]Human immunodeficiency virus disease|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|860872005|Oesophagitis due to human immunodeficiency virus disease|AyuC.|[X]Human immunodeficiency virus disease|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|411831000000102|[X]HIV disease resulting in other bacterial infections|AyuC0|[X]HIV disease resulting in other bacterial infections|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|441561000000104|[X]HIV disease resulting in other viral infections|AyuC1|[X]HIV disease resulting in other viral infections|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|413621000000104|[X]HIV disease resulting in other mycoses|AyuC2|[X]HIV disease resulting in other mycoses|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|186721000|Human immunodeficiency virus (HIV) disease resulting in multiple infections|AyuC3|[X]HIV disease resulting in multiple infections|SEMANTIC|TOKEN_OVERLAP|.625
+Sexually Transmitted Disease|418661000000104|[X]Hiv disease resulting in other infectious and parasitic diseases|AyuC4|[X]HIV disease resulting/other infectious+parasitic diseases|SEMANTIC|TOKEN_OVERLAP|1.000
+Sexually Transmitted Disease|466811000000104|[X]Hiv disease resulting in unspecified infectious and parasitic disease|AyuC5|[X]HIV disease resulting/unspcf infectious+parasitic disease|SEMANTIC|TOKEN_OVERLAP|.833
+Sexually Transmitted Disease|400401000000101|[X]Hiv disease resulting in unspecified infectious and parasitic disease|AyuC5|[X]HIV disease resulting/unspcf infectious+parasitic disease|SEMANTIC|TOKEN_OVERLAP|.833
+Sexually Transmitted Disease|186713006|[X]Hiv disease resulting in unspecified infectious and parasitic disease|AyuC5|[X]HIV disease resulting/unspcf infectious+parasitic disease|SEMANTIC|TOKEN_OVERLAP|.833
+Sexually Transmitted Disease|187445009|[X]Hiv disease resulting in unspecified infectious and parasitic disease|AyuC5|[X]HIV disease resulting/unspcf infectious+parasitic disease|SEMANTIC|TOKEN_OVERLAP|.833
+Sexually Transmitted Disease|442351000000104|[X]HIV disease resulting in other non-Hodgkin's lymphoma|AyuC6|[X]HIV disease resulting in other non-Hodgkin's lymphoma|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|186724008|Human immunodeficiency virus (HIV) disease resulting in other types of non-Hodgkin's lymphoma|AyuC6|[X]HIV disease resulting in other non-Hodgkin's lymphoma|SEMANTIC|TOKEN_OVERLAP|.600
+Sexually Transmitted Disease|615541000000109|Human immunodeficiency virus (HIV) disease resulting in other types of non-Hodgkin's lymphoma|AyuC6|[X]HIV disease resulting in other non-Hodgkin's lymphoma|SEMANTIC|TOKEN_OVERLAP|.600
+Sexually Transmitted Disease|455571000000106|[X]HIV disease resulting in other malignant neoplasms|AyuC8|[X]HIV disease resulting in other malignant neoplasms|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|186712001|[X]HIV disease resulting in unspecified malignant neoplasm|AyuC9|[X]HIV disease resulting in unspecified malignant neoplasm|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|432411000000106|[X]HIV disease resulting in unspecified malignant neoplasm|AyuC9|[X]HIV disease resulting in unspecified malignant neoplasm|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|413311000000103|[X]HIV disease resulting in unspecified malignant neoplasm|AyuC9|[X]HIV disease resulting in unspecified malignant neoplasm|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|187450003|[X]HIV disease resulting in multiple diseases classified elsewhere|AyuCA|[X]HIV disease resulting in multiple diseases CE|SEMANTIC|TOKEN_OVERLAP|.714
+Sexually Transmitted Disease|186711008|[X]HIV disease resulting in multiple diseases classified elsewhere|AyuCA|[X]HIV disease resulting in multiple diseases CE|SEMANTIC|TOKEN_OVERLAP|.714
+Sexually Transmitted Disease|413321000000109|[X]HIV disease resulting in multiple diseases classified elsewhere|AyuCA|[X]HIV disease resulting in multiple diseases CE|SEMANTIC|TOKEN_OVERLAP|.714
+Sexually Transmitted Disease|444811000000101|[X]HIV disease resulting in multiple diseases classified elsewhere|AyuCA|[X]HIV disease resulting in multiple diseases CE|SEMANTIC|TOKEN_OVERLAP|.714
+Sexually Transmitted Disease|428061000000103|[X]HIV disease resulting in other specified conditions|AyuCC|[X]HIV disease resulting in other specified conditions|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|480411000000100|[V]Family history of human immunodeficiency virus [HIV] disease|AyuCD|[X]Unspecified human immunodeficiency virus [HIV] disease|SEMANTIC|TOKEN_OVERLAP|.714
+Sexually Transmitted Disease|439901000000106|[X]Unspecified human immunodeficiency virus [HIV] disease|AyuCD|[X]Unspecified human immunodeficiency virus [HIV] disease|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|187453001|[X]Unspecified human immunodeficiency virus [HIV] disease|AyuCD|[X]Unspecified human immunodeficiency virus [HIV] disease|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|278977008|Human immunodeficiency virus (HIV) status|AyuCD|[X]Unspecified human immunodeficiency virus [HIV] disease|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|186717007|Human immunodeficiency virus (HIV) disease resulting in mycobacterial infection|AyuCD|[X]Unspecified human immunodeficiency virus [HIV] disease|SEMANTIC|TOKEN_OVERLAP|.625
+Sexually Transmitted Disease|186723002|Human immunodeficiency virus (HIV) disease resulting in Burkitt's lymphoma|AyuCD|[X]Unspecified human immunodeficiency virus [HIV] disease|SEMANTIC|TOKEN_OVERLAP|.625
+Sexually Transmitted Disease|186719005|Human immunodeficiency virus (HIV) disease resulting in candidiasis|AyuCD|[X]Unspecified human immunodeficiency virus [HIV] disease|SEMANTIC|TOKEN_OVERLAP|.714
+Sexually Transmitted Disease|186718002|Human immunodeficiency virus (HIV) disease resulting in cytomegaloviral disease|AyuCD|[X]Unspecified human immunodeficiency virus [HIV] disease|SEMANTIC|TOKEN_OVERLAP|.714
+Sexually Transmitted Disease|230180003|HIV - Human immunodeficiency virus leukoencephalopathy|AyuCD|[X]Unspecified human immunodeficiency virus [HIV] disease|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|240103002|HIV - Human immunodeficiency virus myopathy|AyuCD|[X]Unspecified human immunodeficiency virus [HIV] disease|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|398329009|HIV - Human immunodeficiency virus encephalitis|AyuCD|[X]Unspecified human immunodeficiency virus [HIV] disease|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|10755671000119100|HIV (human immunodeficiency virus) in childbirth|AyuCD|[X]Unspecified human immunodeficiency virus [HIV] disease|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|24091000087107|HIV (human immunodeficiency virus) nursing|AyuCD|[X]Unspecified human immunodeficiency virus [HIV] disease|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|402913004|Bowenoid papulosis|B829.|Bowenoid papulosis|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|51945001|Abortion with electrolyte imbalance|C36zz|Electrolyte imbalance NOS|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|421851008|Acquired haemolytic anaemia associated with AIDS|D11z.|Acquired haemolytic anaemia NOS|SEMANTIC|TOKEN_OVERLAP|.600
+Termination of Pregnancy|35509007|Abortion with defibrination syndrome|D306.|Defibrination syndrome|SEMANTIC|TOKEN_OVERLAP|.667
+Gender Related Issues|472948001|Cross-dressing|E223.|Transvestism|DMWB|DMWB_CROSSMAP|1.000
+Gender Related Issues|407374003|Transsexual|E225.|Trans-sexualism|DMWB|DMWB_CROSSMAP|1.000
+Gender Related Issues|472945003|Previously asexual transsexual|E2251|Trans-sexuality with asexual history|DMWB|DMWB_CROSSMAP|1.000
+Gender Related Issues|472947006|Previously homosexual transsexual|E2252|Trans-sexuality with homosexual history|DMWB|DMWB_CROSSMAP|1.000
+Gender Related Issues|472946002|Previously heterosexual transsexual|E2253|Trans-sexuality with heterosexual history|DMWB|DMWB_CROSSMAP|1.000
+Gender Related Issues|191787001|Psychosexual identity disorder|E226.|Psychosexual identity disorder|DMWB|DMWB_CROSSMAP|1.000
+Gender Related Issues|191790007|Psychosexual identity disorder NOS|E226z|Psychosexual identity disorder NOS|SEMANTIC|EXACT|1.000
+Gender Related Issues|539981000000107|Psychosexual identity disorder NOS|E226z|Psychosexual identity disorder NOS|SEMANTIC|EXACT|1.000
+Gender Related Issues|191798000|Gender role disorder of adolescent or adult|E22y4|Gender role disorder of adolescent or adult|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|421529006|Acquired immune deficiency syndrome-related dementia|Eu024|[X]Dementia in human immunodef virus [HIV] disease|DMWB|DMWB_CROSSMAP|1.000
+Gender Related Issues|87991007|Gender identity disorder|Eu64.|[X]Gender identity disorders|DMWB|DMWB_CROSSMAP|1.000
+Gender Related Issues|192508005|Transsexualism|Eu640|[X]Transsexualism|SEMANTIC|NORMALISED|.950
+Gender Related Issues|4296008|Transsexualism|Eu640|[X]Transsexualism|SEMANTIC|NORMALISED|.950
+Gender Related Issues|539971000000105|Transsexualism NOS|Eu640|[X]Transsexualism|SEMANTIC|NORMALISED|.950
+Gender Related Issues|191786005|Transsexualism NOS|Eu640|[X]Transsexualism|SEMANTIC|NORMALISED|.950
+Gender Related Issues|472989003|Dual-role transvestism|Eu641|[X]Dual-role transvestism|DMWB|DMWB_CROSSMAP|1.000
+Gender Related Issues|5095008|Gender identity disorder of childhood|Eu642|[X]Gender identity disorder of childhood|DMWB|DMWB_CROSSMAP|1.000
+Gender Related Issues|192507000|[X]Gender identity disorders|Eu64y|[X]Other gender identity disorders|SEMANTIC|TOKEN_OVERLAP|1.000
+Gender Related Issues|412311000000105|[X]Gender identity disorders|Eu64y|[X]Other gender identity disorders|SEMANTIC|TOKEN_OVERLAP|1.000
+Gender Related Issues|442041000000100|[X]Other gender identity disorders|Eu64y|[X]Other gender identity disorders|SEMANTIC|EXACT|1.000
+Gender Related Issues|192510007|[X]Other gender identity disorders|Eu64y|[X]Other gender identity disorders|SEMANTIC|EXACT|1.000
+Gender Related Issues|412321000000104|[X]Gender identity disorder, unspecified|Eu64z|[X]Gender identity disorder, unspecified|SEMANTIC|EXACT|1.000
+Gender Related Issues|192511006|[X]Gender identity disorder, unspecified|Eu64z|[X]Gender identity disorder, unspecified|SEMANTIC|EXACT|1.000
+Gender Related Issues|57715001|Gender identity disorder of adolescence|Eu64z|[X]Gender identity disorder, unspecified|SEMANTIC|TOKEN_OVERLAP|.750
+Gender Related Issues|18003009|Gender identity disorder of adulthood|Eu64z|[X]Gender identity disorder, unspecified|SEMANTIC|TOKEN_OVERLAP|.750
+Gender Related Issues|472981000|Fetishistic transvestism|Eu651|[X]Fetishistic transvestism|DMWB|DMWB_CROSSMAP|1.000
+Gender Related Issues|280377008|Sexual maturation disorder of sexual identity|Eu660|[X]Sexual maturation disorder|SEMANTIC|TOKEN_OVERLAP|.750
+Sexually Transmitted Disease|192647003|Secondary syphilitic meningitis|F0075|Meningitis due to secondary syphilis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|192699001|Syphilis encephalitis (& congenital)|F0331|Encephalitis due to congenital syphilis|SEMANTIC|TOKEN_OVERLAP|.750
+Sexually Transmitted Disease|192700000|Encephalitis due to syphilis unspecified|F0332|Encephalitis due to syphilis unspecified|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|586501000000107|Encephalitis due to syphilis unspecified|F0332|Encephalitis due to syphilis unspecified|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|69154000|AIDS with background retinopathy|F421z|Other background retinopathy NOS|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|186835007|Syphilitic interstitial keratitis|F4A50|Unspecified interstitial keratitis|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|193786000|Keratitis due to syphilis|F4A54|Keratitis due to syphilis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|186890000|Syphilitic optic atrophy|F4H10|Unspecified optic atrophy|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|4129001|Argyll-Robertson pupil|F4K44|Argyll Robertson pupil|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|24225004|Adie's pupil syndrome|F4K46|Adie's pupil syndrome|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|186892008|Syphilitic acoustic neuritis|F5850|Acoustic neuritis|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|1142112002|Late congenital syphilitic sensorineural deafness|F5914|Congenital sensorineural deafness|SEMANTIC|TOKEN_OVERLAP|.600
+Sexually Transmitted Disease|194907008|Acute syphilitic pericarditis|G5002|Acute pericarditis - syphilitic|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|194910001|Acute gonococcal pericarditis|G5005|Acute pericarditis - gonococcal|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|194947001|Acute syphilitic myocarditis|G5204|Acute myocarditis - syphilitic|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|82355002|Syphilitic aortic stenosis|G5415|Aortic stenosis|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|230735006|Syphilitic cerebral arteritis|G674.|Cerebral arteritis|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|186871008|Syphilitic aortic aneurysm|G717.|Aortic aneurysm - syphilitic|SEMANTIC|TOKEN_OVERLAP|1.000
+Sexually Transmitted Disease|234017002|Syphilitic aneurysm|G717.|Aortic aneurysm - syphilitic|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|186872001|Syphilitic aortitis|G767.|Aortitis - syphilitic|SEMANTIC|TOKEN_OVERLAP|1.000
+Sexually Transmitted Disease|154383007|Cardiovascular syphilis|Gy0..|Cardiovascular syphilis|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|186870009|Cardiovascular syphilis|Gy0..|Cardiovascular syphilis|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|233610007|Neonatal chlamydial pneumonia|H233.|Chlamydial pneumonia|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|196139002|Lung disease with syphilis|H57y5|Lung disease with syphilis|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|307423008|Gonococcal pelvic peritonitis|J5500|Peritonitis - gonococcal|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|186898007|Syphilitic peritonitis|J5501|Peritonitis - syphilitic|SEMANTIC|TOKEN_OVERLAP|1.000
+Sexually Transmitted Disease|197172005|Chlamydial peritonitis|J5504|Chlamydial peritonitis|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|54453000|Abortion with acute yellow atrophy of liver|J6002|Acute yellow atrophy|SEMANTIC|TOKEN_OVERLAP|.600
+Sexually Transmitted Disease|197305002|Syphilitic portal cirrhosis|J615F|Syphilitic portal cirrhosis|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|31005002|Postprocedural hepatorenal syndrome|J624.|Hepatorenal syndrome|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|197347003|Quaternary syphilitic hepatitis|J6321|Hepatitis in late syphilis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|197348008|Hepatitis in secondary syphilis|J6322|Hepatitis in secondary syphilis|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|10833000|Abortion with renal tubular necrosis|K040.|Acute renal tubular necrosis|SEMANTIC|TOKEN_OVERLAP|.600
+Termination of Pregnancy|14853005|Abortion with acute renal failure|K04z.|Acute renal failure NOS|SEMANTIC|TOKEN_OVERLAP|.750
+Sexually Transmitted Disease|197757004|Late syphilis of kidney|K0y0.|Late syphilis of kidney|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|197848003|Gonococcal cystitis|K1545|Cystitis in gonorrhoea|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|197850006|Trichomonal cystitis|K1547|Cystitis in trichomoniasis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|236687008|Gonococcal urethral abscess|K1700|Urethral abscess unspecified|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|444834005|Gonococcal urethral gland abscess|K1702|Urethral gland abscess|SEMANTIC|TOKEN_OVERLAP|.750
+Sexually Transmitted Disease|31822004|Inflammation of urethra|K17y.|Other urethritis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|89656008|Urethral meatitis|K17y4|Urethral meatitis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|72225002|Urethral stricture due to gonococcal infection|K1801|Urethral stricture due to infection EC|SEMANTIC|TOKEN_OVERLAP|.800
+Sexually Transmitted Disease|29500006|Urethral stricture due to syphilis|K1801|Urethral stricture due to infection EC|SEMANTIC|TOKEN_OVERLAP|.600
+Termination of Pregnancy|87307008|Abortion with urinary tract infection|K1905|Urinary tract infection|SEMANTIC|TOKEN_OVERLAP|.750
+Sexually Transmitted Disease|197966009|Syphilitic prostatitis|K2142|Prostatitis in syphilis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|197967000|Gonococcal prostatitis|K2144|Prostatitis in gonorrhoea|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|236767000|Chlamydial epididymitis|K2416|Chlamydial epididymitis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|236773004|Chlamydial epididymo-orchitis|K242.|Epididymo-orchitis|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|236772009|Gonococcal epididymo-orchitis|K242.|Epididymo-orchitis|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|301990003|Gonococcal seminal vesiculitis|K2800|Seminal vesiculitis unspecified|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|198130006|Female pelvic inflammation|K4...|Female pelvic inflammatory diseases|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|398319002|Abscess of fallopian tube|K4020|Fallopian tube abscess|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|237046000|Gonococcal tubo-ovarian abscess|K4022|Tubo-ovarian abscess|SEMANTIC|TOKEN_OVERLAP|.750
+Termination of Pregnancy|373900008|Abortion with salpingo-oophoritis|K4025|Salpingo-oophoritis unspecified|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|80679003|Abortion with salpingo-oophoritis|K4025|Salpingo-oophoritis unspecified|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|88157006|Salpingitis|K4026|Salpingitis unspecified|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|237037006|Acute PID - acute pelvic inflammatory disease|K403.|Acute parametritis and pelvic cellulitis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|237044002|Chronic pelvic inflammatory disease|K404z|Chronic pelvic inflammatory diseases NOS|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|771412001|History of pelvic inflammatory disease|K409.|Acute pelvic inflammatory disease|SEMANTIC|TOKEN_OVERLAP|.600
+Sexually Transmitted Disease|1263771009|Acute on chronic pelvic inflammatory disease|K409.|Acute pelvic inflammatory disease|SEMANTIC|TOKEN_OVERLAP|.800
+Sexually Transmitted Disease|188463006|Chlamydial pelvic inflammatory disease|K409.|Acute pelvic inflammatory disease|SEMANTIC|TOKEN_OVERLAP|.600
+Sexually Transmitted Disease|271488001|Mycoplasmal pelvic inflammatory disease|K409.|Acute pelvic inflammatory disease|SEMANTIC|TOKEN_OVERLAP|.600
+Sexually Transmitted Disease|198175009|Female syphilitic pelvic inflammatory disease|K40y0|Female syphilitic pelvic inflammatory disease|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|198176005|Female chlamydial pelvic inflammatory disease|K40y1|Female chlamydial pelvic inflammatory disease|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|237084006|Chlamydial cervicitis|K4209|Chlamydia cervicitis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|240573005|Gonococcal Bartholin gland abscess|K423.|Abscess of Bartholin's gland|SEMANTIC|TOKEN_OVERLAP|.750
+Sexually Transmitted Disease|198242009|Female gonococcal pelvic inflammatory disease|K44..|Female gonococcal pelvic inflammatory disease|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|562441000000107|Female pelvic inflammatory disease NOS|K4z..|Female pelvic inflammatory disease NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|44448003|Abortion with laceration of broad ligament|K536.|Broad ligament laceration syndrome|SEMANTIC|TOKEN_OVERLAP|.600
+Termination of Pregnancy|373912007|Abortion with laceration of broad ligament|K536.|Broad ligament laceration syndrome|SEMANTIC|TOKEN_OVERLAP|.600
+Assisted Fertilisation|213199004|Complications associated with artificial fertilization|Kyu9H|[X]Other complicatns associated wth artificial fertilization|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|363681007|Pregnancy with abortive outcome|L0...|Pregnancy with abortive outcome|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|267294003|Abortion - spontaneous|L040.|Spontaneous abortion unspecified|SEMANTIC|TOKEN_OVERLAP|1.000
+Termination of Pregnancy|156071003|Abortion: [spontaneous] or [complete] or [incomplete]|L042.|Spontaneous abortion complete|SEMANTIC|TOKEN_OVERLAP|.750
+Termination of Pregnancy|669831000000102|Complete spontaneous abortion with complication NOS|L042x|Complete spontaneous abortion with complication NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198665007|Complete spontaneous abortion with complication NOS|L042x|Complete spontaneous abortion with complication NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|672481000000104|Complete spontaneous abortion NOS|L042z|Complete spontaneous abortion NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|18119004|Abortion complicated by embolism|L0432|Unspecified inevitable abortion complicated by embolism|SEMANTIC|TOKEN_OVERLAP|.750
+Termination of Pregnancy|51830007|Abortion without complication|L043z|Unspecified inevitable abortion without complication|SEMANTIC|TOKEN_OVERLAP|.750
+Termination of Pregnancy|39406005|Legally induced abortion - TOP|L05..|Legally induced abortion|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|198691008|Legal abortion unspecified|L050.|Legal abortion unspecified|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|669851000000109|Legal abortion unspecified|L050.|Legal abortion unspecified|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|56827004|Legal abortion complicated by genital-pelvic infection|L0500|Unspecified legal abortion + genital tract/pelvic infection|SEMANTIC|TOKEN_OVERLAP|.714
+Termination of Pregnancy|672511000000105|Unspecified legal abortion with genital tract or pelvic infection|L0500|Unspecified legal abortion + genital tract/pelvic infection|SEMANTIC|TOKEN_OVERLAP|1.000
+Termination of Pregnancy|198692001|Unspecified legal abortion with genital tract or pelvic infection|L0500|Unspecified legal abortion + genital tract/pelvic infection|SEMANTIC|TOKEN_OVERLAP|1.000
+Termination of Pregnancy|58071009|Legal termination of pregnancy complicated by delayed and/or excessive hemorrhage|L0501|Unspecified legal abortion + delayed/excessive haemorrhage|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|626771000000105|Unspecified legal abortion with damage to pelvic organs or tissues|L0502|Unspecified legal abortion + damage to pelvic organs/tissues|SEMANTIC|TOKEN_OVERLAP|1.000
+Termination of Pregnancy|198694000|Unspecified legal abortion with damage to pelvic organs or tissues|L0502|Unspecified legal abortion + damage to pelvic organs/tissues|SEMANTIC|TOKEN_OVERLAP|1.000
+Termination of Pregnancy|198695004|Unspecified legal abortion with renal failure|L0503|Unspecified legal abortion with renal failure|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|626781000000107|Unspecified legal abortion with renal failure|L0503|Unspecified legal abortion with renal failure|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198696003|Unspecified legal abortion with metabolic disorder|L0504|Unspecified legal abortion with metabolic disorder|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|613971000000105|Unspecified legal abortion with metabolic disorder|L0504|Unspecified legal abortion with metabolic disorder|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198697007|Unspecified legal abortion with shock|L0505|Unspecified legal abortion with shock|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|698411000000101|Unspecified legal abortion with shock|L0505|Unspecified legal abortion with shock|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198698002|Unspecified legal abortion with embolism|L0506|Unspecified legal abortion with embolism|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|698421000000107|Unspecified legal abortion with embolism|L0506|Unspecified legal abortion with embolism|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|29601003|Legal abortion with pyaemic embolism|L0506|Unspecified legal abortion with embolism|SEMANTIC|TOKEN_OVERLAP|.750
+Termination of Pregnancy|88980002|Legal abortion with soap embolism|L0506|Unspecified legal abortion with embolism|SEMANTIC|TOKEN_OVERLAP|.750
+Termination of Pregnancy|19123002|Legal abortion with specified complication, NEC|L050w|Unspecified legal abortion with other specified complication|SEMANTIC|TOKEN_OVERLAP|1.000
+Termination of Pregnancy|198699005|Unspecified legal abortion with other specified complication|L050w|Unspecified legal abortion with other specified complication|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|698431000000109|Unspecified legal abortion with other specified complication|L050w|Unspecified legal abortion with other specified complication|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198701005|Unspecified legal abortion with complication NOS|L050x|Unspecified legal abortion with complication NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|592121000000107|Unspecified legal abortion with complication NOS|L050x|Unspecified legal abortion with complication NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|34500003|Legal termination of pregnancy without complication|L050y|Unspecified legal abortion with no mention of complication|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|111430000|Legal abortion with septicemia|L050z|Unspecified legal abortion NOS|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|613991000000109|Unspecified legal abortion NOS|L050z|Unspecified legal abortion NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198703008|Unspecified legal abortion NOS|L050z|Unspecified legal abortion NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198782001|Unspecified incomplete abortion with genital tract or pelvic infection|L0510|Incomplete legal abortion + genital tract/pelvic infection|SEMANTIC|TOKEN_OVERLAP|.857
+Termination of Pregnancy|602691000000107|Unspecified incomplete abortion with genital tract or pelvic infection|L0510|Incomplete legal abortion + genital tract/pelvic infection|SEMANTIC|TOKEN_OVERLAP|.857
+Termination of Pregnancy|579571000000102|Unspecified incomplete abortion with damage to pelvic organs or tissues|L0512|Incomplete legal abortion + damage to pelvic organs/tissues|SEMANTIC|TOKEN_OVERLAP|.857
+Termination of Pregnancy|198784000|Unspecified incomplete abortion with damage to pelvic organs or tissues|L0512|Incomplete legal abortion + damage to pelvic organs/tissues|SEMANTIC|TOKEN_OVERLAP|.857
+Termination of Pregnancy|749781000000109|Incomplete medical abortion|L0517|Incomplete medical abortion|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|614001000000104|Incomplete legal abortion with other specified complication|L051w|Incomplete legal abortion with other specified complication|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198712005|Incomplete legal abortion with other specified complication|L051w|Incomplete legal abortion with other specified complication|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198789005|Unspecified incomplete abortion with other specified complication|L051w|Incomplete legal abortion with other specified complication|SEMANTIC|TOKEN_OVERLAP|.800
+Termination of Pregnancy|626731000000108|Unspecified incomplete abortion with other specified complication|L051w|Incomplete legal abortion with other specified complication|SEMANTIC|TOKEN_OVERLAP|.800
+Termination of Pregnancy|599091000000102|Incomplete legal abortion with complication NOS|L051x|Incomplete legal abortion with complication NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198714006|Incomplete legal abortion with complication NOS|L051x|Incomplete legal abortion with complication NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198715007|Incomplete legal abortion with no mention of complication|L051y|Incomplete legal abortion with no mention of complication|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|528501000000100|Incomplete legal abortion with no mention of complication|L051y|Incomplete legal abortion with no mention of complication|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198716008|Incomplete legal abortion NOS|L051z|Incomplete legal abortion NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|599101000000105|Incomplete legal abortion NOS|L051z|Incomplete legal abortion NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198704002|Incomplete abortion: [legal] or [medical] or [surgical]|L051z|Incomplete legal abortion NOS|SEMANTIC|TOKEN_OVERLAP|.600
+Termination of Pregnancy|267194005|Complete legal termination of pregnancy|L052.|Legal abortion complete|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|198794005|Unspecified complete abortion with genital tract or pelvic infection|L0520|Complete legal abortion + genital tract or pelvic infection|SEMANTIC|TOKEN_OVERLAP|.857
+Termination of Pregnancy|644611000000103|Unspecified complete abortion with genital tract or pelvic infection|L0520|Complete legal abortion + genital tract or pelvic infection|SEMANTIC|TOKEN_OVERLAP|.857
+Termination of Pregnancy|198693006|Unspecified legal abortion with delayed or excessive haemorrhage|L0521|Complete legal abortion with delayed/excessive haemorrhage|SEMANTIC|TOKEN_OVERLAP|.833
+Termination of Pregnancy|626761000000103|Unspecified legal abortion with delayed or excessive haemorrhage|L0521|Complete legal abortion with delayed/excessive haemorrhage|SEMANTIC|TOKEN_OVERLAP|.833
+Termination of Pregnancy|698441000000100|Unspecified complete abortion with damage to pelvic organs or tissues|L0522|Complete legal abortion + damage to pelvic organs or tissues|SEMANTIC|TOKEN_OVERLAP|.857
+Termination of Pregnancy|198796007|Unspecified complete abortion with damage to pelvic organs or tissues|L0522|Complete legal abortion + damage to pelvic organs or tissues|SEMANTIC|TOKEN_OVERLAP|.857
+Termination of Pregnancy|599111000000107|Complete legal abortion with other specified complication|L052w|Complete legal abortion with other specified complication|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198725002|Complete legal abortion with other specified complication|L052w|Complete legal abortion with other specified complication|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|592131000000109|Complete legal abortion with complication NOS|L052x|Complete legal abortion with complication NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198726001|Complete legal abortion with complication NOS|L052x|Complete legal abortion with complication NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198727005|Complete legal abortion with no mention of complication|L052y|Complete legal abortion with no mention of complication|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|531521000000102|Complete legal abortion with no mention of complication|L052y|Complete legal abortion with no mention of complication|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|613981000000107|Unspecified legal abortion with no mention of complication|L052y|Complete legal abortion with no mention of complication|SEMANTIC|TOKEN_OVERLAP|.800
+Termination of Pregnancy|198702003|Unspecified legal abortion with no mention of complication|L052y|Complete legal abortion with no mention of complication|SEMANTIC|TOKEN_OVERLAP|.800
+Termination of Pregnancy|198717004|Complete abortion: [legal] or [medical] or [surgical]|L052z|Complete legal abortion NOS|SEMANTIC|TOKEN_OVERLAP|.600
+Termination of Pregnancy|198728000|Complete legal abortion NOS|L052z|Complete legal abortion NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|599121000000101|Complete legal abortion NOS|L052z|Complete legal abortion NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|156075007|Induced abortion|L05z.|Legally induced abortion NOS|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|267295002|Induced abortion|L05z.|Legally induced abortion NOS|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|267192009|Legally induced abortion|L05z.|Legally induced abortion NOS|SEMANTIC|NORMALISED|.950
+Termination of Pregnancy|599131000000104|Legally induced abortion NOS|L05z.|Legally induced abortion NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198729008|Legally induced abortion NOS|L05z.|Legally induced abortion NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|49632008|Illegal termination of pregnancy|L06..|Illegally induced abortion|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|198731004|Illegal abortion unspecified|L060.|Illegal abortion unspecified|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|599141000000108|Illegal abortion unspecified|L060.|Illegal abortion unspecified|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|8173005|Illegal abortion with septicemia|L060.|Illegal abortion unspecified|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|8274005|Illegal abortion complicated by genital-pelvic infection|L0600|Unspec illegal abortion + genital tract or pelvic infection|SEMANTIC|TOKEN_OVERLAP|.625
+Termination of Pregnancy|599151000000106|Unspecified illegal abortion with genital tract or pelvic infection|L0600|Unspec illegal abortion + genital tract or pelvic infection|SEMANTIC|TOKEN_OVERLAP|.857
+Termination of Pregnancy|198732006|Unspecified illegal abortion with genital tract or pelvic infection|L0600|Unspec illegal abortion + genital tract or pelvic infection|SEMANTIC|TOKEN_OVERLAP|.857
+Termination of Pregnancy|198735008|Unspecified illegal abortion with renal failure|L0603|Unspecified illegal abortion with renal failure|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|639951000000105|Unspecified illegal abortion with renal failure|L0603|Unspecified illegal abortion with renal failure|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198736009|Unspecified illegal abortion with metabolic disorder|L0604|Unspecified illegal abortion with metabolic disorder|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|660141000000109|Unspecified illegal abortion with metabolic disorder|L0604|Unspecified illegal abortion with metabolic disorder|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198737000|Unspecified illegal abortion with shock|L0605|Unspecified illegal abortion with shock|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|599161000000109|Unspecified illegal abortion with shock|L0605|Unspecified illegal abortion with shock|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198738005|Unspecified illegal abortion with embolism|L0606|Unspecified illegal abortion with embolism|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|599171000000102|Unspecified illegal abortion with embolism|L0606|Unspecified illegal abortion with embolism|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|91657000|Illegal abortion with pyemic embolism|L0606|Unspecified illegal abortion with embolism|SEMANTIC|TOKEN_OVERLAP|.750
+Termination of Pregnancy|72044001|Illegal abortion with soap embolism|L0606|Unspecified illegal abortion with embolism|SEMANTIC|TOKEN_OVERLAP|.750
+Termination of Pregnancy|22442009|Illegal abortion with specified complication, NEC|L060w|Unspecified illegal abortion + other specified complication|SEMANTIC|TOKEN_OVERLAP|1.000
+Termination of Pregnancy|198739002|Unspecified illegal abortion with other specified complication|L060w|Unspecified illegal abortion + other specified complication|SEMANTIC|TOKEN_OVERLAP|1.000
+Termination of Pregnancy|599181000000100|Unspecified illegal abortion with other specified complication|L060w|Unspecified illegal abortion + other specified complication|SEMANTIC|TOKEN_OVERLAP|1.000
+Termination of Pregnancy|660151000000107|Unspecified illegal abortion with no mention of complication|L060y|Unspecified illegal abortion with no mention of complication|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198741001|Unspecified illegal abortion with no mention of complication|L060y|Unspecified illegal abortion with no mention of complication|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198742008|Unspecified illegal abortion NOS|L060z|Unspecified illegal abortion NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|660161000000105|Unspecified illegal abortion NOS|L060z|Unspecified illegal abortion NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198783006|Unspecified incomplete abortion with delayed or excessive haemorrhage|L0611|Incomplete illegal abortion + delayed/excessive haemorrhage|SEMANTIC|TOKEN_OVERLAP|.833
+Termination of Pregnancy|579561000000109|Unspecified incomplete abortion with delayed or excessive haemorrhage|L0611|Incomplete illegal abortion + delayed/excessive haemorrhage|SEMANTIC|TOKEN_OVERLAP|.833
+Termination of Pregnancy|599191000000103|Incomplete illegal abortion with other specified complication|L061w|Incomplete illegal abortion + other specified complication|SEMANTIC|TOKEN_OVERLAP|1.000
+Termination of Pregnancy|198751000|Incomplete illegal abortion with other specified complication|L061w|Incomplete illegal abortion + other specified complication|SEMANTIC|TOKEN_OVERLAP|1.000
+Termination of Pregnancy|198752007|Incomplete illegal abortion with complication NOS|L061x|Incomplete illegal abortion with complication NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|660201000000102|Incomplete illegal abortion with complication NOS|L061x|Incomplete illegal abortion with complication NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198753002|Incomplete illegal abortion with no mention of complication|L061y|Incomplete illegal abortion with no mention of complication|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|532051000000107|Incomplete illegal abortion with no mention of complication|L061y|Incomplete illegal abortion with no mention of complication|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198754008|Incomplete illegal abortion NOS|L061z|Incomplete illegal abortion NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|599231000000107|Incomplete illegal abortion NOS|L061z|Incomplete illegal abortion NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198755009|Illegal termination of pregnancy, complete|L062.|Illegal abortion complete|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|661411000000107|Unspecified illegal abortion with delayed or excessive haemorrhage|L0621|Complete illegal abortion + delayed or excessive haemorrhage|SEMANTIC|TOKEN_OVERLAP|.833
+Termination of Pregnancy|198763005|Complete illegal abortion with other specified complication|L062w|Complete illegal abortion with other specified complication|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|599241000000103|Complete illegal abortion with other specified complication|L062w|Complete illegal abortion with other specified complication|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198764004|Complete illegal abortion with complication NOS|L062x|Complete illegal abortion with complication NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|599251000000100|Complete illegal abortion with complication NOS|L062x|Complete illegal abortion with complication NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|529611000000105|Complete illegal abortion with no mention of complication|L062y|Complete illegal abortion with no mention of complication|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198765003|Complete illegal abortion with no mention of complication|L062y|Complete illegal abortion with no mention of complication|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198766002|Complete illegal abortion NOS|L062z|Complete illegal abortion NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|660211000000100|Complete illegal abortion NOS|L062z|Complete illegal abortion NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198730003|Abortion: [illegally induced] or [criminal] or [self-induced]|L06z.|Illegally induced abortion NOS|SEMANTIC|TOKEN_OVERLAP|.600
+Termination of Pregnancy|156077004|Illegally induced abortion|L06z.|Illegally induced abortion NOS|SEMANTIC|NORMALISED|.950
+Termination of Pregnancy|198767006|Illegally induced abortion NOS|L06z.|Illegally induced abortion NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|660221000000106|Illegally induced abortion NOS|L06z.|Illegally induced abortion NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|70317007|Abortion|L07..|Unspecified abortion|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|198768001|Unspecified abortion|L070.|Unspecified abortion|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198769009|Unspecified abortion|L070.|Unspecified abortion|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|660231000000108|Unspecified abortion|L070.|Unspecified abortion|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198770005|Unspecified abortion with genital tract or pelvic infection|L0700|Unspecified abortion with genital tract or pelvic infection|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|587061000000104|Unspecified abortion with genital tract or pelvic infection|L0700|Unspecified abortion with genital tract or pelvic infection|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|50628000|Abortion complicated by genital-pelvic infection|L0700|Unspecified abortion with genital tract or pelvic infection|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|373891000|Abortion complicated by genital-pelvic infection|L0700|Unspecified abortion with genital tract or pelvic infection|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|156089002|Infection: [genital &/or pelvic] or [post abortion]|L0700|Unspecified abortion with genital tract or pelvic infection|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|156090006|Haemorrhage: [delayed &/or excessive] or [post abortion]|L0701|Unspecified abortion with delayed or excessive haemorrhage|SEMANTIC|TOKEN_OVERLAP|.800
+Termination of Pregnancy|198771009|Unspecified abortion with delayed or excessive haemorrhage|L0701|Unspecified abortion with delayed or excessive haemorrhage|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|614961000000101|Unspecified abortion with delayed or excessive haemorrhage|L0701|Unspecified abortion with delayed or excessive haemorrhage|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|659001000000109|Unspecified abortion with damage to pelvic organs or tissues|L0702|Unspecified abortion with damage to pelvic organs or tissues|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198772002|Unspecified abortion with damage to pelvic organs or tissues|L0702|Unspecified abortion with damage to pelvic organs or tissues|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198734007|Unspecified illegal abortion with damage to pelvic organs or tissues|L0702|Unspecified abortion with damage to pelvic organs or tissues|SEMANTIC|TOKEN_OVERLAP|.833
+Termination of Pregnancy|661421000000101|Unspecified illegal abortion with damage to pelvic organs or tissues|L0702|Unspecified abortion with damage to pelvic organs or tissues|SEMANTIC|TOKEN_OVERLAP|.833
+Termination of Pregnancy|373908001|Abortion complicated by damage to pelvic organs AND/OR tissues|L0702|Unspecified abortion with damage to pelvic organs or tissues|SEMANTIC|TOKEN_OVERLAP|.833
+Termination of Pregnancy|58475007|Abortion complicated by damage to pelvic organs AND/OR tissues|L0702|Unspecified abortion with damage to pelvic organs or tissues|SEMANTIC|TOKEN_OVERLAP|.833
+Termination of Pregnancy|10123006|Abortion complicated by renal failure|L0703|Unspecified abortion with renal failure|SEMANTIC|TOKEN_OVERLAP|.750
+Termination of Pregnancy|587081000000108|Unspecified abortion with renal failure|L0703|Unspecified abortion with renal failure|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198773007|Unspecified abortion with renal failure|L0703|Unspecified abortion with renal failure|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|587071000000106|Unspecified abortion with metabolic disorder|L0704|Unspecified abortion with metabolic disorder|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198774001|Unspecified abortion with metabolic disorder|L0704|Unspecified abortion with metabolic disorder|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|111429005|Abortion complicated by metabolic disorder|L0704|Unspecified abortion with metabolic disorder|SEMANTIC|TOKEN_OVERLAP|.750
+Termination of Pregnancy|50554000|Abortion complicated by shock|L0705|Unspecified abortion with shock|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|70772007|Abortion with septic shock|L0705|Unspecified abortion with shock|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|30297004|Abortion with postoperative shock|L0705|Unspecified abortion with shock|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|198775000|Unspecified abortion with shock|L0705|Unspecified abortion with shock|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|639881000000106|Unspecified abortion with shock|L0705|Unspecified abortion with shock|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|639891000000108|Unspecified abortion with embolism|L0706|Unspecified abortion with embolism|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198776004|Unspecified abortion with embolism|L0706|Unspecified abortion with embolism|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|50206009|Abortion with pulmonary embolism|L0706|Unspecified abortion with embolism|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|18767001|Abortion with pyemic embolism|L0706|Unspecified abortion with embolism|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|20886003|Abortion with septic embolism|L0706|Unspecified abortion with embolism|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|28496002|Abortion with soap embolism|L0706|Unspecified abortion with embolism|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|1180004|Abortion with fat embolism|L0706|Unspecified abortion with embolism|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|16680004|Abortion with air embolism|L0706|Unspecified abortion with embolism|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|267303003|Embolism (& [post abortion])|L0706|Unspecified abortion with embolism|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|2787008|Unspecified abortion with specified complication, NEC|L070w|Unspecified abortion with other specified complication|SEMANTIC|TOKEN_OVERLAP|1.000
+Termination of Pregnancy|198777008|Unspecified abortion with other specified complication|L070w|Unspecified abortion with other specified complication|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|639901000000109|Unspecified abortion with other specified complication|L070w|Unspecified abortion with other specified complication|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198778003|Unspecified abortion with complication NOS|L070x|Unspecified abortion with complication NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|639911000000106|Unspecified abortion with complication NOS|L070x|Unspecified abortion with complication NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|156088005|Complication following abortion|L070x|Unspecified abortion with complication NOS|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|371332008|Abortion with complication|L070x|Unspecified abortion with complication NOS|SEMANTIC|TOKEN_OVERLAP|1.000
+Termination of Pregnancy|198779006|Unspecified abortion with no mention of complication|L070y|Unspecified abortion with no mention of complication|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|639921000000100|Unspecified abortion with no mention of complication|L070y|Unspecified abortion with no mention of complication|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|639931000000103|Unspecified abortion NOS|L070z|Unspecified abortion NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198805006|Unspecified abortion NOS|L070z|Unspecified abortion NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198780009|Unspecified abortion NOS|L070z|Unspecified abortion NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|639941000000107|Unspecified abortion incomplete|L071.|Unspecified abortion incomplete|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|632901000000101|Unspecified incomplete abortion with renal failure|L0713|Unspecified incomplete abortion with renal failure|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198785004|Unspecified incomplete abortion with renal failure|L0713|Unspecified incomplete abortion with renal failure|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|602701000000107|Unspecified incomplete abortion with metabolic disorder|L0714|Unspecified incomplete abortion with metabolic disorder|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198786003|Unspecified incomplete abortion with metabolic disorder|L0714|Unspecified incomplete abortion with metabolic disorder|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198787007|Unspecified incomplete abortion with shock|L0715|Unspecified incomplete abortion with shock|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|602711000000109|Unspecified incomplete abortion with shock|L0715|Unspecified incomplete abortion with shock|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|602721000000103|Unspecified incomplete abortion with embolism|L0716|Unspecified incomplete abortion with embolism|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198788002|Unspecified incomplete abortion with embolism|L0716|Unspecified incomplete abortion with embolism|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198790001|Unspecified incomplete abortion with complication NOS|L071x|Unspecified incomplete abortion with complication NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|626741000000104|Unspecified incomplete abortion with complication NOS|L071x|Unspecified incomplete abortion with complication NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198791002|Unspecified incomplete abortion with no mention of complication|L071y|Unspecified incomplete abortion + no mention of complication|SEMANTIC|TOKEN_OVERLAP|1.000
+Termination of Pregnancy|644571000000107|Unspecified incomplete abortion with no mention of complication|L071y|Unspecified incomplete abortion + no mention of complication|SEMANTIC|TOKEN_OVERLAP|1.000
+Termination of Pregnancy|198792009|Unspecified incomplete abortion NOS|L071z|Unspecified incomplete abortion NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|644581000000109|Unspecified incomplete abortion NOS|L071z|Unspecified incomplete abortion NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|16863000|Incomplete abortion|L071z|Unspecified incomplete abortion NOS|SEMANTIC|TOKEN_OVERLAP|1.000
+Termination of Pregnancy|757111000000108|Incomplete medical abortion|L071z|Unspecified incomplete abortion NOS|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|644601000000100|Unspecified abortion complete|L072.|Unspecified abortion complete|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198793004|Unspecified abortion complete|L072.|Unspecified abortion complete|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198795006|Unspecified complete abortion with delayed or excessive haemorrhage|L0721|Unspecified complete abortion +delayed/excessive haemorrhage|SEMANTIC|TOKEN_OVERLAP|1.000
+Termination of Pregnancy|644621000000109|Unspecified complete abortion with delayed or excessive haemorrhage|L0721|Unspecified complete abortion +delayed/excessive haemorrhage|SEMANTIC|TOKEN_OVERLAP|1.000
+Termination of Pregnancy|198797003|Unspecified complete abortion with renal failure|L0723|Unspecified complete abortion with renal failure|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|626791000000109|Unspecified complete abortion with renal failure|L0723|Unspecified complete abortion with renal failure|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198798008|Unspecified complete abortion with metabolic disorder|L0724|Unspecified complete abortion with metabolic disorder|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|626801000000108|Unspecified complete abortion with metabolic disorder|L0724|Unspecified complete abortion with metabolic disorder|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|626811000000105|Unspecified complete abortion with shock|L0725|Unspecified complete abortion with shock|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198799000|Unspecified complete abortion with shock|L0725|Unspecified complete abortion with shock|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198800001|Unspecified complete abortion with embolism|L0726|Unspecified complete abortion with embolism|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|614011000000102|Unspecified complete abortion with embolism|L0726|Unspecified complete abortion with embolism|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|698451000000102|Unspecified complete abortion with other specified complication|L072w|Unspecified complete abortion + other specified complication|SEMANTIC|TOKEN_OVERLAP|1.000
+Termination of Pregnancy|198801002|Unspecified complete abortion with other specified complication|L072w|Unspecified complete abortion + other specified complication|SEMANTIC|TOKEN_OVERLAP|1.000
+Termination of Pregnancy|198802009|Unspecified complete abortion with complication NOS|L072x|Unspecified complete abortion with complication NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|700131000000106|Unspecified complete abortion with complication NOS|L072x|Unspecified complete abortion with complication NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|700141000000102|Unspecified complete abortion with no mention of complication|L072y|Unspecified complete abortion + no mention of complication|SEMANTIC|TOKEN_OVERLAP|1.000
+Termination of Pregnancy|592141000000100|Unspecified complete abortion NOS|L072z|Unspecified complete abortion NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198804005|Unspecified complete abortion NOS|L072z|Unspecified complete abortion NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|69124005|Complete abortion|L072z|Unspecified complete abortion NOS|SEMANTIC|TOKEN_OVERLAP|1.000
+Termination of Pregnancy|49416000|Failed attempted termination of pregnancy|L08..|Failed attempted abortion|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|390431000000101|[X]Other and unspecified failed induced abortion, complicated by genital tract and pelvic infection|L080.|Failed attempted abortion + genital tract/pelvic infection|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|200486001|[X]Other and unspecified failed induced abortion, complicated by genital tract and pelvic infection|L080.|Failed attempted abortion + genital tract/pelvic infection|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|409481000000104|[X]Other and unspecified failed induced abortion, complicated by delayed or excessive haemorrhage|L081.|Failed attempted abortion + delayed or excessive haemorrhage|SEMANTIC|TOKEN_OVERLAP|.625
+Termination of Pregnancy|200487005|[X]Other and unspecified failed induced abortion, complicated by delayed or excessive haemorrhage|L081.|Failed attempted abortion + delayed or excessive haemorrhage|SEMANTIC|TOKEN_OVERLAP|.625
+Termination of Pregnancy|42755004|Failed attempted abortion with pyaemic embolism|L086.|Failed attempted abortion with embolism|SEMANTIC|TOKEN_OVERLAP|.800
+Termination of Pregnancy|56083002|Failed attempted abortion with specified complication, NEC|L08w.|Failed attempted abortion with other specified complication|SEMANTIC|TOKEN_OVERLAP|1.000
+Termination of Pregnancy|592151000000102|Failed attempted abortion with other specified complication|L08w.|Failed attempted abortion with other specified complication|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198814001|Failed attempted abortion with other specified complication|L08w.|Failed attempted abortion with other specified complication|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198816004|Failed attempted abortion with no mention of complication|L08y.|Failed attempted abortion with no mention of complication|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|528441000000101|Failed attempted abortion with no mention of complication|L08y.|Failed attempted abortion with no mention of complication|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198817008|Failed attempted abortion NOS|L08z.|Failed attempted abortion NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|614021000000108|Failed attempted abortion NOS|L08z.|Failed attempted abortion NOS|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|275423001|Failed abortion|L08z.|Failed attempted abortion NOS|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|198818003|Complications following abortion and ectopic and molar pregnancies|L09..|Complications following abortion/ectopic/molar pregnancies|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|198823003|Salpingitis following abortive pregnancy|L0903|Salpingitis following abortive pregnancy|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198824009|Salpingo-oophoritis following abortive pregnancy|L0904|Salpingo-oophoritis following abortive pregnancy|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|198825005|Sepsis NOS following abortion and ectopic and molar pregnancy|L090y|Sepsis NOS following abortion/ectopic/molar pregnancy|SEMANTIC|TOKEN_OVERLAP|1.000
+Termination of Pregnancy|592171000000106|Sepsis NOS following abortion and ectopic and molar pregnancy|L090y|Sepsis NOS following abortion/ectopic/molar pregnancy|SEMANTIC|TOKEN_OVERLAP|1.000
+Termination of Pregnancy|198842004|Oliguria following abortive pregnancy|L0910|Afibrinogenaemia following abortive pregnancy|SEMANTIC|TOKEN_OVERLAP|.600
+Termination of Pregnancy|198837007|Periurethral tissue damage following abortive pregnancy|L0924|Periurethral tissue damage following abortive pregnancy|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|609472002|Induced termination of pregnancy complicated by acute renal failure with oliguria|L0930|Oliguria following abortive pregnancy|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|198848000|Metabolic disorder following abortive pregnancy|L094.|Metabolic disorder following abortive pregnancy|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198854004|Fat embolism following abortive pregnancy|L0963|Fat embolism following abortive pregnancy|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198860004|Readmission (NHS codes): [abortive pregnancy] or [RPOC]|L097.|Readmission for abortive pregnancy (NHS codes)|SEMANTIC|TOKEN_OVERLAP|.833
+Termination of Pregnancy|198862007|Readmission for retained products of conception, legal termination of pregnancy|L0971|Readmission for retained produc of concept, legal abortion|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|198863002|Readmission for retained products of conception, illegal termination of pregnancy|L0972|Readmission for retained produc of concept, illegal abortion|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|198872005|Complication NOS following abortion and ectopic and molar pregnancy|L09z.|Complication NOS following abortion/ectopic/molar pregnancy|SEMANTIC|TOKEN_OVERLAP|1.000
+Termination of Pregnancy|599201000000101|Complication NOS following abortion and ectopic and molar pregnancy|L09z.|Complication NOS following abortion/ectopic/molar pregnancy|SEMANTIC|TOKEN_OVERLAP|1.000
+Termination of Pregnancy|200492007|[X]Other complications following abortion and ectopic and molar pregnancy|L09z.|Complication NOS following abortion/ectopic/molar pregnancy|SEMANTIC|TOKEN_OVERLAP|.714
+Termination of Pregnancy|390641000000108|[X]Other complications following abortion and ectopic and molar pregnancy|L09z.|Complication NOS following abortion/ectopic/molar pregnancy|SEMANTIC|TOKEN_OVERLAP|.714
+Termination of Pregnancy|409201000000105|[X]Other venous complications following abortion and ectopic and molar pregnancy|L09z.|Complication NOS following abortion/ectopic/molar pregnancy|SEMANTIC|TOKEN_OVERLAP|.625
+Termination of Pregnancy|200491000|[X]Other venous complications following abortion and ectopic and molar pregnancy|L09z.|Complication NOS following abortion/ectopic/molar pregnancy|SEMANTIC|TOKEN_OVERLAP|.625
+Termination of Pregnancy|463061000000100|[X]Complication following abortion and ectopic and molar pregnancy, unspecified|L09z.|Complication NOS following abortion/ectopic/molar pregnancy|SEMANTIC|TOKEN_OVERLAP|1.000
+Termination of Pregnancy|200493002|[X]Complication following abortion and ectopic and molar pregnancy, unspecified|L09z.|Complication NOS following abortion/ectopic/molar pregnancy|SEMANTIC|TOKEN_OVERLAP|1.000
+Termination of Pregnancy|198873000|Failed attempted abortion|L0A..|Failed attempted abortion|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|156078009|Failed attempted abortion|L0A..|Failed attempted abortion|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|198878009|Failed medical termination of pregnancy, without complication|L0A4.|Failed medical abortion, without complication|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|199154009|Maternal syphilis during pregnancy, childbirth and the puerperium|L170.|Maternal syphilis in pregnancy/childbirth/puerperium|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|199155005|Maternal syphilis, unspecified whether during pregnancy or the puerperium|L1700|Maternal syphilis, unspec whether in pregnancy or puerperium|SEMANTIC|TOKEN_OVERLAP|.714
+Sexually Transmitted Disease|586781000000109|Maternal syphilis, unspecified whether during pregnancy or the puerperium|L1700|Maternal syphilis, unspec whether in pregnancy or puerperium|SEMANTIC|TOKEN_OVERLAP|.714
+Sexually Transmitted Disease|199156006|Maternal syphilis during pregnancy - baby delivered|L1701|Maternal syphilis during pregnancy - baby delivered|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|199157002|Maternal syphilis in the puerperium - baby delivered during current episode of care|L1702|Maternal syphilis in puerperium - baby delivered|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|199158007|Maternal syphilis during pregnancy - baby not yet delivered|L1703|Maternal syphilis during pregnancy - baby not yet delivered|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|199159004|Maternal syphilis in the puerperium - baby delivered during previous episode of care|L1704|Maternal syphilis in puerperium - baby previously delivered|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|199160009|Maternal syphilis during pregnancy, childbirth or the puerperium NOS|L170z|Maternal syphilis in pregnancy/childbirth/puerperium NOS|SEMANTIC|TOKEN_OVERLAP|.833
+Sexually Transmitted Disease|586791000000106|Maternal syphilis during pregnancy, childbirth or the puerperium NOS|L170z|Maternal syphilis in pregnancy/childbirth/puerperium NOS|SEMANTIC|TOKEN_OVERLAP|.833
+Sexually Transmitted Disease|199161008|Maternal gonorrhoea during pregnancy, childbirth and the puerperium|L171.|Maternal gonorrhoea during pregnancy/childbirth/puerperium|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|593761000000107|Maternal gonorrhoea, unspecified whether during pregnancy or the puerperium|L1710|Maternal gonorrhoea, unspec whether in pregnancy/puerperium|SEMANTIC|TOKEN_OVERLAP|.714
+Sexually Transmitted Disease|199163006|Postpartum gonorrhea|L1711|Maternal gonorrhoea during pregnancy - baby delivered|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|199164000|Maternal gonorrhea in the puerperium - baby delivered during current episode of care|L1712|Maternal gonorrhoea in puerperium - baby delivered|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|199165004|Maternal gonorrhoea during pregnancy - baby not yet delivered|L1713|Maternal gonorrhoea in pregnancy - baby not yet delivered|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|199166003|Maternal gonorrhea in the puerperium - baby delivered during previous episode of care|L1714|Maternal gonorrhoea in puerperium- baby previously delivered|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|274118001|Venereal disease in pregnancy|L172.|Other venereal diseases in pregnancy/childbirth/puerperium|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|199169005|Other maternal venereal disease, unspecified whether during pregnancy or the puerperium|L1720|Other maternal venereal disease, unspec pregnancy/puerperium|SEMANTIC|TOKEN_OVERLAP|.625
+Sexually Transmitted Disease|586811000000107|Other maternal venereal disease, unspecified whether during pregnancy or the puerperium|L1720|Other maternal venereal disease, unspec pregnancy/puerperium|SEMANTIC|TOKEN_OVERLAP|.625
+Sexually Transmitted Disease|607421000000109|Other maternal venereal disease during the puerperium - baby delivered during previous episode of care|L1722|Other maternal venereal disease in puerperium-baby delivered|SEMANTIC|TOKEN_OVERLAP|.600
+Sexually Transmitted Disease|199173008|Other maternal venereal disease during the puerperium - baby delivered during previous episode of care|L1722|Other maternal venereal disease in puerperium-baby delivered|SEMANTIC|TOKEN_OVERLAP|.600
+Sexually Transmitted Disease|199170006|Other maternal venereal disease in pregnancy - baby delivered|L1722|Other maternal venereal disease in puerperium-baby delivered|SEMANTIC|TOKEN_OVERLAP|.714
+Sexually Transmitted Disease|620591000000101|Other maternal venereal disease in pregnancy - baby delivered|L1722|Other maternal venereal disease in puerperium-baby delivered|SEMANTIC|TOKEN_OVERLAP|.714
+Sexually Transmitted Disease|586831000000104|Other maternal venereal disease in the puerperium - baby delivered during current episode of care|L1722|Other maternal venereal disease in puerperium-baby delivered|SEMANTIC|TOKEN_OVERLAP|.600
+Sexually Transmitted Disease|199171005|Other maternal venereal disease in the puerperium - baby delivered during current episode of care|L1722|Other maternal venereal disease in puerperium-baby delivered|SEMANTIC|TOKEN_OVERLAP|.600
+Sexually Transmitted Disease|27075004|Venereal disease in mother complicating pregnancy, childbirth AND/OR puerperium|L172z|Other mat. venereal dis. in pregnancy/childbirth/puerp. NOS|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|199162001|Maternal gonorrhea, unspecified whether during pregnancy or the puerperium|L1740|Maternal malaria, unspec whether during pregnancy/puerperium|SEMANTIC|TOKEN_OVERLAP|.625
+Sexually Transmitted Disease|586841000000108|Other maternal venereal disease during pregnancy - baby not yet delivered|L1743|Maternal malaria during pregnancy - baby not yet delivered|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|199172003|Other maternal venereal disease during pregnancy - baby not yet delivered|L1743|Maternal malaria during pregnancy - baby not yet delivered|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|199174002|Other maternal venereal disease during pregnancy, childbirth or the puerperium NOS|L174z|Maternal malaria during pregnancy/childbirth/puerperium NOS|SEMANTIC|TOKEN_OVERLAP|.625
+Sexually Transmitted Disease|620601000000107|Other maternal venereal disease during pregnancy, childbirth or the puerperium NOS|L174z|Maternal malaria during pregnancy/childbirth/puerperium NOS|SEMANTIC|TOKEN_OVERLAP|.625
+Sexually Transmitted Disease|586801000000105|Other maternal venereal diseases during pregnancy, childbirth and the puerperium|L174z|Maternal malaria during pregnancy/childbirth/puerperium NOS|SEMANTIC|TOKEN_OVERLAP|.625
+Sexually Transmitted Disease|199168002|Other maternal venereal diseases during pregnancy, childbirth and the puerperium|L174z|Maternal malaria during pregnancy/childbirth/puerperium NOS|SEMANTIC|TOKEN_OVERLAP|.625
+Sexually Transmitted Disease|618961000000109|Gonorrhoea during pregnancy, childbirth or the puerperium NOS|L182z|Anaemia during pregnancy/childbirth/puerperium NOS|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|199167007|Gonorrhoea during pregnancy, childbirth or the puerperium NOS|L182z|Anaemia during pregnancy/childbirth/puerperium NOS|SEMANTIC|TOKEN_OVERLAP|.667
+Termination of Pregnancy|46533008|Abortion with amniotic fluid embolism|L431z|Amniotic fluid pulmonary embolism NOS|SEMANTIC|TOKEN_OVERLAP|.600
+Termination of Pregnancy|200483009|[X]Other abortion|Lyu02|[X]Other abortion|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|428641000000105|[X]Other abortion|Lyu02|[X]Other abortion|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|200488000|[X]Other and unspecified failed induced abortion, complicated by embolism|Lyu06|[X]Other+unspcf failed induced abortion,complicated/embolism|SEMANTIC|TOKEN_OVERLAP|.833
+Termination of Pregnancy|425881000000109|[X]Other and unspecified failed induced abortion, complicated by embolism|Lyu06|[X]Other+unspcf failed induced abortion,complicated/embolism|SEMANTIC|TOKEN_OVERLAP|.833
+Termination of Pregnancy|609492009|Termination of pregnancy without complication|Lyu08|[X]Other+unspcf failed induced abortion,without complication|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|240583009|Gonococcal skin lesion|M2z0.|Skin lesion|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|267883008|Post-genitourinary infection reactive arthritis|N011.|Sexually acquired reactive arthropathy|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|201474006|Reactive arthritis of joint of shoulder region due to and following sexually transmitted disease|N0111|Sexually acquired reactive arthropathy of shoulder region|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|201477004|Sexually acquired reactive arthritis of joint of hand|N0114|Sexually acquired reactive arthropathy of the hand|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|201478009|Sexually acquired reactive arthropathy of the pelvic region and thigh|N0115|Sexually acquired reactive arthropathy of the pelvis/thigh|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|201480003|Sexually acquired reactive arthropathy of the ankle and/or foot|N0117|Sexually acquired reactive arthropathy of the ankle and foot|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|201481004|Reactive arthritis of multiple sites due to and following sexually transmitted disease|N011x|Sexually acquired reactive arthropathy of multiple sites|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|201738001|Post-infective arthropathy in syphilis|N0381|Postinfective arthropathy in syphilis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|186927008|Gonococcal synovitis &/or tenosynovitis|N2200|Synovitis or tenosynovitis NOS|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|202933002|Syphilitic bursitis|N2227|Syphilitic bursitis|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|9482002|Human papillomavirus|n4z..|HUMAN PAPILLOMAVIRUS VACCINE|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|423143001|Human papillomavirus 32|n4z..|HUMAN PAPILLOMAVIRUS VACCINE|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|1142031005|Late congenital syphilitic optic atrophy|P2xz1|Congenital optic atrophy|SEMANTIC|TOKEN_OVERLAP|.600
+Sexually Transmitted Disease|192008|Congenital syphilitic hepatomegaly|PB6y1|Congenital hepatomegaly|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|275375006|Congenital syphilitic hepatomegaly|PB6y1|Congenital hepatomegaly|SEMANTIC|TOKEN_OVERLAP|.667
+Gender Related Issues|268229003|Indeterminate sex and pseudohermaphroditism|PC7..|Indeterminate sex and pseudohermaphroditism|DMWB|DMWB_CROSSMAP|1.000
+Gender Related Issues|111332007|Male pseudohermaphroditism|PC71.|Male pseudohermaphroditism|DMWB|DMWB_CROSSMAP|1.000
+Gender Related Issues|8800006|Female pseudohermaphroditism|PC72.|Female pseudohermaphroditism|DMWB|DMWB_CROSSMAP|1.000
+Gender Related Issues|32570681000036104|Indeterminate sex|PC7z0|Indeterminate sex NOS|SEMANTIC|NORMALISED|.950
+Sexually Transmitted Disease|275372009|Congenital syphilitic splenomegaly|PK03.|Congenital splenomegaly|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|56118002|Congenital syphilitic splenomegaly|PK03.|Congenital splenomegaly|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|206289001|Congenital chlamydial pneumonia|Q3106|Congenital pneumonia due to Chlamydia|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|91576008|Congenital herpes simplex infection|Q4020|Congenital herpes simplex|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|276681001|Neonatal chlamydial dacryocystitis|Q4062|Neonatal dacryocystitis|SEMANTIC|TOKEN_OVERLAP|.667
+Sexually Transmitted Disease|268842008|Neonatal dacryocystitis or conjunctivitis caused by chlamydiae|Q4067|Neonatal dacryocystitis or conjunctivitis due to chlamydiae|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|240591000|Neonatal inclusion body conjunctivitis|Q4068|Neonatal dacryocystitis/conjunctivitis-other inclusion body|SEMANTIC|TOKEN_OVERLAP|.800
+Termination of Pregnancy|67313008|Fetal death due to termination of pregnancy|Q486.|Fetal death due to termination of pregnancy|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|421695000|Abnormal weight loss associated with AIDS|R032.|[D]Abnormal loss of weight|SEMANTIC|TOKEN_OVERLAP|.600
+Sexually Transmitted Disease|499821000000104|[D]Laboratory evidence of human immunodeficiency virus [HIV]|R109.|[D]Laboratory evidence of human immunodeficiency virus [HIV]|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|274684006|False-positive serological test for syphilis|R156.|[D]False positive serological syphilis test|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|442377003|False positive complement fixation test for syphilis|R1560|[D]False positive Wasserman test|DMWB|DMWB_CROSSMAP|1.000
+Assisted Fertilisation|389951000000107|[X]Other complications associated with artificial fertilisation|SP0D.|Complications associated with artificial fertilization|SEMANTIC|TOKEN_OVERLAP|.600
+Assisted Fertilisation|198598005|[X]Other complications associated with artificial fertilization|SP0D.|Complications associated with artificial fertilization|SEMANTIC|TOKEN_OVERLAP|1.000
+Assisted Fertilisation|198604008|[X]Complication associated with artificial fertilization, unspecified|SP0D.|Complications associated with artificial fertilization|SEMANTIC|TOKEN_OVERLAP|.600
+Assisted Fertilisation|213200001|Infection associated with artificial insemination|SP0D0|Infection associated with artificial insemination|DMWB|DMWB_CROSSMAP|1.000
+Assisted Fertilisation|213201002|Hyperstimulation of ovaries|SP0D1|Hyperstimulation of ovaries|DMWB|DMWB_CROSSMAP|1.000
+Assisted Fertilisation|213202009|Complications of attempted introduction of fertilised ovum following in vitro fertilisation|SP0D2|Compltns of attemptd intro fertil ovum follow in vitro fert|DMWB|DMWB_CROSSMAP|1.000
+Assisted Fertilisation|213203004|Complications of attempted introduction of embryo in embryo transfer|SP0D3|Complctns/attemptd introduction of embryo in embryo transfer|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|464851000000107|[V]VD - venereal disease contact|ZV016|[V]Contact with or exposure to venereal disease|SEMANTIC|TOKEN_OVERLAP|.750
+Sexually Transmitted Disease|315655009|[V]VD - venereal disease contact|ZV016|[V]Contact with or exposure to venereal disease|SEMANTIC|TOKEN_OVERLAP|.750
+Sexually Transmitted Disease|268505009|VD - venereal disease contact|ZV016|[V]Contact with or exposure to venereal disease|SEMANTIC|TOKEN_OVERLAP|.750
+Sexually Transmitted Disease|428541000000106|[V]Contact with and exposure to human immunodeficiency virus|ZV019|[V]Contact with+exposure to human immunodeficiency virus|SEMANTIC|TOKEN_OVERLAP|1.000
+Sexually Transmitted Disease|315658006|[V]Contact with and exposure to human immunodeficiency virus|ZV019|[V]Contact with+exposure to human immunodeficiency virus|SEMANTIC|TOKEN_OVERLAP|1.000
+Sexually Transmitted Disease|218691000000106|Human immunodeficiency virus contact|ZV019|[V]Contact with+exposure to human immunodeficiency virus|SEMANTIC|TOKEN_OVERLAP|.800
+Sexually Transmitted Disease|218701000000106|Human immunodeficiency virus contact|ZV019|[V]Contact with+exposure to human immunodeficiency virus|SEMANTIC|TOKEN_OVERLAP|.800
+Sexually Transmitted Disease|427921000000108|[V]Asymptomatic human immunodeficiency virus infection status|ZV01A|[V]Asymptomatic human immunodeficency virus infection status|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|428141000000103|[V]Gonorrhoea carrier|ZV027|[V]Gonorrhoea carrier|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|315674001|[V]Gonorrhoea carrier|ZV027|[V]Gonorrhoea carrier|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|147743002|Gonorrhoea carrier|ZV027|[V]Gonorrhoea carrier|SEMANTIC|NORMALISED|.950
+Sexually Transmitted Disease|315675000|[V]Other venereal disease carrier|ZV028|[V]Other venereal disease carrier|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|440291000000103|[V]Other venereal disease carrier|ZV028|[V]Other venereal disease carrier|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|268594000|Venereal disease carrier (& [NOS])|ZV028|[V]Other venereal disease carrier|SEMANTIC|TOKEN_OVERLAP|1.000
+Sexually Transmitted Disease|147744008|Venereal disease carrier (& [NOS])|ZV028|[V]Other venereal disease carrier|SEMANTIC|TOKEN_OVERLAP|1.000
+Sexually Transmitted Disease|571771000000109|Venereal disease carrier NOS|ZV028|[V]Other venereal disease carrier|SEMANTIC|TOKEN_OVERLAP|1.000
+Sexually Transmitted Disease|427251000000107|[V]Carrier of human T-lymphotropic virus type-1 infect|ZV029|[V]Carrier of human T-lymphotropic virus type-1 infect|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|1090431000000102|History of pelvic inflammatory disease|ZV138|[V]Personal history of pelvic inflammatory disease|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|438998000|Family history of human immunodeficiency virus infection|ZV19B|[V]Family history of human immunodefiency virus disease|DMWB|DMWB_CROSSMAP|1.000
+Termination of Pregnancy|315910004|[V]Pregnancy with history of abortion|ZV232|[V]Pregnancy with history of abortion|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|427511000000106|[V]Pregnancy with history of abortion|ZV232|[V]Pregnancy with history of abortion|SEMANTIC|EXACT|1.000
+Termination of Pregnancy|439741000000107|[V]Admission for administration of abortifacient|ZV25B|[V]Admission for administration of abortifacient|DMWB|DMWB_CROSSMAP|1.000
+Assisted Fertilisation|427961000000100|[V]AI - artificial insemination|ZV261|[V]Artificial insemination NOS|DMWB|DMWB_CROSSMAP|1.000
+Assisted Fertilisation|236895005|Artificial insemination by husband|ZV265|[V]Artificial insemination from husband|DMWB|DMWB_CROSSMAP|1.000
+Assisted Fertilisation|236896006|DI - Donor insemination|ZV266|[V]Artificial insemination from donor|DMWB|DMWB_CROSSMAP|1.000
+Assisted Fertilisation|440691000000100|[V] IVF|ZV267|[V]In vitro fertilization|DMWB|DMWB_CROSSMAP|1.000
+Assisted Fertilisation|411101000000103|[V]Other assisted fertilisation methods|ZV268|[V]Other assisted fertilization methods|DMWB|DMWB_CROSSMAP|1.000
+Gender Related Issues|93461009|Gender dysphoria|ZV62A|[V] Gender dysphoria|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|313077009|HIV counseling|ZV6D4|[V]Human immunodefiency virus counselling|DMWB|DMWB_CROSSMAP|1.000
+Sexually Transmitted Disease|469321000000107|[V]Screening for venereal disease|ZV745|[V]Screening for venereal disease|SEMANTIC|EXACT|1.000
+Sexually Transmitted Disease|316610008|[V]Screening for venereal disease (VD)|ZV745|[V]Screening for venereal disease|SEMANTIC|TOKEN_OVERLAP|1.000
+Sexually Transmitted Disease|30071002|Screening for venereal disease|ZV745|[V]Screening for venereal disease|SEMANTIC|NORMALISED|.950
+Assisted Fertilisation|391241000000101|[X]Other assisted fertilisation methods|ZVu21|[X]Other assisted fertilization methods|DMWB|DMWB_CROSSMAP|1.000
+
+(1314 rows affected)

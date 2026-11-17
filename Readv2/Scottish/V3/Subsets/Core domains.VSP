@@ -1,0 +1,48 @@
+1
+Core domains
+22
+Read 3                                                      
+3                   
+
+[ELEMENTS]
+E,X8001
+E,XM0Nm
+E,X79tP
+E,X78tJ
+E,X75Mq
+E,Xa001
+C,XaBVJ
+D,XaBVJ
+C,Xa22Y
+D,Xa22Y
+C,T....
+D,T....
+C,X78FG
+D,X78FG
+C,9....
+D,9....
+C,0....
+D,0....
+C,x00xm
+D,x00xm
+C,x00xl
+D,x00xl
+C,X74VQ
+D,X74VQ
+
+[TERMS EXCLUDED]
+
+[VIEW ROOTS]
+XaBVJ
+Xa22Y
+T....
+X78FG
+9....
+0....
+x00xm
+x00xl
+X74VQ
+
+[LINKS]
+
+[NATURAL TERMS]

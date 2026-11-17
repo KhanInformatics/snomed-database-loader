@@ -49,7 +49,9 @@ if (-not $config.notifications.enabled) {
 function Build-HtmlReport {
     param([hashtable]$Results)
     
-    $overallStatus = if ($Results.Success) { 
+    $hasErrors = $Results.Errors -and $Results.Errors.Count -gt 0
+    $reportSucceeded = $Results.Success -and -not $hasErrors
+    $overallStatus = if ($reportSucceeded) {
         '<span style="color: #28a745; font-weight: bold;">&#10003; SUCCESS</span>' 
     } else { 
         '<span style="color: #dc3545; font-weight: bold;">&#10007; FAILED</span>' 
@@ -154,6 +156,8 @@ function Build-HtmlReport {
         
         if ($Results.DMD.NewRelease) {
             $html += "<p><strong>New Release:</strong> $($Results.DMD.ReleaseVersion)</p>"
+        } elseif (-not $Results.DMD.Success) {
+            $html += "<p><em>Release check or update failed; installed release has not been verified.</em></p>"
         } else {
             $html += "<p><em>No new release available</em></p>"
         }
@@ -228,14 +232,36 @@ function Build-HtmlReport {
             $html += "<tr><td>$($step.Name)</td><td>$stepStatus</td><td>$($step.Details)</td><td>$($step.Duration)</td></tr>"
         }
         $html += "</table>"
+
+        if ($Results.PCD.RF2Status) {
+            $rf2Class = if ($Results.PCD.RF2Status -eq "Current") { "success" } else { "failure" }
+            $gpDataClass = if ($Results.PCD.GPDataStatus -eq "Current") { "success" } else { "failure" }
+            $gdpprClass = if ($Results.PCD.GDPPRStatus -eq "Current") { "success" } else { "failure" }
+            $html += "<p><strong>Official RF2 PCD:</strong> <span class='$rf2Class'>$($Results.PCD.RF2Status)</span><br>"
+            $html += "<strong>GPData supporting product:</strong> <span class='$gpDataClass'>$($Results.PCD.GPDataStatus)</span><br>"
+            $html += "<strong>GDPPR supporting product:</strong> <span class='$gdpprClass'>$($Results.PCD.GDPPRStatus)</span><br>"
+            $html += "<strong>Canonical PCD database:</strong> $($Results.PCD.DatabaseName)<br>"
+            $html += "<strong>Legacy enrichment:</strong> <span class='info'>$($Results.PCD.LegacyStatus)</span></p>"
+        }
         
         if ($Results.PCD.TableCounts -and $Results.PCD.TableCounts.Count -gt 0) {
             $validationColor = if ($Results.PCD.ValidationRate -ge 100) { "success" } elseif ($Results.PCD.ValidationRate -ge 80) { "warning" } else { "failure" }
-            $html += "<p><strong>PCD Validation:</strong> <span class='$validationColor'>$($Results.PCD.TablesPassed)/$($Results.PCD.TablesChecked) tables OK ($($Results.PCD.ValidationRate)%)</span></p>"
+            $html += "<p><strong>Required current supporting products:</strong> <span class='$validationColor'>$($Results.PCD.TablesPassed)/$($Results.PCD.TablesChecked) current ($($Results.PCD.ValidationRate)%)</span></p>"
             $html += "<table><tr><th>Table</th><th>Records</th><th>Status</th></tr>"
             foreach ($table in $Results.PCD.TableCounts.Keys | Sort-Object) {
                 $count = $Results.PCD.TableCounts[$table]
-                $statusCell = if ($count -gt 0) { '<span class="success">&#10003; OK</span>' } elseif ($count -eq 0) { '<span class="warning">Empty</span>' } else { '<span class="failure">Missing</span>' }
+                $isOptional = $Results.PCD.OptionalTables -contains $table
+                $statusCell = if ($isOptional) {
+                    '<span class="info">N/A (legacy)</span>'
+                } elseif ($table -eq "PCD_GPData_Cluster_Refset" -and $count -gt 0 -and $Results.PCD.GPDataStatus -eq "Current") {
+                    '<span class="success">&#10003; Current</span>'
+                } elseif ($table -eq "PCD_GDPPR_Cluster_Refset" -and $count -gt 0 -and $Results.PCD.GDPPRStatus -eq "Current") {
+                    '<span class="success">&#10003; Current</span>'
+                } elseif ($count -ge 0) {
+                    '<span class="failure">Stale</span>'
+                } else {
+                    '<span class="failure">Missing</span>'
+                }
                 $countText = if ($count -ge 0) { $count.ToString('N0') } else { "N/A" }
                 $html += "<tr><td>$($table.Replace('PCD_',''))</td><td>$countText</td><td>$statusCell</td></tr>"
             }
@@ -335,7 +361,8 @@ try {
     $htmlBody = Build-HtmlReport -Results $Results
     
     # Determine subject
-    $statusText = if ($Results.Success) { "Success" } else { "FAILED" }
+    $hasErrors = $Results.Errors -and $Results.Errors.Count -gt 0
+    $statusText = if ($Results.Success -and -not $hasErrors) { "Success" } else { "FAILED" }
     $updatesText = if ($Results.UpdatesFound -gt 0) { "$($Results.UpdatesFound) update(s)" } else { "No updates" }
     $subject = "$($config.notifications.subjectPrefix) $statusText - $updatesText - $(Get-Date -Format 'yyyy-MM-dd')"
     

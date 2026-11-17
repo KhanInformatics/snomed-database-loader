@@ -1,0 +1,855 @@
+@page "/snomed-explorer"
+@using Syncfusion.Blazor.Inputs
+@using Syncfusion.Blazor.Diagram
+@using Syncfusion.Blazor.Buttons
+@using System.Net.Http.Json
+@inject HttpClient Http
+@inject IJSRuntime JSRuntime
+
+<PageTitle>SNOMED CT Interactive Explorer</PageTitle>
+
+<!-- Page Header Section -->
+<div class="page-header-wrapper">
+    <div class="page-header">
+        <div class="page-header-content">
+            <div class="page-header-main">
+                <h4 class="page-title mb-1">SNOMED CT Interactive Hierarchy Explorer</h4>
+                <p class="page-subtitle mb-0">Click nodes to expand parents (↑) or children (↓)</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid" style="margin-top: 0; padding-top: 1rem;">
+    <!-- Search Box -->
+    <div class="row mb-3">
+        <div class="col-md-8">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Enter SNOMED CT Concept ID (e.g., 233604007 for Pneumonia)" 
+                       @bind="searchConceptId" @bind:event="oninput" @onkeypress="HandleKeyPress" />
+                <button class="btn btn-primary" @onclick="SearchConcept" disabled="@isLoading">
+                    @if (isLoading)
+                    {
+                        <span class="spinner-border spinner-border-sm me-1"></span>
+                    }
+                    <i class="fas fa-search me-1"></i> Explore
+                </button>
+                <button class="btn btn-outline-secondary" @onclick="ClearDiagram" title="Clear diagram">
+                    <i class="fas fa-trash"></i>
+                </button>
+            </div>
+        </div>
+        <div class="col-md-4 text-end">
+            <span class="badge bg-info me-2">Nodes: @nodes.Count</span>
+            <span class="badge bg-secondary">Connections: @connectors.Count</span>
+        </div>
+    </div>
+
+    @if (!string.IsNullOrEmpty(errorMessage))
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            @errorMessage
+            <button type="button" class="btn-close" @onclick="() => errorMessage = string.Empty"></button>
+        </div>
+    }
+
+    @if (!string.IsNullOrEmpty(infoMessage))
+    {
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+            @infoMessage
+            <button type="button" class="btn-close" @onclick="() => infoMessage = string.Empty"></button>
+        </div>
+    }
+
+    <!-- Legend -->
+    <div class="row mb-3">
+        <div class="col-12">
+            <div class="card" style="box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                <div class="card-body py-2">
+                    <div class="d-flex flex-wrap gap-4 align-items-center justify-content-center">
+                        <div class="d-flex align-items-center">
+                            <div style="width: 20px; height: 20px; background-color: #ff6b6b; border-radius: 4px; margin-right: 8px;"></div>
+                            <small><strong>Search Term</strong></small>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div style="width: 20px; height: 20px; background-color: #4dabf7; border-radius: 4px; margin-right: 8px;"></div>
+                            <small>Parent (IS-A)</small>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div style="width: 20px; height: 20px; background-color: #69db7c; border-radius: 4px; margin-right: 8px;"></div>
+                            <small>Child</small>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div style="width: 12px; height: 12px; background-color: #ffd43b; border-radius: 50%; margin-right: 8px;"></div>
+                            <small>Has more to expand</small>
+                        </div>
+                    </div>
+                    <div class="mt-2 text-center">
+                        <small class="text-muted">
+                            <strong><i class="fas fa-mouse-pointer"></i> Single click</strong> = Expand Parents & Children | 
+                            <i class="fas fa-hand-paper"></i> Drag to pan | 
+                            <i class="fas fa-search-plus"></i> Scroll to zoom
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Diagram -->
+    <div class="row">
+        <div class="col-12">
+            <div class="card" style="box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                <div class="card-header bg-light py-2 d-flex justify-content-between align-items-center">
+                    <h6 class="mb-0 small">
+                        <i class="fas fa-project-diagram me-2"></i>
+                        Interactive Hierarchy - @(focusConceptName ?? "Enter a concept ID to begin")
+                    </h6>
+                    <div class="btn-group btn-group-sm">
+                        <button class="btn btn-outline-secondary" @onclick="ExpandAllParents" disabled="@isLoading" title="Expand all parent levels">
+                            <i class="fas fa-arrow-up"></i> All Parents
+                        </button>
+                        <button class="btn btn-outline-secondary" @onclick="ExpandAllChildren" disabled="@isLoading" title="Expand all child levels (max 3)">
+                            <i class="fas fa-arrow-down"></i> All Children
+                        </button>
+                        <button class="btn btn-outline-secondary" @onclick="FitToPage" title="Fit to Page">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                        <button class="btn btn-outline-secondary" @onclick="ToggleOrientation" title="Toggle orientation">
+                            <i class="fas fa-sync"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-body p-0">
+                    <SfDiagramComponent @ref="@Diagram" 
+                                       Height="650px" 
+                                       Nodes="@nodes"
+                                       Connectors="@connectors"
+                                       SelectionChanged="@OnSelectionChanged"
+                                       Click="@OnDiagramClick"
+                                       InteractionController="@DiagramInteractions.ZoomPan">
+                        <ScrollSettings @bind-ScrollLimit="@scrollLimit"></ScrollSettings>
+                        <SnapSettings Constraints="SnapConstraints.None"></SnapSettings>
+                        <Layout @bind-Type="@layoutType" 
+                                @bind-VerticalSpacing="@verticalSpacing" 
+                                @bind-HorizontalSpacing="@horizontalSpacing" 
+                                @bind-Orientation="@orientation"
+                                HorizontalAlignment="HorizontalAlignment.Center"
+                                VerticalAlignment="VerticalAlignment.Center">
+                            <LayoutMargin Top="50" Bottom="50" Right="50" Left="50"></LayoutMargin>
+                        </Layout>
+                    </SfDiagramComponent>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Selected Node Info -->
+    @if (selectedNode != null)
+    {
+        <div class="row mt-3">
+            <div class="col-12">
+                <div class="card border-primary">
+                    <div class="card-header bg-primary text-white py-2">
+                        <strong>@selectedNode.Term</strong> (@selectedNode.ConceptId)
+                    </div>
+                    <div class="card-body py-2">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <small class="text-muted">FSN:</small> @selectedNode.FSN<br/>
+                                <small class="text-muted">Type:</small> @selectedNode.NodeType
+                                @if (selectedNode.ParentCount > 0)
+                                {
+                                    <br/><small class="text-muted">Parents:</small> @selectedNode.ParentCount
+                                }
+                                @if (selectedNode.ChildCount > 0)
+                                {
+                                    <br/><small class="text-muted">Children:</small> @selectedNode.ChildCount
+                                }
+                            </div>
+                            <div class="col-md-6 text-end">
+                                @if (!selectedNode.ParentsExpanded && selectedNode.HasMoreParents)
+                                {
+                                    <button class="btn btn-sm btn-outline-primary me-2" @onclick="() => ExpandParents(selectedNode)" disabled="@isLoading">
+                                        <i class="fas fa-arrow-up"></i> Expand Parents
+                                    </button>
+                                }
+                                @if (!selectedNode.ChildrenExpanded && selectedNode.HasMoreChildren)
+                                {
+                                    <button class="btn btn-sm btn-outline-success" @onclick="() => ExpandChildren(selectedNode)" disabled="@isLoading">
+                                        <i class="fas fa-arrow-down"></i> Expand Children (@selectedNode.ChildCount)
+                                    </button>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@code {
+    // API Base URL - change to Azure Function URL for production
+    private const string ApiBaseUrl = "http://localhost:7071/api/";
+
+    private SfDiagramComponent? Diagram;
+    private DiagramObjectCollection<Node> nodes = new DiagramObjectCollection<Node>();
+    private DiagramObjectCollection<Connector> connectors = new DiagramObjectCollection<Connector>();
+
+    private string searchConceptId = "233604007";
+    private string? focusConceptName;
+    private string? focusConceptId;
+    private string errorMessage = string.Empty;
+    private string infoMessage = string.Empty;
+    private bool isLoading = false;
+    private SnomedNode? selectedNode;
+
+    // Layout settings
+    private ScrollLimitMode scrollLimit = ScrollLimitMode.Diagram;
+    private LayoutType layoutType = LayoutType.HierarchicalTree;
+    private LayoutOrientation orientation = LayoutOrientation.TopToBottom;
+    private int verticalSpacing = 50;
+    private int horizontalSpacing = 40;
+
+    // Track loaded concepts
+    private Dictionary<string, SnomedNode> loadedConcepts = new Dictionary<string, SnomedNode>();
+
+    // Demo data for Pneumonia - will be replaced with API calls
+    private static Dictionary<string, ConceptData> demoData = new Dictionary<string, ConceptData>()
+    {
+        ["233604007"] = new ConceptData
+        {
+            Focus = new SnomedNode { ConceptId = "233604007", Term = "Pneumonia", FSN = "Pneumonia (disorder)", IsActive = true, NodeType = "Focus", HasMoreParents = true, HasMoreChildren = true, ParentCount = 2, ChildCount = 32 },
+            Parents = new List<SnomedNode>
+            {
+                new SnomedNode { ConceptId = "128601007", Term = "Infectious disease of lung", FSN = "Infectious disease of lung (disorder)", IsActive = true, NodeType = "Parent", HasMoreParents = true, ParentCount = 2 },
+                new SnomedNode { ConceptId = "205237003", Term = "Pneumonitis", FSN = "Pneumonitis (disorder)", IsActive = true, NodeType = "Parent", HasMoreParents = true, ParentCount = 3 }
+            },
+            Children = new List<SnomedNode>
+            {
+                new SnomedNode { ConceptId = "53084003", Term = "Bacterial pneumonia", FSN = "Bacterial pneumonia (disorder)", IsActive = true, NodeType = "Child", HasMoreChildren = true, ChildCount = 11 },
+                new SnomedNode { ConceptId = "75570004", Term = "Viral pneumonia", FSN = "Viral pneumonia (disorder)", IsActive = true, NodeType = "Child", HasMoreChildren = true, ChildCount = 15 },
+                new SnomedNode { ConceptId = "233613009", Term = "Fungal pneumonia", FSN = "Fungal pneumonia (disorder)", IsActive = true, NodeType = "Child", HasMoreChildren = true, ChildCount = 7 },
+                new SnomedNode { ConceptId = "396285007", Term = "Bronchopneumonia", FSN = "Bronchopneumonia (disorder)", IsActive = true, NodeType = "Child", HasMoreChildren = true, ChildCount = 10 },
+                new SnomedNode { ConceptId = "278516003", Term = "Lobar pneumonia", FSN = "Lobar pneumonia (disorder)", IsActive = true, NodeType = "Child", HasMoreChildren = true, ChildCount = 6 },
+                new SnomedNode { ConceptId = "422588002", Term = "Aspiration pneumonia", FSN = "Aspiration pneumonia (disorder)", IsActive = true, NodeType = "Child", HasMoreChildren = true, ChildCount = 6 },
+                new SnomedNode { ConceptId = "385093006", Term = "Community acquired pneumonia", FSN = "Community acquired pneumonia (disorder)", IsActive = true, NodeType = "Child", HasMoreChildren = false, ChildCount = 0 },
+                new SnomedNode { ConceptId = "425464007", Term = "Hospital acquired pneumonia", FSN = "Nosocomial pneumonia (disorder)", IsActive = true, NodeType = "Child", HasMoreChildren = true, ChildCount = 1 }
+            }
+        },
+        ["128601007"] = new ConceptData
+        {
+            Focus = new SnomedNode { ConceptId = "128601007", Term = "Infectious disease of lung", FSN = "Infectious disease of lung (disorder)", IsActive = true, NodeType = "Focus", HasMoreParents = true, HasMoreChildren = true, ParentCount = 2, ChildCount = 5 },
+            Parents = new List<SnomedNode>
+            {
+                new SnomedNode { ConceptId = "50417007", Term = "Lower respiratory tract infection", FSN = "Lower respiratory tract infection (disorder)", IsActive = true, NodeType = "Parent", HasMoreParents = true, ParentCount = 3 },
+                new SnomedNode { ConceptId = "19829001", Term = "Disorder of lung", FSN = "Disorder of lung (disorder)", IsActive = true, NodeType = "Parent", HasMoreParents = true, ParentCount = 3 }
+            },
+            Children = new List<SnomedNode>()
+        },
+        ["205237003"] = new ConceptData
+        {
+            Focus = new SnomedNode { ConceptId = "205237003", Term = "Pneumonitis", FSN = "Pneumonitis (disorder)", IsActive = true, NodeType = "Focus", HasMoreParents = true, HasMoreChildren = true, ParentCount = 3, ChildCount = 10 },
+            Parents = new List<SnomedNode>
+            {
+                new SnomedNode { ConceptId = "19829001", Term = "Disorder of lung", FSN = "Disorder of lung (disorder)", IsActive = true, NodeType = "Parent", HasMoreParents = true, ParentCount = 3 },
+                new SnomedNode { ConceptId = "128997002", Term = "Inflammatory disorder of lower respiratory tract", FSN = "Inflammatory disorder of lower respiratory tract (disorder)", IsActive = true, NodeType = "Parent", HasMoreParents = true, ParentCount = 3 },
+                new SnomedNode { ConceptId = "363169009", Term = "Inflammation of specific body organs", FSN = "Inflammation of specific body organs (disorder)", IsActive = true, NodeType = "Parent", HasMoreParents = true, ParentCount = 1 }
+            },
+            Children = new List<SnomedNode>()
+        },
+        ["50417007"] = new ConceptData
+        {
+            Focus = new SnomedNode { ConceptId = "50417007", Term = "Lower respiratory tract infection", FSN = "Lower respiratory tract infection (disorder)", IsActive = true, NodeType = "Focus", HasMoreParents = true, HasMoreChildren = true },
+            Parents = new List<SnomedNode>
+            {
+                new SnomedNode { ConceptId = "275498002", Term = "Respiratory tract infection", FSN = "Respiratory tract infection (disorder)", IsActive = true, NodeType = "Parent", HasMoreParents = true, ParentCount = 2 },
+                new SnomedNode { ConceptId = "128272009", Term = "Disorder of lower respiratory system", FSN = "Disorder of lower respiratory system (disorder)", IsActive = true, NodeType = "Parent", HasMoreParents = true, ParentCount = 1 },
+                new SnomedNode { ConceptId = "301226008", Term = "Lower respiratory tract finding", FSN = "Lower respiratory tract finding (finding)", IsActive = true, NodeType = "Parent", HasMoreParents = true, ParentCount = 1 }
+            },
+            Children = new List<SnomedNode>()
+        },
+        ["19829001"] = new ConceptData
+        {
+            Focus = new SnomedNode { ConceptId = "19829001", Term = "Disorder of lung", FSN = "Disorder of lung (disorder)", IsActive = true, NodeType = "Focus", HasMoreParents = true, HasMoreChildren = true },
+            Parents = new List<SnomedNode>
+            {
+                new SnomedNode { ConceptId = "118946009", Term = "Disorder of thorax", FSN = "Disorder of thorax (disorder)", IsActive = true, NodeType = "Parent", HasMoreParents = true, ParentCount = 2 },
+                new SnomedNode { ConceptId = "128272009", Term = "Disorder of lower respiratory system", FSN = "Disorder of lower respiratory system (disorder)", IsActive = true, NodeType = "Parent", HasMoreParents = true, ParentCount = 1 },
+                new SnomedNode { ConceptId = "301230006", Term = "Lung finding", FSN = "Lung finding (finding)", IsActive = true, NodeType = "Parent", HasMoreParents = true, ParentCount = 3 }
+            },
+            Children = new List<SnomedNode>()
+        },
+        ["275498002"] = new ConceptData
+        {
+            Focus = new SnomedNode { ConceptId = "275498002", Term = "Respiratory tract infection", FSN = "Respiratory tract infection (disorder)", IsActive = true, NodeType = "Focus", HasMoreParents = true, HasMoreChildren = true },
+            Parents = new List<SnomedNode>
+            {
+                new SnomedNode { ConceptId = "40733004", Term = "Infectious disease", FSN = "Infectious disease (disorder)", IsActive = true, NodeType = "Parent", HasMoreParents = true, ParentCount = 1 },
+                new SnomedNode { ConceptId = "50043002", Term = "Disorder of respiratory system", FSN = "Disorder of respiratory system (disorder)", IsActive = true, NodeType = "Parent", HasMoreParents = true, ParentCount = 2 }
+            },
+            Children = new List<SnomedNode>()
+        },
+        ["40733004"] = new ConceptData
+        {
+            Focus = new SnomedNode { ConceptId = "40733004", Term = "Infectious disease", FSN = "Infectious disease (disorder)", IsActive = true, NodeType = "Focus", HasMoreParents = true, HasMoreChildren = true },
+            Parents = new List<SnomedNode>
+            {
+                new SnomedNode { ConceptId = "64572001", Term = "Disease", FSN = "Disease (disorder)", IsActive = true, NodeType = "Parent", HasMoreParents = true, ParentCount = 1 }
+            },
+            Children = new List<SnomedNode>()
+        },
+        ["50043002"] = new ConceptData
+        {
+            Focus = new SnomedNode { ConceptId = "50043002", Term = "Disorder of respiratory system", FSN = "Disorder of respiratory system (disorder)", IsActive = true, NodeType = "Focus", HasMoreParents = true, HasMoreChildren = true },
+            Parents = new List<SnomedNode>
+            {
+                new SnomedNode { ConceptId = "362965005", Term = "Disorder of body system", FSN = "Disorder of body system (disorder)", IsActive = true, NodeType = "Parent", HasMoreParents = true, ParentCount = 1 },
+                new SnomedNode { ConceptId = "106048009", Term = "Respiratory finding", FSN = "Respiratory finding (finding)", IsActive = true, NodeType = "Parent", HasMoreParents = true, ParentCount = 1 }
+            },
+            Children = new List<SnomedNode>()
+        },
+        ["64572001"] = new ConceptData
+        {
+            Focus = new SnomedNode { ConceptId = "64572001", Term = "Disease", FSN = "Disease (disorder)", IsActive = true, NodeType = "Focus", HasMoreParents = true, HasMoreChildren = true },
+            Parents = new List<SnomedNode>
+            {
+                new SnomedNode { ConceptId = "404684003", Term = "Clinical finding", FSN = "Clinical finding (finding)", IsActive = true, NodeType = "Parent", HasMoreParents = false, ParentCount = 0 }
+            },
+            Children = new List<SnomedNode>()
+        },
+        ["362965005"] = new ConceptData
+        {
+            Focus = new SnomedNode { ConceptId = "362965005", Term = "Disorder of body system", FSN = "Disorder of body system (disorder)", IsActive = true, NodeType = "Focus", HasMoreParents = true, HasMoreChildren = true },
+            Parents = new List<SnomedNode>
+            {
+                new SnomedNode { ConceptId = "64572001", Term = "Disease", FSN = "Disease (disorder)", IsActive = true, NodeType = "Parent", HasMoreParents = true, ParentCount = 1 }
+            },
+            Children = new List<SnomedNode>()
+        },
+        ["106048009"] = new ConceptData
+        {
+            Focus = new SnomedNode { ConceptId = "106048009", Term = "Respiratory finding", FSN = "Respiratory finding (finding)", IsActive = true, NodeType = "Focus", HasMoreParents = true, HasMoreChildren = true },
+            Parents = new List<SnomedNode>
+            {
+                new SnomedNode { ConceptId = "404684003", Term = "Clinical finding", FSN = "Clinical finding (finding)", IsActive = true, NodeType = "Parent", HasMoreParents = false, ParentCount = 0 }
+            },
+            Children = new List<SnomedNode>()
+        },
+        ["404684003"] = new ConceptData
+        {
+            Focus = new SnomedNode { ConceptId = "404684003", Term = "Clinical finding", FSN = "Clinical finding (finding)", IsActive = true, NodeType = "Focus", HasMoreParents = false, HasMoreChildren = true, ParentCount = 0 },
+            Parents = new List<SnomedNode>(),
+            Children = new List<SnomedNode>()
+        },
+        // Children data
+        ["53084003"] = new ConceptData
+        {
+            Focus = new SnomedNode { ConceptId = "53084003", Term = "Bacterial pneumonia", FSN = "Bacterial pneumonia (disorder)", IsActive = true, NodeType = "Focus", HasMoreParents = true, HasMoreChildren = true },
+            Parents = new List<SnomedNode>(),
+            Children = new List<SnomedNode>
+            {
+                new SnomedNode { ConceptId = "233607000", Term = "Pneumococcal pneumonia", FSN = "Pneumococcal pneumonia (disorder)", IsActive = true, NodeType = "Child", HasMoreChildren = true, ChildCount = 3 },
+                new SnomedNode { ConceptId = "22754005", Term = "Staphylococcal pneumonia", FSN = "Staphylococcal pneumonia (disorder)", IsActive = true, NodeType = "Child", HasMoreChildren = true, ChildCount = 2 },
+                new SnomedNode { ConceptId = "195889001", Term = "Legionnaires' disease", FSN = "Legionnaires' disease (disorder)", IsActive = true, NodeType = "Child", HasMoreChildren = false, ChildCount = 0 },
+                new SnomedNode { ConceptId = "46970008", Term = "Mycoplasma pneumonia", FSN = "Mycoplasma pneumoniae pneumonia (disorder)", IsActive = true, NodeType = "Child", HasMoreChildren = false, ChildCount = 0 }
+            }
+        },
+        ["75570004"] = new ConceptData
+        {
+            Focus = new SnomedNode { ConceptId = "75570004", Term = "Viral pneumonia", FSN = "Viral pneumonia (disorder)", IsActive = true, NodeType = "Focus", HasMoreParents = true, HasMoreChildren = true },
+            Parents = new List<SnomedNode>(),
+            Children = new List<SnomedNode>
+            {
+                new SnomedNode { ConceptId = "195911009", Term = "Varicella pneumonia", FSN = "Varicella pneumonia (disorder)", IsActive = true, NodeType = "Child", HasMoreChildren = false, ChildCount = 0 },
+                new SnomedNode { ConceptId = "195900001", Term = "Measles pneumonia", FSN = "Measles pneumonia (disorder)", IsActive = true, NodeType = "Child", HasMoreChildren = false, ChildCount = 0 },
+                new SnomedNode { ConceptId = "195899007", Term = "Influenza with pneumonia", FSN = "Influenza with pneumonia (disorder)", IsActive = true, NodeType = "Child", HasMoreChildren = true, ChildCount = 5 }
+            }
+        }
+    };
+
+    private async Task HandleKeyPress(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter")
+        {
+            await SearchConcept();
+        }
+    }
+
+    private async Task SearchConcept()
+    {
+        if (string.IsNullOrWhiteSpace(searchConceptId))
+        {
+            errorMessage = "Please enter a SNOMED CT Concept ID";
+            return;
+        }
+
+        await ClearDiagram();
+        isLoading = true;
+        errorMessage = string.Empty;
+        infoMessage = string.Empty;
+
+        try
+        {
+            var conceptData = await GetConceptWithRelatives(searchConceptId.Trim());
+            
+            if (conceptData.Focus == null)
+            {
+                errorMessage = $"Concept ID '{searchConceptId}' not found. Try 233604007 (Pneumonia) for demo.";
+                return;
+            }
+
+            focusConceptName = conceptData.Focus.Term;
+            focusConceptId = conceptData.Focus.ConceptId;
+
+            // Add focus node
+            AddNode(conceptData.Focus, true);
+            
+            infoMessage = $"Loaded {focusConceptName}. Click the node or use buttons below to expand parents/children.";
+
+            await RefreshLayout();
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Error: {ex.Message}";
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private async Task ExpandParents(SnomedNode node)
+    {
+        if (node.ParentsExpanded) return;
+        
+        isLoading = true;
+        try
+        {
+            var data = await GetConceptWithRelatives(node.ConceptId, "Parents");
+            
+            foreach (var parent in data.Parents)
+            {
+                if (!loadedConcepts.ContainsKey(parent.ConceptId))
+                {
+                    AddNode(parent, false);
+                }
+                AddConnector(node.ConceptId, parent.ConceptId);
+            }
+
+            node.ParentsExpanded = true;
+            node.HasMoreParents = false;
+            UpdateNodeAppearance(node);
+            await RefreshLayout();
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Error expanding parents: {ex.Message}";
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private async Task ExpandChildren(SnomedNode node)
+    {
+        if (node.ChildrenExpanded) return;
+        
+        isLoading = true;
+        try
+        {
+            var data = await GetConceptWithRelatives(node.ConceptId, "Children");
+            
+            foreach (var child in data.Children)
+            {
+                if (!loadedConcepts.ContainsKey(child.ConceptId))
+                {
+                    AddNode(child, false);
+                }
+                AddConnector(child.ConceptId, node.ConceptId);
+            }
+
+            node.ChildrenExpanded = true;
+            node.HasMoreChildren = false;
+            UpdateNodeAppearance(node);
+            await RefreshLayout();
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Error expanding children: {ex.Message}";
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private async Task ExpandAllParents()
+    {
+        if (string.IsNullOrEmpty(focusConceptId)) return;
+        
+        isLoading = true;
+        int iterations = 0;
+        int maxIterations = 20; // Safety limit
+        
+        try
+        {
+            var nodesToExpand = loadedConcepts.Values
+                .Where(n => !n.ParentsExpanded && n.HasMoreParents)
+                .ToList();
+
+            while (nodesToExpand.Any() && iterations < maxIterations)
+            {
+                foreach (var node in nodesToExpand)
+                {
+                    await ExpandParents(node);
+                }
+                
+                nodesToExpand = loadedConcepts.Values
+                    .Where(n => !n.ParentsExpanded && n.HasMoreParents)
+                    .ToList();
+                    
+                iterations++;
+            }
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private async Task ExpandAllChildren()
+    {
+        if (string.IsNullOrEmpty(focusConceptId)) return;
+        
+        isLoading = true;
+        int maxLevels = 2; // Limit depth to prevent overwhelming
+        int currentLevel = 0;
+        
+        try
+        {
+            while (currentLevel < maxLevels)
+            {
+                var nodesToExpand = loadedConcepts.Values
+                    .Where(n => !n.ChildrenExpanded && n.HasMoreChildren && n.ChildCount > 0)
+                    .Take(10) // Limit per level
+                    .ToList();
+
+                if (!nodesToExpand.Any()) break;
+
+                foreach (var node in nodesToExpand)
+                {
+                    await ExpandChildren(node);
+                }
+                
+                currentLevel++;
+            }
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private void AddNode(SnomedNode snomedNode, bool isFocus)
+    {
+        if (loadedConcepts.ContainsKey(snomedNode.ConceptId)) return;
+
+        snomedNode.IsFocus = isFocus;
+        loadedConcepts[snomedNode.ConceptId] = snomedNode;
+
+        var node = new Node()
+        {
+            ID = snomedNode.ConceptId,
+            Width = isFocus ? 200 : 160,
+            Height = isFocus ? 70 : 55,
+            Shape = new BasicShape() 
+            { 
+                Type = Syncfusion.Blazor.Diagram.NodeShapes.Basic, 
+                Shape = NodeBasicShapes.Rectangle, 
+                CornerRadius = isFocus ? 10 : 6 
+            },
+            Style = new ShapeStyle() 
+            { 
+                Fill = GetNodeColor(snomedNode), 
+                StrokeWidth = isFocus ? 3 : 1, 
+                StrokeColor = GetNodeBorderColor(snomedNode)
+            },
+            Annotations = new DiagramObjectCollection<ShapeAnnotation>()
+            {
+                new ShapeAnnotation()
+                {
+                    Content = TruncateText(snomedNode.Term, 30) + (isFocus ? $"\n({snomedNode.ConceptId})" : ""),
+                    Style = new TextStyle()
+                    {
+                        Color = "white",
+                        FontSize = isFocus ? 11 : 10,
+                        Bold = isFocus,
+                        TextWrapping = Syncfusion.Blazor.Diagram.TextWrap.Wrap
+                    }
+                }
+            },
+            Data = snomedNode
+        };
+
+        // Add expand indicator if has more to show
+        if ((snomedNode.HasMoreParents && !snomedNode.ParentsExpanded) || 
+            (snomedNode.HasMoreChildren && !snomedNode.ChildrenExpanded))
+        {
+            node.Annotations.Add(new ShapeAnnotation()
+            {
+                Content = "●",
+                Offset = new DiagramPoint() { X = 1, Y = 0 },
+                Style = new TextStyle()
+                {
+                    Color = "#ffd43b",
+                    FontSize = 16,
+                    Bold = true
+                },
+                Margin = new DiagramThickness() { Right = -5, Top = -5 }
+            });
+        }
+
+        nodes.Add(node);
+    }
+
+    private void UpdateNodeAppearance(SnomedNode snomedNode)
+    {
+        var node = nodes.FirstOrDefault(n => n.ID == snomedNode.ConceptId);
+        if (node != null)
+        {
+            // Remove expand indicator if fully expanded
+            if ((!snomedNode.HasMoreParents || snomedNode.ParentsExpanded) && 
+                (!snomedNode.HasMoreChildren || snomedNode.ChildrenExpanded))
+            {
+                while (node.Annotations.Count > 1)
+                {
+                    node.Annotations.RemoveAt(1);
+                }
+            }
+        }
+    }
+
+    private void AddConnector(string childId, string parentId)
+    {
+        var connectorId = $"{childId}-{parentId}";
+        if (connectors.Any(c => c.ID == connectorId)) return;
+
+        connectors.Add(new Connector()
+        {
+            ID = connectorId,
+            SourceID = childId,
+            TargetID = parentId,
+            Type = ConnectorSegmentType.Orthogonal,
+            CornerRadius = 5,
+            Style = new ShapeStyle()
+            {
+                StrokeColor = "#6d6d6d",
+                StrokeWidth = 1
+            },
+            TargetDecorator = new DecoratorSettings()
+            {
+                Shape = DecoratorShape.Arrow,
+                Height = 8,
+                Width = 8,
+                Style = new ShapeStyle()
+                {
+                    Fill = "#6d6d6d",
+                    StrokeColor = "#6d6d6d"
+                }
+            }
+        });
+    }
+
+    private string GetNodeColor(SnomedNode node)
+    {
+        if (node.IsFocus) return "#ff6b6b";
+        if (node.ConceptId == "404684003") return "#e7704c"; // Root
+        return node.NodeType switch
+        {
+            "Parent" => "#4dabf7",
+            "Child" => "#69db7c",
+            _ => "#868e96"
+        };
+    }
+
+    private string GetNodeBorderColor(SnomedNode node)
+    {
+        if (node.IsFocus) return "#c92a2a";
+        if (node.ConceptId == "404684003") return "#c15433"; // Root
+        return node.NodeType switch
+        {
+            "Parent" => "#1971c2",
+            "Child" => "#2f9e44",
+            _ => "#495057"
+        };
+    }
+
+    private string TruncateText(string text, int maxLength)
+    {
+        if (string.IsNullOrEmpty(text)) return "";
+        return text.Length <= maxLength ? text : text.Substring(0, maxLength - 3) + "...";
+    }
+
+    private async Task RefreshLayout()
+    {
+        if (Diagram != null)
+        {
+            await Diagram.DoLayoutAsync();
+            await Task.Delay(100);
+            FitToPage();
+        }
+    }
+
+    private void FitToPage()
+    {
+        if (Diagram != null)
+        {
+            Diagram.FitToPage(new FitOptions() { Mode = FitMode.Both, Region = DiagramRegion.Content });
+        }
+    }
+
+    private void ToggleOrientation()
+    {
+        orientation = orientation == LayoutOrientation.TopToBottom 
+            ? LayoutOrientation.LeftToRight 
+            : LayoutOrientation.TopToBottom;
+    }
+
+    private async Task ClearDiagram()
+    {
+        nodes.Clear();
+        connectors.Clear();
+        loadedConcepts.Clear();
+        selectedNode = null;
+        focusConceptName = null;
+        focusConceptId = null;
+        await Task.CompletedTask;
+    }
+
+    private void OnSelectionChanged(Syncfusion.Blazor.Diagram.SelectionChangedEventArgs args)
+    {
+        try
+        {
+            selectedNode = null;
+            
+            if (args?.NewValue?.Count > 0)
+            {
+                var selectedDiagramNode = args.NewValue.FirstOrDefault() as Node;
+                if (selectedDiagramNode?.Data is SnomedNode snomedNode)
+                {
+                    selectedNode = snomedNode;
+                }
+            }
+        }
+        catch
+        {
+            // Ignore selection errors during initialization
+        }
+    }
+
+    private async Task OnDiagramClick(Syncfusion.Blazor.Diagram.ClickEventArgs args)
+    {
+        if (isLoading) return;
+        
+        try
+        {
+            // Check if a node was clicked (args.Element can be null for diagram background clicks)
+            if (args?.Element is Node clickedNode && clickedNode.Data is SnomedNode snomedNode)
+            {
+                selectedNode = snomedNode;
+                
+                // Auto-expand parents if not already expanded
+                if (!snomedNode.ParentsExpanded && snomedNode.HasMoreParents)
+                {
+                    await ExpandParents(snomedNode);
+                }
+                
+                // Auto-expand children if not already expanded
+                if (!snomedNode.ChildrenExpanded && snomedNode.HasMoreChildren)
+                {
+                    await ExpandChildren(snomedNode);
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Error: {ex.Message}";
+        }
+    }
+
+    // API call - uses demo data for now, replace with real API call
+    private async Task<ConceptData> GetConceptWithRelatives(string conceptId, string direction = "Both")
+    {
+        // TODO: Replace with actual API call when Azure Function is deployed
+        // Example:
+        // var response = await Http.GetFromJsonAsync<ConceptData>($"{ApiBaseUrl}snomed-relatives/{conceptId}?direction={direction}");
+        // return response ?? new ConceptData();
+
+        await Task.Delay(100); // Simulate network delay
+
+        if (demoData.TryGetValue(conceptId, out var data))
+        {
+            var result = new ConceptData
+            {
+                Focus = data.Focus != null ? CloneNode(data.Focus) : null
+            };
+            
+            if (direction == "Both" || direction == "Parents")
+            {
+                result.Parents = data.Parents.Select(CloneNode).ToList();
+            }
+            
+            if (direction == "Both" || direction == "Children")
+            {
+                result.Children = data.Children.Select(CloneNode).ToList();
+            }
+            
+            return result;
+        }
+
+        return new ConceptData();
+    }
+    
+    private SnomedNode CloneNode(SnomedNode node)
+    {
+        return new SnomedNode
+        {
+            ConceptId = node.ConceptId,
+            Term = node.Term,
+            FSN = node.FSN,
+            IsActive = node.IsActive,
+            NodeType = node.NodeType,
+            HasMoreParents = node.HasMoreParents,
+            HasMoreChildren = node.HasMoreChildren,
+            ParentCount = node.ParentCount,
+            ChildCount = node.ChildCount
+        };
+    }
+
+    // Data classes
+    public class SnomedNode
+    {
+        public string ConceptId { get; set; } = "";
+        public string Term { get; set; } = "";
+        public string FSN { get; set; } = "";
+        public bool IsActive { get; set; }
+        public string NodeType { get; set; } = "Focus";
+        public bool IsFocus { get; set; }
+        public bool HasMoreParents { get; set; }
+        public bool HasMoreChildren { get; set; }
+        public bool ParentsExpanded { get; set; }
+        public bool ChildrenExpanded { get; set; }
+        public int ParentCount { get; set; }
+        public int ChildCount { get; set; }
+    }
+
+    public class ConceptData
+    {
+        public SnomedNode? Focus { get; set; }
+        public List<SnomedNode> Parents { get; set; } = new();
+        public List<SnomedNode> Children { get; set; } = new();
+    }
+}

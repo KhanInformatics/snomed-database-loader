@@ -1,0 +1,230 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Compact usage viewer — rendered component preview</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+<link href="https://cdn.syncfusion.com/blazor/29.2.10/styles/bootstrap5.css" rel="stylesheet">
+<link href="http://127.0.0.1:5198/css/app.css" rel="stylesheet">
+<link href="http://127.0.0.1:5198/StaticBlazorSnomed.styles.css" rel="stylesheet">
+</head><body>
+
+
+<div class="page-header-wrapper" b-0r8w429pr0><div class="page-header" b-0r8w429pr0><div class="page-header-content" b-0r8w429pr0><div class="page-header-main" b-0r8w429pr0><h4 class="page-title mb-1" b-0r8w429pr0>Primary Care SNOMED CT Usage Data Viewer</h4>
+                <p class="page-subtitle mb-0" b-0r8w429pr0>Query SNOMED CT concept usage statistics from 2011-12 through 2025-26 (NHS England Data)</p></div>            <div class="page-header-actions" b-0r8w429pr0><span class="created-by" b-0r8w429pr0>Created by Imran Khan</span>
+                <a href="https://github.com" target="_blank" class="github-link" b-0r8w429pr0><i class="fab fa-github fa-lg" b-0r8w429pr0></i></a></div></div></div></div>
+
+<div class="container-fluid usage-viewer" b-0r8w429pr0><p class="small text-muted usage-release-note" b-0r8w429pr0>
+        Latest release: <a href="https://digital.nhs.uk/data-and-information/publications/statistical/mi-snomed-code-usage-in-primary-care/2025-26" target="_blank" rel="noopener noreferrer" b-0r8w429pr0>2025-26</a>, covering 1 August 2025 to 31 July 2026 (England).
+    </p>
+    <div class="content-section" b-0r8w429pr0><div class="card usage-search-card" b-0r8w429pr0><div class="card-body" b-0r8w429pr0><div class="usage-search-fields" b-0r8w429pr0><div class="usage-search-field" b-0r8w429pr0><label for="usage-concept-search" class="form-label fw-bold mb-1" b-0r8w429pr0>Search by SNOMED CT code or term</label>
+                        <div class="usage-concept-search" b-0r8w429pr0><input id="usage-concept-search" class="form-control" value="" maxlength="100" autocomplete="off" spellcheck="false" placeholder="Start typing a code or term, e.g. acid reflux" role="combobox" aria-autocomplete="list" aria-haspopup="listbox" aria-expanded="false" aria-controls="usage-concept-suggestions" aria-describedby="usage-concept-help usage-concept-status" b-0r8w429pr0 /></div>
+                        <small id="usage-concept-help" class="form-text text-muted d-block" b-0r8w429pr0>
+                            Type 3+ characters; select a concept, then SEARCH.
+                            <span class="text-nowrap" b-0r8w429pr0>↑/↓ browse · Enter select · Esc close.</span></small>
+                        <div id="usage-concept-status" class="small text-muted usage-concept-status" hidden role="status" aria-live="polite" b-0r8w429pr0></div></div>
+                    <div class="usage-codes-field" b-0r8w429pr0><label for="snomedCodes" class="form-label fw-bold mb-1" b-0r8w429pr0>SNOMED CT codes to compare</label>
+                        <div class="usage-code-controls" b-0r8w429pr0><textarea id="snomedCodes" class="form-control snomed-textarea" rows="1" placeholder="Enter SNOMED CT codes" aria-describedby="usage-codes-help" b-0r8w429pr0>88551000000109, 968191000000100</textarea>
+                            <div class="usage-search-actions" b-0r8w429pr0><button class="e-control e-btn e-lib e-primary e-small">                                    SEARCH
+                                </button>
+                                <button class="e-control e-btn e-lib e-outline e-small">CLEAR</button></div></div>
+                        <small id="usage-codes-help" class="form-text text-muted" b-0r8w429pr0>Add concepts or paste comma-separated codes.</small></div></div>
+                <details class="usage-templates" b-0r8w429pr0><summary b-0r8w429pr0>Quick search templates</summary>
+                    <div class="usage-template-menu" b-0r8w429pr0><small class="text-muted" b-0r8w429pr0>Choose a template, then SEARCH.</small>
+                        <button class="e-control e-btn e-lib e-link e-small text-start">
+                            Most commonly used SNOMED codes 2025-26 (100 codes)
+                        </button>
+                        <button class="e-control e-btn e-lib e-link e-small text-start">
+                            Multiple codes
+                        </button>
+                        <button class="e-control e-btn e-lib e-link e-small text-start">
+                            698065002 |Acid reflux (finding)|
+                        </button>
+                        <button class="e-control e-btn e-lib e-link e-small text-start">
+                            1022541000000102 |Total white cell count (observable entity)|
+                        </button></div></details></div></div><div class="row usage-legend" b-0r8w429pr0><div class="col-12" b-0r8w429pr0><div class="d-flex flex-wrap align-items-center gap-1" b-0r8w429pr0><span class="fw-bold" b-0r8w429pr0>Usage Scale:</span>
+                    <div class="d-flex flex-wrap align-items-center gap-1" b-0r8w429pr0><span class="badge" style="background-color: #e8f4f8; color: #2c5aa0; border: 1px solid #b8dce8;" b-0r8w429pr0>Very Low (1-100)</span>
+                        <span class="badge" style="background-color: #d4f1d4; color: #1e7e34; border: 1px solid #a3d9a3;" b-0r8w429pr0>Low (101-1,000)</span>
+                        <span class="badge" style="background-color: #fff3cd; color: #856404; border: 1px solid #f6e0a6;" b-0r8w429pr0>Medium (1,001-10,000)</span>
+                        <span class="badge" style="background-color: #f8d7da; color: #721c24; border: 1px solid #f1b0b7;" b-0r8w429pr0>High (10,001-100,000)</span>
+                        <span class="badge" style="background-color: #f9c6d1; color: #721c24; border: 1px solid #f1b0b7;" b-0r8w429pr0>Very High (100,001+)</span>
+                        <span class="badge" style="background-color: #eee8f8; color: #563d7c; border: 1px solid #d4c5eb;" b-0r8w429pr0>Suppressed (1-4)</span>
+                        <span class="badge bg-light text-muted border" b-0r8w429pr0>No Data</span></div></div></div></div><div class="row" b-0r8w429pr0><div class="col-12" b-0r8w429pr0><div class="card usage-results" b-0r8w429pr0><div class="card-header d-flex justify-content-between align-items-center" b-0r8w429pr0><span class="fw-bold" b-0r8w429pr0>Results: 2 result(s) found</span>
+                        <button class="e-control e-btn e-lib e-outline e-small"><i class="fas fa-download me-1" b-0r8w429pr0></i>Export CSV
+                        </button></div>
+                    <div class="card-body p-0" b-0r8w429pr0><div class="table-responsive" b-0r8w429pr0><table class="table table-striped table-hover" b-0r8w429pr0><thead class="table-dark" b-0r8w429pr0><tr b-0r8w429pr0><th b-0r8w429pr0>SNOMED CT Code</th>
+                                                <th b-0r8w429pr0>Procedure Description</th>
+                                                <th b-0r8w429pr0>2025-26</th>
+                                                <th b-0r8w429pr0>2024-25</th>
+                                                <th b-0r8w429pr0>2023-24</th>
+                                                <th b-0r8w429pr0>2022-23</th>
+                                                <th b-0r8w429pr0>2021-22</th>
+                                                <th b-0r8w429pr0>2020-21</th>
+                                                <th b-0r8w429pr0>2019-20</th>
+                                                <th b-0r8w429pr0>2018-19</th>
+                                                <th b-0r8w429pr0>2017-18</th>
+                                                <th b-0r8w429pr0>2016-17</th>
+                                                <th b-0r8w429pr0>2015-16</th>
+                                                <th b-0r8w429pr0>2014-15</th>
+                                                <th b-0r8w429pr0>2013-14</th>
+                                                <th b-0r8w429pr0>2012-13</th>
+                                                <th b-0r8w429pr0>2011-12</th></tr></thead>
+                                        <tbody b-0r8w429pr0><tr b-0r8w429pr0><td b-0r8w429pr0><strong b-0r8w429pr0>88551000000109</strong> <span class="text-muted small" b-0r8w429pr0>(England)</span></td>
+                                                    <td b-0r8w429pr0><span class="procedure-description" b-0r8w429pr0>Medication review with patient (procedure)</span></td>
+                                                    <td b-0r8w429pr0><span style="background-color: #f9c6d1; color: #721c24; border: 1px solid #f1b0b7;" class="usage-cell" b-0r8w429pr0>6,656,430</span></td>
+                                                    <td b-0r8w429pr0><span style="background-color: #f9c6d1; color: #721c24; border: 1px solid #f1b0b7;" class="usage-cell" b-0r8w429pr0>6,430,680</span></td>
+                                                    <td b-0r8w429pr0><span style="background-color: #f9c6d1; color: #721c24; border: 1px solid #f1b0b7;" class="usage-cell" b-0r8w429pr0>6,240,510</span></td>
+                                                    <td b-0r8w429pr0><span style="background-color: #f9c6d1; color: #721c24; border: 1px solid #f1b0b7;" class="usage-cell" b-0r8w429pr0>6,206,810</span></td>
+                                                    <td b-0r8w429pr0><span style="background-color: #f9c6d1; color: #721c24; border: 1px solid #f1b0b7;" class="usage-cell" b-0r8w429pr0>5,318,490</span></td>
+                                                    <td b-0r8w429pr0><span style="background-color: #f9c6d1; color: #721c24; border: 1px solid #f1b0b7;" class="usage-cell" b-0r8w429pr0>4,715,140</span></td>
+                                                    <td b-0r8w429pr0><span style="background-color: #f9c6d1; color: #721c24; border: 1px solid #f1b0b7;" class="usage-cell" b-0r8w429pr0>4,893,090</span></td>
+                                                    <td b-0r8w429pr0><span style="background-color: #f9c6d1; color: #721c24; border: 1px solid #f1b0b7;" class="usage-cell" b-0r8w429pr0>6,063,520</span></td>
+                                                    <td b-0r8w429pr0><span style="background-color: #f9c6d1; color: #721c24; border: 1px solid #f1b0b7;" class="usage-cell" b-0r8w429pr0>5,973,300</span></td>
+                                                    <td b-0r8w429pr0><span style="background-color: #f9c6d1; color: #721c24; border: 1px solid #f1b0b7;" class="usage-cell" b-0r8w429pr0>5,928,450</span></td>
+                                                    <td b-0r8w429pr0><span style="background-color: #f9c6d1; color: #721c24; border: 1px solid #f1b0b7;" class="usage-cell" b-0r8w429pr0>5,535,380</span></td>
+                                                    <td b-0r8w429pr0><span style="background-color: #f9c6d1; color: #721c24; border: 1px solid #f1b0b7;" class="usage-cell" b-0r8w429pr0>5,189,690</span></td>
+                                                    <td b-0r8w429pr0><span style="background-color: #f9c6d1; color: #721c24; border: 1px solid #f1b0b7;" class="usage-cell" b-0r8w429pr0>5,519,400</span></td>
+                                                    <td b-0r8w429pr0><span style="background-color: #f9c6d1; color: #721c24; border: 1px solid #f1b0b7;" class="usage-cell" b-0r8w429pr0>5,723,210</span></td>
+                                                    <td b-0r8w429pr0><span style="background-color: #f9c6d1; color: #721c24; border: 1px solid #f1b0b7;" class="usage-cell" b-0r8w429pr0>6,057,750</span></td></tr><tr b-0r8w429pr0><td b-0r8w429pr0><strong b-0r8w429pr0>968191000000100</strong> <span class="text-muted small" b-0r8w429pr0>(England)</span></td>
+                                                    <td b-0r8w429pr0><span class="procedure-description" b-0r8w429pr0>Estimated creatinine clearance using Cockcroft-Gault formula (observable entity)</span></td>
+                                                    <td b-0r8w429pr0><span style="background-color: #f9c6d1; color: #721c24; border: 1px solid #f1b0b7;" class="usage-cell" b-0r8w429pr0>570,300</span></td>
+                                                    <td b-0r8w429pr0><span style="background-color: #f9c6d1; color: #721c24; border: 1px solid #f1b0b7;" class="usage-cell" b-0r8w429pr0>1,079,750</span></td>
+                                                    <td b-0r8w429pr0><span style="background-color: #f9c6d1; color: #721c24; border: 1px solid #f1b0b7;" class="usage-cell" b-0r8w429pr0>1,812,400</span></td>
+                                                    <td b-0r8w429pr0><span style="background-color: #f9c6d1; color: #721c24; border: 1px solid #f1b0b7;" class="usage-cell" b-0r8w429pr0>3,441,000</span></td>
+                                                    <td b-0r8w429pr0><span style="background-color: #f9c6d1; color: #721c24; border: 1px solid #f1b0b7;" class="usage-cell" b-0r8w429pr0>1,898,420</span></td>
+                                                    <td b-0r8w429pr0><span style="background-color: #f9c6d1; color: #721c24; border: 1px solid #f1b0b7;" class="usage-cell" b-0r8w429pr0>1,241,300</span></td>
+                                                    <td b-0r8w429pr0><span style="background-color: #f9c6d1; color: #721c24; border: 1px solid #f1b0b7;" class="usage-cell" b-0r8w429pr0>907,780</span></td>
+                                                    <td b-0r8w429pr0><span style="background-color: #f9c6d1; color: #721c24; border: 1px solid #f1b0b7;" class="usage-cell" b-0r8w429pr0>328,090</span></td>
+                                                    <td b-0r8w429pr0><span style="background-color: #f9c6d1; color: #721c24; border: 1px solid #f1b0b7;" class="usage-cell" b-0r8w429pr0>159,940</span></td>
+                                                    <td b-0r8w429pr0><span style="background-color: #f8d7da; color: #721c24; border: 1px solid #f1b0b7;" class="usage-cell" b-0r8w429pr0>83,300</span></td>
+                                                    <td b-0r8w429pr0><span style="background-color: #fff3cd; color: #856404; border: 1px solid #f6e0a6;" class="usage-cell" b-0r8w429pr0>5,700</span></td>
+                                                    <td b-0r8w429pr0><span style="background-color: #f8f9fa; color: #6c757d; border: 1px solid #e9ecef;" class="usage-cell" b-0r8w429pr0>0</span></td>
+                                                    <td b-0r8w429pr0><span style="background-color: #f8f9fa; color: #6c757d; border: 1px solid #e9ecef;" class="usage-cell" b-0r8w429pr0>0</span></td>
+                                                    <td b-0r8w429pr0><span style="background-color: #f8f9fa; color: #6c757d; border: 1px solid #e9ecef;" class="usage-cell" b-0r8w429pr0>0</span></td>
+                                                    <td b-0r8w429pr0><span style="background-color: #f8f9fa; color: #6c757d; border: 1px solid #e9ecef;" class="usage-cell" b-0r8w429pr0>0</span></td></tr></tbody></table></div></div></div></div></div></div></div>
+
+<style b-0r8w429pr0>    /* Ensure the page header wrapper respects the sidebar */
+    .page-header-wrapper {
+        /* Remove all padding and margin to align with sidebar */
+        padding: 0;
+        margin: 0;
+        border-bottom: 1px solid #dee2e6; /* Match sidebar header separator */
+        background-color: #f8f9fa; /* Match sidebar header background */
+    }.page-header {
+        /* Match sidebar header exactly */
+        padding: 15px; /* Match sidebar header padding */
+        height: 42px !important; /* Fixed height to match sidebar header */
+        min-height: 42px !important; /* Ensure minimum height */
+        max-height: 42px !important; /* Ensure maximum height */
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        max-width: 100%;
+        margin: 0; /* Remove auto margins */
+    }    .page-header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%; /* Ensure full width */
+        flex-wrap: nowrap; /* Prevent wrapping to keep items on same line */
+    }
+
+    .page-header-main {
+        flex-grow: 1;
+        min-width: 0; /* Prevent title cutoff by allowing shrinking */
+        margin-right: 20px; /* Add space between title and actions */
+    }.page-title {
+        font-size: 1.1rem; /* Reduced from 1.5rem for better fit */
+        font-weight: 500;
+        color: #333;
+        white-space: nowrap; /* Prevent wrapping to avoid squashing */
+        overflow: hidden; /* Hide overflow if necessary */
+        text-overflow: ellipsis; /* Add ellipsis for long text */
+        margin: 0; /* Remove default margins */
+        line-height: 1.1; /* Tighter line height for compact header */
+    }    .page-subtitle {
+        font-size: 0.75rem; /* Reduced from 0.9rem for better fit */
+        color: #6c757d;
+        margin: 0; /* Remove default margins */
+        line-height: 1.1; /* Tighter line height */
+        white-space: nowrap; /* Prevent wrapping */
+        overflow: hidden; /* Hide overflow if necessary */
+        text-overflow: ellipsis; /* Add ellipsis for long text */
+    }    .page-header-actions {
+        display: flex;
+        align-items: center;
+        gap: 15px; /* Increased spacing between action items */
+        flex-shrink: 0; /* Prevent actions from shrinking too much */
+        margin-left: auto; /* Ensure it stays on the right */
+        justify-content: flex-end; /* Align content to the right */
+        min-width: fit-content; /* Ensure it takes minimum required space */
+    }
+
+    .created-by {
+        font-size: 0.8rem;
+        color: #6c757d;
+        font-style: italic;
+        white-space: nowrap; /* Prevent wrapping */
+    }    .github-link {
+        display: inline-flex;
+        align-items: center;
+        padding: 5px;
+        border-radius: 4px;
+        transition: background-color 0.2s;
+    }
+
+    .github-link:hover {
+        background-color: #f8f9fa;
+        text-decoration: none;
+    }
+
+    .github-link i {
+        color: #333; /* GitHub icon color */
+    }
+    .github-link:hover i {
+        color: #000; /* Darker on hover */
+    }
+
+    /* Style the SNOMED browser button */
+    .btn-primary {
+        background-color: #0d6efd;
+        border-color: #0d6efd;
+        font-size: 0.8rem;
+        padding: 4px 8px;
+        white-space: nowrap;
+    }
+
+    .btn-primary:hover {
+        background-color: #0b5ed7;
+        border-color: #0a58ca;
+    }    /* Responsive adjustments for smaller screens */
+    @media (max-width: 768px) {
+        .page-header-content {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .page-header-actions {
+            margin-top: 10px;
+            width: 100%;
+            justify-content: flex-start;
+            margin-left: 0; /* Reset margin on mobile */
+        }
+        .page-title {
+            font-size: 1.25rem;
+        }
+        .page-header-main {
+            margin-right: 0; /* Remove margin on mobile */
+        }
+    }
+
+    /* Ensure proper alignment on larger screens */
+    @media (min-width: 769px) {
+        .page-header-content {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .page-header-actions {
+            margin-left: auto;
+            justify-content: flex-end;
+        }
+    }
+
+</style></body></html>

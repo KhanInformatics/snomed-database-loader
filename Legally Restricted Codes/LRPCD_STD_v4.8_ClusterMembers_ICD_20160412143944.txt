@@ -1,0 +1,225 @@
+CLUSTER	VERSION	SCHEME	CODE	TERM
+LRPCD_STD	v4.8	ICD	A50	Congenital syphilis
+LRPCD_STD	v4.8	ICD	A500	Early congenital syphilis, symptomatic
+LRPCD_STD	v4.8	ICD	A501	Early congenital syphilis, latent
+LRPCD_STD	v4.8	ICD	A502	Early congenital syphilis, unspecified
+LRPCD_STD	v4.8	ICD	A503	Late congenital syphilitic oculopathy
+LRPCD_STD	v4.8	ICD	A504	Late congenital neurosyphilis [juvenile neurosyphilis]
+LRPCD_STD	v4.8	ICD	A505	Other late congenital syphilis, symptomatic
+LRPCD_STD	v4.8	ICD	A506	Late congenital syphilis, latent
+LRPCD_STD	v4.8	ICD	A507	Late congenital syphilis, unspecified
+LRPCD_STD	v4.8	ICD	A509	Congenital syphilis, unspecified
+LRPCD_STD	v4.8	ICD	A51	Early syphilis
+LRPCD_STD	v4.8	ICD	A510	Primary genital syphilis
+LRPCD_STD	v4.8	ICD	A511	Primary anal syphilis
+LRPCD_STD	v4.8	ICD	A512	Primary syphilis of other sites
+LRPCD_STD	v4.8	ICD	A513	Secondary syphilis of skin and mucous membranes
+LRPCD_STD	v4.8	ICD	A514	Other secondary syphilis
+LRPCD_STD	v4.8	ICD	A515	Early syphilis, latent
+LRPCD_STD	v4.8	ICD	A519	Early syphilis, unspecified
+LRPCD_STD	v4.8	ICD	A52	Late syphilis
+LRPCD_STD	v4.8	ICD	A520	Cardiovascular syphilis
+LRPCD_STD	v4.8	ICD	A521	Symptomatic neurosyphilis
+LRPCD_STD	v4.8	ICD	A522	Asymptomatic neurosyphilis
+LRPCD_STD	v4.8	ICD	A523	Neurosyphilis, unspecified
+LRPCD_STD	v4.8	ICD	A527	Other symptomatic late syphilis
+LRPCD_STD	v4.8	ICD	A528	Late syphilis, latent
+LRPCD_STD	v4.8	ICD	A529	Late syphilis, unspecified
+LRPCD_STD	v4.8	ICD	A53	Other and unspecified syphilis
+LRPCD_STD	v4.8	ICD	A530	Latent syphilis, unspecified as early or late
+LRPCD_STD	v4.8	ICD	A539	Syphilis, unspecified
+LRPCD_STD	v4.8	ICD	A54	Gonococcal infection
+LRPCD_STD	v4.8	ICD	A540	Gonococcal infection of lower genitourinary tract without periurethral or accessory gland abscess
+LRPCD_STD	v4.8	ICD	A541	Gonococcal infection of lower genitourinary tract with periurethral and accessory gland abscess
+LRPCD_STD	v4.8	ICD	A542	Gonococcal pelviperitonitis and other gonococcal genitourinary infections
+LRPCD_STD	v4.8	ICD	A543	Gonococcal infection of eye
+LRPCD_STD	v4.8	ICD	A544	Gonococcal infection of musculoskeletal system
+LRPCD_STD	v4.8	ICD	A545	Gonococcal pharyngitis
+LRPCD_STD	v4.8	ICD	A546	Gonococcal infection of anus and rectum
+LRPCD_STD	v4.8	ICD	A548	Other gonococcal infections
+LRPCD_STD	v4.8	ICD	A549	Gonococcal infection, unspecified
+LRPCD_STD	v4.8	ICD	A55	Chlamydial lymphogranuloma (venereum)
+LRPCD_STD	v4.8	ICD	A56	Other sexually transmitted chlamydial diseases
+LRPCD_STD	v4.8	ICD	A560	Chlamydial infection of lower genitourinary tract
+LRPCD_STD	v4.8	ICD	A561	Chlamydial infection of pelviperitoneum and other genitourinary organs
+LRPCD_STD	v4.8	ICD	A562	Chlamydial infection of genitourinary tract, unspecified
+LRPCD_STD	v4.8	ICD	A563	Chlamydial infection of anus and rectum
+LRPCD_STD	v4.8	ICD	A564	Chlamydial infection of pharynx
+LRPCD_STD	v4.8	ICD	A568	Sexually transmitted chlamydial infection of other sites
+LRPCD_STD	v4.8	ICD	A57	Chancroid
+LRPCD_STD	v4.8	ICD	A58	Granuloma inguinale
+LRPCD_STD	v4.8	ICD	A59	Trichomoniasis
+LRPCD_STD	v4.8	ICD	A590	Urogenital trichomoniasis
+LRPCD_STD	v4.8	ICD	A598	Trichomoniasis of other sites
+LRPCD_STD	v4.8	ICD	A599	Trichomoniasis, unspecified
+LRPCD_STD	v4.8	ICD	A600	Herpesviral infection of genitalia and urogenital tract
+LRPCD_STD	v4.8	ICD	A601	Herpesviral infection of perianal skin and rectum
+LRPCD_STD	v4.8	ICD	A609	Anogenital herpesviral infection, unspecified
+LRPCD_STD	v4.8	ICD	A63	Other predominantly sexually transmitted diseases, not elsewhere classified
+LRPCD_STD	v4.8	ICD	A630	Anogenital (venereal) warts
+LRPCD_STD	v4.8	ICD	A638	Other specified predominantly sexually transmitted diseases
+LRPCD_STD	v4.8	ICD	A64	Unspecified sexually transmitted disease
+LRPCD_STD	v4.8	ICD	A70	Chlamydia psittaci infection
+LRPCD_STD	v4.8	ICD	A71	Trachoma
+LRPCD_STD	v4.8	ICD	A710	Initial stage of trachoma
+LRPCD_STD	v4.8	ICD	A711	Active stage of trachoma
+LRPCD_STD	v4.8	ICD	A719	Trachoma, unspecified
+LRPCD_STD	v4.8	ICD	A74	Other diseases caused by chlamydiae
+LRPCD_STD	v4.8	ICD	A740	Chlamydial conjunctivitis
+LRPCD_STD	v4.8	ICD	A748	Other chlamydial diseases
+LRPCD_STD	v4.8	ICD	A749	Chlamydial infection, unspecified
+LRPCD_STD	v4.8	ICD	B16	Acute hepatitis B
+LRPCD_STD	v4.8	ICD	B160	Acute hepatitis B with delta-agent (coinfection) with hepatic coma
+LRPCD_STD	v4.8	ICD	B161	Acute hepatitis B with delta-agent (coinfection) without hepatic coma
+LRPCD_STD	v4.8	ICD	B162	Acute hepatitis B without delta-agent with hepatic coma
+LRPCD_STD	v4.8	ICD	B169	Acute hepatitis B without delta-agent and without hepatic coma
+LRPCD_STD	v4.8	ICD	B170	Acute delta-(super)infection of hepatitis B carrier
+LRPCD_STD	v4.8	ICD	B171	Acute hepatitis C
+LRPCD_STD	v4.8	ICD	B178	Other specified acute viral hepatitis
+LRPCD_STD	v4.8	ICD	B179	Acute viral hepatitis, unspecified
+LRPCD_STD	v4.8	ICD	B18	Chronic viral hepatitis
+LRPCD_STD	v4.8	ICD	B180	Chronic viral hepatitis B with delta-agent
+LRPCD_STD	v4.8	ICD	B181	Chronic viral hepatitis B without delta-agent
+LRPCD_STD	v4.8	ICD	B182	Chronic viral hepatitis C
+LRPCD_STD	v4.8	ICD	B188	Other chronic viral hepatitis
+LRPCD_STD	v4.8	ICD	B189	Chronic viral hepatitis, unspecified
+LRPCD_STD	v4.8	ICD	B19	Unspecified viral hepatitis
+LRPCD_STD	v4.8	ICD	B190	Unspecified viral hepatitis with hepatic coma
+LRPCD_STD	v4.8	ICD	B199	Unspecified viral hepatitis without hepatic coma
+LRPCD_STD	v4.8	ICD	B20	Human immunodeficiency virus [HIV] disease resulting in infectious and parasitic diseases
+LRPCD_STD	v4.8	ICD	B200	HIV disease resulting in mycobacterial infection
+LRPCD_STD	v4.8	ICD	B201	HIV disease resulting in other bacterial infections
+LRPCD_STD	v4.8	ICD	B202	HIV disease resulting in cytomegaloviral disease
+LRPCD_STD	v4.8	ICD	B203	HIV disease resulting in other viral infections
+LRPCD_STD	v4.8	ICD	B204	HIV disease resulting in candidiasis
+LRPCD_STD	v4.8	ICD	B205	HIV disease resulting in other mycoses
+LRPCD_STD	v4.8	ICD	B206	HIV disease resulting in Pneumocystis jirovecii pneumonia
+LRPCD_STD	v4.8	ICD	B207	HIV disease resulting in multiple infections
+LRPCD_STD	v4.8	ICD	B208	HIV disease resulting in other infectious and parasitic diseases
+LRPCD_STD	v4.8	ICD	B209	HIV disease resulting in unspecified infectious or parasitic disease
+LRPCD_STD	v4.8	ICD	B20–B24	Human immunodeficiency virus [HIV] disease
+LRPCD_STD	v4.8	ICD	B21	Human immunodeficiency virus [HIV] disease resulting in malignant neoplasms
+LRPCD_STD	v4.8	ICD	B210	HIV disease resulting in Kaposi sarcoma
+LRPCD_STD	v4.8	ICD	B211	HIV disease resulting in Burkitt lymphoma
+LRPCD_STD	v4.8	ICD	B212	HIV disease resulting in other types of non-Hodgkin lymphoma
+LRPCD_STD	v4.8	ICD	B213	HIV disease resulting in other malignant neoplasms of lymphoid, haematopoietic and related tissue
+LRPCD_STD	v4.8	ICD	B217	HIV disease resulting in multiple malignant neoplasms
+LRPCD_STD	v4.8	ICD	B218	HIV disease resulting in other malignant neoplasms
+LRPCD_STD	v4.8	ICD	B219	HIV disease resulting in unspecified malignant neoplasm
+LRPCD_STD	v4.8	ICD	B22	Human immunodeficiency virus [HIV] disease resulting in other specified diseases
+LRPCD_STD	v4.8	ICD	B220	HIV disease resulting in encephalopathy
+LRPCD_STD	v4.8	ICD	B221	HIV disease resulting in lymphoid interstitial pneumonitis
+LRPCD_STD	v4.8	ICD	B222	HIV disease resulting in wasting syndrome
+LRPCD_STD	v4.8	ICD	B227	HIV disease resulting in multiple diseases classified elsewhere
+LRPCD_STD	v4.8	ICD	B23	Human immunodeficiency virus [HIV] disease resulting in other conditions
+LRPCD_STD	v4.8	ICD	B230	Acute HIV infection syndrome
+LRPCD_STD	v4.8	ICD	B231	HIV disease resulting in (persistent) generalized lymphadenopathy
+LRPCD_STD	v4.8	ICD	B232	HIV disease resulting in haematological and immunological abnormalities, not elsewhere classified
+LRPCD_STD	v4.8	ICD	B238	HIV disease resulting in other specified conditions
+LRPCD_STD	v4.8	ICD	B24	Unspecified human immunodeficiency virus [HIV] disease
+LRPCD_STD	v4.8	ICD	B25	Cytomegaloviral disease
+LRPCD_STD	v4.8	ICD	B250	Cytomegaloviral pneumonitis
+LRPCD_STD	v4.8	ICD	B251	Cytomegaloviral hepatitis
+LRPCD_STD	v4.8	ICD	B252	Cytomegaloviral pancreatitis
+LRPCD_STD	v4.8	ICD	B258	Other cytomegaloviral diseases
+LRPCD_STD	v4.8	ICD	B259	Cytomegaloviral disease, unspecified
+LRPCD_STD	v4.8	ICD	B344	Papovavirus infection, unspecified site
+LRPCD_STD	v4.8	ICD	B851	Pediculosis due to Pediculus humanus corporis
+LRPCD_STD	v4.8	ICD	B853	Phthiriasis
+LRPCD_STD	v4.8	ICD	B940	Sequelae of trachoma
+LRPCD_STD	v4.8	ICD	B942	Sequelae of viral hepatitis
+LRPCD_STD	v4.8	ICD	B977	Papillomavirus as the cause of diseases classified to other chapters
+LRPCD_STD	v4.8	ICD	D013	Carcinoma in situ: Anus and anal canal
+LRPCD_STD	v4.8	ICD	D045	Carcinoma in situ: Skin of trunk
+LRPCD_STD	v4.8	ICD	D049	Carcinoma in situ: Skin, unspecified
+LRPCD_STD	v4.8	ICD	D071	Carcinoma in situ: Vulva
+LRPCD_STD	v4.8	ICD	D074	Carcinoma in situ: Penis
+LRPCD_STD	v4.8	ICD	G958	Other specified diseases of spinal cord
+LRPCD_STD	v4.8	ICD	H208	Other iridocyclitis
+LRPCD_STD	v4.8	ICD	I980	Cardiovascular syphilis
+LRPCD_STD	v4.8	ICD	K004	Disturbances in tooth formation
+LRPCD_STD	v4.8	ICD	K140	Glossitis
+LRPCD_STD	v4.8	ICD	K746	Other and unspecified cirrhosis of liver
+LRPCD_STD	v4.8	ICD	M023	Reiter disease
+LRPCD_STD	v4.8	ICD	M0230	Reiter disease - Multiple sites
+LRPCD_STD	v4.8	ICD	M0231	Reiter disease - Shoulder region
+LRPCD_STD	v4.8	ICD	M0232	Reiter disease - Upper arm
+LRPCD_STD	v4.8	ICD	M0233	Reiter disease - Forearm
+LRPCD_STD	v4.8	ICD	M0234	Reiter disease - Hand
+LRPCD_STD	v4.8	ICD	M0235	Reiter disease - Pelvic region and thigh
+LRPCD_STD	v4.8	ICD	M0236	Reiter disease - Lower leg
+LRPCD_STD	v4.8	ICD	M0237	Reiter disease - Ankle and foot
+LRPCD_STD	v4.8	ICD	M0238	Reiter disease - Other
+LRPCD_STD	v4.8	ICD	M0239	Reiter disease - Site unspecified
+LRPCD_STD	v4.8	ICD	M031	Postinfective arthropathy in syphilis
+LRPCD_STD	v4.8	ICD	M0310	Postinfective arthropathy in syphilis - Multiple sites
+LRPCD_STD	v4.8	ICD	M0311	Postinfective arthropathy in syphilis - Shoulder region
+LRPCD_STD	v4.8	ICD	M0312	Postinfective arthropathy in syphilis - Upper arm
+LRPCD_STD	v4.8	ICD	M0313	Postinfective arthropathy in syphilis - Forearm
+LRPCD_STD	v4.8	ICD	M0314	Postinfective arthropathy in syphilis - Hand
+LRPCD_STD	v4.8	ICD	M0315	Postinfective arthropathy in syphilis - Pelvic region and thigh
+LRPCD_STD	v4.8	ICD	M0316	Postinfective arthropathy in syphilis - Lower leg
+LRPCD_STD	v4.8	ICD	M0317	Postinfective arthropathy in syphilis - Ankle and foot
+LRPCD_STD	v4.8	ICD	M0318	Postinfective arthropathy in syphilis - Other
+LRPCD_STD	v4.8	ICD	M0319	Postinfective arthropathy in syphilis - Site unspecified
+LRPCD_STD	v4.8	ICD	M730	Gonococcal bursitis
+LRPCD_STD	v4.8	ICD	M7300	Gonococcal bursitis - Multiple sites
+LRPCD_STD	v4.8	ICD	M7301	Gonococcal bursitis - Shoulder region
+LRPCD_STD	v4.8	ICD	M7302	Gonococcal bursitis - Upper arm
+LRPCD_STD	v4.8	ICD	M7303	Gonococcal bursitis - Forearm
+LRPCD_STD	v4.8	ICD	M7304	Gonococcal bursitis - Hand
+LRPCD_STD	v4.8	ICD	M7305	Gonococcal bursitis - Pelvic region and thigh
+LRPCD_STD	v4.8	ICD	M7306	Gonococcal bursitis - Lower leg
+LRPCD_STD	v4.8	ICD	M7307	Gonococcal bursitis - Ankle and foot
+LRPCD_STD	v4.8	ICD	M7308	Gonococcal bursitis - Other
+LRPCD_STD	v4.8	ICD	M7309	Gonococcal bursitis - Site unspecified
+LRPCD_STD	v4.8	ICD	M731	Syphilitic bursitis
+LRPCD_STD	v4.8	ICD	M7310	Syphilitic bursitis - Multiple sites
+LRPCD_STD	v4.8	ICD	M7311	Syphilitic bursitis - Shoulder region
+LRPCD_STD	v4.8	ICD	M7312	Syphilitic bursitis - Upper arm
+LRPCD_STD	v4.8	ICD	M7313	Syphilitic bursitis - Forearm
+LRPCD_STD	v4.8	ICD	M7314	Syphilitic bursitis - Hand
+LRPCD_STD	v4.8	ICD	M7315	Syphilitic bursitis - Pelvic region and thigh
+LRPCD_STD	v4.8	ICD	M7316	Syphilitic bursitis - Lower leg
+LRPCD_STD	v4.8	ICD	M7317	Syphilitic bursitis - Ankle and foot
+LRPCD_STD	v4.8	ICD	M7318	Syphilitic bursitis - Other
+LRPCD_STD	v4.8	ICD	M7319	Syphilitic bursitis - Site unspecified
+LRPCD_STD	v4.8	ICD	N290	Late syphilis of kidney
+LRPCD_STD	v4.8	ICD	N341	Nonspecific urethritis
+LRPCD_STD	v4.8	ICD	N742	Female syphilitic pelvic inflammatory disease
+LRPCD_STD	v4.8	ICD	N743	Female gonococcal pelvic inflammatory disease
+LRPCD_STD	v4.8	ICD	N744	Female chlamydial pelvic inflammatory disease
+LRPCD_STD	v4.8	ICD	O981	Syphilis complicating pregnancy, childbirth and the puerperium
+LRPCD_STD	v4.8	ICD	O982	Gonorrhoea complicating pregnancy, childbirth and the puerperium
+LRPCD_STD	v4.8	ICD	O983	Other infections with a predominantly sexual mode of transmission complicating pregnancy, childbirth and the puerperium
+LRPCD_STD	v4.8	ICD	O984	Viral hepatitis complicating pregnancy, childbirth and the puerperium
+LRPCD_STD	v4.8	ICD	O987	Human immunodeficiency virus [HIV] disease complicating pregnancy, childbirth and the puerperium
+LRPCD_STD	v4.8	ICD	O991	Other diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism complicating pregnancy, childbirth and the puerperium
+LRPCD_STD	v4.8	ICD	P231	Congenital pneumonia due to Chlamydia
+LRPCD_STD	v4.8	ICD	P352	Congenital herpesviral [herpes simplex] infection
+LRPCD_STD	v4.8	ICD	P353	Congenital viral hepatitis
+LRPCD_STD	v4.8	ICD	P398	Other specified infections specific to the perinatal period
+LRPCD_STD	v4.8	ICD	R75	Laboratory evidence of human immunodeficiency virus [HIV]
+LRPCD_STD	v4.8	ICD	R762	False-positive serological test for syphilis
+LRPCD_STD	v4.8	ICD	W579	Bitten or stung by nonvenomous insect and other nonvenomous arthropods - Unspecified place
+LRPCD_STD	v4.8	ICD	Z113	Special screening examination for infections with a predominantly sexual mode of transmission
+LRPCD_STD	v4.8	ICD	Z114	Special screening examination for human immunodeficiency virus [HIV]
+LRPCD_STD	v4.8	ICD	Z202	Contact with and exposure to infections with a predominantly sexual mode of transmission
+LRPCD_STD	v4.8	ICD	Z205	Contact with and exposure to viral hepatitis
+LRPCD_STD	v4.8	ICD	Z206	Contact with and exposure to human immunodeficiency virus [HIV]
+LRPCD_STD	v4.8	ICD	Z208	Contact with and exposure to other communicable diseases
+LRPCD_STD	v4.8	ICD	Z21	Asymptomatic human immunodeficiency virus [HIV] infection status
+LRPCD_STD	v4.8	ICD	Z224	Carrier of infections with a predominantly sexual mode of transmission
+LRPCD_STD	v4.8	ICD	Z226	Carrier of human T-lymphotropic virus type- 1 [HTLV-1] infection
+LRPCD_STD	v4.8	ICD	Z246	Need for immunization against viral hepatitis
+LRPCD_STD	v4.8	ICD	Z70	Counselling related to sexual attitude, behaviour and orientation
+LRPCD_STD	v4.8	ICD	Z700	Counselling related to sexual attitude
+LRPCD_STD	v4.8	ICD	Z701	Counselling related to patient's sexual behaviour and orientation
+LRPCD_STD	v4.8	ICD	Z702	Counselling related to sexual behaviour and orientation of third party
+LRPCD_STD	v4.8	ICD	Z703	Counselling related to combined concerns regarding sexual attitude, behaviour and orientation
+LRPCD_STD	v4.8	ICD	Z708	Other sex counselling
+LRPCD_STD	v4.8	ICD	Z709	Sex counselling, unspecified
+LRPCD_STD	v4.8	ICD	Z717	Human immunodeficiency virus [HIV] counselling
+LRPCD_STD	v4.8	ICD	Z725	High-risk sexual behaviour
+LRPCD_STD	v4.8	ICD	Z830	Family history of human immunodeficiency virus [HIV] disease
+LRPCD_STD	v4.8	ICD	Z861	Personal history of infectious and parasitic diseases

@@ -1,0 +1,3777 @@
+[
+  {
+    "Cluster_ID": "3IN1VAC_COD",
+    "Cluster_Description": "3-in-1 Diphtheria, tetanus, and polio vaccine administration codes",
+    "PCD_Refset_ID": "999026651000230100"
+  },
+  {
+    "Cluster_ID": "4IN1VAC_COD",
+    "Cluster_Description": "4-in-1 Diphtheria, tetanus, pertussis and polio vaccine administration codes",
+    "PCD_Refset_ID": "999026611000230104"
+  },
+  {
+    "Cluster_ID": "5IN1VAC_COD",
+    "Cluster_Description": "5-in-1 Diphtheria, tetanus, pertussis, polio, and Haemophilus influenzae type b vaccine administration codes",
+    "PCD_Refset_ID": "999026571000230105"
+  },
+  {
+    "Cluster_ID": "6IN1VAC_COD",
+    "Cluster_Description": "6-in-1 Diphtheria, tetanus, pertussis, polio, Haemophilus influenzae type b, and hepatitis B vaccine administration codes",
+    "PCD_Refset_ID": "999026531000230108"
+  },
+  {
+    "Cluster_ID": "AAA_COD",
+    "Cluster_Description": "Abdominal aortic aneurysm diagnosis codes",
+    "PCD_Refset_ID": "999016371000230105"
+  },
+  {
+    "Cluster_ID": "ABPM_COD",
+    "Cluster_Description": "Ambulatory blood pressure codes",
+    "PCD_Refset_ID": "999016411000230109"
+  },
+  {
+    "Cluster_ID": "ABPMDEC_COD",
+    "Cluster_Description": "Codes indicating patient has chosen not to undertake ambulatory blood pressure monitoring (ABPM)",
+    "PCD_Refset_ID": "999028531000230107"
+  },
+  {
+    "Cluster_ID": "ACEDEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive angiotensin-converting enzyme (ACE) inhibitor",
+    "PCD_Refset_ID": "999009011000230109"
+  },
+  {
+    "Cluster_ID": "ADDISONS_COD",
+    "Cluster_Description": "Addisons disease diagnosis codes",
+    "PCD_Refset_ID": "999035331000230107"
+  },
+  {
+    "Cluster_ID": "ADHD_COD",
+    "Cluster_Description": "Attention Deficit Hyperactivity disorder codes",
+    "PCD_Refset_ID": "999016291000230104"
+  },
+  {
+    "Cluster_ID": "ADHDREM_COD",
+    "Cluster_Description": "Attention Deficit Hyperactivity disorder in remission codes",
+    "PCD_Refset_ID": "999016331000230108"
+  },
+  {
+    "Cluster_ID": "AFHIST_COD",
+    "Cluster_Description": "History of Atrial fibrillation or flutter codes",
+    "PCD_Refset_ID": "999016451000230108"
+  },
+  {
+    "Cluster_ID": "AFIB_COD",
+    "Cluster_Description": "Atrial fibrillation codes",
+    "PCD_Refset_ID": "999010611000230105"
+  },
+  {
+    "Cluster_ID": "AFIBINVITE_COD",
+    "Cluster_Description": "Invite for atrial fibrillation care review codes",
+    "PCD_Refset_ID": "999012011000230100"
+  },
+  {
+    "Cluster_ID": "AFIBPCADEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive atrial fibrillation quality indicator care",
+    "PCD_Refset_ID": "999007851000230105"
+  },
+  {
+    "Cluster_ID": "AFIBPCAPU_COD",
+    "Cluster_Description": "Codes for atrial fibrillation quality indicator care unsuitable for patient",
+    "PCD_Refset_ID": "999007931000230107"
+  },
+  {
+    "Cluster_ID": "AFIBRES_COD",
+    "Cluster_Description": "Atrial fibrillation resolved codes",
+    "PCD_Refset_ID": "999007971000230109"
+  },
+  {
+    "Cluster_ID": "AFMON_COD",
+    "Cluster_Description": "Atrial fibrillation monitoring and review codes",
+    "PCD_Refset_ID": "999016491000230103"
+  },
+  {
+    "Cluster_ID": "AIDS_COD",
+    "Cluster_Description": "Acquired immune deficiency syndrome (AIDS) codes",
+    "PCD_Refset_ID": "999032371000230100"
+  },
+  {
+    "Cluster_ID": "AIHA_COD",
+    "Cluster_Description": "Autoimmune hemolytic anemia (AIHA) codes",
+    "PCD_Refset_ID": "999033931000230107"
+  },
+  {
+    "Cluster_ID": "AIIDEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive angiotensin II receptor blockers (ARB)",
+    "PCD_Refset_ID": "999008011000230100"
+  },
+  {
+    "Cluster_ID": "ALC_COD",
+    "Cluster_Description": "Alcohol consumption codes",
+    "PCD_Refset_ID": "999007011000230101"
+  },
+  {
+    "Cluster_ID": "ALCADV_COD",
+    "Cluster_Description": "Advice, information and any brief intervention given on alcohol usage",
+    "PCD_Refset_ID": "999023131000230107"
+  },
+  {
+    "Cluster_ID": "ALCBRINT_COD",
+    "Cluster_Description": "Brief intervention for excessive alcohol consumption codes",
+    "PCD_Refset_ID": "999000091000230108"
+  },
+  {
+    "Cluster_ID": "ALCBRINTDEC_COD",
+    "Cluster_Description": "Brief intervention for excessive alcohol consumption declined codes",
+    "PCD_Refset_ID": "999000131000230106"
+  },
+  {
+    "Cluster_ID": "ALCEX_COD",
+    "Cluster_Description": "Alcohol consumption screening refused codes",
+    "PCD_Refset_ID": "999007051000230102"
+  },
+  {
+    "Cluster_ID": "ALCEXINT_COD",
+    "Cluster_Description": "Extended intervention for excessive alcohol consumption codes",
+    "PCD_Refset_ID": "999000171000230108"
+  },
+  {
+    "Cluster_ID": "ALCEXINTDEC_COD",
+    "Cluster_Description": "Extended intervention for excessive alcohol consumption declined codes",
+    "PCD_Refset_ID": "999000211000230106"
+  },
+  {
+    "Cluster_ID": "ALCINTDEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to accept an alcohol intervention",
+    "PCD_Refset_ID": "999023171000230109"
+  },
+  {
+    "Cluster_ID": "ALCOHOLINT_COD",
+    "Cluster_Description": "Alcohol Intervention and Advice codes",
+    "PCD_Refset_ID": "999016531000230103"
+  },
+  {
+    "Cluster_ID": "ALCREF_COD",
+    "Cluster_Description": "Referral regarding alcohol usage codes",
+    "PCD_Refset_ID": "999023211000230107"
+  },
+  {
+    "Cluster_ID": "ALCSCRNDEC_COD",
+    "Cluster_Description": "Alcohol screening and assessment declined codes",
+    "PCD_Refset_ID": "999000251000230105"
+  },
+  {
+    "Cluster_ID": "ALCSPADV_COD",
+    "Cluster_Description": "Referral to specialist alcohol treatment service codes",
+    "PCD_Refset_ID": "999000291000230100"
+  },
+  {
+    "Cluster_ID": "ALCSPADVDEC_COD",
+    "Cluster_Description": "Referral to specialist alcohol treatment service declined codes",
+    "PCD_Refset_ID": "999000331000230109"
+  },
+  {
+    "Cluster_ID": "ALCUSAGE_COD",
+    "Cluster_Description": "Codes that describe the patients alcohol usage",
+    "PCD_Refset_ID": "999023251000230106"
+  },
+  {
+    "Cluster_ID": "ALLOCATEGP_COD",
+    "Cluster_Description": "Patient allocated named accountable general practitioner codes",
+    "PCD_Refset_ID": "999020131000230103"
+  },
+  {
+    "Cluster_ID": "ALLOTRANSP_COD",
+    "Cluster_Description": "Allograft stem cell transplant codes",
+    "PCD_Refset_ID": "999032771000230104"
+  },
+  {
+    "Cluster_ID": "ALOPECIAAREATA_COD",
+    "Cluster_Description": "Alopecia areata codes",
+    "PCD_Refset_ID": "999034451000230106"
+  },
+  {
+    "Cluster_ID": "AMPL_COD",
+    "Cluster_Description": "Left foot amputation codes",
+    "PCD_Refset_ID": "999009531000230107"
+  },
+  {
+    "Cluster_ID": "AMPR_COD",
+    "Cluster_Description": "Right foot amputation codes",
+    "PCD_Refset_ID": "999009611000230103"
+  },
+  {
+    "Cluster_ID": "AMYLOID_COD",
+    "Cluster_Description": "Amyloidosis codes",
+    "PCD_Refset_ID": "999034291000230102"
+  },
+  {
+    "Cluster_ID": "ANGINA_COD",
+    "Cluster_Description": "Angina diagnosis codes",
+    "PCD_Refset_ID": "999015571000230109"
+  },
+  {
+    "Cluster_ID": "ANGINAREF_COD",
+    "Cluster_Description": "Angina referral to specialist codes",
+    "PCD_Refset_ID": "999015811000230104"
+  },
+  {
+    "Cluster_ID": "ANTIHYPDEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive antihypertensive treatment",
+    "PCD_Refset_ID": "999016571000230101"
+  },
+  {
+    "Cluster_ID": "ANTIPHOSYND_COD",
+    "Cluster_Description": "Antiphospholipid syndrome codes",
+    "PCD_Refset_ID": "999030611000230104"
+  },
+  {
+    "Cluster_ID": "ANX_COD",
+    "Cluster_Description": "Anxiety diagnostic codes",
+    "PCD_Refset_ID": "999036321000230103"
+  },
+  {
+    "Cluster_ID": "ANXRES_COD",
+    "Cluster_Description": "Anxiety resolved codes",
+    "PCD_Refset_ID": "999036331000230101"
+  },
+  {
+    "Cluster_ID": "ANXSCRN_COD",
+    "Cluster_Description": "Anxiety screening codes",
+    "PCD_Refset_ID": "999000371000230106"
+  },
+  {
+    "Cluster_ID": "ANXSCRNDEC_COD",
+    "Cluster_Description": "Anxiety screening declined codes",
+    "PCD_Refset_ID": "999000411000230105"
+  },
+  {
+    "Cluster_ID": "ANXSUPP_COD",
+    "Cluster_Description": "Anxiety support and treatment codes",
+    "PCD_Refset_ID": "999000451000230109"
+  },
+  {
+    "Cluster_ID": "APCR_COD",
+    "Cluster_Description": "Codes for Albumin Creatinine and Protein Creatinine Ratio for chronic kidney disease (CKD)",
+    "PCD_Refset_ID": "999003731000230103"
+  },
+  {
+    "Cluster_ID": "APECED_COD",
+    "Cluster_Description": "Autoimmune polyglandular syndromes/autoimmune polyendocrinopathy, candidiasis, ectodermal dystrophy (APECED syndrome) codes",
+    "PCD_Refset_ID": "999034611000230105"
+  },
+  {
+    "Cluster_ID": "AST_COD",
+    "Cluster_Description": "Asthma diagnosis codes",
+    "PCD_Refset_ID": "999012891000230104"
+  },
+  {
+    "Cluster_ID": "ASTADMSN_COD",
+    "Cluster_Description": "Asthma emergency admission codes",
+    "PCD_Refset_ID": "999019091000230100"
+  },
+  {
+    "Cluster_ID": "ASTEXACB_COD",
+    "Cluster_Description": "Codes indicating the number of asthma exacerbations",
+    "PCD_Refset_ID": "999020051000230106"
+  },
+  {
+    "Cluster_ID": "ASTINVITE_COD",
+    "Cluster_Description": "Invite for asthma care review codes",
+    "PCD_Refset_ID": "999012051000230101"
+  },
+  {
+    "Cluster_ID": "ASTMONDEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive asthma monitoring",
+    "PCD_Refset_ID": "999009651000230104"
+  },
+  {
+    "Cluster_ID": "ASTPCADEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive asthma quality indicator care",
+    "PCD_Refset_ID": "999009811000230104"
+  },
+  {
+    "Cluster_ID": "ASTPCAPU_COD",
+    "Cluster_Description": "Codes for asthma quality indicator care unsuitable for patient",
+    "PCD_Refset_ID": "999009851000230100"
+  },
+  {
+    "Cluster_ID": "ASTPCASU_COD",
+    "Cluster_Description": "Asthma quality indicator service unavailable codes",
+    "PCD_Refset_ID": "999009891000230105"
+  },
+  {
+    "Cluster_ID": "ASTRES_COD",
+    "Cluster_Description": "Asthma resolved codes",
+    "PCD_Refset_ID": "999010051000230100"
+  },
+  {
+    "Cluster_ID": "ASTSPIR_COD",
+    "Cluster_Description": "Spirometry codes for asthma",
+    "PCD_Refset_ID": "999010171000230105"
+  },
+  {
+    "Cluster_ID": "ATOPDERM_COD",
+    "Cluster_Description": "Atopic dermatitis codes",
+    "PCD_Refset_ID": "999034691000230104"
+  },
+  {
+    "Cluster_ID": "AUDIT_COD",
+    "Cluster_Description": "Alcohol Use Disorders Identification Test (AUDIT) codes",
+    "PCD_Refset_ID": "999000491000230104"
+  },
+  {
+    "Cluster_ID": "AUDITC_COD",
+    "Cluster_Description": "Alcohol Use Disorders Identification Test Consumption (AUDIT C) codes",
+    "PCD_Refset_ID": "999000531000230104"
+  },
+  {
+    "Cluster_ID": "AUTISM_COD",
+    "Cluster_Description": "Autism diagnosis codes",
+    "PCD_Refset_ID": "999016611000230107"
+  },
+  {
+    "Cluster_ID": "AUTOTRANSP_COD",
+    "Cluster_Description": "Autograft stem cell transplant codes",
+    "PCD_Refset_ID": "999032811000230104"
+  },
+  {
+    "Cluster_ID": "BEMPACIDADV_COD",
+    "Cluster_Description": "Codes indicating adverse reaction to bempedoic acid",
+    "PCD_Refset_ID": "999028611000230103"
+  },
+  {
+    "Cluster_ID": "BEMPACIDALL_COD",
+    "Cluster_Description": "Codes indicating allergy to bempedoic acid",
+    "PCD_Refset_ID": "999028651000230104"
+  },
+  {
+    "Cluster_ID": "BEMPACIDCON_COD",
+    "Cluster_Description": "Bempedoic acid contraindicated codes",
+    "PCD_Refset_ID": "999028691000230109"
+  },
+  {
+    "Cluster_ID": "BEMPACIDDEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive bempedoic acid",
+    "PCD_Refset_ID": "999028731000230101"
+  },
+  {
+    "Cluster_ID": "BEMPACIDNIND_COD",
+    "Cluster_Description": "Bempedoic acid not indicated codes",
+    "PCD_Refset_ID": "999028811000230104"
+  },
+  {
+    "Cluster_ID": "BLDTESTDEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive a blood test",
+    "PCD_Refset_ID": "999011611000230101"
+  },
+  {
+    "Cluster_ID": "BMI_COD",
+    "Cluster_Description": "Body mass index (BMI) codes",
+    "PCD_Refset_ID": "999010971000230107"
+  },
+  {
+    "Cluster_ID": "BMI30_COD",
+    "Cluster_Description": "Body mass index (BMI) codes >= 30 without an associated BMI value",
+    "PCD_Refset_ID": "999011051000230106"
+  },
+  {
+    "Cluster_ID": "BMIDEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to have their body mass index (BMI) measured",
+    "PCD_Refset_ID": "999011091000230101"
+  },
+  {
+    "Cluster_ID": "BMIDOWNS_COD",
+    "Cluster_Description": "Down syndrome body mass index (BMI) codes",
+    "PCD_Refset_ID": "999015971000230101"
+  },
+  {
+    "Cluster_ID": "BMIHEALTHY_COD",
+    "Cluster_Description": "Body mass index (BMI) healthy codes",
+    "PCD_Refset_ID": "999016011000230101"
+  },
+  {
+    "Cluster_ID": "BMILMH_COD",
+    "Cluster_Description": "Low, normal or high body mass index (BMI) codes",
+    "PCD_Refset_ID": "999022651000230101"
+  },
+  {
+    "Cluster_ID": "BMIOBESE_COD",
+    "Cluster_Description": "Body mass index (BMI) obese codes",
+    "PCD_Refset_ID": "999016051000230102"
+  },
+  {
+    "Cluster_ID": "BMIOVER_COD",
+    "Cluster_Description": "Body mass index (BMI) overweight codes",
+    "PCD_Refset_ID": "999016091000230107"
+  },
+  {
+    "Cluster_ID": "BMIPU_COD",
+    "Cluster_Description": "Codes for body mass index (BMI) measurement unsuitable for patient",
+    "PCD_Refset_ID": "999011131000230103"
+  },
+  {
+    "Cluster_ID": "BMIUNDER_COD",
+    "Cluster_Description": "Body mass index (BMI) underweight codes",
+    "PCD_Refset_ID": "999016131000230105"
+  },
+  {
+    "Cluster_ID": "BMIVAL_COD",
+    "Cluster_Description": "Body mass index (BMI) codes with an associated BMI value",
+    "PCD_Refset_ID": "999011171000230101"
+  },
+  {
+    "Cluster_ID": "BP_COD",
+    "Cluster_Description": "Blood pressure (BP) recording codes",
+    "PCD_Refset_ID": "999012731000230108"
+  },
+  {
+    "Cluster_ID": "BPDEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to have blood pressure procedure",
+    "PCD_Refset_ID": "999012611000230106"
+  },
+  {
+    "Cluster_ID": "BRAINCAN_COD",
+    "Cluster_Description": "Brain cancer diagnosis codes",
+    "PCD_Refset_ID": "999035451000230107"
+  },
+  {
+    "Cluster_ID": "BRCANSCR_COD",
+    "Cluster_Description": "Breast cancer screening codes",
+    "PCD_Refset_ID": "999016171000230107"
+  },
+  {
+    "Cluster_ID": "BRCANSCRDEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to have breast cancer screening",
+    "PCD_Refset_ID": "999023811000230108"
+  },
+  {
+    "Cluster_ID": "BRONCCHALENG_COD",
+    "Cluster_Description": "Bronchial challenge test codes",
+    "PCD_Refset_ID": "999036521000230109"
+  },
+  {
+    "Cluster_ID": "BSA_COD",
+    "Cluster_Description": "Bone sparing therapy codes",
+    "PCD_Refset_ID": "999003811000230101"
+  },
+  {
+    "Cluster_ID": "C19ACTIVITY_COD",
+    "Cluster_Description": "Codes relating to COVID19 risk, indicators of infection, activities regarding COVID19, and long COVID management and assessment",
+    "PCD_Refset_ID": "999019211000230102"
+  },
+  {
+    "Cluster_ID": "C19AST_COD",
+    "Cluster_Description": "Severe asthma and dust related lung disease codes",
+    "PCD_Refset_ID": "999019251000230103"
+  },
+  {
+    "Cluster_ID": "C19CAN_COD",
+    "Cluster_Description": "Non-haematological cancer diagnosis codes with or without associated treatment",
+    "PCD_Refset_ID": "999019291000230108"
+  },
+  {
+    "Cluster_ID": "C19COPD_COD",
+    "Cluster_Description": "Chronic obstructive pulmonary disease (COPD), emphysema, and associated lung diseases codes",
+    "PCD_Refset_ID": "999019331000230104"
+  },
+  {
+    "Cluster_ID": "C19CORSTESCARD_COD",
+    "Cluster_Description": "Provision of high dose corticosteroid safety card codes",
+    "PCD_Refset_ID": "999019371000230102"
+  },
+  {
+    "Cluster_ID": "C19FLURTI_COD",
+    "Cluster_Description": "Flu-like symptoms and upper and lower respiratory tract infection codes",
+    "PCD_Refset_ID": "999019411000230103"
+  },
+  {
+    "Cluster_ID": "C19HAEMCAN_COD",
+    "Cluster_Description": "Haematological cancer codes",
+    "PCD_Refset_ID": "999019451000230104"
+  },
+  {
+    "Cluster_ID": "C19HEART_COD",
+    "Cluster_Description": "Congenital heart disease codes",
+    "PCD_Refset_ID": "999019491000230109"
+  },
+  {
+    "Cluster_ID": "C19PREG_COD",
+    "Cluster_Description": "Pregnant patients at any stage of pregnancy",
+    "PCD_Refset_ID": "999019571000230106"
+  },
+  {
+    "Cluster_ID": "C19RARTH_COD",
+    "Cluster_Description": "Rheumatoid arthritis disorders",
+    "PCD_Refset_ID": "999022731000230103"
+  },
+  {
+    "Cluster_ID": "C19REMOTEOXIM_COD",
+    "Cluster_Description": "Remote pulse oximetry at home service codes",
+    "PCD_Refset_ID": "999024411000230109"
+  },
+  {
+    "Cluster_ID": "C19RESP_COD",
+    "Cluster_Description": "Non-asthma and non-COPD chronic respiratory disease codes",
+    "PCD_Refset_ID": "999019611000230100"
+  },
+  {
+    "Cluster_ID": "C19RGMADIAG_COD",
+    "Cluster_Description": "Rare genetic, metabolic and autoimmune disease codes",
+    "PCD_Refset_ID": "999019531000230109"
+  },
+  {
+    "Cluster_ID": "C19RISK_COD",
+    "Cluster_Description": "COVID19 risk category codes",
+    "PCD_Refset_ID": "999019651000230101"
+  },
+  {
+    "Cluster_ID": "C19TRANSP_COD",
+    "Cluster_Description": "Transplant codes with associated risk of immunosuppression",
+    "PCD_Refset_ID": "999019691000230106"
+  },
+  {
+    "Cluster_ID": "CALC_COD",
+    "Cluster_Description": "Calcium test result codes",
+    "PCD_Refset_ID": "999016651000230106"
+  },
+  {
+    "Cluster_ID": "CAN_COD",
+    "Cluster_Description": "Codes for relevant malignancies",
+    "PCD_Refset_ID": "999013651000230103"
+  },
+  {
+    "Cluster_ID": "CANINVITE_COD",
+    "Cluster_Description": "Invite for cancer care review codes",
+    "PCD_Refset_ID": "999012331000230107"
+  },
+  {
+    "Cluster_ID": "CANPCADEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive cancer quality indicator care",
+    "PCD_Refset_ID": "999011211000230103"
+  },
+  {
+    "Cluster_ID": "CANPCAPU_COD",
+    "Cluster_Description": "Codes for cancer quality indicator care unsuitable for patient",
+    "PCD_Refset_ID": "999011251000230104"
+  },
+  {
+    "Cluster_ID": "CANPCSUPP_COD",
+    "Cluster_Description": "Codes for provision of information about cancer support services available in primary care",
+    "PCD_Refset_ID": "999026491000230108"
+  },
+  {
+    "Cluster_ID": "CAREHOME_COD",
+    "Cluster_Description": "Codes indicating care home residency",
+    "PCD_Refset_ID": "999025691000230102"
+  },
+  {
+    "Cluster_ID": "CEREBRALP_COD",
+    "Cluster_Description": "Cerebral palsy diagnosis codes",
+    "PCD_Refset_ID": "999026731000230102"
+  },
+  {
+    "Cluster_ID": "CFDM_COD",
+    "Cluster_Description": "Cystic fibrosis related diabetes",
+    "PCD_Refset_ID": "999031611000230108"
+  },
+  {
+    "Cluster_ID": "CGEGFR_COD",
+    "Cluster_Description": "Cockcroft Gault - Estimated glomerular filtration rate codes",
+    "PCD_Refset_ID": "999016691000230101"
+  },
+  {
+    "Cluster_ID": "CGMDEC_COD",
+    "Cluster_Description": "Codes relating to recordings of continuous glucose monitoring declined",
+    "PCD_Refset_ID": "999036051000230107"
+  },
+  {
+    "Cluster_ID": "CGMDISC_COD",
+    "Cluster_Description": "Codes relating to recordings of discussions about continuous glucose monitoring",
+    "PCD_Refset_ID": "999036071000230101"
+  },
+  {
+    "Cluster_ID": "CGMREF_COD",
+    "Cluster_Description": "Codes relating to recordings of referrals for continuous glucose monitoring",
+    "PCD_Refset_ID": "999036061000230105"
+  },
+  {
+    "Cluster_ID": "CGMSTOP_COD",
+    "Cluster_Description": "Codes relating to recordings of continuous glucose monitoring stopped",
+    "PCD_Refset_ID": "999036041000230109"
+  },
+  {
+    "Cluster_ID": "CHAD_COD",
+    "Cluster_Description": "Stroke risk assessment using CHADS2",
+    "PCD_Refset_ID": "999011291000230109"
+  },
+  {
+    "Cluster_ID": "CHADVASC_COD",
+    "Cluster_Description": "Stroke risk assessment using CHA2DS2-VASc",
+    "PCD_Refset_ID": "999011331000230100"
+  },
+  {
+    "Cluster_ID": "CHD_COD",
+    "Cluster_Description": "Coronary heart disease (CHD) codes",
+    "PCD_Refset_ID": "999000771000230107"
+  },
+  {
+    "Cluster_ID": "CHDINVITE_COD",
+    "Cluster_Description": "Invite for coronary heart disease (CHD) care review codes",
+    "PCD_Refset_ID": "999012091000230106"
+  },
+  {
+    "Cluster_ID": "CHDPCADEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive coronary heart disease (CHD) quality indicator care",
+    "PCD_Refset_ID": "999011371000230103"
+  },
+  {
+    "Cluster_ID": "CHDPCAPU_COD",
+    "Cluster_Description": "Codes for coronary heart disease (CHD) quality indicator care unsuitable for patient",
+    "PCD_Refset_ID": "999011411000230104"
+  },
+  {
+    "Cluster_ID": "CHEMO_COD",
+    "Cluster_Description": "Chemotherapy non-drug concept codes",
+    "PCD_Refset_ID": "999034531000230101"
+  },
+  {
+    "Cluster_ID": "CHEXC_COD",
+    "Cluster_Description": "Codes for exception from serum cholesterol target (persisting)",
+    "PCD_Refset_ID": "999003891000230107"
+  },
+  {
+    "Cluster_ID": "CHOL_COD",
+    "Cluster_Description": "Total cholesterol codes",
+    "PCD_Refset_ID": "999003931000230100"
+  },
+  {
+    "Cluster_ID": "CHOL2_COD",
+    "Cluster_Description": "Total cholesterol codes with a value",
+    "PCD_Refset_ID": "999003971000230103"
+  },
+  {
+    "Cluster_ID": "CHOLDEC_COD",
+    "Cluster_Description": "Codes indicating a patient has chosen not to have a cholesterol test",
+    "PCD_Refset_ID": "999023851000230107"
+  },
+  {
+    "Cluster_ID": "CHOLINVITE_COD",
+    "Cluster_Description": "Codes for lipid disorder monitoring invitations",
+    "PCD_Refset_ID": "999036251000230100"
+  },
+  {
+    "Cluster_ID": "CHOLMAX_COD",
+    "Cluster_Description": "Codes indicating the patient is on maximum tolerated cholesterol lowering treatment",
+    "PCD_Refset_ID": "999011451000230100"
+  },
+  {
+    "Cluster_ID": "CHOLPCADEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive cholesterol quality indicator care",
+    "PCD_Refset_ID": "999036261000230102"
+  },
+  {
+    "Cluster_ID": "CHOLPCAPU_COD",
+    "Cluster_Description": "Codes for cholesterol disorder quality indicator care unsuitable for patient",
+    "PCD_Refset_ID": "999036271000230106"
+  },
+  {
+    "Cluster_ID": "CHROMIMM_COD",
+    "Cluster_Description": "Chromosomal disorders affecting immune competence codes",
+    "PCD_Refset_ID": "999032691000230109"
+  },
+  {
+    "Cluster_ID": "CHRONCONSTIP_COD",
+    "Cluster_Description": "Chronic constipation diagnosis codes",
+    "PCD_Refset_ID": "999016211000230105"
+  },
+  {
+    "Cluster_ID": "CHRONHD_COD",
+    "Cluster_Description": "Chronic heart disease codes",
+    "PCD_Refset_ID": "999014131000230101"
+  },
+  {
+    "Cluster_ID": "CIDP_COD",
+    "Cluster_Description": "Chronic inflammatory demyelinating polyradiculoneuropathy (CIDP) codes",
+    "PCD_Refset_ID": "999033571000230101"
+  },
+  {
+    "Cluster_ID": "CIRRHOSIS_COD",
+    "Cluster_Description": "Liver cirrhosis diagnoses",
+    "PCD_Refset_ID": "999025611000230108"
+  },
+  {
+    "Cluster_ID": "CKD_COD",
+    "Cluster_Description": "Chronic kidney disease (CKD) stage 3-5 codes",
+    "PCD_Refset_ID": "999004011000230108"
+  },
+  {
+    "Cluster_ID": "CKD1AND2_COD",
+    "Cluster_Description": "Chronic kidney disease (CKD) stage 1-2 codes",
+    "PCD_Refset_ID": "999004051000230107"
+  },
+  {
+    "Cluster_ID": "CKD1AND2ATRISK1_COD",
+    "Cluster_Description": "Chronic kidney disease (CKD) stage 1 and 2 codes",
+    "PCD_Refset_ID": "999020931000230101"
+  },
+  {
+    "Cluster_ID": "CKDATRISK1_COD",
+    "Cluster_Description": "Chronic kidney disease (CKD) stage 4 and 5 codes",
+    "PCD_Refset_ID": "999014171000230104"
+  },
+  {
+    "Cluster_ID": "CKDATRISK2_COD",
+    "Cluster_Description": "Chronic kidney disease (CKD) stage 3, 4 and 5 codes",
+    "PCD_Refset_ID": "999021491000230101"
+  },
+  {
+    "Cluster_ID": "CKDPRT_COD",
+    "Cluster_Description": "Codes for proteinuria for chronic kidney disease (CKD)",
+    "PCD_Refset_ID": "999004131000230104"
+  },
+  {
+    "Cluster_ID": "CKDRES_COD",
+    "Cluster_Description": "Chronic kidney disease (CKD) resolved codes",
+    "PCD_Refset_ID": "999004171000230102"
+  },
+  {
+    "Cluster_ID": "CLDATRISK1_COD",
+    "Cluster_Description": "Chronic liver disease (CLD) codes",
+    "PCD_Refset_ID": "999014211000230101"
+  },
+  {
+    "Cluster_ID": "CLINBP_COD",
+    "Cluster_Description": "Blood pressure recording codes excluding home and ambulatory blood pressure",
+    "PCD_Refset_ID": "999036281000230108"
+  },
+  {
+    "Cluster_ID": "CLINFRAILSCR_COD",
+    "Cluster_Description": "Clinical frailty score codes",
+    "PCD_Refset_ID": "999035531000230102"
+  },
+  {
+    "Cluster_ID": "CLINICALCGM_COD",
+    "Cluster_Description": "Ambulatory Continuous Glucose Monitoring testing and devices codes",
+    "PCD_Refset_ID": "999031691000230102"
+  },
+  {
+    "Cluster_ID": "CLO_COD",
+    "Cluster_Description": "Clopidogrel prophylaxis codes",
+    "PCD_Refset_ID": "999007131000230105"
+  },
+  {
+    "Cluster_ID": "CLODEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive clopidogrel",
+    "PCD_Refset_ID": "999011491000230105"
+  },
+  {
+    "Cluster_ID": "CNDATRISK1_COD",
+    "Cluster_Description": "Chronic neurological disease (CND) codes",
+    "PCD_Refset_ID": "999019731000230103"
+  },
+  {
+    "Cluster_ID": "CNDATRISK2_COD",
+    "Cluster_Description": "Codes for chronic neurological diseases with susceptibility for COVID 19",
+    "PCD_Refset_ID": "999035571000230100"
+  },
+  {
+    "Cluster_ID": "COCIMPATRISK1_COD",
+    "Cluster_Description": "Cochlear implant codes",
+    "PCD_Refset_ID": "999015091000230103"
+  },
+  {
+    "Cluster_ID": "COCIMPREMATRISK1_COD",
+    "Cluster_Description": "Cochlear implant removal codes",
+    "PCD_Refset_ID": "999014251000230102"
+  },
+  {
+    "Cluster_ID": "COELIAC_COD",
+    "Cluster_Description": "Coeliac disease codes",
+    "PCD_Refset_ID": "999033651000230106"
+  },
+  {
+    "Cluster_ID": "COLCANSCR_COD",
+    "Cluster_Description": "Colorectal cancer screening codes",
+    "PCD_Refset_ID": "999016251000230109"
+  },
+  {
+    "Cluster_ID": "COLCANSCRDEC_COD",
+    "Cluster_Description": "Codes indicating patient has chosen not to have bowel cancer screening",
+    "PCD_Refset_ID": "999023731000230106"
+  },
+  {
+    "Cluster_ID": "COLCANSCREV_COD",
+    "Cluster_Description": "Bowel cancer screening evidenced results (firm results) codes",
+    "PCD_Refset_ID": "999028411000230101"
+  },
+  {
+    "Cluster_ID": "COMPLEMENTDIS_COD",
+    "Cluster_Description": "Complement disorder codes",
+    "PCD_Refset_ID": "999026171000230104"
+  },
+  {
+    "Cluster_ID": "CONABL_COD",
+    "Cluster_Description": "Congenital absence of left foot codes",
+    "PCD_Refset_ID": "999031371000230106"
+  },
+  {
+    "Cluster_ID": "CONABR_COD",
+    "Cluster_Description": "Congenital absence of right foot codes",
+    "PCD_Refset_ID": "999031411000230105"
+  },
+  {
+    "Cluster_ID": "COPD_COD",
+    "Cluster_Description": "Chronic obstructive pulmonary disease (COPD) codes",
+    "PCD_Refset_ID": "999011571000230107"
+  },
+  {
+    "Cluster_ID": "COPDEXACB_COD",
+    "Cluster_Description": "Codes indicating number of COPD exacerbations",
+    "PCD_Refset_ID": "999020091000230101"
+  },
+  {
+    "Cluster_ID": "COPDINVITE_COD",
+    "Cluster_Description": "Invite for chronic obstructive pulmonary disease (COPD) care review codes",
+    "PCD_Refset_ID": "999013011000230108"
+  },
+  {
+    "Cluster_ID": "COPDPCADEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive chronic obstructive pulmonary disease (COPD) quality indicator care",
+    "PCD_Refset_ID": "999008971000230108"
+  },
+  {
+    "Cluster_ID": "COPDPCAPU_COD",
+    "Cluster_Description": "Codes for chronic obstructive pulmonary disease (COPD) quality indicator care unsuitable for patient",
+    "PCD_Refset_ID": "999009051000230108"
+  },
+  {
+    "Cluster_ID": "COPDPCASU_COD",
+    "Cluster_Description": "Chronic obstructive pulmonary disease (COPD) quality indicator service unavailable codes",
+    "PCD_Refset_ID": "999009091000230103"
+  },
+  {
+    "Cluster_ID": "COPDRES_COD",
+    "Cluster_Description": "Chronic obstructive pulmonary disease (COPD) resolved codes",
+    "PCD_Refset_ID": "999009131000230100"
+  },
+  {
+    "Cluster_ID": "COPDRVW_COD",
+    "Cluster_Description": "Codes for chronic obstructive pulmonary disease (COPD) review",
+    "PCD_Refset_ID": "999012691000230100"
+  },
+  {
+    "Cluster_ID": "COPDSPIR_COD",
+    "Cluster_Description": "Spirometry codes for chronic obstructive pulmonary disease (COPD)",
+    "PCD_Refset_ID": "999009171000230103"
+  },
+  {
+    "Cluster_ID": "CRDATRISK1_COD",
+    "Cluster_Description": "Chronic respiratory disease codes",
+    "PCD_Refset_ID": "999015491000230107"
+  },
+  {
+    "Cluster_ID": "CRDATRISK2_COD",
+    "Cluster_Description": "Chronic respiratory disease (CRD) codes",
+    "PCD_Refset_ID": "999019171000230100"
+  },
+  {
+    "Cluster_ID": "CRE_COD",
+    "Cluster_Description": "Codes for serum creatinine",
+    "PCD_Refset_ID": "999000811000230107"
+  },
+  {
+    "Cluster_ID": "CROHNS_COD",
+    "Cluster_Description": "Crohns disease codes",
+    "PCD_Refset_ID": "999033851000230105"
+  },
+  {
+    "Cluster_ID": "CRYOGLOBVASC_COD",
+    "Cluster_Description": "Cryoglobulinaemic vasculitis codes",
+    "PCD_Refset_ID": "999033211000230105"
+  },
+  {
+    "Cluster_ID": "CSDEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive cervical smear",
+    "PCD_Refset_ID": "999009451000230102"
+  },
+  {
+    "Cluster_ID": "CSFLATRISK1_COD",
+    "Cluster_Description": "Cerebrospinal fluid leak codes",
+    "PCD_Refset_ID": "999014291000230107"
+  },
+  {
+    "Cluster_ID": "CSPCAINVITE_COD",
+    "Cluster_Description": "Patient not responded to three invites for cervical screening codes",
+    "PCD_Refset_ID": "999009211000230100"
+  },
+  {
+    "Cluster_ID": "CSPU_COD",
+    "Cluster_Description": "Codes for cervical screening quality indicator care unsuitable for patient",
+    "PCD_Refset_ID": "999009251000230101"
+  },
+  {
+    "Cluster_ID": "CVDASS1_COD",
+    "Cluster_Description": "Cardiovascular disease (CVD) risk assessment codes greater than 20 per cent",
+    "PCD_Refset_ID": "999009291000230106"
+  },
+  {
+    "Cluster_ID": "CVDASS2_COD",
+    "Cluster_Description": "Cardiovascular disease (CVD) risk assessment codes",
+    "PCD_Refset_ID": "999011011000230107"
+  },
+  {
+    "Cluster_ID": "CVDASSDEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive cardiovascular disease (CVD) risk assessment",
+    "PCD_Refset_ID": "999009331000230102"
+  },
+  {
+    "Cluster_ID": "CVDASSPU_COD",
+    "Cluster_Description": "Codes indicating cardiovascular disease (CVD) risk assessment was deemed unsuitable for the patient",
+    "PCD_Refset_ID": "999009371000230100"
+  },
+  {
+    "Cluster_ID": "CVDASSRAEXC_COD",
+    "Cluster_Description": "Cardiovascular disease (CVD) risk assessment adjusted for rheumatoid arthritis (RA) exception codes",
+    "PCD_Refset_ID": "999004531000230106"
+  },
+  {
+    "Cluster_ID": "CVDINVITE_COD",
+    "Cluster_Description": "Invite for cardiovascular disease (CVD) care review codes",
+    "PCD_Refset_ID": "999013131000230104"
+  },
+  {
+    "Cluster_ID": "CVDPCADEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive quality indicator cardiovascular disease (CVD) care",
+    "PCD_Refset_ID": "999009411000230101"
+  },
+  {
+    "Cluster_ID": "CVDPCAPU_COD",
+    "Cluster_Description": "Codes for cardiovascular disease (CVD) quality indicator care unsuitable for patient",
+    "PCD_Refset_ID": "999009971000230101"
+  },
+  {
+    "Cluster_ID": "CVDRETSCRN_COD",
+    "Cluster_Description": "Evidence of diabetic retinopathy screening attendance codes",
+    "PCD_Refset_ID": "999016771000230106"
+  },
+  {
+    "Cluster_ID": "CVDRISKASS_COD",
+    "Cluster_Description": "Cardiovascular disease (CVD) risk assessment done codes",
+    "PCD_Refset_ID": "999016811000230106"
+  },
+  {
+    "Cluster_ID": "DCCTHBA1C_COD",
+    "Cluster_Description": "HbA1c Diabetes Control and Complications Trial (DCCT) level codes",
+    "PCD_Refset_ID": "999023291000230101"
+  },
+  {
+    "Cluster_ID": "DEATH_COD",
+    "Cluster_Description": "Patient deceased codes",
+    "PCD_Refset_ID": "999003291000230108"
+  },
+  {
+    "Cluster_ID": "DECDCARHOM_COD",
+    "Cluster_Description": "Patient died in care home codes",
+    "PCD_Refset_ID": "999022011000230106"
+  },
+  {
+    "Cluster_ID": "DELIRIUM_COD",
+    "Cluster_Description": "Delirium without a substance, medication, or alternative condition cause",
+    "PCD_Refset_ID": "999036391000230100"
+  },
+  {
+    "Cluster_ID": "DEM_COD",
+    "Cluster_Description": "Codes for dementia",
+    "PCD_Refset_ID": "999001331000230103"
+  },
+  {
+    "Cluster_ID": "DEMALZ_COD",
+    "Cluster_Description": "Alzheimerâ€™s disease dementia codes",
+    "PCD_Refset_ID": "999035811000230105"
+  },
+  {
+    "Cluster_ID": "DEMASS_COD",
+    "Cluster_Description": "Assessment for dementia codes",
+    "PCD_Refset_ID": "999001371000230101"
+  },
+  {
+    "Cluster_ID": "DEMCP_COD",
+    "Cluster_Description": "Dementia care plan codes",
+    "PCD_Refset_ID": "999001451000230103"
+  },
+  {
+    "Cluster_ID": "DEMCPDEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive dementia care plan",
+    "PCD_Refset_ID": "999001491000230108"
+  },
+  {
+    "Cluster_ID": "DEMCPRVW_COD",
+    "Cluster_Description": "Dementia care plan review codes",
+    "PCD_Refset_ID": "999001531000230108"
+  },
+  {
+    "Cluster_ID": "DEMCPRVWDEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive dementia care plan review",
+    "PCD_Refset_ID": "999001571000230105"
+  },
+  {
+    "Cluster_ID": "DEMFTEMP_COD",
+    "Cluster_Description": "Frontotemporal dementia codes",
+    "PCD_Refset_ID": "999036231000230109"
+  },
+  {
+    "Cluster_ID": "DEMINVITE_COD",
+    "Cluster_Description": "Invite for dementia care review codes",
+    "PCD_Refset_ID": "999013171000230102"
+  },
+  {
+    "Cluster_ID": "DEMLEWY_COD",
+    "Cluster_Description": "Lewy body dementia codes",
+    "PCD_Refset_ID": "999036221000230107"
+  },
+  {
+    "Cluster_ID": "DEMMEDRVW_COD",
+    "Cluster_Description": "Dementia medication review codes",
+    "PCD_Refset_ID": "999001611000230104"
+  },
+  {
+    "Cluster_ID": "DEMMIX_COD",
+    "Cluster_Description": "Mixed dementia codes",
+    "PCD_Refset_ID": "999035821000230102"
+  },
+  {
+    "Cluster_ID": "DEMOTHERSPEC_COD",
+    "Cluster_Description": "Dementia diagnosis codes excluding Alzheimer's, Vascular, Lewy Body, Frontotemporal, and Mixed, but of a specified type",
+    "PCD_Refset_ID": "999036381000230102"
+  },
+  {
+    "Cluster_ID": "DEMOTHERUNSPEC_COD",
+    "Cluster_Description": "Dementia diagnosis codes excluding Alzheimer's, Vascular, Lewy Body, Frontotemporal, and Mixed, but of an unspecified type",
+    "PCD_Refset_ID": "999036371000230104"
+  },
+  {
+    "Cluster_ID": "DEMPCADEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive dementia quality indicator care",
+    "PCD_Refset_ID": "999010091000230105"
+  },
+  {
+    "Cluster_ID": "DEMPCAPU_COD",
+    "Cluster_Description": "Codes for dementia quality indicator care unsuitable for patient",
+    "PCD_Refset_ID": "999010131000230108"
+  },
+  {
+    "Cluster_ID": "DEMVASC_COD",
+    "Cluster_Description": "Vascular dementia codes",
+    "PCD_Refset_ID": "999035841000230106"
+  },
+  {
+    "Cluster_ID": "DEPR_COD",
+    "Cluster_Description": "Depression diagnosis codes",
+    "PCD_Refset_ID": "999004611000230102"
+  },
+  {
+    "Cluster_ID": "DEPRES_COD",
+    "Cluster_Description": "Depression resolved codes",
+    "PCD_Refset_ID": "999004651000230103"
+  },
+  {
+    "Cluster_ID": "DEPRINVITE_COD",
+    "Cluster_Description": "Invite for depression care review codes",
+    "PCD_Refset_ID": "999012931000230106"
+  },
+  {
+    "Cluster_ID": "DEPRPCADEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive depression quality indicator care",
+    "PCD_Refset_ID": "999010211000230108"
+  },
+  {
+    "Cluster_ID": "DEPRPCAPU_COD",
+    "Cluster_Description": "Codes for depression quality indicator care unsuitable for patient",
+    "PCD_Refset_ID": "999010251000230107"
+  },
+  {
+    "Cluster_ID": "DEPRVW_COD",
+    "Cluster_Description": "Depression review codes",
+    "PCD_Refset_ID": "999010291000230102"
+  },
+  {
+    "Cluster_ID": "DEPSCRN_COD",
+    "Cluster_Description": "Depression screening codes",
+    "PCD_Refset_ID": "999000571000230102"
+  },
+  {
+    "Cluster_ID": "DEPSCRNDEC_COD",
+    "Cluster_Description": "Depression screening declined codes",
+    "PCD_Refset_ID": "999000611000230108"
+  },
+  {
+    "Cluster_ID": "DEPSUPP_COD",
+    "Cluster_Description": "Depression support and treatment codes",
+    "PCD_Refset_ID": "999000651000230107"
+  },
+  {
+    "Cluster_ID": "DIABNEPHROP_COD",
+    "Cluster_Description": "Diabetic nephropathy codes",
+    "PCD_Refset_ID": "999016891000230100"
+  },
+  {
+    "Cluster_ID": "DIALSTOP_COD",
+    "Cluster_Description": "Renal dialysis stopped codes",
+    "PCD_Refset_ID": "999022971000230103"
+  },
+  {
+    "Cluster_ID": "DIALYSIS_COD",
+    "Cluster_Description": "Renal dialysis codes",
+    "PCD_Refset_ID": "999022931000230100"
+  },
+  {
+    "Cluster_ID": "DIETINT_COD",
+    "Cluster_Description": "Diet Intervention and Advice codes",
+    "PCD_Refset_ID": "999016931000230107"
+  },
+  {
+    "Cluster_ID": "DIPYDEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive dipyridamole",
+    "PCD_Refset_ID": "999010571000230104"
+  },
+  {
+    "Cluster_ID": "DM_COD",
+    "Cluster_Description": "Diabetes mellitus codes",
+    "PCD_Refset_ID": "999004691000230108"
+  },
+  {
+    "Cluster_ID": "DM2YNGRVW_COD",
+    "Cluster_Description": "Type 2 diabetes in the young review codes",
+    "PCD_Refset_ID": "999036571000230108"
+  },
+  {
+    "Cluster_ID": "DM2YNGRVWOFF_COD",
+    "Cluster_Description": "Type 2 diabetes in the young review offered codes",
+    "PCD_Refset_ID": "999036581000230105"
+  },
+  {
+    "Cluster_ID": "DMARDS_COD",
+    "Cluster_Description": "Disease-modifying antirheumatic non-drug concept codes",
+    "PCD_Refset_ID": "999034651000230109"
+  },
+  {
+    "Cluster_ID": "DMATRISK1_COD",
+    "Cluster_Description": "Diabetes mellitus codes for pneumococcal service",
+    "PCD_Refset_ID": "999015171000230103"
+  },
+  {
+    "Cluster_ID": "DMINVITE_COD",
+    "Cluster_Description": "Invite for diabetes care review codes",
+    "PCD_Refset_ID": "999012371000230109"
+  },
+  {
+    "Cluster_ID": "DMMAX_COD",
+    "Cluster_Description": "Codes for maximum tolerated diabetes treatment",
+    "PCD_Refset_ID": "999010651000230109"
+  },
+  {
+    "Cluster_ID": "DMNONTYPE1_COD",
+    "Cluster_Description": "Codes for diabetes (non-type 1)",
+    "PCD_Refset_ID": "999015691000230109"
+  },
+  {
+    "Cluster_ID": "DMPCADEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive diabetes quality indicator care",
+    "PCD_Refset_ID": "999010691000230104"
+  },
+  {
+    "Cluster_ID": "DMPCAPU_COD",
+    "Cluster_Description": "Codes for diabetes quality indicator care unsuitable for patient",
+    "PCD_Refset_ID": "999010731000230107"
+  },
+  {
+    "Cluster_ID": "DMREM_COD",
+    "Cluster_Description": "Codes for diabetes mellitus in remission",
+    "PCD_Refset_ID": "999025931000230108"
+  },
+  {
+    "Cluster_ID": "DMRES_COD",
+    "Cluster_Description": "Diabetes resolved codes",
+    "PCD_Refset_ID": "999003371000230102"
+  },
+  {
+    "Cluster_ID": "DMTYPE1_COD",
+    "Cluster_Description": "Codes for type 1 diabetes",
+    "PCD_Refset_ID": "999015611000230103"
+  },
+  {
+    "Cluster_ID": "DMTYPE1AUDIT_COD",
+    "Cluster_Description": "Diabetes Type 1 codes used in National Audit",
+    "PCD_Refset_ID": "999016971000230109"
+  },
+  {
+    "Cluster_ID": "DMTYPE2_COD",
+    "Cluster_Description": "Codes for diabetes type 2",
+    "PCD_Refset_ID": "999010771000230109"
+  },
+  {
+    "Cluster_ID": "DMTYPE2AUDIT_COD",
+    "Cluster_Description": "Diabetes Type 2 codes used in National Audit",
+    "PCD_Refset_ID": "999017011000230103"
+  },
+  {
+    "Cluster_ID": "DOACCON_COD",
+    "Cluster_Description": "Direct oral anticoagulant (DOAC) contraindicated codes",
+    "PCD_Refset_ID": "999029891000230104"
+  },
+  {
+    "Cluster_ID": "DOACDEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive a direct oral anticoagulant (DOAC)",
+    "PCD_Refset_ID": "999029851000230109"
+  },
+  {
+    "Cluster_ID": "DOACDOSECH_COD",
+    "Cluster_Description": "Direct oral anticoagulant (DOAC) dose changed codes",
+    "PCD_Refset_ID": "999031011000230102"
+  },
+  {
+    "Cluster_ID": "DOACDOSENCH_COD",
+    "Cluster_Description": "Direct oral anticoagulant (DOAC) dose not changed codes",
+    "PCD_Refset_ID": "999030971000230102"
+  },
+  {
+    "Cluster_ID": "DOACNI_COD",
+    "Cluster_Description": "Direct oral anticoagulant (DOAC) not indicated codes",
+    "PCD_Refset_ID": "999031171000230108"
+  },
+  {
+    "Cluster_ID": "DPPATT_COD",
+    "Cluster_Description": "Referral to NHS diabetes prevention programme attended",
+    "PCD_Refset_ID": "999000851000230106"
+  },
+  {
+    "Cluster_ID": "DPPCOMP_COD",
+    "Cluster_Description": "Referral to NHS diabetes prevention programme completed",
+    "PCD_Refset_ID": "999000891000230101"
+  },
+  {
+    "Cluster_ID": "DPPOFF_COD",
+    "Cluster_Description": "Referral to NHS diabetes prevention programme offered or declined",
+    "PCD_Refset_ID": "999000931000230108"
+  },
+  {
+    "Cluster_ID": "DRSATT_COD",
+    "Cluster_Description": "Diabetic retinopathy screening attendance codes",
+    "PCD_Refset_ID": "999003331000230104"
+  },
+  {
+    "Cluster_ID": "DRSCON_COD",
+    "Cluster_Description": "Consent to share demographic information for retinal screening codes",
+    "PCD_Refset_ID": "999003411000230103"
+  },
+  {
+    "Cluster_ID": "DRSCONWTHLD_COD",
+    "Cluster_Description": "Consent to share demographic information for retinal screening withheld codes",
+    "PCD_Refset_ID": "999003451000230104"
+  },
+  {
+    "Cluster_ID": "DRSDM_COD",
+    "Cluster_Description": "Diabetic retinopathy screening service diabetes mellitus diagnosis codes",
+    "PCD_Refset_ID": "999003651000230101"
+  },
+  {
+    "Cluster_ID": "DRSDM1_COD",
+    "Cluster_Description": "Supplementary list of diabetes complication codes",
+    "PCD_Refset_ID": "999024011000230101"
+  },
+  {
+    "Cluster_ID": "DRSELIGIBILITY_COD",
+    "Cluster_Description": "Diabetic retinopathy screening service eligibility codes",
+    "PCD_Refset_ID": "999003491000230109"
+  },
+  {
+    "Cluster_ID": "DRSETHNICITY_COD",
+    "Cluster_Description": "Diabetic retinopathy screening ethnicity codes",
+    "PCD_Refset_ID": "999003531000230109"
+  },
+  {
+    "Cluster_ID": "DS_COD",
+    "Cluster_Description": "Downâ€™s syndrome codes",
+    "PCD_Refset_ID": "999006771000230109"
+  },
+  {
+    "Cluster_ID": "DSEP_COD",
+    "Cluster_Description": "Referred for diabetes structured education programme codes",
+    "PCD_Refset_ID": "999012651000230105"
+  },
+  {
+    "Cluster_ID": "DSEPDEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to have diabetes structured education programme",
+    "PCD_Refset_ID": "999010811000230109"
+  },
+  {
+    "Cluster_ID": "DSEPPU_COD",
+    "Cluster_Description": "Codes for diabetes structured education programme unsuitable for the patient",
+    "PCD_Refset_ID": "999010851000230108"
+  },
+  {
+    "Cluster_ID": "DSEPSU_COD",
+    "Cluster_Description": "Diabetes structured education programme service unavailable codes",
+    "PCD_Refset_ID": "999010891000230103"
+  },
+  {
+    "Cluster_ID": "DTAPIPVCON_COD",
+    "Cluster_Description": "Diphtheria, tetanus, pertussis, polio containing vaccine contraindications",
+    "PCD_Refset_ID": "999026811000230100"
+  },
+  {
+    "Cluster_ID": "DTAPIPVVACBOOST_COD",
+    "Cluster_Description": "Booster DTaP/IPV vaccination codes",
+    "PCD_Refset_ID": "999026851000230101"
+  },
+  {
+    "Cluster_ID": "DTPCON_COD",
+    "Cluster_Description": "Diphtheria, tetanus and pertussis containing vaccine contraindication codes",
+    "PCD_Refset_ID": "999026771000230100"
+  },
+  {
+    "Cluster_ID": "DULIPID_COD",
+    "Cluster_Description": "Dutch Lipid Clinic Network Codes",
+    "PCD_Refset_ID": "999017051000230104"
+  },
+  {
+    "Cluster_ID": "DXA_COD",
+    "Cluster_Description": "Dual energy X-ray absorptiometry (DXA) scan result of osteoporotic without a value codes",
+    "PCD_Refset_ID": "999004771000230103"
+  },
+  {
+    "Cluster_ID": "DXA2_COD",
+    "Cluster_Description": "Dual energy X-ray absorptiometry (DXA) scan result with a T score value codes",
+    "PCD_Refset_ID": "999004811000230103"
+  },
+  {
+    "Cluster_ID": "DYSPHAG_COD",
+    "Cluster_Description": "Dysphagia diagnosis codes",
+    "PCD_Refset_ID": "999015931000230103"
+  },
+  {
+    "Cluster_ID": "EATDISORDER_COD",
+    "Cluster_Description": "Eating disorder codes",
+    "PCD_Refset_ID": "999036081000230104"
+  },
+  {
+    "Cluster_ID": "ECDEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to have an echocardiogram",
+    "PCD_Refset_ID": "999007811000230106"
+  },
+  {
+    "Cluster_ID": "ECGAF_COD",
+    "Cluster_Description": "Electrocardiogram (ECG) indicating atrial fibrillation or flutter codes",
+    "PCD_Refset_ID": "999017091000230109"
+  },
+  {
+    "Cluster_ID": "ECOG_COD",
+    "Cluster_Description": "Echocardiogram (Echo) codes",
+    "PCD_Refset_ID": "999007731000230109"
+  },
+  {
+    "Cluster_ID": "ECPCASU_COD",
+    "Cluster_Description": "Echocardiography service unavailable codes",
+    "PCD_Refset_ID": "999007891000230100"
+  },
+  {
+    "Cluster_ID": "ECPU_COD",
+    "Cluster_Description": "Codes for echocardiogram unsuitable for the patient",
+    "PCD_Refset_ID": "999008491000230102"
+  },
+  {
+    "Cluster_ID": "EGFR_COD",
+    "Cluster_Description": "Estimated glomerular filtration rate",
+    "PCD_Refset_ID": "999017131000230107"
+  },
+  {
+    "Cluster_ID": "EPIL_COD",
+    "Cluster_Description": "Epilepsy diagnosis codes",
+    "PCD_Refset_ID": "999004851000230104"
+  },
+  {
+    "Cluster_ID": "EPILCC_COD",
+    "Cluster_Description": "Contraceptive counselling codes for people with epilepsy",
+    "PCD_Refset_ID": "999004891000230109"
+  },
+  {
+    "Cluster_ID": "EPILCCEXC_COD",
+    "Cluster_Description": "Contraceptive counselling for people with epilepsy inappropriate or declined exception codes",
+    "PCD_Refset_ID": "999004931000230102"
+  },
+  {
+    "Cluster_ID": "EPILPA_COD",
+    "Cluster_Description": "Pregnancy advice codes for people with epilepsy",
+    "PCD_Refset_ID": "999005011000230107"
+  },
+  {
+    "Cluster_ID": "EPILPAEXC_COD",
+    "Cluster_Description": "Pregnancy advice for people with epilepsy inappropriate or declined exception codes",
+    "PCD_Refset_ID": "999005051000230106"
+  },
+  {
+    "Cluster_ID": "EPILPCA_COD",
+    "Cluster_Description": "Pre-conception advice codes for people with epilepsy",
+    "PCD_Refset_ID": "999005131000230103"
+  },
+  {
+    "Cluster_ID": "EPILPCAEXC_COD",
+    "Cluster_Description": "Pre-conception advice inappropriate or declined exception codes",
+    "PCD_Refset_ID": "999005171000230101"
+  },
+  {
+    "Cluster_ID": "EPILRES_COD",
+    "Cluster_Description": "Epilepsy resolved codes",
+    "PCD_Refset_ID": "999005091000230101"
+  },
+  {
+    "Cluster_ID": "EPPCONGMALF_COD",
+    "Cluster_Description": "Congenital malformation codes required for EPP",
+    "PCD_Refset_ID": "999035611000230106"
+  },
+  {
+    "Cluster_ID": "EPPHAEMCAN_COD",
+    "Cluster_Description": "Haematological malignancy disorder concept codes",
+    "PCD_Refset_ID": "999034931000230105"
+  },
+  {
+    "Cluster_ID": "EPPMISC_COD",
+    "Cluster_Description": "Codes for diagnoses and activity which may indicate that the patient is eligible for COVID clinical cohorting or COVID-related care.",
+    "PCD_Refset_ID": "999034971000230107"
+  },
+  {
+    "Cluster_ID": "EPPSOLIDCAN_COD",
+    "Cluster_Description": "Solid cancer diagnosis codes",
+    "PCD_Refset_ID": "999035491000230102"
+  },
+  {
+    "Cluster_ID": "ERYNODOSUM_COD",
+    "Cluster_Description": "Erythema nodosum codes",
+    "PCD_Refset_ID": "999033691000230101"
+  },
+  {
+    "Cluster_ID": "ETH2016AB_COD",
+    "Cluster_Description": "Asian or Asian British Bangladeshi ethnicity group codes (2016 grouping)",
+    "PCD_Refset_ID": "999001691000230105"
+  },
+  {
+    "Cluster_ID": "ETH2016AC_COD",
+    "Cluster_Description": "Asian or Asian British Chinese ethnicity group codes (2016 grouping)",
+    "PCD_Refset_ID": "999001731000230102"
+  },
+  {
+    "Cluster_ID": "ETH2016AI_COD",
+    "Cluster_Description": "Asian or Asian British Indian ethnicity group codes (2016 grouping)",
+    "PCD_Refset_ID": "999001771000230100"
+  },
+  {
+    "Cluster_ID": "ETH2016AO_COD",
+    "Cluster_Description": "Asian or Asian British Any other Asian background ethnicity group codes (2016 grouping)",
+    "PCD_Refset_ID": "999001811000230100"
+  },
+  {
+    "Cluster_ID": "ETH2016AP_COD",
+    "Cluster_Description": "Asian or Asian British Pakistani ethnicity group codes (2016 grouping)",
+    "PCD_Refset_ID": "999001851000230101"
+  },
+  {
+    "Cluster_ID": "ETH2016BA_COD",
+    "Cluster_Description": "Black or African or Caribbean or Black British African ethnicity group codes (2016 grouping)",
+    "PCD_Refset_ID": "999001891000230106"
+  },
+  {
+    "Cluster_ID": "ETH2016BC_COD",
+    "Cluster_Description": "Black or African or Caribbean or Black British Caribbean ethnicity group codes (2016 grouping)",
+    "PCD_Refset_ID": "999001931000230104"
+  },
+  {
+    "Cluster_ID": "ETH2016BO_COD",
+    "Cluster_Description": "Black or African or Caribbean or Black British Any other Black or African or Caribbean background ethnicity group codes (2016 grouping)",
+    "PCD_Refset_ID": "999001971000230102"
+  },
+  {
+    "Cluster_ID": "ETH2016MO_COD",
+    "Cluster_Description": "Mixed or multiple ethnic groups Any other Mixed or multiple ethnic background ethnicity group codes (2016 grouping)",
+    "PCD_Refset_ID": "999002011000230103"
+  },
+  {
+    "Cluster_ID": "ETH2016MWA_COD",
+    "Cluster_Description": "Mixed or multiple ethnic groups White and Asian ethnicity group codes (2016 grouping)",
+    "PCD_Refset_ID": "999002051000230104"
+  },
+  {
+    "Cluster_ID": "ETH2016MWBA_COD",
+    "Cluster_Description": "Mixed or multiple ethnic groups White and Black African ethnicity group codes (2016 grouping)",
+    "PCD_Refset_ID": "999002091000230109"
+  },
+  {
+    "Cluster_ID": "ETH2016MWBC_COD",
+    "Cluster_Description": "Mixed or multiple ethnic groups White and Black Caribbean ethnicity group codes (2016 grouping)",
+    "PCD_Refset_ID": "999002131000230107"
+  },
+  {
+    "Cluster_ID": "ETH2016NSTAT_COD",
+    "Cluster_Description": "Not stated ethnicity group codes (2016 grouping)",
+    "PCD_Refset_ID": "999002171000230109"
+  },
+  {
+    "Cluster_ID": "ETH2016OA_COD",
+    "Cluster_Description": "Other ethnic group Arab ethnicity group codes (2016 grouping)",
+    "PCD_Refset_ID": "999002211000230107"
+  },
+  {
+    "Cluster_ID": "ETH2016OO_COD",
+    "Cluster_Description": "Other ethnic group Any other ethnic group ethnicity group codes (2016 grouping)",
+    "PCD_Refset_ID": "999002251000230106"
+  },
+  {
+    "Cluster_ID": "ETH2016WB_COD",
+    "Cluster_Description": "White English or Welsh or Scottish or Northern Irish or British ethnicity group codes (2016 grouping)",
+    "PCD_Refset_ID": "999002291000230101"
+  },
+  {
+    "Cluster_ID": "ETH2016WGT_COD",
+    "Cluster_Description": "White Gypsy or Irish Traveller ethnicity group codes (2016 grouping)",
+    "PCD_Refset_ID": "999002331000230105"
+  },
+  {
+    "Cluster_ID": "ETH2016WI_COD",
+    "Cluster_Description": "White Irish ethnicity group codes (2016 grouping)",
+    "PCD_Refset_ID": "999002371000230107"
+  },
+  {
+    "Cluster_ID": "ETH2016WO_COD",
+    "Cluster_Description": "White Any other White background ethnicity group codes (2016 grouping)",
+    "PCD_Refset_ID": "999002411000230106"
+  },
+  {
+    "Cluster_ID": "ETHNALL_COD",
+    "Cluster_Description": "Active and inactive ethnicity codes",
+    "PCD_Refset_ID": "999022611000230100"
+  },
+  {
+    "Cluster_ID": "ETHNICITYND_COD",
+    "Cluster_Description": "Ethnicity not disclosed codes",
+    "PCD_Refset_ID": "999027811000230103"
+  },
+  {
+    "Cluster_ID": "EXCESSALC_COD",
+    "Cluster_Description": "Excessive alcohol consumption codes",
+    "PCD_Refset_ID": "999017171000230109"
+  },
+  {
+    "Cluster_ID": "EXERASS_COD",
+    "Cluster_Description": "Exercise level assessment codes",
+    "PCD_Refset_ID": "999023331000230105"
+  },
+  {
+    "Cluster_ID": "EXERASSDEC_COD",
+    "Cluster_Description": "Codes indicating patient has chosen not to have an exercise assessment",
+    "PCD_Refset_ID": "999023371000230107"
+  },
+  {
+    "Cluster_ID": "EXERCISEINT_COD",
+    "Cluster_Description": "Exercise intervention and advice",
+    "PCD_Refset_ID": "999017211000230107"
+  },
+  {
+    "Cluster_ID": "EXPCONCORSCR_COD",
+    "Cluster_Description": "Express and implied consent for core Summary Care Record (SCR) codes",
+    "PCD_Refset_ID": "999019811000230101"
+  },
+  {
+    "Cluster_ID": "EXPCONSCR_COD",
+    "Cluster_Description": "Express consent for enriched Summary Care Record (SCR) codes",
+    "PCD_Refset_ID": "999018891000230101"
+  },
+  {
+    "Cluster_ID": "EXPDISSCR_COD",
+    "Cluster_Description": "Express dissent for Summary Care Record (SCR) codes",
+    "PCD_Refset_ID": "999020851000230103"
+  },
+  {
+    "Cluster_ID": "EXSMOK_COD",
+    "Cluster_Description": "Code for ex-smoker",
+    "PCD_Refset_ID": "999005211000230103"
+  },
+  {
+    "Cluster_ID": "EZETIMIBEADV_COD",
+    "Cluster_Description": "Codes indicating adverse reaction to ezetimibe",
+    "PCD_Refset_ID": "999027491000230106"
+  },
+  {
+    "Cluster_ID": "EZETIMIBEALL_COD",
+    "Cluster_Description": "Codes indicating allergy to ezetimibe",
+    "PCD_Refset_ID": "999027571000230108"
+  },
+  {
+    "Cluster_ID": "EZETIMIBECON_COD",
+    "Cluster_Description": "Ezetimibe contraindicated codes",
+    "PCD_Refset_ID": "999028851000230100"
+  },
+  {
+    "Cluster_ID": "EZETIMIBEDEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive ezetimibe",
+    "PCD_Refset_ID": "999028891000230105"
+  },
+  {
+    "Cluster_ID": "EZETIMIBENIND_COD",
+    "Cluster_Description": "Ezetimibe not indicated codes",
+    "PCD_Refset_ID": "999028971000230101"
+  },
+  {
+    "Cluster_ID": "FAECIMM_COD",
+    "Cluster_Description": "Faecal immunochemical test codes",
+    "PCD_Refset_ID": "999031051000230103"
+  },
+  {
+    "Cluster_ID": "FAECIMMDEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive a faecal immunochemical test",
+    "PCD_Refset_ID": "999031091000230108"
+  },
+  {
+    "Cluster_ID": "FALLS_COD",
+    "Cluster_Description": "Falls codes",
+    "PCD_Refset_ID": "999018971000230105"
+  },
+  {
+    "Cluster_ID": "FALLSDISC_COD",
+    "Cluster_Description": "Falls discussion codes",
+    "PCD_Refset_ID": "999021011000230104"
+  },
+  {
+    "Cluster_ID": "FALLSDISCDEC_COD",
+    "Cluster_Description": "Falls discussion declined codes",
+    "PCD_Refset_ID": "999020611000230101"
+  },
+  {
+    "Cluster_ID": "FALLSREF_COD",
+    "Cluster_Description": "Referral to falls service codes",
+    "PCD_Refset_ID": "999019891000230107"
+  },
+  {
+    "Cluster_ID": "FALRISKASS_COD",
+    "Cluster_Description": "Assessment using falls risk assessment tool codes",
+    "PCD_Refset_ID": "999022451000230104"
+  },
+  {
+    "Cluster_ID": "FASPLASGLUC_COD",
+    "Cluster_Description": "Fasting plasma glucose codes",
+    "PCD_Refset_ID": "999000971000230105"
+  },
+  {
+    "Cluster_ID": "FAST_COD",
+    "Cluster_Description": "Fast Alcohol Screening Test (FAST) codes",
+    "PCD_Refset_ID": "999000691000230102"
+  },
+  {
+    "Cluster_ID": "FBC_COD",
+    "Cluster_Description": "Full blood count (FBC) test recording codes",
+    "PCD_Refset_ID": "999031251000230105"
+  },
+  {
+    "Cluster_ID": "FEDEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to have a foot examination",
+    "PCD_Refset_ID": "999008531000230102"
+  },
+  {
+    "Cluster_ID": "FENO_COD",
+    "Cluster_Description": "Codes indicating FeNO test performed",
+    "PCD_Refset_ID": "999020211000230103"
+  },
+  {
+    "Cluster_ID": "FEPU_COD",
+    "Cluster_Description": "Codes for foot examination unsuitable for patient",
+    "PCD_Refset_ID": "999008651000230105"
+  },
+  {
+    "Cluster_ID": "FEV1FVC_COD",
+    "Cluster_Description": "FEV1 and FVC ratio codes",
+    "PCD_Refset_ID": "999020251000230104"
+  },
+  {
+    "Cluster_ID": "FEV1FVCL70_COD",
+    "Cluster_Description": "FEV1 and FVC ratio codes indicating ratio of less than 0.7 or 70 per cent",
+    "PCD_Refset_ID": "999020291000230109"
+  },
+  {
+    "Cluster_ID": "FF_COD",
+    "Cluster_Description": "Fragility fracture codes",
+    "PCD_Refset_ID": "999008691000230100"
+  },
+  {
+    "Cluster_ID": "FHYP_COD",
+    "Cluster_Description": "Familial hypercholesterolemia diagnostic codes",
+    "PCD_Refset_ID": "999006811000230109"
+  },
+  {
+    "Cluster_ID": "FHYPGEN_COD",
+    "Cluster_Description": "Genetically proven familial hypercholesterolaemia codes",
+    "PCD_Refset_ID": "999017251000230106"
+  },
+  {
+    "Cluster_ID": "FITNI_COD",
+    "Cluster_Description": "Codes for faecal immunochemical test not indicated",
+    "PCD_Refset_ID": "999035761000230101"
+  },
+  {
+    "Cluster_ID": "FLASHGMDEC_COD",
+    "Cluster_Description": "Codes relating to recordings of flash glucose monitoring declined",
+    "PCD_Refset_ID": "999036001000230106"
+  },
+  {
+    "Cluster_ID": "FLASHGMDISC_COD",
+    "Cluster_Description": "Codes relating to recordings of discussions about flash glucose monitoring",
+    "PCD_Refset_ID": "999036021000230100"
+  },
+  {
+    "Cluster_ID": "FLASHGMPROV_COD",
+    "Cluster_Description": "Codes relating to recordings of provisions of flash glucose monitoring systems",
+    "PCD_Refset_ID": "999036031000230103"
+  },
+  {
+    "Cluster_ID": "FLASHGMREF_COD",
+    "Cluster_Description": "Codes relating to recordings of referrals for flash glucose monitoring",
+    "PCD_Refset_ID": "999036011000230108"
+  },
+  {
+    "Cluster_ID": "FLASHGMSTOP_COD",
+    "Cluster_Description": "Codes relating to recordings of flash glucose monitoring stopped",
+    "PCD_Refset_ID": "999035991000230107"
+  },
+  {
+    "Cluster_ID": "FLU_COD",
+    "Cluster_Description": "Seasonal flu vaccination codes",
+    "PCD_Refset_ID": "999012771000230105"
+  },
+  {
+    "Cluster_ID": "FLUDEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive a flu vaccination",
+    "PCD_Refset_ID": "999008731000230108"
+  },
+  {
+    "Cluster_ID": "FLUEXPCON_COD",
+    "Cluster_Description": "Flu vaccine contraindications (expiring)",
+    "PCD_Refset_ID": "999008771000230105"
+  },
+  {
+    "Cluster_ID": "FLUNC_COD",
+    "Cluster_Description": "Flu vaccination no consent codes",
+    "PCD_Refset_ID": "999008811000230105"
+  },
+  {
+    "Cluster_ID": "FNFHYP_COD",
+    "Cluster_Description": "Familial and non-familial hypercholesterolemia diagnosis codes",
+    "PCD_Refset_ID": "999017291000230101"
+  },
+  {
+    "Cluster_ID": "FOOTEXAM_COD",
+    "Cluster_Description": "Feet examination (neuropathy testing or peripheral pulses) codes",
+    "PCD_Refset_ID": "999001011000230105"
+  },
+  {
+    "Cluster_ID": "FOOTULCERINFECTISCH_COD",
+    "Cluster_Description": "Foot ulcer or infection or ischaemia codes",
+    "PCD_Refset_ID": "999031491000230104"
+  },
+  {
+    "Cluster_ID": "FRAILASS_COD",
+    "Cluster_Description": "Frailty assessment codes",
+    "PCD_Refset_ID": "999019851000230102"
+  },
+  {
+    "Cluster_ID": "FRAILASSDEC_COD",
+    "Cluster_Description": "Frailty assessment declined codes",
+    "PCD_Refset_ID": "999018931000230108"
+  },
+  {
+    "Cluster_ID": "FRC_COD",
+    "Cluster_Description": "Foot risk classification codes",
+    "PCD_Refset_ID": "999008851000230109"
+  },
+  {
+    "Cluster_ID": "GCA_COD",
+    "Cluster_Description": "Giant Cell Arteritis (GCA) codes",
+    "PCD_Refset_ID": "999033331000230108"
+  },
+  {
+    "Cluster_ID": "GDPPR_COD",
+    "Cluster_Description": "Codes required for COVID-19 pandemic planning and research to be returned with no time limit",
+    "PCD_Refset_ID": "999021651000230109"
+  },
+  {
+    "Cluster_ID": "GDPPR2YR_COD",
+    "Cluster_Description": "Codes required for COVID-19 pandemic planning and research to be returned from the last 2 years",
+    "PCD_Refset_ID": "999021691000230104"
+  },
+  {
+    "Cluster_ID": "GDPPRC19ACTIVITY_COD",
+    "Cluster_Description": "COVID19 testing, diagnoses and related activity codes",
+    "PCD_Refset_ID": "999025971000230105"
+  },
+  {
+    "Cluster_ID": "GDPPRMISC_COD",
+    "Cluster_Description": "Codes required for COVID-19 pandemic planning and research, not included within associated clusters from other services, to be returned with no time limit",
+    "PCD_Refset_ID": "999026011000230105"
+  },
+  {
+    "Cluster_ID": "GENETSYNDM_COD",
+    "Cluster_Description": "Genetic syndrome related diabetes codes",
+    "PCD_Refset_ID": "999031531000230104"
+  },
+  {
+    "Cluster_ID": "GESTDIAB_COD",
+    "Cluster_Description": "Gestational Diabetes Codes",
+    "PCD_Refset_ID": "999017331000230105"
+  },
+  {
+    "Cluster_ID": "GGT_COD",
+    "Cluster_Description": "Gamma-glutamyl transferase test results codes",
+    "PCD_Refset_ID": "999017371000230107"
+  },
+  {
+    "Cluster_ID": "GICANREF_COD",
+    "Cluster_Description": "Fast track referral for suspected lower gastrointestinal cancer codes",
+    "PCD_Refset_ID": "999030891000230106"
+  },
+  {
+    "Cluster_ID": "GLUC_COD",
+    "Cluster_Description": "Glucose test recording codes",
+    "PCD_Refset_ID": "999006891000230103"
+  },
+  {
+    "Cluster_ID": "GLUCDEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive a blood glucose test",
+    "PCD_Refset_ID": "999006691000230104"
+  },
+  {
+    "Cluster_ID": "GORD_COD",
+    "Cluster_Description": "Gastro oesophageal reflux disease (GORD) diagnosis codes",
+    "PCD_Refset_ID": "999015651000230104"
+  },
+  {
+    "Cluster_ID": "GPPAQDEC_COD",
+    "Cluster_Description": "Codes indicating patient has chosen not to complete a General Practice Physical Activity Questionnaire",
+    "PCD_Refset_ID": "999023451000230105"
+  },
+  {
+    "Cluster_ID": "GRAVESDIS_COD",
+    "Cluster_Description": "Graveâ€™s disease codes",
+    "PCD_Refset_ID": "999034411000230107"
+  },
+  {
+    "Cluster_ID": "GVHD_COD",
+    "Cluster_Description": "Graft versus host disease (GVHD) codes",
+    "PCD_Refset_ID": "999032891000230105"
+  },
+  {
+    "Cluster_ID": "HAEMCANMORPH_COD",
+    "Cluster_Description": "Haematological cancer morphology codes",
+    "PCD_Refset_ID": "999025451000230109"
+  },
+  {
+    "Cluster_ID": "HASBLED_COD",
+    "Cluster_Description": "HASBLED score codes",
+    "PCD_Refset_ID": "999017411000230106"
+  },
+  {
+    "Cluster_ID": "HB_COD",
+    "Cluster_Description": "Haemoglobin test results codes",
+    "PCD_Refset_ID": "999017451000230105"
+  },
+  {
+    "Cluster_ID": "HCW_COD",
+    "Cluster_Description": "Healthcare worker codes",
+    "PCD_Refset_ID": "999019131000230102"
+  },
+  {
+    "Cluster_ID": "HDLCCHOL_COD",
+    "Cluster_Description": "High density lipoprotein (HDL) cholesterol test result codes",
+    "PCD_Refset_ID": "999017491000230100"
+  },
+  {
+    "Cluster_ID": "HEPBBLD_COD",
+    "Cluster_Description": "Hepatitis B blood test codes",
+    "PCD_Refset_ID": "999021371000230108"
+  },
+  {
+    "Cluster_ID": "HEPBCHRON_COD",
+    "Cluster_Description": "Chronic hepatitis B codes",
+    "PCD_Refset_ID": "999033771000230106"
+  },
+  {
+    "Cluster_ID": "HEPBCVAC_COD",
+    "Cluster_Description": "Codes for the completing Hepatitis B vaccination dose",
+    "PCD_Refset_ID": "999020971000230104"
+  },
+  {
+    "Cluster_ID": "HEPBVAC1_COD",
+    "Cluster_Description": "First hepatitis B vaccination codes",
+    "PCD_Refset_ID": "999021091000230105"
+  },
+  {
+    "Cluster_ID": "HEPBVAC2_COD",
+    "Cluster_Description": "Second hepatitis B vaccination codes",
+    "PCD_Refset_ID": "999021291000230102"
+  },
+  {
+    "Cluster_ID": "HEPCCHRON_COD",
+    "Cluster_Description": "Chronic hepatitis C codes",
+    "PCD_Refset_ID": "999034171000230105"
+  },
+  {
+    "Cluster_ID": "HEPCGN_COD",
+    "Cluster_Description": "Hepatitis C associated with glomerulonephritis codes",
+    "PCD_Refset_ID": "999034051000230100"
+  },
+  {
+    "Cluster_ID": "HF_COD",
+    "Cluster_Description": "Heart failure codes",
+    "PCD_Refset_ID": "999013691000230108"
+  },
+  {
+    "Cluster_ID": "HFINVITE_COD",
+    "Cluster_Description": "Invite for heart failure care review codes",
+    "PCD_Refset_ID": "999012411000230108"
+  },
+  {
+    "Cluster_ID": "HFLVSD_COD",
+    "Cluster_Description": "Codes for heart failure due to left ventricular systolic dysfunction (LVSD)",
+    "PCD_Refset_ID": "999007771000230106"
+  },
+  {
+    "Cluster_ID": "HFMEDRVW_COD",
+    "Cluster_Description": "Heart failure medication review codes",
+    "PCD_Refset_ID": "999020371000230103"
+  },
+  {
+    "Cluster_ID": "HFPCADEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive heart failure quality indicator care",
+    "PCD_Refset_ID": "999008931000230106"
+  },
+  {
+    "Cluster_ID": "HFPCAPU_COD",
+    "Cluster_Description": "Codes for heart failure quality indicator care unsuitable for patient",
+    "PCD_Refset_ID": "999010931000230105"
+  },
+  {
+    "Cluster_ID": "HFPCASU_COD",
+    "Cluster_Description": "Heart failure quality indicator service unavailable codes",
+    "PCD_Refset_ID": "999013051000230107"
+  },
+  {
+    "Cluster_ID": "HFRES_COD",
+    "Cluster_Description": "Heart failure resolved codes",
+    "PCD_Refset_ID": "999020411000230104"
+  },
+  {
+    "Cluster_ID": "HFRVW_COD",
+    "Cluster_Description": "Heart failure review codes",
+    "PCD_Refset_ID": "999020451000230100"
+  },
+  {
+    "Cluster_ID": "HIBMENC_COD",
+    "Cluster_Description": "Haemophilus influenzae type B Meningitis C (HibMenC) vaccination codes",
+    "PCD_Refset_ID": "999021171000230105"
+  },
+  {
+    "Cluster_ID": "HIV_COD",
+    "Cluster_Description": "Human immunodeficiency virus (HIV) codes",
+    "PCD_Refset_ID": "999032331000230102"
+  },
+  {
+    "Cluster_ID": "HLTHAP_COD",
+    "Cluster_Description": "Health action plan provided codes",
+    "PCD_Refset_ID": "999015891000230105"
+  },
+  {
+    "Cluster_ID": "HLTHAPDEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive a health action plan",
+    "PCD_Refset_ID": "999018571000230102"
+  },
+  {
+    "Cluster_ID": "HLTHCHK_COD",
+    "Cluster_Description": "Learning disability (LD) health check codes",
+    "PCD_Refset_ID": "999015851000230100"
+  },
+  {
+    "Cluster_ID": "HLTHCHKDEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive a learning disability (LD) health check",
+    "PCD_Refset_ID": "999018611000230108"
+  },
+  {
+    "Cluster_ID": "HOMEAMBBP_COD",
+    "Cluster_Description": "Home and ambulatory blood pressure recording codes",
+    "PCD_Refset_ID": "999036291000230105"
+  },
+  {
+    "Cluster_ID": "HOMEBP_COD",
+    "Cluster_Description": "Blood Pressure recorded at home codes",
+    "PCD_Refset_ID": "999017531000230100"
+  },
+  {
+    "Cluster_ID": "HOMEBPDEC_COD",
+    "Cluster_Description": "Codes indicating patient chosen not to undertake home blood pressure measurement (HBPM)",
+    "PCD_Refset_ID": "999028571000230109"
+  },
+  {
+    "Cluster_ID": "HOMELESS_COD",
+    "Cluster_Description": "Codes relating to homelessness",
+    "PCD_Refset_ID": "999025651000230107"
+  },
+  {
+    "Cluster_ID": "HOUSEOWNER_COD",
+    "Cluster_Description": "Finding of housing ownership and tenure codes",
+    "PCD_Refset_ID": "999022531000230109"
+  },
+  {
+    "Cluster_ID": "HPVVAC_COD",
+    "Cluster_Description": "HPV vaccination codes",
+    "PCD_Refset_ID": "999021331000230106"
+  },
+  {
+    "Cluster_ID": "HPVVAC1_COD",
+    "Cluster_Description": "HPV vaccination first dose codes",
+    "PCD_Refset_ID": "999036141000230105"
+  },
+  {
+    "Cluster_ID": "HPVVAC2_COD",
+    "Cluster_Description": "HPV vaccination second dose codes",
+    "PCD_Refset_ID": "999036151000230108"
+  },
+  {
+    "Cluster_ID": "HPVVAC3_COD",
+    "Cluster_Description": "HPV vaccination third dose codes",
+    "PCD_Refset_ID": "999036161000230106"
+  },
+  {
+    "Cluster_ID": "HSTRK_COD",
+    "Cluster_Description": "Haemorrhagic stroke codes",
+    "PCD_Refset_ID": "999012811000230105"
+  },
+  {
+    "Cluster_ID": "HTMAX_COD",
+    "Cluster_Description": "Codes for maximal blood pressure (BP) therapy",
+    "PCD_Refset_ID": "999006651000230109"
+  },
+  {
+    "Cluster_ID": "HUNT_COD",
+    "Cluster_Description": "Huntingtonâ€™s disease codes",
+    "PCD_Refset_ID": "999032571000230109"
+  },
+  {
+    "Cluster_ID": "HYDRADENITISSUP_COD",
+    "Cluster_Description": "Hydradenitis supprativa codes",
+    "PCD_Refset_ID": "999034131000230108"
+  },
+  {
+    "Cluster_ID": "HYP_COD",
+    "Cluster_Description": "Hypertension diagnosis codes",
+    "PCD_Refset_ID": "999006611000230105"
+  },
+  {
+    "Cluster_ID": "HYPINVITE_COD",
+    "Cluster_Description": "Invite for hypertension care review codes",
+    "PCD_Refset_ID": "999012971000230108"
+  },
+  {
+    "Cluster_ID": "HYPOPITUITARY_COD",
+    "Cluster_Description": "Hypopituitary disorder codes",
+    "PCD_Refset_ID": "999035691000230100"
+  },
+  {
+    "Cluster_ID": "HYPPCADEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive hypertension quality indicator care",
+    "PCD_Refset_ID": "999013091000230102"
+  },
+  {
+    "Cluster_ID": "HYPPCAPU_COD",
+    "Cluster_Description": "Codes for hypertension quality indicator care unsuitable for patient",
+    "PCD_Refset_ID": "999013211000230104"
+  },
+  {
+    "Cluster_ID": "HYPRES_COD",
+    "Cluster_Description": "Hypertension resolved codes",
+    "PCD_Refset_ID": "999006531000230101"
+  },
+  {
+    "Cluster_ID": "HZLIVE_COD",
+    "Cluster_Description": "Live herpes zoster vaccination codes",
+    "PCD_Refset_ID": "999036111000230109"
+  },
+  {
+    "Cluster_ID": "IDIOMEMBGN_COD",
+    "Cluster_Description": "Idiopathic membranous glomerulonephritis codes",
+    "PCD_Refset_ID": "999034011000230104"
+  },
+  {
+    "Cluster_ID": "IFCCHBAM_COD",
+    "Cluster_Description": "IFCC HbA1c monitoring range codes",
+    "PCD_Refset_ID": "999003251000230103"
+  },
+  {
+    "Cluster_ID": "IGE_COD",
+    "Cluster_Description": "Total IgE level codes",
+    "PCD_Refset_ID": "999036531000230106"
+  },
+  {
+    "Cluster_ID": "IGT_COD",
+    "Cluster_Description": "Impaired glucose tolerance codes",
+    "PCD_Refset_ID": "999001051000230109"
+  },
+  {
+    "Cluster_ID": "ILD_COD",
+    "Cluster_Description": "Interstitial lung disease codes",
+    "PCD_Refset_ID": "999035651000230105"
+  },
+  {
+    "Cluster_ID": "ILLSUB_COD",
+    "Cluster_Description": "Illicit substance abuse codes",
+    "PCD_Refset_ID": "999023651000230108"
+  },
+  {
+    "Cluster_ID": "ILLSUBASSDEC_COD",
+    "Cluster_Description": "Codes indicating patient has chosen not to have their illicit substance abuse assessment",
+    "PCD_Refset_ID": "999023611000230109"
+  },
+  {
+    "Cluster_ID": "ILLSUBINT_COD",
+    "Cluster_Description": "Illicit substance abuse intervention and declined codes",
+    "PCD_Refset_ID": "999023691000230103"
+  },
+  {
+    "Cluster_ID": "IMATRISK1_COD",
+    "Cluster_Description": "Immunosuppression codes (persisting)",
+    "PCD_Refset_ID": "999014411000230102"
+  },
+  {
+    "Cluster_ID": "IMMCOMPHHC_COD",
+    "Cluster_Description": "Household contact of immunocompromised individuals",
+    "PCD_Refset_ID": "999024051000230102"
+  },
+  {
+    "Cluster_ID": "IMRESATRISK1_COD",
+    "Cluster_Description": "Immunosuppression resolved codes",
+    "PCD_Refset_ID": "999015531000230107"
+  },
+  {
+    "Cluster_ID": "IMTEMP_COD",
+    "Cluster_Description": "Immunosuppression codes (expiring)",
+    "PCD_Refset_ID": "999014451000230103"
+  },
+  {
+    "Cluster_ID": "IMTRTATRISK1_COD",
+    "Cluster_Description": "Immunosuppression procedure codes",
+    "PCD_Refset_ID": "999014491000230108"
+  },
+  {
+    "Cluster_ID": "INCLISIRANADV_COD",
+    "Cluster_Description": "Codes indicating adverse reaction to inclisiran",
+    "PCD_Refset_ID": "999029011000230100"
+  },
+  {
+    "Cluster_ID": "INCLISIRANALL_COD",
+    "Cluster_Description": "Codes indicating allergy to inclisiran",
+    "PCD_Refset_ID": "999029051000230101"
+  },
+  {
+    "Cluster_ID": "INCLISIRANCON_COD",
+    "Cluster_Description": "Inclisiran contraindicated codes",
+    "PCD_Refset_ID": "999029091000230106"
+  },
+  {
+    "Cluster_ID": "INCLISIRANDEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive inclisiran",
+    "PCD_Refset_ID": "999029131000230109"
+  },
+  {
+    "Cluster_ID": "INCLISIRANNIND_COD",
+    "Cluster_Description": "Inclisiran not indicated codes",
+    "PCD_Refset_ID": "999029211000230109"
+  },
+  {
+    "Cluster_ID": "INR_COD",
+    "Cluster_Description": "INR result codes",
+    "PCD_Refset_ID": "999017571000230103"
+  },
+  {
+    "Cluster_ID": "INSULINDEVICE_COD",
+    "Cluster_Description": "Insulin pump and closed loop device codes",
+    "PCD_Refset_ID": "999036561000230104"
+  },
+  {
+    "Cluster_ID": "INTGP1_COD",
+    "Cluster_Description": "Intranasal seasonal influenza vaccine first dose given codes",
+    "PCD_Refset_ID": "999020891000230108"
+  },
+  {
+    "Cluster_ID": "INTGP2_COD",
+    "Cluster_Description": "Intranasal seasonal influenza vaccine second dose codes",
+    "PCD_Refset_ID": "999019051000230105"
+  },
+  {
+    "Cluster_ID": "INTOHP1_COD",
+    "Cluster_Description": "Intranasal seasonal influenza vaccination first dose given by other healthcare provider codes",
+    "PCD_Refset_ID": "999021051000230100"
+  },
+  {
+    "Cluster_ID": "INTOHP2_COD",
+    "Cluster_Description": "Intranasal seasonal influenza vaccination second dose given by other healthcare provider codes",
+    "PCD_Refset_ID": "999021211000230108"
+  },
+  {
+    "Cluster_ID": "IRREGPULSE_COD",
+    "Cluster_Description": "Irregular pulse codes",
+    "PCD_Refset_ID": "999017611000230109"
+  },
+  {
+    "Cluster_ID": "ISACARER_COD",
+    "Cluster_Description": "Current carer codes",
+    "PCD_Refset_ID": "999024291000230104"
+  },
+  {
+    "Cluster_ID": "ITP_COD",
+    "Cluster_Description": "Immune thrombocytopenia (ITP) codes",
+    "PCD_Refset_ID": "999034251000230107"
+  },
+  {
+    "Cluster_ID": "KAWASAKI_COD",
+    "Cluster_Description": "Kawasaki disease codes",
+    "PCD_Refset_ID": "999033611000230107"
+  },
+  {
+    "Cluster_ID": "LBBDEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive beta blocker",
+    "PCD_Refset_ID": "999013291000230105"
+  },
+  {
+    "Cluster_ID": "LBMI_COD",
+    "Cluster_Description": "Body Mass Index (BMI) codes explicitly normal or higher, or with a value attached",
+    "PCD_Refset_ID": "999019971000230103"
+  },
+  {
+    "Cluster_ID": "LBMI40_COD",
+    "Cluster_Description": "Body mass index (BMI) codes >= 40 without an associated BMI value",
+    "PCD_Refset_ID": "999020771000230102"
+  },
+  {
+    "Cluster_ID": "LD_COD",
+    "Cluster_Description": "Learning disability (LD) codes",
+    "PCD_Refset_ID": "999002611000230109"
+  },
+  {
+    "Cluster_ID": "LDLCCHOL_COD",
+    "Cluster_Description": "Low density lipoprotein (LDL) cholesterol test results codes",
+    "PCD_Refset_ID": "999018771000230107"
+  },
+  {
+    "Cluster_ID": "LDREM_COD",
+    "Cluster_Description": "Learning disability (LD) excluded codes",
+    "PCD_Refset_ID": "999036401000230102"
+  },
+  {
+    "Cluster_ID": "LFT_COD",
+    "Cluster_Description": "Liver function test results",
+    "PCD_Refset_ID": "999017691000230103"
+  },
+  {
+    "Cluster_ID": "LIFESTYLEINT_COD",
+    "Cluster_Description": "Lifestyle intervention and advice codes",
+    "PCD_Refset_ID": "999017651000230108"
+  },
+  {
+    "Cluster_ID": "LIPIDTHERADV_COD",
+    "Cluster_Description": "Adverse reaction to lipid lowering drug codes",
+    "PCD_Refset_ID": "999029531000230102"
+  },
+  {
+    "Cluster_ID": "LIPIDTHERCON_COD",
+    "Cluster_Description": "Lipid therapy contraindicated codes",
+    "PCD_Refset_ID": "999027051000230107"
+  },
+  {
+    "Cluster_ID": "LIPIDTHERDEC_COD",
+    "Cluster_Description": "Lipid therapy declined codes",
+    "PCD_Refset_ID": "999026251000230102"
+  },
+  {
+    "Cluster_ID": "LIPIDTHERNIND_COD",
+    "Cluster_Description": "Lipid therapy not indicated codes",
+    "PCD_Refset_ID": "999027131000230104"
+  },
+  {
+    "Cluster_ID": "LITSTP_COD",
+    "Cluster_Description": "Code for stopped lithium",
+    "PCD_Refset_ID": "999006371000230108"
+  },
+  {
+    "Cluster_ID": "LIVSCLEROSIS_COD",
+    "Cluster_Description": "Liver sclerosis diagnosis codes",
+    "PCD_Refset_ID": "999033011000230101"
+  },
+  {
+    "Cluster_ID": "LOWCAL_COD",
+    "Cluster_Description": "Codes for total diet replacement programme for people with diabetes",
+    "PCD_Refset_ID": "999025891000230101"
+  },
+  {
+    "Cluster_ID": "LSADV_COD",
+    "Cluster_Description": "Lifestyle advice codes",
+    "PCD_Refset_ID": "999006331000230106"
+  },
+  {
+    "Cluster_ID": "LSMOK_COD",
+    "Cluster_Description": "Smoker codes",
+    "PCD_Refset_ID": "999004211000230104"
+  },
+  {
+    "Cluster_ID": "LSZ_COD",
+    "Cluster_Description": "Seizure free for over 12 months codes",
+    "PCD_Refset_ID": "999006291000230102"
+  },
+  {
+    "Cluster_ID": "LSZFREQ_COD",
+    "Cluster_Description": "Epilepsy seizure frequency codes",
+    "PCD_Refset_ID": "999015731000230101"
+  },
+  {
+    "Cluster_ID": "LTMILDFRAIL_COD",
+    "Cluster_Description": "Codes indicating less than mildly frail diagnosis",
+    "PCD_Refset_ID": "999035771000230105"
+  },
+  {
+    "Cluster_ID": "LTNDFLUVAC_COD",
+    "Cluster_Description": "Long term indication for seasonal influenza vaccination codes",
+    "PCD_Refset_ID": "999024131000230105"
+  },
+  {
+    "Cluster_ID": "LUNGCAN_COD",
+    "Cluster_Description": "Lung cancer codes",
+    "PCD_Refset_ID": "999032971000230101"
+  },
+  {
+    "Cluster_ID": "LYMPHOPROLDIS_COD",
+    "Cluster_Description": "Lymphoproliferative disorders",
+    "PCD_Refset_ID": "999036131000230104"
+  },
+  {
+    "Cluster_ID": "MAL_COD",
+    "Cluster_Description": "Codes for microalbuminuria",
+    "PCD_Refset_ID": "999013331000230101"
+  },
+  {
+    "Cluster_ID": "MASTECBILAT_COD",
+    "Cluster_Description": "Bilateral mastectomy codes",
+    "PCD_Refset_ID": "999036451000230101"
+  },
+  {
+    "Cluster_ID": "MASTECLEFT_COD",
+    "Cluster_Description": "Left sided mastectomy codes",
+    "PCD_Refset_ID": "999036461000230103"
+  },
+  {
+    "Cluster_ID": "MASTECRIGHT_COD",
+    "Cluster_Description": "Right sided mastectomy codes",
+    "PCD_Refset_ID": "999036471000230107"
+  },
+  {
+    "Cluster_ID": "MAXEP_COD",
+    "Cluster_Description": "Code for maximal anticonvulsant therapy",
+    "PCD_Refset_ID": "999006171000230105"
+  },
+  {
+    "Cluster_ID": "MCI_COD",
+    "Cluster_Description": "Mild Cognitive Impairment codes",
+    "PCD_Refset_ID": "999035891000230104"
+  },
+  {
+    "Cluster_ID": "MDRV_COD",
+    "Cluster_Description": "Code for cancer care review",
+    "PCD_Refset_ID": "999013371000230104"
+  },
+  {
+    "Cluster_ID": "MDS_COD",
+    "Cluster_Description": "Myelodysplastic syndrome (MDS) codes",
+    "PCD_Refset_ID": "999032411000230101"
+  },
+  {
+    "Cluster_ID": "MECHVALVREP_COD",
+    "Cluster_Description": "Mechanical prosthetic valve replacement codes",
+    "PCD_Refset_ID": "999029811000230105"
+  },
+  {
+    "Cluster_ID": "MEDCHK_COD",
+    "Cluster_Description": "Medication checked codes",
+    "PCD_Refset_ID": "999023971000230106"
+  },
+  {
+    "Cluster_ID": "MEDRVW_COD",
+    "Cluster_Description": "Medication review codes",
+    "PCD_Refset_ID": "999020811000230102"
+  },
+  {
+    "Cluster_ID": "MEDRVWDEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive a medication review",
+    "PCD_Refset_ID": "999019011000230106"
+  },
+  {
+    "Cluster_ID": "MEMASS_COD",
+    "Cluster_Description": "Initial memory assessment codes",
+    "PCD_Refset_ID": "999002451000230105"
+  },
+  {
+    "Cluster_ID": "MEMASSDEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive initial memory assessment",
+    "PCD_Refset_ID": "999002491000230100"
+  },
+  {
+    "Cluster_ID": "MEMCLIN2_COD",
+    "Cluster_Description": "Referral to memory clinic codes",
+    "PCD_Refset_ID": "999002531000230100"
+  },
+  {
+    "Cluster_ID": "MEMCLINDEC2_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to accept referral to memory clinic",
+    "PCD_Refset_ID": "999002571000230103"
+  },
+  {
+    "Cluster_ID": "MENACWYDEC_COD",
+    "Cluster_Description": "Codes indicating the patient chose not to receive a MenACWY vaccination",
+    "PCD_Refset_ID": "999014731000230102"
+  },
+  {
+    "Cluster_ID": "MENACWYGP_COD",
+    "Cluster_Description": "MenACWY GP vaccination codes",
+    "PCD_Refset_ID": "999014811000230100"
+  },
+  {
+    "Cluster_ID": "MENACWYOHP_COD",
+    "Cluster_Description": "MenACWY other healthcare provider vaccination codes",
+    "PCD_Refset_ID": "999014771000230100"
+  },
+  {
+    "Cluster_ID": "MENBVAC1_COD",
+    "Cluster_Description": "First Men B vaccination codes",
+    "PCD_Refset_ID": "999013731000230100"
+  },
+  {
+    "Cluster_ID": "MENBVAC2_COD",
+    "Cluster_Description": "Second Men B vaccination codes",
+    "PCD_Refset_ID": "999014611000230104"
+  },
+  {
+    "Cluster_ID": "MENBVACBOOST_COD",
+    "Cluster_Description": "Booster Men B vaccination codes",
+    "PCD_Refset_ID": "999014651000230100"
+  },
+  {
+    "Cluster_ID": "MENBVACCON_COD",
+    "Cluster_Description": "Men B vaccination contraindicated codes",
+    "PCD_Refset_ID": "999014691000230105"
+  },
+  {
+    "Cluster_ID": "MENBVACDEC1_COD",
+    "Cluster_Description": "Codes indicating the patient chose not to receive a first Men B vaccination",
+    "PCD_Refset_ID": "999014851000230101"
+  },
+  {
+    "Cluster_ID": "MENBVACDEC2_COD",
+    "Cluster_Description": "Codes indicating the patient chose not to receive a second Men B vaccination",
+    "PCD_Refset_ID": "999014891000230106"
+  },
+  {
+    "Cluster_ID": "MENBVACDECBOOST_COD",
+    "Cluster_Description": "Codes indicating the patient chose not to receive a Men B booster vaccination",
+    "PCD_Refset_ID": "999014931000230104"
+  },
+  {
+    "Cluster_ID": "MENBVACOHP1_COD",
+    "Cluster_Description": "First Men B vaccination codes by another healthcare provider",
+    "PCD_Refset_ID": "999014971000230102"
+  },
+  {
+    "Cluster_ID": "MENBVACOHP2_COD",
+    "Cluster_Description": "Second Men B vaccination codes by another healthcare provider",
+    "PCD_Refset_ID": "999015011000230109"
+  },
+  {
+    "Cluster_ID": "MENBVACOHPBOOST_COD",
+    "Cluster_Description": "Booster Men B vaccination codes by another healthcare provider",
+    "PCD_Refset_ID": "999015051000230108"
+  },
+  {
+    "Cluster_ID": "MH_COD",
+    "Cluster_Description": "Psychosis and schizophrenia and bipolar affective disease codes",
+    "PCD_Refset_ID": "999001091000230104"
+  },
+  {
+    "Cluster_ID": "MHINVITE_COD",
+    "Cluster_Description": "Invite mental health care review codes",
+    "PCD_Refset_ID": "999012451000230107"
+  },
+  {
+    "Cluster_ID": "MHP_COD",
+    "Cluster_Description": "Codes for mental health care plan",
+    "PCD_Refset_ID": "999013411000230100"
+  },
+  {
+    "Cluster_ID": "MHPCADEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive mental health quality indicator care",
+    "PCD_Refset_ID": "999013451000230101"
+  },
+  {
+    "Cluster_ID": "MHPCAPU_COD",
+    "Cluster_Description": "Codes for mental health quality indicator care unsuitable for patient",
+    "PCD_Refset_ID": "999013491000230106"
+  },
+  {
+    "Cluster_ID": "MHREM_COD",
+    "Cluster_Description": "Codes for in remission from serious mental illness",
+    "PCD_Refset_ID": "999006091000230105"
+  },
+  {
+    "Cluster_ID": "MI_COD",
+    "Cluster_Description": "Myocardial infarction (MI) diagnosis codes",
+    "PCD_Refset_ID": "999015771000230104"
+  },
+  {
+    "Cluster_ID": "MILDFRAIL_COD",
+    "Cluster_Description": "Mild frailty diagnosis codes",
+    "PCD_Refset_ID": "999013531000230106"
+  },
+  {
+    "Cluster_ID": "MITOCHOND_COD",
+    "Cluster_Description": "Mitochondrial disease codes",
+    "PCD_Refset_ID": "999035731000230108"
+  },
+  {
+    "Cluster_ID": "MMRCON_COD",
+    "Cluster_Description": "MMR vaccination contraindication codes",
+    "PCD_Refset_ID": "999026891000230106"
+  },
+  {
+    "Cluster_ID": "MMROHPVAC_COD",
+    "Cluster_Description": "MMR vaccination given by other healthcare provider codes",
+    "PCD_Refset_ID": "999026691000230105"
+  },
+  {
+    "Cluster_ID": "MMRVAC1_COD",
+    "Cluster_Description": "MMR first dose vaccination codes",
+    "PCD_Refset_ID": "999018811000230107"
+  },
+  {
+    "Cluster_ID": "MMRVAC2_COD",
+    "Cluster_Description": "MMR second dose vaccination codes",
+    "PCD_Refset_ID": "999018851000230106"
+  },
+  {
+    "Cluster_ID": "MMRVVAC1_COD",
+    "Cluster_Description": "MMRV first dose vaccination codes",
+    "PCD_Refset_ID": "999036411000230100"
+  },
+  {
+    "Cluster_ID": "MMRVVAC2_COD",
+    "Cluster_Description": "MMRV second dose vaccination codes",
+    "PCD_Refset_ID": "999036421000230108"
+  },
+  {
+    "Cluster_ID": "MMRVVACDRUG_COD",
+    "Cluster_Description": "MMRV vaccine codes",
+    "PCD_Refset_ID": "999036431000230105"
+  },
+  {
+    "Cluster_ID": "MND_COD",
+    "Cluster_Description": "Motor neurone disease codes",
+    "PCD_Refset_ID": "999032611000230103"
+  },
+  {
+    "Cluster_ID": "MODFRAIL_COD",
+    "Cluster_Description": "Moderate frailty diagnosis codes",
+    "PCD_Refset_ID": "999013571000230108"
+  },
+  {
+    "Cluster_ID": "MODYDM_COD",
+    "Cluster_Description": "Monogenic diabetes or maturity onset diabetes of the young codes",
+    "PCD_Refset_ID": "999031571000230102"
+  },
+  {
+    "Cluster_ID": "MOVNEWRES_COD",
+    "Cluster_Description": "Moving to new residenceÂ and other non-care home living status codes",
+    "PCD_Refset_ID": "999022571000230106"
+  },
+  {
+    "Cluster_ID": "MRC_COD",
+    "Cluster_Description": "Codes for Medical Research Council (MRC) breathlessness scale score",
+    "PCD_Refset_ID": "999013611000230102"
+  },
+  {
+    "Cluster_ID": "MRC1_COD",
+    "Cluster_Description": "Codes for Medical Research Council (MRC) breathlessness scale score greater than or equal to 3",
+    "PCD_Refset_ID": "999009491000230107"
+  },
+  {
+    "Cluster_ID": "MS_COD",
+    "Cluster_Description": "Multiple sclerosis codes",
+    "PCD_Refset_ID": "999032531000230107"
+  },
+  {
+    "Cluster_ID": "MYASGRAV_COD",
+    "Cluster_Description": "Myasthenia gravis codes",
+    "PCD_Refset_ID": "999032651000230104"
+  },
+  {
+    "Cluster_ID": "MYOSITIS_COD",
+    "Cluster_Description": "Polymyositis/Dermatomyositis codes",
+    "PCD_Refset_ID": "999033251000230109"
+  },
+  {
+    "Cluster_ID": "NACONS_COD",
+    "Cluster_Description": "Informed consent for national audit",
+    "PCD_Refset_ID": "999018651000230107"
+  },
+  {
+    "Cluster_ID": "NAMEDACGP_COD",
+    "Cluster_Description": "Informing patient of named accountable general practitioner codes",
+    "PCD_Refset_ID": "999021411000230107"
+  },
+  {
+    "Cluster_ID": "NAOBJEC_COD",
+    "Cluster_Description": "Informed dissent for national audit",
+    "PCD_Refset_ID": "999018691000230102"
+  },
+  {
+    "Cluster_ID": "NDAALB_COD",
+    "Cluster_Description": "Urine albumin codes",
+    "PCD_Refset_ID": "999001131000230101"
+  },
+  {
+    "Cluster_ID": "NDABMI_COD",
+    "Cluster_Description": "National diabetes audit (NDA) body mass index (BMI) codes",
+    "PCD_Refset_ID": "999001171000230104"
+  },
+  {
+    "Cluster_ID": "NDACHOLEST_COD",
+    "Cluster_Description": "National diabetes audit (NDA) cholesterol recorded codes",
+    "PCD_Refset_ID": "999001251000230102"
+  },
+  {
+    "Cluster_ID": "NDACONS_COD",
+    "Cluster_Description": "National diabetes audit (NDA) and audit specific dissent withdrawn codes via consent",
+    "PCD_Refset_ID": "999000731000230105"
+  },
+  {
+    "Cluster_ID": "NDADM_COD",
+    "Cluster_Description": "National diabetes audit (NDA) diabetes mellitus diagnosis codes",
+    "PCD_Refset_ID": "999002651000230108"
+  },
+  {
+    "Cluster_ID": "NDADM1_COD",
+    "Cluster_Description": "National diabetes audit (NDA) diabetes mellitus codes to determine diabetes type for the audit",
+    "PCD_Refset_ID": "999002971000230106"
+  },
+  {
+    "Cluster_ID": "NDAHEIGHT_COD",
+    "Cluster_Description": "Height measured codes",
+    "PCD_Refset_ID": "999002731000230106"
+  },
+  {
+    "Cluster_ID": "NDAOBJEC_COD",
+    "Cluster_Description": "National diabetes audit (NDA) and audit specific dissent codes",
+    "PCD_Refset_ID": "999002771000230108"
+  },
+  {
+    "Cluster_ID": "NDAPRT_COD",
+    "Cluster_Description": "Persistent proteinuria codes",
+    "PCD_Refset_ID": "999002851000230107"
+  },
+  {
+    "Cluster_ID": "NDASEPATT_COD",
+    "Cluster_Description": "Attended diabetes structured education programme codes",
+    "PCD_Refset_ID": "999002891000230102"
+  },
+  {
+    "Cluster_ID": "NDASEPOFF_COD",
+    "Cluster_Description": "Offered diabetes structured education programme codes",
+    "PCD_Refset_ID": "999002931000230109"
+  },
+  {
+    "Cluster_ID": "NDASMOK_COD",
+    "Cluster_Description": "National diabetes audit (NDA) smoking habit codes",
+    "PCD_Refset_ID": "999003011000230106"
+  },
+  {
+    "Cluster_ID": "NDAWEIGHT_COD",
+    "Cluster_Description": "Weight measured codes",
+    "PCD_Refset_ID": "999003051000230105"
+  },
+  {
+    "Cluster_ID": "NDH_COD",
+    "Cluster_Description": "Non-diabetic hyperglycaemia codes",
+    "PCD_Refset_ID": "999003091000230100"
+  },
+  {
+    "Cluster_ID": "NDHINVITE_COD",
+    "Cluster_Description": "Invite for non diabetic hyperglycaemia care review codes",
+    "PCD_Refset_ID": "999020491000230105"
+  },
+  {
+    "Cluster_ID": "NDHPCADEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive non diabetic hyperglycaemia quality indicator care",
+    "PCD_Refset_ID": "999024211000230105"
+  },
+  {
+    "Cluster_ID": "NDHPU_COD",
+    "Cluster_Description": "Codes for non diabetic hyperglycaemia quality indicator care unsuitable for patient",
+    "PCD_Refset_ID": "999024251000230109"
+  },
+  {
+    "Cluster_ID": "NEEDFLUVAC_COD",
+    "Cluster_Description": "Requires influenza virus vaccination codes",
+    "PCD_Refset_ID": "999020011000230107"
+  },
+  {
+    "Cluster_ID": "NHAEMCANMORPH_COD",
+    "Cluster_Description": "Non-haematological cancer morphology codes excluding skin basal cell and squamous cancers",
+    "PCD_Refset_ID": "999025491000230104"
+  },
+  {
+    "Cluster_ID": "NOCX_COD",
+    "Cluster_Description": "Codes that indicate complete removal of the cervix",
+    "PCD_Refset_ID": "999007211000230105"
+  },
+  {
+    "Cluster_ID": "NONHDLCCHOL_COD",
+    "Cluster_Description": "Non-high density lipoprotein (Non-HDL) cholesterol test result codes",
+    "PCD_Refset_ID": "999017731000230106"
+  },
+  {
+    "Cluster_ID": "NONMALHAEM_COD",
+    "Cluster_Description": "Major haematological disorder (non-malignant) codes",
+    "PCD_Refset_ID": "999032451000230102"
+  },
+  {
+    "Cluster_ID": "NONRESLIVING_COD",
+    "Cluster_Description": "Codes indicating patient lives elsewhere than residential, care or nursing home",
+    "PCD_Refset_ID": "999030931000230104"
+  },
+  {
+    "Cluster_ID": "NONVALCHOL_COD",
+    "Cluster_Description": "Cholesterol codes without a value",
+    "PCD_Refset_ID": "999018731000230105"
+  },
+  {
+    "Cluster_ID": "NOSMOKEXPOS_COD",
+    "Cluster_Description": "Codes indicating no known exposure to second-hand smoke",
+    "PCD_Refset_ID": "999027531000230106"
+  },
+  {
+    "Cluster_ID": "NOTACARER_COD",
+    "Cluster_Description": "No longer a carer codes",
+    "PCD_Refset_ID": "999024331000230108"
+  },
+  {
+    "Cluster_ID": "NPTDEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to have a neuropathy assessment",
+    "PCD_Refset_ID": "999009571000230109"
+  },
+  {
+    "Cluster_ID": "NPTPU_COD",
+    "Cluster_Description": "Codes for neuropathy assessment unsuitable for patient",
+    "PCD_Refset_ID": "999009691000230109"
+  },
+  {
+    "Cluster_ID": "NSMOK_COD",
+    "Cluster_Description": "Code for never smoked",
+    "PCD_Refset_ID": "999006051000230100"
+  },
+  {
+    "Cluster_ID": "NURSHOME_COD",
+    "Cluster_Description": "Living in nursing home codes",
+    "PCD_Refset_ID": "999022131000230102"
+  },
+  {
+    "Cluster_ID": "NUTRIASS_COD",
+    "Cluster_Description": "Nutrition and diet assessment codes",
+    "PCD_Refset_ID": "999023491000230100"
+  },
+  {
+    "Cluster_ID": "NUTRIASSDEC_COD",
+    "Cluster_Description": "Nutrition and diet assessment declined codes",
+    "PCD_Refset_ID": "999036311000230106"
+  },
+  {
+    "Cluster_ID": "NYHA_COD",
+    "Cluster_Description": "New York Heart Association Classification of heart failure codes",
+    "PCD_Refset_ID": "999036301000230109"
+  },
+  {
+    "Cluster_ID": "ORALHEALTHINT_COD",
+    "Cluster_Description": "Oral heath intervention codes",
+    "PCD_Refset_ID": "999036481000230109"
+  },
+  {
+    "Cluster_ID": "ORALHEALTHREV_COD",
+    "Cluster_Description": "Oral heath review codes",
+    "PCD_Refset_ID": "999036491000230106"
+  },
+  {
+    "Cluster_ID": "ORANTICOAG_COD",
+    "Cluster_Description": "Oral anticoagulant prophylaxis codes",
+    "PCD_Refset_ID": "999007491000230103"
+  },
+  {
+    "Cluster_ID": "ORANTICOAGADVERS_COD",
+    "Cluster_Description": "Anticoagulant allergy and adverse reaction codes",
+    "PCD_Refset_ID": "999017771000230108"
+  },
+  {
+    "Cluster_ID": "ORANTICOAGDEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive oral anticoagulant",
+    "PCD_Refset_ID": "999009731000230101"
+  },
+  {
+    "Cluster_ID": "ORANTICOAGDISCUS_COD",
+    "Cluster_Description": "Discussion around anticoagulation therapy codes",
+    "PCD_Refset_ID": "999017811000230108"
+  },
+  {
+    "Cluster_ID": "ORANTICOAGGENDEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive oral anticoagulant (generic)",
+    "PCD_Refset_ID": "999030051000230109"
+  },
+  {
+    "Cluster_ID": "ORANTICOAGREVW_COD",
+    "Cluster_Description": "Oral Anticoagulant review codes",
+    "PCD_Refset_ID": "999017851000230107"
+  },
+  {
+    "Cluster_ID": "ORGTRANSP_COD",
+    "Cluster_Description": "Solid organ transplant codes",
+    "PCD_Refset_ID": "999032931000230103"
+  },
+  {
+    "Cluster_ID": "OSAL_COD",
+    "Cluster_Description": "Over the counter (OTC) salicylate codes",
+    "PCD_Refset_ID": "999007451000230108"
+  },
+  {
+    "Cluster_ID": "OSTEO_COD",
+    "Cluster_Description": "Osteoporosis codes",
+    "PCD_Refset_ID": "999006011000230104"
+  },
+  {
+    "Cluster_ID": "OSTR_COD",
+    "Cluster_Description": "Non-haemorrhagic stroke codes",
+    "PCD_Refset_ID": "999005971000230104"
+  },
+  {
+    "Cluster_ID": "OTHERDMAUDIT_COD",
+    "Cluster_Description": "Non Type 1 or Type 2 diabetes mellitus codes used in National audit",
+    "PCD_Refset_ID": "999017891000230102"
+  },
+  {
+    "Cluster_ID": "PAD_COD",
+    "Cluster_Description": "Peripheral arterial disease (PAD) diagnostic codes",
+    "PCD_Refset_ID": "999005931000230101"
+  },
+  {
+    "Cluster_ID": "PALCARE_COD",
+    "Cluster_Description": "Palliative care codes",
+    "PCD_Refset_ID": "999009771000230104"
+  },
+  {
+    "Cluster_ID": "PALCARENI_COD",
+    "Cluster_Description": "Palliative care not clinically indicated codes",
+    "PCD_Refset_ID": "999009931000230103"
+  },
+  {
+    "Cluster_ID": "PCSK9IADV_COD",
+    "Cluster_Description": "Codes indicating adverse reaction to proprotein convertase subtilisin kexin type 9 inhibitor",
+    "PCD_Refset_ID": "999027651000230103"
+  },
+  {
+    "Cluster_ID": "PCSK9IALL_COD",
+    "Cluster_Description": "Codes indicating allergy to proprotein convertase subtilisin kexin type 9 inhibitor",
+    "PCD_Refset_ID": "999027691000230108"
+  },
+  {
+    "Cluster_ID": "PCSK9ICON_COD",
+    "Cluster_Description": "Proprotein convertase subtilisin kexin type inhibitor drug contraindicated codes",
+    "PCD_Refset_ID": "999029251000230108"
+  },
+  {
+    "Cluster_ID": "PCSK9IDEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive proprotein convertase subtilisin kexin type inhibitor drug",
+    "PCD_Refset_ID": "999029291000230103"
+  },
+  {
+    "Cluster_ID": "PCSK9ININD_COD",
+    "Cluster_Description": "Proprotein convertase subtilisin kexin type inhibitor drug not indicated codes",
+    "PCD_Refset_ID": "999029371000230109"
+  },
+  {
+    "Cluster_ID": "PCV_COD",
+    "Cluster_Description": "Pneumococcal (PCV) vaccination codes",
+    "PCD_Refset_ID": "999021251000230107"
+  },
+  {
+    "Cluster_ID": "PD_COD",
+    "Cluster_Description": "Parkinsonâ€™s disease diagnosis codes",
+    "PCD_Refset_ID": "999035371000230109"
+  },
+  {
+    "Cluster_ID": "PEFR_COD",
+    "Cluster_Description": "Peak expiratory flow rate (PEFR) codes",
+    "PCD_Refset_ID": "999010011000230104"
+  },
+  {
+    "Cluster_ID": "PEFRVAR_COD",
+    "Cluster_Description": "Peak expiratory flow rate variability done codes",
+    "PCD_Refset_ID": "999036541000230100"
+  },
+  {
+    "Cluster_ID": "PEMPHIGUS_COD",
+    "Cluster_Description": "Pemphigus codes",
+    "PCD_Refset_ID": "999034371000230108"
+  },
+  {
+    "Cluster_ID": "PEPTICULCER_COD",
+    "Cluster_Description": "Peptic ulceration codes",
+    "PCD_Refset_ID": "999030331000230103"
+  },
+  {
+    "Cluster_ID": "PERVAC1_COD",
+    "Cluster_Description": "Pertussis vaccination in pregnancy codes",
+    "PCD_Refset_ID": "999013771000230103"
+  },
+  {
+    "Cluster_ID": "PERVACDEC_COD",
+    "Cluster_Description": "Codes indicating patient chose not to receive a Pertussis vaccination in pregnancy ",
+    "PCD_Refset_ID": "999013811000230103"
+  },
+  {
+    "Cluster_ID": "PERVACOHP1_COD",
+    "Cluster_Description": "Pertussis vaccination in pregnancy given by other healthcare provider codes",
+    "PCD_Refset_ID": "999013851000230104"
+  },
+  {
+    "Cluster_ID": "PHARM_COD",
+    "Cluster_Description": "Smoking pharmacotherapy codes",
+    "PCD_Refset_ID": "999012851000230109"
+  },
+  {
+    "Cluster_ID": "PHOSPHATE_COD",
+    "Cluster_Description": "Phosphate blood test results",
+    "PCD_Refset_ID": "999017931000230109"
+  },
+  {
+    "Cluster_ID": "PLSRATE_COD",
+    "Cluster_Description": "Pulse rate codes",
+    "PCD_Refset_ID": "999023931000230109"
+  },
+  {
+    "Cluster_ID": "PMR_COD",
+    "Cluster_Description": "Polymyalgia Rheumatica (PMR) codes",
+    "PCD_Refset_ID": "999033371000230105"
+  },
+  {
+    "Cluster_ID": "PNEUVAC1_COD",
+    "Cluster_Description": "Pneumococcal vaccination codes",
+    "PCD_Refset_ID": "999015411000230101"
+  },
+  {
+    "Cluster_ID": "PNEUVACCON_COD",
+    "Cluster_Description": "Pneumococcal vaccination persisting contraindication codes",
+    "PCD_Refset_ID": "999015451000230102"
+  },
+  {
+    "Cluster_ID": "PNEUVACDEC_COD",
+    "Cluster_Description": "Codes indicating the patient chose not to receive a pneumococcal vaccination",
+    "PCD_Refset_ID": "999015211000230100"
+  },
+  {
+    "Cluster_ID": "PNEUVACEXPCON_COD",
+    "Cluster_Description": "Pneumococcal vaccination expiring contraindication codes",
+    "PCD_Refset_ID": "999015251000230101"
+  },
+  {
+    "Cluster_ID": "PNEUVACNC_COD",
+    "Cluster_Description": "Pneumococcal vaccination no consent codes",
+    "PCD_Refset_ID": "999015291000230106"
+  },
+  {
+    "Cluster_ID": "PNEUVACOHP1_COD",
+    "Cluster_Description": "Pneumococcal vaccination given by other healthcare provider codes",
+    "PCD_Refset_ID": "999015331000230102"
+  },
+  {
+    "Cluster_ID": "POBJEC_COD",
+    "Cluster_Description": "Dissent from secondary use of GP patient identifiable data codes",
+    "PCD_Refset_ID": "999003131000230102"
+  },
+  {
+    "Cluster_ID": "POBJECW_COD",
+    "Cluster_Description": "Dissent withdrawn from secondary use of GP patient identifiable data",
+    "PCD_Refset_ID": "999003171000230100"
+  },
+  {
+    "Cluster_ID": "POLYARTERITIS_COD",
+    "Cluster_Description": "Polyarteritis nodosa codes",
+    "PCD_Refset_ID": "999033451000230108"
+  },
+  {
+    "Cluster_ID": "POLYCHONDRITISRELAP_COD",
+    "Cluster_Description": "Relapsing polychondritis codes",
+    "PCD_Refset_ID": "999033531000230103"
+  },
+  {
+    "Cluster_ID": "POSSFH_COD",
+    "Cluster_Description": "Possible Familial Hypercholesterolaemia codes",
+    "PCD_Refset_ID": "999017971000230106"
+  },
+  {
+    "Cluster_ID": "POSSPOSTCOVID_COD",
+    "Cluster_Description": "Possible post-COVID19 illness, recovery or assessment codes",
+    "PCD_Refset_ID": "999024371000230105"
+  },
+  {
+    "Cluster_ID": "PRD_COD",
+    "Cluster_Description": "Pre-diabetes codes",
+    "PCD_Refset_ID": "999002811000230108"
+  },
+  {
+    "Cluster_ID": "PREFLANG_COD",
+    "Cluster_Description": "Preferred language codes",
+    "PCD_Refset_ID": "999003571000230106"
+  },
+  {
+    "Cluster_ID": "PREG_COD",
+    "Cluster_Description": "Codes indicating the patient is pregnant",
+    "PCD_Refset_ID": "999019771000230101"
+  },
+  {
+    "Cluster_ID": "PRIMIMMDEF_COD",
+    "Cluster_Description": "Primary immunodeficiency disorder codes",
+    "PCD_Refset_ID": "999032491000230107"
+  },
+  {
+    "Cluster_ID": "PRT_COD",
+    "Cluster_Description": "Codes for proteinuria",
+    "PCD_Refset_ID": "999010331000230106"
+  },
+  {
+    "Cluster_ID": "PSORIASIS_COD",
+    "Cluster_Description": "Adult and child psoriasis codes",
+    "PCD_Refset_ID": "999022691000230106"
+  },
+  {
+    "Cluster_ID": "PTH_COD",
+    "Cluster_Description": "Parathyroid Hormone (PTH) test results",
+    "PCD_Refset_ID": "999018011000230102"
+  },
+  {
+    "Cluster_ID": "PULMOHYP_COD",
+    "Cluster_Description": "Pulmonary hypertension diagnosis codes",
+    "PCD_Refset_ID": "999024091000230107"
+  },
+  {
+    "Cluster_ID": "PULRHBATT_COD",
+    "Cluster_Description": "Codes indicating attendance at a pulmonary rehabilitation programme",
+    "PCD_Refset_ID": "999010371000230108"
+  },
+  {
+    "Cluster_ID": "PULRHBDEC_COD",
+    "Cluster_Description": "Codes for patient chose not to be referred to a pulmonary rehabilitation programme",
+    "PCD_Refset_ID": "999010411000230107"
+  },
+  {
+    "Cluster_ID": "PULRHBOFF_COD",
+    "Cluster_Description": "Codes indicating a referral to a  pulmonary rehabilitation programme",
+    "PCD_Refset_ID": "999010451000230106"
+  },
+  {
+    "Cluster_ID": "PULRHBPU_COD",
+    "Cluster_Description": "Codes indicating that a referral to a pulmonary rehabilitation programme is not suitable for the patient",
+    "PCD_Refset_ID": "999010491000230101"
+  },
+  {
+    "Cluster_ID": "PULRHBREF_COD",
+    "Cluster_Description": "Codes indicating a referral to a pulmonary rehabilitation programme",
+    "PCD_Refset_ID": "999036191000230103"
+  },
+  {
+    "Cluster_ID": "PULRHBSU_COD",
+    "Cluster_Description": "Codes for pulmonary rehabilitation programme unavailable",
+    "PCD_Refset_ID": "999010531000230101"
+  },
+  {
+    "Cluster_ID": "PULRHYTH_COD",
+    "Cluster_Description": "Pulse rhythm assessment codes (excluding ECG)",
+    "PCD_Refset_ID": "999018051000230103"
+  },
+  {
+    "Cluster_ID": "PYODERMAGANG_COD",
+    "Cluster_Description": "Pyoderma gangrenosum codes",
+    "PCD_Refset_ID": "999034211000230108"
+  },
+  {
+    "Cluster_ID": "QRISKSCORE_COD",
+    "Cluster_Description": "QRISK cardiovascular risk score codes",
+    "PCD_Refset_ID": "999018091000230108"
+  },
+  {
+    "Cluster_ID": "RADIOTHERAP_COD",
+    "Cluster_Description": "Radiotherapy treatment codes",
+    "PCD_Refset_ID": "999034491000230101"
+  },
+  {
+    "Cluster_ID": "RAINVITE_COD",
+    "Cluster_Description": "Invite for rheumatoid arthritis care review codes",
+    "PCD_Refset_ID": "999012491000230102"
+  },
+  {
+    "Cluster_ID": "RAPCADEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive rheumatoid arthritis quality indicator care",
+    "PCD_Refset_ID": "999011651000230102"
+  },
+  {
+    "Cluster_ID": "RAPCAPU_COD",
+    "Cluster_Description": "Codes for rheumatoid arthritis quality indicator care unsuitable for patient",
+    "PCD_Refset_ID": "999011691000230107"
+  },
+  {
+    "Cluster_ID": "RARTH_COD",
+    "Cluster_Description": "Rheumatoid arthritis diagnosis codes",
+    "PCD_Refset_ID": "999005851000230103"
+  },
+  {
+    "Cluster_ID": "RARTHAD_COD",
+    "Cluster_Description": "Rheumatoid arthritis associated disorder codes",
+    "PCD_Refset_ID": "999022851000230102"
+  },
+  {
+    "Cluster_ID": "RARTHRVW_COD",
+    "Cluster_Description": "Rheumatoid arthritis review codes",
+    "PCD_Refset_ID": "999011731000230104"
+  },
+  {
+    "Cluster_ID": "RCPDSYMP_COD",
+    "Cluster_Description": "Asthma day symptom codes",
+    "PCD_Refset_ID": "999011771000230102"
+  },
+  {
+    "Cluster_ID": "RCPEXCER_COD",
+    "Cluster_Description": "Asthma exercise codes",
+    "PCD_Refset_ID": "999011811000230102"
+  },
+  {
+    "Cluster_ID": "RCPSLP_COD",
+    "Cluster_Description": "Asthma sleep codes",
+    "PCD_Refset_ID": "999011851000230103"
+  },
+  {
+    "Cluster_ID": "REDEJCFRAC_COD",
+    "Cluster_Description": "Reduced ejection fraction (heart failure) codes",
+    "PCD_Refset_ID": "999020531000230105"
+  },
+  {
+    "Cluster_ID": "REFERSSSA_COD",
+    "Cluster_Description": "Support and refer stop smoking service and advisor codes",
+    "PCD_Refset_ID": "999011891000230108"
+  },
+  {
+    "Cluster_ID": "REFLIPID_COD",
+    "Cluster_Description": "Referral to lipid or endocrine clinic recorded",
+    "PCD_Refset_ID": "999018131000230106"
+  },
+  {
+    "Cluster_ID": "REGGPALIGNCARHOMDEC_COD",
+    "Cluster_Description": "Registration with general practitioner practice aligned to care home declined codes",
+    "PCD_Refset_ID": "999027451000230101"
+  },
+  {
+    "Cluster_ID": "RENALTRANSP_COD",
+    "Cluster_Description": "Renal transplant codes",
+    "PCD_Refset_ID": "999035251000230108"
+  },
+  {
+    "Cluster_ID": "RENINHDEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive a direct renin inhibitors",
+    "PCD_Refset_ID": "999018171000230108"
+  },
+  {
+    "Cluster_ID": "REQINTERPRETER_COD",
+    "Cluster_Description": "Requires interpreter codes",
+    "PCD_Refset_ID": "999003611000230100"
+  },
+  {
+    "Cluster_ID": "REQPNEUVAC_COD",
+    "Cluster_Description": "Requires pneumococcal vaccination codes",
+    "PCD_Refset_ID": "999015371000230100"
+  },
+  {
+    "Cluster_ID": "REQSHVAC_COD",
+    "Cluster_Description": "Requires shingles vaccination codes",
+    "PCD_Refset_ID": "999036121000230101"
+  },
+  {
+    "Cluster_ID": "RESCARE_COD",
+    "Cluster_Description": "Residential care home residency codes",
+    "PCD_Refset_ID": "999035851000230109"
+  },
+  {
+    "Cluster_ID": "RESIDHOME_COD",
+    "Cluster_Description": "Living in residential home codes",
+    "PCD_Refset_ID": "999022291000230108"
+  },
+  {
+    "Cluster_ID": "RESNONE_COD",
+    "Cluster_Description": "No permanent address residency codes",
+    "PCD_Refset_ID": "999035861000230107"
+  },
+  {
+    "Cluster_ID": "RESNURS_COD",
+    "Cluster_Description": "Nursing home residency codes",
+    "PCD_Refset_ID": "999035871000230103"
+  },
+  {
+    "Cluster_ID": "RESPRIV_COD",
+    "Cluster_Description": "Private residence residency codes",
+    "PCD_Refset_ID": "999035881000230101"
+  },
+  {
+    "Cluster_ID": "RET_COD",
+    "Cluster_Description": "Retinal screening codes",
+    "PCD_Refset_ID": "999006931000230105"
+  },
+  {
+    "Cluster_ID": "RETICHISTIOCYTOSIS_COD",
+    "Cluster_Description": "Multicentric reticulohistiocytosis (MRH) codes",
+    "PCD_Refset_ID": "999034331000230106"
+  },
+  {
+    "Cluster_ID": "RETSCREN_COD",
+    "Cluster_Description": "National diabetes audit (NDA) retinal screening codes",
+    "PCD_Refset_ID": "999003211000230102"
+  },
+  {
+    "Cluster_ID": "REV_COD",
+    "Cluster_Description": "Asthma review codes",
+    "PCD_Refset_ID": "999011931000230101"
+  },
+  {
+    "Cluster_ID": "RIA_COD",
+    "Cluster_Description": "Rare inherited anaemia codes",
+    "PCD_Refset_ID": "999032731000230101"
+  },
+  {
+    "Cluster_ID": "ROTAVAC1_COD",
+    "Cluster_Description": "Rotavirus vaccination 1st dose given codes",
+    "PCD_Refset_ID": "999014371000230101"
+  },
+  {
+    "Cluster_ID": "ROTAVAC2_COD",
+    "Cluster_Description": "Rotavirus vaccination 2nd dose given codes",
+    "PCD_Refset_ID": "999014531000230108"
+  },
+  {
+    "Cluster_ID": "ROTAVACEXC_COD",
+    "Cluster_Description": "Rotavirus vaccination exception reporting codes",
+    "PCD_Refset_ID": "999014571000230105"
+  },
+  {
+    "Cluster_ID": "RSVADMIN_COD",
+    "Cluster_Description": "Respiratory syncytial virus (RSV) vaccination given codes",
+    "PCD_Refset_ID": "999036341000230107"
+  },
+  {
+    "Cluster_ID": "RSVCON_COD",
+    "Cluster_Description": "Respiratory syncytial virus (RSV) vaccination contraindicated codes",
+    "PCD_Refset_ID": "999036351000230105"
+  },
+  {
+    "Cluster_ID": "RSVDEC_COD",
+    "Cluster_Description": "Respiratory syncytial virus (RSV) vaccination declined codes",
+    "PCD_Refset_ID": "999036361000230108"
+  },
+  {
+    "Cluster_ID": "SALDEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive salicylate",
+    "PCD_Refset_ID": "999011971000230104"
+  },
+  {
+    "Cluster_ID": "SAPHO_COD",
+    "Cluster_Description": "Synovitis acne pustulosis hyperostosis osteomyelitis syndrome (SAPHO syndrome) codes",
+    "PCD_Refset_ID": "999033731000230109"
+  },
+  {
+    "Cluster_ID": "SARCOID_COD",
+    "Cluster_Description": "Sarcoidosis codes",
+    "PCD_Refset_ID": "999033491000230103"
+  },
+  {
+    "Cluster_ID": "SBROOME_COD",
+    "Cluster_Description": "Simon Broome criteria code",
+    "PCD_Refset_ID": "999018211000230106"
+  },
+  {
+    "Cluster_ID": "SECPANCDM_COD",
+    "Cluster_Description": "Secondary pancreatic diabetes codes",
+    "PCD_Refset_ID": "999031651000230107"
+  },
+  {
+    "Cluster_ID": "SERFRUC_COD",
+    "Cluster_Description": "Serum fructosamine codes",
+    "PCD_Refset_ID": "999005691000230107"
+  },
+  {
+    "Cluster_ID": "SEVAST_COD",
+    "Cluster_Description": "Severe asthma diagnosis codes",
+    "PCD_Refset_ID": "999028171000230103"
+  },
+  {
+    "Cluster_ID": "SEVFRAIL_COD",
+    "Cluster_Description": "Severe frailty diagnosis codes",
+    "PCD_Refset_ID": "999012131000230109"
+  },
+  {
+    "Cluster_ID": "SEVHYP_COD",
+    "Cluster_Description": "Severe and malignant Hypertension",
+    "PCD_Refset_ID": "999018251000230105"
+  },
+  {
+    "Cluster_ID": "SEVIMATRISK_COD",
+    "Cluster_Description": "Severely immunocompromised codes",
+    "PCD_Refset_ID": "999026211000230101"
+  },
+  {
+    "Cluster_ID": "SEXHEALTHINT_COD",
+    "Cluster_Description": "Sexual health and contraception intervention codes",
+    "PCD_Refset_ID": "999036501000230103"
+  },
+  {
+    "Cluster_ID": "SEXHEALTHREV_COD",
+    "Cluster_Description": "Sexual health and contraception review codes",
+    "PCD_Refset_ID": "999036511000230101"
+  },
+  {
+    "Cluster_ID": "SFLUGP1_COD",
+    "Cluster_Description": "Seasonal influenza inactivated vaccine first dose codes",
+    "PCD_Refset_ID": "999020691000230107"
+  },
+  {
+    "Cluster_ID": "SFLUGP2_COD",
+    "Cluster_Description": "Seasonal influenza inactivated vaccine second dose codes",
+    "PCD_Refset_ID": "999020171000230101"
+  },
+  {
+    "Cluster_ID": "SFLUOHP1_COD",
+    "Cluster_Description": "Seasonal influenza inactivated vaccine first dose given by other healthcare provider codes",
+    "PCD_Refset_ID": "999021131000230108"
+  },
+  {
+    "Cluster_ID": "SFLUOHP2_COD",
+    "Cluster_Description": "Seasonal influenza inactivated vaccine second dose given by other healthcare provider codes",
+    "PCD_Refset_ID": "999021451000230106"
+  },
+  {
+    "Cluster_ID": "SHCON_COD",
+    "Cluster_Description": "Shingles contraindication codes",
+    "PCD_Refset_ID": "999013931000230102"
+  },
+  {
+    "Cluster_ID": "SHDEC_COD",
+    "Cluster_Description": "Codes indicating the patient chose not to receive a shingles vaccination",
+    "PCD_Refset_ID": "999013891000230109"
+  },
+  {
+    "Cluster_ID": "SHVACGP_COD",
+    "Cluster_Description": "Shingles GP vaccination codes",
+    "PCD_Refset_ID": "999014051000230109"
+  },
+  {
+    "Cluster_ID": "SHVACGP1_COD",
+    "Cluster_Description": "Recombinant herpes zoster first vaccination codes",
+    "PCD_Refset_ID": "999025811000230107"
+  },
+  {
+    "Cluster_ID": "SHVACGP2_COD",
+    "Cluster_Description": "Recombinant herpes zoster second vaccination codes",
+    "PCD_Refset_ID": "999025851000230106"
+  },
+  {
+    "Cluster_ID": "SHVACOHP_COD",
+    "Cluster_Description": "Shingles other healthcare provider vaccination codes",
+    "PCD_Refset_ID": "999014091000230104"
+  },
+  {
+    "Cluster_ID": "SICKLE_COD",
+    "Cluster_Description": "Sickle cell disease codes",
+    "PCD_Refset_ID": "999032251000230101"
+  },
+  {
+    "Cluster_ID": "SJOGRENS_COD",
+    "Cluster_Description": "Sjogrenâ€™s Syndrome codes",
+    "PCD_Refset_ID": "999032851000230100"
+  },
+  {
+    "Cluster_ID": "SKINTEST_COD",
+    "Cluster_Description": "Skin prick test for house dust mite codes",
+    "PCD_Refset_ID": "999036551000230102"
+  },
+  {
+    "Cluster_ID": "SLUPUS_COD",
+    "Cluster_Description": "Systemic lupus codes",
+    "PCD_Refset_ID": "999023011000230103"
+  },
+  {
+    "Cluster_ID": "SMEAR_COD",
+    "Cluster_Description": "Cervical screening codes",
+    "PCD_Refset_ID": "999007251000230109"
+  },
+  {
+    "Cluster_ID": "SMOK_COD",
+    "Cluster_Description": "Smoking habit codes",
+    "PCD_Refset_ID": "999005651000230102"
+  },
+  {
+    "Cluster_ID": "SMOKEXPOS_COD",
+    "Cluster_Description": "Codes indicating exposure to second-hand smoke",
+    "PCD_Refset_ID": "999020571000230107"
+  },
+  {
+    "Cluster_ID": "SMOKINGINT_COD",
+    "Cluster_Description": "Smoking Intervention and Advice",
+    "PCD_Refset_ID": "999018291000230100"
+  },
+  {
+    "Cluster_ID": "SMOKINVITE_COD",
+    "Cluster_Description": "Invite for smoking care review codes",
+    "PCD_Refset_ID": "999012531000230102"
+  },
+  {
+    "Cluster_ID": "SMOKPCADEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive smoking quality indicator care",
+    "PCD_Refset_ID": "999012171000230106"
+  },
+  {
+    "Cluster_ID": "SMOKPCAPU_COD",
+    "Cluster_Description": "Codes for smoking quality indicator care unsuitable for patient",
+    "PCD_Refset_ID": "999012211000230109"
+  },
+  {
+    "Cluster_ID": "SMOKSTATDEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to give their smoking status",
+    "PCD_Refset_ID": "999012251000230108"
+  },
+  {
+    "Cluster_ID": "SOCPRESDEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to accept referral to a social prescribing service",
+    "PCD_Refset_ID": "999007651000230106"
+  },
+  {
+    "Cluster_ID": "SOCPRESREF_COD",
+    "Cluster_Description": "Social prescribing referral codes",
+    "PCD_Refset_ID": "999007691000230101"
+  },
+  {
+    "Cluster_ID": "SPHEROCYTOSIS_COD",
+    "Cluster_Description": "Hereditary spherocytosis diagnosis codes",
+    "PCD_Refset_ID": "999035411000230108"
+  },
+  {
+    "Cluster_ID": "SPIRDEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive a spirometry test",
+    "PCD_Refset_ID": "999012291000230103"
+  },
+  {
+    "Cluster_ID": "SPIRPCASU_COD",
+    "Cluster_Description": "Diagnostic spirometry quality indicator service unavailable codes",
+    "PCD_Refset_ID": "999013251000230100"
+  },
+  {
+    "Cluster_ID": "SPIRPU_COD",
+    "Cluster_Description": "Codes for spirometry testing unsuitable for patient",
+    "PCD_Refset_ID": "999008091000230106"
+  },
+  {
+    "Cluster_ID": "SPLENIC_COD",
+    "Cluster_Description": "Asplenia and splenic dysfunction codes",
+    "PCD_Refset_ID": "999026131000230101"
+  },
+  {
+    "Cluster_ID": "STATINDEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive a statin prescription",
+    "PCD_Refset_ID": "999008051000230101"
+  },
+  {
+    "Cluster_ID": "STATINTOL_COD",
+    "Cluster_Description": "Codes for intolerance to statins",
+    "PCD_Refset_ID": "999027211000230104"
+  },
+  {
+    "Cluster_ID": "STATOFF_COD",
+    "Cluster_Description": "Statin therapy offered",
+    "PCD_Refset_ID": "999018331000230109"
+  },
+  {
+    "Cluster_ID": "STIAINVITE_COD",
+    "Cluster_Description": "Invite for stroke care review codes",
+    "PCD_Refset_ID": "999012571000230100"
+  },
+  {
+    "Cluster_ID": "STIAPCADEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive stroke quality indicator care",
+    "PCD_Refset_ID": "999008131000230109"
+  },
+  {
+    "Cluster_ID": "STIAPCAPU_COD",
+    "Cluster_Description": "Codes for stroke quality indicator care unsuitable for patient",
+    "PCD_Refset_ID": "999008171000230106"
+  },
+  {
+    "Cluster_ID": "STRK_COD",
+    "Cluster_Description": "Stroke diagnosis codes",
+    "PCD_Refset_ID": "999005531000230105"
+  },
+  {
+    "Cluster_ID": "STRMEDRWVDEC_COD",
+    "Cluster_Description": "Structured medication review declined codes",
+    "PCD_Refset_ID": "999031211000230106"
+  },
+  {
+    "Cluster_ID": "STRUCTMEDRVW_COD",
+    "Cluster_Description": "Structured medication review codes",
+    "PCD_Refset_ID": "999021971000230107"
+  },
+  {
+    "Cluster_ID": "SVT_COD",
+    "Cluster_Description": "Supraventricular tachycardia (SVT) Codes",
+    "PCD_Refset_ID": "999018371000230106"
+  },
+  {
+    "Cluster_ID": "TAKAYASUART_COD",
+    "Cluster_Description": "Takayasuâ€™s arteritis codes",
+    "PCD_Refset_ID": "999033411000230109"
+  },
+  {
+    "Cluster_ID": "TCHOLHDL_COD",
+    "Cluster_Description": "Total cholesterol high-density lipoprotein (HDL) codes",
+    "PCD_Refset_ID": "999005451000230100"
+  },
+  {
+    "Cluster_ID": "TEMPCARHOME_COD",
+    "Cluster_Description": "Living temporarily in care home codes",
+    "PCD_Refset_ID": "999023091000230109"
+  },
+  {
+    "Cluster_ID": "TFT_COD",
+    "Cluster_Description": "Thyroid function test codes",
+    "PCD_Refset_ID": "999005411000230104"
+  },
+  {
+    "Cluster_ID": "THAL_COD",
+    "Cluster_Description": "Thalassaemia codes",
+    "PCD_Refset_ID": "999032291000230106"
+  },
+  {
+    "Cluster_ID": "THY_COD",
+    "Cluster_Description": "Hypothyroidism diagnosis codes",
+    "PCD_Refset_ID": "999005371000230103"
+  },
+  {
+    "Cluster_ID": "THYEXC_COD",
+    "Cluster_Description": "Hypothyroidism exception codes",
+    "PCD_Refset_ID": "999005331000230100"
+  },
+  {
+    "Cluster_ID": "TIA_COD",
+    "Cluster_Description": "Transient ischaemic attack (TIA) codes",
+    "PCD_Refset_ID": "999005291000230109"
+  },
+  {
+    "Cluster_ID": "TOTCOLECT_COD",
+    "Cluster_Description": "Total colectomy procedure codes",
+    "PCD_Refset_ID": "999036441000230104"
+  },
+  {
+    "Cluster_ID": "TRIGLYC_COD",
+    "Cluster_Description": "Triglyceride test result codes",
+    "PCD_Refset_ID": "999018411000230105"
+  },
+  {
+    "Cluster_ID": "TTP_COD",
+    "Cluster_Description": "Thrombotic Thrombocytopenia Purpura (TTP) codes",
+    "PCD_Refset_ID": "999033811000230106"
+  },
+  {
+    "Cluster_ID": "TTR_COD",
+    "Cluster_Description": "INR Time in therapeutic range codes",
+    "PCD_Refset_ID": "999018491000230104"
+  },
+  {
+    "Cluster_ID": "TXACE_COD",
+    "Cluster_Description": "Angiotensin-converting enzyme (ACE) inhibitor contraindications (expiring) codes",
+    "PCD_Refset_ID": "999005251000230104"
+  },
+  {
+    "Cluster_ID": "TXAII_COD",
+    "Cluster_Description": "Angiotensin II receptor blockers (ARB) contraindications (expiring) codes",
+    "PCD_Refset_ID": "999004491000230106"
+  },
+  {
+    "Cluster_ID": "TXCLO_COD",
+    "Cluster_Description": "Clopidogrel contraindications codes (expiring)",
+    "PCD_Refset_ID": "999007291000230104"
+  },
+  {
+    "Cluster_ID": "TXDIPY_COD",
+    "Cluster_Description": "Dipyridamole contraindications codes (expiring)",
+    "PCD_Refset_ID": "999008211000230109"
+  },
+  {
+    "Cluster_ID": "TXLBB_COD",
+    "Cluster_Description": "Beta-blocker contraindications (expiring) codes",
+    "PCD_Refset_ID": "999008251000230108"
+  },
+  {
+    "Cluster_ID": "TXORANTICOAG_COD",
+    "Cluster_Description": "Oral anticoagulant contraindications codes (expiring)",
+    "PCD_Refset_ID": "999008611000230106"
+  },
+  {
+    "Cluster_ID": "TXORANTICOAGGENCON_COD",
+    "Cluster_Description": "Oral anticoagulant generic contraindication codes (expiring)",
+    "PCD_Refset_ID": "999035791000230109"
+  },
+  {
+    "Cluster_ID": "TXRENINH_COD",
+    "Cluster_Description": "Direct renin inhibitors contraindications (expiring) codes",
+    "PCD_Refset_ID": "999004451000230101"
+  },
+  {
+    "Cluster_ID": "TXSAL_COD",
+    "Cluster_Description": "Salicylate contraindications codes (expiring)",
+    "PCD_Refset_ID": "999007331000230108"
+  },
+  {
+    "Cluster_ID": "TXSTAT_COD",
+    "Cluster_Description": "Statin contraindications (expiring) codes",
+    "PCD_Refset_ID": "999008571000230100"
+  },
+  {
+    "Cluster_ID": "UE_COD",
+    "Cluster_Description": "Urea and Electrolytes test results",
+    "PCD_Refset_ID": "999018531000230104"
+  },
+  {
+    "Cluster_ID": "ULCCOLITIS_COD",
+    "Cluster_Description": "Ulcerative colitis (UC) codes",
+    "PCD_Refset_ID": "999033891000230100"
+  },
+  {
+    "Cluster_ID": "UNPAIDCARER_COD",
+    "Cluster_Description": "Unpaid carer codes",
+    "PCD_Refset_ID": "999034891000230103"
+  },
+  {
+    "Cluster_ID": "UPGIBLEED_COD",
+    "Cluster_Description": "Upper gastrointestinal (GI) bleed codes",
+    "PCD_Refset_ID": "999030371000230101"
+  },
+  {
+    "Cluster_ID": "VITKANTAGCON_COD",
+    "Cluster_Description": "Vitamin K antagonist contraindicated codes",
+    "PCD_Refset_ID": "999029931000230106"
+  },
+  {
+    "Cluster_ID": "VITKANTAGDEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive a Vitamin K antagonist",
+    "PCD_Refset_ID": "999029971000230108"
+  },
+  {
+    "Cluster_ID": "VTE_COD",
+    "Cluster_Description": "Venous thromboembolism (VTE) diagnosis codes",
+    "PCD_Refset_ID": "999035291000230103"
+  },
+  {
+    "Cluster_ID": "WAIST_COD",
+    "Cluster_Description": "Waist circumference measured",
+    "PCD_Refset_ID": "999023891000230102"
+  },
+  {
+    "Cluster_ID": "WAISTDEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to have their waist circumference measured",
+    "PCD_Refset_ID": "999023771000230108"
+  },
+  {
+    "Cluster_ID": "WEGENERVASC_COD",
+    "Cluster_Description": "Wegenerâ€™s vasculitis codes",
+    "PCD_Refset_ID": "999033291000230104"
+  },
+  {
+    "Cluster_ID": "WRITPASTP_COD",
+    "Cluster_Description": "Written personalised asthma plan codes",
+    "PCD_Refset_ID": "999020651000230102"
+  },
+  {
+    "Cluster_ID": "WTMGINT_COD",
+    "Cluster_Description": "Weight management intervention codes",
+    "PCD_Refset_ID": "999023531000230100"
+  },
+  {
+    "Cluster_ID": "WTMGINTDEC_COD",
+    "Cluster_Description": "Codes indicating the patient has chosen not to receive a weight management intervention",
+    "PCD_Refset_ID": "999023411000230106"
+  },
+  {
+    "Cluster_ID": "XACE_COD",
+    "Cluster_Description": "Angiotensin-converting enzyme (ACE) inhibitor contraindications (persisting)",
+    "PCD_Refset_ID": "999004371000230104"
+  },
+  {
+    "Cluster_ID": "XAII_COD",
+    "Cluster_Description": "Angiotensin II receptor blockers (ARB) contraindications (persisting)",
+    "PCD_Refset_ID": "999004331000230101"
+  },
+  {
+    "Cluster_ID": "XCLO_COD",
+    "Cluster_Description": "Clopidogrel contraindications codes (persisting)",
+    "PCD_Refset_ID": "999007371000230105"
+  },
+  {
+    "Cluster_ID": "XDIPY_COD",
+    "Cluster_Description": "Dipyridamole contraindications codes (persisting)",
+    "PCD_Refset_ID": "999008451000230107"
+  },
+  {
+    "Cluster_ID": "XFLU_COD",
+    "Cluster_Description": "Flu vaccine contraindications (persisting)",
+    "PCD_Refset_ID": "999008411000230108"
+  },
+  {
+    "Cluster_ID": "XLBB_COD",
+    "Cluster_Description": "Beta-blocker contraindications (persisting)",
+    "PCD_Refset_ID": "999008371000230109"
+  },
+  {
+    "Cluster_ID": "XORANTICOAG_COD",
+    "Cluster_Description": "Oral anticoagulant contraindications codes (persisting)",
+    "PCD_Refset_ID": "999008331000230107"
+  },
+  {
+    "Cluster_ID": "XORANTICOAGGENCON_COD",
+    "Cluster_Description": "Oral anticoagulant generic contraindication codes (persisting)",
+    "PCD_Refset_ID": "999035801000230108"
+  },
+  {
+    "Cluster_ID": "XSAL_COD",
+    "Cluster_Description": "Salicylate contraindications codes (persisting)",
+    "PCD_Refset_ID": "999007411000230109"
+  },
+  {
+    "Cluster_ID": "XSTAT_COD",
+    "Cluster_Description": "Statin contraindications (persisting) codes",
+    "PCD_Refset_ID": "999008291000230103"
+  }
+]

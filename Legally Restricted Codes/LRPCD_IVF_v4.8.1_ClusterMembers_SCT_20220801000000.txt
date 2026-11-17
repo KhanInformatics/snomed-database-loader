@@ -1,0 +1,92 @@
+CLUSTER	VERSION	SCHEME	CODE	TERM	PREFERRED_TERM
+LRPCD_IVF	v4.8.1	SCT	58533008	Artificial insemination (procedure)	Artificial insemination
+LRPCD_IVF	v4.8.1	SCT	236896006	Artificial insemination by donor (procedure)	Artificial insemination by donor
+LRPCD_IVF	v4.8.1	SCT	236895005	Artificial insemination by husband (procedure)	Artificial insemination by husband
+LRPCD_IVF	v4.8.1	SCT	150801000119104	Artificial insemination done (situation)	Artificial insemination done
+LRPCD_IVF	v4.8.1	SCT	57233006	Artificial insemination with sperm washing and capacitation (procedure)	Artificial insemination with sperm washing and capacitation
+LRPCD_IVF	v4.8.1	SCT	424522003	Artificial insemination with the wrong donor sperm or donor egg (event)	Artificial insemination with the wrong donor sperm or donor egg
+LRPCD_IVF	v4.8.1	SCT	46249006	Artificial insemination, heterologous (procedure)	Artificial insemination, heterologous
+LRPCD_IVF	v4.8.1	SCT	66601000	Artificial insemination, homologous (procedure)	Artificial insemination, homologous
+LRPCD_IVF	v4.8.1	SCT	63487001	Assisted fertilization (procedure)	Assisted fertilisation
+LRPCD_IVF	v4.8.1	SCT	1156197003	Complication of embryo transfer (disorder)	Complication of embryo transfer
+LRPCD_IVF	v4.8.1	SCT	92831004	Complication of transplanted embryo manifest in host (disorder)	Complication of transplanted embryo
+LRPCD_IVF	v4.8.1	SCT	213199004	Complications associated with artificial fertilization (disorder)	Complications associated with artificial fertilisation
+LRPCD_IVF	v4.8.1	SCT	213202009	Complications of attempted introduction of fertilized ovum following in vitro fertilization (disorder)	Complications of attempted introduction of fertilised ovum following in vitro fertilisation
+LRPCD_IVF	v4.8.1	SCT	443633009	Conceived by in vitro fertilization (finding)	Conceived by in vitro fertilisation
+LRPCD_IVF	v4.8.1	SCT	440645004	Cryopreservation of oocyte (procedure)	Cryopreservation of oocyte
+LRPCD_IVF	v4.8.1	SCT	439790009	Cryopreservation of ovarian tissue (procedure)	Cryopreservation of ovarian tissue
+LRPCD_IVF	v4.8.1	SCT	439247007	Cryopreservation of testicular tissue (procedure)	Cryopreservation of testicular tissue
+LRPCD_IVF	v4.8.1	SCT	441200004	Culture of embryo (procedure)	Culture of embryo
+LRPCD_IVF	v4.8.1	SCT	441427002	Culture of embryo with coculture of oocytes (procedure)	Culture of embryo with coculture of oocytes
+LRPCD_IVF	v4.8.1	SCT	225247009	Direct intraperitoneal insemination (procedure)	Direct intraperitoneal insemination
+LRPCD_IVF	v4.8.1	SCT	31276007	Electroejaculation procedure (procedure)	Electroejaculation procedure
+LRPCD_IVF	v4.8.1	SCT	75456002	Embryo transfer (procedure)	Embryo transfer
+LRPCD_IVF	v4.8.1	SCT	176996001	Endoscopic intrafallopian transfer of gamete (procedure)	Endoscopic intrafallopian transfer of gamete
+LRPCD_IVF	v4.8.1	SCT	177038005	Endoscopic transurethral ultrasound directed oocyte recovery (procedure)	Endoscopic transurethral ultrasound directed oocyte recovery
+LRPCD_IVF	v4.8.1	SCT	177039002	Endoscopic transvesical oocyte recovery (procedure)	Endoscopic transvesical oocyte recovery
+LRPCD_IVF	v4.8.1	SCT	236913003	Fallopian replacement of egg with delayed insemination (procedure)	Fallopian replacement of egg with delayed insemination
+LRPCD_IVF	v4.8.1	SCT	236894009	Frozen embryo transfer (procedure)	Frozen embryo transfer
+LRPCD_IVF	v4.8.1	SCT	236912008	Gamete intrafallopian transfer (procedure)	Gamete intrafallopian transfer
+LRPCD_IVF	v4.8.1	SCT	176843009	Gamete intrauterine transfer (procedure)	Gamete intrauterine transfer
+LRPCD_IVF	v4.8.1	SCT	309096008	Harvest of reproductive tissue (procedure)	Harvest of reproductive tissue
+LRPCD_IVF	v4.8.1	SCT	765291000000105	History of in-vitro fertilisation (situation)	History of in-vitro fertilisation
+LRPCD_IVF	v4.8.1	SCT	430882007	Human oocyte donor (person)	Egg donor
+LRPCD_IVF	v4.8.1	SCT	433475001	Human oocyte donor, age 35 and older (person)	Human oocyte donor, age 35 and older
+LRPCD_IVF	v4.8.1	SCT	105473009	Husband sperm donor for artificial insemination (person)	Husband sperm donor for artificial insemination
+LRPCD_IVF	v4.8.1	SCT	213201002	Hyperstimulation of ovaries (disorder)	Hyperstimulation of ovaries
+LRPCD_IVF	v4.8.1	SCT	440687002	Identification of oocyte in follicular fluid (procedure)	Identification of oocyte in follicular fluid
+LRPCD_IVF	v4.8.1	SCT	440688007	Identification of sperm from specimen obtained by aspiration (procedure)	Identification of sperm from specimen obtained by aspiration
+LRPCD_IVF	v4.8.1	SCT	426914002	In vitro fertilization using donor egg and intracytoplasmic sperm injection (procedure)	IVF - In vitro fertilisation with intracytoplasmic sperm injection (ICSI) and donor egg
+LRPCD_IVF	v4.8.1	SCT	425866000	In vitro fertilization using donor eggs (procedure)	In vitro fertilisation using donor eggs
+LRPCD_IVF	v4.8.1	SCT	427664000	In vitro fertilization using donor sperm (procedure)	IVF - In vitro fertilisation using donor sperm
+LRPCD_IVF	v4.8.1	SCT	425901007	In vitro fertilization with intracytoplasmic sperm injection (procedure)	IVF - In vitro fertilisation with intracytoplasmic sperm injection (ICSI)
+LRPCD_IVF	v4.8.1	SCT	426417003	In vitro fertilization with preimplantation genetic diagnosis (procedure)	IVF - In vitro fertilisation with pre-implantation genetic diagnosis
+LRPCD_IVF	v4.8.1	SCT	711544002	In vitro fertilization with surrogacy (procedure)	In vitro fertilisation with surrogacy
+LRPCD_IVF	v4.8.1	SCT	213200001	Infection associated with artificial insemination (disorder)	Infection associated with artificial insemination
+LRPCD_IVF	v4.8.1	SCT	176844003	Intracervical artificial insemination (procedure)	Intracervical artificial insemination
+LRPCD_IVF	v4.8.1	SCT	238312005	Intraperitoneal insemination (procedure)	Intraperitoneal insemination
+LRPCD_IVF	v4.8.1	SCT	265064001	Intrauterine artificial insemination (procedure)	Intrauterine artificial insemination
+LRPCD_IVF	v4.8.1	SCT	426250000	Intrauterine insemination using donor sperm (procedure)	Intrauterine insemination using donor sperm
+LRPCD_IVF	v4.8.1	SCT	426389008	Intrauterine insemination using partner sperm (procedure)	Intrauterine insemination using partner sperm
+LRPCD_IVF	v4.8.1	SCT	425644009	Intrauterine insemination with controlled ovarian hyperstimulation using donor sperm (procedure)	Intrauterine insemination with controlled ovarian hyperstimulation using donor sperm
+LRPCD_IVF	v4.8.1	SCT	426968007	Intrauterine insemination with controlled ovarian hyperstimulation using partner sperm (procedure)	Intrauterine insemination with controlled ovarian hyperstimulation using partner sperm
+LRPCD_IVF	v4.8.1	SCT	225250007	Intravaginal artificial insemination (procedure)	Intravaginal artificial insemination
+LRPCD_IVF	v4.8.1	SCT	265082003	Laparoscopic oocyte recovery (procedure)	Laparoscopic oocyte recovery
+LRPCD_IVF	v4.8.1	SCT	236364009	Micro-epididymal sperm aspiration (procedure)	Micro-epididymal sperm aspiration
+LRPCD_IVF	v4.8.1	SCT	32581000119101	Mild to moderate hyperstimulation of ovaries (disorder)	Mild to moderate hyperstimulation of ovaries
+LRPCD_IVF	v4.8.1	SCT	177037000	Oocyte recovery (procedure)	Oocyte recovery
+LRPCD_IVF	v4.8.1	SCT	312645003	Percutaneous epididymal sperm aspiration (procedure)	Percutaneous epididymal sperm aspiration
+LRPCD_IVF	v4.8.1	SCT	276907003	Percutaneous sperm aspiration (procedure)	Percutaneous sperm aspiration
+LRPCD_IVF	v4.8.1	SCT	441276006	Preparation of embryo for transfer (procedure)	Preparation of embryo for transfer
+LRPCD_IVF	v4.8.1	SCT	105474003	Related sperm donor for artificial insemination (person)	Related sperm donor for artificial insemination
+LRPCD_IVF	v4.8.1	SCT	446934006	Retrieval of oocyte by transabdominal approach (procedure)	Retrieval of oocyte by transabdominal approach
+LRPCD_IVF	v4.8.1	SCT	32591000119103	Severe hyperstimulation of ovaries (disorder)	Severe hyperstimulation of ovaries
+LRPCD_IVF	v4.8.1	SCT	236363003	Sperm aspiration (procedure)	Sperm aspiration
+LRPCD_IVF	v4.8.1	SCT	441463002	Sperm donor (person)	Sperm donor
+LRPCD_IVF	v4.8.1	SCT	105472004	Sperm donor for artificial insemination (person)	Sperm donor for artificial insemination
+LRPCD_IVF	v4.8.1	SCT	42862001	Sperm evaluation by hamster penetration test (procedure)	Sperm evaluation by hamster penetration test
+LRPCD_IVF	v4.8.1	SCT	225249007	Subzonal insemination (procedure)	Subzonal insemination
+LRPCD_IVF	v4.8.1	SCT	22387007	Surrogate child (person)	Surrogate child
+LRPCD_IVF	v4.8.1	SCT	3851003	Surrogate daughter (person)	Surrogate daughter
+LRPCD_IVF	v4.8.1	SCT	75615008	Surrogate father (person)	Surrogate father
+LRPCD_IVF	v4.8.1	SCT	27508009	Surrogate mother (person)	Surrogate mother
+LRPCD_IVF	v4.8.1	SCT	15130002	Surrogate parent (person)	Surrogate parent
+LRPCD_IVF	v4.8.1	SCT	102875003	Surrogate pregnancy (finding)	Surrogate pregnancy
+LRPCD_IVF	v4.8.1	SCT	41057000	Surrogate son (person)	Surrogate son
+LRPCD_IVF	v4.8.1	SCT	52637005	Test tube ovum fertilization (procedure)	In vitro fertilisation
+LRPCD_IVF	v4.8.1	SCT	236365005	Testicular sperm aspiration (procedure)	Testicular sperm aspiration
+LRPCD_IVF	v4.8.1	SCT	229971000000102	Testicular sperm extraction (procedure)	Testicular sperm extraction
+LRPCD_IVF	v4.8.1	SCT	441369004	Thawing of cryopreserved embryo (procedure)	Thawing of cryopreserved embryo
+LRPCD_IVF	v4.8.1	SCT	441222006	Thawing of cryopreserved oocyte (procedure)	Thawing of cryopreserved oocyte
+LRPCD_IVF	v4.8.1	SCT	441198005	Thawing of cryopreserved sperm (procedure)	Thawing of cryopreserved sperm
+LRPCD_IVF	v4.8.1	SCT	441209003	Thawing of cryopreserved tissue specimen from testis (procedure)	Thawing of cryopreserved tissue specimen from testis
+LRPCD_IVF	v4.8.1	SCT	233111000000108	Transfer of embryo to uterus (procedure)	Transfer of embryo to uterus
+LRPCD_IVF	v4.8.1	SCT	448543003	Transmyometrial transfer of embryo to uterus (procedure)	Transmyometrial transfer of embryo to uterus
+LRPCD_IVF	v4.8.1	SCT	177042008	Transvaginal oocyte recovery (procedure)	Transvaginal oocyte recovery
+LRPCD_IVF	v4.8.1	SCT	432787004	Transvaginal ultrasonography for follicle monitoring (procedure)	Transvaginal ultrasound scan for follicle monitoring
+LRPCD_IVF	v4.8.1	SCT	236915005	Tubal embryo transfer (procedure)	Tubal embryo transfer
+LRPCD_IVF	v4.8.1	SCT	252939009	Ultrasound scan for follicle monitoring (procedure)	Ultrasound scan for follicle monitoring
+LRPCD_IVF	v4.8.1	SCT	441465009	Unknown sperm donor for artificial insemination (person)	Unknown sperm donor for artificial insemination
+LRPCD_IVF	v4.8.1	SCT	441468006	Unrelated known sperm donor for artificial insemination (person)	Unrelated known sperm donor for artificial insemination
+LRPCD_IVF	v4.8.1	SCT	225248004	Zona drilling (procedure)	Zona drilling
+LRPCD_IVF	v4.8.1	SCT	236914009	Zygote intrafallopian transfer (procedure)	Zygote intrafallopian transfer

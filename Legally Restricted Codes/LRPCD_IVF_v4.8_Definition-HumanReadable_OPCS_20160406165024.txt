@@ -1,0 +1,24 @@
+--------------------------------------------------------------------------------------------------------------------------------------------
+OPCS INTENSIONAL CLUSTER DEFINITION (v4.8) FOR LRPCD_IVF LRPCD - Assisted conception including in vitro fertilisation
+AREA: LRPCD
+--------------------------------------------------------------------------------------------------------------------------------------------
+INCLUDE:
+   << N341 Fertility investigation of male NEC (code and all its descendants)
+   << N342 Collection of sperm NEC (code and all its descendants)
+   << N344 Microsurgical epididymal sperm aspiration (code and all its descendants)
+   << N345 Percutaneous epididymal sperm aspiration (code and all its descendants)
+   << N346 Testicular sperm extraction (code and all its descendants)
+   << Q13 Introduction of gametes into uterine cavity (code and all its descendants)
+   << Q21 Other introduction of gametes into uterine cavity (code and all its descendants)
+   << Q382 Endoscopic injection into fallopian tube (code and all its descendants)
+   << Q383 Endoscopic intrafallopian transfer of gametes (code and all its descendants)
+   << Q48 Oocyte recovery (code and all its descendants)
+   << Q555 Transvaginal ultrasound examination of female genital tract (code and all its descendants)
+   << Q561 Fertility investigation of female NEC (code and all its descendants)
+   << Q562 Fertiloscopy (code and all its descendants)
+   << X88 High cost reproductive and urinary tract drugs (code and all its descendants)
+   << Y96 In vitro fertilisation (code and all its descendants)
+EXCLUDE:
+-< No exclusion clauses >-
+
+--------------------------------------------------------------------------------------------------------------------------------------------

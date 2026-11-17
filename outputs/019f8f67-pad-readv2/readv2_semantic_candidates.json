@@ -1,0 +1,2570 @@
+[
+  {
+    "read_code": "1226.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "000aW",
+        "term_type": "P",
+        "term": "No FH: Ischaemic heart disease"
+      },
+      {
+        "term_id": "000aY",
+        "term_type": "P",
+        "term": "No FH: Ischaemic heart disease"
+      }
+    ]
+  },
+  {
+    "read_code": "12C2.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "000dC",
+        "term_type": "P",
+        "term": "FH: Ischaemic heart dis. <60"
+      },
+      {
+        "term_id": "000dG",
+        "term_type": "P",
+        "term": "FH: Ischaemic heart dis. <60"
+      }
+    ]
+  },
+  {
+    "read_code": "12C3.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "000dH",
+        "term_type": "P",
+        "term": "FH: Ischaemic heart dis. >60"
+      },
+      {
+        "term_id": "000dL",
+        "term_type": "P",
+        "term": "FH: Ischaemic heart dis. >60"
+      }
+    ]
+  },
+  {
+    "read_code": "12C5.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "120dR",
+        "term_type": "S",
+        "term": "FH: Ischaemic heart disease"
+      }
+    ]
+  },
+  {
+    "read_code": "12C6.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "000dS",
+        "term_type": "P",
+        "term": "FH: Atherosclerosis"
+      }
+    ]
+  },
+  {
+    "read_code": "12C7.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "000dT",
+        "term_type": "P",
+        "term": "Family history of transient ischaemic attack"
+      }
+    ]
+  },
+  {
+    "read_code": "12CY.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "000dt",
+        "term_type": "P",
+        "term": "FH: peripheral vascular disease"
+      }
+    ]
+  },
+  {
+    "read_code": "14AL.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "001I5",
+        "term_type": "P",
+        "term": "H/O: Treatment for ischaemic heart disease"
+      }
+    ]
+  },
+  {
+    "read_code": "14F7.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "001JO",
+        "term_type": "P",
+        "term": "H/O: arterial lower limb ulcer"
+      }
+    ]
+  },
+  {
+    "read_code": "14NB.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "001LH",
+        "term_type": "P",
+        "term": "H/O: Peripheral vascular disease procedure"
+      }
+    ]
+  },
+  {
+    "read_code": "16I..",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "001UI",
+        "term_type": "P",
+        "term": "Claudication distance"
+      }
+    ]
+  },
+  {
+    "read_code": "18Z2.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "001YE",
+        "term_type": "P",
+        "term": "No peripheral vascular disease symptoms"
+      }
+    ]
+  },
+  {
+    "read_code": "1DCA.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "001nx",
+        "term_type": "P",
+        "term": "Rest pain"
+      }
+    ]
+  },
+  {
+    "read_code": "1J61.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "001qy",
+        "term_type": "P",
+        "term": "Suspected ischaemic heart disease"
+      }
+    ]
+  },
+  {
+    "read_code": "1JK..",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "001rO",
+        "term_type": "P",
+        "term": "Suspected transient ischaemic attack"
+      }
+    ]
+  },
+  {
+    "read_code": "1M110",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "001sC",
+        "term_type": "P",
+        "term": "Ischaemic foot pain at rest"
+      }
+    ]
+  },
+  {
+    "read_code": "1M111",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "001sD",
+        "term_type": "P",
+        "term": "Ischaemic foot pain when walking"
+      }
+    ]
+  },
+  {
+    "read_code": "22Q8.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00273",
+        "term_type": "P",
+        "term": "Critical colonisation of wound"
+      }
+    ]
+  },
+  {
+    "read_code": "2G63.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "002jE",
+        "term_type": "P",
+        "term": "Ischaemic toe"
+      }
+    ]
+  },
+  {
+    "read_code": "2I16.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "002li",
+        "term_type": "P",
+        "term": "O/E - gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "322..",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "002s8",
+        "term_type": "P",
+        "term": "ECG: myocardial ischaemia"
+      }
+    ]
+  },
+  {
+    "read_code": "3221.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "002s9",
+        "term_type": "P",
+        "term": "ECG: no myocardial ischaemia"
+      }
+    ]
+  },
+  {
+    "read_code": "3222.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "002sA",
+        "term_type": "P",
+        "term": "ECG:shows myocardial ischaemia"
+      }
+    ]
+  },
+  {
+    "read_code": "322Z.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "002sB",
+        "term_type": "P",
+        "term": "ECG: myocardial ischaemia NOS"
+      }
+    ]
+  },
+  {
+    "read_code": "33E8.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "002yF",
+        "term_type": "P",
+        "term": "Ischaemic forearm exercise test"
+      }
+    ]
+  },
+  {
+    "read_code": "38DJ.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "0033j",
+        "term_type": "P",
+        "term": "Edinburgh claudication questionnaire"
+      }
+    ]
+  },
+  {
+    "read_code": "55A..",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00540",
+        "term_type": "P",
+        "term": "Other leg arteriogram-general"
+      },
+      {
+        "term_id": "1253y",
+        "term_type": "S",
+        "term": "Leg arteriography"
+      }
+    ]
+  },
+  {
+    "read_code": "55AZ.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00543",
+        "term_type": "P",
+        "term": "Leg arteriogram - general NOS"
+      }
+    ]
+  },
+  {
+    "read_code": "662U.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "005hh",
+        "term_type": "P",
+        "term": "Peripheral vascular disease monitoring"
+      }
+    ]
+  },
+  {
+    "read_code": "68B2.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "0066l",
+        "term_type": "P",
+        "term": "Ischaemic heart disease screen"
+      }
+    ]
+  },
+  {
+    "read_code": "6C0..",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "006Cn",
+        "term_type": "P",
+        "term": "Primary prevention of ischaemic heart disease"
+      }
+    ]
+  },
+  {
+    "read_code": "7A4..",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "117vR",
+        "term_type": "S",
+        "term": "Leg artery operations"
+      }
+    ]
+  },
+  {
+    "read_code": "7A406",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "007va",
+        "term_type": "P",
+        "term": "Emerg replace aneurysm leg artery by aorta/com fem art anast"
+      }
+    ]
+  },
+  {
+    "read_code": "7A407",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "007vb",
+        "term_type": "P",
+        "term": "Emerg replace aneurysm leg artery by aorta/sup fem art anast"
+      }
+    ]
+  },
+  {
+    "read_code": "7A40B",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "007vf",
+        "term_type": "P",
+        "term": "Replace aneurysm leg artery by aorta/com fem art anast NEC"
+      }
+    ]
+  },
+  {
+    "read_code": "7A40C",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "007vg",
+        "term_type": "P",
+        "term": "Replace aneurysm leg artery by aorta/sup fem art anast NEC"
+      }
+    ]
+  },
+  {
+    "read_code": "7A416",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "007vu",
+        "term_type": "P",
+        "term": "Emerg bypass leg artery by aorta/com fem art anastomosis NEC"
+      }
+    ]
+  },
+  {
+    "read_code": "7A417",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "007vv",
+        "term_type": "P",
+        "term": "Emerg bypass leg artery by aorta/deep fem anastomosis NEC"
+      }
+    ]
+  },
+  {
+    "read_code": "7A41B",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "007vz",
+        "term_type": "P",
+        "term": "Bypass leg artery by aorta/com femoral art anastomosis NEC"
+      }
+    ]
+  },
+  {
+    "read_code": "7A41C",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "007w0",
+        "term_type": "P",
+        "term": "Bypass leg artery by aorta/deep femoral art anastomosis NEC"
+      }
+    ]
+  },
+  {
+    "read_code": "8CRB.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00BB9",
+        "term_type": "P",
+        "term": "Transient ischaemic attack clinical management plan"
+      }
+    ]
+  },
+  {
+    "read_code": "8H2V.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00BLn",
+        "term_type": "P",
+        "term": "Admit ischaemic heart disease emergency"
+      }
+    ]
+  },
+  {
+    "read_code": "8HBJ.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00BQK",
+        "term_type": "P",
+        "term": "Stroke / transient ischaemic attack referral"
+      }
+    ]
+  },
+  {
+    "read_code": "9N4h.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00CHq",
+        "term_type": "P",
+        "term": "DNA - Did not attend peripheral vascular disease clinic"
+      }
+    ]
+  },
+  {
+    "read_code": "9Om..",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00ClQ",
+        "term_type": "P",
+        "term": "Stroke/transient ischaemic attack monitoring administration"
+      }
+    ]
+  },
+  {
+    "read_code": "9Om0.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00ClR",
+        "term_type": "P",
+        "term": "Stroke/transient ischaemic attack monitoring first letter"
+      }
+    ]
+  },
+  {
+    "read_code": "9Om1.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00ClS",
+        "term_type": "P",
+        "term": "Stroke/transient ischaemic attack monitoring second letter"
+      }
+    ]
+  },
+  {
+    "read_code": "9Om2.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00ClT",
+        "term_type": "P",
+        "term": "Stroke/transient ischaemic attack monitoring third letter"
+      }
+    ]
+  },
+  {
+    "read_code": "9Om3.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00ClU",
+        "term_type": "P",
+        "term": "Stroke/transient ischaemic attack monitoring verbal invitati"
+      }
+    ]
+  },
+  {
+    "read_code": "9Om4.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00ClV",
+        "term_type": "P",
+        "term": "Stroke/transient ischaemic attack monitoring telephone invte"
+      }
+    ]
+  },
+  {
+    "read_code": "9m1..",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00D7b",
+        "term_type": "P",
+        "term": "Peripheral vascular disease monitoring invitation"
+      }
+    ]
+  },
+  {
+    "read_code": "9m10.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00D7c",
+        "term_type": "P",
+        "term": "Peripheral vascular disease monitoring first letter"
+      }
+    ]
+  },
+  {
+    "read_code": "9m11.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00D7d",
+        "term_type": "P",
+        "term": "Peripheral vascular disease monitoring second letter"
+      }
+    ]
+  },
+  {
+    "read_code": "9m12.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00D7e",
+        "term_type": "P",
+        "term": "Peripheral vascular disease monitoring third letter"
+      }
+    ]
+  },
+  {
+    "read_code": "A3A0.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00DJH",
+        "term_type": "P",
+        "term": "Gas gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "A3A00",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00DJJ",
+        "term_type": "P",
+        "term": "Gas gangrene caused by clostridium histolyticum"
+      }
+    ]
+  },
+  {
+    "read_code": "A3A01",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00DJL",
+        "term_type": "P",
+        "term": "Gas gangrene caused by clostridium oedematiens"
+      }
+    ]
+  },
+  {
+    "read_code": "A3A02",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00DJN",
+        "term_type": "P",
+        "term": "Gas gangrene caused by clostridium perfringens"
+      },
+      {
+        "term_id": "12DJO",
+        "term_type": "S",
+        "term": "Gas gangrene caused by clostridium welchii"
+      }
+    ]
+  },
+  {
+    "read_code": "A3A03",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00DJQ",
+        "term_type": "P",
+        "term": "Gas gangrene caused by clostridium septicum"
+      }
+    ]
+  },
+  {
+    "read_code": "A3A04",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00DJS",
+        "term_type": "P",
+        "term": "Gas gangrene caused by clostridium sordellii"
+      }
+    ]
+  },
+  {
+    "read_code": "A3A05",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00DJT",
+        "term_type": "P",
+        "term": "Gas gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "A3A06",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00DJU",
+        "term_type": "P",
+        "term": "Gas gangrene-neck"
+      }
+    ]
+  },
+  {
+    "read_code": "A3A07",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00DJV",
+        "term_type": "P",
+        "term": "Gas gangrene-back"
+      }
+    ]
+  },
+  {
+    "read_code": "A3A08",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00DJW",
+        "term_type": "P",
+        "term": "Gas gangrene-shoulder"
+      }
+    ]
+  },
+  {
+    "read_code": "A3A09",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00DJX",
+        "term_type": "P",
+        "term": "Gas gangrene-arm"
+      }
+    ]
+  },
+  {
+    "read_code": "A3A0A",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00DJY",
+        "term_type": "P",
+        "term": "Gas gangrene-forearm"
+      }
+    ]
+  },
+  {
+    "read_code": "A3A0B",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00DJZ",
+        "term_type": "P",
+        "term": "Gas gangrene-hand"
+      }
+    ]
+  },
+  {
+    "read_code": "A3A0C",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00DJa",
+        "term_type": "P",
+        "term": "Gas gangrene-pelvis"
+      }
+    ]
+  },
+  {
+    "read_code": "A3A0D",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00DJb",
+        "term_type": "P",
+        "term": "Gas gangrene-thigh"
+      }
+    ]
+  },
+  {
+    "read_code": "A3A0E",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00DJc",
+        "term_type": "P",
+        "term": "Gas gangrene-leg"
+      }
+    ]
+  },
+  {
+    "read_code": "A3A0F",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00DJd",
+        "term_type": "P",
+        "term": "Gas gangrene-foot"
+      }
+    ]
+  },
+  {
+    "read_code": "A3A0z",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00DJe",
+        "term_type": "P",
+        "term": "Gas gangrene caused by organism NOS"
+      }
+    ]
+  },
+  {
+    "read_code": "C107.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "11Evw",
+        "term_type": "S",
+        "term": "Diabetes mellitus with gangrene"
+      },
+      {
+        "term_id": "12Evv",
+        "term_type": "S",
+        "term": "Diabetes with gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "C1072",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00Ew0",
+        "term_type": "P",
+        "term": "Diabetes mellitus, adult with gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "C1086",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00EwR",
+        "term_type": "P",
+        "term": "Insulin dependent diabetes mellitus with gangrene"
+      },
+      {
+        "term_id": "12EwT",
+        "term_type": "S",
+        "term": "Type 1 diabetes mellitus with gangrene"
+      },
+      {
+        "term_id": "11EwS",
+        "term_type": "S",
+        "term": "Type I diabetes mellitus with gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "C1095",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00ExP",
+        "term_type": "P",
+        "term": "Non-insulin dependent diabetes mellitus with gangrene"
+      },
+      {
+        "term_id": "12ExR",
+        "term_type": "S",
+        "term": "Type 2 diabetes mellitus with gangrene"
+      },
+      {
+        "term_id": "11ExQ",
+        "term_type": "S",
+        "term": "Type II diabetes mellitus with gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "C10E6",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00Eyr",
+        "term_type": "P",
+        "term": "Type 1 diabetes mellitus with gangrene"
+      },
+      {
+        "term_id": "12Eyt",
+        "term_type": "S",
+        "term": "Insulin dependent diabetes mellitus with gangrene"
+      },
+      {
+        "term_id": "11Eys",
+        "term_type": "S",
+        "term": "Type I diabetes mellitus with gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "C10F5",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00Ezz",
+        "term_type": "P",
+        "term": "Type 2 diabetes mellitus with gangrene"
+      },
+      {
+        "term_id": "11F00",
+        "term_type": "S",
+        "term": "Type II diabetes mellitus with gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "F281.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "11G9k",
+        "term_type": "S",
+        "term": "Anoxic - ischaemic encephalopathy"
+      }
+    ]
+  },
+  {
+    "read_code": "F4211",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00GHX",
+        "term_type": "P",
+        "term": "Atherosclerotic retinopathy"
+      },
+      {
+        "term_id": "12GHW",
+        "term_type": "S",
+        "term": "Atheroscleritic retinopathy"
+      }
+    ]
+  },
+  {
+    "read_code": "F42yC",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00GJX",
+        "term_type": "P",
+        "term": "Retinal ischaemia"
+      }
+    ]
+  },
+  {
+    "read_code": "F4H40",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00GZ6",
+        "term_type": "P",
+        "term": "Ischaemic optic neuropathy"
+      }
+    ]
+  },
+  {
+    "read_code": "F5802",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00GhQ",
+        "term_type": "P",
+        "term": "Transient ischaemic deafness"
+      }
+    ]
+  },
+  {
+    "read_code": "Fyu55",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00Gk5",
+        "term_type": "P",
+        "term": "[X]Other transnt cerebral ischaemic attacks+related syndroms"
+      }
+    ]
+  },
+  {
+    "read_code": "G3...",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00GqI",
+        "term_type": "P",
+        "term": "Ischaemic heart disease"
+      },
+      {
+        "term_id": "00GqK",
+        "term_type": "P",
+        "term": "Ischaemic heart disease"
+      },
+      {
+        "term_id": "12GqH",
+        "term_type": "S",
+        "term": "Atherosclerotic heart disease"
+      },
+      {
+        "term_id": "13GqJ",
+        "term_type": "S",
+        "term": "IHD - Ischaemic heart disease"
+      }
+    ]
+  },
+  {
+    "read_code": "G31..",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00Gqw",
+        "term_type": "P",
+        "term": "Other acute and subacute ischaemic heart disease"
+      }
+    ]
+  },
+  {
+    "read_code": "G31y.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00GrE",
+        "term_type": "P",
+        "term": "Other acute and subacute ischaemic heart disease"
+      }
+    ]
+  },
+  {
+    "read_code": "G31y2",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00GrH",
+        "term_type": "P",
+        "term": "Subendocardial ischaemia"
+      }
+    ]
+  },
+  {
+    "read_code": "G31y3",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00GrI",
+        "term_type": "P",
+        "term": "Transient myocardial ischaemia"
+      }
+    ]
+  },
+  {
+    "read_code": "G31yz",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00GrJ",
+        "term_type": "P",
+        "term": "Other acute and subacute ischaemic heart disease NOS"
+      }
+    ]
+  },
+  {
+    "read_code": "G33z4",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00Grc",
+        "term_type": "P",
+        "term": "Ischaemic chest pain"
+      }
+    ]
+  },
+  {
+    "read_code": "G34..",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00Grh",
+        "term_type": "P",
+        "term": "Other chronic ischaemic heart disease"
+      }
+    ]
+  },
+  {
+    "read_code": "G340.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00Gri",
+        "term_type": "P",
+        "term": "Coronary atherosclerosis"
+      }
+    ]
+  },
+  {
+    "read_code": "G342.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00Grw",
+        "term_type": "P",
+        "term": "Atherosclerotic cardiovascular disease"
+      }
+    ]
+  },
+  {
+    "read_code": "G343.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00Grx",
+        "term_type": "P",
+        "term": "Ischaemic cardiomyopathy"
+      }
+    ]
+  },
+  {
+    "read_code": "G344.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00Gry",
+        "term_type": "P",
+        "term": "Silent myocardial ischaemia"
+      }
+    ]
+  },
+  {
+    "read_code": "G34y.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00Grz",
+        "term_type": "P",
+        "term": "Other specified chronic ischaemic heart disease"
+      }
+    ]
+  },
+  {
+    "read_code": "G34y1",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00Gs1",
+        "term_type": "P",
+        "term": "Chronic myocardial ischaemia"
+      }
+    ]
+  },
+  {
+    "read_code": "G34yz",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00Gs2",
+        "term_type": "P",
+        "term": "Other specified chronic ischaemic heart disease NOS"
+      }
+    ]
+  },
+  {
+    "read_code": "G34z.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00Gs3",
+        "term_type": "P",
+        "term": "Other chronic ischaemic heart disease NOS"
+      }
+    ]
+  },
+  {
+    "read_code": "G3y..",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00GsR",
+        "term_type": "P",
+        "term": "Other specified ischaemic heart disease"
+      }
+    ]
+  },
+  {
+    "read_code": "G3z..",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00GsS",
+        "term_type": "P",
+        "term": "Ischaemic heart disease NOS"
+      }
+    ]
+  },
+  {
+    "read_code": "G65..",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00H0Y",
+        "term_type": "P",
+        "term": "Transient cerebral ischaemia"
+      },
+      {
+        "term_id": "00H0a",
+        "term_type": "P",
+        "term": "Transient cerebral ischaemia"
+      },
+      {
+        "term_id": "12H0Z",
+        "term_type": "S",
+        "term": "Transient ischaemic attack"
+      }
+    ]
+  },
+  {
+    "read_code": "G657.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00H0m",
+        "term_type": "P",
+        "term": "Carotid territory transient ischaemic attack"
+      }
+    ]
+  },
+  {
+    "read_code": "G65y.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00H0n",
+        "term_type": "P",
+        "term": "Other transient cerebral ischaemia"
+      }
+    ]
+  },
+  {
+    "read_code": "G65z.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00H0o",
+        "term_type": "P",
+        "term": "Transient cerebral ischaemia NOS"
+      }
+    ]
+  },
+  {
+    "read_code": "G65z0",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00H0p",
+        "term_type": "P",
+        "term": "Impending cerebral ischaemia"
+      }
+    ]
+  },
+  {
+    "read_code": "G65z1",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00H0q",
+        "term_type": "P",
+        "term": "Intermittent cerebral ischaemia"
+      }
+    ]
+  },
+  {
+    "read_code": "G65zz",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00H0r",
+        "term_type": "P",
+        "term": "Transient cerebral ischaemia NOS"
+      }
+    ]
+  },
+  {
+    "read_code": "G670.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00H17",
+        "term_type": "P",
+        "term": "Cerebral atherosclerosis"
+      },
+      {
+        "term_id": "11H18",
+        "term_type": "S",
+        "term": "Precerebral atherosclerosis"
+      }
+    ]
+  },
+  {
+    "read_code": "G671.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00H19",
+        "term_type": "P",
+        "term": "Generalised ischaemic cerebrovascular disease NOS"
+      }
+    ]
+  },
+  {
+    "read_code": "G6711",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00H1B",
+        "term_type": "P",
+        "term": "Chronic cerebral ischaemia"
+      }
+    ]
+  },
+  {
+    "read_code": "G671z",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00H1C",
+        "term_type": "P",
+        "term": "Generalised ischaemic cerebrovascular disease NOS"
+      }
+    ]
+  },
+  {
+    "read_code": "G70..",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00H1r",
+        "term_type": "P",
+        "term": "Atherosclerosis"
+      }
+    ]
+  },
+  {
+    "read_code": "G700.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00H1s",
+        "term_type": "P",
+        "term": "Aortic atherosclerosis"
+      }
+    ]
+  },
+  {
+    "read_code": "G701.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00H1u",
+        "term_type": "P",
+        "term": "Renal artery atherosclerosis"
+      }
+    ]
+  },
+  {
+    "read_code": "G7010",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00H1v",
+        "term_type": "P",
+        "term": "Atherosclerotic renal artery stenosis"
+      },
+      {
+        "term_id": "11H1w",
+        "term_type": "S",
+        "term": "ARAS - Atherosclerotic renal artery stenosis"
+      }
+    ]
+  },
+  {
+    "read_code": "G704.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00H21",
+        "term_type": "P",
+        "term": "Non-obstructive coronary atherosclerosis"
+      }
+    ]
+  },
+  {
+    "read_code": "G70y0",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00H23",
+        "term_type": "P",
+        "term": "Carotid artery atherosclerosis"
+      }
+    ]
+  },
+  {
+    "read_code": "G723.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00H2h",
+        "term_type": "P",
+        "term": "Aneurysm of leg artery"
+      }
+    ]
+  },
+  {
+    "read_code": "G723z",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00H2p",
+        "term_type": "P",
+        "term": "Aneurysm of leg artery NOS"
+      }
+    ]
+  },
+  {
+    "read_code": "G73..",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00H3S",
+        "term_type": "P",
+        "term": "Other peripheral vascular disease"
+      },
+      {
+        "term_id": "12H3P",
+        "term_type": "S",
+        "term": "Ischaemia of legs"
+      },
+      {
+        "term_id": "13H3Q",
+        "term_type": "S",
+        "term": "Peripheral ischaemia"
+      },
+      {
+        "term_id": "11H3R",
+        "term_type": "S",
+        "term": "Peripheral ischaemic vascular disease"
+      }
+    ]
+  },
+  {
+    "read_code": "G7311",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00H3b",
+        "term_type": "P",
+        "term": "Presenile gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "G732.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00H3d",
+        "term_type": "P",
+        "term": "Peripheral gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "G7320",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00H3e",
+        "term_type": "P",
+        "term": "Gangrene of toe"
+      }
+    ]
+  },
+  {
+    "read_code": "G7321",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00H3f",
+        "term_type": "P",
+        "term": "Gangrene of foot"
+      }
+    ]
+  },
+  {
+    "read_code": "G7322",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00H3g",
+        "term_type": "P",
+        "term": "Gangrene of finger"
+      }
+    ]
+  },
+  {
+    "read_code": "G7323",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00H3h",
+        "term_type": "P",
+        "term": "Gangrene of thumb"
+      }
+    ]
+  },
+  {
+    "read_code": "G7324",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00H3i",
+        "term_type": "P",
+        "term": "Gangrene of hand"
+      }
+    ]
+  },
+  {
+    "read_code": "G733.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00H3j",
+        "term_type": "P",
+        "term": "Ischaemic foot"
+      }
+    ]
+  },
+  {
+    "read_code": "G73y.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00H3o",
+        "term_type": "P",
+        "term": "Other specified peripheral vascular disease"
+      }
+    ]
+  },
+  {
+    "read_code": "G73yz",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00H41",
+        "term_type": "P",
+        "term": "Other specified peripheral vascular disease NOS"
+      }
+    ]
+  },
+  {
+    "read_code": "G73z.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00H42",
+        "term_type": "P",
+        "term": "Peripheral vascular disease NOS"
+      }
+    ]
+  },
+  {
+    "read_code": "G73z0",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00H43",
+        "term_type": "P",
+        "term": "Intermittent claudication"
+      },
+      {
+        "term_id": "11H44",
+        "term_type": "S",
+        "term": "Claudication"
+      },
+      {
+        "term_id": "12H45",
+        "term_type": "S",
+        "term": "Vascular claudication"
+      }
+    ]
+  },
+  {
+    "read_code": "G73zz",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00H47",
+        "term_type": "P",
+        "term": "Peripheral vascular disease NOS"
+      }
+    ]
+  },
+  {
+    "read_code": "G742.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00H4J",
+        "term_type": "P",
+        "term": "Embolism and thrombosis of an arm or leg artery"
+      }
+    ]
+  },
+  {
+    "read_code": "G7429",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00H4T",
+        "term_type": "P",
+        "term": "Embolism and thrombosis of a leg artery NOS"
+      }
+    ]
+  },
+  {
+    "read_code": "Gyu3.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00HAP",
+        "term_type": "P",
+        "term": "[X]Ischaemic heart diseases"
+      }
+    ]
+  },
+  {
+    "read_code": "Gyu32",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00HAS",
+        "term_type": "P",
+        "term": "[X]Other forms of acute ischaemic heart disease"
+      }
+    ]
+  },
+  {
+    "read_code": "Gyu33",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00HAT",
+        "term_type": "P",
+        "term": "[X]Other forms of chronic ischaemic heart disease"
+      }
+    ]
+  },
+  {
+    "read_code": "Gyu70",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00HBZ",
+        "term_type": "P",
+        "term": "[X]Atherosclerosis of other arteries"
+      }
+    ]
+  },
+  {
+    "read_code": "Gyu74",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00HBd",
+        "term_type": "P",
+        "term": "[X]Other specified peripheral vascular diseases"
+      }
+    ]
+  },
+  {
+    "read_code": "H020.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00HCW",
+        "term_type": "P",
+        "term": "Acute gangrenous pharyngitis"
+      }
+    ]
+  },
+  {
+    "read_code": "H034.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00HCn",
+        "term_type": "P",
+        "term": "Acute gangrenous tonsillitis"
+      }
+    ]
+  },
+  {
+    "read_code": "H5302",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00HOJ",
+        "term_type": "P",
+        "term": "Gangrenous pneumonia"
+      }
+    ]
+  },
+  {
+    "read_code": "J0210",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00HTc",
+        "term_type": "P",
+        "term": "Pulp gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "J081.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00HZ9",
+        "term_type": "P",
+        "term": "Gangrenous stomatitis"
+      },
+      {
+        "term_id": "00HZB",
+        "term_type": "P",
+        "term": "Gangrenous stomatitis"
+      }
+    ]
+  },
+  {
+    "read_code": "J1014",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00HbS",
+        "term_type": "P",
+        "term": "Gangrenous oesophagitis"
+      }
+    ]
+  },
+  {
+    "read_code": "J20z1",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00HgI",
+        "term_type": "P",
+        "term": "Acute gangrenous appendicitis"
+      }
+    ]
+  },
+  {
+    "read_code": "J300.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00Hgj",
+        "term_type": "P",
+        "term": "Inguinal hernia with gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "J3000",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00Hgk",
+        "term_type": "P",
+        "term": "Unilateral inguinal hernia with gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "J3001",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00Hgl",
+        "term_type": "P",
+        "term": "Unilateral recurrent inguinal hernia with gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "J3002",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00Hgm",
+        "term_type": "P",
+        "term": "Bilateral inguinal hernia with gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "J3003",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00Hgn",
+        "term_type": "P",
+        "term": "Bilateral recurrent inguinal hernia with gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "J300z",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00Hgo",
+        "term_type": "P",
+        "term": "Inguinal hernia with gangrene NOS"
+      }
+    ]
+  },
+  {
+    "read_code": "J310.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00HhJ",
+        "term_type": "P",
+        "term": "Femoral hernia with gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "J3100",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00HhK",
+        "term_type": "P",
+        "term": "Unilateral femoral hernia with gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "J3101",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00HhL",
+        "term_type": "P",
+        "term": "Unilateral recurrent femoral hernia with gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "J3102",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00HhM",
+        "term_type": "P",
+        "term": "Bilateral femoral hernia with gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "J3103",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00HhN",
+        "term_type": "P",
+        "term": "Bilateral recurrent femoral hernia with gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "J310z",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00HhO",
+        "term_type": "P",
+        "term": "Femoral hernia with gangrene NOS"
+      }
+    ]
+  },
+  {
+    "read_code": "J320.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00Hhr",
+        "term_type": "P",
+        "term": "Umbilical hernia with gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "J3200",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00Hhs",
+        "term_type": "P",
+        "term": "Omphalocoele with gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "J3201",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00Hht",
+        "term_type": "P",
+        "term": "Paraumbilical hernia with gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "J320z",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00Hhu",
+        "term_type": "P",
+        "term": "Umbilical hernia with gangrene NOS"
+      }
+    ]
+  },
+  {
+    "read_code": "J330.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00HiF",
+        "term_type": "P",
+        "term": "Ventral hernia with gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "J3300",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00HiG",
+        "term_type": "P",
+        "term": "Ventral hernia unspecified with gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "J3301",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00HiH",
+        "term_type": "P",
+        "term": "Incisional hernia with gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "J3302",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00HiI",
+        "term_type": "P",
+        "term": "Epigastric hernia with gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "J330z",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00HiJ",
+        "term_type": "P",
+        "term": "Ventral hernia with gangrene NOS"
+      }
+    ]
+  },
+  {
+    "read_code": "J340.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00Hii",
+        "term_type": "P",
+        "term": "Diaphragmatic hernia with gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "J344.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00Him",
+        "term_type": "P",
+        "term": "Hiatus hernia with gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "J350.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00Hiw",
+        "term_type": "P",
+        "term": "Gluteal hernia with gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "J360.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00Hj3",
+        "term_type": "P",
+        "term": "Ischiorectal hernia with gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "J370.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00HjA",
+        "term_type": "P",
+        "term": "Lumbar hernia with gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "J380.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00HjH",
+        "term_type": "P",
+        "term": "Obturator hernia with gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "J390.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00HjO",
+        "term_type": "P",
+        "term": "Pudendal hernia with gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "J3A0.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00HjV",
+        "term_type": "P",
+        "term": "Sciatic hernia with gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "J3B0.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00Hjc",
+        "term_type": "P",
+        "term": "Retroperitoneal hernia with gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "J3C0.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00Hjj",
+        "term_type": "P",
+        "term": "Spigelian hernia with gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "J3y0.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00Hjr",
+        "term_type": "P",
+        "term": "Other specified abdominal cavity hernia with gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "J3y00",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00Hjs",
+        "term_type": "P",
+        "term": "Parastomal hernia with gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "J3y4.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00Hjx",
+        "term_type": "P",
+        "term": "Parastomal hernia without obstruction or gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "J3z0.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00Hk2",
+        "term_type": "P",
+        "term": "Unspecified abdominal cavity hernia with gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "J420.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "11Hkz",
+        "term_type": "S",
+        "term": "Acute ischaemic colitis and/or enteritis"
+      },
+      {
+        "term_id": "13Hkx",
+        "term_type": "S",
+        "term": "Gangrene - intestine"
+      }
+    ]
+  },
+  {
+    "read_code": "J4203",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00Hl6",
+        "term_type": "P",
+        "term": "Acute ischaemic colitis"
+      }
+    ]
+  },
+  {
+    "read_code": "J421.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "12HlB",
+        "term_type": "S",
+        "term": "Chronic ischaemic colitis and/or enteritis"
+      }
+    ]
+  },
+  {
+    "read_code": "J4211",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00HlE",
+        "term_type": "P",
+        "term": "Chronic ischaemic enteritis"
+      }
+    ]
+  },
+  {
+    "read_code": "J4212",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00HlF",
+        "term_type": "P",
+        "term": "Chronic ischaemic enterocolitis"
+      }
+    ]
+  },
+  {
+    "read_code": "J4213",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00HlG",
+        "term_type": "P",
+        "term": "Chronic ischaemic colitis"
+      }
+    ]
+  },
+  {
+    "read_code": "J42z0",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00HlJ",
+        "term_type": "P",
+        "term": "Ischaemic colitis NOS"
+      }
+    ]
+  },
+  {
+    "read_code": "J6504",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00Huz",
+        "term_type": "P",
+        "term": "Acute gangrenous cholecystitis"
+      }
+    ]
+  },
+  {
+    "read_code": "Jyu30",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00HyC",
+        "term_type": "P",
+        "term": "[X]Other specified abdominal hernia+obstruction,w'o gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "Jyu31",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00HyD",
+        "term_type": "P",
+        "term": "[X]Other specified abdominal hernia with gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "Jyu32",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00HyE",
+        "term_type": "P",
+        "term": "[X]Oth spcfd abdominal hernia without obstructn or gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "K13yB",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00I60",
+        "term_type": "P",
+        "term": "Ischaemic nephropathy"
+      }
+    ]
+  },
+  {
+    "read_code": "K2846",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00IC1",
+        "term_type": "P",
+        "term": "Fournier's gangrene of scrotum"
+      }
+    ]
+  },
+  {
+    "read_code": "M0702",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00J5b",
+        "term_type": "P",
+        "term": "Pyoderma gangrenosum"
+      }
+    ]
+  },
+  {
+    "read_code": "M271.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "12JIS",
+        "term_type": "S",
+        "term": "Ischaemic leg ulcer"
+      }
+    ]
+  },
+  {
+    "read_code": "M2710",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00JIX",
+        "term_type": "P",
+        "term": "Ischaemic ulcer diabetic foot"
+      }
+    ]
+  },
+  {
+    "read_code": "M2713",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00JIa",
+        "term_type": "P",
+        "term": "Arterial leg ulcer"
+      }
+    ]
+  },
+  {
+    "read_code": "M2714",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00JIb",
+        "term_type": "P",
+        "term": "Mixed venous and arterial leg ulcer"
+      }
+    ]
+  },
+  {
+    "read_code": "N14A.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00JnF",
+        "term_type": "P",
+        "term": "Neurogenic claudication"
+      }
+    ]
+  },
+  {
+    "read_code": "N23yB",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00Jtd",
+        "term_type": "P",
+        "term": "Ischaemic infarction of muscle"
+      }
+    ]
+  },
+  {
+    "read_code": "Q488.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00LEL",
+        "term_type": "P",
+        "term": "Neonatal cerebral ischaemia"
+      }
+    ]
+  },
+  {
+    "read_code": "Q48F.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00LEV",
+        "term_type": "P",
+        "term": "Hypoxic ischaemic encephalopathy of newborn"
+      },
+      {
+        "term_id": "00LEX",
+        "term_type": "P",
+        "term": "Hypoxic ischaemic encephalopathy of newborn"
+      },
+      {
+        "term_id": "11LEW",
+        "term_type": "S",
+        "term": "Perinatal hypoxic - ischaemic encephalopathy"
+      }
+    ]
+  },
+  {
+    "read_code": "Q494.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00LEv",
+        "term_type": "P",
+        "term": "Transient myocardial ischaemia of newborn"
+      }
+    ]
+  },
+  {
+    "read_code": "R054.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00LNH",
+        "term_type": "P",
+        "term": "[D]Gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "R0540",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00LNI",
+        "term_type": "P",
+        "term": "[D]Gangrene, spreading cutaneous"
+      }
+    ]
+  },
+  {
+    "read_code": "R0542",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00LNK",
+        "term_type": "P",
+        "term": "[D]Gangrene of toe in diabetic"
+      }
+    ]
+  },
+  {
+    "read_code": "R0543",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00LNL",
+        "term_type": "P",
+        "term": "[D]Widespread diabetic foot gangrene"
+      }
+    ]
+  },
+  {
+    "read_code": "R054z",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00LNM",
+        "term_type": "P",
+        "term": "[D]Gangrene NOS"
+      }
+    ]
+  },
+  {
+    "read_code": "SK06.",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00N1s",
+        "term_type": "P",
+        "term": "Volkmann's ischaemic contracture"
+      }
+    ]
+  },
+  {
+    "read_code": "ZV12D",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00QNh",
+        "term_type": "P",
+        "term": "[V]Personal history of transient ischaemic attack"
+      }
+    ]
+  },
+  {
+    "read_code": "ZV173",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00QPE",
+        "term_type": "P",
+        "term": "[V]Family history of ischaemic heart disease"
+      },
+      {
+        "term_id": "00QPG",
+        "term_type": "P",
+        "term": "[V]Family history of ischaemic heart disease"
+      },
+      {
+        "term_id": "11QPF",
+        "term_type": "S",
+        "term": "[V]Family history of ischaemic heart disease (IHD)"
+      }
+    ]
+  },
+  {
+    "read_code": "ZV7B0",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00QiC",
+        "term_type": "P",
+        "term": "[V]Screening for ischaemic heart disease"
+      },
+      {
+        "term_id": "00QiE",
+        "term_type": "P",
+        "term": "[V]Screening for ischaemic heart disease"
+      },
+      {
+        "term_id": "11QiD",
+        "term_type": "S",
+        "term": "[V]Screening for ischaemic heart disease (IHD)"
+      }
+    ]
+  },
+  {
+    "read_code": "ZVu66",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00Qko",
+        "term_type": "P",
+        "term": "[X]Family hist/ischaemic hrt disease+oth dis/circultr system"
+      }
+    ]
+  },
+  {
+    "read_code": "bn6..",
+    "status": "C",
+    "terms": [
+      {
+        "term_id": "00Rdl",
+        "term_type": "P",
+        "term": "OTHER PERIPHERAL VASCULAR DISEASE DRUGS"
+      }
+    ]
+  }
+]

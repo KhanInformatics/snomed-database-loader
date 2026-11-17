@@ -1,0 +1,197 @@
+ReadCode	ReadTerm
+--------	--------
+133..	
+133A.	
+133a.	
+133A0	
+133B.	
+133b.	
+133c.	
+133C.	
+133D.	
+133d.	
+133D1	
+133D2	
+133D3	
+133E.	
+133e.	
+133f.	
+133F.	
+133G.	
+133g.	
+133h.	
+133H.	
+133I.	
+133i.	
+133J.	
+133K.	
+133L.	
+133M.	
+133N.	
+133P.	
+133Q.	
+133R.	
+133S.	
+133T.	
+133V.	
+133W.	
+133X.	
+133Y.	
+133Z.	
+13H9.	
+13HQ.	
+13Hq.	
+13I71	
+14X..	
+15431	
+15432	
+15433	
+15434	
+15435	
+15436	
+15437	
+1543Z	
+1J3..	
+62B..	
+62b..	
+7E070	Dilation of cervix uteri and curettage of products of conception from uterus
+7E071	
+7E084	
+7E085	
+7E086	
+8C8..	
+8C82.	
+8C83.	
+8H7W.	
+8H7w.	
+8M6..	
+956..	
+956Z.	
+9EA..	
+9Ea..	
+9Ea0.	Risk to the life of the pregnant woman greater than if the pregnancy was terminated
+9Ea1.	To prevent grave permanent injury to the physical/mental health of pregnant woman
+9Ea2.	Less than 24 weeks involving risk of injury to the physical/mental health of pregnant woman
+9Ea3.	Less than 24 weeks involving risk of injury to the physical/mental health of any existing children of the pregnant woman's family
+9Ea4.	Unborn child at risk from physical or mental abnormalities as to be seriously handicapped
+9U...	
+9U0..	
+9U1..	
+9U2..	
+9U3..	
+9U4..	
+9U5..	
+9U6..	
+9U7..	
+9U8..	
+9U9..	
+A780.	
+A995.	
+L05..	
+L050.	
+L0500	Unspecified legal abortion with genital tract or pelvic infection
+L0501	Unspecified legal abortion with delayed or excessive haemorrhage
+L0502	Unspecified legal abortion with damage to pelvic organs or tissues
+L0503	
+L0504	
+L0505	
+L0506	
+L050w	
+L050x	
+L050y	
+L050z	
+L051.	
+L0510	Incomplete legal abortion with genital tract or pelvic infection
+L0511	Incomplete legal abortion with delayed or excessive haemorrhage
+L0512	Incomplete legal abortion with damage to pelvic organs or tissues
+L0513	
+L0514	
+L0515	
+L0516	
+L0517	
+L051w	
+L051x	
+L051y	
+L051z	
+L052.	
+L0520	Complete legal abortion with genital tract or pelvic infection
+L0521	Complete legal abortion with delayed or excessive haemorrhage
+L0522	Complete legal abortion with damage to pelvic organs or tissues
+L0523	
+L0524	
+L0525	
+L0526	
+L052w	
+L052x	
+L052y	
+L052z	
+L05z.	
+L06..	
+L060.	
+L0600	Unspecified illegal abortion with genital tract or pelvic infection
+L0601	Unspecified illegal abortion with delayed or excessive haemorrhage
+L0602	Unspecified illegal abortion with damage to pelvic organs or tissues
+L0603	
+L0604	
+L0605	
+L0606	
+L060w	Unspecified illegal abortion with other specified complication
+L060x	
+L060y	
+L060z	
+L061.	
+L0610	Incomplete illegal abortion with genital tract or pelvic infection
+L0611	Incomplete illegal abortion with delayed or excessive haemorrhage
+L0612	Incomplete illegal abortion with damage to pelvic organs or tissues
+L0613	
+L0614	
+L0615	
+L0616	
+L061w	Incomplete illegal abortion with other specified complication
+L061x	
+L061y	
+L061z	
+L062.	
+L0620	Complete illegal abortion with genital tract or pelvic infection
+L0621	Complete illegal abortion with delayed or excessive haemorrhage
+L0622	Complete illegal abortion with damage to pelvic organs or tissues
+L0623	
+L0624	
+L0625	
+L0626	
+L062w	
+L062x	
+L062y	
+L062z	
+L06z.	
+SN55.	
+sn55.	
+SN571	
+T776.	
+TL7..	
+TLx4.	
+ZV19B	[V]Family history of human immunodefiency virus [HIV] disease
+ZV19C	
+ZV19D	[V]Family history of physical abuse to sibling by family member
+ZV19E	
+ZV19F	[V]Family history of sexual abuse to sibling by family member
+ZV19G	
+ZV19H	[V]Family history of mental abuse to sibling by family member
+ZV19J	
+ZV19K	
+ZV26.	
+ZV260	
+ZV262	
+ZV263	
+ZV264	
+ZV26y	
+ZV26z	
+ZV4F9	[V]Problems related to alleged sexual of abuse child by person outside primary support group
+ZV4G4	[V]Problems related to alleged sex abuse child by person within primary support group
+ZV4G5	
+ZV4J4	[V]Conviction in civil and criminal proceedings without imprisonment
+ZV4J5	
+ZV612	
+ZV625	
+
+(193 rows affected)

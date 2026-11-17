@@ -1,0 +1,299 @@
+@page "/snomed-hierarchy-radial"
+@using Syncfusion.Blazor.Diagram
+@using Syncfusion.Blazor.Buttons
+@using Syncfusion.Blazor.Navigations
+@using Syncfusion.Blazor.Inputs
+
+<PageTitle>SNOMED CT Radial Tree Layout</PageTitle>
+
+<style>
+    .property-row {
+        display: flex;
+        align-items: center;
+        padding: 8px 0;
+    }
+    .property-label {
+        width: 140px;
+        font-size: 0.85rem;
+    }
+    .property-input {
+        flex: 1;
+    }
+</style>
+
+<!-- Page Header Section -->
+<div class="page-header-wrapper">
+    <div class="page-header">
+        <div class="page-header-content">
+            <div class="page-header-main">
+                <h4 class="page-title mb-1">SNOMED CT Radial Tree Layout: Pneumonia (233604007)</h4>
+                <p class="page-subtitle mb-0">Radial layout - nodes spread in circular arrangement around the root</p>
+            </div>
+            <div class="page-header-actions">
+                <span class="badge bg-primary me-2">Radial Arrangement</span>
+                <span class="badge bg-success me-2">No Line Crossing Through Nodes</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid" style="margin-top: 0; padding-top: 1rem;">
+    <div class="row">
+        <!-- Diagram Area -->
+        <div class="col-lg-9">
+            <div class="card" style="box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                <div class="card-header bg-light py-2 d-flex justify-content-between align-items-center">
+                    <div>
+                        <button class="btn btn-sm btn-outline-secondary me-2" @onclick="OnZoomInClick" title="Zoom In">
+                            <i class="fas fa-search-plus"></i> Zoom In
+                        </button>
+                        <button class="btn btn-sm btn-outline-secondary me-2" @onclick="OnZoomOutClick" title="Zoom Out">
+                            <i class="fas fa-search-minus"></i> Zoom Out
+                        </button>
+                        <button class="btn btn-sm btn-outline-primary me-2" @onclick="OnResetClick" title="Reset">
+                            <i class="fas fa-undo"></i> Reset
+                        </button>
+                        <button class="btn btn-sm btn-outline-success" @onclick="OnFitClick" title="Fit to Page">
+                            <i class="fas fa-expand"></i> Fit
+                        </button>
+                    </div>
+                    <span class="badge bg-info">@Nodes.Count nodes | @Connectors.Count connections</span>
+                </div>
+                <div class="card-body p-0">
+                    <SfDiagramComponent @ref="@Diagram" 
+                                       Height="700px" 
+                                       Width="100%" 
+                                       @bind-Nodes="@Nodes" 
+                                       @bind-Connectors="@Connectors" 
+                                       Created="OnCreated"
+                                       InteractionController="@DiagramInteractions.ZoomPan">
+                        <SnapSettings Constraints="@SnapConstraints.None"></SnapSettings>
+                        <Layout Type="LayoutType.RadialTree" 
+                                Root="@RootNode"
+                                @bind-HorizontalSpacing="@HorizontalSpacing"
+                                @bind-VerticalSpacing="@VerticalSpacing">
+                        </Layout>
+                    </SfDiagramComponent>
+                </div>
+            </div>
+        </div>
+
+        <!-- Properties Panel -->
+        <div class="col-lg-3">
+            <div class="card" style="box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                <div class="card-header bg-light py-2">
+                    <h6 class="mb-0"><i class="fas fa-sliders-h me-2"></i>Layout Properties</h6>
+                </div>
+                <div class="card-body">
+                    <div class="property-row">
+                        <div class="property-label">Horizontal Spacing</div>
+                        <div class="property-input">
+                            <SfNumericTextBox TValue="int" Width="100%" @bind-Value="@HorizontalSpacing" Min="20" Max="200" Step="10" Format="###.##">
+                            </SfNumericTextBox>
+                        </div>
+                    </div>
+                    <div class="property-row">
+                        <div class="property-label">Vertical Spacing</div>
+                        <div class="property-input">
+                            <SfNumericTextBox TValue="int" Width="100%" @bind-Value="@VerticalSpacing" Min="20" Max="200" Step="10" Format="###.##">
+                            </SfNumericTextBox>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Legend -->
+            <div class="card mt-3" style="box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                <div class="card-header bg-light py-2">
+                    <h6 class="mb-0"><i class="fas fa-palette me-2"></i>Legend</h6>
+                </div>
+                <div class="card-body">
+                    <div class="d-flex align-items-center mb-2">
+                        <div style="width: 20px; height: 20px; background-color: #51cf66; border-radius: 50%; margin-right: 10px;"></div>
+                        <small><strong>PNEUMONIA (Focus/Root)</strong></small>
+                    </div>
+                    <div class="d-flex align-items-center mb-2">
+                        <div style="width: 20px; height: 20px; background-color: #74c0fc; border-radius: 50%; margin-right: 10px;"></div>
+                        <small>Immediate Parent</small>
+                    </div>
+                    <div class="d-flex align-items-center mb-2">
+                        <div style="width: 20px; height: 20px; background-color: #efd46e; border-radius: 50%; margin-right: 10px;"></div>
+                        <small>Ancestor</small>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div style="width: 20px; height: 20px; background-color: #659be5; border-radius: 50%; margin-right: 10px;"></div>
+                        <small>Children</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Info -->
+            <div class="card mt-3" style="box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                <div class="card-body py-2">
+                    <p class="small mb-0 text-muted">
+                        <i class="fas fa-info-circle me-1"></i>
+                        <strong>Radial Tree Layout</strong> arranges nodes in concentric circles around a root node. The focus concept (PNEUMONIA) is at the center, with related concepts radiating outward. This view is ideal for showing relationships without line crossings.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    public SfDiagramComponent? Diagram;
+    
+    // Root node for radial layout (Pneumonia is at center)
+    public string RootNode = "233604007";
+    
+    // Property bindings for layout spacing
+    public int HorizontalSpacing { get; set; } = 80;
+    public int VerticalSpacing { get; set; } = 80;
+
+    // Diagram collections
+    public DiagramObjectCollection<Node> Nodes = new DiagramObjectCollection<Node>();
+    public DiagramObjectCollection<Connector> Connectors = new DiagramObjectCollection<Connector>();
+
+    protected override void OnInitialized()
+    {
+        BuildSnomedHierarchy();
+    }
+
+    private void OnCreated()
+    {
+        FitToPage();
+    }
+
+    private void FitToPage()
+    {
+        FitOptions options = new FitOptions() { Mode = FitMode.Both, Region = DiagramRegion.Content };
+        Diagram?.FitToPage(options);
+    }
+
+    private void OnFitClick() => FitToPage();
+    
+    private void OnZoomInClick()
+    {
+        Diagram?.Zoom(1.2, new DiagramPoint() { X = 100, Y = 100 });
+    }
+
+    private void OnZoomOutClick()
+    {
+        Diagram?.Zoom(1 / 1.2, new DiagramPoint() { X = 100, Y = 100 });
+    }
+
+    private void OnResetClick()
+    {
+        Diagram?.ResetZoom();
+        FitToPage();
+    }
+
+    // Node creation helper
+    private Node CreateNode(string id, string label, string fillColor, string borderColor, double size, bool isFocus = false)
+    {
+        return new Node
+        {
+            ID = id,
+            Width = size,
+            Height = size,
+            Shape = new BasicShape() { Type = Syncfusion.Blazor.Diagram.NodeShapes.Basic, Shape = NodeBasicShapes.Ellipse },
+            Style = new ShapeStyle() 
+            { 
+                Fill = fillColor, 
+                StrokeWidth = isFocus ? 4 : 2, 
+                StrokeColor = borderColor 
+            },
+            Annotations = new DiagramObjectCollection<ShapeAnnotation>()
+            {
+                new ShapeAnnotation()
+                {
+                    Content = label,
+                    Style = new TextStyle()
+                    {
+                        Color = "white",
+                        FontSize = isFocus ? 11 : 9,
+                        Bold = isFocus,
+                        TextWrapping = Syncfusion.Blazor.Diagram.TextWrap.Wrap
+                    }
+                }
+            }
+        };
+    }
+
+    // Connector creation helper
+    private Connector CreateConnector(string sourceId, string targetId)
+    {
+        return new Connector
+        {
+            ID = $"{sourceId}_to_{targetId}",
+            SourceID = sourceId,
+            TargetID = targetId,
+            Type = ConnectorSegmentType.Straight,
+            Style = new ShapeStyle()
+            {
+                StrokeColor = "#6d6d6d",
+                StrokeWidth = 1
+            },
+            TargetDecorator = new DecoratorSettings()
+            {
+                Shape = DecoratorShape.Arrow,
+                Height = 8,
+                Width = 8,
+                Style = new ShapeStyle()
+                {
+                    Fill = "#6d6d6d",
+                    StrokeColor = "#6d6d6d"
+                }
+            }
+        };
+    }
+
+    private void BuildSnomedHierarchy()
+    {
+        // Colors - for radial layout, Pneumonia is at center
+        string focusColor = "#51cf66";
+        string focusBorder = "#2f9e44";
+        string parentColor = "#74c0fc";
+        string parentBorder = "#339af0";
+        string ancestorColor = "#efd46e";
+        string ancestorBorder = "#c9a227";
+        string childColor = "#659be5";
+        string childBorder = "#4a7fc1";
+
+        // ===== CENTER: PNEUMONIA (Root for radial layout) =====
+        Nodes.Add(CreateNode("233604007", "PNEUMONIA", focusColor, focusBorder, 110, true));
+
+        // ===== LEVEL 1: Immediate Parents =====
+        Nodes.Add(CreateNode("60541009", "Pneumonitis", parentColor, parentBorder, 80));
+        Nodes.Add(CreateNode("19829001", "Disorder of lung", parentColor, parentBorder, 80));
+        Nodes.Add(CreateNode("53084003", "Infectious lung disease", parentColor, parentBorder, 80));
+
+        // ===== LEVEL 1: Children =====
+        Nodes.Add(CreateNode("396286009", "Bronchopneumonia", childColor, childBorder, 70));
+        Nodes.Add(CreateNode("278516003", "Lobar pneumonia", childColor, childBorder, 70));
+        Nodes.Add(CreateNode("205237003", "Viral pneumonia", childColor, childBorder, 70));
+        Nodes.Add(CreateNode("53084004", "Bacterial pneumonia", childColor, childBorder, 70));
+
+        // ===== LEVEL 2: Grandparents (ancestors of parents) =====
+        Nodes.Add(CreateNode("233703007", "Inflammatory lower resp", ancestorColor, ancestorBorder, 65));
+        Nodes.Add(CreateNode("106050001", "Lung finding", ancestorColor, ancestorBorder, 65));
+        Nodes.Add(CreateNode("312046005", "Lower resp infection", ancestorColor, ancestorBorder, 65));
+
+        // ===== CONNECTORS =====
+        // PNEUMONIA to Parents (outward in radial)
+        Connectors.Add(CreateConnector("233604007", "60541009")); // Pneumonia -> Pneumonitis
+        Connectors.Add(CreateConnector("233604007", "19829001")); // Pneumonia -> Disorder of lung
+        Connectors.Add(CreateConnector("233604007", "53084003")); // Pneumonia -> Infectious lung disease
+
+        // PNEUMONIA to Children (outward in radial)
+        Connectors.Add(CreateConnector("233604007", "396286009")); // Pneumonia -> Bronchopneumonia
+        Connectors.Add(CreateConnector("233604007", "278516003")); // Pneumonia -> Lobar pneumonia
+        Connectors.Add(CreateConnector("233604007", "205237003")); // Pneumonia -> Viral pneumonia
+        Connectors.Add(CreateConnector("233604007", "53084004")); // Pneumonia -> Bacterial pneumonia
+
+        // Parents to their parents (grandparents)
+        Connectors.Add(CreateConnector("60541009", "233703007")); // Pneumonitis -> Inflammatory lower resp
+        Connectors.Add(CreateConnector("19829001", "106050001")); // Disorder of lung -> Lung finding
+        Connectors.Add(CreateConnector("53084003", "312046005")); // Infectious lung disease -> Lower resp infection
+    }
+}

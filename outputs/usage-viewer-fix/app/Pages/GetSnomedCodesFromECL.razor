@@ -1,0 +1,640 @@
+@page "/ecl-query"
+@using Syncfusion.Blazor.Grids
+@using Syncfusion.Blazor.Buttons
+@using Syncfusion.Blazor.Inputs
+@using StaticBlazorSnomed.Models
+@using System.Text.Json
+@using System.Globalization
+@inject AzureFunctionService AzureFunctionService
+@inject IJSRuntime JSRuntime
+
+<PageTitle>SNOMED CT ECL Query</PageTitle>
+
+<!-- Page Header Section - positioned to align with sidebar -->
+<div class="page-header-wrapper">
+    <div class="page-header">
+        <div class="page-header-content">
+            <div class="page-header-main">
+                <h4 class="page-title mb-1">SNOMED CT ECL Query</h4>
+                <p class="page-subtitle mb-0">Execute Expression Constraint Language queries to retrieve SNOMED CT codes</p>
+            </div>
+            <div class="page-header-actions">
+                @if (!string.IsNullOrEmpty(snomedVersion) && !string.IsNullOrEmpty(snomedReleaseDate))
+                {
+                    <div class="version-pill me-2">
+                        <div class="version-line">Release: United Kingdom Edition @snomedVersion</div>
+                        <div class="version-line">@snomedReleaseDate</div>
+                    </div>
+                }
+                else if (isLoadingVersion)
+                {
+                    <span class="version-pill me-2">
+                        <span class="spinner-border spinner-border-sm me-1" role="status"></span>
+                        <span class="version-text">Loading version...</span>
+                    </span>
+                }
+                <span class="created-by">Created by Imran Khan</span>
+                <a href="https://github.com/KhanInformatics/StaticBlazorSnomed" target="_blank" class="github-link">
+                    <i class="fab fa-github fa-lg"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid" style="margin-top: 0; padding-top: 1rem;">
+    <!-- Search Section -->
+    <div class="content-section">
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="eclQuery" class="form-label fw-bold">ECL Expression:</label>
+                                <SfTextBox @bind-Value="eclQuery"
+                                          Placeholder="Enter ECL query (e.g., ^92161000001100)"
+                                          Width="100%"
+                                          CssClass="snomed-input-compact"
+                                          Multiline="true"
+                                          @onkeypress="HandleKeyPress">
+                                </SfTextBox>
+                                <small class="form-text text-muted">
+                                    Enter an Expression Constraint Language query for NHS API lookup
+                                    @if (string.IsNullOrWhiteSpace(eclQuery))
+                                    {
+                                        <br><span class="text-muted">Try: </span>
+                                        <a href="#" @onclick="@(() => LoadExample())" @onclick:preventDefault="true" class="example-link">Load Example</a>
+                                    }
+                                </small>
+                                
+                                <div class="d-flex gap-2 mt-3">
+                                    <SfButton @onclick="ExecuteECLQuery" 
+                                             Disabled="@isLoading"
+                                             CssClass="e-primary search-btn">
+                                        @if (isLoading)
+                                        {
+                                            <span class="spinner-border spinner-border-sm me-2" role="status"></span>
+                                        }
+                                        SEARCH
+                                    </SfButton>
+                                    <SfButton @onclick="ClearResults" 
+                                             CssClass="e-outline search-btn">
+                                        CLEAR
+                                    </SfButton>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="info-panel">
+                                    <div class="info-panel-header">
+                                        <i class="fas fa-info-circle text-primary me-2"></i>
+                                        <strong>About ECL Queries</strong>
+                                    </div>
+                                    <div class="info-panel-content">
+                                        <p class="info-text">
+                                            This tool executes <strong>Expression Constraint Language (ECL)</strong> queries to retrieve SNOMED CT concepts from the NHS terminology servers.
+                                        </p>
+                                        <div class="info-highlight">
+                                            <h6 class="info-subtitle">ECL Expression Syntax</h6>
+                                            <p class="info-detail">
+                                                ECL uses special operators to define constraints. Common operators include <code>&lt;&lt;</code> (descendants), <code>&gt;&gt;</code> (ancestors), <code>^</code> (reference set members), and <code>*</code> (any concept).
+                                            </p>
+                                        </div>
+                                        <div class="info-highlight">
+                                            <h6 class="info-subtitle">NHS Ontology Servers</h6>
+                                            <p class="info-detail">
+                                                NHS Digital maintains official SNOMED CT terminology servers that provide authoritative, up-to-date clinical terminology data for UK healthcare systems.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+@if (errorMessage != null)
+{
+    <div class="alert alert-danger" role="alert">
+        <i class="fas fa-exclamation-triangle me-2"></i>
+        <strong>Error:</strong> @errorMessage
+    </div>
+}
+
+@if (eclResults != null && eclResults.Any())
+{
+    <!-- Results Section -->
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <div>
+                        <span class="fw-bold">Results (@eclResults.Count codes found)</span>
+                        @if (!string.IsNullOrEmpty(versionInfo))
+                        {
+                            <br />
+                            <small class="text-muted">@versionInfo</small>
+                        }
+                    </div>
+                    <SfButton @onclick="ExportToCSV" 
+                             CssClass="e-success e-small">
+                        <i class="fas fa-download me-1"></i> Export to CSV
+                    </SfButton>
+                </div>
+                <div class="card-body p-0">
+                    <SfGrid DataSource="@eclResults" 
+                            AllowPaging="false" 
+                            AllowSorting="true" 
+                            AllowFiltering="true"
+                            AllowResizing="true"
+                            GridLines="GridLine.Both">
+                        <GridFilterSettings Type="FilterType.Excel"></GridFilterSettings>
+                        <GridColumns>
+                            <GridColumn HeaderText="#" Width="25" TextAlign="TextAlign.Center">
+                                <Template>
+                                    @{
+                                        var index = eclResults.IndexOf((context as SnomedModel)!) + 1;
+                                        <span>@index</span>
+                                    }
+                                </Template>
+                            </GridColumn>
+                            <GridColumn Field="@nameof(SnomedModel.ConceptId)" 
+                                        HeaderText="Concept ID" 
+                                        Width="150" 
+                                        TextAlign="TextAlign.Left"></GridColumn>
+                            <GridColumn Field="@nameof(SnomedModel.FullySpecifiedName)" 
+                                        HeaderText="Fully Specified Name" 
+                                        Width="300" 
+                                        TextAlign="TextAlign.Left"></GridColumn>
+                            <GridColumn Field="@nameof(SnomedModel.Term)" 
+                                        HeaderText="Preferred Term" 
+                                        Width="250" 
+                                        TextAlign="TextAlign.Left"></GridColumn>
+                            <GridColumn Field="@nameof(SnomedModel.IsActive)" 
+                                        HeaderText="Active" 
+                                        Width="100" 
+                                        TextAlign="TextAlign.Center"
+                                        DisplayAsCheckBox="true"></GridColumn>
+                        </GridColumns>
+                    </SfGrid>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else if (!isLoading && eclResults != null && !eclResults.Any())
+{
+    <div class="alert alert-info">
+        No results found for the specified ECL query.
+    </div>
+}
+</div>
+
+@code {
+    private string eclQuery = string.Empty;
+    private List<SnomedModel>? eclResults;
+    private bool isLoading = false;
+    private string? errorMessage;
+    private string versionInfo = "SNOMED CT UK Edition - NHS Ontology Server";
+    private string rawResponse = string.Empty;
+    private string snomedVersion = string.Empty;
+    private string snomedReleaseDate = string.Empty;
+    private bool isLoadingVersion = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Fetch version information on page load using a known SNOMED concept
+        await LoadVersionInfo();
+    }
+
+    private async Task LoadVersionInfo()
+    {
+        isLoadingVersion = true;
+        try
+        {
+            // Use a common SNOMED concept to fetch version info (e.g., "Procedure" concept)
+            var nhsResponse = await AzureFunctionService.GetSnomedFromNHSAPIAsync("71388002");
+            
+            if (nhsResponse != null && !string.IsNullOrEmpty(nhsResponse.RawResponse))
+            {
+                var versionData = GetVersionInfoFromNHSResponse(nhsResponse.RawResponse);
+                snomedVersion = versionData.Version;
+                snomedReleaseDate = versionData.ReleaseDate;
+                Console.WriteLine($"Loaded version info - Version: '{snomedVersion}', Release: '{snomedReleaseDate}'");
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Could not load version info: {ex.Message}");
+            // Don't show error to user, version info is nice-to-have
+        }
+        finally
+        {
+            isLoadingVersion = false;
+            StateHasChanged();
+        }
+    }
+
+    private async Task ExecuteECLQuery()
+    {
+        if (string.IsNullOrWhiteSpace(eclQuery))
+        {
+            errorMessage = "Please enter an ECL query.";
+            return;
+        }
+
+        isLoading = true;
+        errorMessage = null;
+        eclResults = null;
+        rawResponse = string.Empty;
+        StateHasChanged();
+
+        try
+        {
+            Console.WriteLine($"Executing ECL Query: {eclQuery}");
+            
+            // Call Azure Function to execute ECL query and get raw response
+            var (response, raw) = await AzureFunctionService.GetSnomedCodesFromECLWithRawResponseAsync(eclQuery);
+            eclResults = response ?? new List<SnomedModel>();
+            rawResponse = raw;
+
+            Console.WriteLine($"ECL Query returned {eclResults.Count} results");
+
+            if (!eclResults.Any())
+            {
+                errorMessage = "No results found for the specified ECL query.";
+            }
+        }
+        catch (HttpRequestException httpEx)
+        {
+            errorMessage = $"Server error: {httpEx.Message}";
+            Console.WriteLine($"ECL Query HTTP Error: {httpEx}");
+        }
+        catch (System.Text.Json.JsonException jsonEx)
+        {
+            errorMessage = $"Invalid JSON response from server. The server may not support this ECL query format, or returned an error message instead of data. Details: {jsonEx.Message}";
+            Console.WriteLine($"ECL Query JSON Error: {jsonEx}");
+        }
+        catch (ArgumentException argEx)
+        {
+            errorMessage = argEx.Message;
+            Console.WriteLine($"ECL Query Argument Error: {argEx}");
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Unexpected error: {ex.Message}";
+            Console.WriteLine($"ECL Query Error: {ex}");
+        }
+        finally
+        {
+            isLoading = false;
+            StateHasChanged();
+        }
+    }
+
+    private async Task ExportToCSV()
+    {
+        if (eclResults == null || !eclResults.Any())
+            return;
+
+        var csvContent = "Concept ID,Fully Specified Name,Preferred Term,Active\n";
+        
+        foreach (var item in eclResults)
+        {
+            csvContent += $"\"{item.ConceptId}\",\"{item.FullySpecifiedName}\",\"{item.Term}\",\"{item.IsActive}\"\n";
+        }
+
+        var bytes = System.Text.Encoding.UTF8.GetBytes(csvContent);
+        var base64 = Convert.ToBase64String(bytes);
+        var dataUrl = $"data:text/csv;base64,{base64}";
+        
+        var fileName = $"ECL_Results_{DateTime.Now:yyyyMMdd_HHmmss}.csv";
+        
+        // Use JavaScript interop to trigger download
+        var script = $@"
+            const link = document.createElement('a');
+            link.href = '{dataUrl}';
+            link.download = '{fileName}';
+            link.click();
+        ";
+        
+        await JSRuntime.InvokeVoidAsync("eval", script);
+    }
+
+    private void ClearError()
+    {
+        errorMessage = null;
+    }
+
+    private void ClearResults()
+    {
+        eclQuery = string.Empty;
+        eclResults = null;
+        errorMessage = null;
+    }
+
+    private void LoadExample()
+    {
+        eclQuery = "^92161000001100";
+        errorMessage = null;
+    }
+
+    private async Task HandleKeyPress(Microsoft.AspNetCore.Components.Web.KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter" && !isLoading && !string.IsNullOrWhiteSpace(eclQuery))
+        {
+            await ExecuteECLQuery();
+        }
+    }
+
+    private (string Version, string ReleaseDate) GetVersionInfoFromNHSResponse(string rawResponse)
+    {
+        if (string.IsNullOrEmpty(rawResponse))
+            return (string.Empty, string.Empty);
+
+        try
+        {
+            using var doc = JsonDocument.Parse(rawResponse);
+            var root = doc.RootElement;
+            
+            string version = string.Empty;
+            string releaseDate = string.Empty;
+
+            if (root.TryGetProperty("parameter", out var parameters))
+            {
+                foreach (var param in parameters.EnumerateArray())
+                {
+                    if (param.TryGetProperty("name", out var nameElement))
+                    {
+                        var name = nameElement.GetString();
+                        
+                        // Look for version information
+                        if (name == "version" && param.TryGetProperty("valueString", out var versionElement))
+                        {
+                            var versionString = versionElement.GetString();
+                            // Extract from string like "http://snomed.info/sct/83821000000107/version/20250702"
+                            if (versionString?.Contains("/version/") == true)
+                            {
+                                var versionParts = versionString.Split('/');
+                                if (versionParts.Length >= 4)
+                                {
+                                    var releaseDatePart = versionParts[versionParts.Length - 1]; // 20250702
+                                    
+                                    // Format as "v20250702" like NHS Browser
+                                    version = $"v{releaseDatePart}";
+                                    
+                                    // Convert YYYYMMDD to readable format for release date
+                                    if (releaseDatePart.Length == 8 && long.TryParse(releaseDatePart, out _))
+                                    {
+                                        if (DateTime.TryParseExact(releaseDatePart, "yyyyMMdd", null, DateTimeStyles.None, out var versionDate))
+                                        {
+                                            releaseDate = versionDate.ToString("MMMM d, yyyy");
+                                        }
+                                    }
+                                }
+                            }
+                            break; // Found version, no need to continue
+                        }
+                    }
+                }
+            }
+
+            return (version, releaseDate);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error parsing version info: {ex.Message}");
+            return (string.Empty, string.Empty);
+        }
+    }
+}
+
+<style>
+    /* Page Header Styles - matching other pages */
+    .page-header-wrapper {
+        padding: 0;
+        margin: 0;
+        border-bottom: 1px solid #dee2e6;
+        background-color: #f8f9fa;
+    }
+
+    .page-header {
+        padding: 15px;
+        height: 42px !important;
+        min-height: 42px !important;
+        max-height: 42px !important;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .page-header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+
+    .page-header-main {
+        flex-grow: 1;
+        min-width: 0;
+        margin-right: 20px;
+    }
+
+    .page-title {
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: #333;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 0;
+        line-height: 1.1;
+    }
+
+    .page-subtitle {
+        font-size: 0.75rem;
+        color: #6c757d;
+        margin: 0;
+        line-height: 1.1;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .page-header-actions {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+    }
+
+    .version-pill {
+        display: inline-flex;
+        flex-direction: column;
+        background: white;
+        color: #4a5568;
+        padding: 4px 10px;
+        border-radius: 6px;
+        border: 1.5px solid #5b7fda;
+        font-size: 0.65rem;
+        white-space: nowrap;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        line-height: 1.3;
+        margin-top: -5px;
+    }
+
+    .version-line {
+        font-size: 0.62rem;
+        font-weight: 500;
+        color: #5b7fda;
+    }
+
+    .version-code {
+        font-family: 'Courier New', monospace;
+        font-weight: 600;
+        letter-spacing: 0.3px;
+        color: #5b7fda;
+    }
+
+    .version-date-text {
+        font-weight: 500;
+        color: #5b7fda;
+    }
+
+    .created-by {
+        font-size: 0.75rem;
+        color: #6c757d;
+        white-space: nowrap;
+    }
+
+    .github-link {
+        color: #333;
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+
+    .github-link:hover {
+        color: #007bff;
+    }
+
+    /* Search card styles */
+    .search-card {
+        transition: box-shadow 0.3s ease;
+    }
+
+    .search-card:hover {
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
+    }
+
+    .search-input-textarea {
+        font-family: 'Courier New', monospace;
+        font-size: 0.9rem;
+        border: 2px solid #e0e6ed;
+        border-radius: 6px;
+        padding: 8px 12px;
+        resize: vertical;
+    }
+
+    .search-input-textarea:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+
+    .content-section {
+        margin-bottom: 1rem;
+    }
+
+    /* Info Panel Styles */
+    .info-panel {
+        background: linear-gradient(135deg, #f8fafe 0%, #f0f4ff 100%);
+        border: 1px solid #e3eaf7;
+        border-radius: 8px;
+        padding: 16px;
+        height: fit-content;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .info-panel-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+        font-size: 0.95rem;
+        color: #2c5aa0;
+        font-weight: 600;
+    }
+
+    .info-panel-content {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+
+    .info-text {
+        color: #495057;
+        margin-bottom: 12px;
+        font-size: 0.83rem;
+    }
+
+    .info-highlight {
+        background-color: rgba(255,255,255,0.6);
+        border-left: 3px solid #007bff;
+        padding: 8px 10px;
+        margin-bottom: 8px;
+        border-radius: 0 4px 4px 0;
+    }
+
+    .info-subtitle {
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: #2c5aa0;
+        margin-bottom: 4px;
+        margin-top: 0;
+    }
+
+    .info-detail {
+        font-size: 0.75rem;
+        color: #6c757d;
+        margin-bottom: 0;
+        line-height: 1.4;
+    }
+
+    /* Example link styling */
+    .example-link {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    .example-link:hover {
+        color: #0056b3;
+        text-decoration: underline;
+    }
+
+    /* Grid table styling */
+    .e-grid .e-table {
+        border-collapse: separate;
+        border-spacing: 0.25px;
+        width: 100%;
+    }
+
+    /* Sticky first column (row numbers) */
+    .e-grid td:first-child,
+    .e-grid th:first-child {
+        position: sticky;
+        left: 0;
+        background-color: #fff;
+        z-index: 1;
+        border-right: 2px solid #dee2e6;
+    }
+
+    .e-grid th:first-child {
+        background-color: #f8f9fa;
+        z-index: 2;
+    }
+</style>

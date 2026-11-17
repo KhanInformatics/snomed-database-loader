@@ -1,0 +1,307 @@
+ReadV2Code,SNOMED_PreferredTerm_F,ReadV2Term_I,SNOMED_ConceptID,Category
+1233,FH: Gonorrhea,FH: Gonorrhoea,160282005,Sexually Transmitted Disease
+13N5.,Human immunodeficiency virus (HIV) risk lifestyle,HIV risk lifestyle,266974005,Sexually Transmitted Disease
+1415,H/O sexually transmitted infection,H/O: venereal disease,275881005,Sexually Transmitted Disease
+14150,History of chlamydial infection,H/O: chlamydia infection,472954000,Sexually Transmitted Disease
+1543,History of pregnancy with abortive outcome,H/O: abortion,713651007,Termination of Pregnancy
+1547,History of medical termination of pregnancy,H/O: medical termination of pregnancy,412758008,Termination of Pregnancy
+438..,TPI (syphilis) test,Syphilis infectious titre test,1015571000000106,Sexually Transmitted Disease
+4382,Syphilis titer test positive,Syphilis titre test positive,165781001,Sexually Transmitted Disease
+4383,Wassermann reaction,Wassermann's test (W.R.),1028721000000102,Sexually Transmitted Disease
+4384,VDRL (Venereal Disease Research Laboratory) test,V.D.R.L. test,1015581000000108,Sexually Transmitted Disease
+4385,TPI - Treponema pallidum immobilisation test,T.P.I test,252407006,Sexually Transmitted Disease
+4387,Treponema pallidum haemagglutination test,Treponema pallidum haemaglutination test,1015601000000104,Sexually Transmitted Disease
+438Z.,Syphilis infectious titre test,Syphilis titre test NOS,269828009,Sexually Transmitted Disease
+43C..,Human immunodeficiency virus test,HTLV-3 antibody test,1027831000000105,Sexually Transmitted Disease
+43C2.,HIV negative,HTLV-3 antibody negative,165815009,Sexually Transmitted Disease
+43C3.,HIV positive,HTLV-3 antibody positive,165816005,Sexually Transmitted Disease
+43CZ.,Human immunodeficiency virus antibody titre measurement,HTLV-3 antibody NOS,250514000,Sexually Transmitted Disease
+43E6.,Gonorrhoea titre test,Gonorrhoea infect. titre test,992041000000109,Sexually Transmitted Disease
+43U0.,Chlamydia antigen by enzyme-linked immunosorbent assay,Chlamydia antigen by ELISA,310862001,Sexually Transmitted Disease
+43U1.,Chlamydia antigen enzyme-linked immunosorbent assay positive,Chlamydia antigen ELISA positive,314527009,Sexually Transmitted Disease
+43U2.,Chlamydia antigen enzyme-linked immunosorbent assay negative,Chlamydia antigen ELISA negative,314526000,Sexually Transmitted Disease
+43U9.,Chlamydia trachomatis NAAT (nucleic acid amplification test) inhibitory,Chlamydia trachomatis NAAT inhibitory,448374002,Sexually Transmitted Disease
+43W7.,HIV1 (human immunodeficiency virus 1) antibody level,HIV1 antibody level,1008801000000105,Sexually Transmitted Disease
+43W8.,HIV2 (human immunodeficiency virus 2) antibody level,HIV2 antibody level,1008811000000107,Sexually Transmitted Disease
+43WK.,HIV (human immunodeficiency virus) antibody level,Human immunodeficiency virus antibody level,1014121000000102,Sexually Transmitted Disease
+43d5.,HIV (human immunodeficiency virus) antibody/antigen (Duo),HIV antibody/antigen (Duo),1014171000000103,Sexually Transmitted Disease
+43d6.,HTLV 1 (human T-lymphotropic virus 1) antibody level,HTLV 1 antibody level,1014181000000101,Sexually Transmitted Disease
+43dc.,HTLV 2 (human T-lymphotropic virus 2) antibody level,HTLV 2 antibody level,998861000000101,Sexually Transmitted Disease
+43eF.,Chlamydia group CFT (complement fixation test),Chlamydia group complement fixation test,1031371000000108,Sexually Transmitted Disease
+43ej.,VDRL (Venereal Disease Research Laboratory) titre,VDRL titre,995221000000102,Sexually Transmitted Disease
+43h0.,Chlamydia trachomatis PCR,Chlamydia trachomatis polymerase chain reaction,1026621000000109,Sexually Transmitted Disease
+43h2.,HIV (human immunodeficiency virus) 1 PCR (polymerase chain reaction),HIV 1 PCR,1026641000000102,Sexually Transmitted Disease
+43h9.,Human immunodeficiency virus proviral deoxyribonucleic acid polymerase chain reaction,HIV proviral deoxyribonucleic acid polymerase chain reaction,1030231000000108,Sexually Transmitted Disease
+43j1.,Chlamydia trachomatis nucleic acid detection assay,Chlamydia trachomatis nucleic acid detection,998611000000102,Sexually Transmitted Disease
+43j10,Chlamydia trachomatis (lymphogranuloma venereum serovar) deoxyribonucleic acid detection,Chlamydia trachomatis (LGV serovar) DNA detection,1000261000000105,Sexually Transmitted Disease
+43j11,Chlamydia trachomatis detection by nucleic acid amplification test,Chlamydia trachomatis detection by NAAT,817771000000106,Sexually Transmitted Disease
+43j6.,Herpes simplex nucleic acid detection assay,Herpes simplex nucleic acid detection,1030521000000108,Sexually Transmitted Disease
+43j61,Herpes simplex DNA (deoxyribonucleic acid) detection assay,Herpes simplex deoxyribonucleic acid detection assay,1008421000000104,Sexually Transmitted Disease
+43j7.,HIV (human immunodeficiency virus) 1 ribonucleic acid detection assay,HIV 1 nucleic acid detection,1008351000000102,Sexually Transmitted Disease
+43j71,HIV (human immunodeficiency virus) 1 provirus DNA (deoxyribonucleic acid) detection assay,HIV 1 provirus deoxyribonucleic acid detection assay,1008361000000104,Sexually Transmitted Disease
+43j8.,HTLV 1 (human T-lymphotropic virus 1) RNA (ribonucleic acid) detection assay,HTLV 1 nucleic acid detection,1008331000000109,Sexually Transmitted Disease
+43j81,HTLV 1 (human T-lymphotropic virus 1) provirus DNA (deoxyribonucleic acid) detection assay,HTLV 1 provirus deoxyribonucleic acid detection assay,1008341000000100,Sexually Transmitted Disease
+43jA.,Neisseria gonorrhoeae nucleic acid detection assay,Neisseria gonorrhoeae nucleic acid detection,998651000000103,Sexually Transmitted Disease
+43jE.,HTLV 2 (human T-lymphotropic virus 2) RNA (ribonucleic acid) detection assay,HTLV 2 nucleic acid detection,1008311000000101,Sexually Transmitted Disease
+43jE1,HTLV 2 (human T-lymphotropic virus 2) provirus DNA (deoxyribonucleic acid) detection assay,HTLV 2 provirus deoxyribonucleic acid detection assay,1008321000000107,Sexually Transmitted Disease
+43jY.,Human papilloma virus nucleic acid detection assay,Human papilloma virus nucleic acid detection,1029511000000109,Sexually Transmitted Disease
+43jr.,HTLV (human T-lymphotropic virus) RNA (ribonucleic acid) detection assay,Human T-lymphotropic virus nucleic acid detection,1008291000000102,Sexually Transmitted Disease
+43jr1,HTLV (human T-lymphotropic virus) provirus DNA (deoxyribonucleic acid) detection assay,HTLV provirus deoxyribonucleic acid detection assay,1008301000000103,Sexually Transmitted Disease
+43jt.,Human herpes virus 6 nucleic acid detection assay,Human herpes virus 6 nucleic acid detection,1029701000000104,Sexually Transmitted Disease
+43jt1,Human herpesvirus 6 DNA (deoxyribonucleic acid) detection assay,Human herpesvirus 6 deoxyribonucleic acid detection assay,1008391000000105,Sexually Transmitted Disease
+43ju.,Human herpes virus 7 nucleic acid detection assay,Human herpes virus 7 nucleic acid detection,1029711000000102,Sexually Transmitted Disease
+43ju1,Human herpesvirus 7 DNA (deoxyribonucleic acid) detection assay,Human herpesvirus 7 deoxyribonucleic acid detection assay,1008381000000108,Sexually Transmitted Disease
+43jv.,Human herpes virus 8 nucleic acid detection assay,Human herpes virus 8 nucleic acid detection,1029721000000108,Sexually Transmitted Disease
+43jv1,Human herpesvirus 8 DNA (deoxyribonucleic acid) detection assay,Human herpesvirus 8 deoxyribonucleic acid detection assay,1008371000000106,Sexually Transmitted Disease
+43w3.,HIV (human immunodeficiency virus) ribonucleic acid/deoxyribonucleic acid ratio,Human immunodeficiency virus RNA/DNA ratio,996081000000100,Sexually Transmitted Disease
+43w4.,Herpes simplex virus type 1 nucleic acid detection assay,Herpes simplex virus type 1 nucleic acid detection,1029781000000109,Sexually Transmitted Disease
+43w5.,Herpes simplex virus type 2 nucleic acid detection assay,Herpes simplex virus type 2 nucleic acid detection,1003991000000103,Sexually Transmitted Disease
+43wA.,Treponema pallidum detection by nucleic acid amplification test,Treponema pallidum detection by NAAT,818821000000104,Sexually Transmitted Disease
+4J34.,HIV (human immunodeficiency virus) viral load,HIV viral load,998701000000106,Sexually Transmitted Disease
+4J35.,HIV (human immunodeficiency virus) p24 antigen level,HIV p24 antigen level,998711000000108,Sexually Transmitted Disease
+4J36.,Herpes simplex antigen (enzyme immunoassay),Herpes simplex antigen (EIA),998721000000102,Sexually Transmitted Disease
+4J3N.,HIV (human immunodeficiency virus) drug resistance test,Human immunodeficiency virus drug resistance test,1010871000000101,Sexually Transmitted Disease
+4JDT.,HIV (human immunodeficiency virus) serology,HIV serology,1020841000000100,Sexually Transmitted Disease
+4JDc.,Human T-lymphotropic virus (1 and 2) serology,Human T-lymphotropic virus (1&2) serology,996221000000106,Sexually Transmitted Disease
+4JF42,Taking throat swab for Chlamydia test,Throat swab for chlamydia,707982002,Sexually Transmitted Disease
+4JF43,Taking throat swab for gonorrhea,Throat swab for gonorrhoea,707983007,Sexually Transmitted Disease
+4JH63,Taking anal swab for Chlamydia test,Anal swab for chlamydia,472859009,Sexually Transmitted Disease
+4JH64,Taking anal swab for gonorrhea,Anal swab for gonorrhoea,472860004,Sexually Transmitted Disease
+4JK9.,Taking endocervical swab for Chlamydia test,Endocervical chlamydia swab,390784004,Sexually Transmitted Disease
+4JKA.,Taking urethral swab for Chlamydia test,Urethral chlamydia swab,390785003,Sexually Transmitted Disease
+4JKB.,Taking cervical swab for Neisseria gonorrhoeae test,Gonococcal cervical swab,400993006,Sexually Transmitted Disease
+4JKC.,Taking urethral swab for Neisseria gonorrhoeae test,Gonococcal urethral swab,401002001,Sexually Transmitted Disease
+4JKD.,LVS (low vaginal swab) for chlamydia taken by patient,Low vaginal swab for chlamydia taken by patient,200761000000105,Sexually Transmitted Disease
+4JLA.,Taking swab for Neisseria gonorrhoeae test,Gonococcal swab,400994000,Sexually Transmitted Disease
+4JLC.,Taking swab for Chlamydia test,Chlamydia swab,285586000,Sexually Transmitted Disease
+4JR7.,HIV (human immunodeficiency virus) screening test,HIV screening test,992781000000103,Sexually Transmitted Disease
+4K35.,Cervical smear - viral inflammation unspecified,Cerv.smear - viral infl.unsp.,269963000,Sexually Transmitted Disease
+4K3A.,Cervical smear - koilocytosis,Cervical smear: koilocytosis,168424006,Sexually Transmitted Disease
+65P7.,Exposure to sexually transmissible disorder,Venereal disease contact,444451006,Sexually Transmitted Disease
+65P8.,Exposure to Human immunodeficiency virus,AIDS contact,444356002,Sexually Transmitted Disease
+65PJ.,Exposure to Chlamydia trachomatis,Chlamydia trachomatis contact,444418002,Sexually Transmitted Disease
+65PK.,Exposure to gonorrhea,Gonorrhoea contact,444376008,Sexually Transmitted Disease
+65PN.,Exposure to Treponema pallidum,Syphilis contact,444380003,Sexually Transmitted Disease
+65PQ.,Exposure to anogenital Herpes simplex virus,Genital herpes simplex contact,444487004,Sexually Transmitted Disease
+65PR.,HIV (human immunodeficiency virus) contact,Human immunodeficiency virus contact,200681000000109,Sexually Transmitted Disease
+65Q8.,Gonorrhea carrier,Gonorrhoea carrier,170490008,Sexually Transmitted Disease
+65Q9.,Sexually transmitted disease carrier,Venereal disease carrier NOS,1094401000000104,Sexually Transmitted Disease
+65QA.,Human immunodeficiency virus (HIV) carrier,AIDS carrier,699433000,Sexually Transmitted Disease
+6776,Counselling for termination of pregnancy,Preg. termination counselling,10383002,Termination of Pregnancy
+67760,Post-termination counseling,Post-termination counselling,225326008,Termination of Pregnancy
+67761,Pre-termination counseling,Pre-termination counselling,225327004,Termination of Pregnancy
+677N.,HIV (human immunodeficiency virus) screening counselling,HIV screening counselling,200901000000108,Sexually Transmitted Disease
+679K9,Education about sexually transmitted disease prevention,Education about prevention of sexually transmitted disease,439057000,Sexually Transmitted Disease
+6827,HIV screening test,AIDS (HTLV-III) screening,171121004,Sexually Transmitted Disease
+6832,Sexually transmitted infection screening,Venereal disease screening,171128005,Sexually Transmitted Disease
+683C.,Screening for Chlamydia trachomatis,Chlamydia trachomatis screening,442487003,Sexually Transmitted Disease
+685N.,Human papillomavirus test consent given,HPV - Human papillomavirus test consent given,391144006,Sexually Transmitted Disease
+77323,Cauterisation of anal wart,Cauterisation of perianal warts NEC,449013002,Sexually Transmitted Disease
+7D16.,Colpoplasty,Plastic operations on vagina,176687003,Gender Related Issues
+7D160,Colpopoiesis,Construction of vagina,265619004,Gender Related Issues
+7D163,McIndoe vaginoplasty,Reconstruction of vagina with skin graft,176691008,Gender Related Issues
+7E0A.,Gamete intrauterine transfer,Introduction of gamete into uterine cavity,176843009,Assisted Fertilisation
+7E0A0,Embryo transfer,Implantation of fertilised egg into uterus,75456002,Assisted Fertilisation
+7E0A3,Intrauterine insemination with superovulation using partner sperm,Intrauterine insemination superovulation partner sperm,426968007,Assisted Fertilisation
+7E0A4,Intrauterine insemination with superovulation using donor sperm,Intrauterine insemination superovulation using donor sperm,425644009,Assisted Fertilisation
+7E0A5,Intrauterine insemination without superovulation using partner sperm,Intrauterine insemination without superovulat partner sperm,426389008,Assisted Fertilisation
+7E0A6,Intrauterine insemination without superovulation using donor sperm,Intrauterine insemination without superovulation donor sperm,426250000,Assisted Fertilisation
+7E0B0,Intra-amniotic prostaglandin instillation,Intraamniotic injection of prostaglandin,176850008,Termination of Pregnancy
+7E0B2,Extra-amniotic prostaglandin instillation,Extraamniotic injection of prostaglandin,176852000,Termination of Pregnancy
+7E0B4,Insertion of prostaglandin abortifacient suppository,Insertion of prostaglandin abortifacient pessary,176854004,Termination of Pregnancy
+7E0B5,Insertion of abortifacient suppository,Insertion of abortifacient pessary NEC,285434006,Termination of Pregnancy
+7F02.,Selective destruction of foetus,Selective destruction of fetus,265633004,Termination of Pregnancy
+7L0B.,Sex reassignment surgery,Operations for sexual transformation,719670005,Gender Related Issues
+7L0B0,Combined operation for transformation from male to female,Combined operations for transformation from male to female,51427007,Gender Related Issues
+7L0B1,Combined operation for transformation from female to male,Combined operations for transformation from female to male,42775008,Gender Related Issues
+7L0By,Gender assignment surgery,Other specified operation for sexual transformation,24878005,Gender Related Issues
+7M0h.,In vitro fertilisation procedure,In vitro fertilisation (IVF),52637005,Assisted Fertilisation
+7M0h0,IVF - In vitro fertilisation using donor sperm,IVF with donor sperm,427664000,Assisted Fertilisation
+7M0h1,In vitro fertilization using donor eggs,IVF with donor eggs,425866000,Assisted Fertilisation
+7M0h2,IVF - In vitro fertilisation with intracytoplasmic sperm injection (ICSI),IVF with intracytoplasmic sperm injection (ICSI),425901007,Assisted Fertilisation
+7M0h3,IVF - In vitro fertilisation with intracytoplasmic sperm injection (ICSI) and donor egg,IVF intracytoplasmic sperm injection (ICSI) and donor egg,426914002,Assisted Fertilisation
+7M0h4,IVF - In vitro fertilisation with pre-implantation genetic diagnosis,IVF with pre-implantation for genetic diagnosis,426417003,Assisted Fertilisation
+7M0h5,IVF (in vitro fertilisation) with surrogacy,IVF with surrogacy,711544002,Assisted Fertilisation
+7e+70,Dilation of cervix uteri and curettage of products of conception from uterus,Dilation cervix uteri & curettage products conception uterus,265062002,Termination of Pregnancy
+7e+83,Therapeutic abortion procedure,Extraction of menses,386641000,Termination of Pregnancy
+7e+84,Aspiration curettage of uterus for termination of pregnancy,Suction termination of pregnancy,391897002,Termination of Pregnancy
+7e+85,Dilatation and evacuation termination of pregnancy,Dilation of cervix and extraction termination of pregnancy,29682007,Termination of Pregnancy
+7e+86,Termination of pregnancy,Termination of pregnancy NEC,386639001,Termination of Pregnancy
+8C8..,Infertility therapy,Treatment for infertility,65046005,Assisted Fertilisation
+8C81.,AI - Artificial insemination,Artificial insemination,58533008,Assisted Fertilisation
+8C85.,GIFT - Gamete intrafallopian transfer,Gamete intrafallopian transfer,236912008,Assisted Fertilisation
+8CAd.,Patient advised to notify sexual partners of sexual transmitted infection,Pt ad notify sexual partners of sexual transmitted infection,198781000000103,Sexually Transmitted Disease
+8CP9.,Discussion about human immunodeficiency virus post exposure prophylaxis,Discussion about HIV post exposure prophylaxis,835401000000109,Sexually Transmitted Disease
+8H7W.,Referral for counseling for termination of pregnancy,Refer to TOP counselling,183606009,Termination of Pregnancy
+8Hle.,Referral to community human immunodeficiency virus nurse specialist,Referral to community HIV nurse specialist,817381000000107,Sexually Transmitted Disease
+956..,HSA1 therapeutic abortion green form,Form A - therapeutic abortion,9391000000101,Termination of Pregnancy
+9561,HSA1 form eligible,Form A - eligible,9401000000103,Termination of Pregnancy
+9562,HSA1 form signed,Form A - signed,9411000000101,Termination of Pregnancy
+9563,HSA1 form refused to sign,Form A - refused to sign,9421000000107,Termination of Pregnancy
+956Z.,HSA1 form status,Form A - NOS,13961000000108,Termination of Pregnancy
+9Op0.,HIV (human immunodeficiency virus) test offered,HIV screening offered,1103711000000100,Sexually Transmitted Disease
+9kF..,Specialised sexual health enhanced services administration,Specialised sexual health - enhanced services administration,166401000000102,Sexually Transmitted Disease
+9kF0.,Specialised sexual health enhanced service completed,Specialised sexual health - enhanced service completed,166491000000109,Sexually Transmitted Disease
+9kF1.,Patient reviewed following treatment for sexually transmitted disease,Patient reviewed following treatment for STD - enh ser admin,355161000000101,Sexually Transmitted Disease
+9kF2.,Urine screen for gonorrhoea,Urine screen for gonorrhoea - enhanced services administratn,362881000000103,Sexually Transmitted Disease
+9kF3.,Counselling for genital herpes screening,Counselling for genital herpes screening - enhanc serv admin,363091000000104,Sexually Transmitted Disease
+9kF4.,Syphilis screen 3 months post treatment,Syphilis screen 3 month post treatment - enhanced serv admin,355221000000100,Sexually Transmitted Disease
+9kF5.,Syphilis screen 6 months post treatment,Syphilis screen 6 month post treatment - enhanced serv admin,355651000000107,Sexually Transmitted Disease
+9kF6.,Syphilis screen 1 year post treatment,Syphilis screen 1 year post treatment - enhanced serv admin,355681000000101,Sexually Transmitted Disease
+9kF8.,Treatment of recurrent genital herpes,Treatment of recurrent genital herpes - enhanced services ad,364771000000102,Sexually Transmitted Disease
+9ka..,Urine neisseria gonorrhoeae test positive,Urine neisseria gonorrhoeae test positive - enhan serv admin,355251000000105,Sexually Transmitted Disease
+9kb..,Urine neisseria gonorrhoeae test negative,Urine neisseria gonorrhoeae test negative - enhan serv admin,355281000000104,Sexually Transmitted Disease
+9kl..,HIV (Human immunodeficiency virus) positive general health check service declined - enhanced services administration,HIV pos gen health check serv declind - enhanc service admin,504931000000103,Sexually Transmitted Disease
+9mN0.,Human immunodeficiency virus infection monitoring telephone invitation,HIV infection monitoring telephone invitation,894641000000104,Sexually Transmitted Disease
+9mN00,Human immunodeficiency virus infection monitoring first telephone invitation,HIV infection monitoring first telephone invitation,894661000000103,Sexually Transmitted Disease
+9mN01,Human immunodeficiency virus infection monitoring second telephone invitation,HIV infection monitoring second telephone invitation,894781000000104,Sexually Transmitted Disease
+9mN02,Human immunodeficiency virus infection monitoring third telephone invitation,HIV infection monitoring third telephone invitation,894801000000103,Sexually Transmitted Disease
+A5412,Herpes simplex vulvitis,Herpetic ulceration of vulva,59819007,Sexually Transmitted Disease
+A57y5,Monkey pox,Monkeypox,359814004,Sexually Transmitted Disease
+A7...,Other viral or chlamydial diseases,Other viral and chlamydial diseases,543791000000108,Sexually Transmitted Disease
+A781.,Verruca vulgaris,Viral warts,57019003,Sexually Transmitted Disease
+A788.,AIDS,Acquired immune deficiency syndrome,62479008,Sexually Transmitted Disease
+A7880,Acute HIV infection,Acute human immunodeficiency virus infection,111880001,Sexually Transmitted Disease
+A7882,Persistent generalized lymphadenopathy caused by human immunodeficiency virus,HIV infection with persistent generalised lymphadenopathy,95892003,Sexually Transmitted Disease
+A7883,Human immunodeficiency virus infection constitutional disease,Human immunodeficiency virus with constitutional disease,186706006,Sexually Transmitted Disease
+A7884,Human immunodeficiency virus infection with neurological disease,Human immunodeficiency virus with neurological disease,186707002,Sexually Transmitted Disease
+A7885,Human immunodeficiency virus infection with secondary clinical infectious disease,Human immunodeficiency virus with secondary infection,186708007,Sexually Transmitted Disease
+A7886,Malignant neoplastic disease co-occurrent with human immunodeficiency virus infection,Human immunodeficiency virus with secondary cancers,713572001,Sexually Transmitted Disease
+A788U,HIV (human immunodeficiency virus) disease resulting in haematological and immunological abnormalities,"HIV disease result/haematological+immunologic abnorms,NEC",943041000000105,Sexually Transmitted Disease
+A788V,HIV - Human immunodeficiency virus infection,HIV disease resulting in multiple diseases CE,86406008,Sexually Transmitted Disease
+A789.,Symptomatic human immunodeficiency virus infection,Human immunodef virus resulting in other disease,81000119104,Sexually Transmitted Disease
+A7890,Mycobacteriosis with acquired immunodeficiency syndrome,HIV disease resulting in mycobacterial infection,420818005,Sexually Transmitted Disease
+A7893,Pneumocystosis with acquired immunodeficiency syndrome,HIV disease resulting in Pneumocystis carinii pneumonia,420403001,Sexually Transmitted Disease
+A7895,Kaposi's sarcoma with acquired immunodeficiency syndrome,HIV disease resulting in Kaposi's sarcoma,420524008,Sexually Transmitted Disease
+A7896,Burkitt's lymphoma co-occurrent with human immunodeficiency virus infection,HIV disease resulting in Burkitt's lymphoma,713897006,Sexually Transmitted Disease
+A7897,Non-Hodgkin lymphoma associated with Human immunodeficiency virus infection,HIV dis resulting oth types of non-Hodgkin's lymphoma,442537007,Sexually Transmitted Disease
+A7899,Pneumonia with acquired immunodeficiency syndrome,HIV disease resulting in lymphoid interstitial pneumonitis,421671002,Sexually Transmitted Disease
+A789A,Cachexia associated with AIDS,HIV disease resulting in wasting syndrome,422003001,Sexually Transmitted Disease
+A78A1,Chlamydial pharyngitis,Chlamydial infection of pharynx,232403001,Sexually Transmitted Disease
+A78A3,Genitourinary chlamydia infection,Chlamydial inf of pelviperitoneum oth genitourinary organs,312099009,Sexually Transmitted Disease
+A79B.,Human papillomavirus infection,Human papilloma virus infection,240532009,Sexually Transmitted Disease
+A9...,Sexually transmitted infectious disease,Syphilis and other venereal diseases,8098009,Sexually Transmitted Disease
+A900.,"Early congenital syphilis, symptomatic (less than 2 years)",Early congenital syphilis with symptoms,266125005,Sexually Transmitted Disease
+A901.,Early congenital syphilis - latent,Early latent congenital syphilis,186833000,Sexually Transmitted Disease
+A902.,Early congenital syphilis,Early congenital syphilis NOS,4359001,Sexually Transmitted Disease
+A904.,Late congenital neurosyphilis,Juvenile neurosyphilis,266126006,Sexually Transmitted Disease
+A905.,Juvenile syphilis,Other late congenital syphilis,82323002,Sexually Transmitted Disease
+A9050,Congenital syphilis with gumma,Congenital syphilitic gumma,87318008,Sexually Transmitted Disease
+A906.,"Late congenital syphilis, latent (+ sero., - C.S.F., 2 years OR more)",Latent late congenital syphilis,827006,Sexually Transmitted Disease
+A912.,Primary syphilis,Other primary syphilis,266127002,Sexually Transmitted Disease
+A913.,Secondary syphilis of skin and mucous membrane,Secondary syphilis of skin or mucus membranes,186850003,Sexually Transmitted Disease
+A9150,Ocular syphilis,Syphilitic uveitis unspecified,410478005,Sexually Transmitted Disease
+A9161,Secondary syphilis of liver,Secondary syphilitic hepatitis,80770009,Sexually Transmitted Disease
+A916z,Secondary syphilis of viscera,Secondary syphilis of viscera and bone NOS,58227000,Sexually Transmitted Disease
+A918.,Secondary syphilis,Other forms of secondary syphilis,240557004,Sexually Transmitted Disease
+A92z.,Acquired syphilis - early latent,Latent early syphilis NOS,266130009,Sexually Transmitted Disease
+A930.,Syphilitic aneurysm of aorta,Syphilitic aortic aneurysm,12232008,Sexually Transmitted Disease
+A931.,Syphilis-associated aortitis,Syphilitic aortitis,20735004,Sexually Transmitted Disease
+A93y1,Myocarditis caused by Treponema pallidum,Syphilitic myocarditis,4082005,Sexually Transmitted Disease
+A941.,Paralytic dementia,General paresis - neurosyphilis,51928006,Sexually Transmitted Disease
+A94y.,Late quaternary neurosyphilis,Other specified neurosyphilis,266133006,Sexually Transmitted Disease
+A95..,Late syphilis,Other forms of late syphilis with symptoms,72083004,Sexually Transmitted Disease
+A952.,Peritonitis - syphilitic,Syphilitic peritonitis,34964002,Sexually Transmitted Disease
+A954.,Renal syphilis,Syphilis of kidney,59530001,Sexually Transmitted Disease
+A97..,Syphilis,Other and unspecified syphilis,76272004,Sexually Transmitted Disease
+A98..,GC - Gonococcus infection,Gonococcal infections,15628003,Sexually Transmitted Disease
+A9811,Bladder gonorrhoea - acute,Acute gonococcal cystitis,24868007,Sexually Transmitted Disease
+A982.,Chronic gonorrhoea of lower genitourinary tract,Chronic gonorrhoea lower genitourinary tract,186915005,Sexually Transmitted Disease
+A9821,Chronic inflammation of urethra caused by Neisseria gonorrhoeae,Chronic gonococcal urethritis,44412000,Sexually Transmitted Disease
+A983.,Chronic gonorrhea of upper genitourinary tract,Chronic gonorrhoea of upper genitourinary tract,80388004,Sexually Transmitted Disease
+A9836,Uterus - chronic gonorrhoea,Chronic gonococcal endometritis,31999004,Sexually Transmitted Disease
+A9840,Opthalmia neonatorum caused by Neisseria,Neonatal gonococcal conjunctivits,28438004,Sexually Transmitted Disease
+A9852,Bursitis caused by Neisseria gonorrhoeae,Gonococcal bursitis,46699001,Sexually Transmitted Disease
+A986.,Gonococcal pharyngitis,Gonococcal pharynx infection,74372003,Sexually Transmitted Disease
+A987.,Gonorrhoea of rectum,Gonococcal proctitis,42746002,Sexually Transmitted Disease
+A9870,Gonorrhoea of anus,Gonococcal anal infection,186931002,Sexually Transmitted Disease
+A98y1,Meningitis due to gonococcus,Gonococcal meningitis,151004,Sexually Transmitted Disease
+A98y4,Gonococcal heart disease,Other gonococcal heart disease,9241004,Sexually Transmitted Disease
+A98y6,Fitz-Hugh and Curtis syndrome,Fitzhugh Curtis syndrome,237041005,Sexually Transmitted Disease
+A991.,Nicholas Favre disease,Lymphogranuloma venereum,186946009,Sexually Transmitted Disease
+A993.,Reiter's disease,Reiter's disease / syndrome,67224007,Sexually Transmitted Disease
+A994.,Nongonococcal urethritis,Nonspecific urethritis,84619001,Sexually Transmitted Disease
+AA...,Spirochaetal infection,Other spirochaetal diseases,41116009,Sexually Transmitted Disease
+AD1..,Trichomonas infection,Trichomoniasis - trichomonas,56335008,Sexually Transmitted Disease
+AD10.,TV - Trichomonas vaginalis infection,Urogenital trichomonas,35089004,Sexually Transmitted Disease
+AD22.,Infestation by Phthirus pubis,Phthirus pubis - pubic lice,71011005,Sexually Transmitted Disease
+Ayu48,Quaternary syphilis,[X]Other symptomatic late syphilis,278481001,Sexually Transmitted Disease
+Ayu4L,Vulval warts,[X]Vulval warts,237109002,Sexually Transmitted Disease
+Ayu4M,Perineal wart,[X]Perineal warts,298128008,Sexually Transmitted Disease
+E223.,Cross-dressing,Transvestism,472948001,Gender Related Issues
+E225.,Transsexual,Trans-sexualism,407374003,Gender Related Issues
+E2251,Previously asexual transsexual,Trans-sexuality with asexual history,472945003,Gender Related Issues
+E2252,Previously homosexual transsexual,Trans-sexuality with homosexual history,472947006,Gender Related Issues
+E2253,Previously heterosexual transsexual,Trans-sexuality with heterosexual history,472946002,Gender Related Issues
+Eu024,Acquired immune deficiency syndrome-related dementia,[X]Dementia in human immunodef virus [HIV] disease,421529006,Sexually Transmitted Disease
+Eu64.,Gender identity disorder,[X]Gender identity disorders,87991007,Gender Related Issues
+Eu641,Dual-role transvestism,[X]Dual-role transvestism,472989003,Gender Related Issues
+Eu642,Gender identity disorder of childhood,[X]Gender identity disorder of childhood,5095008,Gender Related Issues
+Eu651,Fetishistic transvestism,[X]Fetishistic transvestism,472981000,Gender Related Issues
+F0075,Secondary syphilitic meningitis,Meningitis due to secondary syphilis,192647003,Sexually Transmitted Disease
+F4K44,Argyll-Robertson pupil,Argyll Robertson pupil,4129001,Sexually Transmitted Disease
+G5002,Acute syphilitic pericarditis,Acute pericarditis - syphilitic,194907008,Sexually Transmitted Disease
+G5005,Acute gonococcal pericarditis,Acute pericarditis - gonococcal,194910001,Sexually Transmitted Disease
+G5204,Acute syphilitic myocarditis,Acute myocarditis - syphilitic,194947001,Sexually Transmitted Disease
+J6321,Quaternary syphilitic hepatitis,Hepatitis in late syphilis,197347003,Sexually Transmitted Disease
+K1545,Gonococcal cystitis,Cystitis in gonorrhoea,197848003,Sexually Transmitted Disease
+K1547,Trichomonal cystitis,Cystitis in trichomoniasis,197850006,Sexually Transmitted Disease
+K17y.,Inflammation of urethra,Other urethritis,31822004,Sexually Transmitted Disease
+K2142,Syphilitic prostatitis,Prostatitis in syphilis,197966009,Sexually Transmitted Disease
+K2144,Gonococcal prostatitis,Prostatitis in gonorrhoea,197967000,Sexually Transmitted Disease
+K4...,Female pelvic inflammation,Female pelvic inflammatory diseases,198130006,Sexually Transmitted Disease
+K4020,Abscess of fallopian tube,Fallopian tube abscess,398319002,Sexually Transmitted Disease
+K4026,Salpingitis,Salpingitis unspecified,88157006,Sexually Transmitted Disease
+K403.,Acute PID - acute pelvic inflammatory disease,Acute parametritis and pelvic cellulitis,237037006,Sexually Transmitted Disease
+K404z,Chronic pelvic inflammatory disease,Chronic pelvic inflammatory diseases NOS,237044002,Sexually Transmitted Disease
+K4209,Chlamydial cervicitis,Chlamydia cervicitis,237084006,Sexually Transmitted Disease
+Kyu9H,Complications associated with artificial fertilization,[X]Other complicatns associated wth artificial fertilization,213199004,Assisted Fertilisation
+L05..,Legally induced abortion - TOP,Legally induced abortion,39406005,Termination of Pregnancy
+L0501,Legal termination of pregnancy complicated by delayed and/or excessive hemorrhage,Unspecified legal abortion + delayed/excessive haemorrhage,58071009,Termination of Pregnancy
+L050y,Legal termination of pregnancy without complication,Unspecified legal abortion with no mention of complication,34500003,Termination of Pregnancy
+L052.,Complete legal termination of pregnancy,Legal abortion complete,267194005,Termination of Pregnancy
+L06..,Illegal termination of pregnancy,Illegally induced abortion,49632008,Termination of Pregnancy
+L062.,"Illegal termination of pregnancy, complete",Illegal abortion complete,198755009,Termination of Pregnancy
+L07..,Abortion,Unspecified abortion,70317007,Termination of Pregnancy
+L08..,Failed attempted termination of pregnancy,Failed attempted abortion,49416000,Termination of Pregnancy
+L09..,Complications following abortion and ectopic and molar pregnancies,Complications following abortion/ectopic/molar pregnancies,198818003,Termination of Pregnancy
+L0930,Induced termination of pregnancy complicated by acute renal failure with oliguria,Oliguria following abortive pregnancy,609472002,Termination of Pregnancy
+L0971,"Readmission for retained products of conception, legal termination of pregnancy","Readmission for retained produc of concept, legal abortion",198862007,Termination of Pregnancy
+L0972,"Readmission for retained products of conception, illegal termination of pregnancy","Readmission for retained produc of concept, illegal abortion",198863002,Termination of Pregnancy
+L0A4.,"Failed medical termination of pregnancy, without complication","Failed medical abortion, without complication",198878009,Termination of Pregnancy
+L170.,"Maternal syphilis during pregnancy, childbirth and the puerperium",Maternal syphilis in pregnancy/childbirth/puerperium,199154009,Sexually Transmitted Disease
+L1702,Maternal syphilis in the puerperium - baby delivered during current episode of care,Maternal syphilis in puerperium - baby delivered,199157002,Sexually Transmitted Disease
+L1704,Maternal syphilis in the puerperium - baby delivered during previous episode of care,Maternal syphilis in puerperium - baby previously delivered,199159004,Sexually Transmitted Disease
+L171.,"Maternal gonorrhoea during pregnancy, childbirth and the puerperium",Maternal gonorrhoea during pregnancy/childbirth/puerperium,199161008,Sexually Transmitted Disease
+L1711,Postpartum gonorrhea,Maternal gonorrhoea during pregnancy - baby delivered,199163006,Sexually Transmitted Disease
+L1712,Maternal gonorrhea in the puerperium - baby delivered during current episode of care,Maternal gonorrhoea in puerperium - baby delivered,199164000,Sexually Transmitted Disease
+L1713,Maternal gonorrhoea during pregnancy - baby not yet delivered,Maternal gonorrhoea in pregnancy - baby not yet delivered,199165004,Sexually Transmitted Disease
+L1714,Maternal gonorrhea in the puerperium - baby delivered during previous episode of care,Maternal gonorrhoea in puerperium- baby previously delivered,199166003,Sexually Transmitted Disease
+L172.,Venereal disease in pregnancy,Other venereal diseases in pregnancy/childbirth/puerperium,274118001,Sexually Transmitted Disease
+L172z,"Venereal disease in mother complicating pregnancy, childbirth AND/OR puerperium",Other mat. venereal dis. in pregnancy/childbirth/puerp. NOS,27075004,Sexually Transmitted Disease
+Lyu08,Termination of pregnancy without complication,"[X]Other+unspcf failed induced abortion,without complication",609492009,Termination of Pregnancy
+N011.,Post-genitourinary infection reactive arthritis,Sexually acquired reactive arthropathy,267883008,Sexually Transmitted Disease
+N0111,Reactive arthritis of joint of shoulder region due to and following sexually transmitted disease,Sexually acquired reactive arthropathy of shoulder region,201474006,Sexually Transmitted Disease
+N0114,Sexually acquired reactive arthritis of joint of hand,Sexually acquired reactive arthropathy of the hand,201477004,Sexually Transmitted Disease
+N0115,Sexually acquired reactive arthropathy of the pelvic region and thigh,Sexually acquired reactive arthropathy of the pelvis/thigh,201478009,Sexually Transmitted Disease
+N0117,Sexually acquired reactive arthropathy of the ankle and/or foot,Sexually acquired reactive arthropathy of the ankle and foot,201480003,Sexually Transmitted Disease
+N011x,Reactive arthritis of multiple sites due to and following sexually transmitted disease,Sexually acquired reactive arthropathy of multiple sites,201481004,Sexually Transmitted Disease
+N0381,Post-infective arthropathy in syphilis,Postinfective arthropathy in syphilis,201738001,Sexually Transmitted Disease
+Q3106,Congenital chlamydial pneumonia,Congenital pneumonia due to Chlamydia,206289001,Sexually Transmitted Disease
+Q4020,Congenital herpes simplex infection,Congenital herpes simplex,91576008,Sexually Transmitted Disease
+Q4067,Neonatal dacryocystitis or conjunctivitis caused by chlamydiae,Neonatal dacryocystitis or conjunctivitis due to chlamydiae,268842008,Sexually Transmitted Disease
+R156.,False-positive serological test for syphilis,[D]False positive serological syphilis test,274684006,Sexually Transmitted Disease
+R1560,False positive complement fixation test for syphilis,[D]False positive Wasserman test,442377003,Sexually Transmitted Disease
+SP0D2,Complications of attempted introduction of fertilised ovum following in vitro fertilisation,Compltns of attemptd intro fertil ovum follow in vitro fert,213202009,Assisted Fertilisation
+SP0D3,Complications of attempted introduction of embryo in embryo transfer,Complctns/attemptd introduction of embryo in embryo transfer,213203004,Assisted Fertilisation
+ZV01A,[V]Asymptomatic human immunodeficiency virus infection status,[V]Asymptomatic human immunodeficency virus infection status,427921000000108,Sexually Transmitted Disease
+ZV138,History of pelvic inflammatory disease,[V]Personal history of pelvic inflammatory disease,1090431000000102,Sexually Transmitted Disease
+ZV19B,Family history of human immunodeficiency virus infection,[V]Family history of human immunodefiency virus disease,438998000,Sexually Transmitted Disease
+ZV261,[V]AI - artificial insemination,[V]Artificial insemination NOS,427961000000100,Assisted Fertilisation
+ZV265,Artificial insemination by husband,[V]Artificial insemination from husband,236895005,Assisted Fertilisation
+ZV266,DI - Donor insemination,[V]Artificial insemination from donor,236896006,Assisted Fertilisation
+ZV267,[V] IVF,[V]In vitro fertilization,440691000000100,Assisted Fertilisation
+ZV268,[V]Other assisted fertilisation methods,[V]Other assisted fertilization methods,411101000000103,Assisted Fertilisation
+ZV62A,Gender dysphoria,[V] Gender dysphoria,93461009,Gender Related Issues
+ZV6D4,HIV counseling,[V]Human immunodefiency virus counselling,313077009,Sexually Transmitted Disease
+ZVu21,[X]Other assisted fertilisation methods,[X]Other assisted fertilization methods,391241000000101,Assisted Fertilisation

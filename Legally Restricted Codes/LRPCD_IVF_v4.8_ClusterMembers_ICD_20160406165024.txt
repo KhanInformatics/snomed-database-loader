@@ -1,0 +1,28 @@
+CLUSTER	VERSION	SCHEME	CODE	TERM
+LRPCD_IVF	v4.8	ICD	N97	Female infertility
+LRPCD_IVF	v4.8	ICD	N970	Female infertility associated with anovulation
+LRPCD_IVF	v4.8	ICD	N971	Female infertility of tubal origin
+LRPCD_IVF	v4.8	ICD	N972	Female infertility of uterine origin
+LRPCD_IVF	v4.8	ICD	N973	Female infertility of cervical origin
+LRPCD_IVF	v4.8	ICD	N974	Female infertility associated with male factors
+LRPCD_IVF	v4.8	ICD	N978	Female infertility of other origin
+LRPCD_IVF	v4.8	ICD	N979	Female infertility, unspecified
+LRPCD_IVF	v4.8	ICD	N98	Complications associated with artificial fertilization
+LRPCD_IVF	v4.8	ICD	N980	Infection associated with artificial insemination
+LRPCD_IVF	v4.8	ICD	N981	Hyperstimulation of ovaries
+LRPCD_IVF	v4.8	ICD	N982	Complications of attempted introduction of fertilized ovum following in vitro fertilization
+LRPCD_IVF	v4.8	ICD	N983	Complications of attempted introduction of embryo in embryo transfer
+LRPCD_IVF	v4.8	ICD	N988	Other complications associated with artificial fertilization
+LRPCD_IVF	v4.8	ICD	N989	Complication associated with artificial fertilization, unspecified
+LRPCD_IVF	v4.8	ICD	Y658	Other specified misadventures during surgical and medical care
+LRPCD_IVF	v4.8	ICD	Z31	Procreative management
+LRPCD_IVF	v4.8	ICD	Z310	Tuboplasty or vasoplasty after previous sterilization
+LRPCD_IVF	v4.8	ICD	Z311	Artificial insemination
+LRPCD_IVF	v4.8	ICD	Z312	In vitro fertilization
+LRPCD_IVF	v4.8	ICD	Z313	Other assisted fertilization methods
+LRPCD_IVF	v4.8	ICD	Z314	Procreative investigation and testing
+LRPCD_IVF	v4.8	ICD	Z315	Genetic counselling
+LRPCD_IVF	v4.8	ICD	Z316	General counselling and advice on procreation
+LRPCD_IVF	v4.8	ICD	Z318	Other procreative management
+LRPCD_IVF	v4.8	ICD	Z319	Procreative management, unspecified
+LRPCD_IVF	v4.8	ICD	Z928	Personal history of other medical treatment

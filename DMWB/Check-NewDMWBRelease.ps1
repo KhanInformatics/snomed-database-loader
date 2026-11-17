@@ -60,7 +60,8 @@ foreach ($item in $items) {
     try {
         $response = Invoke-RestMethod -Uri $url -Method Get -ErrorAction Stop
     } catch {
-        Write-Error "Error retrieving release information for ${itemName}: $($_.Exception.Message)"
+        $safeError = $_.Exception.Message.Replace($apiKey, '<redacted>')
+        Write-Error "Error retrieving release information for ${itemName}: $safeError"
         continue
     }
     

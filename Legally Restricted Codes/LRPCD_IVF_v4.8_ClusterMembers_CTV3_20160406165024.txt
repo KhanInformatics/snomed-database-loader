@@ -1,0 +1,72 @@
+CLUSTER	VERSION	SCHEME	CODE	TERM
+LRPCD_IVF	v4.8	CTV3	ZV266	[V]Artificial insemination from donor
+LRPCD_IVF	v4.8	CTV3	ZV265	[V]Artificial insemination from husband
+LRPCD_IVF	v4.8	CTV3	ZV261	[V]Artificial insemination NOS
+LRPCD_IVF	v4.8	CTV3	ZV267	[V]In vitro fertilisation
+LRPCD_IVF	v4.8	CTV3	ZV268	[V]Other assisted fertilisation methods
+LRPCD_IVF	v4.8	CTV3	Kyu9P	[X]Complication associated with artificial fertilisation, unspecified
+LRPCD_IVF	v4.8	CTV3	ZVu21	[X]Other assisted fertilisation methods
+LRPCD_IVF	v4.8	CTV3	Kyu9H	[X]Other complications associated with artificial fertilisation
+LRPCD_IVF	v4.8	CTV3	XE0hz	Artificial insemination
+LRPCD_IVF	v4.8	CTV3	X403N	Artificial insemination by donor
+LRPCD_IVF	v4.8	CTV3	X403M	Artificial insemination by husband
+LRPCD_IVF	v4.8	CTV3	Xa9gc	Artificial insemination NEC
+LRPCD_IVF	v4.8	CTV3	SP0D.	Complications associated with artificial fertilisation
+LRPCD_IVF	v4.8	CTV3	SP0D3	Complications of attempted introduction of embryo in embryo transfer
+LRPCD_IVF	v4.8	CTV3	SP0D2	Complications of attempted introduction of fertilised ovum following in vitro fertilisation
+LRPCD_IVF	v4.8	CTV3	XaQHC	Conceived by in vitro fertilisation
+LRPCD_IVF	v4.8	CTV3	Ua1Ia	Direct injection of sperm into cytoplasm of the oocyte
+LRPCD_IVF	v4.8	CTV3	Ua1Ie	Direct intraperitoneal insemination
+LRPCD_IVF	v4.8	CTV3	X30HW	Electro-ejaculation
+LRPCD_IVF	v4.8	CTV3	7E0A0	Embryo transfer
+LRPCD_IVF	v4.8	CTV3	7E1F2	Endoscopic intrafallopian transfer of gamete
+LRPCD_IVF	v4.8	CTV3	Xa9gh	Endoscopic oocyte recovery NEC
+LRPCD_IVF	v4.8	CTV3	7E240	Endoscopic transurethral ultrasound directed oocyte recovery
+LRPCD_IVF	v4.8	CTV3	7E241	Endoscopic transvesical oocyte recovery
+LRPCD_IVF	v4.8	CTV3	X403m	Fallopian replacement of egg with delayed insemination
+LRPCD_IVF	v4.8	CTV3	X77lt	Follicle monitoring US scan
+LRPCD_IVF	v4.8	CTV3	X403L	Frozen embryo transfer
+LRPCD_IVF	v4.8	CTV3	X403l	Gamete intrafallopian transfer
+LRPCD_IVF	v4.8	CTV3	7E0A.	Gamete intrauterine transfer
+LRPCD_IVF	v4.8	CTV3	XaBjS	Harvest of reproductive tissue
+LRPCD_IVF	v4.8	CTV3	XaXNB	History of in-vitro fertilisation
+LRPCD_IVF	v4.8	CTV3	SP0D1	Hyperstimulation of ovaries
+LRPCD_IVF	v4.8	CTV3	XaM0B	In vitro fertilisation (IVF) NOS
+LRPCD_IVF	v4.8	CTV3	Ua1Ib	In vitro fertilisation procedure
+LRPCD_IVF	v4.8	CTV3	SP0D0	Infection associated with artificial insemination
+LRPCD_IVF	v4.8	CTV3	7E0A1	Intracervical artificial insemination
+LRPCD_IVF	v4.8	CTV3	X40bx	Intraperitoneal insemination
+LRPCD_IVF	v4.8	CTV3	XE06k	Intrauterine artificial insemination
+LRPCD_IVF	v4.8	CTV3	XaMC0	Intrauterine insemination with superovulation using donor sperm
+LRPCD_IVF	v4.8	CTV3	XaMBz	Intrauterine insemination with superovulation using partner sperm
+LRPCD_IVF	v4.8	CTV3	XaMC2	Intrauterine insemination without superovulation using donor sperm
+LRPCD_IVF	v4.8	CTV3	XaMC1	Intrauterine insemination without superovulation using partner sperm
+LRPCD_IVF	v4.8	CTV3	Ua1Ih	Intravaginal artificial insemination
+LRPCD_IVF	v4.8	CTV3	7E0Az	Introduction of gamete into uterine cavity NOS
+LRPCD_IVF	v4.8	CTV3	XaM0D	IVF with donor eggs
+LRPCD_IVF	v4.8	CTV3	XaM0C	IVF with donor sperm
+LRPCD_IVF	v4.8	CTV3	XaM0E	IVF with intracytoplasmic sperm injection (ICSI)
+LRPCD_IVF	v4.8	CTV3	XaM0F	IVF with intracytoplasmic sperm injection (ICSI) and donor egg
+LRPCD_IVF	v4.8	CTV3	XaM0G	IVF with pre-implantation for genetic diagnosis
+LRPCD_IVF	v4.8	CTV3	XaM09	IVF with surrogacy
+LRPCD_IVF	v4.8	CTV3	XE072	Laparoscopic oocyte recovery
+LRPCD_IVF	v4.8	CTV3	X30HY	Micro-epididymal sperm aspiration
+LRPCD_IVF	v4.8	CTV3	7E24.	Oocyte recovery
+LRPCD_IVF	v4.8	CTV3	7E24z	Oocyte recovery NOS
+LRPCD_IVF	v4.8	CTV3	XaM0A	Other specified in vitro fertilisation (IVF)
+LRPCD_IVF	v4.8	CTV3	7E0Ay	Other specified introduction of gamete into uterine cavity
+LRPCD_IVF	v4.8	CTV3	7E24y	Other specified oocyte recovery
+LRPCD_IVF	v4.8	CTV3	XaDzK	Percutaneous epididymal sperm aspiration
+LRPCD_IVF	v4.8	CTV3	Xa0FN	Percutaneous sperm aspiration
+LRPCD_IVF	v4.8	CTV3	X30HX	Sperm aspiration
+LRPCD_IVF	v4.8	CTV3	Ua1Ig	Subzonal insemination
+LRPCD_IVF	v4.8	CTV3	X40Aq	Surrogate pregnancy
+LRPCD_IVF	v4.8	CTV3	X30HZ	Testicular sperm aspiration
+LRPCD_IVF	v4.8	CTV3	XaMBR	Testicular sperm extraction
+LRPCD_IVF	v4.8	CTV3	XaMM6	Transfer of embryo to uterus
+LRPCD_IVF	v4.8	CTV3	XaXUs	Transmyometrial transfer of embryo to uterus
+LRPCD_IVF	v4.8	CTV3	7E243	Transvaginal oocyte recovery
+LRPCD_IVF	v4.8	CTV3	X403o	Tubal embryo transfer
+LRPCD_IVF	v4.8	CTV3	Ua1If	Zona drilling
+LRPCD_IVF	v4.8	CTV3	X77lh	Zona free hamster test
+LRPCD_IVF	v4.8	CTV3	X403n	Zygote intrafallopian transfer

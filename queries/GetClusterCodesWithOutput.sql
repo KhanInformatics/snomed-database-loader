@@ -14,7 +14,7 @@ USE SNOMEDCT;
 GO
 
 -- Example: Get all codes for AST_COD cluster (Asthma codes)
-DECLARE @ClusterID NVARCHAR(50) = 'AST_COD';
+DECLARE @ClusterID NVARCHAR(50) = 'SAL_COD';
 
 -- =================================================================
 -- Query 1: Basic Cluster Code List with Output Descriptions

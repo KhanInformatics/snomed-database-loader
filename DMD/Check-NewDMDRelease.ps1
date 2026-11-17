@@ -2,6 +2,14 @@
 # This script tracks IMPORTED releases (not just checked releases)
 # If a new release is found, it automatically downloads and imports the data
 
+param(
+    [string]$ServerInstance = 'SILENTPRIORY\SQLEXPRESS',
+    [string]$Database = 'dmd',
+    [string]$DataDirectory = 'C:\DMD'
+)
+
+$ErrorActionPreference = 'Stop'
+
 # Get the base directory (where the script is located)
 $baseDir = $PSScriptRoot
 
@@ -37,7 +45,7 @@ $items = @(
 $baseApiUrl = "https://isd.digital.nhs.uk/trud/api/v1/keys/$apiKey/items"
 
 # Directory to store state and logs
-$dataDir = "C:\DMD"
+$dataDir = $DataDirectory
 if (-not (Test-Path $dataDir)) {
     New-Item -ItemType Directory -Path $dataDir -Force | Out-Null
 }
@@ -78,8 +86,9 @@ foreach ($item in $items) {
     try {
         $response = Invoke-RestMethod -Uri $url -Method Get -ErrorAction Stop
     } catch {
-        Write-Error "Error querying TRUD for ${itemName}: $($_.Exception.Message)"
-        "[$timestamp] ERROR: Failed to query $itemName - $($_.Exception.Message)" | Out-File $logFile -Append
+        $safeError = $_.Exception.Message.Replace($apiKey, '<redacted>')
+        Write-Error "Error querying TRUD for ${itemName}: $safeError"
+        "[$timestamp] ERROR: Failed to query $itemName - $safeError" | Out-File $logFile -Append
         continue
     }
     
@@ -154,8 +163,11 @@ if ($newReleaseFound) {
             Write-Host "  Using DM+D Main: $($dmdMainFolder.Name)" -ForegroundColor Gray
             Write-Host "  Using DM+D Bonus: $($dmdBonusFolder.Name)" -ForegroundColor Gray
             Push-Location (Join-Path $baseDir "StandaloneImports")
-            & $importScript -XmlPath $dmdMainFolder.FullName -BonusPath $dmdBonusFolder.FullName
-            Pop-Location
+            try {
+                $global:LASTEXITCODE = 0
+                & $importScript -XmlPath $dmdMainFolder.FullName -BonusPath $dmdBonusFolder.FullName -ServerInstance $ServerInstance -DatabaseName $Database
+                if ($LASTEXITCODE -ne 0) { throw "DM+D import failed with exit code $LASTEXITCODE" }
+            } finally { Pop-Location }
         } else {
             Write-Error "Could not find DM+D release folders in $currentReleasesDir"
             "[$timestamp] ERROR: Release folders not found" | Out-File $logFile -Append
@@ -179,12 +191,15 @@ if ($newReleaseFound) {
             Select-Object -First 1
         
         if ($latestReleaseFolder) {
-            & $validateScript -XmlPath $latestReleaseFolder.FullName -SamplesPerTable 100
+            & $validateScript -XmlPath $latestReleaseFolder.FullName -ServerInstance $ServerInstance -Database $Database -SamplesPerTable 100
         } else {
             Write-Warning "Could not find release folder for validation"
         }
     }
     
+    # Pricing must match the selected release before marking it imported.
+    & (Join-Path $baseDir 'Validate-PackPrices.ps1') -XmlPath $dmdMainFolder.FullName -ServerInstance $ServerInstance -Database $Database | Format-Table -AutoSize
+
     # Step 4: Update the last imported release tracking (only after successful import)
     foreach ($itemName in $currentReleases.Keys) {
         $lastImportedReleases[$itemName] = $currentReleases[$itemName]

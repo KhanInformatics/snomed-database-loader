@@ -1,0 +1,44 @@
+CLUSTER	VERSION	SCHEME	CODE	TERM
+LRPCD_IVF	v4.8	OPCS	N341	Fertility investigation of male NEC
+LRPCD_IVF	v4.8	OPCS	N342	Collection of sperm NEC
+LRPCD_IVF	v4.8	OPCS	N344	Microsurgical epididymal sperm aspiration
+LRPCD_IVF	v4.8	OPCS	N345	Percutaneous epididymal sperm aspiration
+LRPCD_IVF	v4.8	OPCS	N346	Testicular sperm extraction
+LRPCD_IVF	v4.8	OPCS	Q13	Introduction of gametes into uterine cavity
+LRPCD_IVF	v4.8	OPCS	Q131	Transfer of embryo to uterus NEC
+LRPCD_IVF	v4.8	OPCS	Q132	Intracervical artificial insemination
+LRPCD_IVF	v4.8	OPCS	Q133	Intrauterine artificial insemination
+LRPCD_IVF	v4.8	OPCS	Q134	Intrauterine insemination with superovulation using partner sperm
+LRPCD_IVF	v4.8	OPCS	Q135	Intrauterine insemination with superovulation using donor sperm
+LRPCD_IVF	v4.8	OPCS	Q136	Intrauterine insemination without superovulation using partner sperm
+LRPCD_IVF	v4.8	OPCS	Q137	Intrauterine insemination without superovulation using donor sperm
+LRPCD_IVF	v4.8	OPCS	Q138	Other specified introduction of gametes into uterine cavity
+LRPCD_IVF	v4.8	OPCS	Q139	Unspecified introduction of gametes into uterine cavity
+LRPCD_IVF	v4.8	OPCS	Q21	Other introduction of gametes into uterine cavity
+LRPCD_IVF	v4.8	OPCS	Q211	Transmyometrial transfer of embryo to uterus
+LRPCD_IVF	v4.8	OPCS	Q218	Other specified other introduction of gametes into uterine cavity
+LRPCD_IVF	v4.8	OPCS	Q219	Unspecified other introduction of gametes into uterine cavity
+LRPCD_IVF	v4.8	OPCS	Q382	Endoscopic injection into fallopian tube
+LRPCD_IVF	v4.8	OPCS	Q383	Endoscopic intrafallopian transfer of gametes
+LRPCD_IVF	v4.8	OPCS	Q48	Oocyte recovery
+LRPCD_IVF	v4.8	OPCS	Q481	Endoscopic transurethral ultrasound directed oocyte recovery
+LRPCD_IVF	v4.8	OPCS	Q482	Endoscopic transvesical oocyte recovery
+LRPCD_IVF	v4.8	OPCS	Q483	Laparoscopic oocyte recovery
+LRPCD_IVF	v4.8	OPCS	Q484	Transvaginal oocyte recovery
+LRPCD_IVF	v4.8	OPCS	Q488	Other specified oocyte recovery
+LRPCD_IVF	v4.8	OPCS	Q489	Unspecified oocyte recovery
+LRPCD_IVF	v4.8	OPCS	Q555	Transvaginal ultrasound examination of female genital tract
+LRPCD_IVF	v4.8	OPCS	Q561	Fertility investigation of female NEC
+LRPCD_IVF	v4.8	OPCS	Q562	Fertiloscopy
+LRPCD_IVF	v4.8	OPCS	X88	High cost reproductive and urinary tract drugs
+LRPCD_IVF	v4.8	OPCS	X888	Other specified high cost reproductive and urinary tract drugs
+LRPCD_IVF	v4.8	OPCS	X889	Unspecified high cost reproductive and urinary tract drugs
+LRPCD_IVF	v4.8	OPCS	Y96	In vitro fertilisation
+LRPCD_IVF	v4.8	OPCS	Y961	In vitro fertilisation with donor sperm
+LRPCD_IVF	v4.8	OPCS	Y962	In vitro fertilisation with donor eggs
+LRPCD_IVF	v4.8	OPCS	Y963	In vitro fertilisation with intracytoplasmic sperm injection
+LRPCD_IVF	v4.8	OPCS	Y964	In vitro fertilisation with intracytoplasmic sperm injection and donor egg
+LRPCD_IVF	v4.8	OPCS	Y965	In vitro fertilisation with pre-implantation for genetic diagnosis
+LRPCD_IVF	v4.8	OPCS	Y966	In vitro fertilisation with surrogacy
+LRPCD_IVF	v4.8	OPCS	Y968	Other specified in vitro fertilisation
+LRPCD_IVF	v4.8	OPCS	Y969	Unspecified in vitro fertilisation

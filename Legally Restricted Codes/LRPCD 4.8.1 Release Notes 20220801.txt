@@ -1,0 +1,43 @@
+##########################################################
+LEGALLY RESTRICTED PATIENT CONFIDENTIAL DATA 
+
+READ2, CTV3, SNOMED CT, OPCS 4.7 and ICD10 code lists 
+for In Vitro Fertilisation and Assisted Conception (IVF) 
+and Sexually Transmitted Diseases (STD)
+##########################################################
+
+Version 7.0.1 - 1 August 2022
+
+RELEASE NOTES
+
+This release is a minor technical update to the previous v7.0.0 release of 2016.
+
+The Product Status remains TECHNOLOGY PREVIEW.
+
+Changes are restricted to the SNOMED code lists only, to bring these lists back in
+line with their primary design requirement that they should not contain inactive
+SNOMED codes. All lists for READ2, CTV3, ICD and OPCS are unchanged.
+
+All SNOMED codes listed in the preceding version 4.8 of the relevant lists but that
+have since become inactive are therefore removed and replaced with semantically equivalent
+but still active codes (where possible) in the new version 4.8.1. 
+
+Users should therefore continue to identify all inactive SNOMED codes subject to the 
+same legal restrictions by inference from the supplied list of active-only codes, 
+using SNOMED's history mechanisms as per their usual practice when processing any 
+other similar code list specification.
+
+Note that active codes relating to either Assisted Conception or to Sexually Transmitted
+Diseases will NOT be included if they were only released as new SNOMED codes after 2016.
+
+For example:
+
+	838317007 Bursitis caused by late syphilis
+
+..was only released as a SNOMED code in 2020, and so is *still* not listed within the
+LRPCD_STD_v4.8.1_ClusterMembers_SCT_20220801000000 product.
+
+Further LRPCD product major releases will include this kind of more comprehensive content
+review and update, including for the READ2, CTV3, ICD and OPCS lists
+
+.END

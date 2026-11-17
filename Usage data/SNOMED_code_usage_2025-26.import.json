@@ -1,0 +1,132 @@
+{
+  "status": "committed",
+  "verified_at_utc": "2026-10-18T20:25:21.734503+00:00",
+  "server": "SilentPriory\\SQLEXPRESS",
+  "database": "snomedct",
+  "table": "dbo.SNOMED_Usage_Data",
+  "data_period": "2025-26",
+  "source_url": "https://digital.nhs.uk/data-and-information/publications/statistical/mi-snomed-code-usage-in-primary-care/2025-26",
+  "source_file": "O:\\GitHub\\snomed-database-loader\\Usage data\\SNOMED_code_usage_2025-26.txt",
+  "source_sha256": "32db7f2b7153d74c634221a24662281b9770f401f29080234a2b14383465c101",
+  "source_bytes": 11827813,
+  "source_rows": 174909,
+  "inserted_rows": 174909,
+  "verified_rows": 174909,
+  "published_numeric_usage_total": 6548274170,
+  "suppressed_rows": 52686,
+  "suppression_handling": "NHS '*' (1-4 uses) stored as 0, matching existing years; raw file retains '*'.",
+  "historical_periods_unchanged": true,
+  "historical_totals_columns": [
+    "period",
+    "rows",
+    "usage",
+    "active_start",
+    "active_end"
+  ],
+  "historical_totals": [
+    [
+      "2011-12",
+      97342,
+      1711934410,
+      90681,
+      90575
+    ],
+    [
+      "2012-13",
+      100082,
+      1859027340,
+      93265,
+      93187
+    ],
+    [
+      "2013-14",
+      102620,
+      2046438710,
+      95437,
+      95307
+    ],
+    [
+      "2014-15",
+      104485,
+      2270601330,
+      97160,
+      97043
+    ],
+    [
+      "2015-16",
+      106654,
+      2453647550,
+      99101,
+      98912
+    ],
+    [
+      "2016-17",
+      107608,
+      2821295210,
+      99921,
+      99860
+    ],
+    [
+      "2017-18",
+      108182,
+      3031548440,
+      100578,
+      100342
+    ],
+    [
+      "2018-19",
+      102429,
+      3344919600,
+      101451,
+      101399
+    ],
+    [
+      "2019-20",
+      115250,
+      2780852110,
+      113102,
+      113287
+    ],
+    [
+      "2020-21",
+      126306,
+      3744924590,
+      122887,
+      121595
+    ],
+    [
+      "2021-22",
+      146121,
+      4460793360,
+      140684,
+      140086
+    ],
+    [
+      "2022-23",
+      149434,
+      5363586690,
+      142403,
+      141689
+    ],
+    [
+      "2023-24",
+      157454,
+      5829989600,
+      147624,
+      148277
+    ],
+    [
+      "2024-25",
+      158567,
+      6139385480,
+      148144,
+      147515
+    ]
+  ],
+  "stored_procedure_verified": "dbo.GetSNOMEDUsageByPeriod",
+  "stored_procedure_sample_results": {
+    "279991000000102": 440878880,
+    "184103008": 290588230,
+    "423876004": 94457220
+  }
+}

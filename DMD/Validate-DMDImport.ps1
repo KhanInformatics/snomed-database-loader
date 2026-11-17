@@ -3,7 +3,8 @@
 
 param(
     [string]$ServerInstance = "SILENTPRIORY\SQLEXPRESS",
-    [string]$Database = "dmd"
+    [string]$Database = "dmd",
+    [string]$XmlPath
 )
 
 Write-Host "=== DM+D Import Validation ===" -ForegroundColor Cyan
@@ -23,8 +24,7 @@ function Invoke-SqlQuery {
         $result = Invoke-Sqlcmd -ServerInstance $Server -Database $DB -Query $Query -TrustServerCertificate -ErrorAction Stop
         return $result
     } catch {
-        Write-Warning "SQL Query failed: $($_.Exception.Message)"
-        return $null
+        throw "SQL validation query failed: $($_.Exception.Message)"
     }
 }
 
@@ -43,6 +43,25 @@ if ($connectionTest.test -eq 0) {
 }
 
 Write-Host "✅ Database connection successful" -ForegroundColor Green
+
+# Pricing is required. Report zero and missing amounts separately.
+$priceCounts = Invoke-SqlQuery @"
+SELECT 'ampp_price' AS Entity, COUNT(*) AS Total_Records,
+    COUNT(price) AS With_Price, COUNT(CASE WHEN price > 0 THEN 1 END) AS Positive_Price,
+    COUNT(CASE WHEN price = 0 THEN 1 END) AS Zero_Price,
+    COUNT(CASE WHEN price IS NULL THEN 1 END) AS Missing_Price FROM dbo.ampp_price
+UNION ALL
+SELECT 'vmpp_drugtariffinfo', COUNT(*), COUNT(price),
+    COUNT(CASE WHEN price > 0 THEN 1 END), COUNT(CASE WHEN price = 0 THEN 1 END),
+    COUNT(CASE WHEN price IS NULL THEN 1 END) FROM dbo.vmpp_drugtariffinfo;
+"@
+$priceCounts | Format-Table -AutoSize
+if (@($priceCounts | Where-Object { $_.Total_Records -eq 0 }).Count -gt 0) {
+    throw 'Pricing tables are empty. Run StandaloneImports/Import-PackPrices.ps1 with the full release folder.'
+}
+if ($XmlPath) {
+    & (Join-Path $PSScriptRoot 'Validate-PackPrices.ps1') -XmlPath $XmlPath -ServerInstance $ServerInstance -Database $Database | Format-Table -AutoSize
+}
 
 # Check record counts in core tables
 Write-Host "`n📊 Checking record counts..." -ForegroundColor Yellow
@@ -96,7 +115,7 @@ if ($counts) {
     
     # Check if we have reasonable data
     $vtmCount = ($counts | Where-Object { $_.Entity -like "*VTM*" }).Total_Records
-    $vmpCount = ($counts | Where-Object { $_.Entity -like "*VMP*" }).Total_Records
+    $vmpCount = ($counts | Where-Object { $_.Entity -like "VMP (*" }).Total_Records
     
     if ($vtmCount -lt 100) {
         Write-Warning "⚠️  Low VTM count ($vtmCount). Expected several thousand VTMs."
@@ -117,6 +136,22 @@ if ($counts) {
 Write-Host "`n🔗 Checking referential integrity..." -ForegroundColor Yellow
 
 $integrityChecks = @(
+    @{
+        Name = "AMPP prices with invalid pack references"
+        Query = "SELECT COUNT(*) as count FROM dbo.ampp_price p LEFT JOIN dbo.ampp a ON a.appid = p.appid WHERE a.appid IS NULL"
+    },
+    @{
+        Name = "VMPP tariffs with invalid pack references"
+        Query = "SELECT COUNT(*) as count FROM dbo.vmpp_drugtariffinfo p LEFT JOIN dbo.vmpp v ON v.vppid = p.vppid WHERE v.vppid IS NULL"
+    },
+    @{
+        Name = "Unknown AMPP price basis codes"
+        Query = "SELECT COUNT(*) as count FROM dbo.ampp_price p WHERE NOT EXISTS (SELECT 1 FROM dbo.lookup l WHERE l.type = 'PRICE_BASIS' AND TRY_CONVERT(BIGINT, l.cd) = TRY_CONVERT(BIGINT, p.price_basiscd))"
+    },
+    @{
+        Name = "Unknown VMPP tariff payment categories"
+        Query = "SELECT COUNT(*) as count FROM dbo.vmpp_drugtariffinfo p WHERE NOT EXISTS (SELECT 1 FROM dbo.lookup l WHERE l.type = 'DT_PAYMENT_CATEGORY' AND TRY_CONVERT(BIGINT, l.cd) = TRY_CONVERT(BIGINT, p.pay_catcd))"
+    },
     @{
         Name = "VMPs with invalid VTM references"
         Query = "SELECT COUNT(*) as count FROM vmp v LEFT JOIN vtm t ON v.vtmid = t.vtmid WHERE v.vtmid IS NOT NULL AND t.vtmid IS NULL"
@@ -154,6 +189,8 @@ foreach ($check in $integrityChecks) {
 Write-Host "`n🔍 Checking for duplicate records..." -ForegroundColor Yellow
 
 $duplicateChecks = @(
+    @{ Table = "ampp_price"; Key = "appid" },
+    @{ Table = "vmpp_drugtariffinfo"; Key = "vppid" },
     @{ Table = "vtm"; Key = "vtmid" },
     @{ Table = "vmp"; Key = "vpid" },
     @{ Table = "amp"; Key = "apid" },
@@ -299,6 +336,9 @@ Database: $Database
 Record Counts:
 $($counts | Out-String)
 
+Pack Pricing Counts:
+$($priceCounts | Out-String)
+
 Issues Found:
 - Referential Integrity Issues: $integrityIssues
 - Duplicate Records: $duplicateIssues
@@ -308,3 +348,6 @@ Status: $(if ($integrityIssues -eq 0 -and $duplicateIssues -eq 0) { "PASSED" } e
 
 $validationSummary | Out-File -FilePath $reportFile -Encoding UTF8
 Write-Host "📄 Validation report saved to: $reportFile" -ForegroundColor Cyan
+if ($integrityIssues -gt 0 -or $duplicateIssues -gt 0) {
+    throw "DM+D validation failed: $integrityIssues integrity issues, $duplicateIssues duplicate records."
+}

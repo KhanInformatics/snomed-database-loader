@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "0eD81WJ4A5w=",
+  "success": true,
+  "projectFilePath": "O:\\GitHub\\snomed-database-loader\\outputs\\usage-viewer-fix\\SmokeHarness\\SmokeHarness.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\CodexSandboxOffline\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.17\\microsoft.netcore.app.ref.8.0.17.nupkg.sha512",
+    "C:\\Users\\CodexSandboxOffline\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.17\\microsoft.windowsdesktop.app.ref.8.0.17.nupkg.sha512",
+    "C:\\Users\\CodexSandboxOffline\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.17\\microsoft.aspnetcore.app.ref.8.0.17.nupkg.sha512",
+    "C:\\Users\\CodexSandboxOffline\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.17\\microsoft.netcore.app.host.win-x64.8.0.17.nupkg.sha512"
+  ],
+  "logs": []
+}

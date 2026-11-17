@@ -166,9 +166,9 @@ CREATE TABLE vmp_ingredient (
     isid VARCHAR(18) NOT NULL,
     basis_strntcd VARCHAR(10) NULL,
     bs_subid VARCHAR(18) NULL,
-    strnt_nmrtr_val DECIMAL(18,0) NULL,
+    strnt_nmrtr_val DECIMAL(18,5) NULL,
     strnt_nmrtr_uomcd VARCHAR(18) NULL,
-    strnt_dnmtr_val DECIMAL(18,0) NULL,  
+    strnt_dnmtr_val DECIMAL(18,5) NULL,
     strnt_dnmtr_uomcd VARCHAR(18) NULL,
     PRIMARY KEY (vpid, isid),
     FOREIGN KEY (vpid) REFERENCES vmp(vpid),
@@ -231,6 +231,30 @@ CREATE TABLE gtin (
 );
 
 -- =====================================================
+-- PACK PRICES AND DRUG TARIFF
+-- Keep these definitions aligned with Ensure-PackPriceSchema.sql.
+-- Amounts are stored exactly as supplied; NULL and zero are distinct.
+-- =====================================================
+
+CREATE TABLE dbo.ampp_price (
+    appid VARCHAR(18) NOT NULL PRIMARY KEY,
+    price BIGINT NULL,
+    pricedt DATE NULL,
+    price_prev BIGINT NULL,
+    price_basiscd VARCHAR(10) NOT NULL,
+    CONSTRAINT FK_ampp_price_ampp FOREIGN KEY (appid) REFERENCES dbo.ampp(appid)
+);
+
+CREATE TABLE dbo.vmpp_drugtariffinfo (
+    vppid VARCHAR(18) NOT NULL PRIMARY KEY,
+    pay_catcd VARCHAR(10) NOT NULL,
+    price BIGINT NULL,
+    dt DATE NULL,
+    prevprice BIGINT NULL,
+    CONSTRAINT FK_vmpp_drugtariffinfo_vmpp FOREIGN KEY (vppid) REFERENCES dbo.vmpp(vppid)
+);
+
+-- =====================================================
 -- INDEXES FOR PERFORMANCE
 -- =====================================================
 
@@ -258,6 +282,5 @@ CREATE INDEX IX_dmd_atc_atc_code ON dmd_atc(atc_code);
 CREATE INDEX IX_gtin_gtin ON gtin(gtin);
 
 PRINT 'DM+D database schema created successfully';
-PRINT 'Tables created for 13 core DM+D entities';
-PRINT 'Note: Drug Tariff tables (dt_payment_category, ampp_drugtariffinfo) omitted - not in current data release';
+PRINT 'Tables created for 15 DM+D entities, including AMPP prices and VMPP Drug Tariff';
 PRINT 'Note: SNOMED mapping table (dmd_snomed) omitted - not in current data release';

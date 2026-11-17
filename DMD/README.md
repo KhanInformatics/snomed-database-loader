@@ -61,6 +61,62 @@ dmd_bnf          - BNF code mappings
 dmd_atc          - ATC code mappings  
 dmd_snomed       - SNOMED CT mappings
 gtin             - Global Trade Item Numbers
+ampp_price       - AMPP price, date, previous price and price basis (key: appid)
+vmpp_drugtariffinfo - VMPP tariff price, date, previous price and category (key: vppid)
+```
+
+### Pack prices and Drug Tariff
+
+`StandaloneImports/Run-AllImports.ps1` imports both pricing sections after packs
+and lookups. `Import-PackPrices.ps1` can also upgrade an existing database without
+recreating it:
+
+```powershell
+$release = 'C:\DMD\CurrentReleases\nhsbsa_dmd_9.0.0_20260907000001' # choose your full release
+.\StandaloneImports\Import-PackPrices.ps1 -XmlPath $release -ServerInstance 'SILENTPRIORY\SQLEXPRESS' -DatabaseName dmd
+.\Validate-PackPrices.ps1 -XmlPath $release -ServerInstance 'SILENTPRIORY\SQLEXPRESS' -Database dmd
+```
+
+The importer creates missing tables using `Ensure-PackPriceSchema.sql`, then
+refreshes both tables in one transaction. It updates existing IDs and removes
+pricing rows absent from the supplied full snapshot. Both sources must be present
+and nonempty; duplicate IDs, malformed values, missing parent packs and unknown
+lookup codes fail the import. A failure rolls back both pricing tables.
+
+Amounts retain the XML integer values. Zero and SQL `NULL` are distinct; a zero
+price must not be assumed to mean a free pack. Interpret AMPP `price_basiscd`
+using `lookup.type = 'PRICE_BASIS'`, and tariff `pay_catcd` using
+`lookup.type = 'DT_PAYMENT_CATEGORY'`. Each table stores the current supplied
+snapshot and its supplied previous-price field, not a complete price history.
+
+The exact validator compares **every field and row in both directions**, and
+throws on missing tables, stale prices or extra/missing records. It checks pack
+references and lookup codes too. The release checker runs it before saving
+`LastImportedRelease.json`; the weekly orchestrator also runs it on weeks with no
+new release and includes both pricing tables in row counts and changes. A failed
+pricing check marks the weekly result failed. To add pricing to an older database,
+run the standalone import above once using its already-loaded release.
+
+Validation stages pack IDs in a unique clustered index and compares ordered
+rows, including NULL values, without hashing entire releases. This avoids large
+query-memory grants on SQL Server Express under memory pressure. SQL failures
+name the affected table and operation; the 180-second timeout remains bounded.
+
+`Validate-DMDImport.ps1` includes pricing counts, zero/missing amounts and
+referential checks. Add `-XmlPath $release` for the full XML comparison.
+
+Example joins (raw source amounts):
+
+```sql
+SELECT a.appid, a.nm, p.price, p.pricedt, p.price_prev, l.descr AS price_basis
+FROM dbo.ampp a
+JOIN dbo.ampp_price p ON p.appid = a.appid
+LEFT JOIN dbo.lookup l ON l.type = 'PRICE_BASIS' AND l.cd = p.price_basiscd;
+
+SELECT v.vppid, v.nm, t.price, t.dt, t.prevprice, l.descr AS payment_category
+FROM dbo.vmpp v
+JOIN dbo.vmpp_drugtariffinfo t ON t.vppid = v.vppid
+LEFT JOIN dbo.lookup l ON l.type = 'DT_PAYMENT_CATEGORY' AND l.cd = t.pay_catcd;
 ```
 
 ## Complete Workflow

@@ -1,0 +1,1560 @@
+READ_CODE|TERM_60|TERM_ID|DESC_TYPE|RELEASE
+XaE6O|Attacks of floppiness|YaeMS|P|1999-03-01
+XaE6P|Attacks of rigidity|YaeMT|P|1999-03-01
+XaEHy|Observations of seizure|Yaea9|P|1999-03-01
+XaEHz|Seizure|Y7CBb|P|1999-03-01
+XaEI2|Fits - convulsions|YaeaD|P|1999-03-01
+XaEI0|Observations of measures of seizures|YaeaB|P|1999-03-01
+XaEI1|Duration of seizure|YaeaC|P|1999-03-01
+XaEEn|Loss of visual fusion|YaeWF|P|1999-03-01
+XaECL|Ocular muscle balance|Y7CMn|P|1999-03-01
+XaEEN|Laryngeal joint observation|YaeVp|P|1999-03-01
+XaE7v|Squamous metaplasia of lung|YaeOK|P|1999-03-01
+XaEI6|Route of breathing|YaeaH|P|1999-03-01
+XaEI7|Nose breathing|YaeaI|P|1999-03-01
+Xa4NK|Deep breathing|YaQrz|P|1999-03-01
+XaEFM|Peak flow rate|Y7GFc|P|1999-03-01
+XaEFM|PFR - Peak flow rate|Y7GFd|S|1999-03-01
+XE2wr|Peak expiratory flow rate|Y7GFb|P|1999-03-01
+XE2wr|PEF - Peak expiratory flow rate|Y7GFf|S|1999-03-01
+XE2wr|PEFR - Peak expiratory flow rate|Y7GFg|S|1999-03-01
+XaEGA|Peak expiratory flow rate after bronchodilation|Y7GFs|P|1999-03-01
+XaEGA|PEFR after bronchodilation|YMHOz|S|1999-03-01
+XaEHe|Peak expiratory flow rate before bronchodilation|Y7GFu|P|1999-03-01
+XaEHe|PEFR - Peak flow rate before bronchodilation|Yaal9|S|1999-03-01
+XaEFL|Expected peak expiratory flow rate|Y7GFi|P|1999-03-01
+XE2wt|Expected peak flow rate|Y7GFh|P|1999-03-01
+XE2xQ|Peak flow rate before bronchodilation|Y7GFt|P|1999-03-01
+XE2xQ|PFR - Peak flow rate before bronchodilation|YaalA|S|1999-03-01
+XE2ws|Peak flow rate after bronchodilation|Y7GFr|P|1999-03-01
+XaEFx|Respiratory percentage|YaeXp|P|1999-03-01
+XaEFy|FEV1/FVC percent|YaeXx|P|1999-03-01
+XaEFz|Percent predicted FEV1|YaeXy|P|1999-03-01
+XaECk|ECG observations|YaeTk|P|1999-03-01
+XaEF7|Gestation <24 weeks|YaeWa|P|1999-03-01
+XaEF8|Gestation = 24 weeks|YaeWb|P|1999-03-01
+XaEF9|Gestation >24 weeks|YaeWc|P|1999-03-01
+XaEFA|Full term gestation - 40 weeks|YaeWd|P|1999-03-01
+XaEE8|Uterine membrane observations|YaeVZ|P|1999-03-01
+XaEE9|Number of membranes present|YaeVa|P|1999-03-01
+XaEEB|Observation of digit of hand|YaeVe|P|1999-03-01
+XaEED|Observation of thumb|YaeVg|P|1999-03-01
+XaEEC|Observation of finger|YaeVf|P|1999-03-01
+XaEEr|Butterfly rash|YaeWJ|P|1999-03-01
+XaE6Q|Language not recorded|YaeMU|P|1999-03-01
+XaE4A|Vietnamese|YaeK2|P|1999-03-01
+XaEEy|Bullied at school|YaeWQ|P|1999-03-01
+XE2wv|Haemoglobin S level|Ya2Ep|P|1999-03-01
+XE2wu|Burr cell|Y7FDz|P|1999-03-01
+XE2xZ|Gastrointestinal hormone level|Y7FcR|P|1999-03-01
+XE2xZ|GI - Gastrointestinal hormone level|Y7FcS|S|1999-03-01
+XE2xa|Serum gastrin level|Y7FcY|P|1999-03-01
+XE2xb|Serum pancreatic polypeptide level|Y7FcW|P|1999-03-01
+XE2xX|Serum ACTH level|Y7Fch|P|1999-03-01
+XE2xY|Serum aldosterone level|Y7Fcj|P|1999-03-01
+XE2xW|Serum cortisol level|Y7Fcn|P|1999-03-01
+XE2xV|Serum growth hormone level|Y7Fcs|P|1999-03-01
+XE2xc|Serum parathyroid hormone level|Y7FdT|P|1999-03-01
+XE2wy|Thyroid stimulating hormone level|Y7Fdb|P|1999-03-01
+XE2wy|TSH - Thyroid stimulating hormone level|Y7Fdc|S|1999-03-01
+XE2wx|Thyroxine binding globulin level|Y7Fgz|P|1999-03-01
+XE2wx|TBG - Thyroxine binding globulin level|Y7Fh0|S|1999-03-01
+XE2wx|TBG - Thyroid binding globulin level|Ya0vb|S|1999-03-01
+XaE6I|Genetic observations|YaeMK|P|1999-03-01
+XaE6J|Karyotype|YaeML|P|1999-03-01
+XaE6i|Normal genetic findings|YaeMp|P|1999-03-01
+XaE6j|Karyotype 46, XY|YaeMq|P|1999-03-01
+XaE6k|Karyotype 46, XX|YaeMr|P|1999-03-01
+XaEGD|Burr cells present|Ya6aj|P|1999-03-01
+XaE4o|Dilated fundoscopy normal|YaeKj|P|1999-03-01
+XaEFX|Hearing test abnormal|YaeXE|P|1999-03-01
+XaEF6|VQ scan normal|YaeWZ|P|1999-03-01
+XaEF0|Colonoscopy normal|YaeWS|P|1999-03-01
+XaEF1|Colonoscopy abnormal|YaeWT|P|1999-03-01
+XaEEz|Colonoscopy equivocal|YaeWR|P|1999-03-01
+XaEFR|Child examination interpretation|YaeX0|P|1999-03-01
+XaEFS|Antenatal screening interpretation|YaeX1|P|1999-03-01
+XaEFE|No recurrence of problem|YaeWi|P|1999-03-01
+XE2ww|Hepatitis B immune|Y7FU4|P|1999-03-01
+XaEGC|Hepatitis B antibody present|Ya2Ml|P|1999-03-01
+XaEGX|Encephalitis due to influenza-specific virus not identified|YabYA|P|1999-03-01
+XaEI4|Myelitis|Y00Da|P|1999-03-01
+XaEI5|Encephalomyelitis|Y00Db|P|1999-03-01
+XaE74|Senile dementia of the Lewy body type|Y00HN|P|1999-03-01
+XaEIj|Epileptic seizure|Ya4aT|P|1999-03-01
+XaE6C|Idiopathic optic disc swelling|YaeMA|P|1999-03-01
+XaE6b|Optic neuropathy|YaeMi|P|1999-03-01
+XaE6E|Infiltrative optic neuropathy|YaeMC|P|1999-03-01
+XaE6B|Inherited optic neuropathy|YaeM9|P|1999-03-01
+XaE6D|Compressive optic atrophy|YaeMB|P|1999-03-01
+XaEGq|Stroke NOS|YMJA2|P|1999-03-01
+XaEGK|Transient ischaemic attacks|YMLRu|P|1999-03-01
+XaEIg|Non-traumatic spinal subdural haematoma|YaebA|P|1999-03-01
+XaEIh|Subdural haemorrhage|Ya1As|P|1999-03-01
+XaEG0|Dysmorphophobia|Y50cm|P|1999-03-01
+XaEFB|Chronic post-traumatic stress disorder|YaeWe|P|1999-03-01
+XaEGV|Malignant neoplasm of upper eyelid|YaeYC|P|1999-03-01
+XaEGW|Malignant neoplasm of lower eyelid|YaeYD|P|1999-03-01
+XaEGZ|Ulcer of eyelid|YaeYG|P|1999-03-01
+XaE62|Progressive outer retinal necrosis|YaeM0|P|1999-03-01
+XaE64|Syphilitic chorioretinitis|YaeM2|P|1999-03-01
+XaE6R|Congenital syphilitic chorioretinitis|YaeMV|P|1999-03-01
+XaE6S|Tertiary syphilitic chorioretinitis|YaeMW|P|1999-03-01
+XaE5x|Sarcoid chorioretinitis|YaeLv|P|1999-03-01
+XaE61|Idiopathic retinitis|YaeLz|P|1999-03-01
+XaE60|Idiopathic choroiditis|YaeLy|P|1999-03-01
+XaE6M|Punctate inner choroidopathy|YaeMP|P|1999-03-01
+XaE5v|Multifocal inner choroiditis|YaeLt|P|1999-03-01
+XaE5w|Acute local occult outer retinopathy|YaeLu|P|1999-03-01
+XaE6T|Central serous chorioretinopathy|YaeMZ|P|1999-03-01
+XaE6H|Acute central serous chorioretinopathy|YaeMG|P|1999-03-01
+XaE5q|Chronic central serous chorioretinopathy|YaeMF|P|1999-03-01
+XaE5r|Inactive central serous chorioretinopathy|YaeLp|P|1999-03-01
+XaE6U|Variant central serous chorioretinopathy|YaeMa|P|1999-03-01
+XaE6N|Multiple evanescent white dot syndrome|YaeMQ|P|1999-03-01
+XaE6N|MEWDS - Multiple evanescent white dot syndrome|YaeMR|S|1999-03-01
+XaE5i|Choroidal dystrophy|YaeLg|P|1999-03-01
+XaE5u|Bietti's crystalline retinopathy|YaeLs|P|1999-03-01
+XaE7W|Chorioretinal vascular disorder|YaeNp|P|1999-03-01
+XaE5g|Choroidal ischaemia|YaeLe|P|1999-03-01
+XaE5f|Nerve fibre layer infarct|YaeLd|P|1999-03-01
+XaE7X|Idiopathic polypoidal choroidal vasculopathy|YaeNq|P|1999-03-01
+XaE5V|Severe non proliferative diabetic retinopathy|YaeLT|P|1999-03-01
+XaE5T|Mild non proliferative diabetic retinopathy|YaeLR|P|1999-03-01
+XaE5U|Moderate non proliferative diabetic retinopathy|YaeLS|P|1999-03-01
+XaE5Z|Proliferative diabetic retinopathy - iris neovascularisation|YaeLX|P|1999-03-01
+XaE5Y|Proliferative diabetic retinopathy - quiescent|YaeLW|P|1999-03-01
+XaE5X|Proliferative diabetic retinopathy - high risk|YaeLV|P|1999-03-01
+XaE5W|Proliferative diabetic retinopathy - non high risk|YaeLU|P|1999-03-01
+XaE5e|Peripheral retinal telangiectatic mass|YaeLc|P|1999-03-01
+XaE6V|Chloroquine retinopathy|YaeMb|P|1999-03-01
+XaE6W|Desferrioxamine retinopathy|YaeMc|P|1999-03-01
+XaE6a|Methanol retinopathy|YaeMg|P|1999-03-01
+XaE6X|Quinine retinopathy|YaeMd|P|1999-03-01
+XaE6Y|Tamoxifen retinopathy|YaeMe|P|1999-03-01
+XaE6Z|Thioridazine retinopathy|YaeMf|P|1999-03-01
+XaE6A|Melanoma associated retinopathy|YaeM8|P|1999-03-01
+XaE69|Carcinoma associated retinopathy|YaeM7|P|1999-03-01
+XaE5o|Uveitis related cystoid macular oedema|YaeMH|P|1999-03-01
+XaE5m|Autosomal dominant cystoid macular oedema|YaeMI|P|1999-03-01
+XaE5l|Postoperative cystoid macular oedema|YaeMJ|P|1999-03-01
+XaE7T|Central retinal vein occlusion - ischaemic|YaeNj|P|1999-03-01
+XaE7U|Central retinal vein occlusion - non-ischaemic|YaeNk|P|1999-03-01
+XaE7V|Macular disorder|YaeNo|P|1999-03-01
+XaE5d|Ischaemic maculopathy|YaeLb|P|1999-03-01
+XaE5c|Diabetic macular oedema|YaeLa|P|1999-03-01
+XaE5b|Clinically significant macular oedema|YaeLZ|P|1999-03-01
+XaE5j|Macular dystrophy|YaeLh|P|1999-03-01
+XaE5s|North Carolina macular dystrophy|YaeLq|P|1999-03-01
+XaE5t|Basal laminar drusen|YaeLr|P|1999-03-01
+XaE5N|Fibrovascular macular scar|YaeLL|P|1999-03-01
+XaE5J|Myopic macular degeneration|YaeLH|P|1999-03-01
+XaE5I|Macular traction syndrome|YaeLG|P|1999-03-01
+XaE5Q|Vitreomacular traction syndrome|YaeLO|P|1999-03-01
+XaE5R|Macular pseudohole|YaeLP|P|1999-03-01
+XaE7Y|Acute macular neuroretinitis|YaeNr|P|1999-03-01
+XaE5h|Cone dystrophy|YaeLf|P|1999-03-01
+XaE7Z|Rod dystrophy|YaeNs|P|1999-03-01
+XaE6L|Retinal pigment epithelial adenocarcinoma|YaeMO|P|1999-03-01
+XaE67|Combined hamartoma of retina|YaeM5|P|1999-03-01
+XaE66|Cavernous haemangioma of retina|YaeM4|P|1999-03-01
+XaE65|Capillary haemangioma of retina|YaeM3|P|1999-03-01
+XaE5a|Diabetic vitreous haemorrhage|YaeLY|P|1999-03-01
+XaE6G|Terson's syndrome|YaeME|P|1999-03-01
+XaEEX|Near esotropia|YaeVz|P|1999-03-01
+XaEEY|Distance esotropia|YaeW0|P|1999-03-01
+XaEEZ|Cyclic esotropia|YaeW1|P|1999-03-01
+XaEEc|Near exotropia|YaeW4|P|1999-03-01
+XaEEb|Distance exotropia|YaeW3|P|1999-03-01
+XaEEa|Pseudostrabismus|YaeW2|P|1999-03-01
+XaEEg|Inferior oblique underaction|YaeW8|P|1999-03-01
+XaEEf|Medial rectus underaction|YaeW7|P|1999-03-01
+XaEEe|Inferior rectus underaction|YaeW6|P|1999-03-01
+XaEEd|Superior rectus underaction|YaeW5|P|1999-03-01
+XaEJ9|Accommodative inertia|Y028p|P|1999-03-01
+XaEJ8|Accommodative fatigue|Y028n|P|1999-03-01
+XaEEl|Macular displacement|YaeWD|P|1999-03-01
+XaEEm|Functional visual loss|YaeWE|P|1999-03-01
+Ua1ez|Painful blind eye|YMFzp|P|1999-03-01
+XaE6s|Acquired blindness, both eyes|YaeN4|P|1999-03-01
+XaE6t|Acquired blindness, one eye|YaeN5|P|1999-03-01
+XaE68|Ocular lymphoma|YaeM6|P|1999-03-01
+XaEGb|Nasal septal adhesions|YaeYK|P|1999-03-01
+XaEIW|Moderate chronic obstructive pulmonary disease|Yaeaz|P|1999-03-01
+XaEIY|Severe chronic obstructive pulmonary disease|Yaeb2|P|1999-03-01
+XaEIV|Mild chronic obstructive pulmonary disease|Yaeay|P|1999-03-01
+XaEGa|Varicose vein of leg with phlebitis|YaeYI|P|1999-03-01
+XaE6u|Oesophageal varices NOS|YaeN6|P|1999-03-01
+XE2xB|Secondary and unspecified malignant neoplasm of lymph nodes|Y7Jwu|P|1999-03-01
+XaEHi|Other postsurgical nonabsorption|YMK9j|P|1999-03-01
+XaE5E|Disorder of ileum|YaeLC|P|1999-03-01
+XaEGc|Anal tightness|YaeYL|P|1999-03-01
+XaEJ4|Cap polyp|Y30Gp|P|1999-03-01
+XaEJ5|Rectal intussusception|Yaebg|P|1999-03-01
+XaEJ6|Internal intussusception of rectum|Y30Gm|P|1999-03-01
+XaEJ7|Inflammatory cloacogenic polyp|Y30Go|P|1999-03-01
+XE2xj|Adenomatous polyposis coli|Y7GyD|P|1999-03-01
+XE2xj|Familial polyposis coli|Y7GyF|S|1999-03-01
+XE2xj|Familial adenomatous polyposis|Y7GyG|S|1999-03-01
+XE2xj|Polyposis coli|Y7GyJ|S|1999-03-01
+XE2xj|FPC - Familial polyposis coli|Y7GyK|S|1999-03-01
+XE2xj|Adenomatous polyposis|Y7GyM|S|1999-03-01
+XE2xj|APC - Adenomatous polyposis coli|Y7GyL|S|1999-03-01
+XE2xj|FAP - Familial adenomatous polyposis|Y7GyN|S|1999-03-01
+XaEDW|Gardner's syndrome|Y7GyH|P|1999-03-01
+XaEDW|GS - Gardner's syndrome|Y7GyI|S|1999-03-01
+XaEJ2|Turcot's syndrome|Yaebd|P|1999-03-01
+XaE6v|Bile duct calculus NOS|YaeN7|P|1999-03-01
+XaE6p|Microalbuminuria|YaeN0|P|1999-03-01
+XaEHo|Fourchette tear during delivery|Yaea0|P|1999-03-01
+XaEHn|Labial tear during delivery|YaeZz|P|1999-03-01
+XaEHq|Vulval tear during delivery|Yaea3|P|1999-03-01
+XaE7p|Anhydramnios|YaeO9|P|1999-03-01
+XaE6o|Preterm premature rupture of membranes|YaeMz|P|1999-03-01
+XaE6o|PPROM - Preterm premature rupture of membranes|Y40rb|S|1999-03-01
+XaEI3|Anaemia during the puerperium|YaeaE|P|1999-03-01
+XaE71|Maternal care for fetal decelerations during pregnancy|YaeND|P|1999-03-01
+XaE73|Maternal care for fetal acidosis during pregnancy|YaeNF|P|1999-03-01
+XaE72|Maternal care for fetal tachycardia during pregnancy|YaeNE|P|1999-03-01
+XaE6r|Maternal care for fetal bradycardia during pregnancy|YaeN2|P|1999-03-01
+XaE6r|Maternal care for reduced fetal heart rate during pregnancy|YaeN3|S|1999-03-01
+XaE6w|Other abnormal uterine and vaginal bleeding|YaeN8|P|1999-03-01
+XaE6x|Abnormal uterine bleeding unrelated to menstrual cycle|YaeN9|P|1999-03-01
+XaE6y|Abnormal uterine bleeding, unspecified|YaeNA|P|1999-03-01
+XaE6z|Abnormal vaginal bleeding, unspecified|YaeNB|P|1999-03-01
+XaE70|Abnormal uterine and vaginal bleeding, unspecified|YaeNC|P|1999-03-01
+XaE47|Alpha-2-antitrypsin deficiency|YaeJy|P|1999-03-01
+XaEGL|Hand warts|YaYAj|P|1999-03-01
+XE2xh|Phthiriasis pubis|Y71fZ|P|1999-03-01
+XE2xh|Phthirus pubis - pubic lice|Y71fa|S|1999-03-01
+XE2xh|Pediculosis pubis|Y71fb|S|1999-03-01
+XE2xh|Crabs - pubic lice|YMGxj|S|1999-03-01
+XE2xh|Pediculus pubis - pubic lice|YMJxe|S|1999-03-01
+XE2xh|Pubic louse infestation|YaebI|S|1999-03-01
+XE2xh|Crabs infestation|YaebH|S|1999-03-01
+XaEGM|Cafe-au-lait spot|Y7Ib0|P|1999-03-01
+XaEGU|Malignant melanoma of chest wall|YaeYB|P|1999-03-01
+XaEGj|Contusion of sacral region|YaeYT|P|1999-03-01
+XaEGh|Open wound of chin|YaeYR|P|1999-03-01
+XaEGf|Localised, primary osteoarthritis of elbow|YaeYO|P|1999-03-01
+XaEGd|Localised, primary osteoarthritis of the wrist|YaeYM|P|1999-03-01
+XaEGe|Localised, primary osteoarthritis of toe|YaeYN|P|1999-03-01
+XaEI8|Degeneration of lateral meniscus|YaeaL|P|1999-03-01
+XE2xd|Aberrant intrinsic muscles of hand|Y7IDl|P|1999-03-01
+XaE5D|Osteopenia|Ya3du|P|1999-03-01
+XaE48|Neonatal respiratory tract haemorrhage|YaeJz|P|1999-03-01
+XaE49|Neonatal tracheobronchial haemorrhage|YaeK1|P|1999-03-01
+XaE6l|Neonatal extracranial head trauma|YaeMs|P|1999-03-01
+XaEGg|Fetus/newborn affected maternal use of antihypertensive drug|YaeYQ|P|1999-03-01
+XaEJ0|Meth resist stap aureus cause disease class other chapters|Yaeba|P|1999-03-01
+XE2x9|Herpes zoster infection|Y71SS|P|1999-03-01
+XE2x9|Shingles|Y71ST|S|1999-03-01
+XE2xT|Echovirus disease|Y71ZK|P|1999-03-01
+XE2xT|Echovirus infection|YMGxR|S|1999-03-01
+XE2xf|Head louse infestation|YaebD|P|1999-03-01
+XE2xf|Pediculus capitis - head lice|Y71zy|S|1999-03-01
+XE2xf|Head lice infestation|YaebS|S|1999-03-01
+XE2xf|Pediculus capitis infestation|YaebR|S|1999-03-01
+XE2xf|Nits - head lice|YMJxd|S|1999-03-01
+XE2xf|Lousy hair|YMGUF|S|1999-03-01
+XE2xf|Lice infested hair|YMGUG|S|1999-03-01
+XE2xf|Nits|Y71zz|S|1999-03-01
+XE2xf|Nit infested hair|YMGUH|S|1999-03-01
+XE2xg|Body louse infestation|YaebE|P|1999-03-01
+XE2xg|Pediculus corporis - body lice|Y7201|S|1999-03-01
+XaEBI|Metal nail wound|YaeRz|P|1999-03-01
+XaE75|Analgesic poisoning, NEC|YaeNI|P|1999-03-01
+XaE76|Antipyretic poisoning, NEC|YaeNJ|P|1999-03-01
+XaEFu|Physical abuse|YaeXl|P|1999-03-01
+XaEFv|Emotional abuse|YaeXm|P|1999-03-01
+XaEIZ|Benign neoplasm of nose|YMILD|P|1999-03-01
+XE2xD|Carcinoma in situ tumour|Y7Jy1|P|1999-03-01
+XE2xD|Carcinoma in situ|Y7Gu8|S|1999-03-01
+XE2xD|CIS - Carcinoma in situ|YaR9G|S|1999-03-01
+XE2xA|Carcinoma in situ of liver and biliary system|Y7K13|P|1999-03-01
+XE2xC|Benign neoplasm of liver and biliary ducts|Y7K9L|P|1999-03-01
+XaDjY|Floating-Harbor syndrome|Yadg6|P|1999-03-01
+XaEHj|Subfertility|YMKAu|P|1999-03-01
+XaEGY|Late effects of infectious disease NOS|YaeYF|P|1999-03-01
+XaEHr|Breakage of joint prosthesis|Yaea4|P|1999-03-01
+XaEHr|Fracture of prosthetic joint component|Ya3Ra|S|1999-03-01
+XE2xe|Breakage of prosthesis|Y70vZ|P|1999-03-01
+XaEIX|Percutaneous sacral nerve evaluation|Yaeb1|P|1999-03-01
+XaE7s|First treatment in a course of electroconvulsive therapy|YaeOF|P|1999-03-01
+XaE7t|Subsequent treatment in course of electroconvulsive therapy|YaeOG|P|1999-03-01
+XaECO|Faradic nerve stimulation to elbow|YaeTO|P|1999-03-01
+XaECP|Faradic nerve stimulation to wrist|YaeTP|P|1999-03-01
+XaECQ|Faradic nerve stimulation to hand|YaeTQ|P|1999-03-01
+XaEHQ|Astigmatic keratotomy|YaeZX|P|1999-03-01
+XaEHQ|AK - Astigmatic keratotomy|YaeZY|S|1999-03-01
+XaE6d|Laser assisted in situ keratomileusis|YaeMk|P|1999-03-01
+XaE6n|Viscocanulostomy|YaeMx|P|1999-03-01
+XaE6n|Stegman procedure|YaeMy|S|1999-03-01
+XaEId|Bilateral antral washout|Yaeb7|P|1999-03-01
+XaEId|BAWO - Bilateral antral washouts|Ya2Q0|S|1999-03-01
+XaEIy|Peritonsillar abscess drained|YaebX|P|1999-03-01
+XaEIy|Quinsy drained|YaebW|S|1999-03-01
+XaEIx|Peritonsillar abscess/quinsy drainage (& done)|YaebV|P|1999-03-01
+XaEIx|Peritonsillar abscess drainage|YMKfn|S|1999-03-01
+XaEIx|Quinsey drained|YMLLn|S|1999-03-01
+XaEIx|Peritonsillar abs.drain|YMLLm|S|1999-03-01
+XaEIw|Retropharyngeal abscess drained|YaebU|P|1999-03-01
+XaEF3|Injection of Teflon into vocal cord|Y02jg|P|1999-03-01
+XaEIo|Vocal cords stripped|YMKfu|P|1999-03-01
+XaEIp|Vocal cord strip (& done)|YaebN|P|1999-03-01
+XaEIp|Cord - vocal - strip|YMIzR|S|1999-03-01
+XaEIp|Vocal cords stripped|YMKfu|S|1999-03-01
+XaEIp|Vocal cord strip|YMIzS|S|1999-03-01
+XaE3n|Biopsy of bronchus|YaeJd|P|1999-03-01
+XaEDS|Component of vascular procedure|YaeUX|P|1999-03-01
+XaEDT|Placement of vein cuff|YaeUY|P|1999-03-01
+XaEAp|Application of dental fluoride varnish|YaeRO|P|1999-03-01
+XaEBD|Fit orthodontic space maintainer|YaeRm|P|1999-03-01
+XaEFJ|Replacement of feeding gastrostomy|YaeWq|P|1999-03-01
+XaE6K|Transplantation of small intestine|YaeMM|P|1999-03-01
+XaE6K|Small bowel transplant|YaeMN|S|1999-03-01
+XaEHl|Manual evacuation of faeces from rectum|Y21or|P|1999-03-01
+XaE9T|Donor renal transplantation|YaePx|P|1999-03-01
+XE2xi|Percutaneous nephrostomy|Y30hL|P|1999-03-01
+XE2xi|PCN - Percutaneous nephrostomy|Y30hM|S|1999-03-01
+XaEGx|Percutaneous insertion of nephrostomy tube|Y30hN|P|1999-03-01
+XaEIr|Spermatic cord lesion excised|YMKi9|P|1999-03-01
+XaEIu|Bartholin's gland drained|YMLNF|P|1999-03-01
+XaEIv|Bartholin's gland drain (& done)|YaebT|P|1999-03-01
+XaEIv|Bartholin's gland drain|YMJ0m|S|1999-03-01
+XaEIv|Bartholin's gland drained|YMLNF|S|1999-03-01
+XaEIt|Vulval haematoma evacuated|YMLNT|P|1999-03-01
+XaE6e|Excision of granulation tissue of vagina|YaeMl|P|1999-03-01
+XaEFG|Endometrial balloon ablation|YaeWl|P|1999-03-01
+XaEIn|Ovarian adhesions freed|YMLN0|P|1999-03-01
+XaE7r|Endoscopic reconstruction of breast with expander|YaeOE|P|1999-03-01
+XaEIs|Chest wall lesion excised|YMLLu|P|1999-03-01
+XaEIq|Diaphragm lesion excised|YMKg0|P|1999-03-01
+XaEIq|Diaphragm lesion resected|YMIzY|S|1999-03-01
+XaE6g|Excision biopsy of skin lesion|YaeMn|P|1999-03-01
+XaE6f|Excision biopsy of lesion of skin of head or neck|YaeMm|P|1999-03-01
+XE2xR|Mucosal flap operation|YaeYh|P|1999-03-01
+XaE9M|Nail care procedure|YaePq|P|1999-03-01
+XaE9N|Nail plate procedure|YaePr|P|1999-03-01
+XaE9O|Nail bed procedure|YaePs|P|1999-03-01
+XaE9Q|Drainage of subungual haematoma|YaePu|P|1999-03-01
+XaEIm|Fascia adhesions freed|YMLNn|P|1999-03-01
+XaEI9|Fixation of fracture using Herbert screw|Y60As|P|1999-03-01
+XaEJD|Closed reduction of intracapsular # NOF internal fixat DHS|Yaebn|P|1999-03-01
+XaEHJ|Injection of hip joint|YaeZI|P|1999-03-01
+XaEHL|Injection of local anaesthetic and steroid into knee joint|YaeZO|P|1999-03-01
+XaEGG|Conversion from prev total pros hip joint replace NEC|YabMX|P|1999-03-01
+XaEGF|Conversion to total prosthetic replacement of hip joint NEC|YabMV|P|1999-03-01
+Xa9wH|Augmentation of periarticular bone|YaYfc|P|1999-03-01
+XaEBN|Augmentation of acetabulum|YM8pP|P|1999-03-01
+XaEBO|Augmentation of femur|YM8pQ|P|1999-03-01
+XaEBP|Augmentation of glenoid|YM8pR|P|1999-03-01
+XaEBQ|Augmentation of humerus|YM8pS|P|1999-03-01
+XaEBR|Augmentation of ulna|YM8pT|P|1999-03-01
+XaEBS|Augmentation of tibia|YM8pU|P|1999-03-01
+XaEBT|Augmentation of talus|YM8pV|P|1999-03-01
+XaEHK|Elevation of leg|YaeZJ|P|1999-03-01
+XaE9z|Solid organ transplant|YaeQW|P|1999-03-01
+XaEFK|Injection of adrenaline|YaeWs|P|1999-03-01
+XaEGT|Subcutaneous injection of hormone antagonist|YabY5|P|1999-03-01
+XaE4h|Taking ear swab|YaeKa|P|1999-03-01
+XaE4g|Taking postnasal swab|YaeKZ|P|1999-03-01
+XaE4i|Taking throat swab|YaeKb|P|1999-03-01
+XaE4j|Taking skin swab|YaeKc|P|1999-03-01
+XaE4k|Taking nasal swab|YaeKd|P|1999-03-01
+XaE4k|Taking nose swab|YaeKe|S|1999-03-01
+XaE45|Taking conjunctival swab|YaeJw|P|1999-03-01
+XaE4f|Taking low vaginal swab|YaeKY|P|1999-03-01
+XaE4b|Taking vulval swab|YaeKU|P|1999-03-01
+XaE4c|Taking penile swab|YaeKV|P|1999-03-01
+XaE4d|Taking cervical swab|YaeKW|P|1999-03-01
+XaE4e|Taking urethral swab|YaeKX|P|1999-03-01
+XaEHO|Pertussis swab|YaeZU|P|1999-03-01
+XaEHP|Respiratory syncytial virus swab|YaeZV|P|1999-03-01
+XaEHP|RSV - Respiratory syncytial virus swab|YaeZW|S|1999-03-01
+XaEGO|Non-surgical biopsy of nerve|YaeYA|P|1999-03-01
+XaE7a|Failed minimum access approach|YaeNt|P|1999-03-01
+XaE59|Pregnancy-related examination|YaeL6|P|1999-03-01
+XaEDz|Provision of removable artificial eye|YaeVM|P|1999-03-01
+XaEE0|Provision of nocturnal bladder warning system|YaeVN|P|1999-03-01
+XaEE0|Provision of enuresis alarm|YaeVO|S|1999-03-01
+XaEE0|Provision of enuretic alarm|YaeVP|S|1999-03-01
+XaEDv|Provision of bespoke shoes|YaeVI|P|1999-03-01
+XaEDw|Provision of comfort shoes|YaeVJ|P|1999-03-01
+XaEDx|Provision of Piedro shoes|YaeVK|P|1999-03-01
+XaEDy|Provision of shoe raise|YaeVL|P|1999-03-01
+XaEAl|Making of appliance|YaeRK|P|1999-03-01
+XaEBK|Prescription of appliance|YaeS2|P|1999-03-01
+Ua059|Fitting of appliance|YMEFy|P|1999-03-01
+XaEBL|Adjustment of appliance|YaeS3|P|1999-03-01
+Ua057|Checking fit of appliance|YMEFw|P|1999-03-01
+Ua1Qf|Postnatal care|YMFlV|P|1999-03-01
+XaEHN|Low dose heparin prophylaxis|YaeZT|P|1999-03-01
+XaE4W|Immunisation against bacterial disease|YaeKO|P|1999-03-01
+XaE4S|Typhoid and paratyphoid vaccination|YaeKK|P|1999-03-01
+XaE4X|Immunisation against viral disease|YaeKP|P|1999-03-01
+XaEFH|First hepatitis A junior vaccination|YaeWm|P|1999-03-01
+XaEFH|1st hepatitis A junior vaccination|YaeWn|S|1999-03-01
+XaEFI|Second hepatitis A junior vaccination|YaeWo|P|1999-03-01
+XaEFI|2nd hepatitis A junior vaccination|YaeWp|S|1999-03-01
+XaE4T|Combined hepatitis A and B vaccination|YaeKL|P|1999-03-01
+XaE4Y|Combined immunisation against bacterial and viral disease|YaeKR|P|1999-03-01
+XaE4U|Haemophilus influenza B, diphtheria, tetanus & polio vaccin|YaeKM|P|1999-03-01
+XaE4V|Diphtheria, tetanus, pertuss, polio & haem influenza B vaccn|YaeKN|P|1999-03-01
+XaEDc|Emergency contraception advice|YaeUm|P|1999-03-01
+XaECT|Electromagnetic energy therapy|YaeTT|P|1999-03-01
+XaEE7|Constant direct current therapy|YaeVY|P|1999-03-01
+XaEE5|Alternating current therapy|YaeVW|P|1999-03-01
+XaEFm|Advice about fluid intake|YaeXb|P|1999-03-01
+XaEDd|Folic acid advice - pre-pregnancy|YaeUn|P|1999-03-01
+XaEFl|Advice about weaning|YaeXa|P|1999-03-01
+XaEDb|Action therapy|YaeUl|P|1999-03-01
+XaEBw|Verbal abuse counselling|YaeSm|P|1999-03-01
+XaEBz|Racial abuse counselling|YaeSp|P|1999-03-01
+XaEBx|Domestic abuse counselling|YaeSn|P|1999-03-01
+XaEBy|Substance abuse counselling|YaeSo|P|1999-03-01
+XaEC1|Phobia counselling|YaeSr|P|1999-03-01
+XaEC0|Crime victim counselling|YaeSq|P|1999-03-01
+XaEC3|HIV counselling|YaeSt|P|1999-03-01
+XaEC2|Eating disorder counselling|YaeSs|P|1999-03-01
+XaEFY|Lifestyle counselling|YaeXF|P|1999-03-01
+XaEC4|Loss counselling|YaeSu|P|1999-03-01
+XaECG|Anxiety counselling|YaeT6|P|1999-03-01
+XaECF|Self-esteem counselling|YaeT5|P|1999-03-01
+XaECE|Relationship counselling|YaeT4|P|1999-03-01
+XaEC6|Homosexuality counselling|YaeSw|P|1999-03-01
+XaEC7|Work-related counselling|YaeSx|P|1999-03-01
+XaEC8|Performance counselling|YaeSy|P|1999-03-01
+XaEC9|Employment counselling|YaeSz|P|1999-03-01
+XaECA|Unemployment counselling|YaeT0|P|1999-03-01
+XaECB|Redundancy counselling|YaeT1|P|1999-03-01
+XaEFh|Advice about child safety|YaeXW|P|1999-03-01
+XaEFi|Advice about physiological functions|YaeXX|P|1999-03-01
+XaEFj|Advice about the menopause|YaeXY|P|1999-03-01
+XaEFn|Advice about posture|YaeXe|P|1999-03-01
+XaEFo|Advice about symptomatic treatment|YaeXf|P|1999-03-01
+XaEFp|Advice about foot care|YaeXg|P|1999-03-01
+XaEFk|Advice about HIV prevention|YaeXZ|P|1999-03-01
+XaE4R|Patient advised about driving|YaeKJ|P|1999-03-01
+XaEFD|Patient given telephone advice out of hours|YaeWg|P|1999-03-01
+XaE3x|Screening for disorder|YaeJn|P|1999-03-01
+XaE3y|Screening at times of life|YaeJo|P|1999-03-01
+XaEES|Spacer device in use|YaeVu|P|1999-03-01
+XaEFw|Removal of pressure garment|YaeXo|P|1999-03-01
+XaEFN|Glucose load test|YaeWt|P|1999-03-01
+XaEGB|Red cell haemoglobin S estimation|Ya2Mb|P|1999-03-01
+XaE7c|Ultrasonic doppler for fetal heart sounds|YaeNv|P|1999-03-01
+XaEBt|Basal body temperature chart|Y7Gr3|P|1999-03-01
+XaEGk|[X]Teicoplanin adverse reaction|YaeYV|P|1999-03-01
+XE2xU|[X]Deoxybarbiturates caus adverse effects in therapeut use|YMBrH|P|1999-03-01
+XaEG1|Accident due to high air pressure from rapid descnt in water|YaeY2|P|1999-03-01
+XaEBj|TNM Ethmoid sinus tumour staging|YaeSO|P|1999-03-01
+XaEDs|TNM Fallopian tube tumour staging|YaeVE|P|1999-03-01
+XaEDu|TNM Gestational trophoblastic tumour staging|YaeVH|P|1999-03-01
+XaE7e|Informing relative of diagnosis|YaeNy|P|1999-03-01
+XaE7f|Informing relative of prognosis|YaeNz|P|1999-03-01
+XaE7g|Informing next of kin of diagnosis|YaeO0|P|1999-03-01
+XaE7h|Informing next of kin of prognosis|YaeO1|P|1999-03-01
+XaE42|Medical records review|YaeJs|P|1999-03-01
+XaE43|Patient review of medical records|YaeJt|P|1999-03-01
+XaEFC|Inappropriate use of out of hours service|YaeWf|P|1999-03-01
+XaE46|Referral to diabetes nurse|YaeJx|P|1999-03-01
+XaEFF|Referral to breast clinic|YaeWj|P|1999-03-01
+XaEF4|MED3 issued - back to work|YaeWX|P|1999-03-01
+XaEDg|Driving licence application signed|YaeUw|P|1999-03-01
+XaE4n|Under care of person|YaeKi|P|1999-03-01
+XaE4t|Attending establishment|YaeKo|P|1999-03-01
+XaE4p|Attending clinic|YaeKk|P|1999-03-01
+XaE4q|Attending diabetes clinic|YaeKl|P|1999-03-01
+XaE4r|Attending ophthalmology clinic|YaeKm|P|1999-03-01
+XaE4D|Patient data refused|YaeK5|P|1999-03-01
+XaE4G|Religion not given - patient refused|YaeK8|P|1999-03-01
+XaE4B|Ethnic group not given - patient refused|YaeK3|P|1999-03-01
+XaEF2|Language not given - patient refused|YaeWV|P|1999-03-01
+XaE4E|Patient data not recorded|YaeK6|P|1999-03-01
+XaE4F|Religion not recorded|YaeK7|P|1999-03-01
+XaE4C|Ethnic group not recorded|YaeK4|P|1999-03-01
+XaEDa|Seen in drug rehabilitation centre|YaeUk|P|1999-03-01
+XaEDZ|Seen in baby clinic|YaeUi|P|1999-03-01
+XaEER|Seen in vascular clinic|YaeVt|P|1999-03-01
+XaEEU|Seen in paediatric surgery clinic|YaeVw|P|1999-03-01
+XaEEV|Seen in hearing aid clinic|YaeVx|P|1999-03-01
+XaE5H|Child exam status - 15 years|YaeLF|P|1999-03-01
+XaEIf|Child exam status - 8 weeks|Yaeb9|P|1999-03-01
+XaEFT|D750 form photocard driving licence|YaeX4|P|1999-03-01
+1zz0U|Quarter 4 1998        FLETCHER|YaeaQ|P|1999-03-01
+1zz0V|Quarter 1 1999        FLUORIDE|YaeaR|P|1999-03-01
+XaEDe|Travel agent|YaeUo|P|1999-03-01
+bdeR.|Combitens m/r capsule|y0CWJ|P|1999-03-01
+bdl5.|Carvedilol 3.125mg tablet|y0COT|P|1999-03-01
+bdl7.|Eucardic 3.125 tablet|y0COV|P|1999-03-01
+bdl6.|Carvedilol 6.25mg tablet|y0COU|P|1999-03-01
+bdl8.|Eucardic 6.25 tablet|y0COW|P|1999-03-01
+k8k..|Dorzolamide+timolol|y0CWS|P|1999-03-01
+k8k1.|Dorzolamide+timolol 2%/0.5% eye drops|y0CWT|P|1999-03-01
+x04vh|Cosopt 2%/0.5% eye drops|y0CWU|P|1999-03-01
+k8k2.|Cosopt 2%/0.5% eye drops 5mL|y0CWV|P|1999-03-01
+blj4.|Optil SR 90 m/r capsule|y0CWi|P|1999-03-01
+blj9.|Dilcardia XL 120mg m/r capsule|y0Cb9|P|1999-03-01
+blj5.|Optil SR 120 m/r capsule|y0CWj|P|1999-03-01
+bljA.|Dilcardia XL 180mg m/r capsule|y0CbA|P|1999-03-01
+blj6.|Optil SR 180 m/r capsule|y0CWk|P|1999-03-01
+bljB.|Dilcardia XL 240mg m/r capsule|y0CbB|P|1999-03-01
+blj7.|Optil XL 240 m/r capsule|y0CWl|P|1999-03-01
+blj8.|Optil XL 300 m/r capsule|y0CWm|P|1999-03-01
+bl8t.|Nifopress Retard 20mg m/r tablet|y0CYx|P|1999-03-01
+bl8Z.|Nivaten Retard 20mg m/r tablet|y0CWs|P|1999-03-01
+bll1.|Slofedipine XL 30mg m/r tablet|y0CZ0|P|1999-03-01
+bll2.|Slofedipine XL 60mg m/r tablet|y0CZ1|P|1999-03-01
+bl8V.|Nifedipine 30mg m/r capsule|y0CWN|P|1999-03-01
+bl8X.|Coracten XL 30mg m/r capsule|y0CWP|P|1999-03-01
+bl8W.|Nifedipine 60mg m/r capsule|y0CWO|P|1999-03-01
+bl8Y.|Coracten XL 60mg m/r capsule|y0CWQ|P|1999-03-01
+bll..|Nifedipine [2]|y0CYz|P|1999-03-01
+bb3M.|Cordilox MR 240 m/r tablet|y0CWG|P|1999-03-01
+bb3L.|Ethimil MR 240 m/r tablet|y0CTA|P|1999-03-01
+bb3s.|Vertab SR 240 m/r tablet|y0CYn|P|1999-03-01
+c13T.|Ventolin 100micrograms Evohaler|y0COE|P|1999-03-01
+c13U.|Salbutamol 100mcg CFC-free breath-actuated aerosol inhaler|y0CZE|P|1999-03-01
+c13V.|Aerolin 100micrograms CFC-free Autohaler|y0CZF|P|1999-03-01
+c14i.|Terbutaline sulphate 200mg/20mL nebuliser solution|y0Ca5|P|1999-03-01
+c14k.|Bricanyl 200mg/20mL respirator solution|y0Ca7|P|1999-03-01
+bq62.|Ephedrine hydrochloride 30mg/1mL injection|y03Rd|P|1999-03-01
+bq61.|Ephedrine hydrochloride 30mg/10mL injection|y0CZC|P|1999-03-01
+bq63.|Ephedrine hydrochloride 30mg/10mL prefilled syringe|y0CJU|P|1999-03-01
+bq6..|Ephedrine hydrochloride|y0CZD|P|1999-03-01
+gdc..|Propiverine hydrochloride|y0CQB|P|1999-03-01
+gdc1.|Propiverine hydrochloride 15mg tablet|y0CQC|P|1999-03-01
+gdc2.|Detrunorm 15mg tablet|y0CQD|P|1999-03-01
+du3k.|NiQuitin CQ 7mg/24hour patch|y0CWb|P|1999-03-01
+du3l.|NiQuitin CQ 14mg/24hour patch|y0CWc|P|1999-03-01
+du3m.|NiQuitin CQ 21mg/24hour patch|y0CWd|P|1999-03-01
+du3j.|Nicotinell Mint 4mg chewing gum|y0CQ0|P|1999-03-01
+du3i.|Nicotinell Original 4mg chewing gum|y0CPz|P|1999-03-01
+du3n.|Nicotine 2mg sublingual tablet|y0Ccj|P|1999-03-01
+du3o.|Nicorette Microtab 2mg sublingual tablet|y0Cck|P|1999-03-01
+d4u..|Zotepine|y0CYp|P|1999-03-01
+d4u1.|Zotepine 25mg tablet|y0CYq|P|1999-03-01
+d4u4.|Zoleptil 25mg tablet|y0CYt|P|1999-03-01
+d4u2.|Zotepine 50mg tablet|y0CYr|P|1999-03-01
+d4u5.|Zoleptil 50mg tablet|y0CYu|P|1999-03-01
+d4u3.|Zotepine 100mg tablet|y0CYs|P|1999-03-01
+d4u6.|Zoleptil 100mg tablet|y0CYv|P|1999-03-01
+dni..|Fosphenytoin sodium|y0COF|P|1999-03-01
+dni1.|Fosphenytoin sodium 750mg/10mL injection concentrate|y0COG|P|1999-03-01
+dni2.|Pro-Epanutin 750mg/10mL injection concentrate|y0COH|P|1999-03-01
+dnl..|Tiagabine|y0COq|P|1999-03-01
+dnl1.|Tiagabine 5mg tablet|y0COr|P|1999-03-01
+dnl4.|Gabitril 5mg tablet|y0COu|P|1999-03-01
+dnl2.|Tiagabine 10mg tablet|y0COs|P|1999-03-01
+dnl5.|Gabitril 10mg tablet|y0COw|P|1999-03-01
+dnl3.|Tiagabine 15mg tablet|y0COt|P|1999-03-01
+dnl6.|Gabitril 15mg tablet|y0COx|P|1999-03-01
+dqD..|Entacapone|y0CYi|P|1999-03-01
+dqD1.|Entacapone 200mg tablet|y0CYj|P|1999-03-01
+dqD2.|Comtess 200mg tablet|y0CYk|P|1999-03-01
+dq6w.|Selegiline hydrochloride 1.25mg tablet|y0CY0|P|1999-03-01
+dq6A.|Zelapar 1.25mg tablet|y0CY1|P|1999-03-01
+b327.|Betinex 1mg tablet|y0CSy|P|1999-03-01
+b328.|Betinex 5mg tablet|y0CSz|P|1999-03-01
+b31F.|Frusol 20mg/5mL s/f oral solution|y0CTw|P|1999-03-01
+b31G.|Frusol 40mg/5mL s/f oral solution|y0CTx|P|1999-03-01
+b31H.|Frusol 50mg/5mL s/f oral solution|y0CTy|P|1999-03-01
+bu5..|Clopidogrel|y0CNv|P|1999-03-01
+bu51.|Clopidogrel 75mg tablet|y0CNw|P|1999-03-01
+bu52.|Plavix 75mg tablet|y0CNx|P|1999-03-01
+bu6..|Ticlopidine|y0Cau|P|1999-03-01
+bu61.|Ticlopidine hydrochloride 250mg tablet|y0Cav|P|1999-03-01
+bu62.|Ticlid 250mg tablet|y0Caw|P|1999-03-01
+bx15.|Bezagen XL 400mg m/r tablet|y0CPs|P|1999-03-01
+bl3o.|Modisal LA 25 m/r capsule|y0Cb5|P|1999-03-01
+bl3q.|Modisal LA 50 m/r capsule|y0Cb6|P|1999-03-01
+a23p.|Gaviscon peppermint liquid 100mL|y0CWg|P|1999-03-01
+a23x.|Gaviscon peppermint liquid 200mL|y0CWh|P|1999-03-01
+a23y.|Gaviscon peppermint liquid 500mL|y0CWf|P|1999-03-01
+a24t.|Peptac liquid|y0CQU|P|1999-03-01
+a6c5.|Lansoprazole 30mg oral suspension|y0CQP|P|1999-03-01
+a6c6.|Zoton 30mg oral suspension|y0CQR|P|1999-03-01
+a6e3.|Pantoprazole 40mg injection (pdr for recon)|y0Car|P|1999-03-01
+a6e4.|Protium i.v 40mg injection (pdr for recon)|y0Cas|P|1999-03-01
+a6f..|Rabeprazole sodium|y0CPA|P|1999-03-01
+a6f1.|Rabeprazole sodium 10mg e/c tablet|y0CPB|P|1999-03-01
+a6f3.|Pariet 10mg e/c tablet|y0CPD|P|1999-03-01
+a6f2.|Rabeprazole sodium 20mg e/c tablet|y0CPC|P|1999-03-01
+a6f4.|Pariet 20mg e/c tablet|y0CPE|P|1999-03-01
+a6g..|Combination ulcer healing drugs|y0CRq|P|1999-03-01
+a6g1.|Clarithromy tab+lansoprazole cap+amoxy cap 500/30/500mg pack|y0CRr|P|1999-03-01
+a6g2.|HeliClear pack|y0CRs|P|1999-03-01
+aw...|Peripherally acting antiobesity drug|y0CQj|P|1999-03-01
+aw1..|Orlistat|y0CQk|P|1999-03-01
+aw11.|Orlistat 120mg capsule|y0CQl|P|1999-03-01
+aw12.|Xenical 120mg capsule|y0CQm|P|1999-03-01
+c669.|Beclazone 200 inhaler|y0CQS|P|1999-03-01
+c66A.|Beclomethasone diprop 50mcg breath-actuated powder inhaler|y0CRf|P|1999-03-01
+c66D.|Asmabec 50micrograms Clickhaler|y0CRi|P|1999-03-01
+c66B.|Beclomethasone diprop 100mcg breath-actuated powder inhaler|y0CRg|P|1999-03-01
+c66E.|Asmabec 100micrograms Clickhaler|y0CRj|P|1999-03-01
+c66C.|Beclomethasone diprop 250mcg breath-actuated powder inhaler|y0CRh|P|1999-03-01
+c66F.|Asmabec 250micrograms Clickhaler|y0CRk|P|1999-03-01
+c65X.|Fluticasone propionate 0.5mg/2mL nebulisation unit|y0CdN|P|1999-03-01
+c65Z.|Flixotide 0.5mg/2mL Nebule|y0CdR|P|1999-03-01
+c65Y.|Fluticasone propionate 2mg/2mL nebulisation unit|y0CdP|P|1999-03-01
+c65a.|Flixotide 2mg/2mL Nebule|y0CdT|P|1999-03-01
+cg7B.|Pholcodine strong 10mg/5mL tartrazine-free linctus|y0CZG|P|1999-03-01
+gh2S.|Alprostadil 40micrograms injection (pdr for recon)+diluent|y0CQs|P|1999-03-01
+gh2T.|Caverject 40micrograms injection (pdr for recon)+diluent|y0CQt|P|1999-03-01
+gh2V.|Alprostadil 40micrograms inj cartridge continuation pack|y0CZJ|P|1999-03-01
+gh2X.|Viridal 40 Duo injection cartridge continuation pack|y0CZL|P|1999-03-01
+gh2U.|Alprostadil 40micrograms injection cartridge starter pack|y0CZI|P|1999-03-01
+gh2W.|Viridal 40 Duo injection cartridge starter pack|y0CZK|P|1999-03-01
+j28x.|Ibuprofen 200mg m/r capsule|y0Cat|P|1999-03-01
+x04vt|Ibumousse 5% foam|y0CWw|P|1999-03-01
+ja2W.|Ibumousse 5% foam 125g|y0CWx|P|1999-03-01
+j2aQ.|Ketil CR 100mg m/r capsule|y0CZ5|P|1999-03-01
+j2aO.|Ketpron XL 100mg m/r capsule|y0CQ6|P|1999-03-01
+j2aR.|Ketil CR 200mg m/r capsule|y0CZ6|P|1999-03-01
+j2aP.|Ketpron XL 200mg m/r capsule|y0CQ7|P|1999-03-01
+j2n7.|Meloxicam 7.5mg suppository|y0CQu|P|1999-03-01
+j2n8.|Mobic 7.5mg suppository|y0CQv|P|1999-03-01
+j2i..|Piroxicam-beta-cyclodextrin|y0CWX|P|1999-03-01
+j2i1.|Piroxicam-beta-cyclodextrin 191.2mg tablet|y0CWY|P|1999-03-01
+j2i2.|Brexidol 191.2mg tablet|y0CWZ|P|1999-03-01
+gh5..|Sildenafil|y0CSk|P|1999-03-01
+gh51.|Sildenafil 25mg tablet|y0CSl|P|1999-03-01
+gh54.|Viagra 25mg tablet|y0CSo|P|1999-03-01
+gh52.|Sildenafil 50mg tablet|y0CSm|P|1999-03-01
+gh55.|Viagra 50mg tablet|y0CSp|P|1999-03-01
+gh53.|Sildenafil 100mg tablet|y0CSn|P|1999-03-01
+gh56.|Viagra 100mg tablet|y0CSq|P|1999-03-01
+x04u8|Topical antipruritic|y0CO4|P|1999-03-01
+m351.|Doxepin hydrochloride 5% cream|y0CO6|P|1999-03-01
+x04u9|Xepin 5% cream|y0CO7|P|1999-03-01
+m352.|Xepin 5% cream 30g|y0CO8|P|1999-03-01
+mb43.|Lithium succinate 8% cream|y0CRn|P|1999-03-01
+x04v7|Efalith 8% cream|y0CRo|P|1999-03-01
+mb44.|Efalith 8% cream 30g|y0CRp|P|1999-03-01
+m35..|Doxepin hydrochloride [antipruritic]|y0CO5|P|1999-03-01
+mig2.|Soap liniment BPC (methylated)|y0CZ7|P|1999-03-01
+x04u6|Keromask No.12 ultra light masking cream|y0CNd|P|1999-03-01
+ma3Z.|Keromask No.12 ultra light masking cream 15mL|y0CNe|P|1999-03-01
+ma3a.|Veil black cover cream 19g|y0CV2|P|1999-03-01
+ma3v.|Veil black cover cream 44g|y0CV3|P|1999-03-01
+ma4H.|Veil black cover cream 70g|y0CV4|P|1999-03-01
+ma3b.|Veil brown cover cream 19g|y0CV5|P|1999-03-01
+ma3w.|Veil brown cover cream 44g|y0CV6|P|1999-03-01
+ma4I.|Veil brown cover cream 70g|y0CV7|P|1999-03-01
+ma3c.|Veil dark cover cream 19g|y0CV8|P|1999-03-01
+ma3x.|Veil dark cover cream 44g|y0CV9|P|1999-03-01
+ma4J.|Veil dark cover cream 70g|y0CVA|P|1999-03-01
+ma3d.|Veil dark 2 cover cream 19g|y0CVB|P|1999-03-01
+ma3y.|Veil dark 2 cover cream 44g|y0CVC|P|1999-03-01
+ma4K.|Veil dark 2 cover cream 70g|y0CVD|P|1999-03-01
+ma3e.|Veil dark 3 cover cream 19g|y0CVE|P|1999-03-01
+ma3z.|Veil dark 3 cover cream 44g|y0CVF|P|1999-03-01
+ma4L.|Veil dark 3 cover cream 70g|y0CVG|P|1999-03-01
+ma3f.|Veil ebony cover cream 19g|y0CVH|P|1999-03-01
+ma41.|Veil ebony cover cream 44g|y0CVI|P|1999-03-01
+ma4M.|Veil ebony cover cream 70g|y0CVJ|P|1999-03-01
+ma3g.|Veil green cover cream 19g|y0CVK|P|1999-03-01
+ma42.|Veil green cover cream 44g|y0CVL|P|1999-03-01
+ma4N.|Veil green cover cream 70g|y0CVM|P|1999-03-01
+ma3h.|Veil mauve cover cream 19g|y0CVN|P|1999-03-01
+ma43.|Veil mauve cover cream 44g|y0CVO|P|1999-03-01
+ma4O.|Veil mauve cover cream 70g|y0CVP|P|1999-03-01
+ma3i.|Veil medium cover cream 19g|y0CVQ|P|1999-03-01
+ma44.|Veil medium cover cream 44g|y0CVR|P|1999-03-01
+ma4P.|Veil medium cover cream 70g|y0CVS|P|1999-03-01
+ma3j.|Veil mocha cover cream 19g|y0CVT|P|1999-03-01
+ma45.|Veil mocha cover cream 44g|y0CVU|P|1999-03-01
+ma4Q.|Veil mocha cover cream 70g|y0CVV|P|1999-03-01
+ma3k.|Veil natural cover cream 19g|y0CVW|P|1999-03-01
+ma46.|Veil natural cover cream 44g|y0CVX|P|1999-03-01
+ma4R.|Veil natural cover cream 70g|y0CVY|P|1999-03-01
+ma3l.|Veil natural medium cover cream 19g|y0CVZ|P|1999-03-01
+ma47.|Veil natural medium cover cream 44g|y0CVa|P|1999-03-01
+ma4S.|Veil natural medium cover cream 70g|y0CVb|P|1999-03-01
+ma3m.|Veil natural tan cover cream 19g|y0CVc|P|1999-03-01
+ma48.|Veil natural tan cover cream 44g|y0CVd|P|1999-03-01
+ma4T.|Veil natural tan cover cream 70g|y0CVe|P|1999-03-01
+ma3n.|Veil olive cover cream 19g|y0CVf|P|1999-03-01
+ma49.|Veil olive cover cream 44g|y0CVg|P|1999-03-01
+ma4U.|Veil olive cover cream 70g|y0CVh|P|1999-03-01
+x04vW|Veil peach cover cream|y0CW0|P|1999-03-01
+ma3u.|Veil peach cover cream 19g|y0CW1|P|1999-03-01
+ma4G.|Veil peach cover cream 44g|y0CVv|P|1999-03-01
+ma4b.|Veil peach cover cream 70g|y0CW2|P|1999-03-01
+ma3o.|Veil rose cover cream 19g|y0CVi|P|1999-03-01
+ma4A.|Veil rose cover cream 44g|y0CVj|P|1999-03-01
+ma4V.|Veil rose cover cream 70g|y0CVk|P|1999-03-01
+ma3p.|Veil suntan cover cream 19g|y0CVl|P|1999-03-01
+ma4B.|Veil suntan cover cream 44g|y0CVm|P|1999-03-01
+ma4W.|Veil suntan cover cream 70g|y0CVn|P|1999-03-01
+ma3q.|Veil tan cover cream 19g|y0CVo|P|1999-03-01
+ma4C.|Veil tan cover cream 44g|y0CVp|P|1999-03-01
+ma4X.|Veil tan cover cream 70g|y0CVq|P|1999-03-01
+ma3r.|Veil umber cover cream 19g|y0CVr|P|1999-03-01
+ma4D.|Veil umber cover cream 44g|y0CVs|P|1999-03-01
+ma4Y.|Veil umber cover cream 70g|y0CVt|P|1999-03-01
+ma3s.|Veil white cover cream 19g|y0CVu|P|1999-03-01
+ma4E.|Veil white cover cream 44g|y0CW3|P|1999-03-01
+ma4Z.|Veil white cover cream 70g|y0CVw|P|1999-03-01
+ma3t.|Veil yellow cover cream 19g|y0CVx|P|1999-03-01
+ma4F.|Veil yellow cover cream 44g|y0CVy|P|1999-03-01
+ma4a.|Veil yellow cover cream 70g|y0CVz|P|1999-03-01
+ma4..|Camouflaging preparations[3] A-Z|y0CV1|P|1999-03-01
+x04u5|Dermol 200 shower emollient|y0CNX|P|1999-03-01
+m273.|Dermol 200 shower emollient 200mL|y0CNY|P|1999-03-01
+x04v1|Bazuka extra strength gel|y0CQq|P|1999-03-01
+m81H.|Bazuka extra strength gel 5g|y0CQr|P|1999-03-01
+e6d6.|Nicef 250mg capsule|y0CW4|P|1999-03-01
+e6d7.|Nicef 500mg capsule|y0CW5|P|1999-03-01
+e937.|Azithromycin 500mg tablet|y0CNV|P|1999-03-01
+e938.|Zithromax 500mg tablet|y0CNW|P|1999-03-01
+e91Y.|Erythroped Forte SF 500mg/5mL s/f suspension|y0Cc6|P|1999-03-01
+lcA3.|Elyzol 25% dental gel 1g|y0CYX|P|1999-03-01
+lcA4.|Elyzol 25% dental gel 0.3g|y0CYY|P|1999-03-01
+ha2O.|Viraferon 25million iu/1mL prefilled pen|y0CY5|P|1999-03-01
+x04uF|Carylderm liquid|y0COP|P|1999-03-01
+mg2C.|Carylderm 1% liquid 50mL|y0COQ|P|1999-03-01
+mg2D.|Carylderm 1% liquid 200mL|y0COR|P|1999-03-01
+mg2A.|Carylderm 0.5% lotion 50mL|y0CON|P|1999-03-01
+mg2B.|Carylderm 0.5% lotion 200mL|y0COO|P|1999-03-01
+mg5C.|Suleo-M 0.5% lotion 50mL|y0CQL|P|1999-03-01
+mg5D.|Suleo-M 0.5% lotion 200mL|y0CQM|P|1999-03-01
+mg78.|Phenothrin 0.5% foam|y0CUw|P|1999-03-01
+x04vV|Full Marks 0.5% mousse|y0CUy|P|1999-03-01
+mg79.|Full Marks 0.5% mousse 50g|y0CUz|P|1999-03-01
+mg7A.|Full Marks 0.5% mousse 150g|y0CV0|P|1999-03-01
+mi5y.|Chlorhexidine gluconate+cetrimide 0.225%/2.25% solution|y0CZr|P|1999-03-01
+x04wR|Savlon concentrated liquid|y0CZs|P|1999-03-01
+mi6D.|Savlon concentrated liquid 250mL|y0CZt|P|1999-03-01
+mi6E.|Savlon concentrated liquid 500mL|y0CZu|P|1999-03-01
+mi6F.|Savlon concentrated liquid 750mL|y0CZv|P|1999-03-01
+mi6G.|Savlon concentrated liquid 5L|y0CZw|P|1999-03-01
+dj1Z.|Oramorph 10mg/5mL oral solution 300mL|y0CP9|P|1999-03-01
+x04wf|Sevredol 10mg/5mL oral solution|y0Cah|P|1999-03-01
+djzq.|Sevredol 10mg/5mL oral solution 100mL|y0Cai|P|1999-03-01
+djzt.|Sevredol 10mg/5mL oral solution 300mL|y0Caj|P|1999-03-01
+djzu.|Sevredol 10mg/5mL oral solution 500mL|y0Cak|P|1999-03-01
+djzs.|Morphine sulphate 20mg/mL oral solution|y0CZh|P|1999-03-01
+x04wg|Sevredol 20mg/mL concentrated oral solution|y0CZi|P|1999-03-01
+djzr.|Sevredol 20mg/mL concentrated oral solution 30mL|y0Cal|P|1999-03-01
+djzv.|Sevredol 20mg/mL concentrated oral solution 120mL|y0Cam|P|1999-03-01
+x04wG|Difflam Sore Throat 0.15% oral rinse|y0CYf|P|1999-03-01
+lb13.|Difflam Sore Throat 0.15% oral rinse 200mL|y0CYg|P|1999-03-01
+di2Q.|Mandanol 500mg tablet|y0CUt|P|1999-03-01
+x04wO|Tixymol 120mg/5mL s/f suspension|y0CZ8|P|1999-03-01
+di2R.|Tixymol 120mg/5mL s/f suspension 100mL|y0CZ9|P|1999-03-01
+di2S.|Tixymol 120mg/5mL s/f suspension 150mL|y0CZA|P|1999-03-01
+di2N.|Paracetamol 60mg suppository|y0CPn|P|1999-03-01
+di2P.|Alvedon 60mg suppository|y0CPp|P|1999-03-01
+di2M.|Paracetamol 250mg suppository|y0CPm|P|1999-03-01
+di2O.|Alvedon 250mg suppository|y0CPo|P|1999-03-01
+diaI.|Paracetamol+codeine phosphate 500mg/30mg/sachet powder|y0CRc|P|1999-03-01
+diaJ.|Kapake Insts 500mg/30mg/sachet powder|y0CRd|P|1999-03-01
+diaK.|Paracetamol+codeine phosphate 1000mg/60mg/sachet powder|y0CYd|P|1999-03-01
+diaL.|Kapake Insts 1000mg/60mg/sachet powder|y0CYe|P|1999-03-01
+x04ul|Paracetamol+caffeine 500mg/65mg soluble tablet|y0CQ2|P|1999-03-01
+x04um|Panadol Extra tablet|y0CQ3|P|1999-03-01
+dibT.|Paracetamol+diphenhydramine HCl 120/12.5mg/5mL s/f oral soln|y0CT1|P|1999-03-01
+dibU.|Dozol sugar free syrup|y0CT2|P|1999-03-01
+dic1.|Paracetamol+prometh HCl 120mg/1.5mg/5mL colour free s/f susp|y0CdW|P|1999-03-01
+dic2.|Medised colour free s/f suspension|y0CdX|P|1999-03-01
+x04uo|Solpadeine capsule|y0CQ5|P|1999-03-01
+x04un|Solpadeine tablet|y0CQ4|P|1999-03-01
+dlB..|Dihydroergotamine|y0CdZ|P|1999-03-01
+dlB1.|Dihydroergotamine mesylate 2mg/0.5mL nasal spray|y0Cda|P|1999-03-01
+dlB2.|Migranal 2mg/0.5mL nasal spray|y0Cdb|P|1999-03-01
+dic..|Compound analgesics[1]|y0CdV|P|1999-03-01
+oa2F.|Sure-Amp Bupivacaine 0.375% sterile wrapped injection|y0CaF|P|1999-03-01
+oa2G.|Sure-Amp Bupivacaine 0.75% sterile wrapped injection|y0CaG|P|1999-03-01
+oaz9.|Lignocaine hydrochloride 2% throat spray|y0Ccy|P|1999-03-01
+x04x0|Strepsils Pain Relief 2% throat spray|y0Cd0|P|1999-03-01
+ld1E.|Strepsils Pain Relief 2% throat spray 20mL|y0Ccz|P|1999-03-01
+x04vL|Lignocaine+phenylephrine|y0CTB|P|1999-03-01
+oaz5.|Lignocaine+phenylephrine 5%/0.5% topical spray solution|y0CTC|P|1999-03-01
+oa3s.|Prilocaine hydrochloride 4% dental cartridge|y03vI|P|1999-03-01
+oa3A.|Citanest 4% dental cartridges 2mL|y0CZ3|P|1999-03-01
+x04vv|Clinutren|y0CXD|P|1999-03-01
+x04vw|Clinutren caramel dessert|y0CXJ|P|1999-03-01
+ie6i.|Clinutren caramel dessert 125g|y0CXK|P|1999-03-01
+x04vx|Clinutren 1.5|y0CXL|P|1999-03-01
+x04vy|Clinutren 1.5 apricot liquid|y0CXM|P|1999-03-01
+ie6j.|Clinutren 1.5 apricot liquid 200mL|y0CXN|P|1999-03-01
+x04vz|Clinutren 1.5 banana liquid|y0CXO|P|1999-03-01
+ie6k.|Clinutren 1.5 banana liquid 200mL|y0CXP|P|1999-03-01
+x04w0|Clinutren 1.5 chocolate liquid|y0CXQ|P|1999-03-01
+ie6l.|Clinutren 1.5 chocolate liquid 200mL|y0CXR|P|1999-03-01
+x04w1|Clinutren 1.5 strawberry/raspberry liquid|y0CXS|P|1999-03-01
+ie6m.|Clinutren 1.5 strawberry/raspberry liquid 200mL|y0CXW|P|1999-03-01
+x04w2|Clinutren 1.5 vanilla liquid|y0CXT|P|1999-03-01
+ie6n.|Clinutren 1.5 vanilla liquid 200mL|y0CXU|P|1999-03-01
+x04w3|Clinutren ISO|y0CXV|P|1999-03-01
+x04w5|Clinutren ISO chocolate liquid|y0CXZ|P|1999-03-01
+ie6p.|Clinutren ISO chocolate liquid 200mL|y0CXa|P|1999-03-01
+x04w4|Clinutren ISO coffee liquid|y0CXX|P|1999-03-01
+ie6o.|Clinutren ISO coffee liquid 200mL|y0CXY|P|1999-03-01
+x04w6|Clinutren ISO strawberry/raspberry liquid|y0CXb|P|1999-03-01
+ie6q.|Clinutren ISO strawberry/raspberry liquid 200mL|y0CXc|P|1999-03-01
+x04w7|Clinutren ISO vanilla liquid|y0CXd|P|1999-03-01
+ie6r.|Clinutren ISO vanilla liquid 200mL|y0CXe|P|1999-03-01
+x04wF|Ensure Plus neutral liquid Tetrapak|y0CYT|P|1999-03-01
+ie6t.|Ensure Plus neutral liquid 200mL tetrapak|y0CYU|P|1999-03-01
+x04wE|Ensure Plus peach liquid Tetrapak|y0CYR|P|1999-03-01
+ie6s.|Ensure Plus peach liquid 200mL tetrapak|y0CYS|P|1999-03-01
+ie6u.|Jevity Plus liquid 500mL (ready to hang)|y0Cco|P|1999-03-01
+x04wz|Osmolite Plus Ready to Hang liquid|y0Cct|P|1999-03-01
+ie3w.|Osmolite Plus liquid 1 litre (ready to hang)|y0Ccu|P|1999-03-01
+ie3x.|Osmolite Plus liquid 1.5 litre (ready to hang)|y0Ccv|P|1999-03-01
+x04wD|Paediasure with Fibre liquid|y0CYA|P|1999-03-01
+idcm.|Paediasure with Fibre liquid 250mL|y0CYC|P|1999-03-01
+m58D.|Gamolenic acid 160mg/5mL oral emulsion|y0CQW|P|1999-03-01
+m58E.|Epogam 160mg/5mL oral emulsion|y0CQX|P|1999-03-01
+idsT.|Rite-Diet GF part baked white loaf|y0CSC|P|1999-03-01
+idoo.|Juvela gluten free part baked bread rolls x30|y0CaB|P|1999-03-01
+idsS.|Rite-Diet GF part baked long white rolls|y0CS7|P|1999-03-01
+idsL.|Gluten-free/wheat-free brown bread mix|y0COc|P|1999-03-01
+x04uL|Dietary Specialities GF/WF brown bread mix|y0COi|P|1999-03-01
+idsP.|Dietary Specialities GF/WF brown bread mix 500g|y0COj|P|1999-03-01
+idsM.|Gluten-free/wheat-free corn bread mix|y0COd|P|1999-03-01
+x04uM|Dietary Specialities GF/WF corn bread mix|y0COk|P|1999-03-01
+idsQ.|Dietary Specialities GF/WF corn bread mix 530g|y0COl|P|1999-03-01
+idsK.|Gluten-free/wheat-free white bread mix|y0COb|P|1999-03-01
+x04uK|Dietary Specialities GF/WF white bread mix|y0COg|P|1999-03-01
+idsO.|Dietary Specialities GF/WF white bread mix 500g|y0COh|P|1999-03-01
+idsN.|Gluten-free/wheat-free white cake mix|y0COf|P|1999-03-01
+x04uN|Dietary Specialities GF/WF white cake mix|y0COm|P|1999-03-01
+idsR.|Dietary Specialities GF/WF white cake mix 750g|y0COn|P|1999-03-01
+x04vA|Analog LCP powder|y0CS0|P|1999-03-01
+idt1.|Analog LCP powder 400g|y0CS1|P|1999-03-01
+idt..|Phenylketonuria food[2]|y0CRz|P|1999-03-01
+x04uc|Nutriflex basal intravenous infusion|y0CPd|P|1999-03-01
+ib2V.|Nutriflex basal intravenous infusion 2 litre|y0CPf|P|1999-03-01
+x04ud|Nutriflex peri intravenous infusion|y0CPe|P|1999-03-01
+ib2W.|Nutriflex peri intravenous infusion 2 litre|y0CPg|P|1999-03-01
+x04ue|Nutriflex plus intravenous infusion|y0CPh|P|1999-03-01
+ib2X.|Nutriflex plus intravenous infusion 2 litre|y0CPi|P|1999-03-01
+x04uf|Nutriflex special intravenous infusion|y0CPj|P|1999-03-01
+ib2Y.|Nutriflex special intravenous infusion 1.5 litre|y0CPk|P|1999-03-01
+x04ub|NuTRIflex Lipid peri intravenous infusion|y0CPa|P|1999-03-01
+ib2T.|NuTRIflex Lipid peri intravenous infusion 1.25 litre|y0CPb|P|1999-03-01
+ib2U.|NuTRIflex Lipid peri intravenous infusion 2.5 litre|y0CPc|P|1999-03-01
+x04uX|NuTRIflex Lipid plus intravenous infusion|y0CPG|P|1999-03-01
+ib2H.|NuTRIflex Lipid plus intravenous infusion 1.25 litre|y0CPJ|P|1999-03-01
+ib2I.|NuTRIflex Lipid plus intravenous infusion 1.875 litre|y0CPK|P|1999-03-01
+ib2J.|NuTRIflex Lipid plus intravenous infusion 2.5 litre|y0CPL|P|1999-03-01
+x04uY|NuTRIflex Lipid plus electrolyte free intravenous infusion|y0CPM|P|1999-03-01
+ib2K.|NuTRIflex Lipid plus electrolyte free i-v infusion 1.25L|y0CPN|P|1999-03-01
+ib2L.|NuTRIflex Lipid plus electrolyte free i-v infusion 1.875L|y0CPO|P|1999-03-01
+ib2M.|NuTRIflex Lipid plus electrolyte free i-v infusion 2.5 litre|y0CPP|P|1999-03-01
+x04uZ|NuTRIflex Lipid special intravenous infusion|y0CPQ|P|1999-03-01
+ib2N.|NuTRIflex Lipid special intravenous infusion 1.25 litre|y0CPR|P|1999-03-01
+ib2O.|NuTRIflex Lipid special intravenous infusion 1.875 litre|y0CPS|P|1999-03-01
+ib2P.|NuTRIflex Lipid special intravenous infusion 2.5 litre|y0CPT|P|1999-03-01
+x04ua|NuTRIflex Lipid special electrolyte free i-v infusion|y0CPU|P|1999-03-01
+ib2Q.|NuTRIflex Lipid special electrolyte free i-v infusion 1.25L|y0CPV|P|1999-03-01
+ib2R.|NuTRIflex Lipid special electrolyte free i-v infusion 1.875L|y0CPW|P|1999-03-01
+ib2S.|NuTRIflex Lipid special electrolyte free i-v infusion 2.5L|y0CPZ|P|1999-03-01
+i338.|Folic acid 400micrograms/5mL s/f oral solution|y0CRZ|P|1999-03-01
+i338.|Folic acid 400micrograms/5mL sugar-free syrup|y07bE|S|1999-03-01
+i339.|Folicare 400micrograms/5mL s/f oral solution|y0CRa|P|1999-03-01
+i34C.|Folinic acid 25mg/2.5mL injection|y0CTc|P|1999-03-01
+i34E.|Isovorin 25mg/2.5mL injection|y0CTe|P|1999-03-01
+i34A.|Folinic acid 50mg/5mL injection|y07B3|P|1999-03-01
+i34F.|Isovorin 50mg/5mL injection|y0CTf|P|1999-03-01
+i34B.|Folinic acid 100mg/10mL injection|y07B4|P|1999-03-01
+i34D.|Folinic acid 175mg/17.5mL injection|y0CTd|P|1999-03-01
+i34G.|Isovorin 175mg/17.5mL injection|y0CTg|P|1999-03-01
+fh1R.|Oestradiol+norethisterone acetate 1mg/0.5mg tablet|y0CNy|P|1999-03-01
+fh1S.|Kliovance 1mg/0.5mg tablet|y0CNz|P|1999-03-01
+k647.|Dexamethasone+hypromellose 0.1%/0.5% eye drops|y0CZq|P|1999-03-01
+m4gs.|Fluocinolone acetonide 0.00625% ointment|y04A7|P|1999-03-01
+aj1s.|Proctofoam-HC foam 21.2g|y0CWI|P|1999-03-01
+fv...|Selective oestrogen receptor modulator|y0CPu|P|1999-03-01
+fv1..|Raloxifene hydrochloride|y0CPv|P|1999-03-01
+fv11.|Raloxifene hydrochloride 60mg tablet|y0CPw|P|1999-03-01
+fv12.|Evista 60mg tablet|y0CPx|P|1999-03-01
+fw1..|Biphasic isophane insulin lispro|y0CbE|P|1999-03-01
+x04wm|Humalog biphasic isophane insulin lispro|y0CbF|P|1999-03-01
+x04wn|Humalog Mix25 100iu/mL cartridge|y0CbG|P|1999-03-01
+fw11.|Humalog Mix25 100iu/mL cartridge 3mL|y0CbH|P|1999-03-01
+x04wo|Humalog Mix25 100iu/mL prefilled pen|y0CbI|P|1999-03-01
+fw12.|Humalog Mix25 100iu/mL prefilled pen 3mL|y0CbJ|P|1999-03-01
+fw...|Short with intermediate-acting insulins|y0CbD|P|1999-03-01
+ft3..|Repaglinide|y0CQa|P|1999-03-01
+ft31.|Repaglinide 0.5mg tablet|y0CQb|P|1999-03-01
+ft34.|NovoNorm 0.5mg tablet|y0CQe|P|1999-03-01
+ft32.|Repaglinide 1mg tablet|y0CQc|P|1999-03-01
+ft35.|NovoNorm 1mg tablet|y0CQf|P|1999-03-01
+ft33.|Repaglinide 2mg tablet|y0CQd|P|1999-03-01
+ft36.|NovoNorm 2mg tablet|y0CQg|P|1999-03-01
+f352.|Diaglyk 80mg tablet|y0CWM|P|1999-03-01
+fk8z.|Genotropin 4iu(1.3mg) injection (pdr for recon)+diluent|y0CRy|P|1999-03-01
+br2z.|Dalteparin sodium 10,000iu/1mL prefilled syringe|y0CT5|P|1999-03-01
+br2K.|Fragmin 10,000iu/1mL prefilled syringe|y0CT6|P|1999-03-01
+bw85.|Replenine-VF 500iu injection (pdr for recon)+diluent|y0CUr|P|1999-03-01
+bwB..|Factor XIII products|y03Nc|P|1999-03-01
+bwB1.|Factor XIII 250units injection (pdr for recon)+diluent|y0CO0|P|1999-03-01
+bwB3.|Fibrogammin P 250units injection (pdr for recon)+diluent|y0CO2|P|1999-03-01
+bwB2.|Factor XIII 1250units injection (pdr for recon)+diluent|y0CO1|P|1999-03-01
+bwB4.|Fibrogammin P 1250units injection (pdr for recon)+diluent|y0CO3|P|1999-03-01
+i45a.|Epoetin beta 500iu prefilled syringe|y0CSD|P|1999-03-01
+i45g.|NeoRecormon 500iu prefilled syringe|y0CSK|P|1999-03-01
+i45b.|Epoetin beta 1000iu prefilled syringe|y0CSE|P|1999-03-01
+i45h.|NeoRecormon 1000iu prefilled syringe|y0CSO|P|1999-03-01
+i45c.|Epoetin beta 2000iu prefilled syringe|y0CSF|P|1999-03-01
+i45i.|NeoRecormon 2000iu prefilled syringe|y0CSP|P|1999-03-01
+i45d.|Epoetin beta 3000iu prefilled syringe|y0CSH|P|1999-03-01
+i45j.|NeoRecormon 3000iu prefilled syringe|y0CSQ|P|1999-03-01
+i45e.|Epoetin beta 5000iu prefilled syringe|y0CSI|P|1999-03-01
+i45k.|NeoRecormon 5000iu prefilled syringe|y0CSR|P|1999-03-01
+i45f.|Epoetin beta 10,000iu prefilled syringe|y0CSJ|P|1999-03-01
+i45l.|NeoRecormon 10,000iu prefilled syringe|y0CSS|P|1999-03-01
+h239.|Doxorubicin Solution 10mg/5mL Cytosafe injection vial|y0CNZ|P|1999-03-01
+h23A.|Doxorubicin Solution 50mg/25mL Cytosafe injection vial|y0CNa|P|1999-03-01
+h248.|Pharmorubicin Solution 10mg/5mL Cytosafe injection vial|y0CNb|P|1999-03-01
+h249.|Pharmorubicin Solution 50mg/25mL Cytosafe injection vial|y0CNc|P|1999-03-01
+x04wS|Murine-human monoclonal IgG antibody|y0Ca0|P|1999-03-01
+x04wT|Basiliximab|y0Ca1|P|1999-03-01
+x04wU|Basiliximab 20mg injection (pdr for recon)+solvent|y0Ca2|P|1999-03-01
+x04wV|Simulect 20mg injection (pdr for recon)+solvent|y0Ca3|P|1999-03-01
+n45j.|Ads diphtheria+tetanus vaccine(for adults+adolesc) inj vial|y0CaE|P|1999-03-01
+n4h6.|Typherix 25micrograms/0.5mL prefilled syringe|y0CQ9|P|1999-03-01
+av13.|Urea[13C] 75mg powder for oral solution+kit|y0CQF|P|1999-03-01
+av14.|INFAI helicobacter test kit|y0CQH|P|1999-03-01
+ar1A.|Medicoal granules 5g/sachet x30|y0CRD|P|1999-03-01
+x04w8|Actidose-Aqua oral suspension|y0CXf|P|1999-03-01
+ar1B.|Actidose-Aqua oral suspension 50g|y0CXg|P|1999-03-01
+ka64.|GelTears gel 5g|y0CX8|P|1999-03-01
+ka65.|GelTears gel 10g|y0CX9|P|1999-03-01
+ka7..|Povidone|y0Cd3|P|1999-03-01
+ka71.|Povidone 5% single-use eye drops|y0Cd5|P|1999-03-01
+x04x3|Oculotect 5% single-use eye drops|y0Cd4|P|1999-03-01
+ka72.|Oculotect 5% single-use eye drops 0.4mL|y0Cd6|P|1999-03-01
+ld1D.|Rinstead Contact pastille|y0CRE|P|1999-03-01
+diaH.|Beechams Flu Plus Caplet|y0CNf|P|1999-03-01
+yz18.|1998-09-01            cassavas|y0CNS|P|1999-03-01
+yz19.|1998-10-01            beetroot|y0CQN|P|1999-03-01
+yz1A.|1998-11-01            gherkins|y0CRY|P|1999-03-01
+yz1B.|1998-12-01            shallots|y0CWF|P|1999-03-01
+yz1C.|1999-01-01            miscible|y0CYZ|P|1999-03-01
+yz1D.|1999-02-01            mischief|y0Can|P|1999-03-01
+x04uR|Toyo pregnancy testing kit|y0CP4|P|1999-03-01
+p5q..|Absorbent bandage|y0CZb|P|1999-03-01
+p5q1.|Soft absorbent 10cmx3.5m bandage|y0CZc|P|1999-03-01
+p5q3.|Soffban Natural 10cmx3.5m bandage|y0CZf|P|1999-03-01
+p5q3.|Profore #1 10cmx3.5m bandage|y0CZg|S|1999-03-01
+p5q2.|Sohfast 10cmx3.5m bandage|y0CZd|P|1999-03-01
+p5q2.|Ultra Four #1 10cmx3.5m bandage|y0CZe|S|1999-03-01
+p52u.|Cotton crepe 5cmx4.5m bandage|y0CbL|P|1999-03-01
+p52E.|Hospicrepe 239 5cmx4.5m cotton crepe bandage|y0CbT|P|1999-03-01
+p52v.|Cotton crepe 7.5cmx4.5m bandage|y0CbM|P|1999-03-01
+p52F.|Hospicrepe 239 7.5cmx4.5m cotton crepe bandage|y0Cbb|P|1999-03-01
+p52w.|Cotton crepe 10cmx4.5m bandage|y0CbN|P|1999-03-01
+p52G.|Hospicrepe 239 10cmx4.5m cotton crepe bandage|y0Cbd|P|1999-03-01
+p52x.|Cotton crepe 15cmx4.5m bandage|y0CbO|P|1999-03-01
+p52H.|Hospicrepe 239 15cmx4.5m cotton crepe bandage|y0Cbf|P|1999-03-01
+p5r..|Cotton stretch bandage|y0Cbl|P|1999-03-01
+p5r1.|Cotton stretch 5cmx4.5m bandage BP|y0Cbp|P|1999-03-01
+p5r5.|Hospicrepe 233 5cmx4.5m cotton stretch bandage|y0Cbt|P|1999-03-01
+p5r2.|Cotton stretch 7.5cmx4.5m bandage BP|y0Cbq|P|1999-03-01
+p5r6.|Hospicrepe 233 7.5cmx4.5m cotton stretch bandage|y0Cbu|P|1999-03-01
+p5r3.|Cotton stretch 10cmx4.5m bandage BP|y0Cbr|P|1999-03-01
+p5r7.|Hospicrepe 233 10cmx4.5m cotton stretch bandage|y0Cbv|P|1999-03-01
+p5r4.|Cotton stretch 15cmx4.5m bandage BP|y0Cbs|P|1999-03-01
+p5r8.|Hospicrepe 233 15cmx4.5m cotton stretch bandage|y0Cbw|P|1999-03-01
+p5oD.|Litetex 5cmx4.5m bandage|y0CTp|P|1999-03-01
+p5oE.|Litetex 7cmx4.5m bandage|y0CTq|P|1999-03-01
+p5oF.|Litetex 10cmx4.5m bandage|y0CTr|P|1999-03-01
+p5oG.|Litetex 15cmx4.5m bandage|y0CTs|P|1999-03-01
+p5oI.|Elset 10cmx6m bandage|y0CZl|P|1999-03-01
+p5oJ.|Litetex+ 10cmx6m bandage|y0Cbx|P|1999-03-01
+p5oH.|Litepress 10cmx8.7m bandage|y0CZS|P|1999-03-01
+p5oH.|Profore #3 10cmx8.7m bandage|y0CZT|S|1999-03-01
+p5oK.|Litetex+ 10cmx8.7m bandage|y0Cby|P|1999-03-01
+p5p..|Cohesive bandage|y0CZU|P|1999-03-01
+p5p3.|Cohesive Type 3a 10cmx2.5m bandage|y0CZY|P|1999-03-01
+p5p4.|Co-plus 10cmx2.5m bandage|y0CZZ|P|1999-03-01
+p5p4.|Profore #4 10cmx2.5m bandage|y0CZa|S|1999-03-01
+p5p1.|Cohesive Type 3a 10cmx6.3m non-latex bandage|y0CZV|P|1999-03-01
+p5p2.|Cohfast 10cmx6.3m non-latex bandage|y0CZW|P|1999-03-01
+p5p2.|Ultra Four #4 10cmx6.3m bandage|y0CZX|S|1999-03-01
+p5p5.|Cohesive Type 3b 10cmx6m bandage|y0CZj|P|1999-03-01
+p5p6.|Coban 10cmx6m self-adherent bandage|y0CZk|P|1999-03-01
+p1z3.|Mefilm 6cmx7cm dressing|y0CR3|P|1999-03-01
+p1z4.|Mefilm 10cmx12.7cm dressing|y0CR4|P|1999-03-01
+p1z5.|Mefilm 10cmx25cm dressing|y0CR5|P|1999-03-01
+p1z6.|Mefilm 15cmx21.5cm dressing|y0CR6|P|1999-03-01
+p1by.|Knitted viscose 9.5cmx9.5cm BP (DT Type 1) primary dressing|y04Mi|P|1999-03-01
+p1bz.|Knitted viscose 9.5cmx19cm BP (DT Type 1) primary dressing|y0Cbz|P|1999-03-01
+p1b4.|N-A 9.5cmx19cm dressing|y0Cc1|P|1999-03-01
+p1b5.|N-A Ultra 9.5cmx19cm dressing|y0Cc2|P|1999-03-01
+p1lh.|Algisite M 5cmx5cm dressing|y0CRw|P|1999-03-01
+p1li.|Algisite M 10cmx10cm dressing|y0CRx|P|1999-03-01
+p1lj.|Algisite M 15cmx20cm dressing|y0CRv|P|1999-03-01
+p1ld.|Melgisorb 5cmx5cm dressing|y0CR8|P|1999-03-01
+p1le.|Melgisorb 10cmx10cm dressing|y0CR9|P|1999-03-01
+p1lf.|Melgisorb 10cmx20cm dressing|y0CRA|P|1999-03-01
+x04v9|Algisite M dressing|y0CRu|P|1999-03-01
+x04v2|Melgisorb dressing|y0CR7|P|1999-03-01
+p1lg.|Melgisorb Cavity 32cmx2cm dressing|y0CRB|P|1999-03-01
+x04vB|Cutinova foam dressing|y0CS2|P|1999-03-01
+p1A9.|Cutinova foam 5cmx6cm dressing|y0CS4|P|1999-03-01
+p1A8.|Cutinova foam 10cmx10cm dressing|y0CS3|P|1999-03-01
+p1AA.|Cutinova foam 15cmx20cm dressing|y0CS5|P|1999-03-01
+p1mv.|Hydrocoll bevelled edge 5cmx5cm dressing|y0CNh|P|1999-03-01
+p1mw.|Hydrocoll bevelled edge 7.5cmx7.5cm dressing|y0CNi|P|1999-03-01
+p1mx.|Hydrocoll bevelled edge 10cmx10cm dressing|y0CNj|P|1999-03-01
+p1my.|Hydrocoll bevelled edge 15cmx15cm dressing|y0CNk|P|1999-03-01
+p1mz.|Hydrocoll bevelled edge 6cmx14cm shaped dressing|y0CNm|P|1999-03-01
+p1A1.|Hydrocoll bevelled edge 15cmx18cm sacral dressing|y0CNn|P|1999-03-01
+p1A2.|Hydrocoll Basic 10cmx10cm dressing|y0CNp|P|1999-03-01
+p1A3.|Hydrocoll Basic 20cmx20cm dressing|y0CNq|P|1999-03-01
+p1A4.|Hydrocoll Basic 15cmx20cm dressing|y0CNr|P|1999-03-01
+p1A5.|Hydrocoll thin film 7.5cmx7.5cm dressing|y0CNt|P|1999-03-01
+p1A6.|Hydrocoll thin film 10cmx10cm dressing|y0CNs|P|1999-03-01
+p1A7.|Hydrocoll thin film 15cmx15cm dressing|y0CNu|P|1999-03-01
+p1AB.|CombiDERM 20cmx20cm square dressing|y0CWz|P|1999-03-01
+p1AC.|CombiDERM 20cmx23cm triangular dressing|y0CX3|P|1999-03-01
+p1A..|Hydrocolloid dressing 2|y0CNo|P|1999-03-01
+ps7F.|Elasticated viscose specification 46 5cmx3m stockinette|y0CQy|P|1999-03-01
+ps7C.|Tubifast Green Line 5cmx3m|y0CR1|P|1999-03-01
+ps7E.|Elasticated viscose specification 46 7.5cmx3m stockinette|y0CQx|P|1999-03-01
+ps7B.|Tubifast Blue Line 7.5cmx3m|y0CR0|P|1999-03-01
+ps7G.|Elasticated viscose specification 46 10.75cmx3m stockinette|y0CQz|P|1999-03-01
+ps7D.|Tubifast Yellow Line 10.75cmx3m|y0CR2|P|1999-03-01
+ps7H.|Elasticated viscose specification 46 5cmx5m stockinette|y0CX0|P|1999-03-01
+ps7K.|Tubifast Green Line 5cmx5m|y0CX4|P|1999-03-01
+ps7I.|Elasticated viscose specification 46 7.5cmx5m stockinette|y0CX1|P|1999-03-01
+ps7L.|Tubifast Blue Line 7.5cmx5m|y0CX5|P|1999-03-01
+ps7J.|Elasticated viscose specification 46 10.75cmx5m stockinette|y0CX2|P|1999-03-01
+ps7M.|Tubifast Yellow Line 10.75cmx5m|y0CX6|P|1999-03-01
+p1iR.|Mesoft 10cmx10xm non-sterile 4-ply non-woven fabric swab|y0COD|P|1999-03-01
+p1iQ.|Mesoft 7.5cmx7.5cm sterile 4-ply non-woven fabric swab|y0COC|P|1999-03-01
+x04x6|Isopropyl alcohol+chlorhex acetate 70%/0.5% injection swab|y0Cdd|P|1999-03-01
+x04x7|Sterets-H injection swab|y0Cde|P|1999-03-01
+x04uP|Omron CX2 nebuliser system|y0COv|P|1999-03-01
+x04uB|Other aerosol delivery systems|y0COA|P|1999-03-01
+x04uC|Halolite Adaptive Aerosol Delivery system|y0COB|P|1999-03-01
+x04wX|Nelaton polyurethane male urethral catheter|y0CaD|P|1999-03-01
+p89Y.|PuriCat 8Ch 510-040-208 male firm nelaton catheter|y0CaK|P|1999-03-01
+p89Z.|PuriCat 10Ch 510-040-210 male firm nelaton catheter|y0CaQ|P|1999-03-01
+p89a.|PuriCat 12Ch 510-040-212 male firm nelaton catheter|y0CaR|P|1999-03-01
+p89b.|PuriCat 14Ch 510-040-214 male firm nelaton catheter|y0CaS|P|1999-03-01
+p89c.|PuriCat 16Ch 510-040-216 male firm nelaton catheter|y0CaT|P|1999-03-01
+p89d.|PuriCat 10Ch 515-040-210 male soft nelaton catheter|y0CaU|P|1999-03-01
+p89e.|PuriCat 12Ch 515-040-212 male soft nelaton catheter|y0CaV|P|1999-03-01
+p89f.|PuriCat 14Ch 515-040-214 male soft nelaton catheter|y0CaW|P|1999-03-01
+p89g.|PuriCat 16Ch 515-040-216 male soft nelaton catheter|y0CaX|P|1999-03-01
+x04wZ|Nelaton polyurethane Tiemann tip urethral catheter|y0CaI|P|1999-03-01
+p89n.|PuriCat 10Ch 530-040-210 Tiemann tip nelaton catheter|y0Cad|P|1999-03-01
+p89p.|PuriCat 12Ch 530-040-212 Tiemann tip nelaton catheter|y0Cae|P|1999-03-01
+p89q.|PuriCat 14Ch 530-040-214 Tiemann tip nelaton catheter|y0Caf|P|1999-03-01
+p89r.|PuriCat 16Ch 530-040-216 Tiemann tip nelaton catheter|y0Cag|P|1999-03-01
+p89P.|Hollister Incare InstantCath 10Ch 9670 male nelaton catheter|y0CSG|P|1999-03-01
+p89Q.|Hollister Incare InstantCath 12Ch 9671 male nelaton catheter|y0CSL|P|1999-03-01
+p89R.|Hollister Incare InstantCath 14Ch 9672 male nelaton catheter|y0CSM|P|1999-03-01
+p89S.|Hollister Incare InstantCath 16Ch 9673 male nelaton catheter|y0CSN|P|1999-03-01
+x04wY|Nelaton polyurethane female urethral catheter|y0CaH|P|1999-03-01
+p89h.|PuriCat 8Ch 520-016-208 female nelaton catheter|y0CaY|P|1999-03-01
+p89i.|PuriCat 10Ch 520-016-210 female nelaton catheter|y0CaZ|P|1999-03-01
+p89j.|PuriCat 12Ch 520-016-212 female nelaton catheter|y0Caa|P|1999-03-01
+p89k.|PuriCat 14Ch 520-016-214 female nelaton catheter|y0Cab|P|1999-03-01
+p89m.|PuriCat 16Ch 520-016-216 female nelaton catheter|y0Cac|P|1999-03-01
+p89T.|Hollister Incare InstantCath 10Ch 9674 fem nelaton catheter|y0CST|P|1999-03-01
+p89U.|Hollister Incare InstantCath 12Ch 9675 fem nelaton catheter|y0CSU|P|1999-03-01
+p89V.|Hollister Incare InstantCath 14Ch 9676 fem nelaton catheter|y0CSV|P|1999-03-01
+p89s.|UnoPlast 6Ch 01001012 PVC male paediatric nelaton catheter|y0CdG|P|1999-03-01
+p89W.|Hollister Incare InstantCath 6Ch 9677 paed nelaton catheter|y0CSW|P|1999-03-01
+p89t.|UnoPlast 8Ch 01004012 PVC male paediatric nelaton catheter|y0CdH|P|1999-03-01
+p89u.|UnoPlast 8Ch 02014012 PVC female paediatric nelaton catheter|y0CdI|P|1999-03-01
+p89X.|Hollister Incare InstantCath 8Ch 9678 paed nelaton catheter|y0CSX|P|1999-03-01
+x04vC|Unisex 30cm Nelaton catheter|y0CS6|P|1999-03-01
+p89L.|Conveen EasiCath 30cm 6Ch 5086 PVC unisex nelaton catheter|y0CS8|P|1999-03-01
+p89M.|Conveen EasiCath 30cm 8Ch 5088 PVC unisex nelaton catheter|y0CS9|P|1999-03-01
+p89N.|Conveen EasiCath 30cm 10Ch 5090 PVC unisex nelaton catheter|y0CSA|P|1999-03-01
+p89O.|Conveen EasiCath 30cm 12Ch 5092 PVC unisex nelaton catheter|y0CSB|P|1999-03-01
+p87C.|Bard 10mL balloon 12Ch 1658 2-way all-sil male catheter|y04km|P|1999-03-01
+p87D.|Bard 10mL balloon 14Ch 1658 2-way all-sil male catheter|y04kn|P|1999-03-01
+p87E.|Bard 10mL balloon 16Ch 1658 2-way all-sil male catheter|y04ko|P|1999-03-01
+p87F.|Bard 10mL balloon 18Ch 1658 2-way all-sil male catheter|y04kp|P|1999-03-01
+p87G.|Bard 10mL balloon 20Ch 1658 2-way all-sil male catheter|y04kq|P|1999-03-01
+p87H.|Bard 10mL balloon 22Ch 1658 2-way all-sil male catheter|y04kr|P|1999-03-01
+p86t.|Silastic 10mL balloon 12Ch 336 2-way Foley catheter|y0CdJ|P|1999-03-01
+p86u.|Silastic 10mL balloon 14Ch 336 2-way Foley catheter|y0CdK|P|1999-03-01
+p86v.|Silastic 10mL balloon 16Ch 336 2-way Foley catheter|y0CdL|P|1999-03-01
+p86w.|Silastic 10mL balloon 18Ch 336 2-way Foley catheter|y0CdM|P|1999-03-01
+p86x.|Silastic 10mL balloon 20Ch 336 2-way Foley catheter|y0CdO|P|1999-03-01
+p86y.|Silastic 10mL balloon 22Ch 336 2-way Foley catheter|y0CdQ|P|1999-03-01
+p86z.|Silastic 10mL balloon 24Ch 336 2-way Foley catheter|y0CdS|P|1999-03-01
+pB...|Tracheostomy breathing aid|y0CRP|P|1999-03-01
+pB1..|Tracheostomy filter system|y0CRQ|P|1999-03-01
+pB11.|Neo-Naze blue nightime filter system|y0CRR|P|1999-03-01
+pB12.|Neo-Naze green daytime filter system|y0CRS|P|1999-03-01
+pB13.|Neo-Naze orange active filter system|y0CRT|P|1999-03-01
+pB14.|Neo-Naze small hydrocolloid baseplate|y0CRU|P|1999-03-01
+pB15.|Neo-Naze large hydrocolloid baseplate|y0CRV|P|1999-03-01
+pB16.|Neo-Naze large non-woven adhesive plaster baseplate|y0CRW|P|1999-03-01
+pB17.|Provox Stomafilter FlexiDerm 7253 round adhesive|y0CYJ|P|1999-03-01
+pB18.|Provox Stomafilter FlexiDerm 7254 oval adhesive|y0CYK|P|1999-03-01
+pB19.|Provox Stomafilter OptiDerm 7255 round adhesive|y0CYL|P|1999-03-01
+pB1A.|Provox Stomafilter OptiDerm 7256 oval adhesive|y0CYM|P|1999-03-01
+pB1B.|Provox Stomafilter Regular 7251 round adhesive|y0CYN|P|1999-03-01
+pB1C.|Provox Stomafilter Regular 7252 oval adhesive|y0CYO|P|1999-03-01
+pB1D.|Provox Stomafilter Normal 7240 filter cassette|y0CYP|P|1999-03-01
+pB1E.|Provox Stomafilter HiFlow 7241 filter cassette|y0CYQ|P|1999-03-01
+pC...|Tracheostomy dressing|y0CYE|P|1999-03-01
+pC1..|Sterile tracheostomy dressing|y0CYF|P|1999-03-01
+pC12.|Trachi-Dress TR DRE 0002 80mmx100mm large dressing|y0CYH|P|1999-03-01
+pC11.|Trachi-Dress TR DRE 0001 60mmx82mm small dressing|y0CYG|P|1999-03-01
+ph3J.|Insulin U100 0.3mL disposable syringe+8mm needle|y0COz|P|1999-03-01
+ph3L.|B-D U100 0.3mL single-use disposable syringe+8mm needle|y0CP1|P|1999-03-01
+ph3K.|Insulin U100 0.5mL disposable syringe+8mm needle|y0CP0|P|1999-03-01
+ph3M.|B-D U100 0.5mL single-use disposable syringe+8mm needle|y0CP2|P|1999-03-01
+puje.|Medi-Test Combi 10L urine testing strip|y0CQw|P|1999-03-01
+x04vD|Jade-Euro-Med sheath+self adhesive liner|y0CSY|P|1999-03-01
+x04vE|Ultra Flex Clear sheath|y0CSa|P|1999-03-01
+q3r1.|Ultra Flex Clear M510 small self-adhesive sheath|y0CSb|P|1999-03-01
+q3r2.|Ultra Flex Clear M520 medium self-adhesive sheath|y0CSc|P|1999-03-01
+q3r3.|Ultra Flex Clear M530 intermediate self-adhesive sheath|y0CSd|P|1999-03-01
+q3r4.|Ultra Flex Clear M540 large self-adhesive sheath|y0CSe|P|1999-03-01
+q3r5.|Ultra Flex Clear M550 extra-large self-adhesive sheath|y0CSf|P|1999-03-01
+q3r..|Jade-Euro-Med incontinence sheath|y0CSZ|P|1999-03-01
+q8i6.|Aquasleeve 783680 standard leg bag support|y0CdY|P|1999-03-01
+s6v..|Cover Care stoma belt|y0CZz|P|1999-03-01
+s6v1.|Cover Care L100 65-75cm small male support belt|y0Ca6|P|1999-03-01
+s6v2.|Cover Care L101 77.5-87.5cm medium male support belt|y0Ca8|P|1999-03-01
+s6v3.|Cover Care L102 90-100cm large male support belt|y0Ca9|P|1999-03-01
+s6v4.|Cover Care L103 102.5-112.5cm extra large male support belt|y0CaA|P|1999-03-01
+x04wq|B. Braun colostomy bag|y0Cc0|P|1999-03-01
+x04wr|Biotrol Almarys Optima colostomy bag|y0Cc3|P|1999-03-01
+s7uZ.|Biotrol Almarys Optima 018610 starter transpnt clsd colobag|y0Cc7|P|1999-03-01
+s7ua.|Biotrol Almarys Optima 008610 starter beige closed colobag|y0Cc8|P|1999-03-01
+s7ub.|Biotrol Almarys Optima 008625 25mm beige closed colobag|y0Cc9|P|1999-03-01
+s7uc.|Biotrol Almarys Optima 008630 30mm beige closed colobag|y0CcA|P|1999-03-01
+s7ud.|Biotrol Almarys Optima 008635 35mm beige closed colobag|y0CcB|P|1999-03-01
+s7ue.|Biotrol Almarys Optima 008640 40mm beige closed colobag|y0CcC|P|1999-03-01
+s7uf.|Biotrol Almarys Optima 008645 45mm beige closed colobag|y0CcD|P|1999-03-01
+s7ug.|Biotrol Almarys Optima 008650 50mm beige closed colobag|y0CcE|P|1999-03-01
+s7uh.|Biotrol Almarys Optima 008660 60mm beige closed colobag|y0CcF|P|1999-03-01
+s7ui.|Biotrol Almarys Optima Mini 008920 20mm beige clsd colobag|y0CcG|P|1999-03-01
+s7uj.|Biotrol Almarys Optima Mini 008925 25mm beige clsd colobag|y0CcH|P|1999-03-01
+s7uk.|Biotrol Almarys Optima Mini 008930 30mm beige clsd colobag|y0CcI|P|1999-03-01
+s7um.|Biotrol Almarys Optima Mini 008935 35mm beige clsd colobag|y0CcJ|P|1999-03-01
+s7un.|Biotrol Almarys Optima Mini 008940 40mm beige clsd colobag|y0CcK|P|1999-03-01
+x04wt|Biotrol Almarys Preference colostomy bag|y0Cc5|P|1999-03-01
+s7y1.|Biotrol Almarys Prefer 018310 starter transpnt clsd colobag|y0CcV|P|1999-03-01
+s7y2.|Biotrol Almarys Prefer 008310 starter beige closed colobag|y0CcW|P|1999-03-01
+s7y3.|Biotrol Almarys Preference 008325 25mm beige closed colobag|y0CcX|P|1999-03-01
+s7y4.|Biotrol Almarys Preference 008330 30mm beige closed colobag|y0CcY|P|1999-03-01
+s7y5.|Biotrol Almarys Preference 008335 35mm beige closed colobag|y0CcZ|P|1999-03-01
+s7y6.|Biotrol Almarys Preference 008340 40mm beige closed colobag|y0Cca|P|1999-03-01
+s7y7.|Biotrol Almarys Preference 008345 45mm beige closed colobag|y0Ccb|P|1999-03-01
+s7y8.|Biotrol Almarys Preference 008350 50mm beige closed colobag|y0Ccc|P|1999-03-01
+s7y9.|Biotrol Almarys Preference 008360 60mm beige closed colobag|y0Ccd|P|1999-03-01
+x04ws|Biotrol Almarys Quiet colostomy bag|y0Cc4|P|1999-03-01
+s7up.|Biotrol Almarys Quiet 018110 starter transpnt clsd colobag|y0CcL|P|1999-03-01
+s7uq.|Biotrol Almarys Quiet 008110 starter beige closed colobag|y0CcM|P|1999-03-01
+s7ur.|Biotrol Almarys Quiet 008125 25mm beige closed colobag|y0CcN|P|1999-03-01
+s7us.|Biotrol Almarys Quiet 008130 30mm beige closed colobag|y0CcO|P|1999-03-01
+s7ut.|Biotrol Almarys Quiet 008135 35mm beige closed colobag|y0CcP|P|1999-03-01
+s7uu.|Biotrol Almarys Quiet 008140 40mm beige closed colobag|y0CcQ|P|1999-03-01
+s7uv.|Biotrol Almarys Quiet 008145 45mm beige closed colobag|y0CcR|P|1999-03-01
+s7uw.|Biotrol Almarys Quiet 008150 50mm beige closed colobag|y0CcS|P|1999-03-01
+s7ux.|Biotrol Almarys Quiet 008160 60mm beige closed colobag|y0CcT|P|1999-03-01
+x04v4|Naturess D colostomy bag|y0CRH|P|1999-03-01
+s7B8.|Naturess D S9180 19-50mm starter hole opaque closed colobag|y0CRI|P|1999-03-01
+s7B9.|Naturess D S9190 25mm opaque closed colostomy bag|y0CRJ|P|1999-03-01
+s7BA.|Naturess D S9200 32mm opaque closed colostomy bag|y0CRK|P|1999-03-01
+s7BB.|Naturess D S9210 38mm opaque closed colostomy bag|y0CRL|P|1999-03-01
+s7BC.|Naturess D S9220 45mm opaque closed colostomy bag|y0CRM|P|1999-03-01
+s7BD.|Naturess D S9230 50mm opaque closed colostomy bag|y0CRN|P|1999-03-01
+s7BE.|Naturess D S9250 19-50mm starter hole clear closed colobag|y0CRO|P|1999-03-01
+x04wA|Mirage Flushable colostomy bag|y0CXi|P|1999-03-01
+s75E.|Mirage Flushable 32-610-19 starter hole beige closed colobag|y0CXj|P|1999-03-01
+s75F.|Mirage Flushable 32-610-25 25mm beige closed colostomy bag|y0CXm|P|1999-03-01
+s75G.|Mirage Flushable 32-610-32 32mm beige closed colostomy bag|y0CXl|P|1999-03-01
+s75H.|Mirage Flushable 32-610-38 38mm beige closed colostomy bag|y0CXn|P|1999-03-01
+s75J.|Mirage Flushable 32-610-44 44mm beige closed colostomy bag|y0CXo|P|1999-03-01
+s75K.|Mirage Flushable 32-610-51 51mm beige closed colostomy bag|y0CXp|P|1999-03-01
+s75L.|Mirage Flushable 32-615-19 starter hole clear closed colobag|y0CXq|P|1999-03-01
+s75M.|Mirage Flushable 32-615-25 25mm clear closed colostomy bag|y0CXr|P|1999-03-01
+s75N.|Mirage Flushable 32-615-32 32mm clear closed colostomy bag|y0CXs|P|1999-03-01
+s75P.|Mirage Flushable 32-615-38 38mm clear closed colostomy bag|y0CXt|P|1999-03-01
+s75Q.|Mirage Flushable 32-615-44 44mm clear closed colostomy bag|y0CXu|P|1999-03-01
+s75R.|Mirage Flushable 32-615-51 51mm clear closed colostomy bag|y0CXv|P|1999-03-01
+x04vJ|Welland Silhouette colostomy bag|y0CT4|P|1999-03-01
+s7EJ.|Silhouette SCS 510 10mm standard length beige closed colobag|y0CT7|P|1999-03-01
+s7EK.|Silhouette SCS 525 25mm standard length beige closed colobag|y0CTE|P|1999-03-01
+s7EL.|Silhouette SCS 529 29mm standard length beige closed colobag|y0CTF|P|1999-03-01
+s7EM.|Silhouette SCS 532 32mm standard length beige closed colobag|y0CTG|P|1999-03-01
+s7EN.|Silhouette SCS 535 35mm standard length beige closed colobag|y0CTH|P|1999-03-01
+s7EO.|Silhouette SCS 538 38mm standard length beige closed colobag|y0CTI|P|1999-03-01
+s7EP.|Silhouette SCS 544 44mm standard length beige closed colobag|y0CTJ|P|1999-03-01
+s7EQ.|Silhouette SCS 551 51mm standard length beige closed colobag|y0CTK|P|1999-03-01
+s7ER.|Silhouette SCS 560 60mm standard length beige closed colobag|y0CTL|P|1999-03-01
+s7ES.|Silhouette SCS 710 10mm standard length clear closed colobag|y0CTM|P|1999-03-01
+s7ET.|Silhouette SCS 725 25mm standard length clear closed colobag|y0CTN|P|1999-03-01
+s7EU.|Silhouette SCS 729 29mm standard length clear closed colobag|y0CTO|P|1999-03-01
+s7EV.|Silhouette SCS 732 32mm standard length clear closed colobag|y0CTP|P|1999-03-01
+s7EW.|Silhouette SCS 735 35mm standard length clear closed colobag|y0CTQ|P|1999-03-01
+s7EX.|Silhouette SCS 738 38mm standard length clear closed colobag|y0CTR|P|1999-03-01
+s7EY.|Silhouette SCS 744 44mm standard length clear closed colobag|y0CTS|P|1999-03-01
+s7EZ.|Silhouette SCS 751 51mm standard length clear closed colobag|y0CTT|P|1999-03-01
+s7Ea.|Silhouette SCS 760 60mm standard length clear closed colobag|y0CTU|P|1999-03-01
+x04vK|Welland Silhouette Vogue colostomy bag|y0CT8|P|1999-03-01
+s7Eb.|Silhouette Vogue SCV 510 10mm short lngth beige clsd colobag|y0CT9|P|1999-03-01
+s7Ec.|Silhouette Vogue SCV 525 25mm short lngth beige clsd colobag|y0CTV|P|1999-03-01
+s7Ed.|Silhouette Vogue SCV 529 29mm short lngth beige clsd colobag|y0CTW|P|1999-03-01
+s7Ee.|Silhouette Vogue SCV 532 32mm short lngth beige clsd colobag|y0CTX|P|1999-03-01
+s7Ef.|Silhouette Vogue SCV 535 35mm short lngth beige clsd colobag|y0CTY|P|1999-03-01
+s7Eg.|Silhouette Vogue SCV 538 38mm short lngth beige clsd colobag|y0CTZ|P|1999-03-01
+s7Eh.|Silhouette Vogue SCV 544 44mm short lngth beige clsd colobag|y0CTa|P|1999-03-01
+s7Ei.|Silhouette Vogue SCV 551 51mm short lngth beige clsd colobag|y0CTb|P|1999-03-01
+s7Ej.|Silhouette Vogue SCV 710 10mm short lngth clear clsd colobag|y0CTi|P|1999-03-01
+s7Ek.|Silhouette Vogue SCV 725 25mm short lngth clear clsd colobag|y0CTj|P|1999-03-01
+s7El.|Silhouette Vogue SCV 729 29mm short lngth clear clsd colobag|y0CTk|P|1999-03-01
+s7Em.|Silhouette Vogue SCV 732 32mm short lngth clear clsd colobag|y0CWD|P|1999-03-01
+s7En.|Silhouette Vogue SCV 735 35mm short lngth clear clsd colobag|y0CTl|P|1999-03-01
+s7Eo.|Silhouette Vogue SCV 738 38mm short lngth clear clsd colobag|y0CTm|P|1999-03-01
+s7Ep.|Silhouette Vogue SCV 744 44mm short lngth clear clsd colobag|y0CTn|P|1999-03-01
+s7Eq.|Silhouette Vogue SCV 751 51mm short lngth clear clsd colobag|y0CTo|P|1999-03-01
+s7y..|Clinimed (B.Braun) colostomy bag 3|y0CcU|P|1999-03-01
+x04uO|Coloplast OAD 1523 deodorant|y0COo|P|1999-03-01
+s912.|Coloplast OAD 1523 deodorant 36mL|y0CQJ|P|1999-03-01
+s982.|Citrus Fresh 2200 pouch deodorant spray|y0CYD|P|1999-03-01
+x04wu|B.Braun drainable ileostomy bag|y0Cce|P|1999-03-01
+x04wv|Biotrol Almarys Optima drainable ileostomy bag|y0Ccf|P|1999-03-01
+scC8.|Biotrol Almarys Optima 018710 starter transparent ileobag|y0Cch|P|1999-03-01
+scC9.|Biotrol Almarys Optima 008710 starter beige ileobag|y0Ccm|P|1999-03-01
+scCA.|Biotrol Almarys Optima 008725 25mm beige drainable ileobag|y0Ccn|P|1999-03-01
+scCB.|Biotrol Almarys Optima 008730 30mm beige drainable ileobag|y0Ccw|P|1999-03-01
+scCC.|Biotrol Almarys Optima 008735 35mm beige drainable ileobag|y0Ccp|P|1999-03-01
+scCD.|Biotrol Almarys Optima 008740 40mm beige drainable ileobag|y0Ccq|P|1999-03-01
+scCE.|Biotrol Almarys Optima 008745 45mm beige drainable ileobag|y0Ccr|P|1999-03-01
+scCF.|Biotrol Almarys Optima 008750 50mm beige drainable ileobag|y0Ccs|P|1999-03-01
+scCG.|Biotrol Almarys Optima 008760 60mm beige drainable ileobag|y0Ccx|P|1999-03-01
+scCH.|Biotrol Almarys Optima Mini 008820 20mm beige ileostomy bag|y0Cd7|P|1999-03-01
+scCJ.|Biotrol Almarys Optima Mini 008825 25mm beige ileostomy bag|y0Cd8|P|1999-03-01
+scCK.|Biotrol Almarys Optima Mini 008830 30mm beige ileostomy bag|y0Cd9|P|1999-03-01
+scCL.|Biotrol Almarys Optima Mini 008835 35mm beige ileostomy bag|y0CdA|P|1999-03-01
+scCM.|Biotrol Almarys Optima Mini 008840 40mm beige ileostomy bag|y0CdB|P|1999-03-01
+x04ww|Biotrol Almarys Preference drainable ileostomy bag|y0Ccg|P|1999-03-01
+scCN.|Biotrol Almarys Preference 018410 starter transpnt ileobag|y0CdC|P|1999-03-01
+scCP.|Biotrol Almarys Preference 008410 starter beige ileobag|y0CdD|P|1999-03-01
+scmz.|Pelican 101600 10-50mm clear drainable paediatric ileobag|y0CSg|P|1999-03-01
+scmA.|Pelican 101602 10-50mm opaque drainable paediatric ileobag|y0CSh|P|1999-03-01
+scmB.|Pelican 101601 10-50mm clear drain patterned paed ileobag|y0CSi|P|1999-03-01
+scmC.|Pelican 101603 10-50mm opaque drain patterned paed ileobag|y0CSj|P|1999-03-01
+x04vO|Silhouette ileostomy bag|y0CTt|P|1999-03-01
+scDA.|Silhouette SDS 519 19mm stand length beige drainable ileobag|y0CUI|P|1999-03-01
+scDB.|Silhouette SDS 525 25mm stand length beige drainable ileobag|y0CUJ|P|1999-03-01
+scDC.|Silhouette SDS 529 29mm stand length beige drainable ileobag|y0CUK|P|1999-03-01
+scDD.|Silhouette SDS 532 32mm stand length beige drainable ileobag|y0CUL|P|1999-03-01
+scDE.|Silhouette SDS 535 35mm stand length beige drainable ileobag|y0CUM|P|1999-03-01
+scDF.|Silhouette SDS 538 38mm stand length beige drainable ileobag|y0CUN|P|1999-03-01
+scDG.|Silhouette SDS 544 44mm stand length beige drainable ileobag|y0CUO|P|1999-03-01
+scDH.|Silhouette SDS 551 51mm stand length beige drainable ileobag|y0CUP|P|1999-03-01
+scDI.|Silhouette SDS 719 19mm stand length clear drainable ileobag|y0CUQ|P|1999-03-01
+scDJ.|Silhouette SDS 725 25mm stand length clear drainable ileobag|y0CUR|P|1999-03-01
+scDK.|Silhouette SDS 729 29mm stand length clear drainable ileobag|y0CUS|P|1999-03-01
+scDL.|Silhouette SDS 732 32mm stand length clear drainable ileobag|y0CUT|P|1999-03-01
+scDM.|Silhouette SDS 735 35mm stand length clear drainable ileobag|y0CUU|P|1999-03-01
+scDN.|Silhouette SDS 738 38mm stand length clear drainable ileobag|y0CUV|P|1999-03-01
+scDO.|Silhouette SDS 744 44mm stand length clear drainable ileobag|y0CUW|P|1999-03-01
+scDP.|Silhouette SDS 751 51mm stand length clear drainable ileobag|y0CUX|P|1999-03-01
+x04vP|Silhouette Plus ileostomy bag|y0CTu|P|1999-03-01
+scrT.|Silhouette Plus SDF 519 19mm beige drainable ileostomy bag|y0CU0|P|1999-03-01
+scrU.|Silhouette Plus SDF 525 25mm beige drainable ileostomy bag|y0CU1|P|1999-03-01
+scrV.|Silhouette Plus SDF 529 29mm beige drainable ileostomy bag|y0CU2|P|1999-03-01
+scrW.|Silhouette Plus SDF 532 32mm beige drainable ileostomy bag|y0CU3|P|1999-03-01
+scrX.|Silhouette Plus SDF 535 35mm beige drainable ileostomy bag|y0CU4|P|1999-03-01
+scrY.|Silhouette Plus SDF 538 38mm beige drainable ileostomy bag|y0CU5|P|1999-03-01
+scrZ.|Silhouette Plus SDF 544 44mm beige drainable ileostomy bag|y0CU6|P|1999-03-01
+scD1.|Silhouette Plus SDF 551 51mm beige drainable ileostomy bag|y0CU7|P|1999-03-01
+scD2.|Silhouette Plus SDF 719 19mm clear drainable ileostomy bag|y0CU8|P|1999-03-01
+scD3.|Silhouette Plus SDF 725 25mm clear drainable ileostomy bag|y0CU9|P|1999-03-01
+scD4.|Silhouette Plus SDF 729 29mm clear drainable ileostomy bag|y0CUA|P|1999-03-01
+scD5.|Silhouette Plus SDF 732 32mm clear drainable ileostomy bag|y0CUB|P|1999-03-01
+scD6.|Silhouette Plus SDF 735 35mm clear drainable ileostomy bag|y0CUC|P|1999-03-01
+scD7.|Silhouette Plus SDF 738 38mm clear drainable ileostomy bag|y0CUD|P|1999-03-01
+scD8.|Silhouette Plus SDF 744 44mm clear drainable ileostomy bag|y0CUE|P|1999-03-01
+scD9.|Silhouette Plus SDF 751 51mm clear drainable ileostomy bag|y0CUF|P|1999-03-01
+x04vS|Silhouette Vogue ileostomy bag|y0CUY|P|1999-03-01
+scDQ.|Silhouette Vogue SDV 519 19mm short lgth beige drain ileobag|y0CUa|P|1999-03-01
+scDR.|Silhouette Vogue SDV 525 25mm short lgth beige drain ileobag|y0CUb|P|1999-03-01
+scDS.|Silhouette Vogue SDV 529 29mm short lgth beige drain ileobag|y0CUc|P|1999-03-01
+scDT.|Silhouette Vogue SDV 532 32mm short lgth beige drain ileobag|y0CUd|P|1999-03-01
+scDU.|Silhouette Vogue SDV 535 35mm short lgth beige drain ileobag|y0CUe|P|1999-03-01
+scDV.|Silhouette Vogue SDV 538 38mm short lgth beige drain ileobag|y0CUf|P|1999-03-01
+scDW.|Silhouette Vogue SDV 544 44mm short lgth beige drain ileobag|y0CUg|P|1999-03-01
+scDX.|Silhouette Vogue SDV 551 51mm short lgth beige drain ileobag|y0CUh|P|1999-03-01
+scDY.|Silhouette Vogue SDV 719 19mm short lgth clear drain ileobag|y0CUi|P|1999-03-01
+scDZ.|Silhouette Vogue SDV 725 25mm short lgth clear drain ileobag|y0CUj|P|1999-03-01
+scDa.|Silhouette Vogue SDV 729 29mm short lgth clear drain ileobag|y0CUk|P|1999-03-01
+scDb.|Silhouette Vogue SDV 732 32mm short lgth clear drain ileobag|y0CUl|P|1999-03-01
+scDc.|Silhouette Vogue SDV 735 35mm short lgth clear drain ileobag|y0CUm|P|1999-03-01
+scDd.|Silhouette Vogue SDV 738 38mm short lgth clear drain ileobag|y0CUn|P|1999-03-01
+scDe.|Silhouette Vogue SDV 744 44mm short lgth clear drain ileobag|y0CUo|P|1999-03-01
+scDf.|Silhouette Vogue SDV 751 51mm short lgth clear drain ileobag|y0CUp|P|1999-03-01
+scD..|Welland ileostomy bag 2|y0CTv|P|1999-03-01
+siA..|Coloplast colostomy plug|y0Cay|P|1999-03-01
+siA1.|Assura Conseal 1435 35mm long 20-35mm stoma colostomy plug|y0Caz|P|1999-03-01
+siA2.|Assura Conseal 1485 35mm long 35-45mm stoma colostomy plug|y0Cb1|P|1999-03-01
+siA3.|Assura Conseal 1445 45mm long 20-35mm stoma colostomy plug|y0Cb2|P|1999-03-01
+siA4.|Assura Conseal 1495 45mm long 35-45mm stoma colostomy plug|y0Cb3|P|1999-03-01
+x04wB|Dansac InVent 2 two-piece ostomy system|y0CXw|P|1999-03-01
+skfY.|InVent 2 513-36 36mm flange opaque drain bag 2-pce system|y0CXx|P|1999-03-01
+skfZ.|InVent 2 513-43 43mm flange opaque drain bag 2-pce system|y0CXy|P|1999-03-01
+skfa.|InVent 2 513-55 55mm flange opaque drain bag 2-pce system|y0CXz|P|1999-03-01
+skfb.|InVent 2 Sym 515-36 36mm flange opaque drain bag 2-pce sys|y0CY3|P|1999-03-01
+skfc.|InVent 2 Sym 515-43 43mm flange opaque drain bag 2-pce sys|y0CY4|P|1999-03-01
+skfd.|InVent 2 Sym 515-55 55mm flange opaque drain bag 2-pce sys|y0CY6|P|1999-03-01
+skfe.|InVent 2 Sym 516-36 36mm flange clear drain bag 2-pce system|y0CY7|P|1999-03-01
+skff.|InVent 2 Sym 516-43 43mm flange clear drain bag 2-pce system|y0CY8|P|1999-03-01
+skfg.|InVent 2 Sym 516-55 55mm flange clear drain bag 2-pce system|y0CY9|P|1999-03-01
+skfh.|InVent 2 Sym 518-80 80mm flange clear drain bag 2-pce system|y0CYB|P|1999-03-01
+x04vG|Confidence urostomy bag|y0CSs|P|1999-03-01
+slcs.|Confidence U13 13mm transparent drainable urostomy bag|y0CSt|P|1999-03-01
+slct.|Confidence U25 25mm transparent drainable urostomy bag|y0CSu|P|1999-03-01
+slcu.|Confidence U32 32mm transparent drainable urostomy bag|y0CSv|P|1999-03-01
+slcv.|Confidence U38 38mm transparent drainable urostomy bag|y0CSw|P|1999-03-01
+slcw.|Confidence U45 45mm transparent drainable urostomy bag|y0CSx|P|1999-03-01
+XaE6h|Peripheral nerve structure|YaeMo|P|1999-03-01
+XaECx|Digital nerve of great toe|YaeU0|P|1999-03-01
+XaECy|Digital nerve of second toe|YaeU1|P|1999-03-01
+XaECz|Digital nerve of third toe|YaeU2|P|1999-03-01
+XaED0|Digital nerve of fourth toe|YaeU3|P|1999-03-01
+XaED1|Digital nerve of fifth toe|YaeU4|P|1999-03-01
+XaEEA|Nasal septum structure|YaeVd|P|1999-03-01
+XaCBR|Nasal mucosa|Yabq2|P|1999-03-01
+XaEIe|Bilateral maxillary sinus|Yaeb8|P|1999-03-01
+XaE5B|Vein of limb|YaeL9|P|1999-03-01
+XaE5C|Hilar lymph node|YaeLA|P|1999-03-01
+XaEG4|Sternal bone marrow|YM1Zw|P|1999-03-01
+XaEG3|Iliac bone marrow structure|YaeY3|P|1999-03-01
+XaEG6|Iliac bone marrow|YM1Zy|P|1999-03-01
+XaEG7|Iliac crest bone marrow|YM1Zx|P|1999-03-01
+XaEG5|Rib bone marrow|YM1a0|P|1999-03-01
+XaEG8|Vertebral spinous process bone marrow structure|YaeY4|P|1999-03-01
+XaEG9|Vertebral spinous process bone marrow|YM1Zz|P|1999-03-01
+XaE5O|Lip and palatal structures|YaeLM|P|1999-03-01
+XaEBc|Costoxiphoid ligament|YaeSH|P|1999-03-01
+XaEBb|Sternocostal ligament|YaeSG|P|1999-03-01
+XaEBo|Ligament of proximal tibiofibular joint|YaeST|P|1999-03-01
+XaEE3|Posterior distal tibiofibular ligament|YaeVU|P|1999-03-01
+XaEE4|Anterior distal tibiofibular ligament|YaeVV|P|1999-03-01
+XaEBd|Ligament of sternum|YaeSI|P|1999-03-01
+XaEBV|Epiphysis of humerus|YaeS9|P|1999-03-01
+XaEBW|Epiphysis of radius|YaeSA|P|1999-03-01
+XaEBX|Epiphysis of ulna|YaeSB|P|1999-03-01
+XaEBY|Epiphysis of metacarpal|YaeSC|P|1999-03-01
+XaEAJ|Epiphysis of wrist and hand|YaeQr|P|1999-03-01
+XaE9Z|Clinical actions A - G|YaeQ3|P|1999-03-01
+XaE4l|Desensitisation - action|YaeKg|P|1999-03-01
+XaE9c|Clinical actions H - O|YaeQ6|P|1999-03-01
+XaE9d|Clinical actions P - S|YaeQ7|P|1999-03-01
+XaE9e|Clinical actions T - Z|YaeQ8|P|1999-03-01
+XaE56|Clinical examination - action|YaeL2|P|1999-03-01
+XaE7S|Special sensory functions|YaeNf|P|1999-03-01
+XaEHm|Forward sliding|YM9A9|P|1999-03-01
+XaEFU|Simple suture technique|YM62p|P|1999-03-01
+XaEFV|Z-plasty technique|YM681|P|1999-03-01
+XaEDn|Flap transfer technique|YaeV3|P|1999-03-01
+XaEDp|Advancement technique|YaeV7|P|1999-03-01
+XaEIi|Pathological staging (laparotomy performed)|YaebC|P|1999-03-01
+XaEG2|Stereotactic|YM63d|P|1999-03-01
+XaECs|UVC - Ultraviolet C radiation|YaeTs|P|1999-03-01
+XaECw|Cold - thermal agent|YaeTz|P|1999-03-01
+XaECw|Cold|YM3xn|S|1999-03-01
+XaEEE|Serum P1 phenotype|Yae3g|P|1999-03-01
+XaEDm|Stage 1B1|YaeV2|P|1999-03-01
+XaEDl|Stage 1B2|YaeV0|P|1999-03-01
+XaEEM|Stage 1S|YaeVo|P|1999-03-01
+XaEBJ|Stage 4C|YaeS0|P|1999-03-01
+XaEBJ|Stage IVC|YaeS1|S|1999-03-01
+XaEEO|Tumour stage Tis pu|YaeVq|P|1999-03-01
+XaEEP|Tumour stage Tis pd|YaeVr|P|1999-03-01
+XaEDh|Tumour stage T1b1|YaeUx|P|1999-03-01
+XaEDi|Tumour stage T1b2|YaeUy|P|1999-03-01
+XaEDf|Tumour stage T1mic|YaeUp|P|1999-03-01
+XaEEQ|Tumour grade G0|YaeVs|P|1999-03-01
+XaEDr|Tumour grade GB|YaeVB|P|1999-03-01
+XaEEG|Serum tumour marker status values|YaeVi|P|1999-03-01
+XaEEI|Serum tumour marker stage S0|YaeVk|P|1999-03-01
+XaEEH|Serum tumour marker stage SX|YaeVj|P|1999-03-01
+XaEEJ|Serum tumour marker stage S1|YaeVl|P|1999-03-01
+XaEEK|Serum tumour marker stage S2|YaeVm|P|1999-03-01
+XaEEL|Serum tumour marker stage S3|YaeVn|P|1999-03-01
+XaEHf|Adoption - birth history report|YaeZr|P|1999-03-01
+XE2xS|BAAF B1/2 - adoption: birth history|YacgH|P|1999-03-01
+XaE78|Prone on a Relton Hall frame|YaeNL|P|1999-03-01
+XaEGv|Mucosal|YM2A4|P|1999-03-01
+XaEHu|Serum cortisol|YMIIM|P|1999-03-01
+XaE8p|Hearing aid battery|YaePI|P|1999-03-01
+XE2x5|Bespoke shoes|Y79KZ|P|1999-03-01
+XE2x4|Comfort shoes|Y79KU|P|1999-03-01
+XE2x6|Piedro shoes|Y79KV|P|1999-03-01
+XE2x7|Shoe raise|Y79KX|P|1999-03-01
+XE2x3|Removable artificial eye|Y79JA|P|1999-03-01
+XE2x8|Nocturnal bladder warning system|Y79KK|P|1999-03-01
+XE2x8|Enuretic alarm|YaXZI|S|1999-03-01
+XE2x8|Enuresis alarm|YaXZJ|S|1999-03-01
+XaE7i|Rigid contact lens|YaeO2|P|1999-03-01
+XaE7j|Flexible contact lens|YaeO3|P|1999-03-01
+XaE7k|Gas-permeable contact lens|YaeO4|P|1999-03-01
+XaE7l|Acrylic contact lens|YaeO5|P|1999-03-01
+XaE7m|Hydrophilic contact lens|YaeO6|P|1999-03-01
+XaE7n|Non-hydrophilic contact lens|YaeO7|P|1999-03-01
+XaE8O|Low vision aid|YaeOr|P|1999-03-01
+XaE8P|Optical low vision aid|YaeOs|P|1999-03-01
+XaE8S|Optical near vision aid|YaeOv|P|1999-03-01
+XaE8R|Hand-held magnifier|YaeOu|P|1999-03-01
+XaE9g|Spectacle near vision aid|YaeQA|P|1999-03-01
+XaEBE|Orthodontic space maintainer|YaeRo|P|1999-03-01
+XaE9w|Removable orthodontic appliance|YaeQS|P|1999-03-01
+XaE9R|Cervical collar|YaeQI|P|1999-03-01
+XaE9R|Collar|YaePv|S|1999-03-01
+XaE8J|Ocular cosmetic shell|YaeOm|P|1999-03-01
+XaEGE|Intraocular lens implant|YabLX|P|1999-03-01
+Xa9sR|Knee joint prosthesis|YaYXm|P|1999-03-01
+XaEBm|Total knee joint prosthesis|YaeSR|P|1999-03-01
+Xa9rz|Ankle joint implant|YaYXJ|P|1999-03-01
+XaEBq|Total ankle joint prosthesis|YaeSV|P|1999-03-01
+XaE9x|Transplant graft|YaeQU|P|1999-03-01
+XaE9V|Donor graft|YaePz|P|1999-03-01
+XaE8H|Cadaver allograft|YaeOj|P|1999-03-01
+XaEET|Synthetic surgical material|YaeVv|P|1999-03-01
+XE2wz|Sternal bone marrow sample|YaTfX|P|1999-03-01
+XE2x0|Iliac crest bone marrow sample|YaTfY|P|1999-03-01
+XE2x1|Vertebral spinous process bone marrow sample|YaTfZ|P|1999-03-01
+XE2x2|Rib bone marrow sample|YaTfa|P|1999-03-01
+x04w9|Actidose-Aqua|y0CXh|P|1999-03-01
+x04uu|Beclazone 200|y0CQT|P|1999-03-01
+x04u7|Beechams Flu Plus|y0CNg|P|1999-03-01
+x04vH|Betinex|y0CT0|P|1999-03-01
+x04ui|Bezagen XL|y0CPt|P|1999-03-01
+x04vj|Brexidol|y0CWa|P|1999-03-01
+x04ve|Combitens|y0CWK|P|1999-03-01
+x04wI|Comtess|y0CYl|P|1999-03-01
+x04vg|Coracten XL|y0CWR|P|1999-03-01
+x04vd|Cordilox MR 240|y0CWH|P|1999-03-01
+x04vi|Cosopt|y0CWW|P|1999-03-01
+x04ux|Cremalgin|y0CQi|P|1999-03-01
+x04u4|Depo-Provera Oncology|y0CNU|P|1999-03-01
+x04ur|Detrunorm|y0CQE|P|1999-03-01
+x04vf|Diaglyk|y0CWL|P|1999-03-01
+x04wH|Difflam Sore Throat|y0CYh|P|1999-03-01
+x04wl|Dilcardia XL|y0CbC|P|1999-03-01
+x04vI|Dozol|y0CT3|P|1999-03-01
+x04wx|Erythroped Forte SF|y0Cci|P|1999-03-01
+x04vM|Ethimil MR 240|y0CTD|P|1999-03-01
+x04uG|Eucardic 3.125|y0COX|P|1999-03-01
+x04uH|Eucardic 6.25|y0COY|P|1999-03-01
+x04uI|Eucardic 12.5|y0COZ|P|1999-03-01
+x04uJ|Eucardic 25|y0COa|P|1999-03-01
+x04uj|Evista|y0CPy|P|1999-03-01
+x04v5|Folicare|y0CRb|P|1999-03-01
+x04vQ|Frusol|y0CTz|P|1999-03-01
+x04uQ|Gabitril|y0COy|P|1999-03-01
+x04v8|HeliClear|y0CRt|P|1999-03-01
+x04wp|Humalog Mix25|y0CbK|P|1999-03-01
+x04vu|Ibumousse|y0CWy|P|1999-03-01
+x04us|INFAI helicobacter test|y0CQI|P|1999-03-01
+x04vN|Isovorin|y0CTh|P|1999-03-01
+x04v6|Kapake Insts|y0CRe|P|1999-03-01
+x04wN|Ketil CR|y0CZ4|P|1999-03-01
+x04up|Ketpron XL|y0CQ8|P|1999-03-01
+x04vU|Mandanol|y0CUx|P|1999-03-01
+x04x5|Migranal|y0Cdc|P|1999-03-01
+x04wj|Modisal LA 25|y0Cb7|P|1999-03-01
+x04wk|Modisal LA 50|y0Cb8|P|1999-03-01
+x04vX|Nicef|y0CW6|P|1999-03-01
+x04wy|Nicorette Microtab|y0Ccl|P|1999-03-01
+x04wL|Nifopress Retard|y0CYy|P|1999-03-01
+x04vk|NiQuitin CQ|y0CWe|P|1999-03-01
+x04uw|NovoNorm|y0CQh|P|1999-03-01
+x04x4|Oculotect|y0CdU|P|1999-03-01
+x04vl|Optil SR 90|y0CWn|P|1999-03-01
+x04vm|Optil SR 120|y0CWo|P|1999-03-01
+x04vn|Optil SR 180|y0CWp|P|1999-03-01
+x04vo|Optil XL 240|y0CWq|P|1999-03-01
+x04vp|Optil XL 300|y0CWr|P|1999-03-01
+x04uW|Pariet|y0CPF|P|1999-03-01
+x04uv|Peptac|y0CQV|P|1999-03-01
+x04uE|Pharmorubicin Rapid Dissolution|y0COM|P|1999-03-01
+x04uA|Pharmorubicin Solution|y0CO9|P|1999-03-01
+x04uD|Pro-Epanutin|y0COI|P|1999-03-01
+x04vR|Propess|y0CUG|P|1999-03-01
+x04wh|Protium i.v|y0Caq|P|1999-03-01
+x04vT|Replenine-VF|y0CUs|P|1999-03-01
+x04v3|Rinstead Contact|y0CRF|P|1999-03-01
+x04wW|Simulect|y0Ca4|P|1999-03-01
+x04wM|Slofedipine XL|y0CZ2|P|1999-03-01
+x04x2|Strepsils Dual Action|y0Cd2|P|1999-03-01
+x04x1|Strepsils Pain Relief|y0Cd1|P|1999-03-01
+x04wi|Ticlid|y0Cax|P|1999-03-01
+x04wP|Tixymol|y0CZB|P|1999-03-01
+x04uq|Typherix|y0CQA|P|1999-03-01
+x04wJ|Vertab SR 240|y0CYo|P|1999-03-01
+x04vF|Viagra|y0CSr|P|1999-03-01
+x04wQ|Viridal 40 Duo|y0CZM|P|1999-03-01
+x04uy|Xenical|y0CQn|P|1999-03-01
+x04wC|Zelapar|y0CY2|P|1999-03-01
+x04wK|Zoleptil|y0CYw|P|1999-03-01
+wx0E4|16blister|y0CUu|P|1999-03-01
+wx0E5|32blister|y0CUv|P|1999-03-01
+wx0E6|1000(hosp pack)|y0CWC|P|1999-03-01
+wx0E3|28sachets|y0CQQ|P|1999-03-01
+wx0Dz|36mL|y0COp|P|1999-03-01
+wx0E1|1.25L|y0CPH|P|1999-03-01
+wx0E2|1.875L|y0CPI|P|1999-03-01
+wx0E7|0.3g|y0CXA|P|1999-03-01
+wx0Dy|530g|y0COe|P|1999-03-01
+wy0Cn|Allergy Therapeutics Ltd|y0CYb|P|1999-03-01
+wy0Cp|Bell, Sons & Co (Druggist) Ltd|y0CYm|P|1999-03-01
+wy0Cc|Cortecs Healthcare Ltd|y0CNl|P|1999-03-01
+wy0Cs|Hansam Healthcare Ltd|y0Cap|P|1999-03-01
+wy0Cj|Hawgreen Ltd|y0CRm|P|1999-03-01
+wy0Ci|Helios Healthcare Ltd|y0CRl|P|1999-03-01
+wy0Cg|Infai UK Ltd|y0CQG|P|1999-03-01
+wy0Cl|Leclede UK Ltd|y0CX7|P|1999-03-01
+wy0Ck|M & A Pharmachem Ltd|y0CUZ|P|1999-03-01
+wy0Cf|Masta Ltd|y0CPY|P|1999-03-01
+wy0Ct|Millpledge Healthcare|y0CbQ|P|1999-03-01
+wy0Cd|Nutrition Point Ltd|y0COS|P|1999-03-01
+wy0Ch|Pantheon Healthcare Ltd|y0CRC|P|1999-03-01
+wy0Cm|Platon Medical Ltd|y0CYI|P|1999-03-01
+wy0Ce|Toyo Diagnostics UK Ltd|y0CP3|P|1999-03-01
+wy0Cq|UDG Ltd|y0CaC|P|1999-03-01
+wy0Co|Warden Dressings Company|y0CYc|P|1999-03-01
+wy0Cr|Zurich Pharmaceuticals|y0CaJ|P|1999-03-01
+XaE9P|Brachytherapy - action|YaePt|P|1999-03-01
+XaEDY|Family history of neoplasm of breast|YaThZ|P|1999-03-01
+XaE3p|H/O: Disorder|YaeJf|P|1999-03-01
+XaEFq|History of abuse|YaeXh|P|1999-03-01
+XaEFr|History of physical abuse|YaeXi|P|1999-03-01
+XaEFs|History of sexual abuse|YaeXj|P|1999-03-01
+XaEFt|History of emotional abuse|YaeXk|P|1999-03-01
+XaEF5|VQ scan requested|YaeWY|P|1999-03-01
+XaEFO|Procedure carried out|YaeWu|P|1999-03-01
+XaEFP|Duplex scan performed|YaeWv|P|1999-03-01
+XaEFQ|Vascular studies performed|YaeWw|P|1999-03-01
+XaE7b|O/E - BP reading: no postural drop|YaeNu|P|1999-03-01
+XaEJ1|[V]Personal history of non-neoplastic breast disease|Yaebc|P|1999-03-01
+XaEGl|[V]Admission for administration of abortifacient|YaeYW|P|1999-03-01
+XaEHw|[V]Admitted for conversion to insulin|Yaea6|P|1999-03-01
+XaEHx|[V]Admitted for commencement of insulin|Yaea7|P|1999-03-01
+XaEGm|[V]Procedure cancelled due to non-availability anaesthetist|YaeYX|P|1999-03-01
+XaEGn|[V]Procedure cancelled due to lack of theatre time|YaeYa|P|1999-03-01
+XaE77|[V]Examination and observation following a fall|YaeNK|P|1999-03-01
+XaEEW|[X]Presence of silicon implant in breast|YaeVy|P|1999-03-01
+XaEGP|[D]Sleep apnoea syndrome|YabXb|P|1999-03-01
+XaEGJ|[D]Senile tremor|YabXv|P|1999-03-01
+XaEGI|[D]Asymmetrical moro reflex|YabXr|P|1999-03-01
+XaEGH|[D]Lump stomach|YabXl|P|1999-03-01
+XaE6q|[D]Microalbuminuria|YaeN1|P|1999-03-01
+XaEGN|[D]Abnorm findings on diagnost imaging of skull & head, NEC|YabXH|P|1999-03-01
+XaEBs|Component fixation|YaeSX|P|1999-03-01
+XaEBH|Proximal component fixation|YaeRr|P|1999-03-01
+XaEEF|Serum tumour marker status|YaeVh|P|1999-03-01

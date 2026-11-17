@@ -1,0 +1,296 @@
+@page "/advanced-search"
+@inject AzureFunctionService AzureFunctionService
+@inject IJSRuntime JSRuntime
+
+<PageTitle>Advanced SNOMED CT Search</PageTitle>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-12">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Advanced Search</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <h1>Advanced SNOMED CT Search</h1>
+    <p class="lead">Perform complex searches with filters and advanced options.</p>
+
+    <div class="card search-container">
+        <div class="card-header">
+            <h5 class="mb-0"><i class="fas fa-search me-2"></i>Search Criteria</h5>
+        </div>
+        <div class="card-body">
+            <EditForm Model="searchRequest" OnValidSubmit="PerformAdvancedSearch">
+                <DataAnnotationsValidator />
+                
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="mb-3">
+                            <label for="searchTerm" class="form-label">Search Term</label>
+                            <InputText id="searchTerm" class="form-control" @bind-Value="searchRequest.SearchTerm" 
+                                      placeholder="Enter medical term or concept ID..." />
+                            <ValidationMessage For="@(() => searchRequest.SearchTerm)" />
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="mb-3">
+                            <label for="maxResults" class="form-label">Max Results</label>
+                            <InputNumber id="maxResults" class="form-control" @bind-Value="searchRequest.MaxResults" 
+                                        min="1" max="500" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="language" class="form-label">Language</label>
+                            <InputSelect id="language" class="form-select" @bind-Value="searchRequest.Language">
+                                <option value="en">English</option>
+                                <option value="es">Spanish</option>
+                                <option value="fr">French</option>
+                                <option value="de">German</option>
+                            </InputSelect>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">Options</label>
+                            <div class="form-check">
+                                <InputCheckbox id="activeOnly" class="form-check-input" @bind-Value="searchRequest.ActiveOnly" />
+                                <label class="form-check-label" for="activeOnly">
+                                    Active concepts only
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <InputCheckbox id="includeSynonyms" class="form-check-input" @bind-Value="includeSynonyms" />
+                                <label class="form-check-label" for="includeSynonyms">
+                                    Include synonyms in search
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex gap-2">
+                    <button type="submit" class="btn btn-primary" disabled="@isLoading">
+                        @if (isLoading)
+                        {
+                            <span class="spinner-border spinner-border-sm me-2" role="status"></span>
+                        }
+                        <i class="fas fa-search me-2"></i>Search
+                    </button>
+                    <button type="button" class="btn btn-outline-secondary" @onclick="ClearSearch">
+                        <i class="fas fa-eraser me-2"></i>Clear
+                    </button>
+                    <button type="button" class="btn btn-outline-info" @onclick="ExportResults" disabled="@(searchResults == null || !searchResults.Any())">
+                        <i class="fas fa-download me-2"></i>Export
+                    </button>
+                </div>
+            </EditForm>
+        </div>
+    </div>
+
+    @if (!string.IsNullOrEmpty(errorMessage))
+    {
+        <div class="alert alert-danger mt-3" role="alert">
+            <i class="fas fa-exclamation-triangle me-2"></i>
+            <strong>Error:</strong> @errorMessage
+        </div>
+    }
+
+    @if (searchResults != null)
+    {
+        <div class="card mt-4 search-results">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">
+                    <i class="fas fa-list me-2"></i>Search Results (@searchResults.Count)
+                </h5>                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-outline-secondary btn-sm @(currentViewMode == ViewMode.Table ? "active" : "")" 
+                            @onclick="() => SetViewMode(ViewMode.Table)">
+                        <i class="fas fa-table"></i> Table
+                    </button>
+                    <button type="button" class="btn btn-outline-secondary btn-sm @(currentViewMode == ViewMode.Cards ? "active" : "")"
+                            @onclick="() => SetViewMode(ViewMode.Cards)">
+                        <i class="fas fa-th"></i> Cards
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                @if (currentViewMode == ViewMode.Table)
+                {
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Concept ID</th>
+                                    <th>Preferred Term</th>
+                                    <th>FSN</th>
+                                    <th>Status</th>
+                                    <th>Module</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var concept in searchResults)
+                                {
+                                    <tr>
+                                        <td><code>@concept.ConceptId</code></td>
+                                        <td>@concept.Term</td>
+                                        <td><small class="text-muted">@concept.FullySpecifiedName</small></td>
+                                        <td>
+                                            <span class="badge @(concept.IsActive ? "bg-success" : "bg-secondary")">
+                                                @(concept.IsActive ? "Active" : "Inactive")
+                                            </span>
+                                        </td>
+                                        <td><small>@concept.Module</small></td>
+                                        <td>
+                                            <button class="btn btn-sm btn-outline-primary" @onclick="() => ViewConceptDetails(concept.ConceptId)">
+                                                <i class="fas fa-eye"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                }
+                else
+                {
+                    <div class="row">
+                        @foreach (var concept in searchResults)
+                        {
+                            <div class="col-md-6 col-lg-4 mb-3">
+                                <div class="card concept-card h-100">
+                                    <div class="card-body">
+                                        <h6 class="card-title">@concept.Term</h6>
+                                        <p class="card-text">
+                                            <small class="text-muted">@concept.FullySpecifiedName</small>
+                                        </p>
+                                        <p class="card-text">
+                                            <code class="concept-id">@concept.ConceptId</code>
+                                            <span class="badge @(concept.IsActive ? "bg-success" : "bg-secondary") ms-2">
+                                                @(concept.IsActive ? "Active" : "Inactive")
+                                            </span>
+                                        </p>
+                                        <button class="btn btn-sm btn-primary" @onclick="() => ViewConceptDetails(concept.ConceptId)">
+                                            <i class="fas fa-eye me-1"></i>Details
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                }
+            </div>
+        </div>
+    }
+</div>
+
+@code {
+    private SnomedSearchRequest searchRequest = new();
+    private List<SnomedModel>? searchResults;
+    private bool isLoading = false;
+    private string errorMessage = "";
+    private bool includeSynonyms = false;
+    private ViewMode currentViewMode = ViewMode.Table;
+
+    public enum ViewMode
+    {
+        Table,
+        Cards
+    }
+
+    protected override void OnInitialized()
+    {
+        searchRequest.MaxResults = 50;
+        searchRequest.Language = "en";
+        searchRequest.ActiveOnly = true;
+    }
+
+    private async Task PerformAdvancedSearch()
+    {
+        if (string.IsNullOrWhiteSpace(searchRequest.SearchTerm))
+            return;
+
+        isLoading = true;
+        errorMessage = "";
+        
+        try
+        {
+            searchResults = await AzureFunctionService.GetSnomedDataAsync(searchRequest.SearchTerm.Trim());
+            
+            // Apply client-side filtering if needed
+            if (searchResults != null)
+            {
+                if (searchRequest.ActiveOnly)
+                {
+                    searchResults = searchResults.Where(s => s.IsActive).ToList();
+                }
+                
+                if (searchRequest.MaxResults > 0)
+                {
+                    searchResults = searchResults.Take(searchRequest.MaxResults).ToList();
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Search failed: {ex.Message}";
+            searchResults = null;
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private void ClearSearch()
+    {
+        searchRequest = new SnomedSearchRequest
+        {
+            MaxResults = 50,
+            Language = "en",
+            ActiveOnly = true
+        };
+        searchResults = null;
+        errorMessage = "";
+        includeSynonyms = false;
+    }    private void ViewConceptDetails(string conceptId)
+    {
+        // Navigate to concept details or show modal
+        // For now, we'll just log the concept ID
+        Console.WriteLine($"Viewing details for concept: {conceptId}");
+    }
+
+    private void SetViewMode(ViewMode mode)
+    {
+        currentViewMode = mode;
+    }
+
+    private async Task ExportResults()
+    {
+        if (searchResults == null || !searchResults.Any())
+            return;
+
+        try
+        {
+            var csvContent = "ConceptId,Term,FullySpecifiedName,IsActive,Module\n";
+            foreach (var concept in searchResults)
+            {
+                csvContent += $"\"{concept.ConceptId}\",\"{concept.Term}\",\"{concept.FullySpecifiedName}\",\"{concept.IsActive}\",\"{concept.Module}\"\n";
+            }
+
+            // Use JavaScript to download the file
+            await JSRuntime.InvokeVoidAsync("downloadFile", "snomed-search-results.csv", csvContent, "text/csv");
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Export failed: {ex.Message}";
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../ConsultationTemplates/QOF"
+		}
+	],
+	"settings": {
+		"chat.agent.maxRequests": 100
+	}
+}

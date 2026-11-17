@@ -79,6 +79,8 @@ Write-Host "  Container: $($blobConfig.containerName)" -ForegroundColor Gray
 
 $runId = [guid]::NewGuid().ToString()
 $timestamp = Get-Date -Format "yyyy-MM-ddTHH:mm:ss"
+$errorCount = ($Results.Errors ?? @()).Count
+$overallSuccess = [bool](Get-SafeValue $Results.Success $false) -and $errorCount -eq 0
 
 # Build the dashboard JSON
 $dashboardJson = @{
@@ -93,10 +95,10 @@ $dashboardJson = @{
         startTime         = $Results.StartTime?.ToString("yyyy-MM-ddTHH:mm:ss")
         endTime           = (Get-Date).ToString("yyyy-MM-ddTHH:mm:ss")
         durationFormatted = Get-SafeValue $Results.Duration "00:00:00"
-        overallSuccess    = [bool](Get-SafeValue $Results.Success $false)
+        overallSuccess    = $overallSuccess
         updatesFound      = Get-SafeValue $Results.UpdatesFound 0
         serverName        = $env:COMPUTERNAME
-        errorCount        = ($Results.Errors ?? @()).Count
+        errorCount        = $errorCount
     }
     
     # SNOMED CT details
@@ -182,6 +184,13 @@ $dashboardJson = @{
         tablesChecked  = Get-SafeValue $Results.PCD?.TablesChecked 0
         tablesPassed   = Get-SafeValue $Results.PCD?.TablesPassed 0
         validationRate = Get-SafeValue $Results.PCD?.ValidationRate 0
+        databaseName   = Get-SafeValue $Results.PCD?.DatabaseName "PCD"
+        rf2Status      = Get-SafeValue $Results.PCD?.RF2Status "Unknown"
+        gpDataStatus   = Get-SafeValue $Results.PCD?.GPDataStatus "Unknown"
+        gdpprStatus    = Get-SafeValue $Results.PCD?.GDPPRStatus "Unknown"
+        supportingProductsStatus = Get-SafeValue $Results.PCD?.SupportingProductsStatus "Unknown"
+        legacyStatus   = Get-SafeValue $Results.PCD?.LegacyStatus "Unknown"
+        optionalTables = @($Results.PCD?.OptionalTables ?? @())
         tableCounts    = $(
             $tc = @{}
             if ($Results.PCD?.TableCounts) {
@@ -233,9 +242,20 @@ try {
         }
         else {
             # Fall back to Azure CLI
-            $env:AZURE_STORAGE_CONNECTION_STRING = $blobConfig.connectionString
-            az storage blob upload --file $tempFile --container-name $blobConfig.containerName --name $blobName --overwrite 2>&1 | Out-Null
-            if ($LASTEXITCODE -eq 0) {
+            $previousConnectionString = $env:AZURE_STORAGE_CONNECTION_STRING
+            try {
+                $env:AZURE_STORAGE_CONNECTION_STRING = $blobConfig.connectionString
+                & az storage blob upload --file $tempFile --container-name $blobConfig.containerName `
+                    --name $blobName --overwrite --only-show-errors 2>&1 | Out-Null
+                $uploadExitCode = $LASTEXITCODE
+            } finally {
+                if ($null -eq $previousConnectionString) {
+                    Remove-Item Env:AZURE_STORAGE_CONNECTION_STRING -ErrorAction SilentlyContinue
+                } else {
+                    $env:AZURE_STORAGE_CONNECTION_STRING = $previousConnectionString
+                }
+            }
+            if ($uploadExitCode -eq 0) {
                 Write-Host " OK (Azure CLI)" -ForegroundColor Green
             } else {
                 throw "Azure CLI upload failed"
@@ -278,13 +298,38 @@ try {
             Write-Host " OK (Az.Storage)" -ForegroundColor Green
         }
         else {
-            # Fall back to Azure CLI with connection string
-            az storage blob upload --file $tempFile --container-name $blobConfig.containerName --name $blobName --connection-string $connString --overwrite 2>&1 | Out-Null
-            if ($LASTEXITCODE -eq 0) {
-                Write-Host " OK (Azure CLI)" -ForegroundColor Green
-            } else {
-                throw "Azure CLI upload failed"
+            # Fall back to Azure CLI. Prefer the configured key, but allow the
+            # signed-in Azure identity to recover when a rotated key has made the
+            # Credential Manager entry stale.
+            $previousConnectionString = $env:AZURE_STORAGE_CONNECTION_STRING
+            try {
+                $env:AZURE_STORAGE_CONNECTION_STRING = $connString
+                $uploadOutput = & az storage blob upload --file $tempFile `
+                    --container-name $blobConfig.containerName --name $blobName `
+                    --overwrite --only-show-errors 2>&1
+                $keyUploadExitCode = $LASTEXITCODE
+            } finally {
+                if ($null -eq $previousConnectionString) {
+                    Remove-Item Env:AZURE_STORAGE_CONNECTION_STRING -ErrorAction SilentlyContinue
+                } else {
+                    $env:AZURE_STORAGE_CONNECTION_STRING = $previousConnectionString
+                }
             }
+
+            if ($keyUploadExitCode -ne 0) {
+                Write-Host " key authentication failed; retrying with Azure sign-in..." -NoNewline
+                $uploadOutput = & az storage blob upload --file $tempFile `
+                    --container-name $blobConfig.containerName --name $blobName `
+                    --account-name $blobConfig.storageAccount --auth-mode login `
+                    --overwrite --only-show-errors 2>&1
+            }
+
+            if ($LASTEXITCODE -ne 0) {
+                $safeUploadError = (($uploadOutput | Out-String).Trim()).Replace($storageKey, '<redacted>')
+                throw "Azure CLI upload failed: $safeUploadError"
+            }
+
+            Write-Host " OK (Azure CLI)" -ForegroundColor Green
         }
     }
     else {

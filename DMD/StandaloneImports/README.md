@@ -22,6 +22,7 @@ Each script can be run independently and has been validated for accuracy:
 | `Import-AMP.ps1` | amp | 164,893 | ✅ | Actual Medicinal Products (branded products) |
 | `Import-VMPP.ps1` | vmpp | 36,932 | ✅ | Virtual Medicinal Product Packs |
 | `Import-AMPP.ps1` | ampp | 184,331 | ✅ | Actual Medicinal Product Packs |
+| `Import-PackPrices.ps1` | ampp_price, vmpp_drugtariffinfo | Source-dependent | Exact XML check | AMPP prices and VMPP Drug Tariff; run after packs and lookups |
 | `Import-Ingredient.ps1` | ingredient | 4,490 | ✅ | Ingredient substances |
 | `Import-Lookup.ps1` | lookup | 3,806 | ✅ | Reference data and lookup codes |
 | `Import-VMP-Ingredients.ps1` | vmp_ingredient | 26,723 | ✅ | VMP to Ingredient relationships |
@@ -36,6 +37,12 @@ Each script can be run independently and has been validated for accuracy:
 **Note:** Routes, forms, BNF, ATC, and GTIN data are embedded within parent XML files (VMP and AMPP) rather than having separate XML files.
 
 ## Script Pattern
+
+**Pricing exception:** `Import-PackPrices.ps1` requires an explicit `-XmlPath` to
+one complete release. It uses SQL bulk copy and a transaction across both tables,
+updates existing prices and removes obsolete pricing rows. It creates its tables
+additively when missing and validates every source field before commit. See the
+[pack pricing documentation](../README.md#pack-prices-and-drug-tariff).
 
 All scripts follow the same proven pattern:
 
@@ -60,6 +67,8 @@ The `Run-AllImports.ps1` script runs imports in this order (respecting foreign k
 8. VMP relationships (depend on VMP, Ingredient, Lookup)
 9. BNF/ATC mappings (depend on VMP)
 10. GTIN (depends on AMPP)
+
+Pack pricing runs immediately after Lookup, once both pack tables are available.
 
 ## Parameters
 

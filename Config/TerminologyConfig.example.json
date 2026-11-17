@@ -8,7 +8,7 @@
   "database": {
     "serverInstance": "YOUR_HOST\\SQLEXPRESS",
     "snomedDatabase": "snomedct",
-    "snomedIntDatabase": "snomedct_int",
+    "pcdDatabase": "PCD",
     "dmdDatabase": "dmd",
     "dmwbDatabase": "DMWB_Export"
   },
@@ -19,7 +19,6 @@
     "snomedMonolith": 1799,
     "snomedUkPrimaryCare": 659,
     "snomedUkDrugExtension": 105,
-    "snomedInternational": 4,
     "dmdMain": 24,
     "dmdBonus": 25,
     "dmwb": 98
@@ -52,6 +51,11 @@
     "retryOnFailure": true,
     "maxRetries": 2,
     "retryDelaySeconds": 300
+  },
+  "githubReporting": {
+    "enabled": false,
+    "repository": "KhanInformatics/StaticBlazorSnomed",
+    "branch": "main"
   },
   "azureReporting": {
     "enabled": false,

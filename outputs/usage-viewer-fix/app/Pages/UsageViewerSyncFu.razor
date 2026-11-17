@@ -1,0 +1,580 @@
+@page "/usage-viewer-syncfusion"
+@inject SnomedUsageStaticDataService UsageDataService
+@inject IJSRuntime JSRuntime
+
+@using System.Globalization
+@using System.Text
+
+@using Syncfusion.Blazor
+@using Syncfusion.Blazor.Grids
+@using Syncfusion.Blazor.Buttons
+@using Syncfusion.Blazor.Inputs
+@using Syncfusion.Blazor.Popups
+
+<PageTitle>Primary Care SNOMED CT Usage Data Viewer - Syncfusion</PageTitle>
+
+<!-- Page Header Section - positioned to align with sidebar -->
+<div class="page-header-wrapper">
+    <div class="page-header">        <div class="page-header-content">
+            <div class="page-header-main">
+                <h4 class="page-title mb-1">Primary Care SNOMED CT Usage Data Viewer</h4>
+                <p class="page-subtitle mb-0">Query SNOMED CT concept usage statistics from @FirstPeriod through @LatestPeriod (NHS England Data)</p>
+            </div>            <div class="page-header-actions">
+                <span class="created-by">Created by Imran Khan</span>
+                <a href="https://github.com" target="_blank" class="github-link">
+                    <i class="fab fa-github fa-lg"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid" style="margin-top: 0; padding-top: 1rem;"><!-- Search Section -->
+    <div class="content-section">
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card">                    <div class="card-body">
+                        <div class="row align-items-start">
+                            <div class="col-md-6">
+                                <label for="snomedCodes" class="form-label fw-bold">SNOMED CT Codes:</label>
+                                <SfTextArea @bind-Value="searchCodes"
+                                           Input="OnSearchCodesInput"
+                                           Placeholder="Enter SNOMED CT codes separated by commas (e.g., 922731000000100, 760903007, 394720003)"
+                                           RowCount="4"
+                                           Width="100%"
+                                           CssClass="snomed-textarea">
+                                </SfTextArea>
+                                <small class="form-text text-muted">Enter multiple codes separated by commas</small>
+                            </div>
+                            <div class="col-md-6">
+                                <!-- Quick search templates -->
+                                <div class="mb-2">
+                                    <div class="d-flex align-items-center gap-2 mb-1">
+                                        <span class="fw-bold text-muted">Quick Search Templates:</span>
+                                        <SfTooltip Target="#template-info-icon" 
+                                                  Content="Click any template below to populate the search field with codes, then click SEARCH to view usage data."
+                                                  Position="Position.BottomCenter">
+                                            <i id="template-info-icon" class="fas fa-info-circle text-muted" style="font-size: 0.9rem; cursor: help;"></i>
+                                        </SfTooltip>
+                                    </div>
+                                    <div class="d-flex flex-column" style="gap: 0.15rem;">
+                                        <SfButton @onclick="() => SetExampleCodes(ExampleType.TopUsedLatest)"
+                                                 Disabled="@(manifest is null)"
+                                                 CssClass="e-link e-small text-start">
+                                            Most commonly used SNOMED codes @LatestPeriod (@(manifest?.TopConceptIds.Count ?? 100) codes)
+                                        </SfButton>
+                                        <SfButton @onclick="() => SetExampleCodes(ExampleType.Multiple)" 
+                                                 CssClass="e-link e-small text-start">
+                                            Multiple codes
+                                        </SfButton>
+                                        <SfButton @onclick="() => SetExampleCodes(ExampleType.BodyMass)" 
+                                                 CssClass="e-link e-small text-start">
+                                            698065002 |Acid reflux (finding)|
+                                        </SfButton>
+                                        <SfButton @onclick="() => SetExampleCodes(ExampleType.CellCount)" 
+                                                 CssClass="e-link e-small text-start">
+                                            1022541000000102 |Total white cell count (observable entity)|
+                                        </SfButton>
+                                    </div>
+                                </div>
+                                <!-- Search buttons moved below examples -->
+                                <div class="d-flex gap-2 mt-2">
+                                    <SfButton @onclick="SearchUsageData" 
+                                             Disabled="@isLoading"
+                                             CssClass="e-primary">
+                                        @if (isLoading)
+                                        {
+                                            <span class="spinner-border spinner-border-sm me-2" role="status"></span>
+                                        }
+                                        SEARCH
+                                    </SfButton>
+                                    <SfButton @onclick="ClearData" 
+                                             Disabled="@isLoading"
+                                             CssClass="e-outline">
+                                        CLEAR
+                                    </SfButton>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Usage Scale Legend -->
+    @if (usageResults != null && usageResults.Any())
+    {
+        <div class="row mb-3">
+            <div class="col-12">
+                <div class="d-flex align-items-center gap-3">
+                    <span class="fw-bold">Usage Scale:</span>
+                    <div class="d-flex align-items-center gap-3">
+                        <span class="badge" style="background-color: #e8f4f8; color: #2c5aa0; border: 1px solid #b8dce8;">Very Low (1-100)</span>
+                        <span class="badge" style="background-color: #d4f1d4; color: #1e7e34; border: 1px solid #a3d9a3;">Low (101-1,000)</span>
+                        <span class="badge" style="background-color: #fff3cd; color: #856404; border: 1px solid #f6e0a6;">Medium (1,001-10,000)</span>
+                        <span class="badge" style="background-color: #f8d7da; color: #721c24; border: 1px solid #f1b0b7;">High (10,001-100,000)</span>
+                        <span class="badge" style="background-color: #f9c6d1; color: #721c24; border: 1px solid #f1b0b7;">Very High (100,001+)</span>
+                        <span class="badge" style="background-color: #eee8f8; color: #563d7c; border: 1px solid #d4c5eb;">Suppressed (1-4)</span>
+                        <span class="badge bg-light text-muted border">No Data</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+    <!-- Error Display -->
+    @if (!string.IsNullOrEmpty(errorMessage))
+    {
+        <div class="alert alert-danger" role="alert">
+            <i class="fas fa-exclamation-triangle me-2"></i>
+            <strong>Error:</strong> @errorMessage
+        </div>
+    }    <!-- Results Section with Syncfusion Grid -->
+    @if (usageResults != null && usageResults.Any())
+    {
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <span class="fw-bold">Results: @usageResults.Count result(s) found</span>
+                        <SfButton @onclick="ExportToCsv" 
+                                 CssClass="e-outline e-small">
+                            <i class="fas fa-download me-1"></i>Export CSV
+                        </SfButton>
+                    </div>
+                    <div class="card-body p-0">                        @try
+                        {
+                            @if (usageResults != null && usageResults.Count > 0)
+                            {
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-hover">
+                                        <thead class="table-dark">
+                                            <tr>
+                                                <th>SNOMED CT Code</th>
+                                                <th>Procedure Description</th>
+                                                @foreach (var periodIndex in DisplayPeriodIndexes)
+                                                {
+                                                    <th>@manifest!.Periods[periodIndex]</th>
+                                                }
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var item in usageResults)
+                                            {
+                                                <tr>
+                                                    <td><strong>@item.ConceptId</strong> <span class="text-muted small">(@item.GeographicCoverage)</span></td>
+                                                    <td><span class="procedure-description">@item.Description</span></td>
+                                                    @foreach (var periodIndex in DisplayPeriodIndexes)
+                                                    {
+                                                        <td><span style="@GetCellStyle(item.Usage[periodIndex])" class="usage-cell">@FormatNumber(item.Usage[periodIndex])</span></td>
+                                                    }
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="alert alert-info">No data to display</div>
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            <div class="alert alert-danger">
+                                <strong>Grid Error:</strong> @ex.Message
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    }    else if (hasSearched && !isLoading && string.IsNullOrEmpty(errorMessage))
+    {
+        <div class="alert alert-info">
+            <i class="fas fa-info-circle me-2"></i>
+            No usage data found for the provided SNOMED CT codes. Please verify the codes and try again.
+        </div>
+    }
+    </div>
+</div>
+
+<style>    /* Ensure the page header wrapper respects the sidebar */
+    .page-header-wrapper {
+        /* Remove all padding and margin to align with sidebar */
+        padding: 0;
+        margin: 0;
+        border-bottom: 1px solid #dee2e6; /* Match sidebar header separator */
+        background-color: #f8f9fa; /* Match sidebar header background */
+    }.page-header {
+        /* Match sidebar header exactly */
+        padding: 15px; /* Match sidebar header padding */
+        height: 42px !important; /* Fixed height to match sidebar header */
+        min-height: 42px !important; /* Ensure minimum height */
+        max-height: 42px !important; /* Ensure maximum height */
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        max-width: 100%;
+        margin: 0; /* Remove auto margins */
+    }    .page-header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%; /* Ensure full width */
+        flex-wrap: nowrap; /* Prevent wrapping to keep items on same line */
+    }
+
+    .page-header-main {
+        flex-grow: 1;
+        min-width: 0; /* Prevent title cutoff by allowing shrinking */
+        margin-right: 20px; /* Add space between title and actions */
+    }.page-title {
+        font-size: 1.1rem; /* Reduced from 1.5rem for better fit */
+        font-weight: 500;
+        color: #333;
+        white-space: nowrap; /* Prevent wrapping to avoid squashing */
+        overflow: hidden; /* Hide overflow if necessary */
+        text-overflow: ellipsis; /* Add ellipsis for long text */
+        margin: 0; /* Remove default margins */
+        line-height: 1.1; /* Tighter line height for compact header */
+    }    .page-subtitle {
+        font-size: 0.75rem; /* Reduced from 0.9rem for better fit */
+        color: #6c757d;
+        margin: 0; /* Remove default margins */
+        line-height: 1.1; /* Tighter line height */
+        white-space: nowrap; /* Prevent wrapping */
+        overflow: hidden; /* Hide overflow if necessary */
+        text-overflow: ellipsis; /* Add ellipsis for long text */
+    }    .page-header-actions {
+        display: flex;
+        align-items: center;
+        gap: 15px; /* Increased spacing between action items */
+        flex-shrink: 0; /* Prevent actions from shrinking too much */
+        margin-left: auto; /* Ensure it stays on the right */
+        justify-content: flex-end; /* Align content to the right */
+        min-width: fit-content; /* Ensure it takes minimum required space */
+    }
+
+    .created-by {
+        font-size: 0.8rem;
+        color: #6c757d;
+        font-style: italic;
+        white-space: nowrap; /* Prevent wrapping */
+    }    .github-link {
+        display: inline-flex;
+        align-items: center;
+        padding: 5px;
+        border-radius: 4px;
+        transition: background-color 0.2s;
+    }
+
+    .github-link:hover {
+        background-color: #f8f9fa;
+        text-decoration: none;
+    }
+
+    .github-link i {
+        color: #333; /* GitHub icon color */
+    }
+    .github-link:hover i {
+        color: #000; /* Darker on hover */
+    }
+
+    /* Style the SNOMED browser button */
+    .btn-primary {
+        background-color: #0d6efd;
+        border-color: #0d6efd;
+        font-size: 0.8rem;
+        padding: 4px 8px;
+        white-space: nowrap;
+    }
+
+    .btn-primary:hover {
+        background-color: #0b5ed7;
+        border-color: #0a58ca;
+    }    /* Responsive adjustments for smaller screens */
+    @@media (max-width: 768px) {
+        .page-header-content {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .page-header-actions {
+            margin-top: 10px;
+            width: 100%;
+            justify-content: flex-start;
+            margin-left: 0; /* Reset margin on mobile */
+        }
+        .page-title {
+            font-size: 1.25rem;
+        }
+        .page-header-main {
+            margin-right: 0; /* Remove margin on mobile */
+        }
+    }
+
+    /* Ensure proper alignment on larger screens */
+    @@media (min-width: 769px) {
+        .page-header-content {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .page-header-actions {
+            margin-left: auto;
+            justify-content: flex-end;
+        }
+    }
+
+    .snomed-textarea {
+        font-family: 'Courier New', monospace !important;
+        font-size: 0.9rem;
+        border: 2px solid #e0e6ed;
+        border-radius: 6px;
+        padding: 8px 12px;
+    }
+    .snomed-textarea:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+    .table-hover tbody tr:hover {
+        background-color: #f8f9fa !important;
+    }
+    .usage-cell {
+        padding: 4px;
+        border-radius: 3px;
+        font-weight: 500;
+        text-align: center;
+        min-height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* Make description text darker and bolder */
+    .procedure-description {
+        color: #343a40 !important;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    /* Reduce space between table rows */
+    .table > :not(caption) > * > * {
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+    .table {
+        margin-bottom: 0;
+    }
+</style>
+
+@code {
+    private string searchCodes = "";
+    private SnomedUsageManifest? manifest;
+    private List<SnomedUsageResult>? usageResults;
+    private bool isLoading = false;
+    private bool hasSearched = false;
+    private string errorMessage = "";
+    private string FirstPeriod => manifest?.Periods.FirstOrDefault() ?? "2011-12";
+    private string LatestPeriod => manifest?.Periods.LastOrDefault() ?? "latest";
+    private IEnumerable<int> DisplayPeriodIndexes => manifest is null
+        ? Enumerable.Empty<int>()
+        : Enumerable.Range(0, manifest.Periods.Count).Reverse();
+
+    public enum ExampleType
+    {
+        BodyMass,
+        CellCount,
+        Multiple,
+        TopUsedLatest
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            manifest = await UsageDataService.GetManifestAsync();
+        }
+        catch (Exception ex)
+        {
+            errorMessage = "The usage data could not be loaded. Please try searching again.";
+            Console.WriteLine($"OnInitializedAsync Error: {ex}");
+        }
+    }
+
+    private async Task SearchUsageData()
+    {
+        usageResults = null;
+        hasSearched = false;
+
+        if (string.IsNullOrWhiteSpace(searchCodes))
+        {
+            errorMessage = "Please enter at least one SNOMED CT code.";
+            return;
+        }
+
+        isLoading = true;
+        errorMessage = "";
+
+        try
+        {
+            manifest ??= await UsageDataService.GetManifestAsync();
+            usageResults = await UsageDataService.GetUsageDataAsync(searchCodes.Trim());
+            hasSearched = true;
+        }
+        catch (ArgumentException ex)
+        {
+            errorMessage = ex.Message;
+        }
+        catch (Exception ex)
+        {
+            errorMessage = "The usage data could not be loaded. Please try again.";
+            usageResults = null;
+            Console.WriteLine($"SearchUsageData Error: {ex}");
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private void OnSearchCodesInput(TextAreaInputEventArgs args)
+    {
+        searchCodes = args.Value ?? "";
+    }
+
+    private void ClearData()
+    {
+        searchCodes = "";
+        usageResults = null;
+        errorMessage = "";
+        hasSearched = false;
+    }
+
+    private void SetExampleCodes(ExampleType type)
+    {
+        searchCodes = type switch
+        {
+            ExampleType.BodyMass => "698065002",
+            ExampleType.CellCount => "1022541000000102",
+            ExampleType.Multiple => "182836005,88551000000109,93311000000106,1239511000000100,394720003,391156007,279681000000105,413974004,415693003,870661000000100,922731000000106,394725008,413143000,473226007,401062003,712761000000103,287031000000100,803361000000109,938551000000108,858091000000102,769063007,772741000000105,394724007,473225006,810241000000107,381231000000106,381291000000107,381351000000107,1106111000000108,718017007,381261000000101,381321000000102,1079381000000109,1811000124107,965871000000101,473231009,395005007,792951000000100,473223004,1841000124106,753951000000101,473219007,1103191000000105,1089291000000107,473221002,473227003,473235000,473230005,473220001,473228008,428911000124108,473234001,473224005,473233007,473232002,1831000124101,1156698007,6021000124103",
+            ExampleType.TopUsedLatest => string.Join(',', manifest?.TopConceptIds ?? []),
+            _ => ""
+        };
+    }
+
+    private string GetCellStyle(long value)
+    {
+        // Color palette based on screenshot
+        if (value == manifest?.SuppressedValue) return "background-color: #eee8f8; color: #563d7c; border: 1px solid #d4c5eb; padding: 4px; border-radius: 3px;"; // Suppressed 1-4
+        if (value == 0) return "background-color: #f8f9fa; color: #6c757d; border: 1px solid #e9ecef; padding: 4px; border-radius: 3px;"; // No Data
+        if (value <= 100) return "background-color: #e8f4f8; color: #2c5aa0; border: 1px solid #b8dce8; padding: 4px; border-radius: 3px;"; // Very Low
+        if (value <= 1000) return "background-color: #d4f1d4; color: #1e7e34; border: 1px solid #a3d9a3; padding: 4px; border-radius: 3px;"; // Low
+        if (value <= 10000) return "background-color: #fff3cd; color: #856404; border: 1px solid #f6e0a6; padding: 4px; border-radius: 3px;"; // Medium
+        if (value <= 100000) return "background-color: #f8d7da; color: #721c24; border: 1px solid #f1b0b7; padding: 4px; border-radius: 3px;"; // High
+        return "background-color: #f9c6d1; color: #721c24; border: 1px solid #f1b0b7; padding: 4px; border-radius: 3px;"; // Very High
+    }
+
+    private string FormatNumber(long value)
+    {
+        if (value == manifest?.SuppressedValue)
+        {
+            return "*";
+        }
+
+        return value == 0 ? "0" : value.ToString("N0", CultureInfo.CurrentCulture);
+    }
+
+    private async Task ExportToCsv()
+    {
+        if (usageResults == null || !usageResults.Any())
+            return;
+
+        try
+        {
+            if (manifest is null)
+            {
+                return;
+            }
+
+            var csvContent = new StringBuilder();
+            csvContent.Append("SNOMED CT Code,Procedure,Geographic Coverage");
+            foreach (var periodIndex in DisplayPeriodIndexes)
+            {
+                csvContent.Append(',').Append(manifest.Periods[periodIndex]);
+            }
+            csvContent.AppendLine();
+
+            foreach (var item in usageResults)
+            {
+                csvContent
+                    .Append(EscapeCsv(item.ConceptId)).Append(',')
+                    .Append(EscapeCsv(item.Description)).Append(',')
+                    .Append(EscapeCsv(item.GeographicCoverage));
+
+                foreach (var periodIndex in DisplayPeriodIndexes)
+                {
+                    var usage = item.Usage[periodIndex];
+                    csvContent.Append(',').Append(
+                        usage == manifest.SuppressedValue
+                            ? "*"
+                            : usage.ToString(CultureInfo.InvariantCulture));
+                }
+                csvContent.AppendLine();
+            }
+
+            await JSRuntime.InvokeVoidAsync(
+                "downloadFile",
+                $"snomed-usage-data-{manifest.DatasetVersion}.csv",
+                csvContent.ToString(),
+                "text/csv");
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Export failed: {ex.Message}";
+        }
+    }
+
+    private static string EscapeCsv(string value)
+    {
+        return "\"" + value.Replace("\"", "\"\"") + "\"";
+    }
+}
+
+<style>
+    .snomed-textarea {
+        font-family: 'Courier New', monospace !important;
+        font-size: 0.9rem;
+        border: 2px solid #e0e6ed;
+        border-radius: 6px;
+        padding: 8px 12px;
+    }
+    .snomed-textarea:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+    .table-hover tbody tr:hover {
+        background-color: #f8f9fa !important;
+    }
+    .usage-cell {
+        padding: 4px;
+        border-radius: 3px;
+        font-weight: 500;
+        text-align: center;
+        min-height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* Make description text darker and bolder */
+    .procedure-description {
+        color: #343a40 !important;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    /* Reduce space between table rows */
+    .table > :not(caption) > * > * {
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+    .table {
+        margin-bottom: 0;
+    }
+</style>

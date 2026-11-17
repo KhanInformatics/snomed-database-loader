@@ -1,0 +1,1586 @@
+<!doctype html>
+<html lang="en" data-visualize-standalone>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src 'unsafe-inline' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Terminology Update Log</title>
+<style>:root{color-scheme:light dark;background:light-dark(rgb(255 255 255), rgb(24 24 24))}html,body{margin:0}body{box-sizing:border-box;padding:1rem;background:inherit}iframe{display:block;width:100%;height:calc(100vh - 2rem);margin:0 auto;border:0}</style>
+</head>
+<body>
+<iframe sandbox="allow-scripts" referrerpolicy="no-referrer" title="Terminology Update Log" srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot; data-visualize-standalone&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
+&lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src &#x27;none&#x27;; script-src &#x27;unsafe-inline&#x27; &#x27;unsafe-eval&#x27; &#x27;wasm-unsafe-eval&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src &#x27;unsafe-inline&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src &#x27;none&#x27;; object-src &#x27;none&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;&quot;&gt;
+&lt;title&gt;Terminology Update Log&lt;/title&gt;
+&lt;style&gt;:root {
+  color-scheme: light dark;
+  background-color: var(
+    --background,
+    var(--color-background-primary, light-dark(rgb(255 255 255), rgb(24 24 24)))
+  ) !important;
+
+  /* Agent-facing contract; keep in sync with SKILL.md. */
+  --background: var(
+    --color-background-primary,
+    light-dark(rgb(255 255 255), rgb(24 24 24))
+  );
+  --foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --card: color-mix(in oklab, var(--foreground) 5%, var(--background));
+  --card-foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --popover: var(
+    --color-background-secondary,
+    light-dark(rgb(255 255 255), rgb(45 45 45))
+  );
+  --popover-foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --primary: var(
+    --color-text-info,
+    light-dark(rgb(51 156 255), rgb(131 195 255))
+  );
+  --primary-foreground: var(
+    --color-text-inverse,
+    light-dark(rgb(255 255 255), rgb(13 13 13))
+  );
+  --secondary: var(
+    --color-background-secondary,
+    light-dark(rgb(255 255 255 / 96%), rgb(54 54 54 / 96%))
+  );
+  --secondary-foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --muted: color-mix(in srgb, var(--foreground) 10%, transparent);
+  --muted-foreground: var(
+    --color-text-secondary,
+    light-dark(rgb(26 28 31 / 49.4%), rgb(255 255 255 / 49.8%))
+  );
+  --accent: var(
+    --color-background-info,
+    light-dark(rgb(229 242 255), rgb(13 39 63))
+  );
+  --accent-foreground: var(
+    --color-text-info,
+    light-dark(rgb(51 156 255), rgb(131 195 255))
+  );
+  --destructive: var(
+    --color-text-warning,
+    light-dark(rgb(226 85 7), rgb(255 133 73))
+  );
+  --border: var(
+    --color-border-secondary,
+    light-dark(rgb(26 28 31 / 8%), rgb(255 255 255 / 8.2%))
+  );
+  --input: var(
+    --color-border-primary,
+    light-dark(
+      rgb(26 28 31 / 11.8%),
+      color-mix(in oklab, rgb(0 0 0) 10%, transparent)
+    )
+  );
+  --ring: var(
+    --color-ring-primary,
+    light-dark(rgb(51 156 255), rgb(131 195 255 / 76%))
+  );
+  --font-size-base: var(--font-text-md-size, 14px);
+  --blue: light-dark(rgb(51 156 255), rgb(51 156 255));
+  --orange: light-dark(rgb(226 85 7), rgb(251 106 34));
+  --green: light-dark(rgb(0 162 64), rgb(64 201 119));
+  --red: light-dark(rgb(224 46 42), rgb(255 103 100));
+  --purple: light-dark(rgb(146 79 247), rgb(173 123 249));
+  --yellow: light-dark(rgb(255 195 0), rgb(255 210 64));
+  --viz-series-1: var(--primary);
+  --viz-series-2: light-dark(rgb(243 136 59), rgb(245 154 86));
+  --viz-series-3: light-dark(rgb(93 201 119), rgb(116 213 139));
+  --viz-series-4: light-dark(rgb(235 119 177), rgb(240 143 192));
+  --viz-series-5: light-dark(rgb(155 121 236), rgb(170 145 239));
+  --viz-series-6: light-dark(rgb(58 185 177), rgb(90 203 194));
+
+  /* Internal implementation variables; not part of the agent contract. */
+  --font-sans: -apple-system, system-ui, &quot;Segoe UI&quot;, sans-serif;
+  --font-mono:
+    ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Menlo, Consolas, &quot;Liberation Mono&quot;,
+    monospace;
+  --font-size-normal: max(11px, var(--font-size-base));
+  --font-size-tooltip: calc(var(--font-size-base) - 1px);
+  --font-size-small: max(11px, calc(var(--font-size-base) - 2px));
+  --font-size-h1: calc(var(--font-size-normal) * 1.7142857143);
+  --font-size-h2: calc(var(--font-size-normal) * 1.4285714286);
+  --font-size-h3: calc(var(--font-size-normal) * 1.2857142857);
+  --font-weight-normal: 430;
+  --font-weight-medium: 500;
+  --icon-size: 16px;
+  --line-height-normal: calc(var(--font-size-normal) * 1.5);
+  --line-height-tooltip: calc(var(--font-size-tooltip) * 1.4285714286);
+  --line-height-small: calc(var(--font-size-small) + 4px);
+  --corner-shape: round;
+  --radius: var(--border-radius-lg, 10px);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-2xl: calc(var(--radius) * 1.6);
+  --radius-full: 9999px;
+  --shadow-sm: 0 1px 2px -1px rgb(0 0 0 / 8%);
+  --checkmark-image: url(&quot;data:image/svg+xml,%3Csvg xmlns=&#x27;http://www.w3.org/2000/svg&#x27; viewBox=&#x27;0 0 17 17&#x27;%3E%3Cpath d=&#x27;M12.8961 3.64101C13.1297 3.41418 13.4984 3.37523 13.7779 3.56581C14.0571 3.75635 14.1554 4.11331 14.0299 4.41347L13.9615 4.53847L7.71151 13.7045C7.59411 13.8767 7.4063 13.9877 7.19881 14.0072C6.99136 14.0267 6.78564 13.9533 6.63826 13.806L2.88826 10.056L2.79842 9.9457C2.6192 9.67407 2.64927 9.30496 2.88826 9.06581C3.12738 8.82669 3.49647 8.79676 3.76815 8.97597L3.8785 9.06581L7.03084 12.2182L12.8053 3.74941L12.8961 3.64101Z&#x27;/%3E%3C/svg%3E&quot;);
+
+  /* Legacy aliases; not part of the current agent contract. */
+  --viz-bg: transparent;
+  --viz-panel: var(--card);
+  --viz-border: var(--border);
+  --viz-text: var(--foreground);
+  --viz-muted: var(--muted-foreground);
+  --viz-accent: var(--primary);
+  --viz-accent-text: var(--primary-foreground);
+  --viz-accent-bg: var(--accent);
+  --viz-font-size: var(--font-size-base);
+  --viz-warning: var(--destructive);
+}
+
+:root[data-theme=&quot;light&quot;] {
+  color-scheme: light;
+}
+
+:root[data-theme=&quot;dark&quot;] {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html &gt; body {
+  /* Preserve MCP aliases for older inline renderers without creating :root cycles. */
+  --color-background-primary: var(
+    --background,
+    light-dark(rgb(255 255 255), rgb(24 24 24))
+  );
+  --color-text-primary: var(
+    --foreground,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --color-border-secondary: var(
+    --border,
+    light-dark(rgb(26 28 31 / 8%), rgb(255 255 255 / 8.2%))
+  );
+
+  margin: 0;
+  padding: var(--visualize-paint-gutter, 0px);
+  color: var(--foreground);
+  background: transparent !important;
+  font-family: var(--font-sans) !important;
+  font-size: var(--font-size-normal);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
+}
+
+a {
+  color: color-mix(in srgb, var(--viz-accent) 80%, var(--viz-text) 20%);
+  cursor: pointer;
+  font-weight: var(--font-weight-medium, 500);
+  text-decoration: none;
+  text-underline-offset: 2px;
+}
+
+a:is(:hover, :focus-visible) {
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-decoration-thickness: 0.5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-block: 0;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.3;
+}
+
+b,
+strong,
+th {
+  font-weight: var(--font-weight-medium);
+}
+
+code:not(pre code) {
+  display: inline;
+  padding: 1px 6px;
+  border-radius: var(--radius-sm);
+  corner-shape: var(--corner-shape);
+  background: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  overflow-wrap: anywhere;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  word-break: break-word;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--foreground);
+  font: inherit;
+  text-align: start;
+}
+
+.table :is(th, td) {
+  padding-block: 10px;
+  padding-inline: 0 24px;
+  overflow-wrap: anywhere;
+  border-bottom: 1px solid var(--border);
+  text-align: start;
+  vertical-align: top;
+}
+
+.table-responsive &gt; .table :is(th, td) {
+  overflow-wrap: break-word;
+}
+
+.table :is(th, td):last-child {
+  padding-inline-end: 0;
+}
+
+.table :is(caption, thead th) {
+  font-weight: 600;
+}
+
+.table thead th {
+  padding-block: 8px;
+  border-bottom-color: color-mix(in srgb, var(--foreground) 16%, transparent);
+}
+
+.table tbody tr:last-child :is(th, td) {
+  border-bottom: 0;
+}
+
+.table.table-sm :is(th, td) {
+  padding-block: 6px;
+}
+
+.table.table-sm :is(th, td):not(:last-child) {
+  padding-inline-end: 16px;
+}
+
+.table :is(.text-end, [align=&quot;right&quot;]) {
+  text-align: end;
+  font-variant-numeric: tabular-nums;
+}
+
+.table :is(.text-center, [align=&quot;center&quot;]) {
+  text-align: center;
+}
+
+.table .text-nowrap {
+  white-space: nowrap;
+}
+
+#widget {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  padding: 0;
+  background: transparent !important;
+}
+
+.card {
+  min-width: 0;
+  padding: 12px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  border-radius: var(--radius-2xl);
+  corner-shape: var(--corner-shape);
+  color: var(--card-foreground);
+  background: var(--card);
+}
+
+#widget &gt; :not(.card, .progress) {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.tooltip {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  width: max-content;
+  max-width: min(
+    20rem,
+    var(--tooltip-available-width, calc(100vw - 10px)),
+    calc(100vw - 10px)
+  );
+  max-height: min(
+    var(--tooltip-available-height, calc(100vh - 10px)),
+    calc(100vh - 10px)
+  );
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  corner-shape: var(--corner-shape);
+  color: var(--popover-foreground);
+  background: var(--popover);
+  box-shadow: none;
+  font-size: var(--font-size-tooltip);
+  line-height: var(--line-height-tooltip);
+  overflow-wrap: break-word;
+  white-space: normal;
+  pointer-events: none;
+  user-select: none;
+}
+
+.viz-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(max(180px, 24%), 1fr));
+  gap: 10px;
+}
+
+.viz-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.viz-stat-value {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+.viz-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  margin-block: 6px;
+  border: 0;
+  background: var(--border);
+}
+
+.nav {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 4px;
+}
+
+.progress {
+  display: flex;
+  height: 8px;
+  margin-block: calc((var(--line-height-normal, 1.5em) - 8px) / 2);
+  overflow: hidden;
+  border: 0;
+  border-radius: var(--radius-full);
+  background: var(--muted);
+}
+
+.progress-bar:only-child {
+  border-radius: var(--radius-full);
+}
+
+.progress-bar {
+  height: 100%;
+  flex-shrink: 0;
+  border: 0;
+  background: var(--viz-series-1);
+}
+
+.viz-badge {
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  color: var(--accent-foreground);
+  background: var(--accent);
+  font-weight: var(--font-weight-medium);
+}
+
+small,
+.text-small,
+.viz-badge {
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+}
+
+.text-muted {
+  color: var(--muted-foreground);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.viz-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.viz-controls &gt; .form-label {
+  display: grid;
+  min-width: min(100%, 260px);
+  flex: 1 1 280px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 2px 12px;
+  margin-bottom: 0;
+}
+
+.viz-controls &gt; .form-label &gt; :is(.form-control, .form-range, .form-select) {
+  grid-column: 1 / -1;
+}
+
+.btn,
+.nav-link,
+.form-check-input,
+.form-control,
+.form-range,
+.form-select {
+  font: inherit;
+}
+
+.btn,
+.nav-link {
+  appearance: button;
+  display: inline-flex;
+  inline-size: fit-content;
+  max-inline-size: 100%;
+  min-height: 28px;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin: 0;
+  padding: 0 8px;
+  -webkit-app-region: no-drag;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  corner-shape: var(--corner-shape);
+  color: var(--secondary-foreground);
+  background: var(--secondary);
+  cursor: var(--cursor-interaction, pointer);
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+.btn:is(.btn-block, .viz-tile) {
+  inline-size: 100%;
+}
+
+.btn.viz-tile {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+a.btn {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:not(:disabled):hover,
+.nav-link:not(:disabled):not([aria-disabled=&quot;true&quot;]):hover {
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.btn-primary {
+  border-color: transparent;
+  color: var(--primary-foreground);
+  background: var(--foreground);
+  background-clip: padding-box;
+}
+
+.btn-primary .text-muted {
+  color: color-mix(in srgb, var(--primary-foreground) 50%, transparent);
+}
+
+.btn-primary:not(:disabled):hover {
+  background: color-mix(in srgb, var(--foreground) 80%, transparent);
+  background-clip: padding-box;
+}
+
+.btn-ghost {
+  border-color: transparent;
+  color: var(--muted-foreground);
+  background: transparent;
+}
+
+.btn-ghost:not(:disabled):hover {
+  color: var(--foreground);
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.nav-pills .nav-link {
+  min-width: 0;
+  border-color: transparent;
+  color: var(--muted-foreground);
+  background: transparent;
+}
+
+.nav-justified .nav-link {
+  flex: 1 1 0;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+.nav-pills .nav-link.active {
+  color: var(--foreground);
+  background: var(--muted);
+}
+
+.btn:disabled,
+.nav-link:disabled,
+.nav-link[aria-disabled=&quot;true&quot;] {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+[data-lucide] {
+  stroke-width: 1.6;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--foreground);
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  min-height: 28px;
+  padding: 0 8px;
+  outline: none;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  corner-shape: var(--corner-shape);
+  color: var(--foreground);
+  background: var(--secondary);
+}
+
+.form-control::placeholder {
+  color: var(--muted-foreground);
+}
+
+.form-control[type=&quot;file&quot;] {
+  padding: 0;
+  overflow: hidden;
+  cursor: var(--cursor-interaction, pointer);
+}
+
+.form-control[type=&quot;file&quot;]::file-selector-button {
+  min-height: 26px;
+  margin-right: 8px;
+  padding: 0 8px;
+  border: 0;
+  border-right: 1px solid var(--input);
+  color: var(--secondary-foreground);
+  background: var(--secondary);
+  cursor: inherit;
+  font: inherit;
+}
+
+.form-control[type=&quot;file&quot;]:not(:disabled):hover::file-selector-button {
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.form-control-color[type=&quot;color&quot;] {
+  width: 40px;
+  height: 28px;
+  padding: 3px;
+  cursor: var(--cursor-interaction, pointer);
+}
+
+.form-control-color[type=&quot;color&quot;]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.form-control-color[type=&quot;color&quot;]::-webkit-color-swatch {
+  border: 0;
+  border-radius: calc(var(--radius-lg) - 4px);
+  corner-shape: var(--corner-shape);
+}
+
+textarea.form-control {
+  height: auto;
+  min-height: 72px;
+  padding: 8px 10px;
+  resize: vertical;
+}
+
+.form-control:focus-visible {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-control:disabled,
+.form-select:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.form-select {
+  appearance: none;
+  display: block;
+  width: 100%;
+  min-height: 28px;
+  margin: 0;
+  padding: 0 32px 0 8px;
+  outline: none;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  corner-shape: var(--corner-shape);
+  color: var(--foreground);
+  background-color: var(--secondary);
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--muted-foreground) 50%),
+    linear-gradient(135deg, var(--muted-foreground) 50%, transparent 50%);
+  background-position:
+    calc(100% - 14px) 50%,
+    calc(100% - 10px) 50%;
+  background-repeat: no-repeat;
+  background-size: 4px 4px;
+  cursor: var(--cursor-interaction, default);
+}
+
+.form-select:not(:disabled):hover {
+  background-color: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.form-select:focus-visible {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-check {
+  display: flex;
+  min-height: 20px;
+  align-items: center;
+  gap: 6px;
+}
+
+.form-check-input {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  flex: 0 0 auto;
+  margin: 0;
+  border: 1px solid var(--input);
+  color: var(--primary-foreground);
+  background-color: transparent;
+  cursor: var(--cursor-interaction, default);
+  transition:
+    background-color 150ms,
+    border-color 150ms,
+    box-shadow 150ms;
+}
+
+.form-check:not(.form-switch) .form-check-input[type=&quot;checkbox&quot;] {
+  border-color: var(--input);
+  border-radius: var(--radius-sm);
+  corner-shape: var(--corner-shape);
+  background-color: var(--secondary);
+  box-shadow: var(--shadow-sm);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input:not(:disabled):not(:checked):hover {
+  background-color: var(--card);
+}
+
+.form-check:not(.form-switch) .form-check-input[type=&quot;checkbox&quot;]:checked {
+  border-color: var(--primary);
+  background-color: var(--primary);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input[type=&quot;checkbox&quot;]:checked::before {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-foreground);
+  content: &quot;&quot;;
+  mask: var(--checkmark-image) center / 12px 12px no-repeat;
+}
+
+.form-check-input[type=&quot;radio&quot;] {
+  width: 14px;
+  height: 14px;
+  border-radius: var(--radius-full);
+}
+
+.form-check-input[type=&quot;radio&quot;]:checked {
+  border: 2px solid var(--primary);
+  background:
+    radial-gradient(circle, var(--primary-foreground) 0 2.5px, transparent 3px),
+    var(--primary);
+}
+
+.form-check:not(.form-switch) .form-check-input:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+.form-check:not(.form-switch) .form-check-input:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.form-check:not(.form-switch) .form-check-input:disabled + .form-check-label {
+  cursor: not-allowed;
+}
+
+.form-switch .form-check-input:disabled,
+.form-switch .form-check-input:disabled + .form-check-label {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.form-check-label {
+  color: var(--foreground);
+  cursor: var(--cursor-interaction, default);
+}
+
+.form-switch .form-check-input {
+  position: relative;
+  width: 32px;
+  height: 20px;
+  border: 0;
+  border-radius: var(--radius-full);
+  background: var(--muted);
+  box-shadow: none;
+  transition: background-color 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.form-switch .form-check-input::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  border: 1px solid light-dark(var(--primary-foreground), var(--foreground));
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+  box-shadow: var(--shadow-sm);
+  content: &quot;&quot;;
+  transform: translate(2px, -50%);
+  transition: transform 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.form-switch .form-check-input:checked {
+  background: var(--primary);
+}
+
+.form-switch .form-check-input:checked::before {
+  transform: translate(14px, -50%);
+}
+
+.form-switch .form-check-input:focus-visible {
+  box-shadow: 0 0 0 2px var(--ring);
+}
+
+.form-range {
+  appearance: none;
+  display: block;
+  width: 100%;
+  height: 28px;
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: 0;
+  accent-color: var(--primary);
+  background: linear-gradient(
+      color-mix(in srgb, var(--foreground) 7%, transparent),
+      color-mix(in srgb, var(--foreground) 7%, transparent)
+    )
+    center / 100% 2px no-repeat;
+}
+
+.form-range::-webkit-slider-runnable-track {
+  height: 28px;
+  background: transparent;
+}
+
+.form-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  margin-top: 4px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+}
+
+.form-range:focus-visible::-webkit-slider-thumb {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-range::-moz-range-track {
+  height: 28px;
+  background: transparent;
+}
+
+.form-range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+}
+
+.form-range:focus-visible::-moz-range-thumb {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-range:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.btn:not(.btn-primary, .viz-tile):is(
+  [aria-pressed=&quot;true&quot;],
+  [aria-selected=&quot;true&quot;],
+  .is-selected
+) {
+  border-color: var(--primary);
+  color: var(--primary-foreground);
+  background: var(--primary);
+}
+
+.btn.viz-tile:is([aria-pressed=&quot;true&quot;], [aria-selected=&quot;true&quot;], .is-selected) {
+  border-color: var(--primary);
+  box-shadow: inset 0 0 0 1px var(--primary);
+}
+
+.btn:focus-visible,
+.nav-link:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+@media (pointer: coarse) {
+  .btn,
+  .nav-link,
+  .form-control,
+  .form-select {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  /* Keep small-screen WebKit from zooming when a text field receives focus. */
+  .form-control,
+  .form-select {
+    font-size: max(16px, var(--font-size-normal));
+  }
+
+  .form-control[type=&quot;file&quot;]::file-selector-button {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .form-control-color[type=&quot;color&quot;] {
+    width: 44px;
+    height: 44px;
+  }
+
+  .form-control:is(
+    [type=&quot;date&quot;],
+    [type=&quot;datetime-local&quot;],
+    [type=&quot;month&quot;],
+    [type=&quot;time&quot;],
+    [type=&quot;week&quot;]
+  ) {
+    min-width: 0;
+    max-width: 100%;
+    padding-block: 8px;
+  }
+
+  .form-check {
+    min-height: 44px;
+    padding-inline: 15px;
+  }
+
+  .form-check-input {
+    position: relative;
+  }
+
+  .form-check-input::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 44px;
+    height: 44px;
+    content: &quot;&quot;;
+    transform: translate(-50%, -50%);
+  }
+
+  .form-check-label {
+    display: inline-flex;
+    min-width: 44px;
+    min-height: 44px;
+    align-items: center;
+  }
+
+  .form-range {
+    height: 44px;
+    touch-action: pan-y;
+  }
+
+  .form-range::-webkit-slider-runnable-track {
+    height: 44px;
+  }
+
+  .form-range::-moz-range-track {
+    height: 44px;
+  }
+
+  .form-range::-webkit-slider-thumb {
+    margin-top: 12px;
+  }
+}
+
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#widget &gt; svg {
+  width: 100%;
+}
+
+/* Model-authored chart rules can otherwise stretch icons after these styles load. */
+svg.lucide {
+  display: block;
+  width: var(--icon-size) !important;
+  height: var(--icon-size) !important;
+  flex: none;
+  margin: 0 !important;
+  stroke-width: 1.6;
+}
+
+.text-warning,
+.text-destructive {
+  color: var(--destructive);
+}
+
+html&gt;body{padding:0}&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;term-log-preview&quot; aria-label=&quot;Terminology update log design&quot;&gt;
+  &lt;style&gt;
+    #term-log-preview{--tl-bg:light-dark(#f5f7fb,#141923);--tl-surface:light-dark(#ffffff,#1c2330);--tl-text:light-dark(#17253d,#e7eef9);--tl-muted:light-dark(#586980,#a6b5cc);--tl-border:light-dark(#e2e8f0,#354155);--tl-blue:light-dark(#245dce,#93b5ff);--tl-blue-soft:light-dark(#edf3ff,#263b60);--tl-green:light-dark(#17724c,#7fdbb2);--tl-green-soft:light-dark(#eaf7ef,#203e32);--tl-red:light-dark(#b73939,#ffabab);--tl-red-soft:light-dark(#fff0ef,#452c31);--tl-amber:light-dark(#8b5c0b,#f1c76d);--tl-amber-soft:light-dark(#fff7e5,#413923);font:14px/1.5 &quot;Segoe UI&quot;,Arial,sans-serif;color:var(--tl-text);width:100%;color-scheme:light dark}
+    #term-log-preview *{box-sizing:border-box}
+    #term-log-preview h1,#term-log-preview h2,#term-log-preview h3,#term-log-preview p{margin:0;font-family:inherit;color:inherit}
+    #term-log-preview button,#term-log-preview select{font:inherit;color:inherit}
+    #term-log-preview button{cursor:pointer}
+    #term-log-preview [hidden]{display:none!important}
+    #term-log-preview .tl-shell{display:grid;grid-template-columns:174px minmax(0,1fr);background:var(--tl-bg);min-width:0;border:1px solid var(--tl-border);border-radius:12px;overflow:clip}
+    #term-log-preview .tl-side{background:var(--tl-surface);border-right:1px solid var(--tl-border);padding:24px 13px}
+    #term-log-preview .tl-brand{display:flex;align-items:center;gap:9px;padding:0 5px 26px;font-weight:500;line-height:1.25}
+    #term-log-preview .tl-brand small{display:block;font-size:11px;font-weight:400;color:var(--tl-muted);margin-top:4px}
+    #term-log-preview .tl-brand-mark{background:var(--tl-blue-soft);color:var(--tl-blue);border-radius:9px;padding:8px;display:flex}
+    #term-log-preview .tl-nav-caption{color:var(--tl-muted);font-size:11px;letter-spacing:1px;padding:14px 10px 7px}
+    #term-log-preview .tl-nav-item{display:flex;align-items:center;gap:9px;padding:10px;font-size:12px;color:var(--tl-muted);border-radius:7px;margin:3px 0}
+    #term-log-preview .tl-nav-item[aria-current]{background:var(--tl-blue-soft);color:var(--tl-blue);font-weight:500}
+    #term-log-preview .tl-side-note{border-top:1px solid var(--tl-border);margin:28px 8px 0;padding-top:16px;color:var(--tl-muted);font-size:11px;line-height:1.6}
+    #term-log-preview .tl-side-note strong{font-weight:500;color:var(--tl-text);display:block;font-size:12px}
+    #term-log-preview .tl-main{min-width:0}
+    #term-log-preview .tl-topbar{background:var(--tl-surface);border-bottom:1px solid var(--tl-border);display:flex;align-items:center;justify-content:space-between;gap:12px;padding:15px 26px;font-size:12px;color:var(--tl-muted);flex-wrap:wrap}
+    #term-log-preview .tl-topbar .tl-preview{background:var(--tl-bg);padding:3px 8px;border-radius:5px;font-size:11px}
+    #term-log-preview .tl-body{padding:26px}
+    #term-log-preview .tl-heading{display:flex;justify-content:space-between;gap:18px;align-items:flex-start;margin-bottom:20px}
+    #term-log-preview h1{font-size:27px;font-weight:500;letter-spacing:-.65px;line-height:1.2}
+    #term-log-preview .tl-subtitle{color:var(--tl-muted);font-size:13px;margin-top:7px}
+    #term-log-preview .tl-schedule{display:flex;gap:7px;align-items:center;color:var(--tl-muted);font-size:11px;padding-top:4px;white-space:nowrap}
+    #term-log-preview .tl-summary{background:var(--tl-surface);border:1px solid var(--tl-border);border-radius:10px;padding:20px;margin-bottom:22px}
+    #term-log-preview .tl-summary-top{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+    #term-log-preview .tl-run-label{font-size:12px;color:var(--tl-muted);display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+    #term-log-preview .tl-state{display:inline-flex;align-items:center;gap:6px;background:var(--tl-blue-soft);color:var(--tl-blue);padding:4px 9px;border-radius:5px;font-size:12px;font-weight:500;white-space:nowrap}
+    #term-log-preview .tl-state.good{color:var(--tl-green);background:var(--tl-green-soft)}
+    #term-log-preview .tl-state.bad{color:var(--tl-red);background:var(--tl-red-soft)}
+    #term-log-preview .tl-state.stale{color:var(--tl-amber);background:var(--tl-amber-soft)}
+    #term-log-preview .tl-summary h2{font-size:20px;font-weight:500;letter-spacing:-.3px;line-height:1.3;margin-top:12px}
+    #term-log-preview .tl-run-note{font-size:12px;color:var(--tl-muted);margin-top:5px;max-width:590px}
+    #term-log-preview .tl-metrics{display:flex;gap:28px;flex-wrap:wrap;margin-top:17px;font-size:12px}
+    #term-log-preview .tl-metrics span{color:var(--tl-muted);margin-right:7px}
+    #term-log-preview .tl-metrics strong{font-weight:500;font-variant-numeric:tabular-nums}
+    #term-log-preview .tl-track{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:5px;margin-top:18px}
+    #term-log-preview .tl-track span{display:block;height:5px;background:var(--tl-border);border-radius:3px}
+    #term-log-preview .tl-track span.done{background:var(--tl-green)}
+    #term-log-preview .tl-track span.running{background:var(--tl-blue)}
+    #term-log-preview .tl-track span.failed{background:var(--tl-red)}
+    #term-log-preview .tl-track span.stale{background:var(--tl-amber)}
+    #term-log-preview .tl-freshness{font-size:11px;color:var(--tl-muted);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:9px}
+    #term-log-preview .tl-section-title{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px}
+    #term-log-preview .tl-section-title h2{font-size:14px;font-weight:500}
+    #term-log-preview .tl-section-title span{font-size:11px;color:var(--tl-muted)}
+    #term-log-preview .tl-steps{background:var(--tl-surface);border:1px solid var(--tl-border);border-radius:10px}
+    #term-log-preview .tl-step+.tl-step{border-top:1px solid var(--tl-border)}
+    #term-log-preview .tl-step&gt;summary{display:grid;grid-template-columns:28px minmax(0,1fr) auto 14px;align-items:center;gap:10px;padding:15px 17px;cursor:pointer;list-style:none}
+    #term-log-preview .tl-step&gt;summary::-webkit-details-marker{display:none}
+    #term-log-preview .tl-step-symbol{width:27px;height:27px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:var(--tl-bg);color:var(--tl-muted);font-size:12px;font-weight:500}
+    #term-log-preview .tl-step[data-state=&quot;done&quot;] .tl-step-symbol{color:var(--tl-green);background:var(--tl-green-soft)}
+    #term-log-preview .tl-step[data-state=&quot;running&quot;] .tl-step-symbol{color:var(--tl-blue);background:var(--tl-blue-soft)}
+    #term-log-preview .tl-step[data-state=&quot;failed&quot;] .tl-step-symbol{color:var(--tl-red);background:var(--tl-red-soft)}
+    #term-log-preview .tl-step[data-state=&quot;stale&quot;] .tl-step-symbol{color:var(--tl-amber);background:var(--tl-amber-soft)}
+    #term-log-preview .tl-step[data-state=&quot;running&quot;]&gt;summary{background:var(--tl-blue-soft)}
+    #term-log-preview .tl-step-name{font-size:13px;font-weight:500;display:block}
+    #term-log-preview .tl-step-caption{font-size:11px;color:var(--tl-muted);display:block;margin-top:2px}
+    #term-log-preview .tl-step-status{text-align:right;font-size:11px;color:var(--tl-muted);white-space:nowrap}
+    #term-log-preview .tl-step-status strong{display:block;font-size:12px;font-weight:400;color:var(--tl-text)}
+    #term-log-preview .tl-step[data-state=&quot;running&quot;] .tl-step-status strong{color:var(--tl-blue)}
+    #term-log-preview .tl-step[data-state=&quot;failed&quot;] .tl-step-status strong{color:var(--tl-red)}
+    #term-log-preview .tl-step[data-state=&quot;stale&quot;] .tl-step-status strong{color:var(--tl-amber)}
+    #term-log-preview .tl-chevron{color:var(--tl-muted);font-size:17px;transition:transform .12s}
+    #term-log-preview .tl-step[open] .tl-chevron{transform:rotate(90deg)}
+    #term-log-preview .tl-step-content{margin:0 17px 13px 55px;padding:9px 0 0;font-size:12px}
+    #term-log-preview .tl-check-row{display:flex;justify-content:space-between;gap:14px;padding:5px 0;align-items:flex-start}
+    #term-log-preview .tl-check-row span:last-child{color:var(--tl-muted);font-variant-numeric:tabular-nums;text-align:right}
+    #term-log-preview .tl-detail-note{font-size:11px;color:var(--tl-muted);margin-top:7px}
+    #term-log-preview .tl-events{margin-top:14px;border-bottom:1px solid var(--tl-border);padding-bottom:13px}
+    #term-log-preview .tl-events&gt;summary{font-size:12px;font-weight:500;cursor:pointer;display:flex;align-items:center;justify-content:space-between;list-style:none;padding:4px 0}
+    #term-log-preview .tl-events&gt;summary::-webkit-details-marker{display:none}
+    #term-log-preview .tl-events&gt;summary span{font-weight:400;color:var(--tl-muted);font-size:11px}
+    #term-log-preview .tl-event-list{list-style:none;margin:10px 0 0;padding:0;font-size:11px}
+    #term-log-preview .tl-event-list li{display:grid;grid-template-columns:63px minmax(0,1fr);gap:10px;padding:5px 0}
+    #term-log-preview .tl-event-list time{color:var(--tl-muted);font-variant-numeric:tabular-nums}
+    #term-log-preview .tl-history{margin-top:20px}
+    #term-log-preview .tl-history-rows{background:var(--tl-surface);border:1px solid var(--tl-border);border-radius:10px}
+    #term-log-preview .tl-history-row{display:grid;grid-template-columns:minmax(0,1fr) auto 15px;gap:12px;width:100%;align-items:center;border:0;background:transparent;text-align:left;padding:12px 15px}
+    #term-log-preview .tl-history-row+.tl-history-row{border-top:1px solid var(--tl-border)}
+    #term-log-preview .tl-history-row[aria-pressed=&quot;true&quot;]{background:var(--tl-blue-soft)}
+    #term-log-preview .tl-history-date{font-size:12px;font-weight:500;display:block}
+    #term-log-preview .tl-history-caption{font-size:11px;color:var(--tl-muted);display:block;margin-top:2px}
+    #term-log-preview .tl-history-row .tl-state{font-size:11px;padding:3px 7px}
+    #term-log-preview .tl-footer{display:flex;gap:14px;justify-content:space-between;flex-wrap:wrap;font-size:11px;color:var(--tl-muted);margin-top:17px}
+    #term-log-preview svg{flex-shrink:0}
+    #term-log-preview[data-density=&quot;Compact&quot;] .tl-step&gt;summary{padding-top:10px;padding-bottom:10px}
+    #term-log-preview[data-density=&quot;Compact&quot;] .tl-body{padding-top:19px;padding-bottom:19px}
+    @media(max-width:850px){#term-log-preview .tl-shell{grid-template-columns:1fr}#term-log-preview .tl-side{display:none}#term-log-preview .tl-body{padding:22px}#term-log-preview .tl-topbar{padding:13px 22px}}
+    @media(max-width:500px){#term-log-preview .tl-body{padding:17px 12px}#term-log-preview .tl-topbar{padding:12px;gap:6px}#term-log-preview h1{font-size:23px}#term-log-preview .tl-heading{display:block}#term-log-preview .tl-schedule{margin-top:10px}#term-log-preview .tl-summary{padding:15px}#term-log-preview .tl-summary h2{font-size:18px}#term-log-preview .tl-metrics{gap:8px 16px}#term-log-preview .tl-step&gt;summary{grid-template-columns:24px minmax(0,1fr) 13px;gap:9px;padding:13px 11px}#term-log-preview .tl-step-status{grid-column:2;text-align:left;display:flex;gap:7px;margin-top:-5px;white-space:normal}#term-log-preview .tl-step-status strong{display:inline}#term-log-preview .tl-chevron{grid-column:3;grid-row:1}#term-log-preview .tl-step-symbol{width:24px;height:24px}#term-log-preview .tl-step-content{margin-left:44px;margin-right:12px}#term-log-preview .tl-history-row{grid-template-columns:minmax(0,1fr) auto;gap:7px;padding:12px}#term-log-preview .tl-history-row&gt;.tl-chevron{display:none}#term-log-preview .tl-history-row .tl-state{font-size:11px;white-space:normal}#term-log-preview .tl-history-date{font-size:12px}#term-log-preview .tl-footer{gap:5px}#term-log-preview .tl-check-row{flex-wrap:wrap;gap:0 10px}}
+    @media(prefers-reduced-motion:reduce){#term-log-preview .tl-chevron{transition:none}}
+  &lt;/style&gt;
+  &lt;div class=&quot;tl-shell&quot;&gt;
+    &lt;aside class=&quot;tl-side&quot; aria-label=&quot;Website navigation preview&quot;&gt;
+      &lt;div class=&quot;tl-brand&quot;&gt;&lt;span class=&quot;tl-brand-mark&quot;&gt;&lt;i data-lucide=&quot;activity&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;span&gt;Khan Clinical&lt;small&gt;Informatics&lt;/small&gt;&lt;/span&gt;&lt;/div&gt;
+      &lt;div class=&quot;tl-nav-caption&quot;&gt;EXPLORE&lt;/div&gt;
+      &lt;div class=&quot;tl-nav-item&quot;&gt;&lt;i data-lucide=&quot;house&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;Home&lt;/div&gt;
+      &lt;div class=&quot;tl-nav-item&quot;&gt;&lt;i data-lucide=&quot;search&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;SNOMED CT&lt;/div&gt;
+      &lt;div class=&quot;tl-nav-item&quot;&gt;&lt;i data-lucide=&quot;book-open&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;READ v2&lt;/div&gt;
+      &lt;div class=&quot;tl-nav-item&quot;&gt;&lt;i data-lucide=&quot;layers&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;PCD clusters&lt;/div&gt;
+      &lt;div class=&quot;tl-nav-caption&quot;&gt;SERVICE&lt;/div&gt;
+      &lt;div class=&quot;tl-nav-item&quot; aria-current=&quot;page&quot;&gt;&lt;i data-lucide=&quot;list-checks&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;Update log&lt;/div&gt;
+      &lt;div class=&quot;tl-side-note&quot;&gt;&lt;strong&gt;Terminology maintenance&lt;/strong&gt;Release checks run every Saturday at 12:00 UK time.&lt;/div&gt;
+    &lt;/aside&gt;
+    &lt;main class=&quot;tl-main&quot;&gt;
+      &lt;div class=&quot;tl-topbar&quot;&gt;&lt;span&gt;Server status &lt;span aria-hidden=&quot;true&quot;&gt; / &lt;/span&gt; Update log&lt;/span&gt;&lt;span class=&quot;tl-preview&quot;&gt;Interactive mockup · sample states&lt;/span&gt;&lt;/div&gt;
+      &lt;div class=&quot;tl-body&quot;&gt;
+        &lt;header class=&quot;tl-heading&quot;&gt;&lt;div&gt;&lt;h1&gt;Terminology updates&lt;/h1&gt;&lt;p class=&quot;tl-subtitle&quot;&gt;Follow each weekly update, from release checks to publication.&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;tl-schedule&quot;&gt;&lt;i data-lucide=&quot;calendar-days&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Saturdays · 12:00 UK&lt;/div&gt;&lt;/header&gt;
+        &lt;section class=&quot;tl-summary&quot; aria-label=&quot;Selected update summary&quot; aria-live=&quot;polite&quot;&gt;
+          &lt;div class=&quot;tl-summary-top&quot;&gt;&lt;span class=&quot;tl-run-label&quot; data-role=&quot;run-label&quot;&gt;Example run · 12 September 2026&lt;/span&gt;&lt;span class=&quot;tl-state&quot; data-role=&quot;badge&quot;&gt;● In progress&lt;/span&gt;&lt;/div&gt;
+          &lt;h2 data-role=&quot;headline&quot;&gt;Validating Primary Care refsets&lt;/h2&gt;
+          &lt;p class=&quot;tl-run-note&quot; data-role=&quot;run-note&quot;&gt;SNOMED CT and dm+d are updated. Current supporting products are being checked.&lt;/p&gt;
+          &lt;div class=&quot;tl-metrics&quot;&gt;&lt;div&gt;&lt;span&gt;Elapsed&lt;/span&gt;&lt;strong data-role=&quot;elapsed&quot;&gt;8m 12s&lt;/strong&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;Updates found&lt;/span&gt;&lt;strong data-role=&quot;updates&quot;&gt;2&lt;/strong&gt;&lt;/div&gt;&lt;div&gt;&lt;span data-role=&quot;stage-label&quot;&gt;Stage&lt;/span&gt;&lt;strong data-role=&quot;stage&quot;&gt;4 of 5&lt;/strong&gt;&lt;/div&gt;&lt;/div&gt;
+          &lt;div class=&quot;tl-track&quot; data-role=&quot;track&quot; role=&quot;img&quot; aria-label=&quot;Three stages complete, Primary Care refsets in progress, publishing queued&quot;&gt;&lt;span class=&quot;done&quot;&gt;&lt;/span&gt;&lt;span class=&quot;done&quot;&gt;&lt;/span&gt;&lt;span class=&quot;done&quot;&gt;&lt;/span&gt;&lt;span class=&quot;running&quot;&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+          &lt;div class=&quot;tl-freshness&quot;&gt;&lt;span data-role=&quot;freshness&quot;&gt;Last signal 10 seconds ago · 12:08:12 BST&lt;/span&gt;&lt;span data-role=&quot;refresh&quot;&gt;Auto-refresh every 15 seconds&lt;/span&gt;&lt;/div&gt;
+        &lt;/section&gt;
+        &lt;section aria-label=&quot;Update stages&quot;&gt;
+          &lt;div class=&quot;tl-section-title&quot;&gt;&lt;h2&gt;Update progress&lt;/h2&gt;&lt;span&gt;Open a stage for details&lt;/span&gt;&lt;/div&gt;
+          &lt;div class=&quot;tl-steps&quot; data-role=&quot;steps&quot;&gt;&lt;/div&gt;
+        &lt;/section&gt;
+        &lt;details class=&quot;tl-events&quot; data-role=&quot;activity&quot;&gt;
+          &lt;summary&gt;Activity log &lt;span data-role=&quot;activity-summary&quot;&gt;Latest: validating supporting products &lt;span aria-hidden=&quot;true&quot;&gt;⌄&lt;/span&gt;&lt;/span&gt;&lt;/summary&gt;
+          &lt;ol class=&quot;tl-event-list&quot; data-role=&quot;events&quot;&gt;&lt;/ol&gt;
+        &lt;/details&gt;
+        &lt;section class=&quot;tl-history&quot; aria-label=&quot;Recent weekly updates&quot;&gt;
+          &lt;div class=&quot;tl-section-title&quot;&gt;&lt;h2&gt;Recent runs&lt;/h2&gt;&lt;span&gt;Weekly history&lt;/span&gt;&lt;/div&gt;
+          &lt;div class=&quot;tl-history-rows&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;tl-history-row&quot; data-run=&quot;running&quot; aria-pressed=&quot;true&quot;&gt;&lt;span&gt;&lt;span class=&quot;tl-history-date&quot;&gt;12 Sep 2026 · 12:00&lt;/span&gt;&lt;span class=&quot;tl-history-caption&quot;&gt;Example run · 2 updates found&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;tl-state&quot; data-role=&quot;latest-history-state&quot;&gt;In progress&lt;/span&gt;&lt;span class=&quot;tl-chevron&quot; aria-hidden=&quot;true&quot;&gt;›&lt;/span&gt;&lt;/button&gt;
+            &lt;button type=&quot;button&quot; class=&quot;tl-history-row&quot; data-run=&quot;failed&quot; aria-pressed=&quot;false&quot;&gt;&lt;span&gt;&lt;span class=&quot;tl-history-date&quot;&gt;05 Sep 2026 · 12:00&lt;/span&gt;&lt;span class=&quot;tl-history-caption&quot;&gt;Recorded run · all terminology checks passed&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;tl-state bad&quot;&gt;Reporting failed&lt;/span&gt;&lt;span class=&quot;tl-chevron&quot; aria-hidden=&quot;true&quot;&gt;›&lt;/span&gt;&lt;/button&gt;
+            &lt;button type=&quot;button&quot; class=&quot;tl-history-row&quot; data-run=&quot;complete&quot; aria-pressed=&quot;false&quot;&gt;&lt;span&gt;&lt;span class=&quot;tl-history-date&quot;&gt;29 Aug 2026 · 12:00&lt;/span&gt;&lt;span class=&quot;tl-history-caption&quot;&gt;Example run · completed view&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;tl-state good&quot;&gt;Completed&lt;/span&gt;&lt;span class=&quot;tl-chevron&quot; aria-hidden=&quot;true&quot;&gt;›&lt;/span&gt;&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/section&gt;
+        &lt;footer class=&quot;tl-footer&quot;&gt;&lt;span&gt;Times shown in Europe/London&lt;/span&gt;&lt;span data-role=&quot;next-run&quot;&gt;Next scheduled: 19 Sep · 12:00 BST&lt;/span&gt;&lt;/footer&gt;
+      &lt;/div&gt;
+    &lt;/main&gt;
+  &lt;/div&gt;
+  &lt;script&gt;
+  (() =&gt; {
+    const root = document.getElementById(&#x27;term-log-preview&#x27;);
+    const q = role =&gt; root.querySelector(`[data-role=&quot;${role}&quot;]`);
+    const design = { state: &#x27;running&#x27;, density: &#x27;Comfortable&#x27;, activity: false };
+    const rows = (items) =&gt; items.map(([label,value]) =&gt; `&lt;div class=&quot;tl-check-row&quot;&gt;&lt;span&gt;${label}&lt;/span&gt;&lt;span&gt;${value}&lt;/span&gt;&lt;/div&gt;`).join(&#x27;&#x27;);
+    const scenarios = {
+      running: {badge:&#x27;In progress&#x27;,tone:&#x27;&#x27;,date:&#x27;Example run · 12 September 2026&#x27;,headline:&#x27;Validating Primary Care refsets&#x27;,note:&#x27;SNOMED CT and dm+d are updated. Current supporting products are being checked.&#x27;,elapsed:&#x27;8m 12s&#x27;,updates:&#x27;2&#x27;,stageLabel:&#x27;Stage&#x27;,stage:&#x27;4 of 5&#x27;,states:[&#x27;done&#x27;,&#x27;done&#x27;,&#x27;done&#x27;,&#x27;running&#x27;,&#x27;queued&#x27;],fresh:&#x27;Last signal 10 seconds ago · 12:08:12 BST&#x27;,refresh:&#x27;Auto-refresh every 15 seconds&#x27;,next:&#x27;Next scheduled: 19 Sep · 12:00 BST&#x27;,activity:&#x27;Latest: validating supporting products&#x27;,events:[[&#x27;12:08:12&#x27;,&#x27;Checking GPData and GDPPR against the current release.&#x27;],[&#x27;12:07:40&#x27;,&#x27;PCD snapshot matches: 129,004 rows.&#x27;],[&#x27;12:07:30&#x27;,&#x27;DMWB checked. No new release available.&#x27;],[&#x27;12:07:29&#x27;,&#x27;dm+d validation completed.&#x27;],[&#x27;12:05:38&#x27;,&#x27;SNOMED CT import and row counts validated.&#x27;],[&#x27;12:00:01&#x27;,&#x27;Scheduled update started.&#x27;]]},
+      complete: {badge:&#x27;Completed&#x27;,tone:&#x27;good&#x27;,date:&#x27;Example run · 29 August 2026&#x27;,headline:&#x27;Weekly update completed&#x27;,note:&#x27;Release checks, imports and validation finished successfully. The report was published.&#x27;,elapsed:&#x27;9m 48s&#x27;,updates:&#x27;1&#x27;,stageLabel:&#x27;Completed&#x27;,stage:&#x27;5 of 5 stages&#x27;,states:[&#x27;done&#x27;,&#x27;done&#x27;,&#x27;done&#x27;,&#x27;done&#x27;,&#x27;done&#x27;],fresh:&#x27;Final report · 29 Aug, 12:09:48 BST&#x27;,refresh:&#x27;Archived run&#x27;,next:&#x27;Next run after this: 5 Sep · 12:00 BST&#x27;,activity:&#x27;Final: report published&#x27;,events:[[&#x27;12:09:48&#x27;,&#x27;Run completed. Report published successfully.&#x27;],[&#x27;12:09:41&#x27;,&#x27;PCD validation completed; both supporting products current.&#x27;],[&#x27;12:07:32&#x27;,&#x27;DMWB checked. No new release available.&#x27;],[&#x27;12:07:31&#x27;,&#x27;dm+d import and validation completed.&#x27;],[&#x27;12:05:36&#x27;,&#x27;SNOMED CT checked. No new release available.&#x27;],[&#x27;12:00:01&#x27;,&#x27;Scheduled update started.&#x27;]]},
+      failed: {badge:&#x27;Reporting failed&#x27;,tone:&#x27;bad&#x27;,date:&#x27;Recorded run · 5 September 2026&#x27;,headline:&#x27;Terminology updated. Report publishing failed.&#x27;,note:&#x27;All four terminology checks passed. Azure SQL blocked the report export; connection access was restored on 6 September.&#x27;,elapsed:&#x27;20m 06s&#x27;,updates:&#x27;2&#x27;,stageLabel:&#x27;Terminology&#x27;,stage:&#x27;4 of 4 passed&#x27;,states:[&#x27;done&#x27;,&#x27;done&#x27;,&#x27;done&#x27;,&#x27;done&#x27;,&#x27;failed&#x27;],fresh:&#x27;Run finished · 5 Sep, 12:20 BST&#x27;,refresh:&#x27;Recorded outcome · not republished&#x27;,next:&#x27;Next scheduled: 12 Sep · 12:00 BST&#x27;,activity:&#x27;Final: reporting connection blocked&#x27;,events:[[&#x27;12:20&#x27;,&#x27;Azure SQL reporting failed: the update host was blocked by the firewall.&#x27;],[&#x27;12:15&#x27;,&#x27;Reporting connection retry was blocked by the firewall.&#x27;],[&#x27;12:10&#x27;,&#x27;Initial reporting connection: database was not yet available.&#x27;],[&#x27;12:09&#x27;,&#x27;Terminology checks completed successfully.&#x27;],[&#x27;12:00&#x27;,&#x27;Scheduled update started.&#x27;]]},
+      stale: {badge:&#x27;No recent signal&#x27;,tone:&#x27;stale&#x27;,date:&#x27;Example run · 12 September 2026&#x27;,headline:&#x27;Waiting for an update from the server&#x27;,note:&#x27;The last reported stage was Primary Care validation. Its current outcome is unknown; the last received progress is shown below.&#x27;,elapsed:&#x27;Last known: 8m 12s&#x27;,updates:&#x27;2&#x27;,stageLabel:&#x27;Last stage&#x27;,stage:&#x27;4 of 5&#x27;,states:[&#x27;done&#x27;,&#x27;done&#x27;,&#x27;done&#x27;,&#x27;stale&#x27;,&#x27;queued&#x27;],fresh:&#x27;Last signal 6 minutes ago · 12:08:12 BST&#x27;,refresh:&#x27;Trying again every 15 seconds&#x27;,next:&#x27;Next scheduled: 19 Sep · 12:00 BST&#x27;,activity:&#x27;Last received: validating supporting products&#x27;,events:[[&#x27;12:14:12&#x27;,&#x27;No heartbeat received for 6 minutes. Current run status is unknown.&#x27;],[&#x27;12:08:12&#x27;,&#x27;Last reported activity: checking GPData and GDPPR.&#x27;],[&#x27;12:07:40&#x27;,&#x27;PCD snapshot matches: 129,004 rows.&#x27;],[&#x27;12:07:30&#x27;,&#x27;DMWB checked. No new release available.&#x27;]]}
+    };
+    function stageData(s) {
+      const historicalExample = design.state === &#x27;complete&#x27;;
+      const pcdPending = [&#x27;running&#x27;,&#x27;stale&#x27;].includes(design.state);
+      return [
+        {name:&#x27;SNOMED CT&#x27;,caption:historicalExample?&#x27;No new release available&#x27;:&#x27;Release 42.5.0 · 1,152,579 concepts&#x27;,duration:historicalExample?&#x27;Checked&#x27;:&#x27;5m 38s&#x27;,content:historicalExample?rows([[&#x27;Release check&#x27;,&#x27;Already current&#x27;],[&#x27;Import&#x27;,&#x27;Not required&#x27;]]):rows([[&#x27;New release detected&#x27;,&#x27;42.5.0 · 2 Sep 2026&#x27;],[&#x27;Concepts&#x27;,&#x27;1,152,579&#x27;],[&#x27;Descriptions&#x27;,&#x27;3,545,886&#x27;],[&#x27;Relationships&#x27;,&#x27;9,740,243&#x27;],[&#x27;Language reference sets&#x27;,&#x27;6,827,751&#x27;]])},
+        {name:&#x27;Dictionary of Medicines and Devices&#x27;,caption:historicalExample?&#x27;New release imported and validated&#x27;:&#x27;dm+d · medicine tables updated and validated&#x27;,duration:historicalExample?&#x27;Completed&#x27;:&#x27;1m 52s&#x27;,content:historicalExample?rows([[&#x27;Release check&#x27;,&#x27;New release found&#x27;],[&#x27;Import&#x27;,&#x27;Completed&#x27;],[&#x27;XML and SNOMED checks&#x27;,&#x27;Passed&#x27;]]):rows([[&#x27;VTM&#x27;,&#x27;3,244 · +2&#x27;],[&#x27;VMP&#x27;,&#x27;24,633 · +13&#x27;],[&#x27;AMP&#x27;,&#x27;167,099 · +65&#x27;],[&#x27;VMPP&#x27;,&#x27;37,344 · +15&#x27;],[&#x27;AMPP&#x27;,&#x27;186,902 · +82&#x27;],[&#x27;XML and SNOMED validation&#x27;,&#x27;Passed&#x27;]])},
+        {name:&#x27;Data Migration Workbench&#x27;,caption:&#x27;DMWB · no new release available&#x27;,duration:&#x27;Checked&#x27;,content:rows([[&#x27;Release check&#x27;,&#x27;Already current&#x27;],[&#x27;Import&#x27;,&#x27;Not required&#x27;]])},
+        {name:&#x27;Primary Care refsets&#x27;,caption:pcdPending?&#x27;PCD · checking GPData and GDPPR supporting products&#x27;:&#x27;PCD · RF2 snapshot and both supporting products current&#x27;,duration:pcdPending?&#x27;42s elapsed&#x27;:&#x27;Validated&#x27;,content:rows([[&#x27;Official RF2 snapshot&#x27;,historicalExample?&#x27;Current&#x27;:&#x27;129,004 rows · exact match&#x27;],[&#x27;GPData&#x27;,pcdPending?&#x27;Validating&#x27;:(historicalExample?&#x27;Current&#x27;:&#x27;126,144 rows · current&#x27;)],[&#x27;GDPPR&#x27;,pcdPending?&#x27;Validating&#x27;:(historicalExample?&#x27;Current&#x27;:&#x27;69,584 rows · current&#x27;)],[&#x27;Legacy enrichment&#x27;,&#x27;Not supplied · N/A&#x27;]])},
+        {name:&#x27;Publish update report&#x27;,caption:design.state===&#x27;failed&#x27;?&#x27;Azure SQL report export blocked&#x27;:(design.state===&#x27;complete&#x27;?&#x27;Run history saved and website refreshed&#x27;:&#x27;Save run history and refresh the website&#x27;),duration:design.state===&#x27;failed&#x27;?&#x27;3 attempts&#x27;:(design.state===&#x27;complete&#x27;?&#x27;Published&#x27;:&#x27;Not started&#x27;),content:design.state===&#x27;failed&#x27;?rows([[&#x27;Terminology data&#x27;,&#x27;Updated successfully&#x27;],[&#x27;Azure SQL export&#x27;,&#x27;Firewall blocked connection&#x27;],[&#x27;Blob dashboard export&#x27;,&#x27;Permission error&#x27;],[&#x27;Connection repaired&#x27;,&#x27;6 Sep 2026&#x27;]])+&#x27;&lt;p class=&quot;tl-detail-note&quot;&gt;The historical run remains failed. Restoring the connection did not republish this report.&lt;/p&gt;&#x27;:rows([[&#x27;Reporting history&#x27;,design.state===&#x27;complete&#x27;?&#x27;Saved&#x27;:&#x27;Queued&#x27;],[&#x27;Website status&#x27;,design.state===&#x27;complete&#x27;?&#x27;Refreshed&#x27;:&#x27;Queued&#x27;]])}
+      ];
+    }
+    function render() {
+      const s = scenarios[design.state];
+      root.dataset.density = design.density;
+      q(&#x27;run-label&#x27;).textContent=s.date;
+      q(&#x27;badge&#x27;).textContent=(design.state===&#x27;running&#x27;?&#x27;● &#x27;:design.state===&#x27;complete&#x27;?&#x27;✓ &#x27;:design.state===&#x27;failed&#x27;?&#x27;! &#x27;:&#x27;◷ &#x27;)+s.badge;
+      q(&#x27;badge&#x27;).className=&#x27;tl-state &#x27;+s.tone;
+      for(const [role,value] of Object.entries({headline:s.headline,&#x27;run-note&#x27;:s.note,elapsed:s.elapsed,updates:s.updates,&#x27;stage-label&#x27;:s.stageLabel,stage:s.stage,freshness:s.fresh,refresh:s.refresh,&#x27;next-run&#x27;:s.next,&#x27;activity-summary&#x27;:s.activity+&#x27;  ⌄&#x27;}))q(role).textContent=value;
+      q(&#x27;track&#x27;).innerHTML=s.states.map(state=&gt;`&lt;span class=&quot;${state}&quot;&gt;&lt;/span&gt;`).join(&#x27;&#x27;);
+      q(&#x27;track&#x27;).setAttribute(&#x27;aria-label&#x27;, s.stage+&#x27;; &#x27;+s.badge);
+      const labels={done:&#x27;Completed&#x27;,running:&#x27;In progress&#x27;,queued:&#x27;Waiting&#x27;,failed:&#x27;Failed&#x27;,stale:&#x27;Unknown&#x27;};
+      const symbols={done:&#x27;✓&#x27;,running:&#x27;4&#x27;,queued:&#x27;5&#x27;,failed:&#x27;!&#x27;,stale:&#x27;?&#x27;};
+      const savedOpen = Array.from(q(&#x27;steps&#x27;).querySelectorAll(&#x27;details&#x27;)).map(d=&gt;d.open);
+      q(&#x27;steps&#x27;).innerHTML=stageData(s).map((item,index)=&gt;`&lt;details class=&quot;tl-step&quot; data-state=&quot;${s.states[index]}&quot; ${savedOpen[index]?&#x27;open&#x27;:&#x27;&#x27;}&gt;&lt;summary&gt;&lt;span class=&quot;tl-step-symbol&quot; aria-hidden=&quot;true&quot;&gt;${symbols[s.states[index]]}&lt;/span&gt;&lt;span&gt;&lt;span class=&quot;tl-step-name&quot;&gt;${item.name}&lt;/span&gt;&lt;span class=&quot;tl-step-caption&quot;&gt;${item.caption}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;tl-step-status&quot;&gt;&lt;strong&gt;${labels[s.states[index]]}&lt;/strong&gt;${item.duration}&lt;/span&gt;&lt;span class=&quot;tl-chevron&quot; aria-hidden=&quot;true&quot;&gt;›&lt;/span&gt;&lt;/summary&gt;&lt;div class=&quot;tl-step-content&quot;&gt;${item.content}&lt;/div&gt;&lt;/details&gt;`).join(&#x27;&#x27;);
+      q(&#x27;events&#x27;).innerHTML=s.events.map(([time,event])=&gt;`&lt;li&gt;&lt;time&gt;${time}&lt;/time&gt;&lt;span&gt;${event}&lt;/span&gt;&lt;/li&gt;`).join(&#x27;&#x27;);
+      q(&#x27;activity&#x27;).open=design.activity;
+      root.querySelectorAll(&#x27;[data-run]&#x27;).forEach(button=&gt;button.setAttribute(&#x27;aria-pressed&#x27;,button.dataset.run===design.state?&#x27;true&#x27;:&#x27;false&#x27;));
+      if(design.state===&#x27;stale&#x27;)root.querySelector(&#x27;[data-run=&quot;running&quot;]&#x27;).setAttribute(&#x27;aria-pressed&#x27;,&#x27;true&#x27;);
+      q(&#x27;latest-history-state&#x27;).textContent=design.state===&#x27;stale&#x27;?&#x27;No recent signal&#x27;:&#x27;In progress&#x27;;
+      q(&#x27;latest-history-state&#x27;).className=&#x27;tl-state &#x27;+(design.state===&#x27;stale&#x27;?&#x27;stale&#x27;:&#x27;&#x27;);
+    }
+    root.querySelectorAll(&#x27;[data-run]&#x27;).forEach(button=&gt;button.addEventListener(&#x27;click&#x27;,()=&gt;{design.state=button.dataset.run;render();}));
+    q(&#x27;activity&#x27;).addEventListener(&#x27;toggle&#x27;,()=&gt;{design.activity=q(&#x27;activity&#x27;).open;});
+    render();
+    if(globalThis.Tweak){
+      const tweak=new Tweak({container:root,onChange:render});
+      tweak.addSelect(design,&#x27;state&#x27;,{label:&#x27;Preview state&#x27;,options:[{label:&#x27;Update in progress&#x27;,value:&#x27;running&#x27;},{label:&#x27;Update complete&#x27;,value:&#x27;complete&#x27;},{label:&#x27;Report publishing failed&#x27;,value:&#x27;failed&#x27;},{label:&#x27;No recent signal&#x27;,value:&#x27;stale&#x27;}]});
+      tweak.addSelect(design,&#x27;density&#x27;,{label:&#x27;Row spacing&#x27;,options:[&#x27;Comfortable&#x27;,&#x27;Compact&#x27;]});
+      tweak.addToggle(design,&#x27;activity&#x27;,{label:&#x27;Expand activity log&#x27;});
+    }
+  })();
+  &lt;/script&gt;
+&lt;/div&gt;
+
+&lt;script src=&quot;https://unpkg.com/@floating-ui/core@1.7.3/dist/floating-ui.core.umd.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://unpkg.com/@floating-ui/dom@1.7.4/dist/floating-ui.dom.umd.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+(() =&gt; {
+  if (window.FloatingUIDOM == null) {
+    return;
+  }
+  const { autoUpdate, computePosition, flip, offset, shift, size } =
+    window.FloatingUIDOM;
+  const tooltipPlacements = new Set([&quot;top&quot;, &quot;right&quot;, &quot;bottom&quot;, &quot;left&quot;]);
+  const tooltipId = `codex-visualization-tooltip-${
+    window.crypto?.randomUUID?.() ?? Date.now().toString(36)
+  }`;
+  const tooltipGap = 5;
+  const hoverDelay = 700;
+  const skipDelay = 300;
+  let activeTrigger = null;
+  let pendingTrigger = null;
+  let tooltip = null;
+  let openTimeout = null;
+  let autoUpdateCleanup = null;
+  let positionRequest = 0;
+  let skipDelayUntil = 0;
+  let lastPointerWasTouch = false;
+  let pinnedByTouch = false;
+
+  const getTrigger = (target) =&gt;
+    target?.nodeType === Node.ELEMENT_NODE
+      ? target.closest(&quot;[data-tooltip]&quot;)
+      : null;
+  const containsTarget = (trigger, target) =&gt;
+    target?.nodeType != null &amp;&amp; trigger.contains(target);
+  const getContent = (trigger) =&gt;
+    trigger.getAttribute(&quot;data-tooltip&quot;)?.trim() ?? &quot;&quot;;
+  const getPlacement = (trigger) =&gt; {
+    const placement = trigger.getAttribute(&quot;data-tooltip-placement&quot;);
+    return tooltipPlacements.has(placement) ? placement : &quot;top&quot;;
+  };
+  const getTooltip = () =&gt; {
+    if (tooltip == null) {
+      tooltip = document.createElement(&quot;div&quot;);
+      tooltip.id = tooltipId;
+      tooltip.className = &quot;tooltip&quot;;
+      tooltip.setAttribute(&quot;role&quot;, &quot;tooltip&quot;);
+    }
+    return tooltip;
+  };
+  const setDescribedBy = (trigger, described) =&gt; {
+    const ids = new Set(
+      (trigger.getAttribute(&quot;aria-describedby&quot;) ?? &quot;&quot;)
+        .split(/\s+/)
+        .filter(Boolean),
+    );
+    if (described) {
+      ids.add(tooltipId);
+    } else {
+      ids.delete(tooltipId);
+    }
+    if (ids.size === 0) {
+      trigger.removeAttribute(&quot;aria-describedby&quot;);
+    } else {
+      trigger.setAttribute(&quot;aria-describedby&quot;, [...ids].join(&quot; &quot;));
+    }
+  };
+  const clearOpenTimeout = () =&gt; {
+    if (openTimeout != null) {
+      window.clearTimeout(openTimeout);
+      openTimeout = null;
+    }
+    pendingTrigger = null;
+  };
+  const closeTooltip = (activateSkipDelay = true) =&gt; {
+    clearOpenTimeout();
+    pinnedByTouch = false;
+    positionRequest += 1;
+    autoUpdateCleanup?.();
+    autoUpdateCleanup = null;
+    if (activeTrigger == null) {
+      return;
+    }
+    setDescribedBy(activeTrigger, false);
+    activeTrigger = null;
+    tooltip?.remove();
+    if (activateSkipDelay) {
+      skipDelayUntil = Date.now() + skipDelay;
+    }
+  };
+  const updatePosition = (trigger, floating) =&gt; {
+    const request = ++positionRequest;
+    void computePosition(trigger, floating, {
+      middleware: [
+        offset(tooltipGap),
+        flip({ padding: tooltipGap }),
+        shift({ padding: tooltipGap }),
+        size({
+          padding: tooltipGap,
+          apply({ availableHeight, availableWidth, elements }) {
+            elements.floating.style.setProperty(
+              &quot;--tooltip-available-width&quot;,
+              `${Math.max(0, availableWidth)}px`,
+            );
+            elements.floating.style.setProperty(
+              &quot;--tooltip-available-height&quot;,
+              `${Math.max(0, availableHeight)}px`,
+            );
+          },
+        }),
+      ],
+      placement: getPlacement(trigger),
+      strategy: &quot;fixed&quot;,
+    })
+      .then(({ x, y }) =&gt; {
+        if (activeTrigger !== trigger || request !== positionRequest) {
+          return;
+        }
+        const scale = window.devicePixelRatio || 1;
+        floating.style.transform = `translate(${Math.round(x * scale) / scale}px, ${Math.round(y * scale) / scale}px)`;
+        floating.style.visibility = &quot;visible&quot;;
+      })
+      .catch(() =&gt; {
+        if (activeTrigger === trigger &amp;&amp; request === positionRequest) {
+          closeTooltip(false);
+        }
+      });
+  };
+  const openTooltip = (trigger) =&gt; {
+    const content = getContent(trigger);
+    if (!trigger.isConnected || content.length === 0) {
+      return;
+    }
+    clearOpenTimeout();
+    if (activeTrigger === trigger) {
+      return;
+    }
+    closeTooltip();
+    const floating = getTooltip();
+    floating.textContent = content;
+    floating.style.visibility = &quot;hidden&quot;;
+    floating.style.transform = &quot;translate(0, 0)&quot;;
+    document.body.appendChild(floating);
+    activeTrigger = trigger;
+    setDescribedBy(trigger, true);
+    autoUpdateCleanup = autoUpdate(trigger, floating, () =&gt; {
+      updatePosition(trigger, floating);
+    });
+  };
+  const requestOpen = (trigger, immediate = false) =&gt; {
+    if (
+      getContent(trigger).length === 0 ||
+      activeTrigger === trigger ||
+      pendingTrigger === trigger
+    ) {
+      return;
+    }
+    clearOpenTimeout();
+    pendingTrigger = trigger;
+    const delay =
+      immediate || activeTrigger != null || Date.now() &lt; skipDelayUntil
+        ? 0
+        : hoverDelay;
+    if (delay === 0) {
+      openTooltip(trigger);
+      return;
+    }
+    openTimeout = window.setTimeout(() =&gt; {
+      openTimeout = null;
+      pendingTrigger = null;
+      openTooltip(trigger);
+    }, delay);
+  };
+  const handlePointerOpen = (event) =&gt; {
+    if (event.pointerType === &quot;touch&quot;) {
+      return;
+    }
+    const trigger = getTrigger(event.target);
+    if (trigger == null || containsTarget(trigger, event.relatedTarget)) {
+      return;
+    }
+    requestOpen(trigger);
+  };
+  const handlePointer = (event) =&gt; {
+    lastPointerWasTouch =
+      event.type === &quot;pointerdown&quot; &amp;&amp; event.pointerType === &quot;touch&quot;;
+  };
+  const handleTouchClick = (event) =&gt; {
+    const isTouch = event.pointerType === &quot;touch&quot; || lastPointerWasTouch;
+    lastPointerWasTouch = false;
+    if (!isTouch || event.detail === 0) {
+      return;
+    }
+    const trigger = getTrigger(event.target);
+    if (
+      trigger == null ||
+      !trigger.isConnected ||
+      getContent(trigger).length === 0 ||
+      (pinnedByTouch &amp;&amp; activeTrigger === trigger)
+    ) {
+      if (pinnedByTouch) {
+        closeTooltip();
+      }
+      return;
+    }
+    openTooltip(trigger);
+    pinnedByTouch = activeTrigger === trigger;
+    window.setTimeout(() =&gt; {
+      if (activeTrigger === trigger &amp;&amp; !trigger.isConnected) {
+        closeTooltip(false);
+      }
+    }, 0);
+  };
+  const handleLeave = (event) =&gt; {
+    if (pinnedByTouch) {
+      return;
+    }
+    const trigger = getTrigger(event.target);
+    if (trigger == null || containsTarget(trigger, event.relatedTarget)) {
+      return;
+    }
+    if (activeTrigger === trigger || pendingTrigger === trigger) {
+      closeTooltip();
+    }
+  };
+  const handleFocusIn = (event) =&gt; {
+    const trigger = getTrigger(event.target);
+    if (trigger?.matches(&quot;:focus-visible&quot;)) {
+      requestOpen(trigger, true);
+    }
+  };
+  const handleKeyDown = (event) =&gt; {
+    if (event.key === &quot;Escape&quot;) {
+      closeTooltip();
+    }
+  };
+  const handleContextMenu = (event) =&gt; {
+    lastPointerWasTouch = false;
+    const trigger = getTrigger(event.target);
+    if (activeTrigger === trigger || pendingTrigger === trigger) {
+      closeTooltip();
+    }
+  };
+  const destroy = () =&gt; {
+    closeTooltip(false);
+    lastPointerWasTouch = false;
+    document.removeEventListener(&quot;pointerover&quot;, handlePointerOpen);
+    document.removeEventListener(&quot;pointerdown&quot;, handlePointer);
+    document.removeEventListener(&quot;pointercancel&quot;, handlePointer);
+    document.removeEventListener(&quot;click&quot;, handleTouchClick);
+    document.removeEventListener(&quot;pointerout&quot;, handleLeave);
+    document.removeEventListener(&quot;focusin&quot;, handleFocusIn);
+    document.removeEventListener(&quot;focusout&quot;, handleLeave);
+    document.removeEventListener(&quot;keydown&quot;, handleKeyDown);
+    document.removeEventListener(&quot;contextmenu&quot;, handleContextMenu);
+    tooltip = null;
+  };
+
+  document.addEventListener(&quot;pointerover&quot;, handlePointerOpen);
+  document.addEventListener(&quot;pointerdown&quot;, handlePointer);
+  document.addEventListener(&quot;pointercancel&quot;, handlePointer);
+  document.addEventListener(&quot;click&quot;, handleTouchClick);
+  document.addEventListener(&quot;pointerout&quot;, handleLeave);
+  document.addEventListener(&quot;focusin&quot;, handleFocusIn);
+  document.addEventListener(&quot;focusout&quot;, handleLeave);
+  document.addEventListener(&quot;keydown&quot;, handleKeyDown);
+  document.addEventListener(&quot;contextmenu&quot;, handleContextMenu);
+  window.addEventListener(&quot;pagehide&quot;, destroy, { once: true });
+})();
+&lt;/script&gt;
+&lt;script id=&quot;codex-visualization-tabs&quot;&gt;
+(() =&gt; {
+  const selector = &#x27;.nav[role=&quot;tablist&quot;] [role=&quot;tab&quot;]&#x27;;
+  const disabled = &#x27;:disabled,[aria-disabled=&quot;true&quot;]&#x27;;
+  const selectTab = (selected) =&gt; {
+    const panelId = selected.getAttribute(&quot;aria-controls&quot;);
+    for (const tab of selected.closest(&#x27;[role=&quot;tablist&quot;]&#x27;).querySelectorAll(&#x27;[role=&quot;tab&quot;]&#x27;)) {
+      const active = tab === selected;
+      tab.classList.toggle(&quot;active&quot;, active);
+      tab.setAttribute(&quot;aria-selected&quot;, String(active));
+      const id = tab.getAttribute(&quot;aria-controls&quot;);
+      const panel = id &amp;&amp; document.getElementById(id);
+      if (panel != null) {
+        panel.hidden = id !== panelId;
+        if (!panel.hidden &amp;&amp; selected.id) {
+          panel.setAttribute(&quot;aria-labelledby&quot;, selected.id);
+        }
+      }
+    }
+  };
+  const interact = (event) =&gt; {
+    const tab = event.target?.closest?.(selector);
+    if (event.defaultPrevented || tab == null || tab.matches(disabled)) {
+      return;
+    }
+    if (event.type === &quot;click&quot;) {
+      selectTab(tab);
+      return;
+    }
+    const tabs = Array.from(
+      tab.closest(&#x27;[role=&quot;tablist&quot;]&#x27;).querySelectorAll(&#x27;[role=&quot;tab&quot;]&#x27;),
+    ).filter((candidate) =&gt; !candidate.matches(disabled));
+    const current = tabs.indexOf(tab);
+    let next;
+    if (event.key === &quot;ArrowRight&quot; || event.key === &quot;ArrowDown&quot;) {
+      next = (current + 1) % tabs.length;
+    } else if (event.key === &quot;ArrowLeft&quot; || event.key === &quot;ArrowUp&quot;) {
+      next = (current + tabs.length - 1) % tabs.length;
+    } else if (event.key === &quot;Home&quot;) {
+      next = 0;
+    } else if (event.key === &quot;End&quot;) {
+      next = tabs.length - 1;
+    } else {
+      return;
+    }
+    event.preventDefault();
+    tabs[next].focus();
+    selectTab(tabs[next]);
+  };
+
+  for (const list of document.querySelectorAll(&#x27;.nav[role=&quot;tablist&quot;]&#x27;)) {
+    const selected =
+      list.querySelector(&#x27;[role=&quot;tab&quot;][aria-selected=&quot;true&quot;]&#x27;) ??
+      list.querySelector(&#x27;[role=&quot;tab&quot;].active&#x27;) ??
+      list.querySelector(&#x27;[role=&quot;tab&quot;]&#x27;);
+    if (selected != null) {
+      selectTab(selected);
+    }
+  }
+  document.addEventListener(&quot;click&quot;, interact);
+  document.addEventListener(&quot;keydown&quot;, interact);
+  window.addEventListener(&quot;pagehide&quot;, () =&gt; {
+    document.removeEventListener(&quot;click&quot;, interact);
+    document.removeEventListener(&quot;keydown&quot;, interact);
+  }, { once: true });
+})();
+&lt;/script&gt;
+&lt;script id=&quot;codex-visualization-lucide&quot; async src=&quot;https://unpkg.com/lucide@1.17.0/dist/umd/lucide.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+(() =&gt; {
+  const initialize = () =&gt; {
+    globalThis.lucide?.createIcons({ attrs: { width: 16, height: 16 } });
+  };
+  if (globalThis.lucide != null) {
+    initialize();
+    return;
+  }
+  document
+    .getElementById(&quot;codex-visualization-lucide&quot;)
+    ?.addEventListener(&quot;load&quot;, initialize, { once: true });
+})();
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+"></iframe>
+</body>
+</html>

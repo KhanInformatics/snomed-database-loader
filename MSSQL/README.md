@@ -16,10 +16,9 @@ SQL Server scripts to create and populate a Microsoft SQL Server database with a
 This implementation supports loading data from multiple NHS TRUD releases:
 
 ### Core SNOMED CT Data
-- **International Release (Monolith)** - Complete SNOMED CT terminology (TRUD Item 1799)
+- **UK Monolith Edition** - Combined International and UK SNOMED CT terminology (TRUD Item 1799)
 - **UK Primary Care Snapshot** - UK-specific primary care extensions (TRUD Item 659)
 - **UK Drug Extension** - SNOMED CT UK Drug Extension, RF2 format (TRUD Item 105)
-- **International Edition (Standalone)** - Pure International SNOMED CT without UK extensions (TRUD Item 4)
 
 ### Primary Care Domain (PCD) Data
 - **PCD Refset Content** - Reference sets organized by output and version
@@ -79,50 +78,9 @@ The PCD results appear in:
 
 See [AUTOMATION.md](../AUTOMATION.md) for full automation documentation.
 
-## Loading International Edition (Separate Database)
+## International Content
 
-If you need access to the pure International SNOMED CT terminology without UK extensions (e.g., for international description IDs), you can load the International Edition into a separate database.
-
-### Step 1: Subscribe to International Edition on TRUD
-
-1. Go to [TRUD International Edition](https://isd.digital.nhs.uk/trud/users/authenticated/filters/0/categories/4/items/4/releases)
-2. Subscribe to **Item 4: SNOMED CT International Edition**
-3. The download script will automatically include it
-
-### Step 2: Create the International Database
-
-```powershell
-# Run the database creation script
-sqlcmd -S "SILENTPRIORY\SQLEXPRESS" -i "create-database-international.sql"
-```
-
-This creates a separate database named `snomedct_int` with the same table structure as the main database.
-
-### Step 3: Download and Import
-
-```powershell
-# Download all releases (now includes International Edition - Item 4)
-.\Download-SnomedReleases.ps1
-
-# Generate and run the import for International Edition only
-.\Generate-AndRun-InternationalSnapshot.ps1
-```
-
-### Why Use a Separate International Database?
-
-- **International Description IDs** - The UK Monolith contains UK Extension descriptions but may not include all International descriptions
-- **Cross-referencing** - Compare UK vs International content
-- **Description ID Lookups** - Find International description text by ID (e.g., `207516010`)
-
-### Example Query
-
-```sql
--- Search for a description by ID in International Edition
-USE snomedct_int;
-SELECT id, conceptid, CAST(term AS VARCHAR(200)) as term 
-FROM curr_description_f 
-WHERE id = '207516010';
-```
+The `snomedct` database contains the International content supplied with the UK Monolith release. The separate International database was retired on 20 October 2026 after checking the frontend, backend, and SQL dependencies. Standalone International releases (TRUD Item 4) are no longer downloaded by this loader.
 
 ## Differences from the PostgreSQL Version
 
@@ -131,29 +89,29 @@ WHERE id = '207516010';
 
 ## File Structure
 
-We recommend creating a dedicated folder `C:\SNOMEDCT`. You only need to create the `C:\SNOMEDCT` folder; the automation scripts will build and populate the necessary sub‑folders automatically the first time they run. For PCD data, ensure the following files are present in the Downloads folder:
+We recommend creating a dedicated folder `C:\SNOMEDCT`. You only need to create the `C:\SNOMEDCT` folder; the automation scripts will build and populate the necessary sub‑folders automatically the first time they run. For PCD data, ensure the following files are present in the CurrentReleases folder for the active release:
 
-- `20250521_PCD_Refset_Content_by_Output.txt`
-- `20250521_PCD_Refset_Content_V2.txt` 
-- `20250521_PCD_Ruleset_Full_Name_Mappings_V2.txt`
-- `20250521_PCD_Service_Full_Name_Mappings_V2.txt`
-- `20250521_PCD_Output_Descriptions_V2.txt`
+- `20260424_PCD_Refset_Content_by_Output_V2.txt`
+- `20260424_PCD_Refset_Content_V2.txt`
+- `20260424_PCD_Ruleset_Full_Name_Mappings_V2.txt`
+- `20260424_PCD_Service_Full_Name_Mappings_V2.txt`
+- `20260424_PCD_Output_Descriptions_V2.txt`
 
 A typical layout (after one full import cycle) looks like this:
 
 ```
 C:\
 └── SNOMEDCT
-    ├── Downloads                 # Contains PCD source files and temporary .zip files
-    │   ├── 20250521_PCD_Refset_Content_by_Output.txt
-    │   ├── 20250521_PCD_Refset_Content_V2.txt
-    │   ├── 20250521_PCD_Ruleset_Full_Name_Mappings_V2.txt
-    │   ├── 20250521_PCD_Service_Full_Name_Mappings_V2.txt
-    │   └── 20250521_PCD_Output_Descriptions_V2.txt
+    │   └── uk_sct2pc_61.0.0_20260424000000Z
+    │       ├── 20260424_PCD_Refset_Content_by_Output_V2.txt
+    │       ├── 20260424_PCD_Refset_Content_V2.txt
+    │       ├── 20260424_PCD_Ruleset_Full_Name_Mappings_V2.txt
+    │       ├── 20260424_PCD_Service_Full_Name_Mappings_V2.txt
+    │       └── 20260424_PCD_Output_Descriptions_V2.txt
     ├── CurrentReleases           # Extracted RF2 releases awaiting import
-    │   ├── SnomedCT_InternationalRF2_YYYYMMDD
+    │   ├── uk_sct2mo_VERSION_TIMESTAMP
     │   │   └── Snapshot
-    │   └── SnomedCT_UKClinicalRF2_YYYYMMDD
+    │   └── uk_sct2pc_VERSION_TIMESTAMP
     ├── import.sql                # Auto‑generated BULK INSERT script
     ├── CheckNewRelease.log       # Execution log created by Check-NewRelease.ps1
     └── LastRelease.json          # Tracks the latest release processed
@@ -172,7 +130,7 @@ During automated operation, additional folders will be created:
 - **Downloads** – Temporary location for downloaded ZIP files  
 - **CurrentReleases** – Contains extracted releases before importing
   - Monolith release folder (e.g., `uk_sct2mo_39.6.0_20250312000001Z`)
-  - UK Primary Care release folder (e.g., `uk_sct2pc_54.0.0_20241205000000Z`)
+  - UK Primary Care release folder (e.g., `uk_sct2pc_61.0.0_20260424000000Z`)
   - UK Drug Extension release folder (e.g., `uk_sct2drug_XX.X.X_YYYYMMDDHHMMSS`)  
 
 ## Manual Installation
@@ -209,7 +167,7 @@ Check-NewRelease.ps1 → Download-SnomedReleases.ps1 → Generate-AndRun-AllSnap
    - **Purpose:**  
      Downloads the latest TRUD release files (ZIP archives), extracts them, and organizes the extracted data into a folder named **CurrentReleases**.
    - **Process:**  
-     - Downloads SNOMED CT International (Monolith) - TRUD Item 1799
+     - Downloads SNOMED CT UK Monolith (including International content) - TRUD Item 1799
      - Downloads UK Primary Care Snapshot - TRUD Item 659
      - Downloads UK Drug Extension - TRUD Item 105
      - Downloads each ZIP file to a temporary folder (e.g. `C:\SNOMEDCT\Downloads`).

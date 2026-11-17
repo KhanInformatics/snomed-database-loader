@@ -1,0 +1,317 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "RenderPreview/1.0.0": {
+        "dependencies": {
+          "StaticBlazorSnomed": "1.0.0.0",
+          "Syncfusion.Blazor.Buttons": "29.2.10.0",
+          "Syncfusion.Blazor.Calendars": "29.2.10.0",
+          "Syncfusion.Blazor.Core": "29.2.10.0",
+          "Syncfusion.Blazor.Data": "29.2.10.0",
+          "Syncfusion.Blazor.Diagram": "29.2.10.0",
+          "Syncfusion.Blazor.DropDowns": "29.2.10.0",
+          "Syncfusion.Blazor.Grids": "29.2.10.0",
+          "Syncfusion.Blazor.Inputs": "29.2.10.0",
+          "Syncfusion.Blazor.Lists": "29.2.10.0",
+          "Syncfusion.Blazor.Navigations": "29.2.10.0",
+          "Syncfusion.Blazor.Notifications": "29.2.10.0",
+          "Syncfusion.Blazor.Popups": "29.2.10.0",
+          "Syncfusion.Blazor.Schedule": "29.2.10.0",
+          "Syncfusion.Blazor.Spinner": "29.2.10.0",
+          "Syncfusion.Blazor.SplitButtons": "29.2.10.0",
+          "Syncfusion.ExcelExport.Net": "29.2.10.0",
+          "Syncfusion.Licensing": "29.2.10.0",
+          "Syncfusion.PdfExport.Net": "29.2.10.0"
+        },
+        "runtime": {
+          "RenderPreview.dll": {}
+        }
+      },
+      "StaticBlazorSnomed/1.0.0.0": {
+        "runtime": {
+          "StaticBlazorSnomed.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Syncfusion.Blazor.Buttons/29.2.10.0": {
+        "runtime": {
+          "Syncfusion.Blazor.Buttons.dll": {
+            "assemblyVersion": "29.2.10.0",
+            "fileVersion": "29.2.10.0"
+          }
+        }
+      },
+      "Syncfusion.Blazor.Calendars/29.2.10.0": {
+        "runtime": {
+          "Syncfusion.Blazor.Calendars.dll": {
+            "assemblyVersion": "29.2.10.0",
+            "fileVersion": "29.2.10.0"
+          }
+        }
+      },
+      "Syncfusion.Blazor.Core/29.2.10.0": {
+        "runtime": {
+          "Syncfusion.Blazor.Core.dll": {
+            "assemblyVersion": "29.2.10.0",
+            "fileVersion": "29.2.10.0"
+          }
+        }
+      },
+      "Syncfusion.Blazor.Data/29.2.10.0": {
+        "runtime": {
+          "Syncfusion.Blazor.Data.dll": {
+            "assemblyVersion": "29.2.10.0",
+            "fileVersion": "29.2.10.0"
+          }
+        }
+      },
+      "Syncfusion.Blazor.Diagram/29.2.10.0": {
+        "runtime": {
+          "Syncfusion.Blazor.Diagram.dll": {
+            "assemblyVersion": "29.2.10.0",
+            "fileVersion": "29.2.10.0"
+          }
+        }
+      },
+      "Syncfusion.Blazor.DropDowns/29.2.10.0": {
+        "runtime": {
+          "Syncfusion.Blazor.DropDowns.dll": {
+            "assemblyVersion": "29.2.10.0",
+            "fileVersion": "29.2.10.0"
+          }
+        }
+      },
+      "Syncfusion.Blazor.Grids/29.2.10.0": {
+        "runtime": {
+          "Syncfusion.Blazor.Grids.dll": {
+            "assemblyVersion": "29.2.10.0",
+            "fileVersion": "29.2.10.0"
+          }
+        }
+      },
+      "Syncfusion.Blazor.Inputs/29.2.10.0": {
+        "runtime": {
+          "Syncfusion.Blazor.Inputs.dll": {
+            "assemblyVersion": "29.2.10.0",
+            "fileVersion": "29.2.10.0"
+          }
+        }
+      },
+      "Syncfusion.Blazor.Lists/29.2.10.0": {
+        "runtime": {
+          "Syncfusion.Blazor.Lists.dll": {
+            "assemblyVersion": "29.2.10.0",
+            "fileVersion": "29.2.10.0"
+          }
+        }
+      },
+      "Syncfusion.Blazor.Navigations/29.2.10.0": {
+        "runtime": {
+          "Syncfusion.Blazor.Navigations.dll": {
+            "assemblyVersion": "29.2.10.0",
+            "fileVersion": "29.2.10.0"
+          }
+        }
+      },
+      "Syncfusion.Blazor.Notifications/29.2.10.0": {
+        "runtime": {
+          "Syncfusion.Blazor.Notifications.dll": {
+            "assemblyVersion": "29.2.10.0",
+            "fileVersion": "29.2.10.0"
+          }
+        }
+      },
+      "Syncfusion.Blazor.Popups/29.2.10.0": {
+        "runtime": {
+          "Syncfusion.Blazor.Popups.dll": {
+            "assemblyVersion": "29.2.10.0",
+            "fileVersion": "29.2.10.0"
+          }
+        }
+      },
+      "Syncfusion.Blazor.Schedule/29.2.10.0": {
+        "runtime": {
+          "Syncfusion.Blazor.Schedule.dll": {
+            "assemblyVersion": "29.2.10.0",
+            "fileVersion": "29.2.10.0"
+          }
+        }
+      },
+      "Syncfusion.Blazor.Spinner/29.2.10.0": {
+        "runtime": {
+          "Syncfusion.Blazor.Spinner.dll": {
+            "assemblyVersion": "29.2.10.0",
+            "fileVersion": "29.2.10.0"
+          }
+        }
+      },
+      "Syncfusion.Blazor.SplitButtons/29.2.10.0": {
+        "runtime": {
+          "Syncfusion.Blazor.SplitButtons.dll": {
+            "assemblyVersion": "29.2.10.0",
+            "fileVersion": "29.2.10.0"
+          }
+        }
+      },
+      "Syncfusion.ExcelExport.Net/29.2.10.0": {
+        "runtime": {
+          "Syncfusion.ExcelExport.Net.dll": {
+            "assemblyVersion": "29.2.10.0",
+            "fileVersion": "29.2.10.0"
+          }
+        }
+      },
+      "Syncfusion.Licensing/29.2.10.0": {
+        "runtime": {
+          "Syncfusion.Licensing.dll": {
+            "assemblyVersion": "29.2.10.0",
+            "fileVersion": "29.2.10.0"
+          }
+        }
+      },
+      "Syncfusion.PdfExport.Net/29.2.10.0": {
+        "runtime": {
+          "Syncfusion.PdfExport.Net.dll": {
+            "assemblyVersion": "29.2.10.0",
+            "fileVersion": "29.2.10.0"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Components.WebAssembly/8.0.0.0": {
+        "runtime": {
+          "Microsoft.AspNetCore.Components.WebAssembly.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53112"
+          }
+        }
+      },
+      "Microsoft.JSInterop.WebAssembly/8.0.0.0": {
+        "runtime": {
+          "Microsoft.JSInterop.WebAssembly.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53112"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "RenderPreview/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StaticBlazorSnomed/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Syncfusion.Blazor.Buttons/29.2.10.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Syncfusion.Blazor.Calendars/29.2.10.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Syncfusion.Blazor.Core/29.2.10.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Syncfusion.Blazor.Data/29.2.10.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Syncfusion.Blazor.Diagram/29.2.10.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Syncfusion.Blazor.DropDowns/29.2.10.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Syncfusion.Blazor.Grids/29.2.10.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Syncfusion.Blazor.Inputs/29.2.10.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Syncfusion.Blazor.Lists/29.2.10.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Syncfusion.Blazor.Navigations/29.2.10.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Syncfusion.Blazor.Notifications/29.2.10.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Syncfusion.Blazor.Popups/29.2.10.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Syncfusion.Blazor.Schedule/29.2.10.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Syncfusion.Blazor.Spinner/29.2.10.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Syncfusion.Blazor.SplitButtons/29.2.10.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Syncfusion.ExcelExport.Net/29.2.10.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Syncfusion.Licensing/29.2.10.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Syncfusion.PdfExport.Net/29.2.10.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Components.WebAssembly/8.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.JSInterop.WebAssembly/8.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,753 @@
+CLUSTER	VERSION	SCHEME	CODE	TERM
+LRPCD_STD	v4.8	RCT	12K5.	Mother hepatitis B positive
+LRPCD_STD	v4.8	RCT	13N5.	HIV risk lifestyle
+LRPCD_STD	v4.8	RCT	13N9.	Sexual contact with high risk partner
+LRPCD_STD	v4.8	RCT	1415.	H/O: venereal disease
+LRPCD_STD	v4.8	RCT	14150	H/O: chlamydia infection
+LRPCD_STD	v4.8	RCT	14151	H/O: gonorrhoea
+LRPCD_STD	v4.8	RCT	14152	H/O: genital warts
+LRPCD_STD	v4.8	RCT	14153	H/O: genital herpes
+LRPCD_STD	v4.8	RCT	141E.	History of hepatitis B
+LRPCD_STD	v4.8	RCT	14OP.	At risk of sexually transmitted infection
+LRPCD_STD	v4.8	RCT	14OP0	At high risk of sexually transmitted infection
+LRPCD_STD	v4.8	RCT	14OP1	At low risk of sexually transmitted infection
+LRPCD_STD	v4.8	RCT	14i..	H/O hepatitis C antiviral drug therapy
+LRPCD_STD	v4.8	RCT	2BG3.	O/E - Argyll Robertson pupils
+LRPCD_STD	v4.8	RCT	2J12.	Hepatitis C non immune
+LRPCD_STD	v4.8	RCT	438..	Syphilis infectious titre test
+LRPCD_STD	v4.8	RCT	4381.	Syphilis titre test negative
+LRPCD_STD	v4.8	RCT	4382.	Syphilis titre test positive
+LRPCD_STD	v4.8	RCT	4383.	Wassermann's test (W.R.)
+LRPCD_STD	v4.8	RCT	4384.	V.D.R.L. test
+LRPCD_STD	v4.8	RCT	4385.	T.P.I test
+LRPCD_STD	v4.8	RCT	4386.	Fluorescent treponemal antibody test
+LRPCD_STD	v4.8	RCT	4387.	Treponema pallidum haemaglutination test
+LRPCD_STD	v4.8	RCT	4388.	Treponema pallidum particle inhibition test
+LRPCD_STD	v4.8	RCT	4389.	Syphilis serology
+LRPCD_STD	v4.8	RCT	438A.	Treponema pallidum ELISA negative
+LRPCD_STD	v4.8	RCT	438B.	Treponema pallidum ELISA positive
+LRPCD_STD	v4.8	RCT	438C.	Treponema pallidum particle agglutination test
+LRPCD_STD	v4.8	RCT	438D.	Treponema pallidum gelatin agglutination test
+LRPCD_STD	v4.8	RCT	438E.	Total treponema antibody level
+LRPCD_STD	v4.8	RCT	438F.	Treponema pallidum total antibodies measurement
+LRPCD_STD	v4.8	RCT	438Z.	Syphilis titre test NOS
+LRPCD_STD	v4.8	RCT	43B..	SH-antigen (hepatitis B) test
+LRPCD_STD	v4.8	RCT	43B1.	Blood sent: SH-antigen test
+LRPCD_STD	v4.8	RCT	43B2.	Hepatitis B immune
+LRPCD_STD	v4.8	RCT	43B3.	SH-antigen negative
+LRPCD_STD	v4.8	RCT	43B4.	Hepatitis B surface antig +ve
+LRPCD_STD	v4.8	RCT	43B5.	Hepatitis e antigen present
+LRPCD_STD	v4.8	RCT	43B6.	Hepatitis B non immune
+LRPCD_STD	v4.8	RCT	43B7.	Hepatitis C non-immune
+LRPCD_STD	v4.8	RCT	43B8.	Hepatitis B core antigen test
+LRPCD_STD	v4.8	RCT	43B9.	Hepatitis B e antigen test
+LRPCD_STD	v4.8	RCT	43BA.	Hepatitis B surface antigen negative
+LRPCD_STD	v4.8	RCT	43BZ.	SH-antigen test NOS
+LRPCD_STD	v4.8	RCT	43C..	HTLV-3 antibody test
+LRPCD_STD	v4.8	RCT	43C1.	Blood sent for HTLV-3 serology
+LRPCD_STD	v4.8	RCT	43C2.	HTLV-3 antibody negative
+LRPCD_STD	v4.8	RCT	43C3.	HTLV-3 antibody positive
+LRPCD_STD	v4.8	RCT	43C4.	Human immunodeficiency virus test equivocal
+LRPCD_STD	v4.8	RCT	43CZ.	HTLV-3 antibody NOS
+LRPCD_STD	v4.8	RCT	43E6.	Gonorrhoea infect. titre test
+LRPCD_STD	v4.8	RCT	43J9.	Anti HBc IgG level
+LRPCD_STD	v4.8	RCT	43JA.	Anti HBc IgM level
+LRPCD_STD	v4.8	RCT	43JK.	Hepatitis C IgG level
+LRPCD_STD	v4.8	RCT	43U..	Chlamydia antigen test
+LRPCD_STD	v4.8	RCT	43U0.	Chlamydia antigen by ELISA
+LRPCD_STD	v4.8	RCT	43U1.	Chlamydia antigen ELISA positive
+LRPCD_STD	v4.8	RCT	43U2.	Chlamydia antigen ELISA negative
+LRPCD_STD	v4.8	RCT	43U3.	Chlamydia trachomatis antigen test
+LRPCD_STD	v4.8	RCT	43U4.	Chlamydia PCR positive
+LRPCD_STD	v4.8	RCT	43U5.	Chlamydia PCR negative
+LRPCD_STD	v4.8	RCT	43U6.	Chlamydia test negative
+LRPCD_STD	v4.8	RCT	43U7.	Chlamydia test equivocal
+LRPCD_STD	v4.8	RCT	43U8.	Chlamydia test positive
+LRPCD_STD	v4.8	RCT	43U9.	Chlamydia trachomatis nucleic acid amplification test inhibitory
+LRPCD_STD	v4.8	RCT	43W5.	HBeAg antibody level
+LRPCD_STD	v4.8	RCT	43W6.	HBsAg antibody level
+LRPCD_STD	v4.8	RCT	43W7.	HIV1 antibody level
+LRPCD_STD	v4.8	RCT	43W8.	HIV2 antibody level
+LRPCD_STD	v4.8	RCT	43WK.	Human immunodeficiency virus antibody level
+LRPCD_STD	v4.8	RCT	43WL.	Treponema pallidum reagin antibody level
+LRPCD_STD	v4.8	RCT	43WM.	Chlamydia group antibody level
+LRPCD_STD	v4.8	RCT	43X..	Hepatitis antibody test
+LRPCD_STD	v4.8	RCT	43X2.	Hepatitis C antibody test
+LRPCD_STD	v4.8	RCT	43X3.	Hepatitis C antibody test positive
+LRPCD_STD	v4.8	RCT	43X4.	Hepatitis C antibody test negative
+LRPCD_STD	v4.8	RCT	43X6.	Hepatitis C antibody level
+LRPCD_STD	v4.8	RCT	43XA.	Hepatitis B core antibody positive
+LRPCD_STD	v4.8	RCT	43bS.	Serologic test for herpes simplex
+LRPCD_STD	v4.8	RCT	43d5.	HIV antibody/antigen (Duo)
+LRPCD_STD	v4.8	RCT	43d6.	HTLV 1 antibody level
+LRPCD_STD	v4.8	RCT	43d8.	Hepatitis B surface antibody level
+LRPCD_STD	v4.8	RCT	43d9.	Hepatitis B surface antigen level
+LRPCD_STD	v4.8	RCT	43dA.	Hepatitis B core IgM level
+LRPCD_STD	v4.8	RCT	43dB.	Hepatitis B core antibody level
+LRPCD_STD	v4.8	RCT	43dC.	Hepatitis B e antibody level
+LRPCD_STD	v4.8	RCT	43dD.	Hepatitis C recombinant immunoblot assay
+LRPCD_STD	v4.8	RCT	43dE.	Herpes simplex antibody level
+LRPCD_STD	v4.8	RCT	43dc.	HTLV 2 antibody level
+LRPCD_STD	v4.8	RCT	43de.	Herpes simplex IgM level
+LRPCD_STD	v4.8	RCT	43dm.	Herpes simplex IgG level
+LRPCD_STD	v4.8	RCT	43eC.	Chlamydia trachomatis L2 antibody level
+LRPCD_STD	v4.8	RCT	43eE.	Chlamydia antibody level
+LRPCD_STD	v4.8	RCT	43eF.	Chlamydia group complement fixation test
+LRPCD_STD	v4.8	RCT	43eJ.	Chlamydia trachomatis IgG level
+LRPCD_STD	v4.8	RCT	43eO.	Fluorescent treponemal antibody absorption IgG level
+LRPCD_STD	v4.8	RCT	43eP.	Fluorescent treponemal antibody absorption IgM level
+LRPCD_STD	v4.8	RCT	43ef.	Syphilis IgG level
+LRPCD_STD	v4.8	RCT	43eh.	Treponema pallidum IgG level
+LRPCD_STD	v4.8	RCT	43ei.	Treponema pallidum IgM level
+LRPCD_STD	v4.8	RCT	43ej.	VDRL titre
+LRPCD_STD	v4.8	RCT	43ez.	Chlamydia trachomatis IgM level
+LRPCD_STD	v4.8	RCT	43h0.	Chlamydia trachomatis polymerase chain reaction
+LRPCD_STD	v4.8	RCT	43h2.	HIV 1 PCR
+LRPCD_STD	v4.8	RCT	43h3.	Hepatitis C PCR
+LRPCD_STD	v4.8	RCT	43h4.	Herpes simplex polymerase chain reaction
+LRPCD_STD	v4.8	RCT	43h6.	Neisseria gonorrhoeae polymerase chain reaction
+LRPCD_STD	v4.8	RCT	43h9.	Human immunodeficiency virus proviral deoxyribonucleic acid polymerase chain reaction
+LRPCD_STD	v4.8	RCT	43j1.	Chlamydia trachomatis nucleic acid detection
+LRPCD_STD	v4.8	RCT	43j10	Chlamydia trachomatis (lymphogranuloma venereum serovar) deoxyribonucleic acid detection
+LRPCD_STD	v4.8	RCT	43j11	Chlamydia trachomatis detection by nucleic acid amplification test
+LRPCD_STD	v4.8	RCT	43j12	Chlamydia trachomatis nucleic acid detection assay
+LRPCD_STD	v4.8	RCT	43j5.	Hepatitis C nucleic acid detection
+LRPCD_STD	v4.8	RCT	43j50	Hepatitis C nucleic acid detection assay
+LRPCD_STD	v4.8	RCT	43j6.	Herpes simplex nucleic acid detection
+LRPCD_STD	v4.8	RCT	43j60	Herpes simplex nucleic acid detection assay
+LRPCD_STD	v4.8	RCT	43j61	Herpes simplex deoxyribonucleic acid detection assay
+LRPCD_STD	v4.8	RCT	43j7.	HIV 1 nucleic acid detection
+LRPCD_STD	v4.8	RCT	43j70	HIV 1 nucleic acid detection assay
+LRPCD_STD	v4.8	RCT	43j71	HIV 1 provirus deoxyribonucleic acid detection assay
+LRPCD_STD	v4.8	RCT	43j72	HIV 1 ribonucleic acid detection assay
+LRPCD_STD	v4.8	RCT	43j8.	HTLV 1 nucleic acid detection
+LRPCD_STD	v4.8	RCT	43j80	HTLV 1 nucleic acid detection assay
+LRPCD_STD	v4.8	RCT	43j81	HTLV 1 provirus deoxyribonucleic acid detection assay
+LRPCD_STD	v4.8	RCT	43j82	HTLV 1 ribonucleic acid detection assay
+LRPCD_STD	v4.8	RCT	43jA.	Neisseria gonorrhoeae nucleic acid detection
+LRPCD_STD	v4.8	RCT	43jA0	Neisseria gonorrhoeae nucleic acid detection assay
+LRPCD_STD	v4.8	RCT	43jE.	HTLV 2 nucleic acid detection
+LRPCD_STD	v4.8	RCT	43jE0	HTLV 2 nucleic acid detection assay
+LRPCD_STD	v4.8	RCT	43jE1	HTLV 2 provirus deoxyribonucleic acid detection assay
+LRPCD_STD	v4.8	RCT	43jE2	HTLV 2 ribonucleic acid detection assay
+LRPCD_STD	v4.8	RCT	43jG.	Hepatitis B nucleic acid detection
+LRPCD_STD	v4.8	RCT	43jG0	Hepatitis B nucleic acid detection assay
+LRPCD_STD	v4.8	RCT	43jG1	Hepatitis B deoxyribonucleic acid detection assay
+LRPCD_STD	v4.8	RCT	43jJ.	Hepatitis D nucleic acid detection
+LRPCD_STD	v4.8	RCT	43jJ0	Hepatitis D nucleic acid detection assay
+LRPCD_STD	v4.8	RCT	43jK.	Chlamydia deoxyribonucleic acid detection
+LRPCD_STD	v4.8	RCT	43jY.	Human papilloma virus nucleic acid detection
+LRPCD_STD	v4.8	RCT	43jY0	Human papilloma virus nucleic acid detection assay
+LRPCD_STD	v4.8	RCT	43jY1	Human papilloma virus deoxyribonucleic acid detection assay
+LRPCD_STD	v4.8	RCT	43jr.	Human T-lymphotropic virus nucleic acid detection
+LRPCD_STD	v4.8	RCT	43jr0	HTLV nucleic acid detection assay
+LRPCD_STD	v4.8	RCT	43jr1	HTLV provirus deoxyribonucleic acid detection assay
+LRPCD_STD	v4.8	RCT	43jr2	HTLV ribonucleic acid detection assay
+LRPCD_STD	v4.8	RCT	43jv.	Human herpes virus 8 nucleic acid detection
+LRPCD_STD	v4.8	RCT	43jv0	Human herpes virus 8 nucleic acid detection assay
+LRPCD_STD	v4.8	RCT	43jv1	Human herpesvirus 8 deoxyribonucleic acid detection assay
+LRPCD_STD	v4.8	RCT	43k0.	Hepatitis B e antigen level
+LRPCD_STD	v4.8	RCT	43k1.	Hepatitis C antigen level
+LRPCD_STD	v4.8	RCT	43n9.	Chlamydia trachomatis IgA level
+LRPCD_STD	v4.8	RCT	43q..	Hepatitis C virus RNA assay
+LRPCD_STD	v4.8	RCT	43w3.	Human immunodeficiency virus ribonucleic acid/deoxyribonucleic acid ratio
+LRPCD_STD	v4.8	RCT	43w4.	Herpes simplex virus type 1 nucleic acid detection
+LRPCD_STD	v4.8	RCT	43w40	Herpes simplex virus type 1 nucleic acid detection assay
+LRPCD_STD	v4.8	RCT	43w41	Herpes simplex type 1 deoxyribonucleic acid detection assay
+LRPCD_STD	v4.8	RCT	43w5.	Herpes simplex virus type 2 nucleic acid detection
+LRPCD_STD	v4.8	RCT	43w50	Herpes simplex virus type 2 nucleic acid detection assay
+LRPCD_STD	v4.8	RCT	43w51	Herpes simplex type 2 deoxyribonucleic acid detection assay
+LRPCD_STD	v4.8	RCT	43wA.	Treponema pallidum detection by nucleic acid amplification test
+LRPCD_STD	v4.8	RCT	43wB.	Treponema pallidum deoxyribonucleic acid detection
+LRPCD_STD	v4.8	RCT	46H6.	Urine chlamydia trachomatis test positive
+LRPCD_STD	v4.8	RCT	46H7.	Urine chlamydia trachomatis test negative
+LRPCD_STD	v4.8	RCT	4J34.	HIV viral load
+LRPCD_STD	v4.8	RCT	4J35.	HIV p24 antigen level
+LRPCD_STD	v4.8	RCT	4J36.	Herpes simplex antigen (EIA)
+LRPCD_STD	v4.8	RCT	4J3B.	Hepatitis C viral load
+LRPCD_STD	v4.8	RCT	4J3C.	Herpes simplex virus isolation
+LRPCD_STD	v4.8	RCT	4J3D.	Hepatitis B viral load
+LRPCD_STD	v4.8	RCT	4J3F.	Human immunodeficiency virus viral load by log rank
+LRPCD_STD	v4.8	RCT	4J3N.	Human immunodeficiency virus drug resistance test
+LRPCD_STD	v4.8	RCT	4J3P.	Human immunodeficiency virus type 1 subtype identification
+LRPCD_STD	v4.8	RCT	4J3Q.	Human immunodeficiency virus IgG avidity
+LRPCD_STD	v4.8	RCT	4J54.	Trichomonas seen
+LRPCD_STD	v4.8	RCT	4J55.	Trichomonas not seen
+LRPCD_STD	v4.8	RCT	4JDJ.	Hepatitis G serology
+LRPCD_STD	v4.8	RCT	4JDM.	Chlamydia serology
+LRPCD_STD	v4.8	RCT	4JDN.	Human herpes virus serology
+LRPCD_STD	v4.8	RCT	4JDT.	HIV serology
+LRPCD_STD	v4.8	RCT	4JDT0	Rapid human immunodeficiency virus antibody test
+LRPCD_STD	v4.8	RCT	4JDY.	Hepatitis D serology
+LRPCD_STD	v4.8	RCT	4JDc.	Human T-lymphotropic virus (1&2) serology
+LRPCD_STD	v4.8	RCT	4JF42	Throat swab for chlamydia
+LRPCD_STD	v4.8	RCT	4JF43	Throat swab for gonorrhoea
+LRPCD_STD	v4.8	RCT	4JH61	Anal swab culture negative
+LRPCD_STD	v4.8	RCT	4JH63	Anal swab for chlamydia
+LRPCD_STD	v4.8	RCT	4JH64	Anal swab for gonorrhoea
+LRPCD_STD	v4.8	RCT	4JK10	Urethral swab culture positive
+LRPCD_STD	v4.8	RCT	4JK22	HVS culture - trichomonas vaginalis
+LRPCD_STD	v4.8	RCT	4JK8.	Penile swab taken
+LRPCD_STD	v4.8	RCT	4JK80	Penile swab culture positive
+LRPCD_STD	v4.8	RCT	4JK9.	Endocervical chlamydia swab
+LRPCD_STD	v4.8	RCT	4JKA.	Urethral chlamydia swab
+LRPCD_STD	v4.8	RCT	4JKB.	Gonococcal cervical swab
+LRPCD_STD	v4.8	RCT	4JKC.	Gonococcal urethral swab
+LRPCD_STD	v4.8	RCT	4JKD.	Low vaginal swab for chlamydia taken by patient
+LRPCD_STD	v4.8	RCT	4JLA.	Gonococcal swab
+LRPCD_STD	v4.8	RCT	4JLC.	Chlamydia swab
+LRPCD_STD	v4.8	RCT	4JQ3.	Hepatitis C virus genotype
+LRPCD_STD	v4.8	RCT	4JQ8.	Gonorrhoea test negative
+LRPCD_STD	v4.8	RCT	4JQ9.	Gonorrhoea test equivocal
+LRPCD_STD	v4.8	RCT	4JQA.	Gonorrhoea test positive
+LRPCD_STD	v4.8	RCT	4JQC.	Hepatitis C viral ribonucleic acid polymerase chain reaction negative
+LRPCD_STD	v4.8	RCT	4JQD.	Hepatitis C viral ribonucleic acid polymerase chain reaction positive
+LRPCD_STD	v4.8	RCT	4JQE.	Hepatitis C antigen negative
+LRPCD_STD	v4.8	RCT	4JQF.	Hepatitis C antigen positive
+LRPCD_STD	v4.8	RCT	4JR1.	Hepatitis B screening test
+LRPCD_STD	v4.8	RCT	4JR4.	Treponema screening test
+LRPCD_STD	v4.8	RCT	4JR7.	HIV screening test
+LRPCD_STD	v4.8	RCT	4JR9.	Trichomonas screening test
+LRPCD_STD	v4.8	RCT	4JRF.	Viral hepatitis screening test
+LRPCD_STD	v4.8	RCT	4JSD.	Treponema pallidum microscopy
+LRPCD_STD	v4.8	RCT	4JSE.	Neisseria gonorrhoeae microscopy
+LRPCD_STD	v4.8	RCT	4K33.	Cervical smear - trichomonas
+LRPCD_STD	v4.8	RCT	4K35.	Cerv.smear - viral infl.unsp.
+LRPCD_STD	v4.8	RCT	4K36.	Cervical smear - wart virus
+LRPCD_STD	v4.8	RCT	4K37.	Cervical smear - herpes
+LRPCD_STD	v4.8	RCT	4K3A.	Cervical smear: koilocytosis
+LRPCD_STD	v4.8	RCT	4K3D.	HPV - Human papillomavirus test positive
+LRPCD_STD	v4.8	RCT	4K3E.	HPV - Human papillomavirus test negative
+LRPCD_STD	v4.8	RCT	65P7.	Venereal disease contact
+LRPCD_STD	v4.8	RCT	65P8.	AIDS contact
+LRPCD_STD	v4.8	RCT	65PJ.	Chlamydia trachomatis contact
+LRPCD_STD	v4.8	RCT	65PK.	Gonorrhoea contact
+LRPCD_STD	v4.8	RCT	65PL.	Hepatitis B contact
+LRPCD_STD	v4.8	RCT	65PM.	Hepatitis C contact
+LRPCD_STD	v4.8	RCT	65PN.	Syphilis contact
+LRPCD_STD	v4.8	RCT	65PP.	Trichomonas vaginalis contact
+LRPCD_STD	v4.8	RCT	65PQ.	Genital herpes simplex contact
+LRPCD_STD	v4.8	RCT	65PR.	Human immunodeficiency virus contact
+LRPCD_STD	v4.8	RCT	65PS.	Sexually transmitted infection contact
+LRPCD_STD	v4.8	RCT	65Q7.	Viral hepatitis carrier
+LRPCD_STD	v4.8	RCT	65Q8.	Gonorrhoea carrier
+LRPCD_STD	v4.8	RCT	65Q9.	Venereal disease carrier NOS
+LRPCD_STD	v4.8	RCT	65QA.	AIDS carrier
+LRPCD_STD	v4.8	RCT	65VE.	Notification of AIDS
+LRPCD_STD	v4.8	RCT	66j..	Human immunodeficiency virus monitoring
+LRPCD_STD	v4.8	RCT	66j0.	Human immunodeficiency virus annual review
+LRPCD_STD	v4.8	RCT	677L.	Chlamydia screening counselling
+LRPCD_STD	v4.8	RCT	677M.	Gonorrhoea screening counselling
+LRPCD_STD	v4.8	RCT	677N.	HIV screening counselling
+LRPCD_STD	v4.8	RCT	677P.	Syphilis screening counselling
+LRPCD_STD	v4.8	RCT	677Q.	Hepatitis C screening counselling
+LRPCD_STD	v4.8	RCT	677R.	Hepatitis B screening counselling
+LRPCD_STD	v4.8	RCT	679K9	Education about prevention of sexually transmitted disease
+LRPCD_STD	v4.8	RCT	67I2.	Advice about HIV prevention
+LRPCD_STD	v4.8	RCT	6826.	Trachoma screening
+LRPCD_STD	v4.8	RCT	6827.	AIDS (HTLV-III) screening
+LRPCD_STD	v4.8	RCT	6828.	Hepatitis B screening
+LRPCD_STD	v4.8	RCT	68280	Hepatitis B screening required
+LRPCD_STD	v4.8	RCT	6829.	Hepatitis C screening
+LRPCD_STD	v4.8	RCT	682A.	Hepatitis C screening not offered
+LRPCD_STD	v4.8	RCT	6832.	Venereal disease screening
+LRPCD_STD	v4.8	RCT	683C.	Chlamydia trachomatis screening
+LRPCD_STD	v4.8	RCT	685N.	HPV - Human papillomavirus test consent given
+LRPCD_STD	v4.8	RCT	685O.	HPV - Human papillomavirus test declined
+LRPCD_STD	v4.8	RCT	685P.	HPV - Human papillomavirus test positive
+LRPCD_STD	v4.8	RCT	685Q.	HPV - Human papillomavirus test negative
+LRPCD_STD	v4.8	RCT	68K7.	Urine screen for chlamydia
+LRPCD_STD	v4.8	RCT	77323	Cauterisation of perianal warts NEC
+LRPCD_STD	v4.8	RCT	77324	Cryotherapy to perianal warts
+LRPCD_STD	v4.8	RCT	77325	Painting of perianal warts
+LRPCD_STD	v4.8	RCT	7D033	Cauterisation of lesion of vulva
+LRPCD_STD	v4.8	RCT	7D035	Painting of vulval warts
+LRPCD_STD	v4.8	RCT	7P1A0	Human immunodeficiency virus blood test
+LRPCD_STD	v4.8	RCT	7Q052	Hepatitis B treatment drugs Band 1
+LRPCD_STD	v4.8	RCT	7Q053	Respiratory syncytial virus treatment and Hepatitis C treatment drugs Band 1
+LRPCD_STD	v4.8	RCT	8B6e.	Post exposure prophylaxis after sexual exposure
+LRPCD_STD	v4.8	RCT	8BB5.	12 week virologic response to hepatitis C treatment
+LRPCD_STD	v4.8	RCT	8CAE.	Patient advised about the risks of HIV
+LRPCD_STD	v4.8	RCT	8CAd.	Patient advised to notify sexual partners of sexual transmitted infection
+LRPCD_STD	v4.8	RCT	8CP9.	Discussion about human immunodeficiency virus post exposure prophylaxis
+LRPCD_STD	v4.8	RCT	8HBQ0	Sexually transmitted infection in-house follow-up
+LRPCD_STD	v4.8	RCT	8HTR.	Referral to sexually transmitted infections clinic
+LRPCD_STD	v4.8	RCT	8HVP.	Private referral to venereologist
+LRPCD_STD	v4.8	RCT	8Hle.	Referral to community human immunodeficiency virus nurse specialist
+LRPCD_STD	v4.8	RCT	8I3o.	Gonorrhoea screening declined
+LRPCD_STD	v4.8	RCT	8I3p.	HIV screening declined
+LRPCD_STD	v4.8	RCT	8I3u.	Hepatitis B screening declined
+LRPCD_STD	v4.8	RCT	8I3v.	Hepatitis C screening declined
+LRPCD_STD	v4.8	RCT	9NJu.	In-house genitourinary medicine
+LRPCD_STD	v4.8	RCT	9NJu0	In-house genitourinary medicine first appointment
+LRPCD_STD	v4.8	RCT	9NJu1	In-house genitourinary medicine follow-up appointment
+LRPCD_STD	v4.8	RCT	9NJu2	In-house genitourinary medicine discharge
+LRPCD_STD	v4.8	RCT	9Na4.	Consultation for complex sexual health need
+LRPCD_STD	v4.8	RCT	9NgR.	On hepatitis C treatment plan
+LRPCD_STD	v4.8	RCT	9Nt10	Seen by community HIV (human immunodeficiency virus) nurse
+LRPCD_STD	v4.8	RCT	9Op0.	HIV screening offered
+LRPCD_STD	v4.8	RCT	9Op1.	Hepatitis C screening offered
+LRPCD_STD	v4.8	RCT	9Op2.	Hepatitis B screening offered
+LRPCD_STD	v4.8	RCT	9Oq0.	Chlamydia test offered
+LRPCD_STD	v4.8	RCT	9Oq1.	Syphilis screening offered
+LRPCD_STD	v4.8	RCT	9Oq4.	Chlamydia screening programme test kit issued
+LRPCD_STD	v4.8	RCT	9OqB.	Sexually transmitted infection screening offered
+LRPCD_STD	v4.8	RCT	9kF..	Specialised sexual health - enhanced services administration
+LRPCD_STD	v4.8	RCT	9kF0.	Specialised sexual health - enhanced service completed
+LRPCD_STD	v4.8	RCT	9kF1.	Patient reviewed following treatment for sexually transmitted disease - enhanced services administration
+LRPCD_STD	v4.8	RCT	9kF2.	Urine screen for gonorrhoea - enhanced services administration
+LRPCD_STD	v4.8	RCT	9kF3.	Counselling for genital herpes screening - enhanced services administration
+LRPCD_STD	v4.8	RCT	9kF4.	Syphilis screen 3 months post treatment - enhanced services administration
+LRPCD_STD	v4.8	RCT	9kF5.	Syphilis screen 6 months post treatment - enhanced services administration
+LRPCD_STD	v4.8	RCT	9kF6.	Syphilis screen 1 year post treatment - enhanced services administration
+LRPCD_STD	v4.8	RCT	9kF8.	Treatment of recurrent genital herpes - enhanced services administration
+LRPCD_STD	v4.8	RCT	9kR..	Chronic hepatitis annual review - enhanced services administration
+LRPCD_STD	v4.8	RCT	9kT..	Hepatitis C screening negative - enhanced services administration
+LRPCD_STD	v4.8	RCT	9kV..	Hepatitis C screening positive - enhanced services administration
+LRPCD_STD	v4.8	RCT	9kW..	Hepatitis B screening negative - enhanced services administration
+LRPCD_STD	v4.8	RCT	9kX..	Hepatitis status 6 months post treatment - enhanced services administration
+LRPCD_STD	v4.8	RCT	9kZ..	Hepatitis B screening positive - enhanced services administration
+LRPCD_STD	v4.8	RCT	9ka..	Urine neisseria gonorrhoeae test positive - enhanced services administration
+LRPCD_STD	v4.8	RCT	9kb..	Urine neisseria gonorrhoeae test negative - enhanced services administration
+LRPCD_STD	v4.8	RCT	9kl..	Human immunodeficiency virus positive general health check service declined - enhanced services administration
+LRPCD_STD	v4.8	RCT	9mN..	Human immunodeficiency virus infection monitoring invitation
+LRPCD_STD	v4.8	RCT	9mN0.	Human immunodeficiency virus infection monitoring telephone invitation
+LRPCD_STD	v4.8	RCT	9mN00	Human immunodeficiency virus infection monitoring first telephone invitation
+LRPCD_STD	v4.8	RCT	9mN01	Human immunodeficiency virus infection monitoring second telephone invitation
+LRPCD_STD	v4.8	RCT	9mN02	Human immunodeficiency virus infection monitoring third telephone invitation
+LRPCD_STD	v4.8	RCT	A063.	Intestinal trichomoniasis
+LRPCD_STD	v4.8	RCT	A541.	Genital herpes simplex
+LRPCD_STD	v4.8	RCT	A5410	Genital herpes unspecified
+LRPCD_STD	v4.8	RCT	A5411	Herpetic vulvovaginitis
+LRPCD_STD	v4.8	RCT	A5412	Herpetic ulceration of vulva
+LRPCD_STD	v4.8	RCT	A5413	Herpetic infection of penis
+LRPCD_STD	v4.8	RCT	A5414	Herpesviral infection of perianal skin and rectum
+LRPCD_STD	v4.8	RCT	A5415	Anogenital herpesviral infection
+LRPCD_STD	v4.8	RCT	A5416	Genital herpes simplex type 1
+LRPCD_STD	v4.8	RCT	A5417	Genital herpes simplex type 2
+LRPCD_STD	v4.8	RCT	A5418	Recurrent genital herpes simplex type 1
+LRPCD_STD	v4.8	RCT	A5419	Recurrent genital herpes simplex type 2
+LRPCD_STD	v4.8	RCT	A541z	Genital herpes simplex NOS
+LRPCD_STD	v4.8	RCT	A54x1	Herpes simplex meningitis
+LRPCD_STD	v4.8	RCT	A7...	Other viral and chlamydial diseases
+LRPCD_STD	v4.8	RCT	A702.	Viral hepatitis B with coma
+LRPCD_STD	v4.8	RCT	A7020	Acute hepatitis B with delta agent (coinfection) with hepatic coma
+LRPCD_STD	v4.8	RCT	A703.	Viral (serum) hepatitis B
+LRPCD_STD	v4.8	RCT	A7030	Acute hepatitis B with delta-agent (coinfection) without hepatic coma
+LRPCD_STD	v4.8	RCT	A704.	Other specified viral hepatitis with coma
+LRPCD_STD	v4.8	RCT	A7040	Viral hepatitis C with coma
+LRPCD_STD	v4.8	RCT	A704z	Other specified viral hepatitis with hepatic coma NOS
+LRPCD_STD	v4.8	RCT	A705.	Other specified viral hepatitis without coma
+LRPCD_STD	v4.8	RCT	A7050	Viral hepatitis C without mention of hepatic coma
+LRPCD_STD	v4.8	RCT	A7051	Acute delta-(super)infection of hepatitis B carrier
+LRPCD_STD	v4.8	RCT	A7054	Hepatitis non A non B
+LRPCD_STD	v4.8	RCT	A705z	Other specified viral hepatitis without mention of hepatic coma NOS
+LRPCD_STD	v4.8	RCT	A706.	Unspecified viral hepatitis with coma
+LRPCD_STD	v4.8	RCT	A707.	Chronic viral hepatitis
+LRPCD_STD	v4.8	RCT	A7070	Chronic viral hepatitis B with delta-agent
+LRPCD_STD	v4.8	RCT	A7071	Chronic viral hepatitis B without delta-agent
+LRPCD_STD	v4.8	RCT	A7072	Chronic viral hepatitis C
+LRPCD_STD	v4.8	RCT	A7073	Chronic viral hepatitis B
+LRPCD_STD	v4.8	RCT	A707X	Chronic viral hepatitis, unspecified
+LRPCD_STD	v4.8	RCT	A708.	Viral hepatitis with hepatic coma
+LRPCD_STD	v4.8	RCT	A709.	Viral hepatitis without hepatic coma
+LRPCD_STD	v4.8	RCT	A70A.	Hepatitis C genotype 1
+LRPCD_STD	v4.8	RCT	A70B.	Hepatitis C genotype 2
+LRPCD_STD	v4.8	RCT	A70C.	Hepatitis C genotype 3
+LRPCD_STD	v4.8	RCT	A70D.	Hepatitis C genotype 4
+LRPCD_STD	v4.8	RCT	A70E.	Hepatitis C genotype 5
+LRPCD_STD	v4.8	RCT	A70F.	Hepatitis C genotype 6
+LRPCD_STD	v4.8	RCT	A70G.	Acute hepatitis C
+LRPCD_STD	v4.8	RCT	A70z.	Unspecified viral hepatitis
+LRPCD_STD	v4.8	RCT	A70z0	Hepatitis C
+LRPCD_STD	v4.8	RCT	A70z1	Acute viral hepatitis NOS
+LRPCD_STD	v4.8	RCT	A7812	Genital warts
+LRPCD_STD	v4.8	RCT	A7813	Perianal warts
+LRPCD_STD	v4.8	RCT	A7817	Recurrent genital warts
+LRPCD_STD	v4.8	RCT	A7852	Cytomegaloviral hepatitis
+LRPCD_STD	v4.8	RCT	A788.	Acquired immune deficiency syndrome
+LRPCD_STD	v4.8	RCT	A7880	Acute human immunodeficiency virus infection
+LRPCD_STD	v4.8	RCT	A7881	Asymptomatic human immunodeficiency virus infection
+LRPCD_STD	v4.8	RCT	A7882	Human immunodeficiency virus infection with persistent generalised lymphadenopathy
+LRPCD_STD	v4.8	RCT	A7883	Human immunodeficiency virus with constitutional disease
+LRPCD_STD	v4.8	RCT	A7884	Human immunodeficiency virus with neurological disease
+LRPCD_STD	v4.8	RCT	A7885	Human immunodeficiency virus infection with secondary clinical infectious disease
+LRPCD_STD	v4.8	RCT	A7886	Human immunodeficiency virus with secondary cancers
+LRPCD_STD	v4.8	RCT	A788U	HIV disease resulting in haematological and immunological abnormalities, not elsewhere classified
+LRPCD_STD	v4.8	RCT	A788V	HIV disease resulting in multiple diseases classified elsewhere
+LRPCD_STD	v4.8	RCT	A788W	HIV disease resulting in unspecified malignant neoplasm
+LRPCD_STD	v4.8	RCT	A788X	HIV disease resulting in unspecified infectious and parasitic disease
+LRPCD_STD	v4.8	RCT	A788y	Human immunodeficiency virus with other clinical findings
+LRPCD_STD	v4.8	RCT	A788z	Acquired human immunodeficiency virus infection syndrome NOS
+LRPCD_STD	v4.8	RCT	A789.	Human immunodef virus resulting in other disease
+LRPCD_STD	v4.8	RCT	A7890	HIV disease resulting in mycobacterial infection
+LRPCD_STD	v4.8	RCT	A7891	HIV disease resulting in cytomegaloviral disease
+LRPCD_STD	v4.8	RCT	A7892	HIV disease resulting in candidiasis
+LRPCD_STD	v4.8	RCT	A7893	HIV disease resulting in Pneumocystis carinii pneumonia
+LRPCD_STD	v4.8	RCT	A7894	HIV disease resulting in multiple infections
+LRPCD_STD	v4.8	RCT	A7895	HIV disease resulting in Kaposi's sarcoma
+LRPCD_STD	v4.8	RCT	A7896	HIV disease resulting in Burkitt's lymphoma
+LRPCD_STD	v4.8	RCT	A7897	HIV disease resulting in other types of non-Hodgkin's lymphoma
+LRPCD_STD	v4.8	RCT	A7898	HIV disease resulting in multiple malignant neoplasms
+LRPCD_STD	v4.8	RCT	A7899	HIV disease resulting in lymphoid interstitial pneumonitis
+LRPCD_STD	v4.8	RCT	A789A	HIV disease resulting in wasting syndrome
+LRPCD_STD	v4.8	RCT	A789X	HIV disease resulting in other malignant neoplasms of lymphoid, haematopoietic and related tissue
+LRPCD_STD	v4.8	RCT	A78A.	Chlamydial infection
+LRPCD_STD	v4.8	RCT	A78A0	Chlamydial infection of lower genitourinary tract
+LRPCD_STD	v4.8	RCT	A78A1	Chlamydial infection of pharynx
+LRPCD_STD	v4.8	RCT	A78A2	Chlamydial infection of anus and rectum
+LRPCD_STD	v4.8	RCT	A78A3	Chlamydial infection of pelviperitoneum and other genitourinary organs
+LRPCD_STD	v4.8	RCT	A78A5	Chlamydial infection of genital organs NEC
+LRPCD_STD	v4.8	RCT	A78AW	Chlamydial infection, unspecified
+LRPCD_STD	v4.8	RCT	A78AX	Chlamydial infection of genitourinary tract, unspecified
+LRPCD_STD	v4.8	RCT	A798.	Retrovirus infection
+LRPCD_STD	v4.8	RCT	A79B.	Human papilloma virus infection
+LRPCD_STD	v4.8	RCT	A7y..	Other specified viral or chlamydial diseases
+LRPCD_STD	v4.8	RCT	A7y01	Retrovirus as the cause of diseases classified to other chapters
+LRPCD_STD	v4.8	RCT	A7y05	Papillomavirus as the cause of diseases classified to other chapters
+LRPCD_STD	v4.8	RCT	A7z..	Other viral or chlamydial disease NOS
+LRPCD_STD	v4.8	RCT	A9...	Syphilis and other venereal diseases
+LRPCD_STD	v4.8	RCT	A90..	Congenital syphilis
+LRPCD_STD	v4.8	RCT	A900.	Early congenital syphilis with symptoms
+LRPCD_STD	v4.8	RCT	A901.	Early latent congenital syphilis
+LRPCD_STD	v4.8	RCT	A902.	Early congenital syphilis NOS
+LRPCD_STD	v4.8	RCT	A903.	Syphilitic interstitial keratitis
+LRPCD_STD	v4.8	RCT	A904.	Juvenile neurosyphilis
+LRPCD_STD	v4.8	RCT	A9040	Unspecified juvenile neurosyphilis
+LRPCD_STD	v4.8	RCT	A9041	Congenital syphilitic encephalitis
+LRPCD_STD	v4.8	RCT	A9042	Congenital syphilitic meningitis
+LRPCD_STD	v4.8	RCT	A904z	Juvenile neurosyphilis NOS
+LRPCD_STD	v4.8	RCT	A905.	Other late congenital syphilis
+LRPCD_STD	v4.8	RCT	A9050	Congenital syphilitic gumma
+LRPCD_STD	v4.8	RCT	A9051	Hutchinson's teeth
+LRPCD_STD	v4.8	RCT	A9052	Syphilitic saddle nose
+LRPCD_STD	v4.8	RCT	A9053	Late congenital syphilitic oculopathy
+LRPCD_STD	v4.8	RCT	A905z	Other late congenital syphilis NOS
+LRPCD_STD	v4.8	RCT	A906.	Latent late congenital syphilis
+LRPCD_STD	v4.8	RCT	A907.	Unspecified late congenital syphilis
+LRPCD_STD	v4.8	RCT	A90z.	Congenital syphilis NOS
+LRPCD_STD	v4.8	RCT	A91..	Early symptomatic syphilis
+LRPCD_STD	v4.8	RCT	A910.	Primary genital syphilis
+LRPCD_STD	v4.8	RCT	A911.	Primary anal syphilis
+LRPCD_STD	v4.8	RCT	A912.	Other primary syphilis
+LRPCD_STD	v4.8	RCT	A9120	Primary breast syphilis
+LRPCD_STD	v4.8	RCT	A9121	Primary finger syphilis
+LRPCD_STD	v4.8	RCT	A9122	Primary lip syphilis
+LRPCD_STD	v4.8	RCT	A9123	Primary tonsil syphilis
+LRPCD_STD	v4.8	RCT	A912z	Other primary syphilis NOS
+LRPCD_STD	v4.8	RCT	A913.	Secondary syphilis of skin or mucus membranes
+LRPCD_STD	v4.8	RCT	A9130	Secondary syphilis of anus
+LRPCD_STD	v4.8	RCT	A9131	Secondary syphilis of mouth
+LRPCD_STD	v4.8	RCT	A9132	Secondary syphilis of pharynx
+LRPCD_STD	v4.8	RCT	A9133	Secondary syphilis of skin
+LRPCD_STD	v4.8	RCT	A9134	Secondary syphilis of tonsils
+LRPCD_STD	v4.8	RCT	A9135	Secondary syphilis of vulva
+LRPCD_STD	v4.8	RCT	A913z	Secondary syphilis of skin or mucus membranes NOS
+LRPCD_STD	v4.8	RCT	A914.	Adenopathy due to secondary syphilis
+LRPCD_STD	v4.8	RCT	A915.	Uveitis due to secondary syphilis
+LRPCD_STD	v4.8	RCT	A9150	Syphilitic uveitis unspecified
+LRPCD_STD	v4.8	RCT	A9151	Secondary syphilitic chorioretinitis
+LRPCD_STD	v4.8	RCT	A9152	Secondary syphilitic iridocyclitis
+LRPCD_STD	v4.8	RCT	A915z	Secondary syphilitic uveitis NOS
+LRPCD_STD	v4.8	RCT	A916.	Secondary syphilis of viscera or bone
+LRPCD_STD	v4.8	RCT	A9160	Secondary syphilitic periostitis
+LRPCD_STD	v4.8	RCT	A9161	Secondary syphilitic hepatitis
+LRPCD_STD	v4.8	RCT	A916z	Secondary syphilis of viscera and bone NOS
+LRPCD_STD	v4.8	RCT	A917.	Secondary syphilis relapse
+LRPCD_STD	v4.8	RCT	A918.	Other forms of secondary syphilis
+LRPCD_STD	v4.8	RCT	A9180	Acute secondary syphilitic meningitis
+LRPCD_STD	v4.8	RCT	A9181	Syphilitic alopecia
+LRPCD_STD	v4.8	RCT	A918z	Other secondary syphilis NOS
+LRPCD_STD	v4.8	RCT	A919.	Unspecified secondary syphilis
+LRPCD_STD	v4.8	RCT	A91X.	Early syphilis, unspecified
+LRPCD_STD	v4.8	RCT	A92..	Latent early syphilis
+LRPCD_STD	v4.8	RCT	A920.	Serological relapse after treatment of latent early syphilis
+LRPCD_STD	v4.8	RCT	A92z.	Latent early syphilis NOS
+LRPCD_STD	v4.8	RCT	A93..	Cardiovascular syphilis
+LRPCD_STD	v4.8	RCT	A930.	Syphilitic aortic aneurysm
+LRPCD_STD	v4.8	RCT	A931.	Syphilitic aortitis
+LRPCD_STD	v4.8	RCT	A932.	Syphilitic endocarditis
+LRPCD_STD	v4.8	RCT	A9320	Syphilitic endocarditis of unspecified valve
+LRPCD_STD	v4.8	RCT	A9321	Syphilitic endocarditis of mitral valve
+LRPCD_STD	v4.8	RCT	A9322	Syphilitic endocarditis of aortic valve
+LRPCD_STD	v4.8	RCT	A9323	Syphilitic endocarditis of tricuspid valve
+LRPCD_STD	v4.8	RCT	A9324	Syphilitic endocarditis of pulmonary valve
+LRPCD_STD	v4.8	RCT	A932z	Syphilitic endocarditis of heart valve NOS
+LRPCD_STD	v4.8	RCT	A93y.	Other specified cardiovascular system syphilis
+LRPCD_STD	v4.8	RCT	A93y0	Syphilitic pericarditis
+LRPCD_STD	v4.8	RCT	A93y1	Syphilitic myocarditis
+LRPCD_STD	v4.8	RCT	A93yz	Other specified cardiovascular system syphilis NOS
+LRPCD_STD	v4.8	RCT	A93z.	Cardiovascular syphilis NOS
+LRPCD_STD	v4.8	RCT	A94..	Neurosyphilis
+LRPCD_STD	v4.8	RCT	A940.	Tabes dorsalis - neurosyphilis
+LRPCD_STD	v4.8	RCT	A941.	General paresis - neurosyphilis
+LRPCD_STD	v4.8	RCT	A942.	Syphilitic meningitis
+LRPCD_STD	v4.8	RCT	A943.	Asymptomatic neurosyphilis
+LRPCD_STD	v4.8	RCT	A94y.	Other specified neurosyphilis
+LRPCD_STD	v4.8	RCT	A94y0	Syphilitic encephalitis
+LRPCD_STD	v4.8	RCT	A94y1	Syphilitic parkinsonism
+LRPCD_STD	v4.8	RCT	A94y2	Syphilitic disseminated retinochoroiditis
+LRPCD_STD	v4.8	RCT	A94y3	Syphilitic optic atrophy
+LRPCD_STD	v4.8	RCT	A94y4	Syphilitic retrobulbar neuritis
+LRPCD_STD	v4.8	RCT	A94y5	Syphilitic acoustic neuritis
+LRPCD_STD	v4.8	RCT	A94y6	Rupture of syphilitic cerebral aneurysm
+LRPCD_STD	v4.8	RCT	A94yz	Other specified neurosyphilis NOS
+LRPCD_STD	v4.8	RCT	A94z.	Neurosyphilis NOS
+LRPCD_STD	v4.8	RCT	A95..	Other forms of late syphilis with symptoms
+LRPCD_STD	v4.8	RCT	A950.	Syphilitic episcleritis
+LRPCD_STD	v4.8	RCT	A951.	Syphilis of lung
+LRPCD_STD	v4.8	RCT	A952.	Syphilitic peritonitis
+LRPCD_STD	v4.8	RCT	A953.	Syphilis of liver
+LRPCD_STD	v4.8	RCT	A954.	Syphilis of kidney
+LRPCD_STD	v4.8	RCT	A955.	Syphilis of bone
+LRPCD_STD	v4.8	RCT	A956.	Syphilis of muscle
+LRPCD_STD	v4.8	RCT	A957.	Syphilis of synovium, tendon or bursa
+LRPCD_STD	v4.8	RCT	A9570	Syphilis of synovium
+LRPCD_STD	v4.8	RCT	A9571	Syphilis of tendon
+LRPCD_STD	v4.8	RCT	A9572	Syphilis of bursa
+LRPCD_STD	v4.8	RCT	A957z	Syphilis of synovium, tendon or bursa NOS
+LRPCD_STD	v4.8	RCT	A95y.	Other specified late syphilis
+LRPCD_STD	v4.8	RCT	A95z.	Late symptomatic syphilis NOS
+LRPCD_STD	v4.8	RCT	A96..	Late latent syphilis
+LRPCD_STD	v4.8	RCT	A97..	Other and unspecified syphilis
+LRPCD_STD	v4.8	RCT	A970.	Late syphilis unspecified
+LRPCD_STD	v4.8	RCT	A971.	Latent syphilis unspecified
+LRPCD_STD	v4.8	RCT	A97z.	Syphilis NOS
+LRPCD_STD	v4.8	RCT	A98..	Gonococcal infections
+LRPCD_STD	v4.8	RCT	A980.	Acute gonorrhoea of lower genitourinary tract
+LRPCD_STD	v4.8	RCT	A9800	Acute gonococcal Bartholinitis
+LRPCD_STD	v4.8	RCT	A9801	Acute gonococcal urethritis
+LRPCD_STD	v4.8	RCT	A9802	Acute gonococcal vulvovaginitis
+LRPCD_STD	v4.8	RCT	A980z	Acute gonorrhoea of lower genitourinary tract NOS
+LRPCD_STD	v4.8	RCT	A981.	Acute gonorrhoea of upper genitourinary tract
+LRPCD_STD	v4.8	RCT	A9810	Acute unspecified gonorrhoea of upper genitourinary tract
+LRPCD_STD	v4.8	RCT	A9811	Acute gonococcal cystitis
+LRPCD_STD	v4.8	RCT	A9812	Acute gonococcal prostatitis
+LRPCD_STD	v4.8	RCT	A9813	Acute gonococcal epididymo-orchitis
+LRPCD_STD	v4.8	RCT	A9814	Acute gonococcal seminal vesiculitis
+LRPCD_STD	v4.8	RCT	A9815	Acute gonococcal cervicitis
+LRPCD_STD	v4.8	RCT	A9816	Acute gonococcal endometritis
+LRPCD_STD	v4.8	RCT	A9817	Acute gonococcal salpingitis
+LRPCD_STD	v4.8	RCT	A981z	Acute gonorrhoea upper genitourinary tract NOS
+LRPCD_STD	v4.8	RCT	A982.	Chronic gonorrhoea lower genitourinary tract
+LRPCD_STD	v4.8	RCT	A9820	Chronic gonococcal bartholinitis
+LRPCD_STD	v4.8	RCT	A9821	Chronic gonococcal urethritis
+LRPCD_STD	v4.8	RCT	A9822	Chronic gonococcal vulvovaginitis
+LRPCD_STD	v4.8	RCT	A982z	Chronic gonorrhoea of lower genitourinary tract NOS
+LRPCD_STD	v4.8	RCT	A983.	Chronic gonorrhoea of upper genitourinary tract
+LRPCD_STD	v4.8	RCT	A9830	Chronic unspecified gonorrhoea of upper genitourinary tract
+LRPCD_STD	v4.8	RCT	A9831	Chronic gonococcal cystitis
+LRPCD_STD	v4.8	RCT	A9832	Chronic gonococcal prostatitis
+LRPCD_STD	v4.8	RCT	A9833	Chronic gonococcal epididymo-orchitis
+LRPCD_STD	v4.8	RCT	A9834	Chronic gonococcal seminal vesiculitis
+LRPCD_STD	v4.8	RCT	A9835	Chronic gonococcal cervicitis
+LRPCD_STD	v4.8	RCT	A9836	Chronic gonococcal endometritis
+LRPCD_STD	v4.8	RCT	A9837	Chronic gonococcal salpingitis
+LRPCD_STD	v4.8	RCT	A983z	Chronic gonorrhoea of upper genitourinary tract NOS
+LRPCD_STD	v4.8	RCT	A984.	Gonococcal eye infection
+LRPCD_STD	v4.8	RCT	A9840	Neonatal gonococcal conjunctivits
+LRPCD_STD	v4.8	RCT	A9841	Gonococcal iridocyclitis
+LRPCD_STD	v4.8	RCT	A9842	Gonococcal endophthalmia
+LRPCD_STD	v4.8	RCT	A9843	Gonococcal keratitis
+LRPCD_STD	v4.8	RCT	A984z	Gonococcal eye infection NOS
+LRPCD_STD	v4.8	RCT	A985.	Gonococcal joint infection
+LRPCD_STD	v4.8	RCT	A9850	Gonococcal arthritis
+LRPCD_STD	v4.8	RCT	A9851	Gonococcal synovitis or tenosynovitis
+LRPCD_STD	v4.8	RCT	A9852	Gonococcal bursitis
+LRPCD_STD	v4.8	RCT	A9853	Gonococcal spondylitis
+LRPCD_STD	v4.8	RCT	A985z	Gonococcal joint infection NOS
+LRPCD_STD	v4.8	RCT	A986.	Gonococcal pharynx infection
+LRPCD_STD	v4.8	RCT	A987.	Gonococcal proctitis
+LRPCD_STD	v4.8	RCT	A9870	Gonococcal anal infection
+LRPCD_STD	v4.8	RCT	A9871	Gonococcal rectal infection
+LRPCD_STD	v4.8	RCT	A987z	Gonococcal proctitis NOS
+LRPCD_STD	v4.8	RCT	A98y.	Gonococcal infection of other specified sites
+LRPCD_STD	v4.8	RCT	A98y0	Gonococcal keratosis
+LRPCD_STD	v4.8	RCT	A98y1	Gonococcal meningitis
+LRPCD_STD	v4.8	RCT	A98y2	Gonococcal pericarditis
+LRPCD_STD	v4.8	RCT	A98y3	Gonococcal endocarditis
+LRPCD_STD	v4.8	RCT	A98y4	Other gonococcal heart disease
+LRPCD_STD	v4.8	RCT	A98y5	Gonococcal peritonitis
+LRPCD_STD	v4.8	RCT	A98y6	Fitzhugh Curtis syndrome
+LRPCD_STD	v4.8	RCT	A98yy	Other gonococcal infection of other specified site
+LRPCD_STD	v4.8	RCT	A98yz	Gonococcal infection of other site NOS
+LRPCD_STD	v4.8	RCT	A98z.	Gonococcal infections NOS
+LRPCD_STD	v4.8	RCT	A99..	Other venereal diseases
+LRPCD_STD	v4.8	RCT	A990.	Chancroid
+LRPCD_STD	v4.8	RCT	A991.	Lymphogranuloma venereum
+LRPCD_STD	v4.8	RCT	A9910	Pharyngeal lymphogranuloma venereum
+LRPCD_STD	v4.8	RCT	A9911	Rectal lymphogranuloma venereum
+LRPCD_STD	v4.8	RCT	A992.	Granuloma inguinale
+LRPCD_STD	v4.8	RCT	A993.	Reiter's disease / syndrome
+LRPCD_STD	v4.8	RCT	A994.	Nonspecific urethritis
+LRPCD_STD	v4.8	RCT	A99y.	Other specified venereal diseases
+LRPCD_STD	v4.8	RCT	A99z.	Venereal disease NOS
+LRPCD_STD	v4.8	RCT	A9y..	Other specified syphilis or other venereal diseases
+LRPCD_STD	v4.8	RCT	A9z..	Syphilis or venereal disease NOS
+LRPCD_STD	v4.8	RCT	AD1..	Trichomoniasis - trichomonas
+LRPCD_STD	v4.8	RCT	AD10.	Urogenital trichomonas
+LRPCD_STD	v4.8	RCT	AD100	Unspecified urogenital trichomonas
+LRPCD_STD	v4.8	RCT	AD101	Trichomonal vulvovaginitis
+LRPCD_STD	v4.8	RCT	AD102	Trichomonal urethritis
+LRPCD_STD	v4.8	RCT	AD103	Trichomonal prostatitis
+LRPCD_STD	v4.8	RCT	AD10z	Urogenital trichomonas NOS
+LRPCD_STD	v4.8	RCT	AD1y.	Other specified site trichomonas
+LRPCD_STD	v4.8	RCT	AD1z.	Trichomonas NOS
+LRPCD_STD	v4.8	RCT	AD22.	Phthirus pubis - pubic lice
+LRPCD_STD	v4.8	RCT	Ayu4.	[X]Infections with a predominantly sexual mode of transmission
+LRPCD_STD	v4.8	RCT	Ayu40	[X]Early congenital syphilis, unspecified
+LRPCD_STD	v4.8	RCT	Ayu41	[X]Other late congenital syphilis, symptomatic
+LRPCD_STD	v4.8	RCT	Ayu42	[X]Late congenital syphilis, unspecified
+LRPCD_STD	v4.8	RCT	Ayu43	[X]Congenital syphilis, unspecified
+LRPCD_STD	v4.8	RCT	Ayu44	[X]Primary syphilis of other sites
+LRPCD_STD	v4.8	RCT	Ayu45	[X]Other secondary syphilis
+LRPCD_STD	v4.8	RCT	Ayu46	[X]Early syphilis, unspecified
+LRPCD_STD	v4.8	RCT	Ayu47	[X]Neurosyphilis, unspecified
+LRPCD_STD	v4.8	RCT	Ayu48	[X]Other symptomatic late syphilis
+LRPCD_STD	v4.8	RCT	Ayu49	[X]Late syphilis, unspecified
+LRPCD_STD	v4.8	RCT	Ayu4A	[X]Syphilis, unspecified
+LRPCD_STD	v4.8	RCT	Ayu4B	[X]Other gonococcal infections
+LRPCD_STD	v4.8	RCT	Ayu4C	[X]Gonococcal infection, unspecified
+LRPCD_STD	v4.8	RCT	Ayu4D	[X]Sexually transmitted chlamydial infection of other sites
+LRPCD_STD	v4.8	RCT	Ayu4E	[X]Trichomoniasis of other sites
+LRPCD_STD	v4.8	RCT	Ayu4F	[X]Trichomoniasis, unspecified
+LRPCD_STD	v4.8	RCT	Ayu4G	[X]Anogenital herpes viral infection, unspecified
+LRPCD_STD	v4.8	RCT	Ayu4H	[X]Other specified predominantly sexually transmitted diseases
+LRPCD_STD	v4.8	RCT	Ayu4J	[X]Unspecified sexually transmitted disease
+LRPCD_STD	v4.8	RCT	Ayu4K	[X]Chlamydial infection of genitourinary tract, unspecified
+LRPCD_STD	v4.8	RCT	Ayu4L	[X]Vulval warts
+LRPCD_STD	v4.8	RCT	Ayu4M	[X]Perineal warts
+LRPCD_STD	v4.8	RCT	Ayu4N	[X]Sexually transmitted infectious disease
+LRPCD_STD	v4.8	RCT	Ayu6.	[X]Other diseases caused by chlamydiae
+LRPCD_STD	v4.8	RCT	Ayu61	[X]Other chlamydial diseases
+LRPCD_STD	v4.8	RCT	Ayu62	[X]Chlamydial infection, unspecified
+LRPCD_STD	v4.8	RCT	AyuB1	[X]Other chronic viral hepatitis
+LRPCD_STD	v4.8	RCT	AyuB2	[X]Chronic viral hepatitis, unspecified
+LRPCD_STD	v4.8	RCT	AyuB3	[X]Unspecified viral hepatitis with coma
+LRPCD_STD	v4.8	RCT	AyuB4	[X]Unspecified viral hepatitis without coma
+LRPCD_STD	v4.8	RCT	AyuC.	[X]Human immunodeficiency virus disease
+LRPCD_STD	v4.8	RCT	AyuC0	[X]HIV disease resulting in other bacterial infections
+LRPCD_STD	v4.8	RCT	AyuC1	[X]HIV disease resulting in other viral infections
+LRPCD_STD	v4.8	RCT	AyuC2	[X]HIV disease resulting in other mycoses
+LRPCD_STD	v4.8	RCT	AyuC3	[X]HIV disease resulting in multiple infections
+LRPCD_STD	v4.8	RCT	AyuC4	[X]Hiv disease resulting in other infectious and parasitic diseases
+LRPCD_STD	v4.8	RCT	AyuC5	[X]Hiv disease resulting in unspecified infectious and parasitic disease
+LRPCD_STD	v4.8	RCT	AyuC6	[X]HIV disease resulting in other non-Hodgkin's lymphoma
+LRPCD_STD	v4.8	RCT	AyuC7	[X]Hiv disease resulting in other malignant neoplasms of lymphoid, haematopoietic and related tissue
+LRPCD_STD	v4.8	RCT	AyuC8	[X]HIV disease resulting in other malignant neoplasms
+LRPCD_STD	v4.8	RCT	AyuC9	[X]HIV disease resulting in unspecified malignant neoplasm
+LRPCD_STD	v4.8	RCT	AyuCA	[X]Hiv disease resulting in multiple diseases classified elsewhere
+LRPCD_STD	v4.8	RCT	AyuCB	[X]Hiv disease resulting in haematological and immunological abnormalities, not elsewhere classified
+LRPCD_STD	v4.8	RCT	AyuCC	[X]HIV disease resulting in other specified conditions
+LRPCD_STD	v4.8	RCT	AyuCD	[X]Unspecified human immunodeficiency virus [HIV] disease
+LRPCD_STD	v4.8	RCT	AyuD8	[X]Retrovirus infections, not elsewhere classified
+LRPCD_STD	v4.8	RCT	AyuKM	[X]Retrovirus as the cause of diseases classified to other chapters
+LRPCD_STD	v4.8	RCT	B829.	Bowenoid papulosis
+LRPCD_STD	v4.8	RCT	Eu024	[X]Dementia in human immunodef virus [HIV] disease
+LRPCD_STD	v4.8	RCT	F0070	Meningitis due to gonococcus
+LRPCD_STD	v4.8	RCT	F0072	Meningitis due to neurosyphilis
+LRPCD_STD	v4.8	RCT	F0074	Meningitis due to congenital syphilis
+LRPCD_STD	v4.8	RCT	F0075	Meningitis due to secondary syphilis
+LRPCD_STD	v4.8	RCT	F0113	Meningitis due to herpes simplex virus
+LRPCD_STD	v4.8	RCT	F0304	Encephalitis due to herpes simplex virus
+LRPCD_STD	v4.8	RCT	F0331	Encephalitis due to congenital syphilis
+LRPCD_STD	v4.8	RCT	F0332	Encephalitis due to syphilis unspecified
+LRPCD_STD	v4.8	RCT	F4A54	Keratitis due to syphilis
+LRPCD_STD	v4.8	RCT	F4K44	Argyll Robertson pupil
+LRPCD_STD	v4.8	RCT	G5002	Acute pericarditis - syphilitic
+LRPCD_STD	v4.8	RCT	G5005	Acute pericarditis - gonococcal
+LRPCD_STD	v4.8	RCT	G5112	Endocarditis - gonococcal
+LRPCD_STD	v4.8	RCT	G5204	Acute myocarditis - syphilitic
+LRPCD_STD	v4.8	RCT	G717.	Aortic aneurysm - syphilitic
+LRPCD_STD	v4.8	RCT	G767.	Aortitis - syphilitic
+LRPCD_STD	v4.8	RCT	Gy0..	Cardiovascular syphilis
+LRPCD_STD	v4.8	RCT	H57y5	Lung disease with syphilis
+LRPCD_STD	v4.8	RCT	J5500	Peritonitis - gonococcal
+LRPCD_STD	v4.8	RCT	J5501	Peritonitis - syphilitic
+LRPCD_STD	v4.8	RCT	J5504	Chlamydial peritonitis
+LRPCD_STD	v4.8	RCT	J615F	Syphilitic portal cirrhosis
+LRPCD_STD	v4.8	RCT	J6321	Hepatitis in late syphilis
+LRPCD_STD	v4.8	RCT	J6322	Hepatitis in secondary syphilis
+LRPCD_STD	v4.8	RCT	K0y0.	Late syphilis of kidney
+LRPCD_STD	v4.8	RCT	K1545	Cystitis in gonorrhoea
+LRPCD_STD	v4.8	RCT	K1547	Cystitis in trichomoniasis
+LRPCD_STD	v4.8	RCT	K17y.	Other urethritis
+LRPCD_STD	v4.8	RCT	K17y0	Urethritis unspecified
+LRPCD_STD	v4.8	RCT	K17y1	Urethral syndrome NOS
+LRPCD_STD	v4.8	RCT	K17y2	Skene's glands adenitis
+LRPCD_STD	v4.8	RCT	K17y3	Cowperitis
+LRPCD_STD	v4.8	RCT	K17y4	Urethral meatitis
+LRPCD_STD	v4.8	RCT	K17y5	Urethral meatal ulcer
+LRPCD_STD	v4.8	RCT	K17y6	Verumontanitis
+LRPCD_STD	v4.8	RCT	K17y7	Utriculus masculinus
+LRPCD_STD	v4.8	RCT	K17yz	Other urethritis NOS
+LRPCD_STD	v4.8	RCT	K2142	Prostatitis in syphilis
+LRPCD_STD	v4.8	RCT	K2144	Prostatitis in gonorrhoea
+LRPCD_STD	v4.8	RCT	K2146	Prostatitis in trichomoniasis
+LRPCD_STD	v4.8	RCT	K2416	Chlamydial epididymitis
+LRPCD_STD	v4.8	RCT	K40y0	Female syphilitic pelvic inflammatory disease
+LRPCD_STD	v4.8	RCT	K40y1	Female chlamydial pelvic inflammatory disease
+LRPCD_STD	v4.8	RCT	K4209	Chlamydia cervicitis
+LRPCD_STD	v4.8	RCT	K44..	Female gonococcal pelvic inflammatory disease
+LRPCD_STD	v4.8	RCT	L170.	Maternal syphilis during pregnancy, childbirth and the puerperium
+LRPCD_STD	v4.8	RCT	L1700	Maternal syphilis, unspecified whether during pregnancy or the puerperium
+LRPCD_STD	v4.8	RCT	L1701	Maternal syphilis during pregnancy - baby delivered
+LRPCD_STD	v4.8	RCT	L1702	Maternal syphilis in the puerperium - baby delivered during current episode of care
+LRPCD_STD	v4.8	RCT	L1703	Maternal syphilis during pregnancy - baby not yet delivered
+LRPCD_STD	v4.8	RCT	L1704	Maternal syphilis in the puerperium - baby delivered during previous episode of care
+LRPCD_STD	v4.8	RCT	L170z	Maternal syphilis during pregnancy, childbirth or the puerperium NOS
+LRPCD_STD	v4.8	RCT	L171.	Maternal gonorrhoea during pregnancy, childbirth and the puerperium
+LRPCD_STD	v4.8	RCT	L1710	Maternal gonorrhoea, unspecified whether during pregnancy or the puerperium
+LRPCD_STD	v4.8	RCT	L1711	Maternal gonorrhoea during pregnancy - baby delivered
+LRPCD_STD	v4.8	RCT	L1712	Maternal gonorrhoea in the puerperium - baby delivered during current episode of care
+LRPCD_STD	v4.8	RCT	L1713	Maternal gonorrhoea during pregnancy - baby not yet delivered
+LRPCD_STD	v4.8	RCT	L1714	Maternal gonorrhoea in the puerperium - baby delivered during previous episode of care
+LRPCD_STD	v4.8	RCT	L171z	Gonorrhoea during pregnancy, childbirth or the puerperium NOS
+LRPCD_STD	v4.8	RCT	L172.	Other maternal venereal diseases during pregnancy, childbirth and the puerperium
+LRPCD_STD	v4.8	RCT	L1720	Other maternal venereal disease, unspecified whether during pregnancy or the puerperium
+LRPCD_STD	v4.8	RCT	L1721	Other maternal venereal disease in pregnancy - baby delivered
+LRPCD_STD	v4.8	RCT	L1722	Other maternal venereal disease in the puerperium - baby delivered during current episode of care
+LRPCD_STD	v4.8	RCT	L1723	Other maternal venereal disease during pregnancy - baby not yet delivered
+LRPCD_STD	v4.8	RCT	L1724	Other maternal venereal disease during the puerperium - baby delivered during previous episode of care
+LRPCD_STD	v4.8	RCT	L172z	Other maternal venereal disease during pregnancy, childbirth or the puerperium NOS
+LRPCD_STD	v4.8	RCT	L179.	Human immunodeficiency [HIV] disease complicating pregnancy, childbirth and the puerperium
+LRPCD_STD	v4.8	RCT	Lyu70	[X]Other infections with a predominantly sexual mode of transmission complicating pregnancy childbirth and the puerperium
+LRPCD_STD	v4.8	RCT	N011.	Sexually acquired reactive arthropathy
+LRPCD_STD	v4.8	RCT	N0110	Sexually acquired reactive arthropathy of unspecified site
+LRPCD_STD	v4.8	RCT	N0111	Sexually acquired reactive arthropathy of the shoulder region
+LRPCD_STD	v4.8	RCT	N0112	Sexually acquired reactive arthropathy of the upper arm
+LRPCD_STD	v4.8	RCT	N0113	Sexually acquired reactive arthropathy of the forearm
+LRPCD_STD	v4.8	RCT	N0114	Sexually acquired reactive arthropathy of the hand
+LRPCD_STD	v4.8	RCT	N0115	Sexually acquired reactive arthropathy of the pelvic region and thigh
+LRPCD_STD	v4.8	RCT	N0116	Sexually acquired reactive arthropathy of the lower leg
+LRPCD_STD	v4.8	RCT	N0117	Sexually acquired reactive arthropathy of the ankle and foot
+LRPCD_STD	v4.8	RCT	N011x	Sexually acquired reactive arthropathy of multiple sites
+LRPCD_STD	v4.8	RCT	N011y	Sexually acquired reactive arthropathy of other specified site
+LRPCD_STD	v4.8	RCT	N011z	Sexually acquired reactive arthropathy NOS
+LRPCD_STD	v4.8	RCT	N0381	Postinfective arthropathy in syphilis
+LRPCD_STD	v4.8	RCT	N2227	Syphilitic bursitis
+LRPCD_STD	v4.8	RCT	Q3106	Congenital pneumonia due to Chlamydia
+LRPCD_STD	v4.8	RCT	Q4020	Congenital herpes simplex
+LRPCD_STD	v4.8	RCT	Q4067	Neonatal dacryocystitis or conjunctivitis due to chlamydiae
+LRPCD_STD	v4.8	RCT	Q409.	Congenital viral hepatitis
+LRPCD_STD	v4.8	RCT	Q4091	Congenital hepatitis B infection
+LRPCD_STD	v4.8	RCT	Q409y	Other specified congenital viral hepatitis
+LRPCD_STD	v4.8	RCT	Q409z	Congenital viral hepatitis NOS
+LRPCD_STD	v4.8	RCT	R109.	[D]Laboratory evidence of human immunodeficiency virus [HIV]
+LRPCD_STD	v4.8	RCT	R156.	[D]False positive serological syphilis test
+LRPCD_STD	v4.8	RCT	R1560	[D]False positive Wasserman test
+LRPCD_STD	v4.8	RCT	R156z	[D]False positive serological syphilis test NOS
+LRPCD_STD	v4.8	RCT	ZV016	[V]Contact with or exposure to venereal disease
+LRPCD_STD	v4.8	RCT	ZV018	[V]Human immunodeficiency virus - negative
+LRPCD_STD	v4.8	RCT	ZV019	[V]Contact with and exposure to human immunodeficiency virus
+LRPCD_STD	v4.8	RCT	ZV01A	[V]Asymptomatic human immunodeficiency virus infection status
+LRPCD_STD	v4.8	RCT	ZV01B	[V]Contact with and exposure to viral hepatitis
+LRPCD_STD	v4.8	RCT	ZV026	[V]Viral hepatitis carrier
+LRPCD_STD	v4.8	RCT	ZV027	[V]Gonorrhoea carrier
+LRPCD_STD	v4.8	RCT	ZV028	[V]Other venereal disease carrier
+LRPCD_STD	v4.8	RCT	ZV029	[V]Carrier of human T-lymphotropic virus type-1 infect
+LRPCD_STD	v4.8	RCT	ZV02B	[V]Hepatitis B carrier
+LRPCD_STD	v4.8	RCT	ZV02C	[V]Hepatitis C carrier
+LRPCD_STD	v4.8	RCT	ZV6D4	[V]Human immunodefiency virus counselling
+LRPCD_STD	v4.8	RCT	ZV737	[V]Special screening examination for human immunodeficiency virus
+LRPCD_STD	v4.8	RCT	ZV745	[V]Screening for venereal disease

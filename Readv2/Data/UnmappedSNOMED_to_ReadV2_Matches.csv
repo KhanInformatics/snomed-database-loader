@@ -1,0 +1,1124 @@
+SNOMED_PreferredTerm,SNOMED_ConceptID,Exclusion_Category,MatchLevel,ReadV2Code,ReadV2Term,Score
+In vitro fertilisation (IVF) NOS,268781000000102,Assisted Fertilisation,EXACT,7M0hz,In vitro fertilisation (IVF) NOS,1.0
+In vitro fertilisation procedure,268701000000107,Assisted Fertilisation,EXACT,8C84.,In vitro fertilisation procedure,1.0
+In vitro fertilisation procedure,393132003,Assisted Fertilisation,EXACT,8C84.,In vitro fertilisation procedure,1.0
+In vitro fertilisation procedure,394083005,Assisted Fertilisation,EXACT,8C84.,In vitro fertilisation procedure,1.0
+Other specified in vitro fertilisation (IVF),268771000000104,Assisted Fertilisation,EXACT,7M0hy,Other specified in vitro fertilisation (IVF),1.0
+[X]Other complications associated with artificial fertilization,198598005,Assisted Fertilisation,TOKEN_OVERLAP,SP0D.,Complications associated with artificial fertilization,1.0
+Operation for sexual transformation NOS,149785007,Gender Related Issues,EXACT,7L0Bz,Operation for sexual transformation NOS,1.0
+Operation for sexual transformation NOS,180061002,Gender Related Issues,EXACT,7L0Bz,Operation for sexual transformation NOS,1.0
+Operation for sexual transformation NOS,637621000000104,Gender Related Issues,EXACT,7L0Bz,Operation for sexual transformation NOS,1.0
+Psychosexual identity disorder NOS,191790007,Gender Related Issues,EXACT,E226z,Psychosexual identity disorder NOS,1.0
+Psychosexual identity disorder NOS,539981000000107,Gender Related Issues,EXACT,E226z,Psychosexual identity disorder NOS,1.0
+"[X]Gender identity disorder, unspecified",192511006,Gender Related Issues,EXACT,Eu64z,"[X]Gender identity disorder, unspecified",1.0
+"[X]Gender identity disorder, unspecified",412321000000104,Gender Related Issues,EXACT,Eu64z,"[X]Gender identity disorder, unspecified",1.0
+[X]Gender identity disorders,192507000,Gender Related Issues,TOKEN_OVERLAP,Eu64y,[X]Other gender identity disorders,1.0
+[X]Gender identity disorders,412311000000105,Gender Related Issues,TOKEN_OVERLAP,Eu64y,[X]Other gender identity disorders,1.0
+[X]Other gender identity disorders,192510007,Gender Related Issues,EXACT,Eu64y,[X]Other gender identity disorders,1.0
+[X]Other gender identity disorders,442041000000100,Gender Related Issues,EXACT,Eu64y,[X]Other gender identity disorders,1.0
+Acquired human immunodeficiency virus infection syndrome NOS,186715004,Sexually Transmitted Disease,EXACT,A788z,Acquired human immunodeficiency virus infection syndrome NOS,1.0
+Acquired human immunodeficiency virus infection syndrome NOS,577001000000106,Sexually Transmitted Disease,EXACT,A788z,Acquired human immunodeficiency virus infection syndrome NOS,1.0
+Acute gonorrhoea of lower genitourinary tract NOS,186909005,Sexually Transmitted Disease,EXACT,A980z,Acute gonorrhoea of lower genitourinary tract NOS,1.0
+Acute gonorrhoea of lower genitourinary tract NOS,577091000000104,Sexually Transmitted Disease,EXACT,A980z,Acute gonorrhoea of lower genitourinary tract NOS,1.0
+Acute gonorrhoea of upper genitourinary tract,186910000,Sexually Transmitted Disease,TOKEN_OVERLAP,A9810,Acute unspecified gonorrhoea of upper genitourinary tract,1.0
+Acute gonorrhoea of upper genitourinary tract,186910000,Sexually Transmitted Disease,TOKEN_OVERLAP,A981z,Acute gonorrhoea upper genitourinary tract NOS,1.0
+Acute gonorrhoea upper genitourinary tract NOS,577111000000109,Sexually Transmitted Disease,EXACT,A981z,Acute gonorrhoea upper genitourinary tract NOS,1.0
+Acute unspecified gonorrhoea of upper genitourinary tract,186911001,Sexually Transmitted Disease,EXACT,A9810,Acute unspecified gonorrhoea of upper genitourinary tract,1.0
+Acute unspecified gonorrhoea of upper genitourinary tract,566351000000104,Sexually Transmitted Disease,EXACT,A9810,Acute unspecified gonorrhoea of upper genitourinary tract,1.0
+Cardiovascular syphilis,154383007,Sexually Transmitted Disease,EXACT,Gy0..,Cardiovascular syphilis,1.0
+Cardiovascular syphilis,186870009,Sexually Transmitted Disease,EXACT,Gy0..,Cardiovascular syphilis,1.0
+Cardiovascular syphilis NOS,186883005,Sexually Transmitted Disease,EXACT,A93z.,Cardiovascular syphilis NOS,1.0
+Cardiovascular syphilis NOS,561771000000102,Sexually Transmitted Disease,EXACT,A93z.,Cardiovascular syphilis NOS,1.0
+Chronic gonorrhoea of lower genitourinary tract NOS,186916006,Sexually Transmitted Disease,EXACT,A982z,Chronic gonorrhoea of lower genitourinary tract NOS,1.0
+Chronic gonorrhoea of lower genitourinary tract NOS,615651000000106,Sexually Transmitted Disease,EXACT,A982z,Chronic gonorrhoea of lower genitourinary tract NOS,1.0
+Chronic gonorrhoea of upper genitourinary tract NOS,547711000000106,Sexually Transmitted Disease,EXACT,A983z,Chronic gonorrhoea of upper genitourinary tract NOS,1.0
+Chronic unspecified gonorrhoea of upper genitourinary tract,186918007,Sexually Transmitted Disease,EXACT,A9830,Chronic unspecified gonorrhoea of upper genitourinary tract,1.0
+Chronic unspecified gonorrhoea of upper genitourinary tract,566361000000101,Sexually Transmitted Disease,EXACT,A9830,Chronic unspecified gonorrhoea of upper genitourinary tract,1.0
+Congenital syphilis NOS,186845009,Sexually Transmitted Disease,EXACT,A90z.,Congenital syphilis NOS,1.0
+Congenital syphilis NOS,546161000000109,Sexually Transmitted Disease,EXACT,A90z.,Congenital syphilis NOS,1.0
+Encephalitis due to syphilis unspecified,192700000,Sexually Transmitted Disease,EXACT,F0332,Encephalitis due to syphilis unspecified,1.0
+Encephalitis due to syphilis unspecified,586501000000107,Sexually Transmitted Disease,EXACT,F0332,Encephalitis due to syphilis unspecified,1.0
+FH: Gonorrhoea,137685007,Sexually Transmitted Disease,EXACT,1233.,FH: Gonorrhoea,1.0
+FH: Syphilis,137684006,Sexually Transmitted Disease,EXACT,1232.,FH: Syphilis,1.0
+Female pelvic inflammatory disease NOS,562441000000107,Sexually Transmitted Disease,EXACT,K4z..,Female pelvic inflammatory disease NOS,1.0
+H/O: venereal disease,138691006,Sexually Transmitted Disease,EXACT,1415.,H/O: venereal disease,1.0
+HIV 1 nucleic acid detection assay,907191000000100,Sexually Transmitted Disease,EXACT,43j70,HIV 1 nucleic acid detection assay,1.0
+HIV 1 nucleic acid detection assay,907201000000103,Sexually Transmitted Disease,EXACT,43j70,HIV 1 nucleic acid detection assay,1.0
+HIV 1 ribonucleic acid detection assay,934551000000101,Sexually Transmitted Disease,EXACT,43j72,HIV 1 ribonucleic acid detection assay,1.0
+HIV 1 ribonucleic acid detection assay,934561000000103,Sexually Transmitted Disease,EXACT,43j72,HIV 1 ribonucleic acid detection assay,1.0
+HIV disease resulting in multiple malignant neoplasms,186725009,Sexually Transmitted Disease,EXACT,A7898,HIV disease resulting in multiple malignant neoplasms,1.0
+History of - venereal disease,271394008,Sexually Transmitted Disease,TOKEN_OVERLAP,115L.,No history of venereal disease,1.0
+Human immunodeficiency virus with other clinical findings,186714000,Sexually Transmitted Disease,EXACT,A788y,Human immunodeficiency virus with other clinical findings,1.0
+Human immunodeficiency virus with other clinical findings,664701000000103,Sexually Transmitted Disease,EXACT,A788y,Human immunodeficiency virus with other clinical findings,1.0
+Late symptomatic syphilis NOS,186902001,Sexually Transmitted Disease,EXACT,A95z.,Late symptomatic syphilis NOS,1.0
+Late symptomatic syphilis NOS,577061000000105,Sexually Transmitted Disease,EXACT,A95z.,Late symptomatic syphilis NOS,1.0
+Late syphilis unspecified,186905004,Sexually Transmitted Disease,EXACT,A970.,Late syphilis unspecified,1.0
+Late syphilis unspecified,577071000000103,Sexually Transmitted Disease,EXACT,A970.,Late syphilis unspecified,1.0
+Latent syphilis unspecified,186906003,Sexually Transmitted Disease,EXACT,A971.,Latent syphilis unspecified,1.0
+Latent syphilis unspecified,567541000000109,Sexually Transmitted Disease,EXACT,A971.,Latent syphilis unspecified,1.0
+Lung disease with syphilis,196139002,Sexually Transmitted Disease,EXACT,H57y5,Lung disease with syphilis,1.0
+Neisseria gonorrhoeae nucleic acid detection assay,907521000000109,Sexually Transmitted Disease,EXACT,43jA0,Neisseria gonorrhoeae nucleic acid detection assay,1.0
+Neisseria gonorrhoeae nucleic acid detection assay,907531000000106,Sexually Transmitted Disease,EXACT,43jA0,Neisseria gonorrhoeae nucleic acid detection assay,1.0
+Other late congenital syphilis NOS,186843002,Sexually Transmitted Disease,EXACT,A905z,Other late congenital syphilis NOS,1.0
+Other late congenital syphilis NOS,608541000000104,Sexually Transmitted Disease,EXACT,A905z,Other late congenital syphilis NOS,1.0
+Other primary syphilis NOS,186849003,Sexually Transmitted Disease,EXACT,A912z,Other primary syphilis NOS,1.0
+Other primary syphilis NOS,546181000000100,Sexually Transmitted Disease,EXACT,A912z,Other primary syphilis NOS,1.0
+Other secondary syphilis NOS,186864003,Sexually Transmitted Disease,EXACT,A918z,Other secondary syphilis NOS,1.0
+Other secondary syphilis NOS,561721000000101,Sexually Transmitted Disease,EXACT,A918z,Other secondary syphilis NOS,1.0
+Other specified cardiovascular system syphilis,186880008,Sexually Transmitted Disease,EXACT,A93y.,Other specified cardiovascular system syphilis,1.0
+Other specified cardiovascular system syphilis,577011000000108,Sexually Transmitted Disease,EXACT,A93y.,Other specified cardiovascular system syphilis,1.0
+Other specified cardiovascular system syphilis NOS,186882000,Sexually Transmitted Disease,EXACT,A93yz,Other specified cardiovascular system syphilis NOS,1.0
+Other specified cardiovascular system syphilis NOS,561761000000109,Sexually Transmitted Disease,EXACT,A93yz,Other specified cardiovascular system syphilis NOS,1.0
+Other specified late syphilis,186901008,Sexually Transmitted Disease,EXACT,A95y.,Other specified late syphilis,1.0
+Other specified late syphilis,562111000000104,Sexually Transmitted Disease,EXACT,A95y.,Other specified late syphilis,1.0
+Other specified syphilis or other venereal diseases,186950002,Sexually Transmitted Disease,EXACT,A9y..,Other specified syphilis or other venereal diseases,1.0
+Other specified syphilis or other venereal diseases,607311000000107,Sexually Transmitted Disease,EXACT,A9y..,Other specified syphilis or other venereal diseases,1.0
+Other specified venereal diseases,186948005,Sexually Transmitted Disease,EXACT,A99y.,Other specified venereal diseases,1.0
+Other specified venereal diseases,634371000000104,Sexually Transmitted Disease,EXACT,A99y.,Other specified venereal diseases,1.0
+Other venereal diseases,186944007,Sexually Transmitted Disease,EXACT,A99..,Other venereal diseases,1.0
+Other venereal diseases,634361000000106,Sexually Transmitted Disease,EXACT,A99..,Other venereal diseases,1.0
+Primary syphilis,154381009,Sexually Transmitted Disease,TOKEN_OVERLAP,A912z,Other primary syphilis NOS,1.0
+Primary syphilis,266209006,Sexually Transmitted Disease,TOKEN_OVERLAP,A912z,Other primary syphilis NOS,1.0
+Secondary syphilis,154382002,Sexually Transmitted Disease,TOKEN_OVERLAP,A918z,Other secondary syphilis NOS,1.0
+Secondary syphilis,154382002,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu45,[X]Other secondary syphilis,1.0
+Secondary syphilis,154382002,Sexually Transmitted Disease,TOKEN_OVERLAP,A919.,Unspecified secondary syphilis,1.0
+Secondary syphilis of skin or mucus membranes NOS,186852006,Sexually Transmitted Disease,EXACT,A913z,Secondary syphilis of skin or mucus membranes NOS,1.0
+Secondary syphilis of skin or mucus membranes NOS,546191000000103,Sexually Transmitted Disease,EXACT,A913z,Secondary syphilis of skin or mucus membranes NOS,1.0
+Secondary syphilitic uveitis NOS,186857000,Sexually Transmitted Disease,EXACT,A915z,Secondary syphilitic uveitis NOS,1.0
+Secondary syphilitic uveitis NOS,546211000000104,Sexually Transmitted Disease,EXACT,A915z,Secondary syphilitic uveitis NOS,1.0
+Sexually transmitted infection contact,281635007,Sexually Transmitted Disease,EXACT,65PS.,Sexually transmitted infection contact,1.0
+Symptomatic late congenital syphilis,735515000,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu41,"[X]Other late congenital syphilis, symptomatic",1.0
+Syphilis NOS,186907007,Sexually Transmitted Disease,EXACT,A97z.,Syphilis NOS,1.0
+Syphilis NOS,567551000000107,Sexually Transmitted Disease,EXACT,A97z.,Syphilis NOS,1.0
+"Syphilis of synovium, tendon or bursa NOS",186900009,Sexually Transmitted Disease,EXACT,A957z,"Syphilis of synovium, tendon or bursa NOS",1.0
+"Syphilis of synovium, tendon or bursa NOS",562101000000101,Sexually Transmitted Disease,EXACT,A957z,"Syphilis of synovium, tendon or bursa NOS",1.0
+Syphilis or venereal disease NOS,186951003,Sexually Transmitted Disease,EXACT,A9z..,Syphilis or venereal disease NOS,1.0
+Syphilis or venereal disease NOS,607321000000101,Sexually Transmitted Disease,EXACT,A9z..,Syphilis or venereal disease NOS,1.0
+Syphilis serology,143194002,Sexually Transmitted Disease,EXACT,4389.,Syphilis serology,1.0
+Syphilis serology,165787002,Sexually Transmitted Disease,EXACT,4389.,Syphilis serology,1.0
+Syphilis serology,40675008,Sexually Transmitted Disease,EXACT,4389.,Syphilis serology,1.0
+Syphilis titre test positive,143187000,Sexually Transmitted Disease,EXACT,4382.,Syphilis titre test positive,1.0
+Syphilitic aortic aneurysm,186871008,Sexually Transmitted Disease,TOKEN_OVERLAP,G717.,Aortic aneurysm - syphilitic,1.0
+Syphilitic aortitis,186872001,Sexually Transmitted Disease,TOKEN_OVERLAP,G767.,Aortitis - syphilitic,1.0
+Syphilitic endocarditis of heart valve NOS,186879005,Sexually Transmitted Disease,EXACT,A932z,Syphilitic endocarditis of heart valve NOS,1.0
+Syphilitic endocarditis of heart valve NOS,576991000000100,Sexually Transmitted Disease,EXACT,A932z,Syphilitic endocarditis of heart valve NOS,1.0
+Syphilitic endocarditis of unspecified valve,186874000,Sexually Transmitted Disease,EXACT,A9320,Syphilitic endocarditis of unspecified valve,1.0
+Syphilitic endocarditis of unspecified valve,561751000000106,Sexually Transmitted Disease,EXACT,A9320,Syphilitic endocarditis of unspecified valve,1.0
+Syphilitic peritonitis,186898007,Sexually Transmitted Disease,TOKEN_OVERLAP,J5501,Peritonitis - syphilitic,1.0
+Unspecified late congenital syphilis,186844008,Sexually Transmitted Disease,EXACT,A907.,Unspecified late congenital syphilis,1.0
+Unspecified late congenital syphilis,608551000000101,Sexually Transmitted Disease,EXACT,A907.,Unspecified late congenital syphilis,1.0
+Unspecified secondary syphilis,186865002,Sexually Transmitted Disease,EXACT,A919.,Unspecified secondary syphilis,1.0
+Unspecified secondary syphilis,561731000000104,Sexually Transmitted Disease,EXACT,A919.,Unspecified secondary syphilis,1.0
+Venereal disease NOS,186949002,Sexually Transmitted Disease,EXACT,A99z.,Venereal disease NOS,1.0
+Venereal disease NOS,611051000000101,Sexually Transmitted Disease,EXACT,A99z.,Venereal disease NOS,1.0
+Venereal disease carrier (& [NOS]),147744008,Sexually Transmitted Disease,TOKEN_OVERLAP,ZV028,[V]Other venereal disease carrier,1.0
+Venereal disease carrier (& [NOS]),268594000,Sexually Transmitted Disease,TOKEN_OVERLAP,ZV028,[V]Other venereal disease carrier,1.0
+Venereal disease carrier NOS,571771000000109,Sexually Transmitted Disease,TOKEN_OVERLAP,ZV028,[V]Other venereal disease carrier,1.0
+Wassermann's test,165782008,Sexually Transmitted Disease,TOKEN_OVERLAP,4383.,Wassermann's test (W.R.),1.0
+[D]Laboratory evidence of human immunodeficiency virus [HIV],499821000000104,Sexually Transmitted Disease,EXACT,R109.,[D]Laboratory evidence of human immunodeficiency virus [HIV],1.0
+[V]Carrier of human T-lymphotropic virus type-1 infect,427251000000107,Sexually Transmitted Disease,EXACT,ZV029,[V]Carrier of human T-lymphotropic virus type-1 infect,1.0
+[V]Contact with and exposure to human immunodeficiency virus,315658006,Sexually Transmitted Disease,TOKEN_OVERLAP,ZV019,[V]Contact with+exposure to human immunodeficiency virus,1.0
+[V]Contact with and exposure to human immunodeficiency virus,428541000000106,Sexually Transmitted Disease,TOKEN_OVERLAP,ZV019,[V]Contact with+exposure to human immunodeficiency virus,1.0
+[V]Gonorrhoea carrier,315674001,Sexually Transmitted Disease,EXACT,ZV027,[V]Gonorrhoea carrier,1.0
+[V]Gonorrhoea carrier,428141000000103,Sexually Transmitted Disease,EXACT,ZV027,[V]Gonorrhoea carrier,1.0
+[V]Other venereal disease carrier,315675000,Sexually Transmitted Disease,EXACT,ZV028,[V]Other venereal disease carrier,1.0
+[V]Other venereal disease carrier,440291000000103,Sexually Transmitted Disease,EXACT,ZV028,[V]Other venereal disease carrier,1.0
+[V]Screening for venereal disease,469321000000107,Sexually Transmitted Disease,EXACT,ZV745,[V]Screening for venereal disease,1.0
+[V]Screening for venereal disease (VD),316610008,Sexually Transmitted Disease,TOKEN_OVERLAP,ZV745,[V]Screening for venereal disease,1.0
+[V]Screening for venereal disease (VD),316610008,Sexually Transmitted Disease,TOKEN_OVERLAP,6832.,Venereal disease screening,1.0
+"[X]Chlamydial infection of genitourinary tract, unspecified",186735003,Sexually Transmitted Disease,EXACT,Ayu4K,"[X]Chlamydial infection of genitourinary tract, unspecified",1.0
+"[X]Chlamydial infection of genitourinary tract, unspecified",187368004,Sexually Transmitted Disease,EXACT,Ayu4K,"[X]Chlamydial infection of genitourinary tract, unspecified",1.0
+"[X]Chlamydial infection of genitourinary tract, unspecified",402081000000102,Sexually Transmitted Disease,EXACT,Ayu4K,"[X]Chlamydial infection of genitourinary tract, unspecified",1.0
+"[X]Chlamydial infection of genitourinary tract, unspecified",444011000000109,Sexually Transmitted Disease,EXACT,Ayu4K,"[X]Chlamydial infection of genitourinary tract, unspecified",1.0
+"[X]Congenital syphilis, unspecified",187352005,Sexually Transmitted Disease,EXACT,Ayu43,"[X]Congenital syphilis, unspecified",1.0
+"[X]Congenital syphilis, unspecified",464571000000100,Sexually Transmitted Disease,EXACT,Ayu43,"[X]Congenital syphilis, unspecified",1.0
+"[X]Early congenital syphilis, unspecified",187349002,Sexually Transmitted Disease,EXACT,Ayu40,"[X]Early congenital syphilis, unspecified",1.0
+"[X]Early congenital syphilis, unspecified",413891000000100,Sexually Transmitted Disease,EXACT,Ayu40,"[X]Early congenital syphilis, unspecified",1.0
+"[X]Early syphilis, unspecified",186866001,Sexually Transmitted Disease,EXACT,Ayu46,"[X]Early syphilis, unspecified",1.0
+"[X]Early syphilis, unspecified",187355007,Sexually Transmitted Disease,EXACT,Ayu46,"[X]Early syphilis, unspecified",1.0
+"[X]Early syphilis, unspecified",396271000000102,Sexually Transmitted Disease,EXACT,Ayu46,"[X]Early syphilis, unspecified",1.0
+"[X]Early syphilis, unspecified",430481000000103,Sexually Transmitted Disease,EXACT,Ayu46,"[X]Early syphilis, unspecified",1.0
+"[X]Gonococcal infection, unspecified",390531000000100,Sexually Transmitted Disease,EXACT,Ayu4C,"[X]Gonococcal infection, unspecified",1.0
+[X]HIV disease resulting in other bacterial infections,411831000000102,Sexually Transmitted Disease,EXACT,AyuC0,[X]HIV disease resulting in other bacterial infections,1.0
+[X]HIV disease resulting in other malignant neoplasms,455571000000106,Sexually Transmitted Disease,EXACT,AyuC8,[X]HIV disease resulting in other malignant neoplasms,1.0
+[X]HIV disease resulting in other mycoses,413621000000104,Sexually Transmitted Disease,EXACT,AyuC2,[X]HIV disease resulting in other mycoses,1.0
+[X]HIV disease resulting in other non-Hodgkin's lymphoma,442351000000104,Sexually Transmitted Disease,EXACT,AyuC6,[X]HIV disease resulting in other non-Hodgkin's lymphoma,1.0
+[X]HIV disease resulting in other specified conditions,428061000000103,Sexually Transmitted Disease,EXACT,AyuCC,[X]HIV disease resulting in other specified conditions,1.0
+[X]HIV disease resulting in other viral infections,441561000000104,Sexually Transmitted Disease,EXACT,AyuC1,[X]HIV disease resulting in other viral infections,1.0
+[X]HIV disease resulting in unspecified malignant neoplasm,186712001,Sexually Transmitted Disease,EXACT,AyuC9,[X]HIV disease resulting in unspecified malignant neoplasm,1.0
+[X]HIV disease resulting in unspecified malignant neoplasm,413311000000103,Sexually Transmitted Disease,EXACT,AyuC9,[X]HIV disease resulting in unspecified malignant neoplasm,1.0
+[X]HIV disease resulting in unspecified malignant neoplasm,432411000000106,Sexually Transmitted Disease,EXACT,AyuC9,[X]HIV disease resulting in unspecified malignant neoplasm,1.0
+[X]Hiv disease resulting in other infectious and parasitic diseases,418661000000104,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuC4,[X]HIV disease resulting/other infectious+parasitic diseases,1.0
+[X]Human immunodeficiency virus disease,187438009,Sexually Transmitted Disease,EXACT,AyuC.,[X]Human immunodeficiency virus disease,1.0
+[X]Human immunodeficiency virus disease,468931000000102,Sexually Transmitted Disease,EXACT,AyuC.,[X]Human immunodeficiency virus disease,1.0
+"[X]Late congenital syphilis, unspecified",187351003,Sexually Transmitted Disease,EXACT,Ayu42,"[X]Late congenital syphilis, unspecified",1.0
+"[X]Late congenital syphilis, unspecified",427851000000108,Sexually Transmitted Disease,EXACT,Ayu42,"[X]Late congenital syphilis, unspecified",1.0
+"[X]Late syphilis, unspecified",187358009,Sexually Transmitted Disease,EXACT,Ayu49,"[X]Late syphilis, unspecified",1.0
+"[X]Late syphilis, unspecified",461961000000102,Sexually Transmitted Disease,EXACT,Ayu49,"[X]Late syphilis, unspecified",1.0
+"[X]Neurosyphilis, unspecified",396281000000100,Sexually Transmitted Disease,EXACT,Ayu47,"[X]Neurosyphilis, unspecified",1.0
+[X]Other diseases caused by chlamydiae,471481000000108,Sexually Transmitted Disease,EXACT,Ayu6.,[X]Other diseases caused by chlamydiae,1.0
+[X]Other gonococcal infections,438971000000108,Sexually Transmitted Disease,EXACT,Ayu4B,[X]Other gonococcal infections,1.0
+"[X]Other late congenital syphilis, symptomatic",187350002,Sexually Transmitted Disease,EXACT,Ayu41,"[X]Other late congenital syphilis, symptomatic",1.0
+"[X]Other late congenital syphilis, symptomatic",401931000000108,Sexually Transmitted Disease,EXACT,Ayu41,"[X]Other late congenital syphilis, symptomatic",1.0
+[X]Other secondary syphilis,187354006,Sexually Transmitted Disease,EXACT,Ayu45,[X]Other secondary syphilis,1.0
+[X]Other secondary syphilis,399271000000106,Sexually Transmitted Disease,EXACT,Ayu45,[X]Other secondary syphilis,1.0
+[X]Other symptomatic late syphilis,187357004,Sexually Transmitted Disease,TOKEN_OVERLAP,A95z.,Late symptomatic syphilis NOS,1.0
+[X]Other symptomatic late syphilis,389351000000106,Sexually Transmitted Disease,TOKEN_OVERLAP,A95z.,Late symptomatic syphilis NOS,1.0
+[X]Primary syphilis of other sites,187353000,Sexually Transmitted Disease,EXACT,Ayu44,[X]Primary syphilis of other sites,1.0
+[X]Primary syphilis of other sites,452801000000105,Sexually Transmitted Disease,EXACT,Ayu44,[X]Primary syphilis of other sites,1.0
+[X]Sexually transmitted chlamydial infection of other sites,187362003,Sexually Transmitted Disease,EXACT,Ayu4D,[X]Sexually transmitted chlamydial infection of other sites,1.0
+[X]Sexually transmitted chlamydial infection of other sites,478751000000103,Sexually Transmitted Disease,EXACT,Ayu4D,[X]Sexually transmitted chlamydial infection of other sites,1.0
+"[X]Syphilis, unspecified",187359001,Sexually Transmitted Disease,EXACT,Ayu4A,"[X]Syphilis, unspecified",1.0
+"[X]Syphilis, unspecified",409411000000106,Sexually Transmitted Disease,EXACT,Ayu4A,"[X]Syphilis, unspecified",1.0
+[X]Unspecified human immunodeficiency virus [HIV] disease,187453001,Sexually Transmitted Disease,EXACT,AyuCD,[X]Unspecified human immunodeficiency virus [HIV] disease,1.0
+[X]Unspecified human immunodeficiency virus [HIV] disease,439901000000106,Sexually Transmitted Disease,EXACT,AyuCD,[X]Unspecified human immunodeficiency virus [HIV] disease,1.0
+[X]Unspecified sexually transmitted disease,187367009,Sexually Transmitted Disease,EXACT,Ayu4J,[X]Unspecified sexually transmitted disease,1.0
+[X]Unspecified sexually transmitted disease,431891000000106,Sexually Transmitted Disease,EXACT,Ayu4J,[X]Unspecified sexually transmitted disease,1.0
+Abortion - spontaneous,267294003,Termination of Pregnancy,TOKEN_OVERLAP,L040.,Spontaneous abortion unspecified,1.0
+Abortion - spontaneous,267294003,Termination of Pregnancy,TOKEN_OVERLAP,L040z,Unspecified spontaneous abortion NOS,1.0
+Abortion - spontaneous,267294003,Termination of Pregnancy,TOKEN_OVERLAP,L04..,Spontaneous abortion,1.0
+Abortion with complication,371332008,Termination of Pregnancy,TOKEN_OVERLAP,L070x,Unspecified abortion with complication NOS,1.0
+Complete abortion,69124005,Termination of Pregnancy,TOKEN_OVERLAP,L072z,Unspecified complete abortion NOS,1.0
+Complete abortion,69124005,Termination of Pregnancy,TOKEN_OVERLAP,L072.,Unspecified abortion complete,1.0
+Complete illegal abortion NOS,198766002,Termination of Pregnancy,EXACT,L062z,Complete illegal abortion NOS,1.0
+Complete illegal abortion NOS,660211000000100,Termination of Pregnancy,EXACT,L062z,Complete illegal abortion NOS,1.0
+Complete illegal abortion with complication NOS,198764004,Termination of Pregnancy,EXACT,L062x,Complete illegal abortion with complication NOS,1.0
+Complete illegal abortion with complication NOS,599251000000100,Termination of Pregnancy,EXACT,L062x,Complete illegal abortion with complication NOS,1.0
+Complete illegal abortion with no mention of complication,198765003,Termination of Pregnancy,EXACT,L062y,Complete illegal abortion with no mention of complication,1.0
+Complete illegal abortion with no mention of complication,529611000000105,Termination of Pregnancy,EXACT,L062y,Complete illegal abortion with no mention of complication,1.0
+Complete illegal abortion with other specified complication,198763005,Termination of Pregnancy,EXACT,L062w,Complete illegal abortion with other specified complication,1.0
+Complete illegal abortion with other specified complication,599241000000103,Termination of Pregnancy,EXACT,L062w,Complete illegal abortion with other specified complication,1.0
+Complete legal abortion NOS,198728000,Termination of Pregnancy,EXACT,L052z,Complete legal abortion NOS,1.0
+Complete legal abortion NOS,599121000000101,Termination of Pregnancy,EXACT,L052z,Complete legal abortion NOS,1.0
+Complete legal abortion with complication NOS,198726001,Termination of Pregnancy,EXACT,L052x,Complete legal abortion with complication NOS,1.0
+Complete legal abortion with complication NOS,592131000000109,Termination of Pregnancy,EXACT,L052x,Complete legal abortion with complication NOS,1.0
+Complete legal abortion with no mention of complication,198727005,Termination of Pregnancy,EXACT,L052y,Complete legal abortion with no mention of complication,1.0
+Complete legal abortion with no mention of complication,531521000000102,Termination of Pregnancy,EXACT,L052y,Complete legal abortion with no mention of complication,1.0
+Complete legal abortion with other specified complication,198725002,Termination of Pregnancy,EXACT,L052w,Complete legal abortion with other specified complication,1.0
+Complete legal abortion with other specified complication,599111000000107,Termination of Pregnancy,EXACT,L052w,Complete legal abortion with other specified complication,1.0
+Complete spontaneous abortion NOS,672481000000104,Termination of Pregnancy,EXACT,L042z,Complete spontaneous abortion NOS,1.0
+Complete spontaneous abortion with complication NOS,198665007,Termination of Pregnancy,EXACT,L042x,Complete spontaneous abortion with complication NOS,1.0
+Complete spontaneous abortion with complication NOS,669831000000102,Termination of Pregnancy,EXACT,L042x,Complete spontaneous abortion with complication NOS,1.0
+Complication NOS following abortion and ectopic and molar pregnancy,198872005,Termination of Pregnancy,TOKEN_OVERLAP,L09z.,Complication NOS following abortion/ectopic/molar pregnancy,1.0
+Complication NOS following abortion and ectopic and molar pregnancy,599201000000101,Termination of Pregnancy,TOKEN_OVERLAP,L09z.,Complication NOS following abortion/ectopic/molar pregnancy,1.0
+Destruction of fetus,1287687008,Termination of Pregnancy,TOKEN_OVERLAP,7F09z,Unspecified destruction of fetus,1.0
+Destruction of fetus,917351000000108,Termination of Pregnancy,TOKEN_OVERLAP,7F09z,Unspecified destruction of fetus,1.0
+Destruction of fetus,917361000000106,Termination of Pregnancy,TOKEN_OVERLAP,7F09z,Unspecified destruction of fetus,1.0
+Destruction of fetus,917371000000104,Termination of Pregnancy,TOKEN_OVERLAP,7F09z,Unspecified destruction of fetus,1.0
+Destruction of fetus,917381000000102,Termination of Pregnancy,TOKEN_OVERLAP,7F09z,Unspecified destruction of fetus,1.0
+Destruction of fetus,917391000000100,Termination of Pregnancy,TOKEN_OVERLAP,7F09z,Unspecified destruction of fetus,1.0
+Extraction of menses,176830009,Termination of Pregnancy,EXACT,7E083,Extraction of menses,1.0
+Failed attempted abortion,156078009,Termination of Pregnancy,EXACT,L0A..,Failed attempted abortion,1.0
+Failed attempted abortion,198873000,Termination of Pregnancy,EXACT,L0A..,Failed attempted abortion,1.0
+Failed attempted abortion NOS,198817008,Termination of Pregnancy,EXACT,L08z.,Failed attempted abortion NOS,1.0
+Failed attempted abortion NOS,614021000000108,Termination of Pregnancy,EXACT,L08z.,Failed attempted abortion NOS,1.0
+Failed attempted abortion with complication NOS,198815000,Termination of Pregnancy,EXACT,L08x.,Failed attempted abortion with complication NOS,1.0
+Failed attempted abortion with complication NOS,592161000000104,Termination of Pregnancy,EXACT,L08x.,Failed attempted abortion with complication NOS,1.0
+Failed attempted abortion with no mention of complication,198816004,Termination of Pregnancy,EXACT,L08y.,Failed attempted abortion with no mention of complication,1.0
+Failed attempted abortion with no mention of complication,528441000000101,Termination of Pregnancy,EXACT,L08y.,Failed attempted abortion with no mention of complication,1.0
+Failed attempted abortion with other specified complication,198814001,Termination of Pregnancy,EXACT,L08w.,Failed attempted abortion with other specified complication,1.0
+Failed attempted abortion with other specified complication,592151000000102,Termination of Pregnancy,EXACT,L08w.,Failed attempted abortion with other specified complication,1.0
+"Failed attempted abortion with specified complication, NEC",56083002,Termination of Pregnancy,TOKEN_OVERLAP,L08w.,Failed attempted abortion with other specified complication,1.0
+Fat embolism following abortive pregnancy,198854004,Termination of Pregnancy,EXACT,L0963,Fat embolism following abortive pregnancy,1.0
+H/O: medical termination of pregnancy,111461000000109,Termination of Pregnancy,EXACT,1547.,H/O: medical termination of pregnancy,1.0
+H/O: medical termination of pregnancy,117911000000107,Termination of Pregnancy,EXACT,1547.,H/O: medical termination of pregnancy,1.0
+History of - abortion NOS,577181000000102,Termination of Pregnancy,TOKEN_OVERLAP,15431,No history of abortion,1.0
+Illegal abortion unspecified,198731004,Termination of Pregnancy,EXACT,L060.,Illegal abortion unspecified,1.0
+Illegal abortion unspecified,599141000000108,Termination of Pregnancy,EXACT,L060.,Illegal abortion unspecified,1.0
+"Illegal abortion with specified complication, NEC",22442009,Termination of Pregnancy,TOKEN_OVERLAP,L060w,Unspecified illegal abortion + other specified complication,1.0
+Illegally induced abortion NOS,198767006,Termination of Pregnancy,EXACT,L06z.,Illegally induced abortion NOS,1.0
+Illegally induced abortion NOS,660221000000106,Termination of Pregnancy,EXACT,L06z.,Illegally induced abortion NOS,1.0
+Incomplete abortion,16863000,Termination of Pregnancy,TOKEN_OVERLAP,L071z,Unspecified incomplete abortion NOS,1.0
+Incomplete abortion,16863000,Termination of Pregnancy,TOKEN_OVERLAP,L071.,Unspecified abortion incomplete,1.0
+Incomplete illegal abortion NOS,198754008,Termination of Pregnancy,EXACT,L061z,Incomplete illegal abortion NOS,1.0
+Incomplete illegal abortion NOS,599231000000107,Termination of Pregnancy,EXACT,L061z,Incomplete illegal abortion NOS,1.0
+Incomplete illegal abortion with complication NOS,198752007,Termination of Pregnancy,EXACT,L061x,Incomplete illegal abortion with complication NOS,1.0
+Incomplete illegal abortion with complication NOS,660201000000102,Termination of Pregnancy,EXACT,L061x,Incomplete illegal abortion with complication NOS,1.0
+Incomplete illegal abortion with no mention of complication,198753002,Termination of Pregnancy,EXACT,L061y,Incomplete illegal abortion with no mention of complication,1.0
+Incomplete illegal abortion with no mention of complication,532051000000107,Termination of Pregnancy,EXACT,L061y,Incomplete illegal abortion with no mention of complication,1.0
+Incomplete illegal abortion with other specified complication,198751000,Termination of Pregnancy,TOKEN_OVERLAP,L061w,Incomplete illegal abortion + other specified complication,1.0
+Incomplete illegal abortion with other specified complication,599191000000103,Termination of Pregnancy,TOKEN_OVERLAP,L061w,Incomplete illegal abortion + other specified complication,1.0
+Incomplete legal abortion NOS,198716008,Termination of Pregnancy,EXACT,L051z,Incomplete legal abortion NOS,1.0
+Incomplete legal abortion NOS,599101000000105,Termination of Pregnancy,EXACT,L051z,Incomplete legal abortion NOS,1.0
+Incomplete legal abortion with complication NOS,198714006,Termination of Pregnancy,EXACT,L051x,Incomplete legal abortion with complication NOS,1.0
+Incomplete legal abortion with complication NOS,599091000000102,Termination of Pregnancy,EXACT,L051x,Incomplete legal abortion with complication NOS,1.0
+Incomplete legal abortion with no mention of complication,198715007,Termination of Pregnancy,EXACT,L051y,Incomplete legal abortion with no mention of complication,1.0
+Incomplete legal abortion with no mention of complication,528501000000100,Termination of Pregnancy,EXACT,L051y,Incomplete legal abortion with no mention of complication,1.0
+Incomplete legal abortion with other specified complication,198712005,Termination of Pregnancy,EXACT,L051w,Incomplete legal abortion with other specified complication,1.0
+Incomplete legal abortion with other specified complication,614001000000104,Termination of Pregnancy,EXACT,L051w,Incomplete legal abortion with other specified complication,1.0
+Introduction of abortifacient into uterine cavity NOS,176857006,Termination of Pregnancy,EXACT,7E0Bz,Introduction of abortifacient into uterine cavity NOS,1.0
+Introduction of abortifacient into uterine cavity NOS,569441000000102,Termination of Pregnancy,EXACT,7E0Bz,Introduction of abortifacient into uterine cavity NOS,1.0
+Legal abortion unspecified,198691008,Termination of Pregnancy,EXACT,L050.,Legal abortion unspecified,1.0
+Legal abortion unspecified,669851000000109,Termination of Pregnancy,EXACT,L050.,Legal abortion unspecified,1.0
+"Legal abortion with specified complication, NEC",19123002,Termination of Pregnancy,TOKEN_OVERLAP,L050w,Unspecified legal abortion with other specified complication,1.0
+Legally induced abortion NOS,198729008,Termination of Pregnancy,EXACT,L05z.,Legally induced abortion NOS,1.0
+Legally induced abortion NOS,599131000000104,Termination of Pregnancy,EXACT,L05z.,Legally induced abortion NOS,1.0
+Medical termination of pregnancy,285409006,Termination of Pregnancy,TOKEN_OVERLAP,1547.,H/O: medical termination of pregnancy,1.0
+Metabolic disorder following abortive pregnancy,198848000,Termination of Pregnancy,EXACT,L094.,Metabolic disorder following abortive pregnancy,1.0
+Other specified selective destruction of fetus,177098008,Termination of Pregnancy,EXACT,7F02y,Other specified selective destruction of fetus,1.0
+Other specified selective destruction of fetus,562001000000102,Termination of Pregnancy,EXACT,7F02y,Other specified selective destruction of fetus,1.0
+Periurethral tissue damage following abortive pregnancy,198837007,Termination of Pregnancy,EXACT,L0924,Periurethral tissue damage following abortive pregnancy,1.0
+Salpingitis following abortive pregnancy,198823003,Termination of Pregnancy,EXACT,L0903,Salpingitis following abortive pregnancy,1.0
+Selective destruction of fetus NOS,177099000,Termination of Pregnancy,EXACT,7F02z,Selective destruction of fetus NOS,1.0
+Selective destruction of fetus NOS,656231000000102,Termination of Pregnancy,EXACT,7F02z,Selective destruction of fetus NOS,1.0
+Selective feticide NEC,177097003,Termination of Pregnancy,EXACT,7F022,Selective feticide NEC,1.0
+Selective feticide NEC,561991000000100,Termination of Pregnancy,EXACT,7F022,Selective feticide NEC,1.0
+Sepsis NOS following abortion and ectopic and molar pregnancy,198825005,Termination of Pregnancy,TOKEN_OVERLAP,L090y,Sepsis NOS following abortion/ectopic/molar pregnancy,1.0
+Sepsis NOS following abortion and ectopic and molar pregnancy,592171000000106,Termination of Pregnancy,TOKEN_OVERLAP,L090y,Sepsis NOS following abortion/ectopic/molar pregnancy,1.0
+Suction termination of pregnancy,149997001,Termination of Pregnancy,EXACT,7E084,Suction termination of pregnancy,1.0
+Termination of pregnancy NEC,176831008,Termination of Pregnancy,EXACT,7E086,Termination of pregnancy NEC,1.0
+Unspecified abortion,198768001,Termination of Pregnancy,EXACT,L070.,Unspecified abortion,1.0
+Unspecified abortion,198769009,Termination of Pregnancy,EXACT,L070.,Unspecified abortion,1.0
+Unspecified abortion,660231000000108,Termination of Pregnancy,EXACT,L070.,Unspecified abortion,1.0
+Unspecified abortion NOS,198780009,Termination of Pregnancy,EXACT,L070z,Unspecified abortion NOS,1.0
+Unspecified abortion NOS,198780009,Termination of Pregnancy,EXACT,L07z.,Unspecified abortion NOS,1.0
+Unspecified abortion NOS,198805006,Termination of Pregnancy,EXACT,L070z,Unspecified abortion NOS,1.0
+Unspecified abortion NOS,198805006,Termination of Pregnancy,EXACT,L07z.,Unspecified abortion NOS,1.0
+Unspecified abortion NOS,639931000000103,Termination of Pregnancy,EXACT,L070z,Unspecified abortion NOS,1.0
+Unspecified abortion NOS,639931000000103,Termination of Pregnancy,EXACT,L07z.,Unspecified abortion NOS,1.0
+Unspecified abortion complete,198793004,Termination of Pregnancy,EXACT,L072.,Unspecified abortion complete,1.0
+Unspecified abortion complete,644601000000100,Termination of Pregnancy,EXACT,L072.,Unspecified abortion complete,1.0
+Unspecified abortion incomplete,639941000000107,Termination of Pregnancy,EXACT,L071.,Unspecified abortion incomplete,1.0
+Unspecified abortion with complication NOS,198778003,Termination of Pregnancy,EXACT,L070x,Unspecified abortion with complication NOS,1.0
+Unspecified abortion with complication NOS,639911000000106,Termination of Pregnancy,EXACT,L070x,Unspecified abortion with complication NOS,1.0
+Unspecified abortion with damage to pelvic organs or tissues,198772002,Termination of Pregnancy,EXACT,L0702,Unspecified abortion with damage to pelvic organs or tissues,1.0
+Unspecified abortion with damage to pelvic organs or tissues,659001000000109,Termination of Pregnancy,EXACT,L0702,Unspecified abortion with damage to pelvic organs or tissues,1.0
+Unspecified abortion with delayed or excessive haemorrhage,198771009,Termination of Pregnancy,EXACT,L0701,Unspecified abortion with delayed or excessive haemorrhage,1.0
+Unspecified abortion with delayed or excessive haemorrhage,614961000000101,Termination of Pregnancy,EXACT,L0701,Unspecified abortion with delayed or excessive haemorrhage,1.0
+Unspecified abortion with embolism,198776004,Termination of Pregnancy,EXACT,L0706,Unspecified abortion with embolism,1.0
+Unspecified abortion with embolism,639891000000108,Termination of Pregnancy,EXACT,L0706,Unspecified abortion with embolism,1.0
+Unspecified abortion with genital tract or pelvic infection,198770005,Termination of Pregnancy,EXACT,L0700,Unspecified abortion with genital tract or pelvic infection,1.0
+Unspecified abortion with genital tract or pelvic infection,587061000000104,Termination of Pregnancy,EXACT,L0700,Unspecified abortion with genital tract or pelvic infection,1.0
+Unspecified abortion with metabolic disorder,198774001,Termination of Pregnancy,EXACT,L0704,Unspecified abortion with metabolic disorder,1.0
+Unspecified abortion with metabolic disorder,587071000000106,Termination of Pregnancy,EXACT,L0704,Unspecified abortion with metabolic disorder,1.0
+Unspecified abortion with no mention of complication,198779006,Termination of Pregnancy,EXACT,L070y,Unspecified abortion with no mention of complication,1.0
+Unspecified abortion with no mention of complication,639921000000100,Termination of Pregnancy,EXACT,L070y,Unspecified abortion with no mention of complication,1.0
+Unspecified abortion with other specified complication,198777008,Termination of Pregnancy,EXACT,L070w,Unspecified abortion with other specified complication,1.0
+Unspecified abortion with other specified complication,639901000000109,Termination of Pregnancy,EXACT,L070w,Unspecified abortion with other specified complication,1.0
+Unspecified abortion with renal failure,198773007,Termination of Pregnancy,EXACT,L0703,Unspecified abortion with renal failure,1.0
+Unspecified abortion with renal failure,587081000000108,Termination of Pregnancy,EXACT,L0703,Unspecified abortion with renal failure,1.0
+Unspecified abortion with shock,198775000,Termination of Pregnancy,EXACT,L0705,Unspecified abortion with shock,1.0
+Unspecified abortion with shock,639881000000106,Termination of Pregnancy,EXACT,L0705,Unspecified abortion with shock,1.0
+"Unspecified abortion with specified complication, NEC",2787008,Termination of Pregnancy,TOKEN_OVERLAP,L070w,Unspecified abortion with other specified complication,1.0
+Unspecified complete abortion NOS,198804005,Termination of Pregnancy,EXACT,L072z,Unspecified complete abortion NOS,1.0
+Unspecified complete abortion NOS,592141000000100,Termination of Pregnancy,EXACT,L072z,Unspecified complete abortion NOS,1.0
+Unspecified complete abortion with complication NOS,198802009,Termination of Pregnancy,EXACT,L072x,Unspecified complete abortion with complication NOS,1.0
+Unspecified complete abortion with complication NOS,700131000000106,Termination of Pregnancy,EXACT,L072x,Unspecified complete abortion with complication NOS,1.0
+Unspecified complete abortion with delayed or excessive haemorrhage,198795006,Termination of Pregnancy,TOKEN_OVERLAP,L0721,Unspecified complete abortion +delayed/excessive haemorrhage,1.0
+Unspecified complete abortion with delayed or excessive haemorrhage,644621000000109,Termination of Pregnancy,TOKEN_OVERLAP,L0721,Unspecified complete abortion +delayed/excessive haemorrhage,1.0
+Unspecified complete abortion with embolism,198800001,Termination of Pregnancy,EXACT,L0726,Unspecified complete abortion with embolism,1.0
+Unspecified complete abortion with embolism,614011000000102,Termination of Pregnancy,EXACT,L0726,Unspecified complete abortion with embolism,1.0
+Unspecified complete abortion with metabolic disorder,198798008,Termination of Pregnancy,EXACT,L0724,Unspecified complete abortion with metabolic disorder,1.0
+Unspecified complete abortion with metabolic disorder,626801000000108,Termination of Pregnancy,EXACT,L0724,Unspecified complete abortion with metabolic disorder,1.0
+Unspecified complete abortion with no mention of complication,700141000000102,Termination of Pregnancy,TOKEN_OVERLAP,L072y,Unspecified complete abortion + no mention of complication,1.0
+Unspecified complete abortion with other specified complication,198801002,Termination of Pregnancy,TOKEN_OVERLAP,L072w,Unspecified complete abortion + other specified complication,1.0
+Unspecified complete abortion with other specified complication,698451000000102,Termination of Pregnancy,TOKEN_OVERLAP,L072w,Unspecified complete abortion + other specified complication,1.0
+Unspecified complete abortion with renal failure,198797003,Termination of Pregnancy,EXACT,L0723,Unspecified complete abortion with renal failure,1.0
+Unspecified complete abortion with renal failure,626791000000109,Termination of Pregnancy,EXACT,L0723,Unspecified complete abortion with renal failure,1.0
+Unspecified complete abortion with shock,198799000,Termination of Pregnancy,EXACT,L0725,Unspecified complete abortion with shock,1.0
+Unspecified complete abortion with shock,626811000000105,Termination of Pregnancy,EXACT,L0725,Unspecified complete abortion with shock,1.0
+Unspecified illegal abortion NOS,198742008,Termination of Pregnancy,EXACT,L060z,Unspecified illegal abortion NOS,1.0
+Unspecified illegal abortion NOS,660161000000105,Termination of Pregnancy,EXACT,L060z,Unspecified illegal abortion NOS,1.0
+Unspecified illegal abortion with complication NOS,198740000,Termination of Pregnancy,EXACT,L060x,Unspecified illegal abortion with complication NOS,1.0
+Unspecified illegal abortion with complication NOS,660131000000100,Termination of Pregnancy,EXACT,L060x,Unspecified illegal abortion with complication NOS,1.0
+Unspecified illegal abortion with embolism,198738005,Termination of Pregnancy,EXACT,L0606,Unspecified illegal abortion with embolism,1.0
+Unspecified illegal abortion with embolism,599171000000102,Termination of Pregnancy,EXACT,L0606,Unspecified illegal abortion with embolism,1.0
+Unspecified illegal abortion with metabolic disorder,198736009,Termination of Pregnancy,EXACT,L0604,Unspecified illegal abortion with metabolic disorder,1.0
+Unspecified illegal abortion with metabolic disorder,660141000000109,Termination of Pregnancy,EXACT,L0604,Unspecified illegal abortion with metabolic disorder,1.0
+Unspecified illegal abortion with no mention of complication,198741001,Termination of Pregnancy,EXACT,L060y,Unspecified illegal abortion with no mention of complication,1.0
+Unspecified illegal abortion with no mention of complication,660151000000107,Termination of Pregnancy,EXACT,L060y,Unspecified illegal abortion with no mention of complication,1.0
+Unspecified illegal abortion with other specified complication,198739002,Termination of Pregnancy,TOKEN_OVERLAP,L060w,Unspecified illegal abortion + other specified complication,1.0
+Unspecified illegal abortion with other specified complication,599181000000100,Termination of Pregnancy,TOKEN_OVERLAP,L060w,Unspecified illegal abortion + other specified complication,1.0
+Unspecified illegal abortion with renal failure,198735008,Termination of Pregnancy,EXACT,L0603,Unspecified illegal abortion with renal failure,1.0
+Unspecified illegal abortion with renal failure,639951000000105,Termination of Pregnancy,EXACT,L0603,Unspecified illegal abortion with renal failure,1.0
+Unspecified illegal abortion with shock,198737000,Termination of Pregnancy,EXACT,L0605,Unspecified illegal abortion with shock,1.0
+Unspecified illegal abortion with shock,599161000000109,Termination of Pregnancy,EXACT,L0605,Unspecified illegal abortion with shock,1.0
+Unspecified incomplete abortion NOS,198792009,Termination of Pregnancy,EXACT,L071z,Unspecified incomplete abortion NOS,1.0
+Unspecified incomplete abortion NOS,644581000000109,Termination of Pregnancy,EXACT,L071z,Unspecified incomplete abortion NOS,1.0
+Unspecified incomplete abortion with complication NOS,198790001,Termination of Pregnancy,EXACT,L071x,Unspecified incomplete abortion with complication NOS,1.0
+Unspecified incomplete abortion with complication NOS,626741000000104,Termination of Pregnancy,EXACT,L071x,Unspecified incomplete abortion with complication NOS,1.0
+Unspecified incomplete abortion with embolism,198788002,Termination of Pregnancy,EXACT,L0716,Unspecified incomplete abortion with embolism,1.0
+Unspecified incomplete abortion with embolism,602721000000103,Termination of Pregnancy,EXACT,L0716,Unspecified incomplete abortion with embolism,1.0
+Unspecified incomplete abortion with metabolic disorder,198786003,Termination of Pregnancy,EXACT,L0714,Unspecified incomplete abortion with metabolic disorder,1.0
+Unspecified incomplete abortion with metabolic disorder,602701000000107,Termination of Pregnancy,EXACT,L0714,Unspecified incomplete abortion with metabolic disorder,1.0
+Unspecified incomplete abortion with no mention of complication,198791002,Termination of Pregnancy,TOKEN_OVERLAP,L071y,Unspecified incomplete abortion + no mention of complication,1.0
+Unspecified incomplete abortion with no mention of complication,644571000000107,Termination of Pregnancy,TOKEN_OVERLAP,L071y,Unspecified incomplete abortion + no mention of complication,1.0
+Unspecified incomplete abortion with renal failure,198785004,Termination of Pregnancy,EXACT,L0713,Unspecified incomplete abortion with renal failure,1.0
+Unspecified incomplete abortion with renal failure,632901000000101,Termination of Pregnancy,EXACT,L0713,Unspecified incomplete abortion with renal failure,1.0
+Unspecified incomplete abortion with shock,198787007,Termination of Pregnancy,EXACT,L0715,Unspecified incomplete abortion with shock,1.0
+Unspecified incomplete abortion with shock,602711000000109,Termination of Pregnancy,EXACT,L0715,Unspecified incomplete abortion with shock,1.0
+Unspecified legal abortion NOS,198703008,Termination of Pregnancy,EXACT,L050z,Unspecified legal abortion NOS,1.0
+Unspecified legal abortion NOS,613991000000109,Termination of Pregnancy,EXACT,L050z,Unspecified legal abortion NOS,1.0
+Unspecified legal abortion with complication NOS,198701005,Termination of Pregnancy,EXACT,L050x,Unspecified legal abortion with complication NOS,1.0
+Unspecified legal abortion with complication NOS,592121000000107,Termination of Pregnancy,EXACT,L050x,Unspecified legal abortion with complication NOS,1.0
+Unspecified legal abortion with damage to pelvic organs or tissues,198694000,Termination of Pregnancy,TOKEN_OVERLAP,L0502,Unspecified legal abortion + damage to pelvic organs/tissues,1.0
+Unspecified legal abortion with damage to pelvic organs or tissues,626771000000105,Termination of Pregnancy,TOKEN_OVERLAP,L0502,Unspecified legal abortion + damage to pelvic organs/tissues,1.0
+Unspecified legal abortion with embolism,198698002,Termination of Pregnancy,EXACT,L0506,Unspecified legal abortion with embolism,1.0
+Unspecified legal abortion with embolism,698421000000107,Termination of Pregnancy,EXACT,L0506,Unspecified legal abortion with embolism,1.0
+Unspecified legal abortion with genital tract or pelvic infection,198692001,Termination of Pregnancy,TOKEN_OVERLAP,L0500,Unspecified legal abortion + genital tract/pelvic infection,1.0
+Unspecified legal abortion with genital tract or pelvic infection,672511000000105,Termination of Pregnancy,TOKEN_OVERLAP,L0500,Unspecified legal abortion + genital tract/pelvic infection,1.0
+Unspecified legal abortion with metabolic disorder,198696003,Termination of Pregnancy,EXACT,L0504,Unspecified legal abortion with metabolic disorder,1.0
+Unspecified legal abortion with metabolic disorder,613971000000105,Termination of Pregnancy,EXACT,L0504,Unspecified legal abortion with metabolic disorder,1.0
+Unspecified legal abortion with other specified complication,198699005,Termination of Pregnancy,EXACT,L050w,Unspecified legal abortion with other specified complication,1.0
+Unspecified legal abortion with other specified complication,698431000000109,Termination of Pregnancy,EXACT,L050w,Unspecified legal abortion with other specified complication,1.0
+Unspecified legal abortion with renal failure,198695004,Termination of Pregnancy,EXACT,L0503,Unspecified legal abortion with renal failure,1.0
+Unspecified legal abortion with renal failure,626781000000107,Termination of Pregnancy,EXACT,L0503,Unspecified legal abortion with renal failure,1.0
+Unspecified legal abortion with shock,198697007,Termination of Pregnancy,EXACT,L0505,Unspecified legal abortion with shock,1.0
+Unspecified legal abortion with shock,698411000000101,Termination of Pregnancy,EXACT,L0505,Unspecified legal abortion with shock,1.0
+[V]Pregnancy with history of abortion,315910004,Termination of Pregnancy,EXACT,ZV232,[V]Pregnancy with history of abortion,1.0
+[V]Pregnancy with history of abortion,427511000000106,Termination of Pregnancy,EXACT,ZV232,[V]Pregnancy with history of abortion,1.0
+"[X]Complication following abortion and ectopic and molar pregnancy, unspecified",200493002,Termination of Pregnancy,TOKEN_OVERLAP,L09z.,Complication NOS following abortion/ectopic/molar pregnancy,1.0
+"[X]Complication following abortion and ectopic and molar pregnancy, unspecified",463061000000100,Termination of Pregnancy,TOKEN_OVERLAP,L09z.,Complication NOS following abortion/ectopic/molar pregnancy,1.0
+[X]Other abortion,200483009,Termination of Pregnancy,EXACT,Lyu02,[X]Other abortion,1.0
+[X]Other abortion,428641000000105,Termination of Pregnancy,EXACT,Lyu02,[X]Other abortion,1.0
+Indeterminate sex,32570681000036104,Gender Related Issues,NORMALISED,PC7z0,Indeterminate sex NOS,0.95
+Transsexualism,192508005,Gender Related Issues,NORMALISED,Eu640,[X]Transsexualism,0.95
+Transsexualism,4296008,Gender Related Issues,NORMALISED,Eu640,[X]Transsexualism,0.95
+Transsexualism NOS,191786005,Gender Related Issues,NORMALISED,Eu640,[X]Transsexualism,0.95
+Transsexualism NOS,539971000000105,Gender Related Issues,NORMALISED,Eu640,[X]Transsexualism,0.95
+Chronic gonorrhoea of upper genitourinary tract,186917002,Sexually Transmitted Disease,NORMALISED,A983z,Chronic gonorrhoea of upper genitourinary tract NOS,0.95
+Congenital syphilis,154380005,Sexually Transmitted Disease,NORMALISED,A90z.,Congenital syphilis NOS,0.95
+Congenital syphilis,154380005,Sexually Transmitted Disease,NORMALISED,Ayu43,"[X]Congenital syphilis, unspecified",0.95
+Early congenital syphilis NOS,186834006,Sexually Transmitted Disease,NORMALISED,Ayu40,"[X]Early congenital syphilis, unspecified",0.95
+Early congenital syphilis NOS,629031000000102,Sexually Transmitted Disease,NORMALISED,Ayu40,"[X]Early congenital syphilis, unspecified",0.95
+Gonorrhoea carrier,147743002,Sexually Transmitted Disease,NORMALISED,ZV027,[V]Gonorrhoea carrier,0.95
+Late syphilis,276200006,Sexually Transmitted Disease,NORMALISED,A970.,Late syphilis unspecified,0.95
+Late syphilis,276200006,Sexually Transmitted Disease,NORMALISED,Ayu49,"[X]Late syphilis, unspecified",0.95
+Latent syphilis,444150000,Sexually Transmitted Disease,NORMALISED,A971.,Latent syphilis unspecified,0.95
+Neurosyphilis,186884004,Sexually Transmitted Disease,NORMALISED,A94z.,Neurosyphilis NOS,0.95
+Neurosyphilis,186884004,Sexually Transmitted Disease,NORMALISED,Ayu47,"[X]Neurosyphilis, unspecified",0.95
+Other late congenital syphilis,186840004,Sexually Transmitted Disease,NORMALISED,A905z,Other late congenital syphilis NOS,0.95
+Other late congenital syphilis,608531000000108,Sexually Transmitted Disease,NORMALISED,A905z,Other late congenital syphilis NOS,0.95
+Other primary syphilis,186848006,Sexually Transmitted Disease,NORMALISED,A912z,Other primary syphilis NOS,0.95
+Other primary syphilis,546171000000102,Sexually Transmitted Disease,NORMALISED,A912z,Other primary syphilis NOS,0.95
+Screening for venereal disease,30071002,Sexually Transmitted Disease,NORMALISED,ZV745,[V]Screening for venereal disease,0.95
+Secondary syphilitic uveitis,70983007,Sexually Transmitted Disease,NORMALISED,A915z,Secondary syphilitic uveitis NOS,0.95
+Syphilis,154379007,Sexually Transmitted Disease,NORMALISED,A97z.,Syphilis NOS,0.95
+Syphilis,154379007,Sexually Transmitted Disease,NORMALISED,Ayu4A,"[X]Syphilis, unspecified",0.95
+Extraamniotic injection of abortifacient,450679007,Termination of Pregnancy,NORMALISED,7E0B3,Extraamniotic injection of abortifacient NEC,0.95
+Illegally induced abortion,156077004,Termination of Pregnancy,NORMALISED,L06z.,Illegally induced abortion NOS,0.95
+Intraamniotic injection of abortifacient,450678004,Termination of Pregnancy,NORMALISED,7E0B1,Intraamniotic injection of abortifacient NEC,0.95
+Legally induced abortion,267192009,Termination of Pregnancy,NORMALISED,L05z.,Legally induced abortion NOS,0.95
+Termination of pregnancy,57797005,Termination of Pregnancy,NORMALISED,7E086,Termination of pregnancy NEC,0.95
+Unspecified complete abortion with damage to pelvic organs or tissues,198796007,Termination of Pregnancy,TOKEN_OVERLAP,L0522,Complete legal abortion + damage to pelvic organs or tissues,0.857
+Unspecified complete abortion with damage to pelvic organs or tissues,698441000000100,Termination of Pregnancy,TOKEN_OVERLAP,L0522,Complete legal abortion + damage to pelvic organs or tissues,0.857
+Unspecified complete abortion with genital tract or pelvic infection,198794005,Termination of Pregnancy,TOKEN_OVERLAP,L0520,Complete legal abortion + genital tract or pelvic infection,0.857
+Unspecified complete abortion with genital tract or pelvic infection,198794005,Termination of Pregnancy,TOKEN_OVERLAP,L0620,Complete illegal abortion + genital tract/pelvic infection,0.857
+Unspecified complete abortion with genital tract or pelvic infection,644611000000103,Termination of Pregnancy,TOKEN_OVERLAP,L0520,Complete legal abortion + genital tract or pelvic infection,0.857
+Unspecified complete abortion with genital tract or pelvic infection,644611000000103,Termination of Pregnancy,TOKEN_OVERLAP,L0620,Complete illegal abortion + genital tract/pelvic infection,0.857
+Unspecified illegal abortion with genital tract or pelvic infection,198732006,Termination of Pregnancy,TOKEN_OVERLAP,L0600,Unspec illegal abortion + genital tract or pelvic infection,0.857
+Unspecified illegal abortion with genital tract or pelvic infection,198732006,Termination of Pregnancy,TOKEN_OVERLAP,L0610,Incomplete illegal abortion + genital tract/pelvic infection,0.857
+Unspecified illegal abortion with genital tract or pelvic infection,198732006,Termination of Pregnancy,TOKEN_OVERLAP,L0620,Complete illegal abortion + genital tract/pelvic infection,0.857
+Unspecified illegal abortion with genital tract or pelvic infection,599151000000106,Termination of Pregnancy,TOKEN_OVERLAP,L0600,Unspec illegal abortion + genital tract or pelvic infection,0.857
+Unspecified illegal abortion with genital tract or pelvic infection,599151000000106,Termination of Pregnancy,TOKEN_OVERLAP,L0610,Incomplete illegal abortion + genital tract/pelvic infection,0.857
+Unspecified illegal abortion with genital tract or pelvic infection,599151000000106,Termination of Pregnancy,TOKEN_OVERLAP,L0620,Complete illegal abortion + genital tract/pelvic infection,0.857
+Unspecified incomplete abortion with damage to pelvic organs or tissues,198784000,Termination of Pregnancy,TOKEN_OVERLAP,L0512,Incomplete legal abortion + damage to pelvic organs/tissues,0.857
+Unspecified incomplete abortion with damage to pelvic organs or tissues,579571000000102,Termination of Pregnancy,TOKEN_OVERLAP,L0512,Incomplete legal abortion + damage to pelvic organs/tissues,0.857
+Unspecified incomplete abortion with genital tract or pelvic infection,198782001,Termination of Pregnancy,TOKEN_OVERLAP,L0510,Incomplete legal abortion + genital tract/pelvic infection,0.857
+Unspecified incomplete abortion with genital tract or pelvic infection,198782001,Termination of Pregnancy,TOKEN_OVERLAP,L0610,Incomplete illegal abortion + genital tract/pelvic infection,0.857
+Unspecified incomplete abortion with genital tract or pelvic infection,602691000000107,Termination of Pregnancy,TOKEN_OVERLAP,L0510,Incomplete legal abortion + genital tract/pelvic infection,0.857
+Unspecified incomplete abortion with genital tract or pelvic infection,602691000000107,Termination of Pregnancy,TOKEN_OVERLAP,L0610,Incomplete illegal abortion + genital tract/pelvic infection,0.857
+Unspecified legal abortion with damage to pelvic organs or tissues,198694000,Termination of Pregnancy,TOKEN_OVERLAP,L0522,Complete legal abortion + damage to pelvic organs or tissues,0.857
+Unspecified legal abortion with damage to pelvic organs or tissues,198694000,Termination of Pregnancy,TOKEN_OVERLAP,L0512,Incomplete legal abortion + damage to pelvic organs/tissues,0.857
+Unspecified legal abortion with damage to pelvic organs or tissues,626771000000105,Termination of Pregnancy,TOKEN_OVERLAP,L0522,Complete legal abortion + damage to pelvic organs or tissues,0.857
+Unspecified legal abortion with damage to pelvic organs or tissues,626771000000105,Termination of Pregnancy,TOKEN_OVERLAP,L0512,Incomplete legal abortion + damage to pelvic organs/tissues,0.857
+Unspecified legal abortion with genital tract or pelvic infection,198692001,Termination of Pregnancy,TOKEN_OVERLAP,L0520,Complete legal abortion + genital tract or pelvic infection,0.857
+Unspecified legal abortion with genital tract or pelvic infection,198692001,Termination of Pregnancy,TOKEN_OVERLAP,L0510,Incomplete legal abortion + genital tract/pelvic infection,0.857
+Unspecified legal abortion with genital tract or pelvic infection,672511000000105,Termination of Pregnancy,TOKEN_OVERLAP,L0520,Complete legal abortion + genital tract or pelvic infection,0.857
+Unspecified legal abortion with genital tract or pelvic infection,672511000000105,Termination of Pregnancy,TOKEN_OVERLAP,L0510,Incomplete legal abortion + genital tract/pelvic infection,0.857
+"Maternal syphilis during pregnancy, childbirth or the puerperium NOS",199160009,Sexually Transmitted Disease,TOKEN_OVERLAP,L170z,Maternal syphilis in pregnancy/childbirth/puerperium NOS,0.833
+"Maternal syphilis during pregnancy, childbirth or the puerperium NOS",586791000000106,Sexually Transmitted Disease,TOKEN_OVERLAP,L170z,Maternal syphilis in pregnancy/childbirth/puerperium NOS,0.833
+Neisseria gonorrhoeae nucleic acid detection,134235001,Sexually Transmitted Disease,TOKEN_OVERLAP,43jA0,Neisseria gonorrhoeae nucleic acid detection assay,0.833
+Neisseria gonorrhoeae nucleic acid detection,366781005,Sexually Transmitted Disease,TOKEN_OVERLAP,43jA0,Neisseria gonorrhoeae nucleic acid detection assay,0.833
+Neisseria gonorrhoeae nucleic acid detection,366859006,Sexually Transmitted Disease,TOKEN_OVERLAP,43jA0,Neisseria gonorrhoeae nucleic acid detection assay,0.833
+[X]Hiv disease resulting in unspecified infectious and parasitic disease,186713006,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuC5,[X]HIV disease resulting/unspcf infectious+parasitic disease,0.833
+[X]Hiv disease resulting in unspecified infectious and parasitic disease,186713006,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuC4,[X]HIV disease resulting/other infectious+parasitic diseases,0.833
+[X]Hiv disease resulting in unspecified infectious and parasitic disease,186713006,Sexually Transmitted Disease,TOKEN_OVERLAP,A788X,HIV disease resulting/unspcf infectious+parasitic disease,0.833
+[X]Hiv disease resulting in unspecified infectious and parasitic disease,187445009,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuC5,[X]HIV disease resulting/unspcf infectious+parasitic disease,0.833
+[X]Hiv disease resulting in unspecified infectious and parasitic disease,187445009,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuC4,[X]HIV disease resulting/other infectious+parasitic diseases,0.833
+[X]Hiv disease resulting in unspecified infectious and parasitic disease,187445009,Sexually Transmitted Disease,TOKEN_OVERLAP,A788X,HIV disease resulting/unspcf infectious+parasitic disease,0.833
+[X]Hiv disease resulting in unspecified infectious and parasitic disease,400401000000101,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuC5,[X]HIV disease resulting/unspcf infectious+parasitic disease,0.833
+[X]Hiv disease resulting in unspecified infectious and parasitic disease,400401000000101,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuC4,[X]HIV disease resulting/other infectious+parasitic diseases,0.833
+[X]Hiv disease resulting in unspecified infectious and parasitic disease,400401000000101,Sexually Transmitted Disease,TOKEN_OVERLAP,A788X,HIV disease resulting/unspcf infectious+parasitic disease,0.833
+[X]Hiv disease resulting in unspecified infectious and parasitic disease,466811000000104,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuC5,[X]HIV disease resulting/unspcf infectious+parasitic disease,0.833
+[X]Hiv disease resulting in unspecified infectious and parasitic disease,466811000000104,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuC4,[X]HIV disease resulting/other infectious+parasitic diseases,0.833
+[X]Hiv disease resulting in unspecified infectious and parasitic disease,466811000000104,Sexually Transmitted Disease,TOKEN_OVERLAP,A788X,HIV disease resulting/unspcf infectious+parasitic disease,0.833
+Abortion complicated by damage to pelvic organs AND/OR tissues,373908001,Termination of Pregnancy,TOKEN_OVERLAP,L0702,Unspecified abortion with damage to pelvic organs or tissues,0.833
+Abortion complicated by damage to pelvic organs AND/OR tissues,58475007,Termination of Pregnancy,TOKEN_OVERLAP,L0702,Unspecified abortion with damage to pelvic organs or tissues,0.833
+Other specified introduction of abortifacient into uterine cavity,176856002,Termination of Pregnancy,TOKEN_OVERLAP,7E0Bz,Introduction of abortifacient into uterine cavity NOS,0.833
+Other specified introduction of abortifacient into uterine cavity,176856002,Termination of Pregnancy,TOKEN_OVERLAP,7E0By,Introduction of abortifacient into uterine cavity OS,0.833
+Other specified introduction of abortifacient into uterine cavity,572641000000101,Termination of Pregnancy,TOKEN_OVERLAP,7E0Bz,Introduction of abortifacient into uterine cavity NOS,0.833
+Other specified introduction of abortifacient into uterine cavity,572641000000101,Termination of Pregnancy,TOKEN_OVERLAP,7E0By,Introduction of abortifacient into uterine cavity OS,0.833
+Readmission (NHS codes): [abortive pregnancy] or [RPOC],198860004,Termination of Pregnancy,TOKEN_OVERLAP,L097.,Readmission for abortive pregnancy (NHS codes),0.833
+Unspecified complete abortion with damage to pelvic organs or tissues,198796007,Termination of Pregnancy,TOKEN_OVERLAP,L0702,Unspecified abortion with damage to pelvic organs or tissues,0.833
+Unspecified complete abortion with damage to pelvic organs or tissues,698441000000100,Termination of Pregnancy,TOKEN_OVERLAP,L0702,Unspecified abortion with damage to pelvic organs or tissues,0.833
+Unspecified complete abortion with delayed or excessive haemorrhage,198795006,Termination of Pregnancy,TOKEN_OVERLAP,L0421,Complete spontaneous abortion +delayed/excessive haemorrhage,0.833
+Unspecified complete abortion with delayed or excessive haemorrhage,198795006,Termination of Pregnancy,TOKEN_OVERLAP,L0621,Complete illegal abortion + delayed or excessive haemorrhage,0.833
+Unspecified complete abortion with delayed or excessive haemorrhage,644621000000109,Termination of Pregnancy,TOKEN_OVERLAP,L0421,Complete spontaneous abortion +delayed/excessive haemorrhage,0.833
+Unspecified complete abortion with delayed or excessive haemorrhage,644621000000109,Termination of Pregnancy,TOKEN_OVERLAP,L0621,Complete illegal abortion + delayed or excessive haemorrhage,0.833
+Unspecified complete abortion with genital tract or pelvic infection,198794005,Termination of Pregnancy,TOKEN_OVERLAP,L0700,Unspecified abortion with genital tract or pelvic infection,0.833
+Unspecified complete abortion with genital tract or pelvic infection,644611000000103,Termination of Pregnancy,TOKEN_OVERLAP,L0700,Unspecified abortion with genital tract or pelvic infection,0.833
+Unspecified illegal abortion with damage to pelvic organs or tissues,198734007,Termination of Pregnancy,TOKEN_OVERLAP,L0702,Unspecified abortion with damage to pelvic organs or tissues,0.833
+Unspecified illegal abortion with damage to pelvic organs or tissues,661421000000101,Termination of Pregnancy,TOKEN_OVERLAP,L0702,Unspecified abortion with damage to pelvic organs or tissues,0.833
+Unspecified illegal abortion with delayed or excessive haemorrhage,661411000000107,Termination of Pregnancy,TOKEN_OVERLAP,L0621,Complete illegal abortion + delayed or excessive haemorrhage,0.833
+Unspecified illegal abortion with delayed or excessive haemorrhage,661411000000107,Termination of Pregnancy,TOKEN_OVERLAP,L0611,Incomplete illegal abortion + delayed/excessive haemorrhage,0.833
+Unspecified illegal abortion with delayed or excessive haemorrhage,661411000000107,Termination of Pregnancy,TOKEN_OVERLAP,L0601,Unspec illegal abortion + delayed or excessive haemorrhage,0.833
+Unspecified incomplete abortion with damage to pelvic organs or tissues,198784000,Termination of Pregnancy,TOKEN_OVERLAP,L0702,Unspecified abortion with damage to pelvic organs or tissues,0.833
+Unspecified incomplete abortion with damage to pelvic organs or tissues,579571000000102,Termination of Pregnancy,TOKEN_OVERLAP,L0702,Unspecified abortion with damage to pelvic organs or tissues,0.833
+Unspecified incomplete abortion with delayed or excessive haemorrhage,198783006,Termination of Pregnancy,TOKEN_OVERLAP,L0611,Incomplete illegal abortion + delayed/excessive haemorrhage,0.833
+Unspecified incomplete abortion with delayed or excessive haemorrhage,198783006,Termination of Pregnancy,TOKEN_OVERLAP,L0511,Incomplete legal abortion + delayed or excessive haemorrhage,0.833
+Unspecified incomplete abortion with delayed or excessive haemorrhage,579561000000109,Termination of Pregnancy,TOKEN_OVERLAP,L0611,Incomplete illegal abortion + delayed/excessive haemorrhage,0.833
+Unspecified incomplete abortion with delayed or excessive haemorrhage,579561000000109,Termination of Pregnancy,TOKEN_OVERLAP,L0511,Incomplete legal abortion + delayed or excessive haemorrhage,0.833
+Unspecified incomplete abortion with genital tract or pelvic infection,198782001,Termination of Pregnancy,TOKEN_OVERLAP,L0700,Unspecified abortion with genital tract or pelvic infection,0.833
+Unspecified incomplete abortion with genital tract or pelvic infection,602691000000107,Termination of Pregnancy,TOKEN_OVERLAP,L0700,Unspecified abortion with genital tract or pelvic infection,0.833
+Unspecified legal abortion with delayed or excessive haemorrhage,198693006,Termination of Pregnancy,TOKEN_OVERLAP,L0521,Complete legal abortion with delayed/excessive haemorrhage,0.833
+Unspecified legal abortion with delayed or excessive haemorrhage,198693006,Termination of Pregnancy,TOKEN_OVERLAP,L0511,Incomplete legal abortion + delayed or excessive haemorrhage,0.833
+Unspecified legal abortion with delayed or excessive haemorrhage,626761000000103,Termination of Pregnancy,TOKEN_OVERLAP,L0521,Complete legal abortion with delayed/excessive haemorrhage,0.833
+Unspecified legal abortion with delayed or excessive haemorrhage,626761000000103,Termination of Pregnancy,TOKEN_OVERLAP,L0511,Incomplete legal abortion + delayed or excessive haemorrhage,0.833
+"[X]Other and unspecified failed induced abortion, complicated by embolism",200488000,Termination of Pregnancy,TOKEN_OVERLAP,Lyu06,"[X]Other+unspcf failed induced abortion,complicated/embolism",0.833
+"[X]Other and unspecified failed induced abortion, complicated by embolism",425881000000109,Termination of Pregnancy,TOKEN_OVERLAP,Lyu06,"[X]Other+unspcf failed induced abortion,complicated/embolism",0.833
+Acute on chronic pelvic inflammatory disease,1263771009,Sexually Transmitted Disease,TOKEN_OVERLAP,K409.,Acute pelvic inflammatory disease,0.8
+HIV 1 nucleic acid assay,398579006,Sexually Transmitted Disease,TOKEN_OVERLAP,43j70,HIV 1 nucleic acid detection assay,0.8
+Human immunodeficiency virus contact,218691000000106,Sexually Transmitted Disease,TOKEN_OVERLAP,ZV019,[V]Contact with+exposure to human immunodeficiency virus,0.8
+Human immunodeficiency virus contact,218701000000106,Sexually Transmitted Disease,TOKEN_OVERLAP,ZV019,[V]Contact with+exposure to human immunodeficiency virus,0.8
+Human immunodeficiency virus resulting in other disease,550891000000106,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuC.,[X]Human immunodeficiency virus disease,0.8
+Human immunodeficiency virus test,143221005,Sexually Transmitted Disease,TOKEN_OVERLAP,9Op3.,Human immunodeficiency virus test not appropriate,0.8
+Neonatal inclusion body conjunctivitis,240591000,Sexually Transmitted Disease,TOKEN_OVERLAP,Q4068,Neonatal dacryocystitis/conjunctivitis-other inclusion body,0.8
+Urethral stricture due to gonococcal infection,72225002,Sexually Transmitted Disease,TOKEN_OVERLAP,K1801,Urethral stricture due to infection EC,0.8
+Urethral stricture due to gonococcal infection,72225002,Sexually Transmitted Disease,TOKEN_OVERLAP,K1800,Urethral stricture due to unspecified infection,0.8
+Failed attempted abortion with pyaemic embolism,42755004,Termination of Pregnancy,TOKEN_OVERLAP,L086.,Failed attempted abortion with embolism,0.8
+"Failed attempted abortion with specified complication, NEC",56083002,Termination of Pregnancy,TOKEN_OVERLAP,L08x.,Failed attempted abortion with complication NOS,0.8
+Failed attempted abortion without complication,90645002,Termination of Pregnancy,TOKEN_OVERLAP,L08x.,Failed attempted abortion with complication NOS,0.8
+Haemorrhage: [delayed &/or excessive] or [post abortion],156090006,Termination of Pregnancy,TOKEN_OVERLAP,L0701,Unspecified abortion with delayed or excessive haemorrhage,0.8
+"Illegal abortion with specified complication, NEC",22442009,Termination of Pregnancy,TOKEN_OVERLAP,L062w,Complete illegal abortion with other specified complication,0.8
+"Illegal abortion with specified complication, NEC",22442009,Termination of Pregnancy,TOKEN_OVERLAP,L061w,Incomplete illegal abortion + other specified complication,0.8
+Incomplete illegal abortion with other specified complication,198751000,Termination of Pregnancy,TOKEN_OVERLAP,L061x,Incomplete illegal abortion with complication NOS,0.8
+Incomplete illegal abortion with other specified complication,198751000,Termination of Pregnancy,TOKEN_OVERLAP,L060w,Unspecified illegal abortion + other specified complication,0.8
+Incomplete illegal abortion with other specified complication,599191000000103,Termination of Pregnancy,TOKEN_OVERLAP,L061x,Incomplete illegal abortion with complication NOS,0.8
+Incomplete illegal abortion with other specified complication,599191000000103,Termination of Pregnancy,TOKEN_OVERLAP,L060w,Unspecified illegal abortion + other specified complication,0.8
+"Legal abortion with specified complication, NEC",19123002,Termination of Pregnancy,TOKEN_OVERLAP,L052w,Complete legal abortion with other specified complication,0.8
+"Legal abortion with specified complication, NEC",19123002,Termination of Pregnancy,TOKEN_OVERLAP,L051w,Incomplete legal abortion with other specified complication,0.8
+Unspecified complete abortion with no mention of complication,700141000000102,Termination of Pregnancy,TOKEN_OVERLAP,L052y,Complete legal abortion with no mention of complication,0.8
+Unspecified complete abortion with no mention of complication,700141000000102,Termination of Pregnancy,TOKEN_OVERLAP,L062y,Complete illegal abortion with no mention of complication,0.8
+Unspecified complete abortion with other specified complication,198801002,Termination of Pregnancy,TOKEN_OVERLAP,L052w,Complete legal abortion with other specified complication,0.8
+Unspecified complete abortion with other specified complication,198801002,Termination of Pregnancy,TOKEN_OVERLAP,L062w,Complete illegal abortion with other specified complication,0.8
+Unspecified complete abortion with other specified complication,698451000000102,Termination of Pregnancy,TOKEN_OVERLAP,L052w,Complete legal abortion with other specified complication,0.8
+Unspecified complete abortion with other specified complication,698451000000102,Termination of Pregnancy,TOKEN_OVERLAP,L062w,Complete illegal abortion with other specified complication,0.8
+Unspecified illegal abortion with other specified complication,198739002,Termination of Pregnancy,TOKEN_OVERLAP,L062w,Complete illegal abortion with other specified complication,0.8
+Unspecified illegal abortion with other specified complication,198739002,Termination of Pregnancy,TOKEN_OVERLAP,L061w,Incomplete illegal abortion + other specified complication,0.8
+Unspecified illegal abortion with other specified complication,599181000000100,Termination of Pregnancy,TOKEN_OVERLAP,L062w,Complete illegal abortion with other specified complication,0.8
+Unspecified illegal abortion with other specified complication,599181000000100,Termination of Pregnancy,TOKEN_OVERLAP,L061w,Incomplete illegal abortion + other specified complication,0.8
+Unspecified incomplete abortion with delayed or excessive haemorrhage,198783006,Termination of Pregnancy,TOKEN_OVERLAP,L0701,Unspecified abortion with delayed or excessive haemorrhage,0.8
+Unspecified incomplete abortion with delayed or excessive haemorrhage,579561000000109,Termination of Pregnancy,TOKEN_OVERLAP,L0701,Unspecified abortion with delayed or excessive haemorrhage,0.8
+Unspecified incomplete abortion with no mention of complication,198791002,Termination of Pregnancy,TOKEN_OVERLAP,L061y,Incomplete illegal abortion with no mention of complication,0.8
+Unspecified incomplete abortion with no mention of complication,198791002,Termination of Pregnancy,TOKEN_OVERLAP,L051y,Incomplete legal abortion with no mention of complication,0.8
+Unspecified incomplete abortion with no mention of complication,644571000000107,Termination of Pregnancy,TOKEN_OVERLAP,L061y,Incomplete illegal abortion with no mention of complication,0.8
+Unspecified incomplete abortion with no mention of complication,644571000000107,Termination of Pregnancy,TOKEN_OVERLAP,L051y,Incomplete legal abortion with no mention of complication,0.8
+Unspecified incomplete abortion with other specified complication,198789005,Termination of Pregnancy,TOKEN_OVERLAP,L051w,Incomplete legal abortion with other specified complication,0.8
+Unspecified incomplete abortion with other specified complication,198789005,Termination of Pregnancy,TOKEN_OVERLAP,L071w,Unspec incomplete abortion with other specified complication,0.8
+Unspecified incomplete abortion with other specified complication,198789005,Termination of Pregnancy,TOKEN_OVERLAP,L061w,Incomplete illegal abortion + other specified complication,0.8
+Unspecified incomplete abortion with other specified complication,626731000000108,Termination of Pregnancy,TOKEN_OVERLAP,L051w,Incomplete legal abortion with other specified complication,0.8
+Unspecified incomplete abortion with other specified complication,626731000000108,Termination of Pregnancy,TOKEN_OVERLAP,L071w,Unspec incomplete abortion with other specified complication,0.8
+Unspecified incomplete abortion with other specified complication,626731000000108,Termination of Pregnancy,TOKEN_OVERLAP,L061w,Incomplete illegal abortion + other specified complication,0.8
+Unspecified legal abortion with delayed or excessive haemorrhage,198693006,Termination of Pregnancy,TOKEN_OVERLAP,L0701,Unspecified abortion with delayed or excessive haemorrhage,0.8
+Unspecified legal abortion with delayed or excessive haemorrhage,626761000000103,Termination of Pregnancy,TOKEN_OVERLAP,L0701,Unspecified abortion with delayed or excessive haemorrhage,0.8
+Unspecified legal abortion with no mention of complication,198702003,Termination of Pregnancy,TOKEN_OVERLAP,L052y,Complete legal abortion with no mention of complication,0.8
+Unspecified legal abortion with no mention of complication,198702003,Termination of Pregnancy,TOKEN_OVERLAP,L051y,Incomplete legal abortion with no mention of complication,0.8
+Unspecified legal abortion with no mention of complication,613981000000107,Termination of Pregnancy,TOKEN_OVERLAP,L052y,Complete legal abortion with no mention of complication,0.8
+Unspecified legal abortion with no mention of complication,613981000000107,Termination of Pregnancy,TOKEN_OVERLAP,L051y,Incomplete legal abortion with no mention of complication,0.8
+History of in-vitro fertilisation procedure,765301000000109,Assisted Fertilisation,TOKEN_OVERLAP,8C84.,In vitro fertilisation procedure,0.75
+IVF - in-vitro fertilisation pregnancy,10231000132102,Assisted Fertilisation,TOKEN_OVERLAP,7M0hz,In vitro fertilisation (IVF) NOS,0.75
+Other specified in vitro fertilisation,232141000000104,Assisted Fertilisation,TOKEN_OVERLAP,7M0hy,Other specified in vitro fertilisation (IVF),0.75
+Gender identity disorder of adolescence,57715001,Gender Related Issues,TOKEN_OVERLAP,Eu64z,"[X]Gender identity disorder, unspecified",0.75
+Gender identity disorder of adulthood,18003009,Gender Related Issues,TOKEN_OVERLAP,Eu64z,"[X]Gender identity disorder, unspecified",0.75
+Other specified operation for sexual transformation,180060001,Gender Related Issues,TOKEN_OVERLAP,7L0Bz,Operation for sexual transformation NOS,0.75
+Other specified operation for sexual transformation,544321000000107,Gender Related Issues,TOKEN_OVERLAP,7L0Bz,Operation for sexual transformation NOS,0.75
+Sexual maturation disorder of sexual identity,280377008,Gender Related Issues,TOKEN_OVERLAP,Eu660,[X]Sexual maturation disorder,0.75
+Counseling for sexually transmitted disease,445563009,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu4J,[X]Unspecified sexually transmitted disease,0.75
+Early congenital syphilis with symptoms,186832005,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu40,"[X]Early congenital syphilis, unspecified",0.75
+Exposure to nonspecific genital infection,444458000,Sexually Transmitted Disease,TOKEN_OVERLAP,A995.,Nonspecific genital infection,0.75
+Genital herpes simplex in pregnancy,104011000119109,Sexually Transmitted Disease,TOKEN_OVERLAP,A541z,Genital herpes simplex NOS,0.75
+Genital herpes unspecified (& [simplex group]),186536000,Sexually Transmitted Disease,TOKEN_OVERLAP,A541z,Genital herpes simplex NOS,0.75
+Gonococcal Bartholin gland abscess,240573005,Sexually Transmitted Disease,TOKEN_OVERLAP,K423.,Abscess of Bartholin's gland,0.75
+Gonococcal tubo-ovarian abscess,237046000,Sexually Transmitted Disease,TOKEN_OVERLAP,K4022,Tubo-ovarian abscess,0.75
+Gonococcal urethral gland abscess,444834005,Sexually Transmitted Disease,TOKEN_OVERLAP,K1702,Urethral gland abscess,0.75
+Human immunodeficiency virus,19030005,Sexually Transmitted Disease,TOKEN_OVERLAP,ZV018,[V]Human immunodeficiency virus - negative,0.75
+Human immunodeficiency virus,19030005,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuC.,[X]Human immunodeficiency virus disease,0.75
+Late congenital cardiovascular syphilis,1142095003,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu42,"[X]Late congenital syphilis, unspecified",0.75
+Late congenital cardiovascular syphilis,1142095003,Sexually Transmitted Disease,TOKEN_OVERLAP,A907.,Unspecified late congenital syphilis,0.75
+Late congenital cardiovascular syphilis,1142095003,Sexually Transmitted Disease,TOKEN_OVERLAP,A905z,Other late congenital syphilis NOS,0.75
+Late congenital neurovascular syphilis,240553000,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu42,"[X]Late congenital syphilis, unspecified",0.75
+Late congenital neurovascular syphilis,240553000,Sexually Transmitted Disease,TOKEN_OVERLAP,A907.,Unspecified late congenital syphilis,0.75
+Late congenital neurovascular syphilis,240553000,Sexually Transmitted Disease,TOKEN_OVERLAP,A905z,Other late congenital syphilis NOS,0.75
+Mucocutaneous early congenital syphilis,721583004,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu40,"[X]Early congenital syphilis, unspecified",0.75
+Recurrent genital herpes simplex,402894005,Sexually Transmitted Disease,TOKEN_OVERLAP,A541z,Genital herpes simplex NOS,0.75
+Sexually transmitted disease carrier,15927341000119106,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu4J,[X]Unspecified sexually transmitted disease,0.75
+Sexually transmitted disease clinic,25681007,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu4J,[X]Unspecified sexually transmitted disease,0.75
+Sexually transmitted disease in childbirth,10759841000119104,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu4J,[X]Unspecified sexually transmitted disease,0.75
+Symptomatic late congenital syphilis,735515000,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu42,"[X]Late congenital syphilis, unspecified",0.75
+Symptomatic late congenital syphilis,735515000,Sexually Transmitted Disease,TOKEN_OVERLAP,A907.,Unspecified late congenital syphilis,0.75
+Syphilis and other venereal diseases,266124009,Sexually Transmitted Disease,TOKEN_OVERLAP,A9y..,Other specified syphilis or other venereal diseases,0.75
+Syphilis and other venereal diseases,689371000000106,Sexually Transmitted Disease,TOKEN_OVERLAP,A9y..,Other specified syphilis or other venereal diseases,0.75
+Syphilis encephalitis (& congenital),192699001,Sexually Transmitted Disease,TOKEN_OVERLAP,F0331,Encephalitis due to congenital syphilis,0.75
+Syphilis titre test NOS,691691000000104,Sexually Transmitted Disease,TOKEN_OVERLAP,4381.,Syphilis titre test negative,0.75
+Syphilis titre test NOS,691691000000104,Sexually Transmitted Disease,TOKEN_OVERLAP,4382.,Syphilis titre test positive,0.75
+Syphilitic endocarditis of aortic valve,186876003,Sexually Transmitted Disease,TOKEN_OVERLAP,A9320,Syphilitic endocarditis of unspecified valve,0.75
+Syphilitic: [endocarditis] or [valve disease],186873006,Sexually Transmitted Disease,TOKEN_OVERLAP,A9320,Syphilitic endocarditis of unspecified valve,0.75
+Under care of GU medicine physician,305489005,Sexually Transmitted Disease,TOKEN_OVERLAP,9NNf.,Under care of physician,0.75
+Under care of genitourinary nurse,305562003,Sexually Transmitted Disease,TOKEN_OVERLAP,9NNg.,Under care of nurse,0.75
+VD - venereal disease contact,268505009,Sexually Transmitted Disease,TOKEN_OVERLAP,ZV016,[V]Contact with or exposure to venereal disease,0.75
+[V]VD - venereal disease contact,315655009,Sexually Transmitted Disease,TOKEN_OVERLAP,ZV016,[V]Contact with or exposure to venereal disease,0.75
+[V]VD - venereal disease contact,464851000000107,Sexually Transmitted Disease,TOKEN_OVERLAP,ZV016,[V]Contact with or exposure to venereal disease,0.75
+[X]Other symptomatic late syphilis,187357004,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu41,"[X]Other late congenital syphilis, symptomatic",0.75
+[X]Other symptomatic late syphilis,389351000000106,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu41,"[X]Other late congenital syphilis, symptomatic",0.75
+Abortion complicated by embolism,18119004,Termination of Pregnancy,TOKEN_OVERLAP,L0432,Unspecified inevitable abortion complicated by embolism,0.75
+Abortion complicated by metabolic disorder,111429005,Termination of Pregnancy,TOKEN_OVERLAP,L0704,Unspecified abortion with metabolic disorder,0.75
+Abortion complicated by renal failure,10123006,Termination of Pregnancy,TOKEN_OVERLAP,L0703,Unspecified abortion with renal failure,0.75
+Abortion with acute renal failure,14853005,Termination of Pregnancy,TOKEN_OVERLAP,K04z.,Acute renal failure NOS,0.75
+Abortion with acute renal failure,14853005,Termination of Pregnancy,TOKEN_OVERLAP,K04y.,Other acute renal failure,0.75
+Abortion with acute renal failure,14853005,Termination of Pregnancy,TOKEN_OVERLAP,K04..,Acute renal failure,0.75
+Abortion with urinary tract infection,87307008,Termination of Pregnancy,TOKEN_OVERLAP,K1905,Urinary tract infection,0.75
+Abortion without complication,51830007,Termination of Pregnancy,TOKEN_OVERLAP,L043z,Unspecified inevitable abortion without complication,0.75
+Abortion: [spontaneous] or [complete] or [incomplete],156071003,Termination of Pregnancy,TOKEN_OVERLAP,L042.,Spontaneous abortion complete,0.75
+Abortion: [spontaneous] or [complete] or [incomplete],156071003,Termination of Pregnancy,TOKEN_OVERLAP,L041.,Spontaneous abortion incomplete,0.75
+Abortion: [spontaneous] or [complete] or [incomplete],156071003,Termination of Pregnancy,TOKEN_OVERLAP,L041z,Incomplete spontaneous abortion NOS,0.75
+Illegal abortion with pyemic embolism,91657000,Termination of Pregnancy,TOKEN_OVERLAP,L0606,Unspecified illegal abortion with embolism,0.75
+Illegal abortion with soap embolism,72044001,Termination of Pregnancy,TOKEN_OVERLAP,L0606,Unspecified illegal abortion with embolism,0.75
+Illegal abortion without complication,7802000,Termination of Pregnancy,TOKEN_OVERLAP,L060x,Unspecified illegal abortion with complication NOS,0.75
+Legal abortion with pyaemic embolism,29601003,Termination of Pregnancy,TOKEN_OVERLAP,L0506,Unspecified legal abortion with embolism,0.75
+Legal abortion with soap embolism,88980002,Termination of Pregnancy,TOKEN_OVERLAP,L0506,Unspecified legal abortion with embolism,0.75
+Referral for medical termination of pregnancy,339101000000102,Termination of Pregnancy,TOKEN_OVERLAP,1547.,H/O: medical termination of pregnancy,0.75
+Referral for medical termination of pregnancy,439163006,Termination of Pregnancy,TOKEN_OVERLAP,1547.,H/O: medical termination of pregnancy,0.75
+"Unspecified abortion with specified complication, NEC",2787008,Termination of Pregnancy,TOKEN_OVERLAP,L050w,Unspecified legal abortion with other specified complication,0.75
+"Unspecified abortion with specified complication, NEC",2787008,Termination of Pregnancy,TOKEN_OVERLAP,L060w,Unspecified illegal abortion + other specified complication,0.75
+Unspecified legal abortion with no mention of complication,198702003,Termination of Pregnancy,TOKEN_OVERLAP,L050x,Unspecified legal abortion with complication NOS,0.75
+Unspecified legal abortion with no mention of complication,613981000000107,Termination of Pregnancy,TOKEN_OVERLAP,L050x,Unspecified legal abortion with complication NOS,0.75
+Hemophagocytic syndrome with human immunodeficiency virus infection,713444005,Sexually Transmitted Disease,TOKEN_OVERLAP,A788z,Acquired human immunodeficiency virus infection syndrome NOS,0.714
+Human immunodeficiency virus (HIV) disease resulting in candidiasis,186719005,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuCD,[X]Unspecified human immunodeficiency virus [HIV] disease,0.714
+Human immunodeficiency virus (HIV) disease resulting in cytomegaloviral disease,186718002,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuCD,[X]Unspecified human immunodeficiency virus [HIV] disease,0.714
+Human immunodeficiency virus infection wasting syndrome,186727001,Sexually Transmitted Disease,TOKEN_OVERLAP,A788z,Acquired human immunodeficiency virus infection syndrome NOS,0.714
+"Maternal gonorrhoea, unspecified whether during pregnancy or the puerperium",593761000000107,Sexually Transmitted Disease,TOKEN_OVERLAP,L1710,"Maternal gonorrhoea, unspec whether in pregnancy/puerperium",0.714
+"Maternal syphilis during pregnancy, childbirth or the puerperium NOS",199160009,Sexually Transmitted Disease,TOKEN_OVERLAP,L174z,Maternal malaria during pregnancy/childbirth/puerperium NOS,0.714
+"Maternal syphilis during pregnancy, childbirth or the puerperium NOS",586791000000106,Sexually Transmitted Disease,TOKEN_OVERLAP,L174z,Maternal malaria during pregnancy/childbirth/puerperium NOS,0.714
+"Maternal syphilis, unspecified whether during pregnancy or the puerperium",199155005,Sexually Transmitted Disease,TOKEN_OVERLAP,L1700,"Maternal syphilis, unspec whether in pregnancy or puerperium",0.714
+"Maternal syphilis, unspecified whether during pregnancy or the puerperium",586781000000109,Sexually Transmitted Disease,TOKEN_OVERLAP,L1700,"Maternal syphilis, unspec whether in pregnancy or puerperium",0.714
+Other maternal venereal disease in pregnancy - baby delivered,199170006,Sexually Transmitted Disease,TOKEN_OVERLAP,L1722,Other maternal venereal disease in puerperium-baby delivered,0.714
+Other maternal venereal disease in pregnancy - baby delivered,199170006,Sexually Transmitted Disease,TOKEN_OVERLAP,L1761,Other maternal viral disease in pregnancy - baby delivered,0.714
+Other maternal venereal disease in pregnancy - baby delivered,199170006,Sexually Transmitted Disease,TOKEN_OVERLAP,L1723,Other maternal venereal dis. in pregnancy-baby not delivered,0.714
+Other maternal venereal disease in pregnancy - baby delivered,620591000000101,Sexually Transmitted Disease,TOKEN_OVERLAP,L1722,Other maternal venereal disease in puerperium-baby delivered,0.714
+Other maternal venereal disease in pregnancy - baby delivered,620591000000101,Sexually Transmitted Disease,TOKEN_OVERLAP,L1761,Other maternal viral disease in pregnancy - baby delivered,0.714
+Other maternal venereal disease in pregnancy - baby delivered,620591000000101,Sexually Transmitted Disease,TOKEN_OVERLAP,L1723,Other maternal venereal dis. in pregnancy-baby not delivered,0.714
+[V]Family history of human immunodeficiency virus [HIV] disease,480411000000100,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuCD,[X]Unspecified human immunodeficiency virus [HIV] disease,0.714
+[X]HIV disease resulting in multiple diseases classified elsewhere,186711008,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuCA,[X]HIV disease resulting in multiple diseases CE,0.714
+[X]HIV disease resulting in multiple diseases classified elsewhere,187450003,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuCA,[X]HIV disease resulting in multiple diseases CE,0.714
+[X]HIV disease resulting in multiple diseases classified elsewhere,413321000000109,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuCA,[X]HIV disease resulting in multiple diseases CE,0.714
+[X]HIV disease resulting in multiple diseases classified elsewhere,444811000000101,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuCA,[X]HIV disease resulting in multiple diseases CE,0.714
+[X]Hiv disease resulting in other infectious and parasitic diseases,418661000000104,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuC5,[X]HIV disease resulting/unspcf infectious+parasitic disease,0.714
+[X]Hiv disease resulting in other infectious and parasitic diseases,418661000000104,Sexually Transmitted Disease,TOKEN_OVERLAP,A788X,HIV disease resulting/unspcf infectious+parasitic disease,0.714
+Abortion complicated by damage to pelvic organs AND/OR tissues,373908001,Termination of Pregnancy,TOKEN_OVERLAP,L0502,Unspecified legal abortion + damage to pelvic organs/tissues,0.714
+Abortion complicated by damage to pelvic organs AND/OR tissues,58475007,Termination of Pregnancy,TOKEN_OVERLAP,L0502,Unspecified legal abortion + damage to pelvic organs/tissues,0.714
+Complication NOS following abortion and ectopic and molar pregnancy,198872005,Termination of Pregnancy,TOKEN_OVERLAP,L090y,Sepsis NOS following abortion/ectopic/molar pregnancy,0.714
+Complication NOS following abortion and ectopic and molar pregnancy,599201000000101,Termination of Pregnancy,TOKEN_OVERLAP,L090y,Sepsis NOS following abortion/ectopic/molar pregnancy,0.714
+Legal abortion complicated by genital-pelvic infection,56827004,Termination of Pregnancy,TOKEN_OVERLAP,L0500,Unspecified legal abortion + genital tract/pelvic infection,0.714
+Other specified introduction of abortifacient into uterine cavity,176856002,Termination of Pregnancy,TOKEN_OVERLAP,7E0Ay,Other specified introduction of gamete into uterine cavity,0.714
+Other specified introduction of abortifacient into uterine cavity,572641000000101,Termination of Pregnancy,TOKEN_OVERLAP,7E0Ay,Other specified introduction of gamete into uterine cavity,0.714
+Sepsis NOS following abortion and ectopic and molar pregnancy,198825005,Termination of Pregnancy,TOKEN_OVERLAP,L09z.,Complication NOS following abortion/ectopic/molar pregnancy,0.714
+Sepsis NOS following abortion and ectopic and molar pregnancy,592171000000106,Termination of Pregnancy,TOKEN_OVERLAP,L09z.,Complication NOS following abortion/ectopic/molar pregnancy,0.714
+Unspecified complete abortion with damage to pelvic organs or tissues,198796007,Termination of Pregnancy,TOKEN_OVERLAP,L0502,Unspecified legal abortion + damage to pelvic organs/tissues,0.714
+Unspecified complete abortion with damage to pelvic organs or tissues,698441000000100,Termination of Pregnancy,TOKEN_OVERLAP,L0502,Unspecified legal abortion + damage to pelvic organs/tissues,0.714
+Unspecified illegal abortion with damage to pelvic organs or tissues,198734007,Termination of Pregnancy,TOKEN_OVERLAP,L0502,Unspecified legal abortion + damage to pelvic organs/tissues,0.714
+Unspecified illegal abortion with damage to pelvic organs or tissues,661421000000101,Termination of Pregnancy,TOKEN_OVERLAP,L0502,Unspecified legal abortion + damage to pelvic organs/tissues,0.714
+Unspecified incomplete abortion with damage to pelvic organs or tissues,198784000,Termination of Pregnancy,TOKEN_OVERLAP,L0502,Unspecified legal abortion + damage to pelvic organs/tissues,0.714
+Unspecified incomplete abortion with damage to pelvic organs or tissues,579571000000102,Termination of Pregnancy,TOKEN_OVERLAP,L0502,Unspecified legal abortion + damage to pelvic organs/tissues,0.714
+"[X]Complication following abortion and ectopic and molar pregnancy, unspecified",200493002,Termination of Pregnancy,TOKEN_OVERLAP,L090y,Sepsis NOS following abortion/ectopic/molar pregnancy,0.714
+"[X]Complication following abortion and ectopic and molar pregnancy, unspecified",463061000000100,Termination of Pregnancy,TOKEN_OVERLAP,L090y,Sepsis NOS following abortion/ectopic/molar pregnancy,0.714
+[X]Other complications following abortion and ectopic and molar pregnancy,200492007,Termination of Pregnancy,TOKEN_OVERLAP,L09z.,Complication NOS following abortion/ectopic/molar pregnancy,0.714
+[X]Other complications following abortion and ectopic and molar pregnancy,200492007,Termination of Pregnancy,TOKEN_OVERLAP,L090y,Sepsis NOS following abortion/ectopic/molar pregnancy,0.714
+[X]Other complications following abortion and ectopic and molar pregnancy,390641000000108,Termination of Pregnancy,TOKEN_OVERLAP,L09z.,Complication NOS following abortion/ectopic/molar pregnancy,0.714
+[X]Other complications following abortion and ectopic and molar pregnancy,390641000000108,Termination of Pregnancy,TOKEN_OVERLAP,L090y,Sepsis NOS following abortion/ectopic/molar pregnancy,0.714
+Risk to the life of the pregnant woman greater than if the pregnancy was terminated,185020000,Termination of Pregnancy,TOKEN_OVERLAP,9Ea0.,Risk life pregnant woman greater than if pregnancy terminatd,0.7
+Harvest of reproductive tissue,309096008,Assisted Fertilisation,TOKEN_OVERLAP,7M2Ez,Harvest of other tissue NOS,0.667
+Harvest of reproductive tissue,309096008,Assisted Fertilisation,TOKEN_OVERLAP,7M2E.,Harvest of other tissue,0.667
+In vitro fertilisation NOS,232151000000101,Assisted Fertilisation,TOKEN_OVERLAP,8C84.,In vitro fertilisation procedure,0.667
+In vitro fertilisation NOS,232151000000101,Assisted Fertilisation,TOKEN_OVERLAP,7M0hz,In vitro fertilisation (IVF) NOS,0.667
+AIDS with background retinopathy,69154000,Sexually Transmitted Disease,TOKEN_OVERLAP,F421z,Other background retinopathy NOS,0.667
+AIDS with background retinopathy,69154000,Sexually Transmitted Disease,TOKEN_OVERLAP,F4210,Unspecified background retinopathy,0.667
+AIDS with background retinopathy,69154000,Sexually Transmitted Disease,TOKEN_OVERLAP,F421.,Other background retinopathy,0.667
+Acute gonorrhea of lower genitourinary tract,186908002,Sexually Transmitted Disease,TOKEN_OVERLAP,A980z,Acute gonorrhoea of lower genitourinary tract NOS,0.667
+Acute gonorrhea upper genitourinary tract NOS,186914009,Sexually Transmitted Disease,TOKEN_OVERLAP,A9810,Acute unspecified gonorrhoea of upper genitourinary tract,0.667
+Acute gonorrhea upper genitourinary tract NOS,186914009,Sexually Transmitted Disease,TOKEN_OVERLAP,A981z,Acute gonorrhoea upper genitourinary tract NOS,0.667
+Acute gonorrhoea of upper genitourinary tract,186910000,Sexually Transmitted Disease,TOKEN_OVERLAP,A983z,Chronic gonorrhoea of upper genitourinary tract NOS,0.667
+Anal swab for gonorrhoea,776641000000101,Sexually Transmitted Disease,TOKEN_OVERLAP,4JH6.,Anal swab,0.667
+Anal swab for gonorrhoea,776651000000103,Sexually Transmitted Disease,TOKEN_OVERLAP,4JH6.,Anal swab,0.667
+Anetoderma secondary to syphilis,402952006,Sexually Transmitted Disease,TOKEN_OVERLAP,A918z,Other secondary syphilis NOS,0.667
+Anetoderma secondary to syphilis,402952006,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu45,[X]Other secondary syphilis,0.667
+Anetoderma secondary to syphilis,402952006,Sexually Transmitted Disease,TOKEN_OVERLAP,A919.,Unspecified secondary syphilis,0.667
+Chlamydial epididymo-orchitis,236773004,Sexually Transmitted Disease,TOKEN_OVERLAP,K242.,Epididymo-orchitis,0.667
+Chlamydial epididymo-orchitis,236773004,Sexually Transmitted Disease,TOKEN_OVERLAP,K242z,Epididymo-orchitis NOS,0.667
+Chlamydial epididymo-orchitis,236773004,Sexually Transmitted Disease,TOKEN_OVERLAP,K2422,Epididymo-orchitis unspecified,0.667
+Chronic gonorrhea of lower genitourinary tract,64389005,Sexually Transmitted Disease,TOKEN_OVERLAP,A982z,Chronic gonorrhoea of lower genitourinary tract NOS,0.667
+Chronic gonorrhea of upper genitourinary tract NOS,186921009,Sexually Transmitted Disease,TOKEN_OVERLAP,A983z,Chronic gonorrhoea of upper genitourinary tract NOS,0.667
+Chronic gonorrhea of upper genitourinary tract NOS,186921009,Sexually Transmitted Disease,TOKEN_OVERLAP,A9830,Chronic unspecified gonorrhoea of upper genitourinary tract,0.667
+Congenital syphilitic hepatomegaly,192008,Sexually Transmitted Disease,TOKEN_OVERLAP,PB6y1,Congenital hepatomegaly,0.667
+Congenital syphilitic hepatomegaly,275375006,Sexually Transmitted Disease,TOKEN_OVERLAP,PB6y1,Congenital hepatomegaly,0.667
+Congenital syphilitic splenomegaly,275372009,Sexually Transmitted Disease,TOKEN_OVERLAP,PK03.,Congenital splenomegaly,0.667
+Congenital syphilitic splenomegaly,56118002,Sexually Transmitted Disease,TOKEN_OVERLAP,PK03.,Congenital splenomegaly,0.667
+Cryotherapy of vulval wart,236834006,Sexually Transmitted Disease,TOKEN_OVERLAP,7G097,Cryotherapy to wart,0.667
+Disseminated gonococcal infection,762257007,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu4C,"[X]Gonococcal infection, unspecified",0.667
+Enteritis due to human immunodeficiency virus disease,860874006,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuC.,[X]Human immunodeficiency virus disease,0.667
+FTA(Abs) - Fluorescent treponemal antibody test,9232009,Sexually Transmitted Disease,TOKEN_OVERLAP,4386.,Fluorescent treponemal antibody test,0.667
+Genital herpes in childbirth,10754701000119100,Sexually Transmitted Disease,TOKEN_OVERLAP,A5410,Genital herpes unspecified,0.667
+Genital mycoplasma infection,240594008,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu3V,"[X]Mycoplasma infection, unspecified",0.667
+Genital mycoplasma infection,240594008,Sexually Transmitted Disease,TOKEN_OVERLAP,A3By3,Mycoplasma infection,0.667
+Gonococcal epididymo-orchitis,236772009,Sexually Transmitted Disease,TOKEN_OVERLAP,K242.,Epididymo-orchitis,0.667
+Gonococcal epididymo-orchitis,236772009,Sexually Transmitted Disease,TOKEN_OVERLAP,K242z,Epididymo-orchitis NOS,0.667
+Gonococcal epididymo-orchitis,236772009,Sexually Transmitted Disease,TOKEN_OVERLAP,K2422,Epididymo-orchitis unspecified,0.667
+Gonococcal infection of the central nervous system,406581000,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu8F,[X]Unspecified viral infection/central nervous system,0.667
+Gonococcal pelvic peritonitis,307423008,Sexually Transmitted Disease,TOKEN_OVERLAP,J5500,Peritonitis - gonococcal,0.667
+Gonococcal seminal vesiculitis,301990003,Sexually Transmitted Disease,TOKEN_OVERLAP,K2800,Seminal vesiculitis unspecified,0.667
+Gonococcal seminal vesiculitis,301990003,Sexually Transmitted Disease,TOKEN_OVERLAP,K280z,Seminal vesiculitis NOS,0.667
+Gonococcal seminal vesiculitis,301990003,Sexually Transmitted Disease,TOKEN_OVERLAP,K280.,Seminal vesiculitis,0.667
+Gonococcal skin lesion,240583009,Sexually Transmitted Disease,TOKEN_OVERLAP,M2z0.,Skin lesion,0.667
+Gonococcal skin lesion,240583009,Sexually Transmitted Disease,TOKEN_OVERLAP,2FY..,O/E - skin lesion,0.667
+Gonococcal synovitis &/or tenosynovitis,186927008,Sexually Transmitted Disease,TOKEN_OVERLAP,N2200,Synovitis or tenosynovitis NOS,0.667
+Gonococcal synovitis &/or tenosynovitis,186927008,Sexually Transmitted Disease,TOKEN_OVERLAP,Nyu91,[X]Other synovitis and tenosynovitis,0.667
+Gonococcal synovitis &/or tenosynovitis,186927008,Sexually Transmitted Disease,TOKEN_OVERLAP,N220.,Synovitis and tenosynovitis,0.667
+Gonococcal urethral abscess,236687008,Sexually Transmitted Disease,TOKEN_OVERLAP,K1700,Urethral abscess unspecified,0.667
+Gonococcal urethral abscess,236687008,Sexually Transmitted Disease,TOKEN_OVERLAP,K170z,Urethral abscess NOS,0.667
+"Gonorrhoea during pregnancy, childbirth or the puerperium NOS",199167007,Sexually Transmitted Disease,TOKEN_OVERLAP,L182z,Anaemia during pregnancy/childbirth/puerperium NOS,0.667
+"Gonorrhoea during pregnancy, childbirth or the puerperium NOS",199167007,Sexually Transmitted Disease,TOKEN_OVERLAP,L182.,"Anaemia during pregnancy, childbirth and the puerperium",0.667
+"Gonorrhoea during pregnancy, childbirth or the puerperium NOS",199167007,Sexually Transmitted Disease,TOKEN_OVERLAP,L171z,Maternal gonorrhoea in pregnancy/childbirth/puerperium NOS,0.667
+"Gonorrhoea during pregnancy, childbirth or the puerperium NOS",618961000000109,Sexually Transmitted Disease,TOKEN_OVERLAP,L182z,Anaemia during pregnancy/childbirth/puerperium NOS,0.667
+"Gonorrhoea during pregnancy, childbirth or the puerperium NOS",618961000000109,Sexually Transmitted Disease,TOKEN_OVERLAP,L182.,"Anaemia during pregnancy, childbirth and the puerperium",0.667
+"Gonorrhoea during pregnancy, childbirth or the puerperium NOS",618961000000109,Sexually Transmitted Disease,TOKEN_OVERLAP,L171z,Maternal gonorrhoea in pregnancy/childbirth/puerperium NOS,0.667
+Gonorrhoea screening declined,218611000000102,Sexually Transmitted Disease,TOKEN_OVERLAP,8IH3.,Screening declined,0.667
+Gonorrhoea screening declined,218621000000108,Sexually Transmitted Disease,TOKEN_OVERLAP,8IH3.,Screening declined,0.667
+H/O: [venereal disease] or [STD],161418008,Sexually Transmitted Disease,TOKEN_OVERLAP,A99z.,Venereal disease NOS,0.667
+H/O: [venereal disease] or [STD],161418008,Sexually Transmitted Disease,TOKEN_OVERLAP,1415.,H/O: venereal disease,0.667
+HIV (human immunodeficiency virus) in childbirth,10755671000119100,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuCD,[X]Unspecified human immunodeficiency virus [HIV] disease,0.667
+HIV (human immunodeficiency virus) nursing,24091000087107,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuCD,[X]Unspecified human immunodeficiency virus [HIV] disease,0.667
+HIV - Human immunodeficiency virus encephalitis,398329009,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuCD,[X]Unspecified human immunodeficiency virus [HIV] disease,0.667
+HIV - Human immunodeficiency virus leukoencephalopathy,230180003,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuCD,[X]Unspecified human immunodeficiency virus [HIV] disease,0.667
+HIV - Human immunodeficiency virus myopathy,240103002,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuCD,[X]Unspecified human immunodeficiency virus [HIV] disease,0.667
+HIV1 antibody level,143474003,Sexually Transmitted Disease,TOKEN_OVERLAP,43mJ.,Yo antibody level,0.667
+HIV1 antibody level,143474003,Sexually Transmitted Disease,TOKEN_OVERLAP,43N0.,Ro antibody level,0.667
+HIV1 antibody level,143474003,Sexually Transmitted Disease,TOKEN_OVERLAP,43N2.,Sm antibody level,0.667
+HIV1 antibody level,166106008,Sexually Transmitted Disease,TOKEN_OVERLAP,43mJ.,Yo antibody level,0.667
+HIV1 antibody level,166106008,Sexually Transmitted Disease,TOKEN_OVERLAP,43N0.,Ro antibody level,0.667
+HIV1 antibody level,166106008,Sexually Transmitted Disease,TOKEN_OVERLAP,43N2.,Sm antibody level,0.667
+HIV1 antibody level,28804003,Sexually Transmitted Disease,TOKEN_OVERLAP,43mJ.,Yo antibody level,0.667
+HIV1 antibody level,28804003,Sexually Transmitted Disease,TOKEN_OVERLAP,43N0.,Ro antibody level,0.667
+HIV1 antibody level,28804003,Sexually Transmitted Disease,TOKEN_OVERLAP,43N2.,Sm antibody level,0.667
+HIV2 antibody level,143475002,Sexually Transmitted Disease,TOKEN_OVERLAP,43mJ.,Yo antibody level,0.667
+HIV2 antibody level,143475002,Sexually Transmitted Disease,TOKEN_OVERLAP,43N0.,Ro antibody level,0.667
+HIV2 antibody level,143475002,Sexually Transmitted Disease,TOKEN_OVERLAP,43N2.,Sm antibody level,0.667
+HIV2 antibody level,166107004,Sexually Transmitted Disease,TOKEN_OVERLAP,43mJ.,Yo antibody level,0.667
+HIV2 antibody level,166107004,Sexually Transmitted Disease,TOKEN_OVERLAP,43N0.,Ro antibody level,0.667
+HIV2 antibody level,166107004,Sexually Transmitted Disease,TOKEN_OVERLAP,43N2.,Sm antibody level,0.667
+HIV2 antibody level,27494001,Sexually Transmitted Disease,TOKEN_OVERLAP,43mJ.,Yo antibody level,0.667
+HIV2 antibody level,27494001,Sexually Transmitted Disease,TOKEN_OVERLAP,43N0.,Ro antibody level,0.667
+HIV2 antibody level,27494001,Sexually Transmitted Disease,TOKEN_OVERLAP,43N2.,Sm antibody level,0.667
+History of - venereal disease,271394008,Sexually Transmitted Disease,TOKEN_OVERLAP,A99z.,Venereal disease NOS,0.667
+History of - venereal disease,271394008,Sexually Transmitted Disease,TOKEN_OVERLAP,1415.,H/O: venereal disease,0.667
+Human immunodeficiency virus (HIV) status,278977008,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuCD,[X]Unspecified human immunodeficiency virus [HIV] disease,0.667
+Human immunodeficiency virus 1 infection,40780007,Sexually Transmitted Disease,TOKEN_OVERLAP,A788z,Acquired human immunodeficiency virus infection syndrome NOS,0.667
+Human immunodeficiency virus II infection,79019005,Sexually Transmitted Disease,TOKEN_OVERLAP,A788z,Acquired human immunodeficiency virus infection syndrome NOS,0.667
+Human immunodeficiency virus avidity test,934501000000102,Sexually Transmitted Disease,TOKEN_OVERLAP,9Op3.,Human immunodeficiency virus test not appropriate,0.667
+Human immunodeficiency virus blood test,272371000000105,Sexually Transmitted Disease,TOKEN_OVERLAP,9Op3.,Human immunodeficiency virus test not appropriate,0.667
+Human immunodeficiency virus disease enteritis of intestine,1193752001,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuC.,[X]Human immunodeficiency virus disease,0.667
+Human immunodeficiency virus modified skin disease,1142055000,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuC.,[X]Human immunodeficiency virus disease,0.667
+Human immunodeficiency virus resulting in other disease,550891000000106,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuCD,[X]Unspecified human immunodeficiency virus [HIV] disease,0.667
+Human immunodeficiency virus test equivocal,249651000000103,Sexually Transmitted Disease,TOKEN_OVERLAP,9Op3.,Human immunodeficiency virus test not appropriate,0.667
+Human immunodeficiency virus test equivocal,252281000000100,Sexually Transmitted Disease,TOKEN_OVERLAP,9Op3.,Human immunodeficiency virus test not appropriate,0.667
+Human immunodeficiency virus test kit,109179006,Sexually Transmitted Disease,TOKEN_OVERLAP,9Op3.,Human immunodeficiency virus test not appropriate,0.667
+Human papillomavirus,9482002,Sexually Transmitted Disease,TOKEN_OVERLAP,n4z..,HUMAN PAPILLOMAVIRUS VACCINE,0.667
+Human papillomavirus,9482002,Sexually Transmitted Disease,TOKEN_OVERLAP,682D.,Human papillomavirus screening,0.667
+Human papillomavirus 32,423143001,Sexually Transmitted Disease,TOKEN_OVERLAP,n4z..,HUMAN PAPILLOMAVIRUS VACCINE,0.667
+Human papillomavirus 32,423143001,Sexually Transmitted Disease,TOKEN_OVERLAP,682D.,Human papillomavirus screening,0.667
+Late cardiovascular syphilis,195526002,Sexually Transmitted Disease,TOKEN_OVERLAP,A93z.,Cardiovascular syphilis NOS,0.667
+Late cardiovascular syphilis,195526002,Sexually Transmitted Disease,TOKEN_OVERLAP,Gy0..,Cardiovascular syphilis,0.667
+Late cardiovascular syphilis,195526002,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu49,"[X]Late syphilis, unspecified",0.667
+Late cardiovascular syphilis,266131008,Sexually Transmitted Disease,TOKEN_OVERLAP,A93z.,Cardiovascular syphilis NOS,0.667
+Late cardiovascular syphilis,266131008,Sexually Transmitted Disease,TOKEN_OVERLAP,Gy0..,Cardiovascular syphilis,0.667
+Late cardiovascular syphilis,266131008,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu49,"[X]Late syphilis, unspecified",0.667
+Late secondary syphilis,402947001,Sexually Transmitted Disease,TOKEN_OVERLAP,A918z,Other secondary syphilis NOS,0.667
+Late secondary syphilis,402947001,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu49,"[X]Late syphilis, unspecified",0.667
+Late secondary syphilis,402947001,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu45,[X]Other secondary syphilis,0.667
+Late syphilis of lung,1010615002,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu49,"[X]Late syphilis, unspecified",0.667
+Late syphilis of lung,1010615002,Sexually Transmitted Disease,TOKEN_OVERLAP,A970.,Late syphilis unspecified,0.667
+Late syphilis of skin,788975001,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu49,"[X]Late syphilis, unspecified",0.667
+Late syphilis of skin,788975001,Sexually Transmitted Disease,TOKEN_OVERLAP,A970.,Late syphilis unspecified,0.667
+Latent early syphilis NOS,186869008,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu46,"[X]Early syphilis, unspecified",0.667
+Latent early syphilis NOS,186869008,Sexually Transmitted Disease,TOKEN_OVERLAP,A971.,Latent syphilis unspecified,0.667
+Latent early syphilis NOS,186869008,Sexually Transmitted Disease,TOKEN_OVERLAP,A91X.,"Early syphilis, unspecified",0.667
+Latent early syphilis NOS,561741000000108,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu46,"[X]Early syphilis, unspecified",0.667
+Latent early syphilis NOS,561741000000108,Sexually Transmitted Disease,TOKEN_OVERLAP,A971.,Latent syphilis unspecified,0.667
+Latent early syphilis NOS,561741000000108,Sexually Transmitted Disease,TOKEN_OVERLAP,A91X.,"Early syphilis, unspecified",0.667
+Latent syphilis (+ sero.),67125004,Sexually Transmitted Disease,TOKEN_OVERLAP,A971.,Latent syphilis unspecified,0.667
+Neonatal chlamydial dacryocystitis,276681001,Sexually Transmitted Disease,TOKEN_OVERLAP,Q4062,Neonatal dacryocystitis,0.667
+Neonatal chlamydial infection,240590004,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu62,"[X]Chlamydial infection, unspecified",0.667
+Neonatal chlamydial infection,240590004,Sexually Transmitted Disease,TOKEN_OVERLAP,A78AW,"Chlamydial infection, unspecified",0.667
+Neonatal chlamydial pneumonia,233610007,Sexually Transmitted Disease,TOKEN_OVERLAP,H233.,Chlamydial pneumonia,0.667
+Neonatal gonococcal infection,240571007,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu4C,"[X]Gonococcal infection, unspecified",0.667
+Ocular late syphilis,788998009,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu49,"[X]Late syphilis, unspecified",0.667
+Ocular late syphilis,788998009,Sexually Transmitted Disease,TOKEN_OVERLAP,A970.,Late syphilis unspecified,0.667
+Oesophagitis due to human immunodeficiency virus disease,860872005,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuC.,[X]Human immunodeficiency virus disease,0.667
+Other forms of secondary syphilis,186862004,Sexually Transmitted Disease,TOKEN_OVERLAP,A918z,Other secondary syphilis NOS,0.667
+Other forms of secondary syphilis,186862004,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu45,[X]Other secondary syphilis,0.667
+Other forms of secondary syphilis,186862004,Sexually Transmitted Disease,TOKEN_OVERLAP,A919.,Unspecified secondary syphilis,0.667
+Other forms of secondary syphilis,546231000000107,Sexually Transmitted Disease,TOKEN_OVERLAP,A918z,Other secondary syphilis NOS,0.667
+Other forms of secondary syphilis,546231000000107,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu45,[X]Other secondary syphilis,0.667
+Other forms of secondary syphilis,546231000000107,Sexually Transmitted Disease,TOKEN_OVERLAP,A919.,Unspecified secondary syphilis,0.667
+Other maternal venereal disease during pregnancy - baby not yet delivered,199172003,Sexually Transmitted Disease,TOKEN_OVERLAP,L1743,Maternal malaria during pregnancy - baby not yet delivered,0.667
+Other maternal venereal disease during pregnancy - baby not yet delivered,199172003,Sexually Transmitted Disease,TOKEN_OVERLAP,L1753,Maternal rubella during pregnancy - baby not yet delivered,0.667
+Other maternal venereal disease during pregnancy - baby not yet delivered,199172003,Sexually Transmitted Disease,TOKEN_OVERLAP,L1721,Other maternal venereal disease during pregnancy- baby deliv,0.667
+Other maternal venereal disease during pregnancy - baby not yet delivered,586841000000108,Sexually Transmitted Disease,TOKEN_OVERLAP,L1743,Maternal malaria during pregnancy - baby not yet delivered,0.667
+Other maternal venereal disease during pregnancy - baby not yet delivered,586841000000108,Sexually Transmitted Disease,TOKEN_OVERLAP,L1753,Maternal rubella during pregnancy - baby not yet delivered,0.667
+Other maternal venereal disease during pregnancy - baby not yet delivered,586841000000108,Sexually Transmitted Disease,TOKEN_OVERLAP,L1721,Other maternal venereal disease during pregnancy- baby deliv,0.667
+Other venereal/spirochaete disease,286883009,Sexually Transmitted Disease,TOKEN_OVERLAP,A99z.,Venereal disease NOS,0.667
+Other venereal/spirochaete disease,286883009,Sexually Transmitted Disease,TOKEN_OVERLAP,1415.,H/O: venereal disease,0.667
+Other venereal/spirochaete disease,673581000000108,Sexually Transmitted Disease,TOKEN_OVERLAP,A99z.,Venereal disease NOS,0.667
+Other venereal/spirochaete disease,673581000000108,Sexually Transmitted Disease,TOKEN_OVERLAP,1415.,H/O: venereal disease,0.667
+Painting of perineal warts,1303533008,Sexually Transmitted Disease,TOKEN_OVERLAP,7G094,Painting of warts NEC,0.667
+Primary extragenital syphilis,240556008,Sexually Transmitted Disease,TOKEN_OVERLAP,A912z,Other primary syphilis NOS,0.667
+Primary genital syphilis,58433006,Sexually Transmitted Disease,TOKEN_OVERLAP,A912z,Other primary syphilis NOS,0.667
+Primary syphilis,154381009,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu44,[X]Primary syphilis of other sites,0.667
+Primary syphilis,266209006,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu44,[X]Primary syphilis of other sites,0.667
+Primary syphilis of nipple,237447001,Sexually Transmitted Disease,TOKEN_OVERLAP,A912z,Other primary syphilis NOS,0.667
+Rash of secondary syphilis,266128007,Sexually Transmitted Disease,TOKEN_OVERLAP,A918z,Other secondary syphilis NOS,0.667
+Rash of secondary syphilis,266128007,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu45,[X]Other secondary syphilis,0.667
+Rash of secondary syphilis,266128007,Sexually Transmitted Disease,TOKEN_OVERLAP,A919.,Unspecified secondary syphilis,0.667
+Referral by genitourinary nurse,306033001,Sexually Transmitted Disease,TOKEN_OVERLAP,8HW..,Referral by nurse,0.667
+Referral to genitourinary clinic,170241000000108,Sexually Transmitted Disease,TOKEN_OVERLAP,8HTE.,Referral to other clinic,0.667
+Referral to genitourinary clinic,170241000000108,Sexually Transmitted Disease,TOKEN_OVERLAP,8HT..,Referral to clinic,0.667
+Referral to genitourinary clinic,170241000000108,Sexually Transmitted Disease,TOKEN_OVERLAP,8HTZ.,Referral to clinic NOS,0.667
+Referral to genitourinary clinic,174901000000106,Sexually Transmitted Disease,TOKEN_OVERLAP,8HTE.,Referral to other clinic,0.667
+Referral to genitourinary clinic,174901000000106,Sexually Transmitted Disease,TOKEN_OVERLAP,8HT..,Referral to clinic,0.667
+Referral to genitourinary clinic,174901000000106,Sexually Transmitted Disease,TOKEN_OVERLAP,8HTZ.,Referral to clinic NOS,0.667
+Referral to genitourinary nurse,306325006,Sexually Transmitted Disease,TOKEN_OVERLAP,8HW..,Referral by nurse,0.667
+Secondary syphilis of bone,275378008,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu45,[X]Other secondary syphilis,0.667
+Secondary syphilis of bone,275378008,Sexually Transmitted Disease,TOKEN_OVERLAP,A919.,Unspecified secondary syphilis,0.667
+Secondary syphilis of bone,275378008,Sexually Transmitted Disease,TOKEN_OVERLAP,A918z,Other secondary syphilis NOS,0.667
+Secondary syphilis of bone,63751007,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu45,[X]Other secondary syphilis,0.667
+Secondary syphilis of bone,63751007,Sexually Transmitted Disease,TOKEN_OVERLAP,A919.,Unspecified secondary syphilis,0.667
+Secondary syphilis of bone,63751007,Sexually Transmitted Disease,TOKEN_OVERLAP,A918z,Other secondary syphilis NOS,0.667
+Secondary syphilis of eye,1052322008,Sexually Transmitted Disease,TOKEN_OVERLAP,A919.,Unspecified secondary syphilis,0.667
+Secondary syphilis of eye,1052322008,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu45,[X]Other secondary syphilis,0.667
+Secondary syphilis of eye,1052322008,Sexually Transmitted Disease,TOKEN_OVERLAP,A918z,Other secondary syphilis NOS,0.667
+Secondary syphilis of other viscera,111822006,Sexually Transmitted Disease,TOKEN_OVERLAP,A918z,Other secondary syphilis NOS,0.667
+Secondary syphilis of other viscera,111822006,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu45,[X]Other secondary syphilis,0.667
+Secondary syphilis of other viscera,111822006,Sexually Transmitted Disease,TOKEN_OVERLAP,A919.,Unspecified secondary syphilis,0.667
+Secondary syphilis of skin,186851004,Sexually Transmitted Disease,TOKEN_OVERLAP,A919.,Unspecified secondary syphilis,0.667
+Secondary syphilis of skin,186851004,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu45,[X]Other secondary syphilis,0.667
+Secondary syphilis of skin,186851004,Sexually Transmitted Disease,TOKEN_OVERLAP,A918z,Other secondary syphilis NOS,0.667
+Secondary syphilis of viscera,275379000,Sexually Transmitted Disease,TOKEN_OVERLAP,A918z,Other secondary syphilis NOS,0.667
+Secondary syphilis of viscera,275379000,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu45,[X]Other secondary syphilis,0.667
+Secondary syphilis of viscera,275379000,Sexually Transmitted Disease,TOKEN_OVERLAP,A919.,Unspecified secondary syphilis,0.667
+"Secondary syphilis, relapse",86747005,Sexually Transmitted Disease,TOKEN_OVERLAP,A918z,Other secondary syphilis NOS,0.667
+"Secondary syphilis, relapse",86747005,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu45,[X]Other secondary syphilis,0.667
+"Secondary syphilis, relapse",86747005,Sexually Transmitted Disease,TOKEN_OVERLAP,A919.,Unspecified secondary syphilis,0.667
+Seen by genitourinary nurse,305739003,Sexually Transmitted Disease,TOKEN_OVERLAP,9Nt0.,Seen by nurse,0.667
+Statutory venereal disease,276972005,Sexually Transmitted Disease,TOKEN_OVERLAP,A99z.,Venereal disease NOS,0.667
+Statutory venereal disease,276972005,Sexually Transmitted Disease,TOKEN_OVERLAP,1415.,H/O: venereal disease,0.667
+Symptomatic early syphilis,57334003,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu46,"[X]Early syphilis, unspecified",0.667
+Symptomatic early syphilis,57334003,Sexually Transmitted Disease,TOKEN_OVERLAP,A91X.,"Early syphilis, unspecified",0.667
+Syphilis and other venereal diseases,266124009,Sexually Transmitted Disease,TOKEN_OVERLAP,A99..,Other venereal diseases,0.667
+Syphilis and other venereal diseases,689371000000106,Sexually Transmitted Disease,TOKEN_OVERLAP,A99..,Other venereal diseases,0.667
+Syphilis encephalitis (& congenital),192699001,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu43,"[X]Congenital syphilis, unspecified",0.667
+Syphilis encephalitis (& congenital),192699001,Sexually Transmitted Disease,TOKEN_OVERLAP,A90z.,Congenital syphilis NOS,0.667
+Syphilis of mitral valve,58056005,Sexually Transmitted Disease,TOKEN_OVERLAP,7N400,[SO]Mitral valve,0.667
+Syphilis of pulmonary valve,45058001,Sexually Transmitted Disease,TOKEN_OVERLAP,7N403,[SO]Pulmonary valve,0.667
+Syphilis of tricuspid valve,42770003,Sexually Transmitted Disease,TOKEN_OVERLAP,7N402,[SO]Tricuspid valve,0.667
+Syphilis screening offered,208071000000103,Sexually Transmitted Disease,TOKEN_OVERLAP,6812.,Screening offered,0.667
+Syphilis screening offered,208071000000103,Sexually Transmitted Disease,TOKEN_OVERLAP,6811.,Screening not offered,0.667
+Syphilitic acoustic neuritis,186892008,Sexually Transmitted Disease,TOKEN_OVERLAP,F5850,Acoustic neuritis,0.667
+Syphilitic aneurysm,234017002,Sexually Transmitted Disease,TOKEN_OVERLAP,G717.,Aortic aneurysm - syphilitic,0.667
+Syphilitic aortic aneurysm,186871008,Sexually Transmitted Disease,TOKEN_OVERLAP,G71..,Aortic aneurysm,0.667
+Syphilitic aortic aneurysm,186871008,Sexually Transmitted Disease,TOKEN_OVERLAP,14AE.,H/O: aortic aneurysm,0.667
+Syphilitic aortic stenosis,82355002,Sexually Transmitted Disease,TOKEN_OVERLAP,G5415,Aortic stenosis,0.667
+Syphilitic cerebral arteritis,230735006,Sexually Transmitted Disease,TOKEN_OVERLAP,G674.,Cerebral arteritis,0.667
+Syphilitic endocarditis,266132001,Sexually Transmitted Disease,TOKEN_OVERLAP,A9320,Syphilitic endocarditis of unspecified valve,0.667
+Syphilitic interstitial keratitis,186835007,Sexually Transmitted Disease,TOKEN_OVERLAP,F4A50,Unspecified interstitial keratitis,0.667
+Syphilitic optic atrophy,186890000,Sexually Transmitted Disease,TOKEN_OVERLAP,F4H10,Unspecified optic atrophy,0.667
+Syphilitic optic atrophy,186890000,Sexually Transmitted Disease,TOKEN_OVERLAP,F4H1z,Optic atrophy NOS,0.667
+Syphilitic optic atrophy,186890000,Sexually Transmitted Disease,TOKEN_OVERLAP,F4H1.,Optic atrophy,0.667
+Syphilitic skin disorder,371237000,Sexually Transmitted Disease,TOKEN_OVERLAP,14F..,H/O: skin disorder,0.667
+Syphilitic uveitis unspecified,186855008,Sexually Transmitted Disease,TOKEN_OVERLAP,A915z,Secondary syphilitic uveitis NOS,0.667
+Syphilitic uveitis unspecified,546201000000101,Sexually Transmitted Disease,TOKEN_OVERLAP,A915z,Secondary syphilitic uveitis NOS,0.667
+Taking penile swab,312874009,Sexually Transmitted Disease,TOKEN_OVERLAP,41F..,Taking of swab,0.667
+Treponema pallidum particle agglutination test,401262008,Sexually Transmitted Disease,TOKEN_OVERLAP,4388.,Treponema pallidum particle inhibition test,0.667
+VD - venereal disease contact,268505009,Sexually Transmitted Disease,TOKEN_OVERLAP,A99z.,Venereal disease NOS,0.667
+VD - venereal disease contact,268505009,Sexually Transmitted Disease,TOKEN_OVERLAP,1415.,H/O: venereal disease,0.667
+Venereal disease carrier (& [NOS]),147744008,Sexually Transmitted Disease,TOKEN_OVERLAP,A99z.,Venereal disease NOS,0.667
+Venereal disease carrier (& [NOS]),147744008,Sexually Transmitted Disease,TOKEN_OVERLAP,1415.,H/O: venereal disease,0.667
+Venereal disease carrier (& [NOS]),268594000,Sexually Transmitted Disease,TOKEN_OVERLAP,A99z.,Venereal disease NOS,0.667
+Venereal disease carrier (& [NOS]),268594000,Sexually Transmitted Disease,TOKEN_OVERLAP,1415.,H/O: venereal disease,0.667
+Venereal disease carrier NOS,571771000000109,Sexually Transmitted Disease,TOKEN_OVERLAP,A99z.,Venereal disease NOS,0.667
+Venereal disease carrier NOS,571771000000109,Sexually Transmitted Disease,TOKEN_OVERLAP,1415.,H/O: venereal disease,0.667
+Venereal/spirochaete disease NOS,154392005,Sexually Transmitted Disease,TOKEN_OVERLAP,A99z.,Venereal disease NOS,0.667
+Venereal/spirochaete disease NOS,154392005,Sexually Transmitted Disease,TOKEN_OVERLAP,1415.,H/O: venereal disease,0.667
+Venereal/spirochaete disease NOS,697521000000107,Sexually Transmitted Disease,TOKEN_OVERLAP,A99z.,Venereal disease NOS,0.667
+Venereal/spirochaete disease NOS,697521000000107,Sexually Transmitted Disease,TOKEN_OVERLAP,1415.,H/O: venereal disease,0.667
+Venereal/spirochete disease NOS,286884003,Sexually Transmitted Disease,TOKEN_OVERLAP,A99z.,Venereal disease NOS,0.667
+Venereal/spirochete disease NOS,286884003,Sexually Transmitted Disease,TOKEN_OVERLAP,1415.,H/O: venereal disease,0.667
+[V]Screening for venereal disease (VD),316610008,Sexually Transmitted Disease,TOKEN_OVERLAP,A99z.,Venereal disease NOS,0.667
+[V]VD - venereal disease contact,315655009,Sexually Transmitted Disease,TOKEN_OVERLAP,A99z.,Venereal disease NOS,0.667
+[V]VD - venereal disease contact,315655009,Sexually Transmitted Disease,TOKEN_OVERLAP,1415.,H/O: venereal disease,0.667
+[V]VD - venereal disease contact,464851000000107,Sexually Transmitted Disease,TOKEN_OVERLAP,A99z.,Venereal disease NOS,0.667
+[V]VD - venereal disease contact,464851000000107,Sexually Transmitted Disease,TOKEN_OVERLAP,1415.,H/O: venereal disease,0.667
+[X]Infections with a predominantly sexual mode of transmission,187348005,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu4.,[X]Infections with a predominantly sexual mode of transmiss,0.667
+[X]Infections with a predominantly sexual mode of transmission,455491000000109,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu4.,[X]Infections with a predominantly sexual mode of transmiss,0.667
+[X]Other specified predominantly sexually transmitted diseases,187366000,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu4H,[X]Other specifd predominantly sexually transmitted diseases,0.667
+[X]Other specified predominantly sexually transmitted diseases,425641000000100,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu4H,[X]Other specifd predominantly sexually transmitted diseases,0.667
+[X]Other symptomatic late syphilis,187357004,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu49,"[X]Late syphilis, unspecified",0.667
+[X]Other symptomatic late syphilis,389351000000106,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu49,"[X]Late syphilis, unspecified",0.667
+Abortion complicated by embolism,18119004,Termination of Pregnancy,TOKEN_OVERLAP,L0706,Unspecified abortion with embolism,0.667
+Abortion complicated by genital-pelvic infection,373891000,Termination of Pregnancy,TOKEN_OVERLAP,L0700,Unspecified abortion with genital tract or pelvic infection,0.667
+Abortion complicated by genital-pelvic infection,50628000,Termination of Pregnancy,TOKEN_OVERLAP,L0700,Unspecified abortion with genital tract or pelvic infection,0.667
+Abortion complicated by shock,50554000,Termination of Pregnancy,TOKEN_OVERLAP,L0705,Unspecified abortion with shock,0.667
+Abortion with air embolism,16680004,Termination of Pregnancy,TOKEN_OVERLAP,L0706,Unspecified abortion with embolism,0.667
+Abortion with air embolism,16680004,Termination of Pregnancy,TOKEN_OVERLAP,SK00.,Air embolism,0.667
+Abortion with complication,371332008,Termination of Pregnancy,TOKEN_OVERLAP,L072x,Unspecified complete abortion with complication NOS,0.667
+Abortion with complication,371332008,Termination of Pregnancy,TOKEN_OVERLAP,L043y,Unspecified inevitable abortion with OS complication,0.667
+Abortion with defibrination syndrome,35509007,Termination of Pregnancy,TOKEN_OVERLAP,D306.,Defibrination syndrome,0.667
+Abortion with electrolyte imbalance,51945001,Termination of Pregnancy,TOKEN_OVERLAP,C36zz,Electrolyte imbalance NOS,0.667
+Abortion with fat embolism,1180004,Termination of Pregnancy,TOKEN_OVERLAP,L0706,Unspecified abortion with embolism,0.667
+Abortion with fat embolism,1180004,Termination of Pregnancy,TOKEN_OVERLAP,SK01.,Fat embolism,0.667
+Abortion with postoperative shock,30297004,Termination of Pregnancy,TOKEN_OVERLAP,L0705,Unspecified abortion with shock,0.667
+Abortion with postoperative shock,30297004,Termination of Pregnancy,TOKEN_OVERLAP,SP20.,Postoperative shock,0.667
+Abortion with postoperative shock,30297004,Termination of Pregnancy,TOKEN_OVERLAP,SP20z,Postoperative shock NOS,0.667
+Abortion with pulmonary embolism,50206009,Termination of Pregnancy,TOKEN_OVERLAP,L0706,Unspecified abortion with embolism,0.667
+Abortion with pulmonary embolism,50206009,Termination of Pregnancy,TOKEN_OVERLAP,G401.,Pulmonary embolism,0.667
+Abortion with pyemic embolism,18767001,Termination of Pregnancy,TOKEN_OVERLAP,L0706,Unspecified abortion with embolism,0.667
+Abortion with salpingo-oophoritis,373900008,Termination of Pregnancy,TOKEN_OVERLAP,K4025,Salpingo-oophoritis unspecified,0.667
+Abortion with salpingo-oophoritis,80679003,Termination of Pregnancy,TOKEN_OVERLAP,K4025,Salpingo-oophoritis unspecified,0.667
+Abortion with septic embolism,20886003,Termination of Pregnancy,TOKEN_OVERLAP,L0706,Unspecified abortion with embolism,0.667
+Abortion with septic shock,70772007,Termination of Pregnancy,TOKEN_OVERLAP,L0705,Unspecified abortion with shock,0.667
+Abortion with septic shock,70772007,Termination of Pregnancy,TOKEN_OVERLAP,R0555,[D]Septic shock,0.667
+Abortion with soap embolism,28496002,Termination of Pregnancy,TOKEN_OVERLAP,L0706,Unspecified abortion with embolism,0.667
+Abortion without complication,51830007,Termination of Pregnancy,TOKEN_OVERLAP,L070x,Unspecified abortion with complication NOS,0.667
+Assessment for termination of pregnancy,768721000000107,Termination of Pregnancy,TOKEN_OVERLAP,7E086,Termination of pregnancy NEC,0.667
+Assessment for termination of pregnancy,768731000000109,Termination of Pregnancy,TOKEN_OVERLAP,7E086,Termination of pregnancy NEC,0.667
+Complete abortion,69124005,Termination of Pregnancy,TOKEN_OVERLAP,L042.,Spontaneous abortion complete,0.667
+Complication following abortion,156088005,Termination of Pregnancy,TOKEN_OVERLAP,L070x,Unspecified abortion with complication NOS,0.667
+Destruction of fetus,1287687008,Termination of Pregnancy,TOKEN_OVERLAP,7F09y,Other specified destruction of fetus,0.667
+Destruction of fetus,1287687008,Termination of Pregnancy,TOKEN_OVERLAP,7F02z,Selective destruction of fetus NOS,0.667
+Destruction of fetus,917351000000108,Termination of Pregnancy,TOKEN_OVERLAP,7F09y,Other specified destruction of fetus,0.667
+Destruction of fetus,917351000000108,Termination of Pregnancy,TOKEN_OVERLAP,7F02z,Selective destruction of fetus NOS,0.667
+Destruction of fetus,917361000000106,Termination of Pregnancy,TOKEN_OVERLAP,7F09y,Other specified destruction of fetus,0.667
+Destruction of fetus,917361000000106,Termination of Pregnancy,TOKEN_OVERLAP,7F02z,Selective destruction of fetus NOS,0.667
+Destruction of fetus,917371000000104,Termination of Pregnancy,TOKEN_OVERLAP,7F09y,Other specified destruction of fetus,0.667
+Destruction of fetus,917371000000104,Termination of Pregnancy,TOKEN_OVERLAP,7F02z,Selective destruction of fetus NOS,0.667
+Destruction of fetus,917381000000102,Termination of Pregnancy,TOKEN_OVERLAP,7F09y,Other specified destruction of fetus,0.667
+Destruction of fetus,917381000000102,Termination of Pregnancy,TOKEN_OVERLAP,7F02z,Selective destruction of fetus NOS,0.667
+Destruction of fetus,917391000000100,Termination of Pregnancy,TOKEN_OVERLAP,7F09y,Other specified destruction of fetus,0.667
+Destruction of fetus,917391000000100,Termination of Pregnancy,TOKEN_OVERLAP,7F02z,Selective destruction of fetus NOS,0.667
+Dilation cervix uteri and curettage products of conception (& [termination] or [retained]),176821001,Termination of Pregnancy,TOKEN_OVERLAP,7E070,Dilation cervix uteri & curettage products conception uterus,0.667
+Elective termination of pregnancy,18391007,Termination of Pregnancy,TOKEN_OVERLAP,7E086,Termination of pregnancy NEC,0.667
+Embolism (& [post abortion]),267303003,Termination of Pregnancy,TOKEN_OVERLAP,L0706,Unspecified abortion with embolism,0.667
+Failed abortion,275423001,Termination of Pregnancy,TOKEN_OVERLAP,L08z.,Failed attempted abortion NOS,0.667
+Failed abortion,275423001,Termination of Pregnancy,TOKEN_OVERLAP,L0A..,Failed attempted abortion,0.667
+"Failed attempted abortion with specified complication, NEC",56083002,Termination of Pregnancy,TOKEN_OVERLAP,L08y.,Failed attempted abortion with no mention of complication,0.667
+Failed attempted abortion without complication,90645002,Termination of Pregnancy,TOKEN_OVERLAP,L08w.,Failed attempted abortion with other specified complication,0.667
+Failed attempted abortion without complication,90645002,Termination of Pregnancy,TOKEN_OVERLAP,L08y.,Failed attempted abortion with no mention of complication,0.667
+Haemorrhage: [delayed &/or excessive] or [post abortion],156090006,Termination of Pregnancy,TOKEN_OVERLAP,L0721,Unspecified complete abortion +delayed/excessive haemorrhage,0.667
+History of - abortion NOS,577181000000102,Termination of Pregnancy,TOKEN_OVERLAP,ZV232,[V]Pregnancy with history of abortion,0.667
+Illegal abortion with septicemia,8173005,Termination of Pregnancy,TOKEN_OVERLAP,L060.,Illegal abortion unspecified,0.667
+Illegal abortion with septicemia,8173005,Termination of Pregnancy,TOKEN_OVERLAP,L060z,Unspecified illegal abortion NOS,0.667
+Incomplete abortion,16863000,Termination of Pregnancy,TOKEN_OVERLAP,L0716,Unspecified incomplete abortion with embolism,0.667
+Incomplete medical abortion,757111000000108,Termination of Pregnancy,TOKEN_OVERLAP,L071z,Unspecified incomplete abortion NOS,0.667
+Incomplete medical abortion,757111000000108,Termination of Pregnancy,TOKEN_OVERLAP,L071.,Unspecified abortion incomplete,0.667
+Induced abortion,156075007,Termination of Pregnancy,TOKEN_OVERLAP,L05z.,Legally induced abortion NOS,0.667
+Induced abortion,156075007,Termination of Pregnancy,TOKEN_OVERLAP,L06z.,Illegally induced abortion NOS,0.667
+Induced abortion,267295002,Termination of Pregnancy,TOKEN_OVERLAP,L05z.,Legally induced abortion NOS,0.667
+Induced abortion,267295002,Termination of Pregnancy,TOKEN_OVERLAP,L06z.,Illegally induced abortion NOS,0.667
+Induced termination of pregnancy,714812005,Termination of Pregnancy,TOKEN_OVERLAP,7E086,Termination of pregnancy NEC,0.667
+Infection: [genital &/or pelvic] or [post abortion],156089002,Termination of Pregnancy,TOKEN_OVERLAP,L0700,Unspecified abortion with genital tract or pelvic infection,0.667
+Insertion of abortifacient suppository NEC,176855003,Termination of Pregnancy,TOKEN_OVERLAP,8139.,Insertion of suppository,0.667
+Legal abortion with septicemia,111430000,Termination of Pregnancy,TOKEN_OVERLAP,L050z,Unspecified legal abortion NOS,0.667
+Legal abortion with septicemia,111430000,Termination of Pregnancy,TOKEN_OVERLAP,L050.,Legal abortion unspecified,0.667
+Legal termination of pregnancy,267296001,Termination of Pregnancy,TOKEN_OVERLAP,7E086,Termination of pregnancy NEC,0.667
+Medical termination of pregnancy,285409006,Termination of Pregnancy,TOKEN_OVERLAP,7E086,Termination of pregnancy NEC,0.667
+Operative termination of pregnancy,149995009,Termination of Pregnancy,TOKEN_OVERLAP,7E086,Termination of pregnancy NEC,0.667
+Postprocedural hepatorenal syndrome,31005002,Termination of Pregnancy,TOKEN_OVERLAP,J624.,Hepatorenal syndrome,0.667
+Pregnancy termination care,763801000000101,Termination of Pregnancy,TOKEN_OVERLAP,7E086,Termination of pregnancy NEC,0.667
+Pregnancy termination care,780721000000107,Termination of Pregnancy,TOKEN_OVERLAP,7E086,Termination of pregnancy NEC,0.667
+Pregnancy termination counselling,148244006,Termination of Pregnancy,TOKEN_OVERLAP,7E086,Termination of pregnancy NEC,0.667
+Pregnancy termination service,310062002,Termination of Pregnancy,TOKEN_OVERLAP,7E086,Termination of pregnancy NEC,0.667
+Reason for termination of pregnancy,153232001,Termination of Pregnancy,TOKEN_OVERLAP,7E086,Termination of pregnancy NEC,0.667
+Reason for termination of pregnancy,185019006,Termination of Pregnancy,TOKEN_OVERLAP,7E086,Termination of pregnancy NEC,0.667
+Referral for termination of pregnancy,170141000000103,Termination of Pregnancy,TOKEN_OVERLAP,7E086,Termination of pregnancy NEC,0.667
+Referral for termination of pregnancy,174801000000103,Termination of Pregnancy,TOKEN_OVERLAP,7E086,Termination of pregnancy NEC,0.667
+Requests pregnancy termination,152229008,Termination of Pregnancy,TOKEN_OVERLAP,7E086,Termination of pregnancy NEC,0.667
+Surgical termination of pregnancy,302375005,Termination of Pregnancy,TOKEN_OVERLAP,7E086,Termination of pregnancy NEC,0.667
+Termination of pregnancy contraindicated,339291000000104,Termination of Pregnancy,TOKEN_OVERLAP,7E086,Termination of pregnancy NEC,0.667
+Termination of pregnancy contraindicated,438767006,Termination of Pregnancy,TOKEN_OVERLAP,7E086,Termination of pregnancy NEC,0.667
+Termination of pregnancy operation NOS,149998006,Termination of Pregnancy,TOKEN_OVERLAP,7E086,Termination of pregnancy NEC,0.667
+Termination of pregnancy operation NOS,287955003,Termination of Pregnancy,TOKEN_OVERLAP,7E086,Termination of pregnancy NEC,0.667
+Termination of pregnancy operation NOS,694901000000104,Termination of Pregnancy,TOKEN_OVERLAP,7E086,Termination of pregnancy NEC,0.667
+Therapeutic termination of pregnancy,53638009,Termination of Pregnancy,TOKEN_OVERLAP,7E086,Termination of pregnancy NEC,0.667
+[V]Admission for termination of pregnancy,315929005,Termination of Pregnancy,TOKEN_OVERLAP,7E086,Termination of pregnancy NEC,0.667
+"[X]Other and unspecified failed induced abortion, complicated by embolism",200488000,Termination of Pregnancy,TOKEN_OVERLAP,L0A3.,"Failed medical abortion, complicated by embolism",0.667
+"[X]Other and unspecified failed induced abortion, complicated by embolism",425881000000109,Termination of Pregnancy,TOKEN_OVERLAP,L0A3.,"Failed medical abortion, complicated by embolism",0.667
+"[X]Other and unspecified failed induced abortion, complicated by genital tract and pelvic infection",200486001,Termination of Pregnancy,TOKEN_OVERLAP,L080.,Failed attempted abortion + genital tract/pelvic infection,0.667
+"[X]Other and unspecified failed induced abortion, complicated by genital tract and pelvic infection",390431000000101,Termination of Pregnancy,TOKEN_OVERLAP,L080.,Failed attempted abortion + genital tract/pelvic infection,0.667
+Human immunodeficiency virus (HIV) disease resulting in Burkitt's lymphoma,186723002,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuCD,[X]Unspecified human immunodeficiency virus [HIV] disease,0.625
+Human immunodeficiency virus (HIV) disease resulting in multiple infections,186721000,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuC3,[X]HIV disease resulting in multiple infections,0.625
+Human immunodeficiency virus (HIV) disease resulting in multiple infections,186721000,Sexually Transmitted Disease,TOKEN_OVERLAP,A7894,HIV disease resulting in multiple infections,0.625
+Human immunodeficiency virus (HIV) disease resulting in multiple infections,186721000,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuCD,[X]Unspecified human immunodeficiency virus [HIV] disease,0.625
+Human immunodeficiency virus (HIV) disease resulting in mycobacterial infection,186717007,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuCD,[X]Unspecified human immunodeficiency virus [HIV] disease,0.625
+"Maternal gonorrhea, unspecified whether during pregnancy or the puerperium",199162001,Sexually Transmitted Disease,TOKEN_OVERLAP,L1740,"Maternal malaria, unspec whether during pregnancy/puerperium",0.625
+"Maternal gonorrhoea, unspecified whether during pregnancy or the puerperium",593761000000107,Sexually Transmitted Disease,TOKEN_OVERLAP,L1740,"Maternal malaria, unspec whether during pregnancy/puerperium",0.625
+"Maternal syphilis, unspecified whether during pregnancy or the puerperium",199155005,Sexually Transmitted Disease,TOKEN_OVERLAP,L1740,"Maternal malaria, unspec whether during pregnancy/puerperium",0.625
+"Maternal syphilis, unspecified whether during pregnancy or the puerperium",586781000000109,Sexually Transmitted Disease,TOKEN_OVERLAP,L1740,"Maternal malaria, unspec whether during pregnancy/puerperium",0.625
+Nephrotic syndrome co-occurrent with human immunodeficiency virus infection,713695001,Sexually Transmitted Disease,TOKEN_OVERLAP,A788z,Acquired human immunodeficiency virus infection syndrome NOS,0.625
+"Other maternal venereal disease during pregnancy, childbirth or the puerperium NOS",199174002,Sexually Transmitted Disease,TOKEN_OVERLAP,L174z,Maternal malaria during pregnancy/childbirth/puerperium NOS,0.625
+"Other maternal venereal disease during pregnancy, childbirth or the puerperium NOS",199174002,Sexually Transmitted Disease,TOKEN_OVERLAP,L1720,"Other maternal venereal disease, unspec pregnancy/puerperium",0.625
+"Other maternal venereal disease during pregnancy, childbirth or the puerperium NOS",620601000000107,Sexually Transmitted Disease,TOKEN_OVERLAP,L174z,Maternal malaria during pregnancy/childbirth/puerperium NOS,0.625
+"Other maternal venereal disease during pregnancy, childbirth or the puerperium NOS",620601000000107,Sexually Transmitted Disease,TOKEN_OVERLAP,L1720,"Other maternal venereal disease, unspec pregnancy/puerperium",0.625
+"Other maternal venereal disease, unspecified whether during pregnancy or the puerperium",199169005,Sexually Transmitted Disease,TOKEN_OVERLAP,L1720,"Other maternal venereal disease, unspec pregnancy/puerperium",0.625
+"Other maternal venereal disease, unspecified whether during pregnancy or the puerperium",586811000000107,Sexually Transmitted Disease,TOKEN_OVERLAP,L1720,"Other maternal venereal disease, unspec pregnancy/puerperium",0.625
+"Other maternal venereal diseases during pregnancy, childbirth and the puerperium",199168002,Sexually Transmitted Disease,TOKEN_OVERLAP,L174z,Maternal malaria during pregnancy/childbirth/puerperium NOS,0.625
+"Other maternal venereal diseases during pregnancy, childbirth and the puerperium",586801000000105,Sexually Transmitted Disease,TOKEN_OVERLAP,L174z,Maternal malaria during pregnancy/childbirth/puerperium NOS,0.625
+Abortion complicated by damage to pelvic organs AND/OR tissues,373908001,Termination of Pregnancy,TOKEN_OVERLAP,L0522,Complete legal abortion + damage to pelvic organs or tissues,0.625
+Abortion complicated by damage to pelvic organs AND/OR tissues,58475007,Termination of Pregnancy,TOKEN_OVERLAP,L0522,Complete legal abortion + damage to pelvic organs or tissues,0.625
+Illegal abortion complicated by genital-pelvic infection,8274005,Termination of Pregnancy,TOKEN_OVERLAP,L0600,Unspec illegal abortion + genital tract or pelvic infection,0.625
+Illegal abortion complicated by genital-pelvic infection,8274005,Termination of Pregnancy,TOKEN_OVERLAP,L0610,Incomplete illegal abortion + genital tract/pelvic infection,0.625
+Illegal abortion complicated by genital-pelvic infection,8274005,Termination of Pregnancy,TOKEN_OVERLAP,L0620,Complete illegal abortion + genital tract/pelvic infection,0.625
+Legal abortion complicated by genital-pelvic infection,56827004,Termination of Pregnancy,TOKEN_OVERLAP,L0520,Complete legal abortion + genital tract or pelvic infection,0.625
+Legal abortion complicated by genital-pelvic infection,56827004,Termination of Pregnancy,TOKEN_OVERLAP,L0510,Incomplete legal abortion + genital tract/pelvic infection,0.625
+Unspecified illegal abortion with damage to pelvic organs or tissues,198734007,Termination of Pregnancy,TOKEN_OVERLAP,L0522,Complete legal abortion + damage to pelvic organs or tissues,0.625
+Unspecified illegal abortion with damage to pelvic organs or tissues,661421000000101,Termination of Pregnancy,TOKEN_OVERLAP,L0522,Complete legal abortion + damage to pelvic organs or tissues,0.625
+"[X]Other and unspecified failed induced abortion, complicated by delayed or excessive haemorrhage",200487005,Termination of Pregnancy,TOKEN_OVERLAP,L081.,Failed attempted abortion + delayed or excessive haemorrhage,0.625
+"[X]Other and unspecified failed induced abortion, complicated by delayed or excessive haemorrhage",409481000000104,Termination of Pregnancy,TOKEN_OVERLAP,L081.,Failed attempted abortion + delayed or excessive haemorrhage,0.625
+"[X]Other and unspecified failed induced abortion, complicated by genital tract and pelvic infection",200486001,Termination of Pregnancy,TOKEN_OVERLAP,L0700,Unspecified abortion with genital tract or pelvic infection,0.625
+"[X]Other and unspecified failed induced abortion, complicated by genital tract and pelvic infection",390431000000101,Termination of Pregnancy,TOKEN_OVERLAP,L0700,Unspecified abortion with genital tract or pelvic infection,0.625
+[X]Other venous complications following abortion and ectopic and molar pregnancy,200491000,Termination of Pregnancy,TOKEN_OVERLAP,L09z.,Complication NOS following abortion/ectopic/molar pregnancy,0.625
+[X]Other venous complications following abortion and ectopic and molar pregnancy,200491000,Termination of Pregnancy,TOKEN_OVERLAP,L090y,Sepsis NOS following abortion/ectopic/molar pregnancy,0.625
+[X]Other venous complications following abortion and ectopic and molar pregnancy,409201000000105,Termination of Pregnancy,TOKEN_OVERLAP,L09z.,Complication NOS following abortion/ectopic/molar pregnancy,0.625
+[X]Other venous complications following abortion and ectopic and molar pregnancy,409201000000105,Termination of Pregnancy,TOKEN_OVERLAP,L090y,Sepsis NOS following abortion/ectopic/molar pregnancy,0.625
+IVF - in-vitro fertilisation pregnancy,10231000132102,Assisted Fertilisation,TOKEN_OVERLAP,7M0hy,Other specified in vitro fertilisation (IVF),0.6
+"[X]Complication associated with artificial fertilization, unspecified",198604008,Assisted Fertilisation,TOKEN_OVERLAP,SP0D.,Complications associated with artificial fertilization,0.6
+[X]Other complications associated with artificial fertilisation,389951000000107,Assisted Fertilisation,TOKEN_OVERLAP,SP0D.,Complications associated with artificial fertilization,0.6
+Abnormal weight loss associated with AIDS,421695000,Sexually Transmitted Disease,TOKEN_OVERLAP,R032.,[D]Abnormal loss of weight,0.6
+Abnormal weight loss associated with AIDS,421695000,Sexually Transmitted Disease,TOKEN_OVERLAP,1625.,Abnormal weight loss,0.6
+Acquired haemolytic anaemia associated with AIDS,421851008,Sexually Transmitted Disease,TOKEN_OVERLAP,D11z.,Acquired haemolytic anaemia NOS,0.6
+Advice given about monkeypox,1290441000000101,Sexually Transmitted Disease,TOKEN_OVERLAP,677B.,Advice about treatment given,0.6
+At risk of sexually transmitted infection,95061000000106,Sexually Transmitted Disease,TOKEN_OVERLAP,65PS.,Sexually transmitted infection contact,0.6
+At risk of sexually transmitted infection,99931000000102,Sexually Transmitted Disease,TOKEN_OVERLAP,65PS.,Sexually transmitted infection contact,0.6
+Chlamydial pelvic inflammatory disease,188463006,Sexually Transmitted Disease,TOKEN_OVERLAP,K409.,Acute pelvic inflammatory disease,0.6
+Chlamydial pelvic inflammatory disease,188463006,Sexually Transmitted Disease,TOKEN_OVERLAP,K4z..,Female pelvic inflammatory disease NOS,0.6
+Complement fixation test for syphilis,12271006,Sexually Transmitted Disease,TOKEN_OVERLAP,43e9.,Brucella complement fixation test,0.6
+Counseling for sexually transmitted disease,445563009,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu4N,[X]Sexually transmitted infectious disease,0.6
+Cytomegalic inclusion disease associated with AIDS,422241000,Sexually Transmitted Disease,TOKEN_OVERLAP,A785.,Cytomegalic inclusion disease,0.6
+Discharge from genitourinary medicine service,306591007,Sexually Transmitted Disease,TOKEN_OVERLAP,8HgG.,Discharge from service,0.6
+History of pelvic inflammatory disease,771412001,Sexually Transmitted Disease,TOKEN_OVERLAP,K409.,Acute pelvic inflammatory disease,0.6
+History of pelvic inflammatory disease,771412001,Sexually Transmitted Disease,TOKEN_OVERLAP,K4z..,Female pelvic inflammatory disease NOS,0.6
+Human immunodeficiency virus,19030005,Sexually Transmitted Disease,TOKEN_OVERLAP,A788y,Human immunodeficiency virus with other clinical findings,0.6
+Human immunodeficiency virus (HIV) disease resulting in other types of non-Hodgkin's lymphoma,186724008,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuC6,[X]HIV disease resulting in other non-Hodgkin's lymphoma,0.6
+Human immunodeficiency virus (HIV) disease resulting in other types of non-Hodgkin's lymphoma,615541000000109,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuC6,[X]HIV disease resulting in other non-Hodgkin's lymphoma,0.6
+Human immunodeficiency virus 1 infection,40780007,Sexually Transmitted Disease,TOKEN_OVERLAP,ZV018,[V]Human immunodeficiency virus - negative,0.6
+Human immunodeficiency virus 1 infection,40780007,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuC.,[X]Human immunodeficiency virus disease,0.6
+Human immunodeficiency virus II infection,79019005,Sexually Transmitted Disease,TOKEN_OVERLAP,ZV018,[V]Human immunodeficiency virus - negative,0.6
+Human immunodeficiency virus II infection,79019005,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuC.,[X]Human immunodeficiency virus disease,0.6
+Human immunodeficiency virus contact,218691000000106,Sexually Transmitted Disease,TOKEN_OVERLAP,ZV018,[V]Human immunodeficiency virus - negative,0.6
+Human immunodeficiency virus contact,218691000000106,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuC.,[X]Human immunodeficiency virus disease,0.6
+Human immunodeficiency virus contact,218701000000106,Sexually Transmitted Disease,TOKEN_OVERLAP,ZV018,[V]Human immunodeficiency virus - negative,0.6
+Human immunodeficiency virus contact,218701000000106,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuC.,[X]Human immunodeficiency virus disease,0.6
+Human immunodeficiency virus encephalopathy,397763006,Sexually Transmitted Disease,TOKEN_OVERLAP,ZV018,[V]Human immunodeficiency virus - negative,0.6
+Human immunodeficiency virus encephalopathy,397763006,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuC.,[X]Human immunodeficiency virus disease,0.6
+Human immunodeficiency virus enteropathy,235726002,Sexually Transmitted Disease,TOKEN_OVERLAP,ZV018,[V]Human immunodeficiency virus - negative,0.6
+Human immunodeficiency virus enteropathy,235726002,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuC.,[X]Human immunodeficiency virus disease,0.6
+Human immunodeficiency virus monitoring,504881000000106,Sexually Transmitted Disease,TOKEN_OVERLAP,ZV018,[V]Human immunodeficiency virus - negative,0.6
+Human immunodeficiency virus monitoring,504881000000106,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuC.,[X]Human immunodeficiency virus disease,0.6
+Human immunodeficiency virus monitoring,504891000000108,Sexually Transmitted Disease,TOKEN_OVERLAP,ZV018,[V]Human immunodeficiency virus - negative,0.6
+Human immunodeficiency virus monitoring,504891000000108,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuC.,[X]Human immunodeficiency virus disease,0.6
+Human immunodeficiency virus myelitis,230201009,Sexually Transmitted Disease,TOKEN_OVERLAP,ZV018,[V]Human immunodeficiency virus - negative,0.6
+Human immunodeficiency virus myelitis,230201009,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuC.,[X]Human immunodeficiency virus disease,0.6
+Human immunodeficiency virus neuropathy,230598008,Sexually Transmitted Disease,TOKEN_OVERLAP,ZV018,[V]Human immunodeficiency virus - negative,0.6
+Human immunodeficiency virus neuropathy,230598008,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuC.,[X]Human immunodeficiency virus disease,0.6
+Human immunodeficiency virus neuropathy,240612001,Sexually Transmitted Disease,TOKEN_OVERLAP,ZV018,[V]Human immunodeficiency virus - negative,0.6
+Human immunodeficiency virus neuropathy,240612001,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuC.,[X]Human immunodeficiency virus disease,0.6
+Human immunodeficiency virus test,143221005,Sexually Transmitted Disease,TOKEN_OVERLAP,ZV018,[V]Human immunodeficiency virus - negative,0.6
+Human immunodeficiency virus test,143221005,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuC.,[X]Human immunodeficiency virus disease,0.6
+Human immunodeficiency virus type 1,243598007,Sexually Transmitted Disease,TOKEN_OVERLAP,ZV018,[V]Human immunodeficiency virus - negative,0.6
+Human immunodeficiency virus type 1,243598007,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuC.,[X]Human immunodeficiency virus disease,0.6
+Human immunodeficiency virus type 2,123188003,Sexually Transmitted Disease,TOKEN_OVERLAP,ZV018,[V]Human immunodeficiency virus - negative,0.6
+Human immunodeficiency virus type 2,123188003,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuC.,[X]Human immunodeficiency virus disease,0.6
+Human immunodeficiency virus type I,123187008,Sexually Transmitted Disease,TOKEN_OVERLAP,ZV018,[V]Human immunodeficiency virus - negative,0.6
+Human immunodeficiency virus type I,123187008,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuC.,[X]Human immunodeficiency virus disease,0.6
+Human immunodeficiency virus type I,89293008,Sexually Transmitted Disease,TOKEN_OVERLAP,ZV018,[V]Human immunodeficiency virus - negative,0.6
+Human immunodeficiency virus type I,89293008,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuC.,[X]Human immunodeficiency virus disease,0.6
+Late congenital syphilitic optic atrophy,1142031005,Sexually Transmitted Disease,TOKEN_OVERLAP,P2xz1,Congenital optic atrophy,0.6
+Late congenital syphilitic sensorineural deafness,1142112002,Sexually Transmitted Disease,TOKEN_OVERLAP,F5914,Congenital sensorineural deafness,0.6
+Mycoplasmal pelvic inflammatory disease,271488001,Sexually Transmitted Disease,TOKEN_OVERLAP,K409.,Acute pelvic inflammatory disease,0.6
+Mycoplasmal pelvic inflammatory disease,271488001,Sexually Transmitted Disease,TOKEN_OVERLAP,K4z..,Female pelvic inflammatory disease NOS,0.6
+Neisseria gonorrhoeae nucleic acid detection,134235001,Sexually Transmitted Disease,TOKEN_OVERLAP,43j..,Nucleic acid detection,0.6
+Neisseria gonorrhoeae nucleic acid detection,366781005,Sexually Transmitted Disease,TOKEN_OVERLAP,43j..,Nucleic acid detection,0.6
+Neisseria gonorrhoeae nucleic acid detection,366859006,Sexually Transmitted Disease,TOKEN_OVERLAP,43j..,Nucleic acid detection,0.6
+Other maternal venereal disease during the puerperium - baby delivered during previous episode of care,199173008,Sexually Transmitted Disease,TOKEN_OVERLAP,L1722,Other maternal venereal disease in puerperium-baby delivered,0.6
+Other maternal venereal disease during the puerperium - baby delivered during previous episode of care,607421000000109,Sexually Transmitted Disease,TOKEN_OVERLAP,L1722,Other maternal venereal disease in puerperium-baby delivered,0.6
+Other maternal venereal disease in the puerperium - baby delivered during current episode of care,199171005,Sexually Transmitted Disease,TOKEN_OVERLAP,L1722,Other maternal venereal disease in puerperium-baby delivered,0.6
+Other maternal venereal disease in the puerperium - baby delivered during current episode of care,586831000000104,Sexually Transmitted Disease,TOKEN_OVERLAP,L1722,Other maternal venereal disease in puerperium-baby delivered,0.6
+Pregnancy with venereal disease (& [gonorrhoea] or [syphilis]),156133009,Sexually Transmitted Disease,TOKEN_OVERLAP,A9z..,Syphilis or venereal disease NOS,0.6
+Psittacosis lymphogranuloma venereum antibody level,315182002,Sexually Transmitted Disease,TOKEN_OVERLAP,43ec.,Psittacosis antibody level,0.6
+Referral to genitourinary medicine service,306123006,Sexually Transmitted Disease,TOKEN_OVERLAP,8HkC.,Referral to nuclear medicine service,0.6
+Sexually transmitted disease carrier,15927341000119106,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu4N,[X]Sexually transmitted infectious disease,0.6
+Sexually transmitted disease clinic,25681007,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu4N,[X]Sexually transmitted infectious disease,0.6
+Sexually transmitted disease in childbirth,10759841000119104,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu4N,[X]Sexually transmitted infectious disease,0.6
+Sexually transmitted disease prevention education,339191000000109,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu4J,[X]Unspecified sexually transmitted disease,0.6
+Sexually transmitted diseases,154378004,Sexually Transmitted Disease,TOKEN_OVERLAP,Ayu4H,[X]Other specifd predominantly sexually transmitted diseases,0.6
+Simian-Human immunodeficiency virus,103527008,Sexually Transmitted Disease,TOKEN_OVERLAP,ZV018,[V]Human immunodeficiency virus - negative,0.6
+Simian-Human immunodeficiency virus,103527008,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuC.,[X]Human immunodeficiency virus disease,0.6
+Syphilis infectious titre test,165779003,Sexually Transmitted Disease,TOKEN_OVERLAP,4381.,Syphilis titre test negative,0.6
+Syphilis infectious titre test,165779003,Sexually Transmitted Disease,TOKEN_OVERLAP,4382.,Syphilis titre test positive,0.6
+Syphilitic endocarditis of aortic valve,186876003,Sexually Transmitted Disease,TOKEN_OVERLAP,A932z,Syphilitic endocarditis of heart valve NOS,0.6
+Syphilitic: [endocarditis] or [valve disease],186873006,Sexually Transmitted Disease,TOKEN_OVERLAP,A932z,Syphilitic endocarditis of heart valve NOS,0.6
+Total treponema antibody level,415732003,Sexually Transmitted Disease,TOKEN_OVERLAP,43aO.,Total anticardiolipin antibody level,0.6
+Under care of GU medicine physician,305489005,Sexually Transmitted Disease,TOKEN_OVERLAP,9NNf2,Under care of respiratory physician,0.6
+Under care of GU medicine physician,305489005,Sexually Transmitted Disease,TOKEN_OVERLAP,9NNf1,Under care of care of the elderly physician,0.6
+Under care of genitourinary nurse,305562003,Sexually Transmitted Disease,TOKEN_OVERLAP,9NNA.,Under care of practice nurse,0.6
+Under care of genitourinary nurse,305562003,Sexually Transmitted Disease,TOKEN_OVERLAP,9NNg2,Under care of district nurse,0.6
+Urethral stricture due to syphilis,29500006,Sexually Transmitted Disease,TOKEN_OVERLAP,K1801,Urethral stricture due to infection EC,0.6
+Urethral stricture due to syphilis,29500006,Sexually Transmitted Disease,TOKEN_OVERLAP,K1800,Urethral stricture due to unspecified infection,0.6
+Venereal disease contact (& [gonorrhea] or [syphilis]),170469000,Sexually Transmitted Disease,TOKEN_OVERLAP,A9z..,Syphilis or venereal disease NOS,0.6
+[V]Human immunodeficiency virus counselling,416421000000106,Sexually Transmitted Disease,TOKEN_OVERLAP,ZV018,[V]Human immunodeficiency virus - negative,0.6
+[V]Human immunodeficiency virus counselling,416421000000106,Sexually Transmitted Disease,TOKEN_OVERLAP,AyuC.,[X]Human immunodeficiency virus disease,0.6
+Abortion complicated by embolism,18119004,Termination of Pregnancy,TOKEN_OVERLAP,L0A3.,"Failed medical abortion, complicated by embolism",0.6
+Abortion complicated by metabolic disorder,111429005,Termination of Pregnancy,TOKEN_OVERLAP,L0404,Unspecified spontaneous abortion with metabolic disorder,0.6
+Abortion complicated by metabolic disorder,111429005,Termination of Pregnancy,TOKEN_OVERLAP,L0724,Unspecified complete abortion with metabolic disorder,0.6
+Abortion complicated by renal failure,10123006,Termination of Pregnancy,TOKEN_OVERLAP,L0713,Unspecified incomplete abortion with renal failure,0.6
+Abortion complicated by renal failure,10123006,Termination of Pregnancy,TOKEN_OVERLAP,L0503,Unspecified legal abortion with renal failure,0.6
+Abortion with acute yellow atrophy of liver,54453000,Termination of Pregnancy,TOKEN_OVERLAP,J6002,Acute yellow atrophy,0.6
+Abortion with amniotic fluid embolism,46533008,Termination of Pregnancy,TOKEN_OVERLAP,L431z,Amniotic fluid pulmonary embolism NOS,0.6
+Abortion with amniotic fluid embolism,46533008,Termination of Pregnancy,TOKEN_OVERLAP,L431.,Amniotic fluid pulmonary embolism,0.6
+Abortion with amniotic fluid embolism,46533008,Termination of Pregnancy,TOKEN_OVERLAP,L4310,Amniotic fluid pulmonary embolism unspecified,0.6
+Abortion with laceration of broad ligament,373912007,Termination of Pregnancy,TOKEN_OVERLAP,K536.,Broad ligament laceration syndrome,0.6
+Abortion with laceration of broad ligament,44448003,Termination of Pregnancy,TOKEN_OVERLAP,K536.,Broad ligament laceration syndrome,0.6
+Abortion with renal tubular necrosis,10833000,Termination of Pregnancy,TOKEN_OVERLAP,K040.,Acute renal tubular necrosis,0.6
+Abortion with urinary tract infection,87307008,Termination of Pregnancy,TOKEN_OVERLAP,Q40y1,Neonatal urinary tract infection,0.6
+Abortion with urinary tract infection,87307008,Termination of Pregnancy,TOKEN_OVERLAP,K1903,Recurrent urinary tract infection,0.6
+Abortion without complication,51830007,Termination of Pregnancy,TOKEN_OVERLAP,L045z,Complete inevitable abortion without complication,0.6
+Abortion: [illegally induced] or [criminal] or [self-induced],198730003,Termination of Pregnancy,TOKEN_OVERLAP,L06z.,Illegally induced abortion NOS,0.6
+Complete abortion: [legal] or [medical] or [surgical],198717004,Termination of Pregnancy,TOKEN_OVERLAP,L052z,Complete legal abortion NOS,0.6
+Failed attempted abortion with pyaemic embolism,42755004,Termination of Pregnancy,TOKEN_OVERLAP,L08z.,Failed attempted abortion NOS,0.6
+Failed attempted abortion with pyaemic embolism,42755004,Termination of Pregnancy,TOKEN_OVERLAP,L0A..,Failed attempted abortion,0.6
+Failed attempted medical termination of pregnancy,271954000,Termination of Pregnancy,TOKEN_OVERLAP,1547.,H/O: medical termination of pregnancy,0.6
+Form A therapeutic abortion - refused to sign,10671000000104,Termination of Pregnancy,TOKEN_OVERLAP,9563.,Form A - refused to sign,0.6
+Illegal abortion with pyemic embolism,91657000,Termination of Pregnancy,TOKEN_OVERLAP,L0626,Complete illegal abortion with embolism,0.6
+Illegal abortion with pyemic embolism,91657000,Termination of Pregnancy,TOKEN_OVERLAP,L0616,Incomplete illegal abortion with embolism,0.6
+Illegal abortion with soap embolism,72044001,Termination of Pregnancy,TOKEN_OVERLAP,L0626,Complete illegal abortion with embolism,0.6
+Illegal abortion with soap embolism,72044001,Termination of Pregnancy,TOKEN_OVERLAP,L0616,Incomplete illegal abortion with embolism,0.6
+Illegal abortion without complication,7802000,Termination of Pregnancy,TOKEN_OVERLAP,L062x,Complete illegal abortion with complication NOS,0.6
+Illegal abortion without complication,7802000,Termination of Pregnancy,TOKEN_OVERLAP,L043z,Unspecified inevitable abortion without complication,0.6
+Incomplete abortion: [legal] or [medical] or [surgical],198704002,Termination of Pregnancy,TOKEN_OVERLAP,L051z,Incomplete legal abortion NOS,0.6
+Incomplete abortion: [legal] or [medical] or [surgical],198704002,Termination of Pregnancy,TOKEN_OVERLAP,L051.,Legal abortion incomplete,0.6
+Legal abortion with pyaemic embolism,29601003,Termination of Pregnancy,TOKEN_OVERLAP,L0526,Complete legal abortion with embolism,0.6
+Legal abortion with pyaemic embolism,29601003,Termination of Pregnancy,TOKEN_OVERLAP,L0516,Incomplete legal abortion with embolism,0.6
+Legal abortion with soap embolism,88980002,Termination of Pregnancy,TOKEN_OVERLAP,L0526,Complete legal abortion with embolism,0.6
+Legal abortion with soap embolism,88980002,Termination of Pregnancy,TOKEN_OVERLAP,L0516,Incomplete legal abortion with embolism,0.6
+Medical termination of pregnancy using prostaglandin,447972007,Termination of Pregnancy,TOKEN_OVERLAP,1547.,H/O: medical termination of pregnancy,0.6
+Oliguria following abortive pregnancy,198842004,Termination of Pregnancy,TOKEN_OVERLAP,L0910,Afibrinogenaemia following abortive pregnancy,0.6
+Oliguria following abortive pregnancy,198842004,Termination of Pregnancy,TOKEN_OVERLAP,L0901,Parametritis following abortive pregnancy,0.6
+Oliguria following abortive pregnancy,198842004,Termination of Pregnancy,TOKEN_OVERLAP,L096.,Embolism following abortive pregnancy,0.6
+Private referral for medical termination of pregnancy,339111000000100,Termination of Pregnancy,TOKEN_OVERLAP,1547.,H/O: medical termination of pregnancy,0.6

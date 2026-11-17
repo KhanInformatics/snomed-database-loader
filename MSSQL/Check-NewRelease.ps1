@@ -28,13 +28,7 @@ if (-not $apiKey) {
     exit
 }
 
-# Create a masked version of the API key for logging
-if ($apiKey.Length -ge 8) {
-    $maskedKey = $apiKey.Substring(0,4) + ("*" * ($apiKey.Length - 8)) + $apiKey.Substring($apiKey.Length - 4,4)
-} else {
-    $maskedKey = $apiKey
-}
-Write-Host "Retrieved API Key: $maskedKey (Length: $($apiKey.Length))"
+Write-Host "TRUD API credential retrieved."
 
 # Define the SNOMED CT items you want to monitor.
 $items = @(
@@ -45,7 +39,7 @@ $items = @(
 
 # Base API URL for TRUD
 $baseApiUrl = "https://isd.digital.nhs.uk/trud/api/v1/keys/$apiKey/items"
-Write-Host "Base API URL: $baseApiUrl"
+Write-Host "TRUD API endpoint configured."
 
 # File to store last-known release IDs per item (as JSON) -- now in C:\SNOMEDCT
 $lastReleaseFile = Join-Path $dataDir "LastRelease.json"
@@ -70,14 +64,12 @@ foreach ($item in $items) {
     $itemNumber = $item.ItemNumber
     $url = "$baseApiUrl/$itemNumber/releases?latest"
     
-    # Log the full request URL.
-    Write-Host "Request URL for ${itemName} (item number ${itemNumber}): $url"
-    
     Write-Host "Querying TRUD API for ${itemName} (item number ${itemNumber})..."
     try {
         $response = Invoke-RestMethod -Uri $url -Method Get -ErrorAction Stop
     } catch {
-        Write-Error "Error querying TRUD for ${itemName}: $($_.Exception.Message)"
+        $safeError = $_.Exception.Message.Replace($apiKey, '<redacted>')
+        Write-Error "Error querying TRUD for ${itemName}: $safeError"
         continue
     }
     if ($response.releases.Count -eq 0) {

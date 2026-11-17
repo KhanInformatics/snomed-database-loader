@@ -1,16 +1,16 @@
 # PowerShell script for comprehensive testing and validation of PCD data imports
 # This script validates the accuracy and completeness of imported PCD files
 
-$server = "localhost"           # SQL Server instance
+$server = "SILENTPRIORY\SQLEXPRESS"  # SQL Server instance
 $database = "SNOMEDCT"          # Database name
 
 # Source file paths
 $sourceFiles = @{
-    "PCD_Refset_Content_by_Output" = "C:\SNOMEDCT\Downloads\20250521_PCD_Refset_Content_by_Output_V2.txt"
-    "PCD_Refset_Content_V2" = "C:\SNOMEDCT\Downloads\20250521_PCD_Refset_Content_V2.txt"
-    "PCD_Ruleset_Full_Name_Mappings_V2" = "C:\SNOMEDCT\Downloads\20250521_PCD_Ruleset_Full_Name_Mappings_V2.txt"
-    "PCD_Service_Full_Name_Mappings_V2" = "C:\SNOMEDCT\Downloads\20250521_PCD_Service_Full_Name_Mappings_V2.txt"
-    "PCD_Output_Descriptions_V2" = "C:\SNOMEDCT\Downloads\20250521_PCD_Output_Descriptions_V2.txt"
+    "PCD_Refset_Content_by_Output" = "C:\SNOMEDCT\CurrentReleases\uk_sct2pc_61.0.0_20260424000000Z\20260424_PCD_Refset_Content_by_Output_V2.txt"
+    "PCD_Refset_Content_V2" = "C:\SNOMEDCT\CurrentReleases\uk_sct2pc_61.0.0_20260424000000Z\20260424_PCD_Refset_Content_V2.txt"
+    "PCD_Ruleset_Full_Name_Mappings_V2" = "C:\SNOMEDCT\CurrentReleases\uk_sct2pc_61.0.0_20260424000000Z\20260424_PCD_Ruleset_Full_Name_Mappings_V2.txt"
+    "PCD_Service_Full_Name_Mappings_V2" = "C:\SNOMEDCT\CurrentReleases\uk_sct2pc_61.0.0_20260424000000Z\20260424_PCD_Service_Full_Name_Mappings_V2.txt"
+    "PCD_Output_Descriptions_V2" = "C:\SNOMEDCT\CurrentReleases\uk_sct2pc_61.0.0_20260424000000Z\20260424_PCD_Output_Descriptions_V2.txt"
 }
 
 # Table names

@@ -1,0 +1,1188 @@
+@page "/readv2-browser"
+@implements IDisposable
+@inject ReadV2ApiService ReadV2Service
+@inject NavigationManager Navigation
+
+<PageTitle>READ v2 Browser</PageTitle>
+
+<div class="page-header-wrapper">
+    <div class="page-header">
+        <div class="page-header-content">
+            <div class="page-header-main">
+                <h4 class="page-title mb-1">READ v2 Browser</h4>
+                <p class="page-subtitle mb-0">Search the Scottish five-byte release and browse its clinical hierarchy</p>
+            </div>
+            <div class="page-header-actions">
+                <span class="created-by">Created by Imran Khan</span>
+                <a href="https://github.com/KhanInformatics/StaticBlazorSnomed"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="github-link"
+                   aria-label="View the READ v2 Browser source on GitHub">
+                    <i class="fab fa-github fa-lg" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<main class="read-browser-page">
+    <section class="search-surface" aria-labelledby="read-search-title">
+        <div class="search-heading">
+            <div class="search-heading-copy">
+                <span class="search-heading-icon" aria-hidden="true">
+                    <i class="fas fa-magnifying-glass"></i>
+                </span>
+                <div>
+                    <h2 id="read-search-title">Find a clinical term or READ code</h2>
+                    <p id="read-search-help">@SearchHint</p>
+                </div>
+            </div>
+            <div class="search-heading-status" aria-live="polite">
+                <span class="service-pill @(isInitialLoading ? "connecting" : serviceAvailable ? "online" : "offline")">
+                    <span class="service-dot" aria-hidden="true"></span>
+                    @(isInitialLoading ? "Connecting to READ v2" : serviceAvailable ? "READ v2 data connected" : "Data service unavailable")
+                </span>
+                <button type="button"
+                        class="refresh-button"
+                        aria-label="Refresh READ v2 data"
+                        @onclick="ReloadBrowserAsync"
+                        disabled="@isInitialLoading">
+                    <i class="fas fa-rotate" aria-hidden="true"></i>
+                    <span>Refresh</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="search-controls" role="search">
+            <label class="visually-hidden" for="readv2-query">Search READ v2</label>
+            <input id="readv2-query"
+                   class="search-input"
+                   type="search"
+                   placeholder="@SearchPlaceholder"
+                   aria-describedby="read-search-help read-search-keyboard-hint"
+                   autocomplete="off"
+                   @bind="searchQuery"
+                   @bind:event="oninput"
+                   @onkeydown="HandleSearchKeyDownAsync" />
+
+            <label class="check-option">
+                <input type="checkbox" @bind="includeObsolete" />
+                <span>Include obsolete concepts</span>
+            </label>
+
+            <label class="visually-hidden" for="readv2-search-mode">Search type</label>
+            <select id="readv2-search-mode" class="search-mode" @bind="searchMode">
+                <option value="keyword">Keywords</option>
+                <option value="exact_code">Exact READ code</option>
+            </select>
+
+            <button type="button"
+                    class="search-button"
+                    disabled="@(!serviceAvailable || isSearchBusy)"
+                    @onclick="RunSearchAsync">
+                @if (isSearchBusy)
+                {
+                    <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                    <span>Searching</span>
+                }
+                else
+                {
+                    <i class="fas fa-magnifying-glass" aria-hidden="true"></i>
+                    <span>Search</span>
+                }
+            </button>
+
+            <span id="read-search-keyboard-hint" class="visually-hidden">Press Enter to search</span>
+        </div>
+    </section>
+
+    @if (!string.IsNullOrWhiteSpace(errorMessage))
+    {
+        <div class="browser-alert" role="alert">
+            <span class="alert-icon" aria-hidden="true">
+                <i class="fas fa-circle-exclamation"></i>
+            </span>
+            <div>
+                <strong>@errorTitle</strong>
+                <span>@errorMessage</span>
+            </div>
+            <button type="button" title="Dismiss message" aria-label="Dismiss message" @onclick="DismissError">
+                <i class="fas fa-xmark" aria-hidden="true"></i>
+            </button>
+        </div>
+    }
+
+    <section class="browser-workspace @(isResizingNavigation ? "is-resizing" : "")"
+             style="--navigation-panel-width: @(navigationPanelWidth)px"
+             aria-label="READ v2 terminology browser">
+        <aside class="navigation-panel">
+            <div class="panel-tabs" aria-label="Browser navigation">
+                <button type="button"
+                        aria-pressed="@(activeNavigation == NavigationView.Hierarchy)"
+                        class="@(activeNavigation == NavigationView.Hierarchy ? "active" : "")"
+                        @onclick="ShowHierarchy">
+                    <i class="fas fa-sitemap" aria-hidden="true"></i>
+                    Hierarchy
+                </button>
+                <button type="button"
+                        aria-pressed="@(activeNavigation == NavigationView.Results)"
+                        class="@(activeNavigation == NavigationView.Results ? "active" : "")"
+                        @onclick="ShowResults">
+                    <i class="fas fa-sitemap" aria-hidden="true"></i>
+                    Matches
+                    @if (searchResponse is not null)
+                    {
+                        <span class="tab-count">@searchResponse.TotalCount</span>
+                    }
+                </button>
+            </div>
+
+            @if (activeNavigation == NavigationView.Hierarchy)
+            {
+                <div class="panel-toolbar">
+                    <div>
+                        <strong>Clinical hierarchy</strong>
+                        <span>@(chapters.Count > 0 ? $"{chapters.Count:N0} root concepts" : "Waiting for data")</span>
+                    </div>
+                    <div class="toolbar-actions">
+                        <button type="button" title="Collapse to root" aria-label="Collapse hierarchy to root" @onclick="ResetHierarchy">
+                            <i class="fas fa-house" aria-hidden="true"></i>
+                        </button>
+                        <button type="button"
+                                title="Reveal selected concept"
+                                aria-label="Reveal selected concept in the hierarchy"
+                                disabled="@(selectedDetail is null || isTreeBusy)"
+                                @onclick="RevealSelectedInHierarchyAsync">
+                            <i class="fas fa-location-crosshairs" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="tree-legend" aria-hidden="true">
+                    <span><i class="status-dot current"></i> Current</span>
+                    <span><i class="status-dot obsolete"></i> Obsolete</span>
+                </div>
+
+                <div class="hierarchy-tree"
+                     aria-label="READ v2 clinical hierarchy"
+                     aria-busy="@isTreeBusy">
+                    @if (isInitialLoading)
+                    {
+                        <div class="panel-loading">
+                            <span class="spinner-border text-primary" aria-hidden="true"></span>
+                            <strong>Loading the hierarchy…</strong>
+                        </div>
+                    }
+                    else if (!serviceAvailable)
+                    {
+                        <div class="panel-empty">
+                            <span class="empty-icon" aria-hidden="true"><i class="fas fa-database"></i></span>
+                            <strong>The terminology data is not connected</strong>
+                            <p>Check the READ v2 Function configuration, then try again.</p>
+                            <button type="button" class="secondary-action" @onclick="ReloadBrowserAsync">Try again</button>
+                        </div>
+                    }
+                    else
+                    {
+                        @foreach (var item in VisibleTreeItems)
+                        {
+                            <div @key="item.Key"
+                                 class="tree-row @(item.Node.ReadCode == selectedCode ? "selected" : "") @(item.Node.IsActive ? "" : "inactive")"
+                                 style="--tree-depth: @item.Depth">
+                                <button type="button"
+                                        class="tree-toggle"
+                                        disabled="@(!item.Node.HasChildren || item.IsLoading)"
+                                        title="@(item.IsExpanded ? "Collapse" : "Expand")"
+                                        aria-label="@(item.IsExpanded ? $"Collapse {item.Node.ReadCode} {item.Node.PreferredTerm}" : $"Expand {item.Node.ReadCode} {item.Node.PreferredTerm}")"
+                                        aria-expanded="@(item.Node.HasChildren ? item.IsExpanded : null)"
+                                        @onclick="() => ToggleTreeItemAsync(item)">
+                                    @if (item.IsLoading)
+                                    {
+                                        <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                                    }
+                                    else if (item.Node.HasChildren)
+                                    {
+                                        <i class="fas @(item.IsExpanded ? "fa-chevron-down" : "fa-chevron-right")" aria-hidden="true"></i>
+                                    }
+                                    else
+                                    {
+                                        <i class="fas fa-minus" aria-hidden="true"></i>
+                                    }
+                                </button>
+                                <button type="button"
+                                        class="tree-node-button"
+                                        title="@item.Node.PreferredTerm"
+                                        aria-current="@(item.Node.ReadCode == selectedCode ? "true" : null)"
+                                        @onclick="() => SelectTreeItemAsync(item)">
+                                    <span class="status-dot @(item.Node.IsActive ? "current" : "obsolete")" aria-hidden="true"></span>
+                                    <code>@item.Node.ReadCode</code>
+                                    <span class="tree-term">@item.Node.PreferredTerm</span>
+                                    <span class="visually-hidden">, @(item.Node.IsActive ? "current" : "obsolete") concept</span>
+                                </button>
+                            </div>
+                        }
+                    }
+                </div>
+
+                <div class="tree-footer">
+                    <span><i class="fas fa-circle-info" aria-hidden="true"></i> Expand a branch to load its children</span>
+                    <span>@VisibleTreeItems.Count.ToString("N0") visible</span>
+                </div>
+            }
+            else
+            {
+                <div class="results-summary">
+                    <div class="results-summary-copy">
+                        <strong>Matching concepts</strong>
+                        <span role="status" aria-live="polite" aria-atomic="true">
+                            @if (isSearchBusy)
+                            {
+                                <text>Searching…</text>
+                            }
+                            else if (searchResponse is null)
+                            {
+                                <text>No search run yet</text>
+                            }
+                            else
+                            {
+                                <text>@searchResponse.Results.Count.ToString("N0") of @searchResponse.TotalCount.ToString("N0") in @searchResponse.SearchTimeMs.ToString("N0") ms</text>
+                            }
+                        </span>
+                    </div>
+                    <div class="results-summary-legend" aria-label="Concept status key">
+                        <span><i class="status-dot current" aria-hidden="true"></i> Current</span>
+                        <span><i class="status-dot obsolete" aria-hidden="true"></i> Obsolete</span>
+                    </div>
+                </div>
+
+                <div class="search-results"
+                     role="tree"
+                     aria-label="READ v2 matching concepts"
+                     aria-busy="@(isSearchBusy || isTreeBusy)">
+                    @if (isSearchBusy)
+                    {
+                        <div class="panel-loading">
+                            <span class="spinner-border text-primary" aria-hidden="true"></span>
+                            <strong>Searching READ v2…</strong>
+                        </div>
+                    }
+                    else if (searchResponse is null)
+                    {
+                        <div class="panel-empty compact">
+                            <span class="empty-icon" aria-hidden="true"><i class="fas fa-magnifying-glass"></i></span>
+                            <strong>Search the terminology</strong>
+                            <p>Use keywords or enter an exact five-character READ code.</p>
+                        </div>
+                    }
+                    else if (searchResponse.Results.Count == 0)
+                    {
+                        <div class="panel-empty compact">
+                            <span class="empty-icon" aria-hidden="true"><i class="fas fa-filter-circle-xmark"></i></span>
+                            <strong>No matching concepts</strong>
+                            <p>Try fewer words, check the code, or include obsolete concepts.</p>
+                        </div>
+                    }
+                    else
+                    {
+                        @foreach (var item in VisibleSearchTreeItems)
+                        {
+                            var displayTerm = SearchDisplayTerm(item);
+                            var isSelected = IsSearchItemSelected(item);
+                            <div @key="item.Key"
+                                 role="treeitem"
+                                 aria-level="@(item.Depth + 1)"
+                                 aria-selected="@isSelected"
+                                 aria-expanded="@(item.Node.HasChildren ? item.IsExpanded : null)"
+                                 class="result-tree-row @(isSelected ? "selected" : "") @(item.Node.IsActive ? "" : "inactive")"
+                                 style="--tree-depth: @item.Depth">
+                                @if (item.Node.HasChildren)
+                                {
+                                    <button type="button"
+                                            class="result-toggle"
+                                            disabled="@item.IsLoading"
+                                            title="@(item.IsExpanded ? "Collapse" : "Expand")"
+                                            aria-label="@(item.IsExpanded ? $"Collapse {item.Node.ReadCode} {displayTerm}" : $"Expand {item.Node.ReadCode} {displayTerm}")"
+                                            aria-expanded="@item.IsExpanded"
+                                            @onclick="() => ToggleTreeItemAsync(item)">
+                                        @if (item.IsLoading)
+                                        {
+                                            <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                                        }
+                                        else
+                                        {
+                                            <i class="fas @(item.IsExpanded ? "fa-chevron-down" : "fa-chevron-right")" aria-hidden="true"></i>
+                                        }
+                                    </button>
+                                }
+                                else
+                                {
+                                    <span class="result-toggle leaf" aria-hidden="true">
+                                        <i class="fas fa-minus"></i>
+                                    </span>
+                                }
+                                <button type="button"
+                                        class="result-node-button"
+                                        title="@($"{displayTerm} ({item.Node.ReadCode})")"
+                                        @onclick="() => SelectTreeItemAsync(item)">
+                                    <span class="status-dot @(item.Node.IsActive ? "current" : "obsolete")" aria-hidden="true"></span>
+                                    <span class="result-term">@displayTerm</span>
+                                    <code>@item.Node.ReadCode</code>
+                                    <span class="visually-hidden">, @(item.Node.IsActive ? "current" : "obsolete") concept</span>
+                                </button>
+                            </div>
+                        }
+                    }
+                </div>
+
+                @if (searchResponse is not null && searchResponse.Results.Count > 0)
+                {
+                    <div class="tree-footer">
+                        <span>
+                            <i class="fas fa-circle-info" aria-hidden="true"></i>
+                            @(searchResponse.IsTruncated
+                                ? $"Showing the first {searchResponse.Results.Count:N0} matches"
+                                : "Expand a match to browse its children")
+                        </span>
+                        <span>@VisibleSearchTreeItems.Count.ToString("N0") visible</span>
+                    </div>
+                }
+            }
+        </aside>
+
+        <div class="workspace-splitter"
+             role="separator"
+             tabindex="0"
+             aria-label="Resize hierarchy and details panels"
+             aria-orientation="vertical"
+             aria-valuemin="280"
+             aria-valuenow="@navigationPanelWidth"
+             aria-valuetext="@($"{navigationPanelWidth}px wide; maximum 70% of the workspace")"
+             title="Drag to resize the hierarchy panel"
+             @onpointerdown="StartNavigationResize"
+             @onpointerdown:preventDefault="true"
+             @onpointerup="StopNavigationResize"
+             @onpointercancel="StopNavigationResize"
+             @onkeydown="HandleSplitterKeyDown">
+            <span class="visually-hidden">Drag horizontally, or use the left and right arrow keys, to resize the hierarchy panel.</span>
+        </div>
+        <section class="detail-panel" aria-label="Selected READ v2 concept">
+            @if (isInitialLoading)
+            {
+                <div class="detail-placeholder">
+                    <span class="spinner-border text-primary" aria-hidden="true"></span>
+                    <h2>Preparing the concept browser</h2>
+                    <p>Loading the hierarchy and release statistics.</p>
+                </div>
+            }
+            else if (!serviceAvailable)
+            {
+                <div class="detail-placeholder">
+                    <span class="placeholder-icon" aria-hidden="true"><i class="fas fa-plug-circle-xmark"></i></span>
+                    <h2>READ v2 is temporarily unavailable</h2>
+                    <p>The page is ready, but the terminology service did not respond.</p>
+                    <button type="button" class="primary-action" @onclick="ReloadBrowserAsync">Reconnect</button>
+                </div>
+            }
+            else if (isDetailBusy)
+            {
+                <div class="detail-placeholder">
+                    <span class="spinner-border text-primary" aria-hidden="true"></span>
+                    <h2>Opening concept</h2>
+                    <p>Loading its terms, hierarchy relationships, and mappings.</p>
+                </div>
+            }
+            else if (selectedDetail is null)
+            {
+                <div class="detail-placeholder">
+                    <span class="placeholder-icon" aria-hidden="true"><i class="fas fa-hand-pointer"></i></span>
+                    <h2>Select a concept to inspect it</h2>
+                    <p>Choose a hierarchy node or run a search. A shareable link is created whenever a concept is opened.</p>
+
+                    @if (statistics.Count > 0)
+                    {
+                        <div class="statistics-grid" aria-label="READ v2 release statistics">
+                            <div>
+                                <strong>@GetStatistic("concepts").ToString("N0")</strong>
+                                <span>Concepts</span>
+                            </div>
+                            <div>
+                                <strong>@GetStatistic("terms").ToString("N0")</strong>
+                                <span>Terms</span>
+                            </div>
+                            <div>
+                                <strong>@GetStatistic("current").ToString("N0")</strong>
+                                <span>Current</span>
+                            </div>
+                            <div>
+                                <strong>@GetStatistic("obsolete").ToString("N0")</strong>
+                                <span>Obsolete</span>
+                            </div>
+                        </div>
+                    }
+                </div>
+            }
+            else
+            {
+                <article class="read-classic-inspector"
+                         aria-labelledby="read-concept-inspector-title">
+                    <h2 id="read-concept-inspector-title" class="visually-hidden">
+                        Selected READ concept details
+                    </h2>
+
+                    <div class="read-view-row">
+                        <label for="read-detail-view">View:</label>
+                        <select id="read-detail-view" class="read-classic-control" aria-label="READ Browser view">
+                            <option value="unrestricted">Unrestricted</option>
+                        </select>
+                    </div>
+
+                    <fieldset class="read-classic-group">
+                        <legend>Concept Details</legend>
+                        <dl class="read-concept-fields">
+                            <div>
+                                <dt>Domain:</dt>
+                                <dd>
+                                    <output id="read-concept-domain" title="@DomainLabel">@DomainLabel</output>
+                                </dd>
+                            </div>
+                            <div>
+                                <dt>Code:</dt>
+                                <dd>
+                                    <output id="read-concept-code" class="read-code-value">@selectedDetail.ReadCode</output>
+                                </dd>
+                            </div>
+                            <div>
+                                <dt>Status:</dt>
+                                <dd>
+                                    <output id="read-concept-status"
+                                            title="@selectedDetail.StatusDescription"
+                                            aria-label="@($"Status: {selectedDetail.StatusDescription}")">@LegacyStatusLabel</output>
+                                </dd>
+                            </div>
+                        </dl>
+                    </fieldset>
+
+                    <fieldset class="read-classic-group read-term-group">
+                        <legend>Term Details</legend>
+                        <label class="visually-hidden" for="read-term-list">Term descriptions</label>
+                        <select id="read-term-list"
+                                class="read-term-list"
+                                size="5"
+                                @bind="selectedTermId">
+                            @if (!OrderedTermRecords.Any())
+                            {
+                                <option disabled>No term records supplied</option>
+                            }
+                            else
+                            {
+                                @foreach (var term in OrderedTermRecords)
+                                {
+                                    <option value="@term.TermId">@($"{term.TermType}\u2003{DisplayTerm(term)}")</option>
+                                }
+                            }
+                        </select>
+
+                        <div class="read-term-code-row">
+                            <label for="read-term-code">Term code:</label>
+                            <output id="read-term-code"
+                                    title="@($"Full term identifier: {SelectedTermRecord?.TermId ?? "Not supplied"}")">@SelectedTermCode</output>
+                        </div>
+                    </fieldset>
+                </article>
+            }
+        </section>
+        @if (isResizingNavigation)
+        {
+            <div class="workspace-resize-overlay"
+                 aria-hidden="true"
+                 @onpointermove="ResizeNavigationPanel"
+                 @onpointerup="StopNavigationResize"
+                 @onpointercancel="StopNavigationResize"
+                 @onpointerleave="StopNavigationResize"></div>
+        }
+    </section>
+
+    <footer class="browser-footnote">
+        <i class="fas fa-shield-halved" aria-hidden="true"></i>
+        <span>Terminology reference only. Validate codes against the release and governance rules used by your clinical system.</span>
+    </footer>
+</main>
+
+@code {
+    private readonly CancellationTokenSource disposeCancellation = new();
+    private readonly List<BrowserTreeItem> rootItems = new();
+    private readonly List<BrowserTreeItem> searchTreeItems = new();
+    private List<ReadV2Chapter> chapters = new();
+    private List<ReadV2TreeNode> selectedAncestors = new();
+    private Dictionary<string, int> statistics = new();
+    private ReadV2ConceptDetail? selectedDetail;
+    private ReadV2SearchResponse? searchResponse;
+    private string searchQuery = "";
+    private string searchMode = "keyword";
+    private string? selectedCode;
+    private string? selectedTermId;
+    private string? errorMessage;
+    private string errorTitle = "Something went wrong";
+
+    private bool includeObsolete;
+    private bool isInitialLoading = true;
+    private bool isSearchBusy;
+    private bool isTreeBusy;
+    private bool isDetailBusy;
+    private bool serviceAvailable;
+    private bool isResizingNavigation;
+    private int selectionVersion;
+    private int searchVersion;
+    private int navigationPanelWidth = 390;
+    private int hierarchyPanelWidth = 390;
+    private int resultsPanelWidth = 1400;
+    private NavigationView activeNavigation = NavigationView.Hierarchy;
+
+    private IReadOnlyList<BrowserTreeItem> VisibleTreeItems => FlattenTree().ToList();
+    private IReadOnlyList<BrowserTreeItem> VisibleSearchTreeItems => FlattenTree(searchTreeItems).ToList();
+    private ReadV2Term? PreferredTermRecord =>
+        selectedDetail?.Terms.FirstOrDefault(term => term.IsPreferred);
+    private IEnumerable<ReadV2Term> OrderedTermRecords =>
+        selectedDetail?.Terms
+            .OrderBy(term => term.IsPreferred ? 0 : 1)
+            .ThenBy(term => DisplayTerm(term), StringComparer.OrdinalIgnoreCase)
+        ?? Enumerable.Empty<ReadV2Term>();
+    private ReadV2Term? SelectedTermRecord =>
+        selectedDetail?.Terms.FirstOrDefault(term => term.TermId == selectedTermId)
+        ?? PreferredTermRecord
+        ?? selectedDetail?.Terms.FirstOrDefault();
+    private string SelectedTermCode =>
+        SelectedTermRecord?.TermId is { Length: >= 2 } identifier
+            ? identifier[..2]
+            : "—";
+    private string DomainLabel
+    {
+        get
+        {
+            if (string.IsNullOrEmpty(selectedDetail?.ReadCode))
+            {
+                return "—";
+            }
+
+            var rootCode = $"{selectedDetail.ReadCode[0]}....";
+            return selectedAncestors.FirstOrDefault(ancestor =>
+                       ancestor.ReadCode.Equals(rootCode, StringComparison.Ordinal))
+                       ?.PreferredTerm
+                   ?? chapters.FirstOrDefault(chapter =>
+                       chapter.ReadCode.Equals(rootCode, StringComparison.Ordinal))
+                       ?.PreferredTerm
+                   ?? rootCode;
+        }
+    }
+    private string LegacyStatusLabel =>
+        selectedDetail?.IsActive == true
+            ? ""
+            : selectedDetail?.StatusDescription ?? "";
+
+    private string SearchPlaceholder =>
+        searchMode == "exact_code"
+            ? "Five characters, for example H33.."
+            : "Try asthma, diabetes mellitus or chest pain";
+
+    private string SearchHint =>
+        searchMode == "exact_code"
+            ? "READ codes contain exactly five characters and are case-sensitive."
+            : "Words use prefix matching and AND semantics; add a trailing full stop for an exact word.";
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadBrowserAsync();
+    }
+
+    private async Task LoadBrowserAsync()
+    {
+        isInitialLoading = true;
+        serviceAvailable = false;
+        errorMessage = null;
+
+        try
+        {
+            var chapterTask = ReadV2Service.TryGetChaptersAsync(disposeCancellation.Token);
+            var statisticsTask = ReadV2Service.TryGetStatsAsync(disposeCancellation.Token);
+            await Task.WhenAll(chapterTask, statisticsTask);
+
+            var chapterResult = await chapterTask;
+            var statisticsResult = await statisticsTask;
+            chapters = chapterResult.Value;
+            statistics = statisticsResult.Value;
+
+            serviceAvailable = chapterResult.IsSuccess && chapters.Count > 0;
+            BuildRootItems();
+
+            if (!serviceAvailable)
+            {
+                ShowError(
+                    "READ v2 data is not connected",
+                    chapterResult.Error ?? "The browser could not load any hierarchy roots from the configured service.");
+                return;
+            }
+
+            var requestedCode = GetQueryValue("code");
+            if (!string.IsNullOrWhiteSpace(requestedCode))
+            {
+                await LoadConceptAsync(requestedCode);
+            }
+        }
+        catch (OperationCanceledException) when (disposeCancellation.IsCancellationRequested)
+        {
+            // Component disposal.
+        }
+        finally
+        {
+            isInitialLoading = false;
+        }
+    }
+
+    private async Task ReloadBrowserAsync()
+    {
+        selectionVersion++;
+        searchVersion++;
+        isDetailBusy = false;
+        isSearchBusy = false;
+        isTreeBusy = false;
+        selectedDetail = null;
+        selectedAncestors.Clear();
+        selectedCode = null;
+        selectedTermId = null;
+        searchResponse = null;
+        searchTreeItems.Clear();
+        await LoadBrowserAsync();
+    }
+
+    private void BuildRootItems()
+    {
+        rootItems.Clear();
+
+        for (var index = 0; index < chapters.Count; index++)
+        {
+            var chapter = chapters[index];
+            rootItems.Add(new BrowserTreeItem(
+                $"{chapter.ReadCode}:{index}",
+                new ReadV2TreeNode
+                {
+                    ReadCode = chapter.ReadCode,
+                    PreferredTerm = chapter.PreferredTerm,
+                    Status = "C",
+                    ChildCount = 1
+                },
+                depth: 0,
+                parent: null));
+        }
+    }
+
+    private IEnumerable<BrowserTreeItem> FlattenTree() => FlattenTree(rootItems);
+
+    private static IEnumerable<BrowserTreeItem> FlattenTree(IEnumerable<BrowserTreeItem> roots)
+    {
+        foreach (var root in roots)
+        {
+            foreach (var item in FlattenTree(root))
+            {
+                yield return item;
+            }
+        }
+    }
+
+    private void BuildSearchTreeItems(IEnumerable<ReadV2SearchResult> results)
+    {
+        searchTreeItems.Clear();
+        var index = 0;
+
+        foreach (var result in results)
+        {
+            var canHaveChildren = result.ReadCode.EndsWith(".", StringComparison.Ordinal);
+            searchTreeItems.Add(new BrowserTreeItem(
+                $"search:{result.ReadCode}:{index++}",
+                new ReadV2TreeNode
+                {
+                    ReadCode = result.ReadCode,
+                    PreferredTerm = result.PreferredTerm,
+                    Status = result.Status,
+                    ChildCount = canHaveChildren ? 1 : 0
+                },
+                depth: 0,
+                parent: null,
+                matchedTerm: result.MatchedTerm,
+                matchedTermId: result.TermId));
+        }
+    }
+
+    private static IEnumerable<BrowserTreeItem> FlattenTree(BrowserTreeItem item)
+    {
+        yield return item;
+
+        if (!item.IsExpanded)
+        {
+            yield break;
+        }
+
+        foreach (var child in item.Children)
+        {
+            foreach (var descendant in FlattenTree(child))
+            {
+                yield return descendant;
+            }
+        }
+    }
+
+    private async Task ToggleTreeItemAsync(BrowserTreeItem item)
+    {
+        if (!item.Node.HasChildren)
+        {
+            await SelectTreeItemAsync(item);
+            return;
+        }
+
+        if (item.IsExpanded)
+        {
+            item.IsExpanded = false;
+            return;
+        }
+
+        await ExpandTreeItemAsync(item);
+    }
+
+    private async Task ExpandTreeItemAsync(BrowserTreeItem item)
+    {
+        if (item.ChildrenLoaded)
+        {
+            item.IsExpanded = true;
+            return;
+        }
+
+        item.IsLoading = true;
+        isTreeBusy = true;
+
+        try
+        {
+            var result = await ReadV2Service.TryGetChildrenAsync(
+                item.Node.ReadCode,
+                disposeCancellation.Token);
+
+            if (!result.IsSuccess)
+            {
+                ShowError("The branch could not be opened", result.Error!);
+                return;
+            }
+
+            item.Node.ChildCount = result.Value.Count;
+            item.Children.Clear();
+            for (var index = 0; index < result.Value.Count; index++)
+            {
+                var child = result.Value[index];
+                item.Children.Add(new BrowserTreeItem(
+                    $"{item.Key}/{child.ReadCode}:{index}",
+                    child,
+                    item.Depth + 1,
+                    item));
+            }
+
+            item.ChildrenLoaded = true;
+            item.IsExpanded = true;
+        }
+        catch (OperationCanceledException) when (disposeCancellation.IsCancellationRequested)
+        {
+            // Component disposal.
+        }
+        finally
+        {
+            item.IsLoading = false;
+            isTreeBusy = false;
+        }
+    }
+
+    private async Task SelectTreeItemAsync(BrowserTreeItem item)
+    {
+        await LoadConceptAsync(item.Node.ReadCode, item.MatchedTerm, item.MatchedTermId);
+    }
+
+    private async Task LoadConceptAsync(
+        string readCode,
+        string? matchedTerm = null,
+        string? matchedTermId = null)
+    {
+        var currentSelectionVersion = ++selectionVersion;
+        isDetailBusy = true;
+        errorMessage = null;
+
+        try
+        {
+            var detailTask = ReadV2Service.TryGetConceptDetailAsync(
+                readCode,
+                disposeCancellation.Token);
+            var ancestorTask = ReadV2Service.TryGetAncestorsAsync(
+                readCode,
+                disposeCancellation.Token);
+            await Task.WhenAll(detailTask, ancestorTask);
+
+            if (currentSelectionVersion != selectionVersion)
+            {
+                return;
+            }
+
+            var detailResult = await detailTask;
+            var ancestorResult = await ancestorTask;
+            var detail = detailResult.Value;
+
+            if (detail is null)
+            {
+                ShowError(
+                    "Concept could not be opened",
+                    detailResult.Error ?? $"No READ v2 concept was found for “{readCode}”.");
+                return;
+            }
+
+            selectedDetail = detail;
+            selectedAncestors = ancestorResult.Value
+                .Where(ancestor => ancestor.ReadCode != readCode)
+                .DistinctBy(ancestor => ancestor.ReadCode, StringComparer.Ordinal)
+                .ToList();
+            selectedCode = detail.ReadCode;
+            selectedTermId =
+                detail.Terms.FirstOrDefault(term =>
+                    !string.IsNullOrWhiteSpace(matchedTermId) &&
+                    term.TermId.Equals(matchedTermId, StringComparison.Ordinal))
+                    ?.TermId
+                ?? detail.Terms.FirstOrDefault(term =>
+                    !string.IsNullOrWhiteSpace(matchedTerm) &&
+                    DisplayTerm(term).Equals(matchedTerm, StringComparison.OrdinalIgnoreCase))
+                    ?.TermId
+                ?? detail.Terms.FirstOrDefault(term => term.IsPreferred)?.TermId
+                ?? detail.Terms.FirstOrDefault()?.TermId;
+
+            if (!ancestorResult.IsSuccess)
+            {
+                ShowError("Concept opened with an incomplete hierarchy", ancestorResult.Error!);
+            }
+
+            Navigation.NavigateTo(
+                $"/readv2-browser?code={Uri.EscapeDataString(detail.ReadCode)}",
+                replace: true);
+        }
+        catch (OperationCanceledException) when (disposeCancellation.IsCancellationRequested)
+        {
+            // Component disposal.
+        }
+        finally
+        {
+            if (currentSelectionVersion == selectionVersion)
+            {
+                isDetailBusy = false;
+            }
+        }
+    }
+
+    private async Task RunSearchAsync()
+    {
+        if (!serviceAvailable || isSearchBusy)
+        {
+            return;
+        }
+
+        var query = searchQuery.Trim();
+        var mode = searchMode;
+        var activeOnly = includeObsolete ? (bool?)null : true;
+        errorMessage = null;
+
+        if (query.Length < 2)
+        {
+            ShowError("Add a little more detail", "Enter at least two characters to search READ v2.");
+            return;
+        }
+
+        if (mode == "exact_code" && query.Length != 5)
+        {
+            ShowError(
+                "A five-character READ code is required",
+                "Include any full stops so the code contains exactly five characters.");
+            return;
+        }
+
+        var currentSearchVersion = ++searchVersion;
+        isSearchBusy = true;
+        searchResponse = null;
+        searchTreeItems.Clear();
+        ShowResults();
+
+        try
+        {
+            var result = await ReadV2Service.TrySearchAsync(
+                query,
+                mode,
+                activeOnly,
+                maxResults: 200,
+                cancellationToken: disposeCancellation.Token);
+
+            if (currentSearchVersion != searchVersion)
+            {
+                return;
+            }
+
+            if (!result.IsSuccess)
+            {
+                ShowError("Search is unavailable", result.Error!);
+                searchResponse = null;
+                searchTreeItems.Clear();
+                return;
+            }
+
+            searchResponse = result.Value;
+            BuildSearchTreeItems(searchResponse.Results);
+        }
+        catch (OperationCanceledException) when (disposeCancellation.IsCancellationRequested)
+        {
+            // Component disposal.
+        }
+        finally
+        {
+            if (currentSearchVersion == searchVersion)
+            {
+                isSearchBusy = false;
+            }
+        }
+    }
+
+
+    private Task SelectRelatedConceptAsync(string readCode) =>
+        LoadConceptAsync(readCode);
+
+    private async Task RevealSelectedInHierarchyAsync()
+    {
+        if (selectedDetail is null)
+        {
+            return;
+        }
+
+        ShowHierarchy();
+        isTreeBusy = true;
+
+        try
+        {
+            BuildRootItems();
+            var path = selectedAncestors
+                .Select(ancestor => ancestor.ReadCode)
+                .Append(selectedDetail.ReadCode)
+                .Distinct(StringComparer.Ordinal)
+                .ToList();
+
+            BrowserTreeItem? current = null;
+
+            foreach (var pathCode in path)
+            {
+                var candidate = current is null
+                    ? rootItems.FirstOrDefault(item => item.Node.ReadCode == pathCode)
+                    : current.Children.FirstOrDefault(item => item.Node.ReadCode == pathCode);
+
+                if (candidate is null && current is not null)
+                {
+                    await ExpandTreeItemAsync(current);
+                    candidate = current.Children.FirstOrDefault(item => item.Node.ReadCode == pathCode);
+                }
+
+                if (candidate is null)
+                {
+                    candidate = FindLoadedTreeItem(pathCode);
+                }
+
+                if (candidate is null)
+                {
+                    continue;
+                }
+
+                current = candidate;
+                if (pathCode != selectedDetail.ReadCode)
+                {
+                    await ExpandTreeItemAsync(current);
+                }
+            }
+
+            if (current is null || current.Node.ReadCode != selectedDetail.ReadCode)
+            {
+                ShowError(
+                    "The concept is open, but its branch could not be reconstructed",
+                    "This concept may have more than one parent path. Use the parent links in the overview to navigate it.");
+            }
+        }
+        finally
+        {
+            isTreeBusy = false;
+        }
+    }
+
+    private BrowserTreeItem? FindLoadedTreeItem(string readCode) =>
+        rootItems
+            .SelectMany(FlattenTreeIncludingCollapsed)
+            .FirstOrDefault(item => item.Node.ReadCode == readCode);
+
+    private static IEnumerable<BrowserTreeItem> FlattenTreeIncludingCollapsed(BrowserTreeItem item)
+    {
+        yield return item;
+
+        foreach (var child in item.Children)
+        {
+            foreach (var descendant in FlattenTreeIncludingCollapsed(child))
+            {
+                yield return descendant;
+            }
+        }
+    }
+
+    private async Task HandleSearchKeyDownAsync(KeyboardEventArgs args)
+    {
+        if (args.Key == "Enter")
+        {
+            await RunSearchAsync();
+        }
+    }
+
+    private void StartNavigationResize(PointerEventArgs _)
+    {
+        isResizingNavigation = true;
+    }
+
+    private void ResizeNavigationPanel(PointerEventArgs args)
+    {
+        if (!isResizingNavigation)
+        {
+            return;
+        }
+
+        navigationPanelWidth = Math.Clamp((int)Math.Round(args.OffsetX), 280, 1400);
+    }
+
+    private void StopNavigationResize(PointerEventArgs _)
+    {
+        isResizingNavigation = false;
+    }
+
+    private void HandleSplitterKeyDown(KeyboardEventArgs args)
+    {
+        navigationPanelWidth = args.Key switch
+        {
+            "ArrowLeft" => Math.Max(280, navigationPanelWidth - 32),
+            "ArrowRight" => Math.Min(1400, navigationPanelWidth + 32),
+            "Home" => 280,
+            _ => navigationPanelWidth
+        };
+    }
+    private void ResetHierarchy()
+    {
+        BuildRootItems();
+        ShowHierarchy();
+    }
+
+    private void ShowHierarchy()
+    {
+        if (activeNavigation == NavigationView.Results)
+        {
+            resultsPanelWidth = navigationPanelWidth;
+            navigationPanelWidth = hierarchyPanelWidth;
+            activeNavigation = NavigationView.Hierarchy;
+        }
+    }
+
+    private void ShowResults()
+    {
+        if (activeNavigation == NavigationView.Hierarchy)
+        {
+            hierarchyPanelWidth = navigationPanelWidth;
+            navigationPanelWidth = resultsPanelWidth;
+            activeNavigation = NavigationView.Results;
+        }
+    }
+
+    private void ShowError(string title, string message)
+    {
+        errorTitle = title;
+        errorMessage = message;
+    }
+
+    private void DismissError() => errorMessage = null;
+
+    private int GetStatistic(string key) =>
+        statistics.TryGetValue(key, out var value) ? value : 0;
+
+    private string? GetQueryValue(string key)
+    {
+        var query = Navigation.ToAbsoluteUri(Navigation.Uri).Query.TrimStart('?');
+        foreach (var pair in query.Split('&', StringSplitOptions.RemoveEmptyEntries))
+        {
+            var separator = pair.IndexOf('=');
+            var name = separator < 0 ? pair : pair[..separator];
+            if (!Uri.UnescapeDataString(name).Equals(key, StringComparison.OrdinalIgnoreCase))
+            {
+                continue;
+            }
+
+            var value = separator < 0 ? "" : pair[(separator + 1)..];
+            return Uri.UnescapeDataString(value.Replace("+", " ", StringComparison.Ordinal));
+        }
+
+        return null;
+    }
+
+    private static string DisplayTerm(ReadV2Term term) =>
+        !string.IsNullOrWhiteSpace(term.Term198)
+            ? term.Term198
+            : !string.IsNullOrWhiteSpace(term.Term60)
+                ? term.Term60
+                : term.Term30;
+
+    private static string SearchDisplayTerm(BrowserTreeItem item) =>
+        !string.IsNullOrWhiteSpace(item.MatchedTerm)
+            ? item.MatchedTerm
+            : item.Node.PreferredTerm;
+
+    private bool IsSearchItemSelected(BrowserTreeItem item) =>
+        item.Node.ReadCode == selectedCode &&
+        (string.IsNullOrWhiteSpace(item.MatchedTermId) || item.MatchedTermId == selectedTermId);
+
+    public void Dispose()
+    {
+        disposeCancellation.Cancel();
+        disposeCancellation.Dispose();
+    }
+
+    private enum NavigationView
+    {
+        Hierarchy,
+        Results
+    }
+
+
+    private sealed class BrowserTreeItem
+    {
+        public BrowserTreeItem(
+            string key,
+            ReadV2TreeNode node,
+            int depth,
+            BrowserTreeItem? parent,
+            string? matchedTerm = null,
+            string? matchedTermId = null)
+        {
+            Key = key;
+            Node = node;
+            Depth = depth;
+            Parent = parent;
+            MatchedTerm = matchedTerm;
+            MatchedTermId = matchedTermId;
+        }
+
+        public string Key { get; }
+        public ReadV2TreeNode Node { get; }
+        public int Depth { get; }
+        public BrowserTreeItem? Parent { get; }
+        public string? MatchedTerm { get; }
+        public string? MatchedTermId { get; }
+        public List<BrowserTreeItem> Children { get; } = new();
+        public bool ChildrenLoaded { get; set; }
+        public bool IsExpanded { get; set; }
+        public bool IsLoading { get; set; }
+    }
+}

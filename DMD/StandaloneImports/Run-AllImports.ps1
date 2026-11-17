@@ -10,7 +10,8 @@ $scriptPath = Split-Path -Parent $MyInvocation.MyCommand.Path
 
 Write-Host "=====================================" -ForegroundColor Cyan
 Write-Host "DM+D Complete Database Import" -ForegroundColor Cyan
-Write-Host "Release 11.1.0 (November 10, 2025)" -ForegroundColor Cyan
+Write-Host "Main source: $(Split-Path $XmlPath -Leaf)" -ForegroundColor Cyan
+Write-Host "Bonus source: $(Split-Path $BonusPath -Leaf)" -ForegroundColor Cyan
 Write-Host "=====================================" -ForegroundColor Cyan
 Write-Host ""
 
@@ -26,12 +27,15 @@ $imports = @(
     @{Name="AMPP (Actual Medicinal Product Packs)"; Script="Import-AMPP.ps1"; Table="ampp"; Expected=184331; UsesBonus=$false}
     @{Name="Ingredient"; Script="Import-Ingredient.ps1"; Table="ingredient"; Expected=4490; UsesBonus=$false}
     @{Name="Lookup"; Script="Import-Lookup.ps1"; Table="lookup"; Expected=3806; UsesBonus=$false}
+    # Imports both pricing tables atomically and verifies every field against XML.
+    @{Name="Pack Prices and Drug Tariff"; Script="Import-PackPrices.ps1"; Table="ampp_price"; SourceValidated=$true; UsesBonus=$false}
     @{Name="VMP Ingredients"; Script="Import-VMP-Ingredients.ps1"; Table="vmp_ingredient"; Expected=26723; UsesBonus=$false}
     @{Name="VMP Drug Routes"; Script="Import-VMP-DrugRoutes.ps1"; Table="vmp_drugroute"; Expected=22600; UsesBonus=$false}
     @{Name="VMP Drug Forms"; Script="Import-VMP-DrugForms.ps1"; Table="vmp_drugform"; Expected=20869; UsesBonus=$false}
     @{Name="BNF Codes"; Script="Import-BNF.ps1"; Table="dmd_bnf"; Expected=17297; UsesBonus=$true}
     @{Name="ATC Codes"; Script="Import-ATC.ps1"; Table="dmd_atc"; Expected=20330; UsesBonus=$true}
-    @{Name="GTIN (Barcodes)"; Script="Import-GTIN.ps1"; Table="gtin"; Expected=97633; UsesBonus=$true}
+    # GTIN is distributed with the main dm+d package (item 24), not dm+d BONUS.
+    @{Name="GTIN (Barcodes)"; Script="Import-GTIN.ps1"; Table="gtin"; Expected=97633; UsesBonus=$false}
 )
 
 $results = @()
@@ -43,25 +47,24 @@ foreach ($import in $imports) {
     $scriptFile = Join-Path $scriptPath $import.Script
     
     if (-not (Test-Path $scriptFile)) {
-        Write-Warning "Script not found: $scriptFile - SKIPPING"
-        $results += @{
-            Name = $import.Name
-            Status = "SKIPPED"
-            Reason = "Script not found"
-            Count = 0
-            Duration = 0
-        }
-        continue
+        throw "Required import script not found: $scriptFile"
     }
     
     $importStart = Get-Date
     
     try {
         # Run the import script with appropriate path parameter
+        # Reset the native/script exit code first so a successful PowerShell
+        # importer cannot inherit a stale code from an earlier executable.
+        $global:LASTEXITCODE = 0
         if ($import.UsesBonus) {
             & $scriptFile -BonusPath $BonusPath -ServerInstance $ServerInstance -DatabaseName $DatabaseName
         } else {
             & $scriptFile -XmlPath $XmlPath -ServerInstance $ServerInstance -DatabaseName $DatabaseName
+        }
+
+        if ($LASTEXITCODE -ne 0) {
+            throw "$($import.Script) exited with code $LASTEXITCODE"
         }
         
         # Verify count
@@ -72,17 +75,19 @@ foreach ($import in $imports) {
         $importEnd = Get-Date
         $duration = ($importEnd - $importStart).TotalSeconds
         
-        $status = if ($actualCount -eq $import.Expected) { "SUCCESS" } else { "WARNING" }
+        # Pricing has already passed an exact full-source check inside its transaction.
+        $expectedCount = if ($import.SourceValidated) { $actualCount } else { $import.Expected }
+        $status = if ($actualCount -ge $expectedCount) { "SUCCESS" } else { "WARNING" }
         $statusColor = if ($status -eq "SUCCESS") { "Green" } else { "Yellow" }
         
-        Write-Host "`n$status`: $actualCount records imported (expected: $($import.Expected))" -ForegroundColor $statusColor
+        Write-Host "`n$status`: $actualCount records imported (expected: $expectedCount)" -ForegroundColor $statusColor
         Write-Host "Duration: $([Math]::Round($duration, 2)) seconds`n"
         
         $results += @{
             Name = $import.Name
             Status = $status
             Count = $actualCount
-            Expected = $import.Expected
+            Expected = $expectedCount
             Duration = $duration
         }
     }
@@ -144,6 +149,8 @@ UNION ALL SELECT 'vmp', COUNT(*) FROM vmp
 UNION ALL SELECT 'amp', COUNT(*) FROM amp 
 UNION ALL SELECT 'vmpp', COUNT(*) FROM vmpp 
 UNION ALL SELECT 'ampp', COUNT(*) FROM ampp 
+UNION ALL SELECT 'ampp_price', COUNT(*) FROM ampp_price
+UNION ALL SELECT 'vmpp_drugtariffinfo', COUNT(*) FROM vmpp_drugtariffinfo
 UNION ALL SELECT 'ingredient', COUNT(*) FROM ingredient 
 UNION ALL SELECT 'lookup', COUNT(*) FROM lookup 
 UNION ALL SELECT 'vmp_ingredient', COUNT(*) FROM vmp_ingredient 

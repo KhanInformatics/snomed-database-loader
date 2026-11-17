@@ -15,25 +15,36 @@
 .PARAMETER RunId
     Optional GUID for the run. If not provided, a new one is generated.
 
+.PARAMETER ConnectionTestOnly
+    Tests the configured Azure SQL connection with SELECT 1 without exporting a report.
+
 .EXAMPLE
     .\Export-ReportToAzure.ps1 -Results $results -ConfigPath .\Config\TerminologyConfig.json
 
+.EXAMPLE
+    .\Export-ReportToAzure.ps1 -ConnectionTestOnly -ConfigPath .\Config\TerminologyConfig.json
+
 .NOTES
-    Requires: SqlServer module, Azure AD authentication configured
+    Requires: SqlServer and CredentialManager modules, configured stored SQL credentials
     Target: azuresnnomedct.database.windows.net / ReportingServer
 #>
 
-[CmdletBinding()]
+[CmdletBinding(DefaultParameterSetName = "Export")]
 param(
-    [Parameter(Mandatory = $true)]
+    [Parameter(Mandatory = $true, ParameterSetName = "Export")]
     [hashtable]$Results,
     
     [string]$ConfigPath = ".\Config\TerminologyConfig.json",
     
-    [guid]$RunId = [guid]::NewGuid()
+    [Parameter(ParameterSetName = "Export")]
+    [guid]$RunId = [guid]::NewGuid(),
+
+    [Parameter(Mandatory = $true, ParameterSetName = "ConnectionTest")]
+    [switch]$ConnectionTestOnly
 )
 
 $ErrorActionPreference = "Stop"
+$connectionTestMode = $PSCmdlet.ParameterSetName -eq "ConnectionTest"
 
 #region Helper Functions
 
@@ -65,20 +76,85 @@ function Get-SafeDecimal {
     return [decimal]$Value
 }
 
+function Get-RedactedErrorMessage {
+    param([System.Exception]$Exception)
+
+    $message = if ($Exception) { $Exception.Message } else { "Unknown Azure SQL error" }
+
+    # A provider exception can occasionally include part of a connection string.
+    # Never allow credentials from that string to reach the transcript or report.
+    return $message -replace '(?i)(Password|Pwd|User ID|UID|Access Token)\s*=\s*[^;]*', '$1=<redacted>'
+}
+
+function Get-AzureSqlFirewallDenial {
+    param([System.Exception]$Exception)
+
+    $denied = $false
+    $clientIp = $null
+    $serverName = $null
+    for ($current = $Exception; $null -ne $current; $current = $current.InnerException) {
+        $safeMessage = Get-RedactedErrorMessage -Exception $current
+        if ($current.PSObject.Properties["Number"] -and $current.Number -eq 40615) {
+            $denied = $true
+        }
+        if ($safeMessage -match "Client with IP address '(?<ip>[^']+)' is not allowed to access the server") {
+            $denied = $true
+            $clientIp = $Matches.ip
+        }
+        if ($safeMessage -match "Cannot open server '(?<server>[^']+)' requested by the login") {
+            $serverName = $Matches.server
+        }
+    }
+
+    if ($denied) {
+        return [pscustomobject]@{ ClientIp = $clientIp; ServerName = $serverName }
+    }
+}
+
 function Invoke-AzureSql {
+    [CmdletBinding()]
     param(
         [string]$ConnectionString,
-        [string]$Query
+        [string]$Query,
+        [string]$Operation = "Azure SQL statement",
+        [ValidateRange(0, 100)]
+        [int]$MaxRetries = 0,
+        [ValidateRange(0, 86400)]
+        [int]$RetryDelaySeconds = 0
     )
-    
-    try {
-        Invoke-Sqlcmd -ConnectionString $ConnectionString -Query $Query -ErrorAction Stop
-        return $true
-    }
-    catch {
-        Write-Warning "SQL Error: $_"
-        Write-Warning "Query: $($Query.Substring(0, [Math]::Min(500, $Query.Length)))..."
-        return $false
+
+    $totalAttempts = $MaxRetries + 1
+
+    for ($attempt = 1; $attempt -le $totalAttempts; $attempt++) {
+        try {
+            Invoke-Sqlcmd -ConnectionString $ConnectionString -Query $Query -ErrorAction Stop | Out-Null
+            return
+        }
+        catch {
+            $safeMessage = Get-RedactedErrorMessage -Exception $_.Exception
+            $firewallDenial = Get-AzureSqlFirewallDenial -Exception $_.Exception
+
+            # A rejected client IP requires a firewall change, not unchanged retries.
+            # Keep automatic retries for transient availability failures below.
+            if ($firewallDenial) {
+                $client = if ($firewallDenial.ClientIp) { "client IP '$($firewallDenial.ClientIp)'" } else { "this client's public outbound IP" }
+                $server = if ($firewallDenial.ServerName) { "server '$($firewallDenial.ServerName)'" } else { "the configured Azure SQL server" }
+                $guidance = "Azure SQL firewall denied $client on $server. Confirm the update host's current outbound IP and allow that single IP in the server's Networking firewall rules. After propagation, run Export-ReportToAzure.ps1 -ConnectionTestOnly with the same configuration and Windows account. No automatic retry was attempted for this firewall denial."
+                throw [System.InvalidOperationException]::new("$Operation failed on attempt $attempt`: $guidance $safeMessage", $_.Exception)
+            }
+
+            if ($attempt -ge $totalAttempts) {
+                $failureMessage = "$Operation failed after $attempt attempt(s): $safeMessage"
+                throw [System.InvalidOperationException]::new($failureMessage, $_.Exception)
+            }
+
+            Write-Warning "$Operation failed on attempt $attempt of $totalAttempts`: $safeMessage"
+            Write-Warning "Retrying in $RetryDelaySeconds second(s)..."
+
+            if ($RetryDelaySeconds -gt 0) {
+                Start-Sleep -Seconds $RetryDelaySeconds
+            }
+        }
     }
 }
 
@@ -87,7 +163,11 @@ function Invoke-AzureSql {
 #region Main Script
 
 Write-Host ""
-Write-Host "Exporting results to Azure SQL Reporting Database..." -ForegroundColor Cyan
+if ($connectionTestMode) {
+    Write-Host "Testing Azure SQL Reporting Database connection..." -ForegroundColor Cyan
+} else {
+    Write-Host "Exporting results to Azure SQL Reporting Database..." -ForegroundColor Cyan
+}
 
 # Load configuration
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
@@ -96,30 +176,52 @@ if (-not (Test-Path $ConfigPath)) {
 }
 
 if (-not (Test-Path $ConfigPath)) {
-    Write-Error "Configuration file not found: $ConfigPath"
-    return $false
+    throw "Configuration file not found: $ConfigPath"
 }
 
 $config = Get-Content $ConfigPath -Raw | ConvertFrom-Json
 
+# The configured value is the number of retries after the initial attempt.
+# Keeping delay/count as explicit function parameters allows callers/tests to use zero-delay retries.
+$maxRetries = 0
+$retryDelaySeconds = 0
+if ($config.options -and [bool]$config.options.retryOnFailure) {
+    if ($null -ne $config.options.maxRetries) {
+        $maxRetries = [Math]::Max(0, [int]$config.options.maxRetries)
+    }
+    if ($null -ne $config.options.retryDelaySeconds) {
+        $retryDelaySeconds = [Math]::Max(0, [int]$config.options.retryDelaySeconds)
+    }
+}
+
+$connectionRetryParameters = @{
+    MaxRetries       = $maxRetries
+    RetryDelaySeconds = $retryDelaySeconds
+}
+
+# INSERT retries are unsafe without a shared transaction: the server may commit
+# before a lost acknowledgement, and retrying would duplicate identity-keyed
+# child rows. Fail writes immediately and let the next report use a fresh RunId.
+$writeParameters = @{
+    MaxRetries        = 0
+    RetryDelaySeconds = 0
+}
+
 # Get Azure SQL connection string
 if (-not $config.azureReporting) {
-    Write-Error "Azure reporting configuration not found in config file"
-    return $false
+    throw "Azure reporting configuration not found in config file"
 }
 
 $azureReporting = $config.azureReporting
 
 if (-not $azureReporting.sqlCredentialTarget) {
-    Write-Error "azureReporting.sqlCredentialTarget must be set in config (Windows Credential Manager target name)"
-    return $false
+    throw "azureReporting.sqlCredentialTarget must be set in config (Windows Credential Manager target name)"
 }
 
 Import-Module CredentialManager -ErrorAction Stop
 $sqlCred = Get-StoredCredential -Target $azureReporting.sqlCredentialTarget
 if (-not $sqlCred) {
-    Write-Error "Azure SQL credentials not found in Credential Manager: $($azureReporting.sqlCredentialTarget)"
-    return $false
+    throw "Azure SQL credentials not found in Credential Manager: $($azureReporting.sqlCredentialTarget)"
 }
 
 $sqlUser = $sqlCred.UserName
@@ -130,14 +232,20 @@ $connectionString = "Server=tcp:$($azureReporting.server),1433;Initial Catalog=$
 
 Write-Host "  Target: $($config.azureReporting.server)/$($config.azureReporting.database)" -ForegroundColor Gray
 
-# Test connection
+$runRecordInserted = $false
 try {
-    Invoke-Sqlcmd -ConnectionString $connectionString -Query "SELECT 1" -ErrorAction Stop | Out-Null
-    Write-Host "  Connection: OK" -ForegroundColor Green
-}
-catch {
-    Write-Error "Failed to connect to Azure SQL: $_"
-    return $false
+# Test connection, including configured retries for transient availability failures.
+Invoke-AzureSql -ConnectionString $connectionString -Query "SELECT 1" `
+    -Operation "Azure SQL connection test" @connectionRetryParameters
+Write-Host "  Connection: OK" -ForegroundColor Green
+
+if ($connectionTestMode) {
+    return @{
+        Success = $true
+        ConnectionTestOnly = $true
+        Server = $azureReporting.server
+        Database = $azureReporting.database
+    }
 }
 
 #region Insert update_runs record
@@ -165,7 +273,7 @@ INSERT INTO update_runs (
     '$($endTime.ToString("yyyy-MM-dd HH:mm:ss"))',
     $durationSeconds,
     $(Get-SafeString $Results.Duration 20),
-    $(Get-SafeBit $Results.Success),
+    0,
     $(Get-SafeInt $Results.UpdatesFound),
     $(Get-SafeString $env:COMPUTERNAME 255),
     $(Get-SafeString $Results.LogFile 500),
@@ -176,12 +284,10 @@ INSERT INTO update_runs (
 "@
 
 Write-Host "  Inserting update_runs..." -NoNewline
-if (Invoke-AzureSql -ConnectionString $connectionString -Query $updateRunsQuery) {
-    Write-Host " OK" -ForegroundColor Green
-} else {
-    Write-Host " FAILED" -ForegroundColor Red
-    return $false
-}
+Invoke-AzureSql -ConnectionString $connectionString -Query $updateRunsQuery `
+    -Operation "Insert update_runs" @writeParameters
+$runRecordInserted = $true
+Write-Host " OK" -ForegroundColor Green
 
 #endregion
 
@@ -213,11 +319,9 @@ INSERT INTO snomed_updates (
 "@
     
     Write-Host "  Inserting snomed_updates..." -NoNewline
-    if (Invoke-AzureSql -ConnectionString $connectionString -Query $snomedQuery) {
-        Write-Host " OK" -ForegroundColor Green
-    } else {
-        Write-Host " FAILED" -ForegroundColor Red
-    }
+    Invoke-AzureSql -ConnectionString $connectionString -Query $snomedQuery `
+        -Operation "Insert snomed_updates" @writeParameters
+    Write-Host " OK" -ForegroundColor Green
     
     # Insert steps
     if ($snomed.Steps) {
@@ -237,7 +341,8 @@ INSERT INTO update_steps (
     $stepDurationSec, $(Get-SafeString $step.Duration 10)
 )
 "@
-            Invoke-AzureSql -ConnectionString $connectionString -Query $stepQuery | Out-Null
+            Invoke-AzureSql -ConnectionString $connectionString -Query $stepQuery `
+                -Operation "Insert SNOMED step $stepOrder" @writeParameters
         }
         Write-Host "  Inserted $stepOrder SNOMED steps" -ForegroundColor Gray
     }
@@ -286,11 +391,9 @@ INSERT INTO dmd_updates (
 "@
     
     Write-Host "  Inserting dmd_updates..." -NoNewline
-    if (Invoke-AzureSql -ConnectionString $connectionString -Query $dmdQuery) {
-        Write-Host " OK" -ForegroundColor Green
-    } else {
-        Write-Host " FAILED" -ForegroundColor Red
-    }
+    Invoke-AzureSql -ConnectionString $connectionString -Query $dmdQuery `
+        -Operation "Insert dmd_updates" @writeParameters
+    Write-Host " OK" -ForegroundColor Green
     
     # Insert steps
     if ($dmd.Steps) {
@@ -310,7 +413,8 @@ INSERT INTO update_steps (
     $stepDurationSec, $(Get-SafeString $step.Duration 10)
 )
 "@
-            Invoke-AzureSql -ConnectionString $connectionString -Query $stepQuery | Out-Null
+            Invoke-AzureSql -ConnectionString $connectionString -Query $stepQuery `
+                -Operation "Insert DMD step $stepOrder" @writeParameters
         }
         Write-Host "  Inserted $stepOrder DMD steps" -ForegroundColor Gray
     }
@@ -358,11 +462,9 @@ INSERT INTO dmwb_updates (
 "@
     
     Write-Host "  Inserting dmwb_updates..." -NoNewline
-    if (Invoke-AzureSql -ConnectionString $connectionString -Query $dmwbQuery) {
-        Write-Host " OK" -ForegroundColor Green
-    } else {
-        Write-Host " FAILED" -ForegroundColor Red
-    }
+    Invoke-AzureSql -ConnectionString $connectionString -Query $dmwbQuery `
+        -Operation "Insert dmwb_updates" @writeParameters
+    Write-Host " OK" -ForegroundColor Green
     
     # Insert steps
     if ($dmwb.Steps) {
@@ -382,7 +484,8 @@ INSERT INTO update_steps (
     $stepDurationSec, $(Get-SafeString $step.Duration 10)
 )
 "@
-            Invoke-AzureSql -ConnectionString $connectionString -Query $stepQuery | Out-Null
+            Invoke-AzureSql -ConnectionString $connectionString -Query $stepQuery `
+                -Operation "Insert DMWB step $stepOrder" @writeParameters
         }
         Write-Host "  Inserted $stepOrder DMWB steps" -ForegroundColor Gray
     }
@@ -420,11 +523,9 @@ INSERT INTO pcd_validations (
 "@
     
     Write-Host "  Inserting pcd_validations..." -NoNewline
-    if (Invoke-AzureSql -ConnectionString $connectionString -Query $pcdQuery) {
-        Write-Host " OK" -ForegroundColor Green
-    } else {
-        Write-Host " FAILED" -ForegroundColor Red
-    }
+    Invoke-AzureSql -ConnectionString $connectionString -Query $pcdQuery `
+        -Operation "Insert pcd_validations" @writeParameters
+    Write-Host " OK" -ForegroundColor Green
     
     # Insert steps
     if ($pcd.Steps) {
@@ -444,7 +545,8 @@ INSERT INTO update_steps (
     $stepDurationSec, $(Get-SafeString $step.Duration 10)
 )
 "@
-            Invoke-AzureSql -ConnectionString $connectionString -Query $stepQuery | Out-Null
+            Invoke-AzureSql -ConnectionString $connectionString -Query $stepQuery `
+                -Operation "Insert PCD step $stepOrder" @writeParameters
         }
         Write-Host "  Inserted $stepOrder PCD steps" -ForegroundColor Gray
     }
@@ -461,12 +563,52 @@ if ($Results.Errors -and $Results.Errors.Count -gt 0) {
 INSERT INTO update_errors (run_id, error_source, error_message)
 VALUES ('$RunId', 'Weekly Update', $(Get-SafeString $error 4000))
 "@
-        Invoke-AzureSql -ConnectionString $connectionString -Query $errorQuery | Out-Null
+        Invoke-AzureSql -ConnectionString $connectionString -Query $errorQuery `
+            -Operation "Insert update error" @writeParameters
     }
     Write-Host " OK" -ForegroundColor Green
 }
 
 #endregion
+
+# Publish the intended final status only after every related row is present.
+# Until this succeeds, readers see a failed/incomplete run rather than a false
+# positive caused by a partially exported report.
+$finalizeRunQuery = "UPDATE update_runs SET success = $(Get-SafeBit $Results.Success) WHERE run_id = '$RunId';"
+Invoke-AzureSql -ConnectionString $connectionString -Query $finalizeRunQuery `
+    -Operation "Finalize update_runs status" @writeParameters
+}
+catch {
+    $exportException = $_.Exception
+    $safeExportError = Get-RedactedErrorMessage -Exception $exportException
+
+    # If the parent row was committed before a later statement failed, make the
+    # partial run visibly failed in Azure rather than leaving a green orphan.
+    if ($runRecordInserted) {
+        $markFailedQuery = @"
+UPDATE update_runs SET success = 0 WHERE run_id = '$RunId';
+IF OBJECT_ID('dbo.update_errors', 'U') IS NOT NULL
+BEGIN
+    INSERT INTO update_errors (run_id, error_source, error_message)
+    VALUES ('$RunId', 'Azure export', $(Get-SafeString $safeExportError 4000));
+END
+"@
+        try {
+            Invoke-Sqlcmd -ConnectionString $connectionString -Query $markFailedQuery -ErrorAction Stop | Out-Null
+        }
+        catch {
+            $safeCleanupError = Get-RedactedErrorMessage -Exception $_.Exception
+            Write-Warning "Could not mark partial Azure report run as failed: $safeCleanupError"
+        }
+    }
+
+    throw [System.InvalidOperationException]::new("Azure SQL export failed: $safeExportError", $exportException)
+}
+finally {
+    $connectionString = $null
+    $sqlPassword = $null
+    $sqlCred = $null
+}
 
 Write-Host ""
 Write-Host "✅ Export complete. Run ID: $RunId" -ForegroundColor Green

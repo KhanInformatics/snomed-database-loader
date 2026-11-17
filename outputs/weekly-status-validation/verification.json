@@ -1,0 +1,23 @@
+{
+  "VerifiedAt": "2026-09-08T14:28:14.2930552+00:00",
+  "Url": "https://www.khanclinicalinformatics.net/terminology-dashboard",
+  "Workflow": "https://github.com/KhanInformatics/StaticBlazorSnomed/actions/runs/34165686655",
+  "Commit": "2670af5b2530fef944398c76605ea8d1f9790b48",
+  "RunId": "f8f3ae7b-5605-4a26-b9c4-202609051200",
+  "PublicRunCount": 1,
+  "BrowserDynamicDataRequests": 0,
+  "BrowserReportRequests": 1,
+  "GitHubReportingEnabled": true,
+  "AzureSqlReportingEnabled": false,
+  "BlobReportingEnabled": false,
+  "TaskInstalled": true,
+  "TaskSetupStatus": "Successful installation and scheduled preflight records verified; direct unelevated task inspection is denied by Windows.",
+  "PowerShellChecks": 36,
+  "SchemaChecks": 7,
+  "ScheduleChecks": 10,
+  "BrowserChecksPassed": true,
+  "TaskInstalledAt": "2026-09-08T14:24:37.3975678+00:00",
+  "RecordedNextRun": "2026-09-12T12:00:00+01:00",
+  "ScheduledPreflightPassed": true,
+  "DirectTaskInspection": "Access denied"
+}

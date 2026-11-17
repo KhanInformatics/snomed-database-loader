@@ -1,0 +1,1040 @@
+CLUSTER	VERSION	SCHEME	CODE	TERM
+LRPCD_STD	v4.8	CTV3	XE19j	(Abnormal pupil or [pupils]) &/or Adie pupil &/or Argyll-Robertson pupil &/or miosis not due to miotics
+LRPCD_STD	v4.8	CTV3	A788.	(AIDS) or (HIV infection)
+LRPCD_STD	v4.8	CTV3	A990.	(Chancroid [& bubo]) or (Ducrey's chancre)
+LRPCD_STD	v4.8	CTV3	A98z.	(Gonococcal infections NOS) or (gonorrhoea)
+LRPCD_STD	v4.8	CTV3	A992.	(Granuloma inguinale) or (donovanosis) or (pudendal ulcer)
+LRPCD_STD	v4.8	CTV3	43B..	(Hepatitis B test: (& [immunity] or [SH-antigen]) or (Australia antigen - SH)
+LRPCD_STD	v4.8	CTV3	XE0U4	(Other venereal/spirochaete disease) or (Reiter's syndrome)
+LRPCD_STD	v4.8	CTV3	XE0TQ	(Rubella [& German measles]) or (Roseola)
+LRPCD_STD	v4.8	CTV3	A97..	(Syphilis (& [other and unspecified])) or (treponemal infection)
+LRPCD_STD	v4.8	CTV3	A940.	(Syphilitic: [tabes dorsalis] or [spinal sclerosis]) or (locomotor ataxia)
+LRPCD_STD	v4.8	CTV3	4385.	(T.P.I test) or (T pallidum immobilisation)
+LRPCD_STD	v4.8	CTV3	AD100	(Unspecified urogenital trichomonas) or (trichomonal vaginalis: [flour] or [leukorrhoea])
+LRPCD_STD	v4.8	CTV3	XE0Tw	(Venereal &/or spirochaete diseases [& syphilis]) or (STDs)
+LRPCD_STD	v4.8	CTV3	A9...	(Venereal diseases [& others including syphilis]) or (STDs)
+LRPCD_STD	v4.8	CTV3	A7812	(Warts: [genital] or [penile] or [venereal]) or (condylomata acuminatum)
+LRPCD_STD	v4.8	CTV3	R156.	[D]False positive serological syphilis test
+LRPCD_STD	v4.8	CTV3	R156z	[D]False positive serological syphilis test NOS
+LRPCD_STD	v4.8	CTV3	R1560	[D]False positive Wassermann's test
+LRPCD_STD	v4.8	CTV3	R109.	[D]Laboratory evidence of human immunodeficiency virus [HIV]
+LRPCD_STD	v4.8	CTV3	43B2.	[Hepatitis B immune] or [hepatitis B antibody present]
+LRPCD_STD	v4.8	CTV3	ZV01A	[V]Asymptomatic human immunodeficiency virus infection status
+LRPCD_STD	v4.8	CTV3	ZV029	[V]Carrier of human T-lymphotropic virus type-1 infect
+LRPCD_STD	v4.8	CTV3	ZV019	[V]Contact with and exposure to human immunodeficiency virus
+LRPCD_STD	v4.8	CTV3	ZV01B	[V]Contact with and exposure to viral hepatitis
+LRPCD_STD	v4.8	CTV3	ZV016	[V]Contact with or exposure to venereal disease
+LRPCD_STD	v4.8	CTV3	ZV027	[V]Gonorrhoea carrier
+LRPCD_STD	v4.8	CTV3	XaG1R	[V]Hepatitis B carrier
+LRPCD_STD	v4.8	CTV3	XaJX1	[V]Hepatitis C carrier
+LRPCD_STD	v4.8	CTV3	ZV018	[V]Human immunodeficiency virus - negative
+LRPCD_STD	v4.8	CTV3	ZV6D4	[V]Human immunodefiency virus counselling
+LRPCD_STD	v4.8	CTV3	ZV028	[V]Other venereal disease carrier
+LRPCD_STD	v4.8	CTV3	ZV745	[V]Screening for venereal disease
+LRPCD_STD	v4.8	CTV3	ZV737	[V]Special screening examination for human immunodeficiency virus
+LRPCD_STD	v4.8	CTV3	ZV026	[V]Viral hepatitis carrier
+LRPCD_STD	v4.8	CTV3	Ayu4G	[X]Anogenital herpes viral infection, unspecified
+LRPCD_STD	v4.8	CTV3	Ayu4K	[X]Chlamydial infection of genitourinary tract, unspecified
+LRPCD_STD	v4.8	CTV3	Ayu62	[X]Chlamydial infection, unspecified
+LRPCD_STD	v4.8	CTV3	AyuB2	[X]Chronic viral hepatitis, unspecified
+LRPCD_STD	v4.8	CTV3	Ayu43	[X]Congenital syphilis, unspecified
+LRPCD_STD	v4.8	CTV3	Ayu40	[X]Early congenital syphilis, unspecified
+LRPCD_STD	v4.8	CTV3	Ayu46	[X]Early syphilis, unspecified
+LRPCD_STD	v4.8	CTV3	Ayu4C	[X]Gonococcal infection, unspecified
+LRPCD_STD	v4.8	CTV3	AyuCB	[X]Hiv disease resulting in haematological and immunological abnormalities, not elsewhere classified
+LRPCD_STD	v4.8	CTV3	AyuCA	[X]HIV disease resulting in multiple diseases classified elsewhere
+LRPCD_STD	v4.8	CTV3	AyuC0	[X]HIV disease resulting in other bacterial infections
+LRPCD_STD	v4.8	CTV3	AyuC4	[X]Hiv disease resulting in other infectious and parasitic diseases
+LRPCD_STD	v4.8	CTV3	AyuC8	[X]HIV disease resulting in other malignant neoplasms
+LRPCD_STD	v4.8	CTV3	AyuC7	[X]Hiv disease resulting in other malignant neoplasms of lymphoid, haematopoietic and related tissue
+LRPCD_STD	v4.8	CTV3	AyuC2	[X]HIV disease resulting in other mycoses
+LRPCD_STD	v4.8	CTV3	AyuC6	[X]HIV disease resulting in other non-Hodgkin's lymphoma
+LRPCD_STD	v4.8	CTV3	AyuCC	[X]HIV disease resulting in other specified conditions
+LRPCD_STD	v4.8	CTV3	AyuC1	[X]HIV disease resulting in other viral infections
+LRPCD_STD	v4.8	CTV3	AyuC5	[X]Hiv disease resulting in unspecified infectious and parasitic disease
+LRPCD_STD	v4.8	CTV3	AyuC9	[X]HIV disease resulting in unspecified malignant neoplasm
+LRPCD_STD	v4.8	CTV3	AyuC.	[X]Human immunodeficiency virus disease
+LRPCD_STD	v4.8	CTV3	Ayu4.	[X]Infections with a predominantly sexual mode of transmission
+LRPCD_STD	v4.8	CTV3	Ayu42	[X]Late congenital syphilis, unspecified
+LRPCD_STD	v4.8	CTV3	Ayu49	[X]Late syphilis, unspecified
+LRPCD_STD	v4.8	CTV3	Ayu47	[X]Neurosyphilis, unspecified
+LRPCD_STD	v4.8	CTV3	Ayu61	[X]Other chlamydial diseases
+LRPCD_STD	v4.8	CTV3	AyuB1	[X]Other chronic viral hepatitis
+LRPCD_STD	v4.8	CTV3	Ayu6.	[X]Other diseases caused by chlamydiae
+LRPCD_STD	v4.8	CTV3	Ayu4B	[X]Other gonococcal infections
+LRPCD_STD	v4.8	CTV3	Lyu70	[X]Other infections with a predominantly sexual mode of transmission complicating pregnancy childbirth and the puerperium
+LRPCD_STD	v4.8	CTV3	Ayu41	[X]Other late congenital syphilis, symptomatic
+LRPCD_STD	v4.8	CTV3	Ayu45	[X]Other secondary syphilis
+LRPCD_STD	v4.8	CTV3	Ayu4H	[X]Other specified predominantly sexually transmitted diseases
+LRPCD_STD	v4.8	CTV3	Ayu48	[X]Other symptomatic late syphilis
+LRPCD_STD	v4.8	CTV3	XaMgM	[X]Perineal warts
+LRPCD_STD	v4.8	CTV3	Ayu44	[X]Primary syphilis of other sites
+LRPCD_STD	v4.8	CTV3	AyuD8	[X]Retrovirus infections, not elsewhere classified
+LRPCD_STD	v4.8	CTV3	Ayu4D	[X]Sexually transmitted chlamydial infection of other sites
+LRPCD_STD	v4.8	CTV3	Ayu4A	[X]Syphilis, unspecified
+LRPCD_STD	v4.8	CTV3	Ayu4E	[X]Trichomoniasis of other sites
+LRPCD_STD	v4.8	CTV3	Ayu4F	[X]Trichomoniasis, unspecified
+LRPCD_STD	v4.8	CTV3	AyuCD	[X]Unspecified human immunodeficiency virus [HIV] disease
+LRPCD_STD	v4.8	CTV3	Ayu4J	[X]Unspecified sexually transmitted disease
+LRPCD_STD	v4.8	CTV3	AyuB3	[X]Unspecified viral hepatitis with coma
+LRPCD_STD	v4.8	CTV3	AyuB4	[X]Unspecified viral hepatitis without coma
+LRPCD_STD	v4.8	CTV3	XaMgL	[X]Vulval warts
+LRPCD_STD	v4.8	CTV3	XaZBl	12 week virologic response to hepatitis C treatment
+LRPCD_STD	v4.8	CTV3	X306X	Abscess gonococcal
+LRPCD_STD	v4.8	CTV3	A788z	Acquired human immunodeficiency virus infection syndrome NOS
+LRPCD_STD	v4.8	CTV3	XE0RX	Acquired immune deficiency syndrome
+LRPCD_STD	v4.8	CTV3	XE0Tk	Acquired immune deficiency syndrome (& [ARC])
+LRPCD_STD	v4.8	CTV3	X003P	Acquired immune deficiency syndrome dementia complex
+LRPCD_STD	v4.8	CTV3	X70O0	Acquired immune deficiency syndrome-related complex
+LRPCD_STD	v4.8	CTV3	X30IP	Acquired immune deficiency syndrome-related nephropathy
+LRPCD_STD	v4.8	CTV3	X70MH	Acquired syphilis
+LRPCD_STD	v4.8	CTV3	XE0Rn	Acquired syphilis - early latent
+LRPCD_STD	v4.8	CTV3	XE0Rt	Acquired syphilis - late latent
+LRPCD_STD	v4.8	CTV3	A9800	Acute gonococcal bartholinitis
+LRPCD_STD	v4.8	CTV3	A9815	Acute gonococcal cervicitis
+LRPCD_STD	v4.8	CTV3	A9811	Acute gonococcal cystitis
+LRPCD_STD	v4.8	CTV3	A9816	Acute gonococcal endometritis
+LRPCD_STD	v4.8	CTV3	XE0Rv	Acute gonococcal epididymo-orchitis
+LRPCD_STD	v4.8	CTV3	G5005	Acute gonococcal pericarditis
+LRPCD_STD	v4.8	CTV3	A9812	Acute gonococcal prostatitis
+LRPCD_STD	v4.8	CTV3	A9817	Acute gonococcal salpingitis
+LRPCD_STD	v4.8	CTV3	A9814	Acute gonococcal seminal vesiculitis
+LRPCD_STD	v4.8	CTV3	A9801	Acute gonococcal urethritis
+LRPCD_STD	v4.8	CTV3	A9802	Acute gonococcal vulvovaginitis
+LRPCD_STD	v4.8	CTV3	A9813	Acute gonococcal: [epididymo-orchitis] or [orchitis]
+LRPCD_STD	v4.8	CTV3	A980.	Acute gonorrhoea of lower genitourinary tract
+LRPCD_STD	v4.8	CTV3	A980z	Acute gonorrhoea of lower genitourinary tract NOS
+LRPCD_STD	v4.8	CTV3	A981.	Acute gonorrhoea of upper genitourinary tract
+LRPCD_STD	v4.8	CTV3	A981z	Acute gonorrhoea upper genitourinary tract NOS
+LRPCD_STD	v4.8	CTV3	XE0RK	Acute hepatitis B
+LRPCD_STD	v4.8	CTV3	A7020	Acute hepatitis B with delta agent (coinfection) with hepatic coma
+LRPCD_STD	v4.8	CTV3	A7030	Acute hepatitis B with delta-agent (coinfection) without hepatic coma
+LRPCD_STD	v4.8	CTV3	X306c	Acute hepatitis B with hepatitis D
+LRPCD_STD	v4.8	CTV3	X306e	Acute hepatitis C
+LRPCD_STD	v4.8	CTV3	A7880	Acute human immunodeficiency virus seroconversion illness
+LRPCD_STD	v4.8	CTV3	G5204	Acute myocarditis - syphilitic
+LRPCD_STD	v4.8	CTV3	X20QA	Acute necrotising ulcerative periodontitis
+LRPCD_STD	v4.8	CTV3	X306g	Acute non-A non-B hepatitis
+LRPCD_STD	v4.8	CTV3	A9180	Acute secondary syphilitic meningitis
+LRPCD_STD	v4.8	CTV3	G5002	Acute syphilitic pericarditis
+LRPCD_STD	v4.8	CTV3	A9810	Acute unspecified gonorrhoea of upper genitourinary tract
+LRPCD_STD	v4.8	CTV3	XaALr	Admission by genitourinary medicine physician
+LRPCD_STD	v4.8	CTV3	XaANS	Admission to genitourinary medicine department
+LRPCD_STD	v4.8	CTV3	XaEFk	Advice about HIV prevention
+LRPCD_STD	v4.8	CTV3	65QA.	AIDS carrier
+LRPCD_STD	v4.8	CTV3	65P8.	AIDS contact
+LRPCD_STD	v4.8	CTV3	Xa3e8	AIDS with viral/chlamydial disease NOS
+LRPCD_STD	v4.8	CTV3	4JH61	Anal swab culture negative
+LRPCD_STD	v4.8	CTV3	XaXhB	Anal swab for chlamydia
+LRPCD_STD	v4.8	CTV3	XaXhJ	Anal swab for gonorrhoea
+LRPCD_STD	v4.8	CTV3	X70Nd	Anal warts
+LRPCD_STD	v4.8	CTV3	A5415	Anogenital herpesviral infection
+LRPCD_STD	v4.8	CTV3	Xa97f	Anogenital human papilloma virus infection
+LRPCD_STD	v4.8	CTV3	X70Lg	Anogenital papillomaviral intraepithelial neoplasia
+LRPCD_STD	v4.8	CTV3	X70LZ	Anogenital warts
+LRPCD_STD	v4.8	CTV3	XaIOI	Antenatal HIV screening
+LRPCD_STD	v4.8	CTV3	XaEM1	Anti HBc IgG level
+LRPCD_STD	v4.8	CTV3	XaEOw	Anti HBc IgM level
+LRPCD_STD	v4.8	CTV3	F4K44	Argyll Robertson pupil
+LRPCD_STD	v4.8	CTV3	X701Y	Arthropathy in nonspecific urethritis
+LRPCD_STD	v4.8	CTV3	N011.	Arthropathy: [sexually acquired reactive] or [in nonspecific urethritis] or [in Reiter's disease]
+LRPCD_STD	v4.8	CTV3	A7881	Asymptomatic human immunodeficiency virus infection
+LRPCD_STD	v4.8	CTV3	A943.	Asymptomatic neurosyphilis
+LRPCD_STD	v4.8	CTV3	X70MU	Asymptomatic secondary neurosyphilis
+LRPCD_STD	v4.8	CTV3	X70Nm	Asymptomatic trichomoniasis
+LRPCD_STD	v4.8	CTV3	XaaUv	At high risk of sexually transmitted infection
+LRPCD_STD	v4.8	CTV3	XaaUw	At low risk of sexually transmitted infection
+LRPCD_STD	v4.8	CTV3	XaJ2M	At risk of sexually transmitted infection
+LRPCD_STD	v4.8	CTV3	X717v	Bite of pubic louse
+LRPCD_STD	v4.8	CTV3	43C1.	Blood sent for HTLV-3 serology
+LRPCD_STD	v4.8	CTV3	43B1.	Blood sent: SH-antigen test
+LRPCD_STD	v4.8	CTV3	Xaat3	Bowenoid papulosis
+LRPCD_STD	v4.8	CTV3	XaEJc	Bowen's disease of vulva
+LRPCD_STD	v4.8	CTV3	X70LU	Butcher's wart
+LRPCD_STD	v4.8	CTV3	A93..	Cardiovascular syphilis
+LRPCD_STD	v4.8	CTV3	A93z.	Cardiovascular syphilis NOS
+LRPCD_STD	v4.8	CTV3	77323	Cauterisation of perianal warts NEC
+LRPCD_STD	v4.8	CTV3	X402A	Cauterisation of vulval wart
+LRPCD_STD	v4.8	CTV3	4K37.	Cervical smear - herpes
+LRPCD_STD	v4.8	CTV3	4K33.	Cervical smear - trichomonas
+LRPCD_STD	v4.8	CTV3	XE27E	Cervical smear - wart virus
+LRPCD_STD	v4.8	CTV3	4K36.	Cervical smear: [wart virus] or [herpes]
+LRPCD_STD	v4.8	CTV3	XE0S1	Chancroid
+LRPCD_STD	v4.8	CTV3	X70NB	Chancroid - anogenital ulcer
+LRPCD_STD	v4.8	CTV3	X70NC	Chancroid - extragenital ulcer
+LRPCD_STD	v4.8	CTV3	X70ND	Chancroid - latent infection
+LRPCD_STD	v4.8	CTV3	X70NE	Chancroid contact
+LRPCD_STD	v4.8	CTV3	XaFtq	Chlamydia antibody level
+LRPCD_STD	v4.8	CTV3	XaClh	Chlamydia antigen by ELISA
+LRPCD_STD	v4.8	CTV3	XaF8V	Chlamydia antigen ELISA negative
+LRPCD_STD	v4.8	CTV3	XaF8W	Chlamydia antigen ELISA positive
+LRPCD_STD	v4.8	CTV3	XaClg	Chlamydia antigen test
+LRPCD_STD	v4.8	CTV3	XaJAk	Chlamydia deoxyribonucleic acid detection
+LRPCD_STD	v4.8	CTV3	XaIMU	Chlamydia group antibody level
+LRPCD_STD	v4.8	CTV3	XaFtr	Chlamydia group complement fixation test
+LRPCD_STD	v4.8	CTV3	XaJbF	Chlamydia PCR negative
+LRPCD_STD	v4.8	CTV3	XaJbE	Chlamydia PCR positive
+LRPCD_STD	v4.8	CTV3	XaIrU	Chlamydia pneumoniae IgA level
+LRPCD_STD	v4.8	CTV3	XaFts	Chlamydia pneumoniae IgG level
+LRPCD_STD	v4.8	CTV3	XaFtt	Chlamydia pneumoniae IgM level
+LRPCD_STD	v4.8	CTV3	XaFtu	Chlamydia psittaci antibody level
+LRPCD_STD	v4.8	CTV3	XaIrV	Chlamydia psittaci IgA level
+LRPCD_STD	v4.8	CTV3	XaILy	Chlamydia psittaci IgG level
+LRPCD_STD	v4.8	CTV3	XaILz	Chlamydia psittaci IgM level
+LRPCD_STD	v4.8	CTV3	XaLHn	Chlamydia screening counselling
+LRPCD_STD	v4.8	CTV3	XaJdS	Chlamydia screening declined
+LRPCD_STD	v4.8	CTV3	XaQOG	Chlamydia screening programme test kit issued
+LRPCD_STD	v4.8	CTV3	XaJGf	Chlamydia serology
+LRPCD_STD	v4.8	CTV3	Xa39e	Chlamydia swab
+LRPCD_STD	v4.8	CTV3	XaLoo	Chlamydia test equivocal
+LRPCD_STD	v4.8	CTV3	XaLKA	Chlamydia test negative
+LRPCD_STD	v4.8	CTV3	XaLHg	Chlamydia test offered
+LRPCD_STD	v4.8	CTV3	XaLKB	Chlamydia test positive
+LRPCD_STD	v4.8	CTV3	XaY7L	Chlamydia trachomatis (lymphogranuloma venereum serovar) deoxyribonucleic acid detection
+LRPCD_STD	v4.8	CTV3	X80sy	Chlamydia trachomatis antigen
+LRPCD_STD	v4.8	CTV3	XaJNe	Chlamydia trachomatis antigen test
+LRPCD_STD	v4.8	CTV3	X70NW	Chlamydia trachomatis contact
+LRPCD_STD	v4.8	CTV3	XaYoY	Chlamydia trachomatis detection by nucleic acid amplification test
+LRPCD_STD	v4.8	CTV3	XaIrW	Chlamydia trachomatis IgA level
+LRPCD_STD	v4.8	CTV3	XaFtv	Chlamydia trachomatis IgG level
+LRPCD_STD	v4.8	CTV3	XaIM0	Chlamydia trachomatis IgM level
+LRPCD_STD	v4.8	CTV3	X70NF	Chlamydia trachomatis infection
+LRPCD_STD	v4.8	CTV3	X70NV	Chlamydia trachomatis infection suspected on epidemiological grounds
+LRPCD_STD	v4.8	CTV3	XaFtj	Chlamydia trachomatis L2 antibody level
+LRPCD_STD	v4.8	CTV3	XaXU4	Chlamydia trachomatis nucleic acid amplification test inhibitory
+LRPCD_STD	v4.8	CTV3	XaILU	Chlamydia trachomatis nucleic acid detection
+LRPCD_STD	v4.8	CTV3	Xab7Y	Chlamydia trachomatis nucleic acid detection assay
+LRPCD_STD	v4.8	CTV3	XaFtw	Chlamydia trachomatis polymerase chain reaction
+LRPCD_STD	v4.8	CTV3	XaPwu	Chlamydia trachomatis screening
+LRPCD_STD	v4.8	CTV3	X400B	Chlamydial balanitis
+LRPCD_STD	v4.8	CTV3	X4089	Chlamydial bartholinitis
+LRPCD_STD	v4.8	CTV3	X407P	Chlamydial cervicitis
+LRPCD_STD	v4.8	CTV3	X500E	Chlamydial dermatological disorders
+LRPCD_STD	v4.8	CTV3	X400a	Chlamydial epididymitis
+LRPCD_STD	v4.8	CTV3	X400h	Chlamydial epididymo-orchitis
+LRPCD_STD	v4.8	CTV3	A78A.	Chlamydial infection
+LRPCD_STD	v4.8	CTV3	A78A2	Chlamydial infection of anus and rectum
+LRPCD_STD	v4.8	CTV3	XaLWl	Chlamydial infection of genital organs NEC
+LRPCD_STD	v4.8	CTV3	A78A0	Chlamydial infection of lower genitourinary tract
+LRPCD_STD	v4.8	CTV3	A78A3	Chlamydial infection of pelviperitoneum and other genitourinary organs
+LRPCD_STD	v4.8	CTV3	X406S	Chlamydial perihepatitis
+LRPCD_STD	v4.8	CTV3	J5504	Chlamydial peritonitis
+LRPCD_STD	v4.8	CTV3	X00mP	Chlamydial pharyngitis
+LRPCD_STD	v4.8	CTV3	X30Oi	Chlamydial prostatitis
+LRPCD_STD	v4.8	CTV3	X406L	Chlamydial salpingitis
+LRPCD_STD	v4.8	CTV3	X30P0	Chlamydial urethritis
+LRPCD_STD	v4.8	CTV3	X407r	Chlamydial vulvovaginitis
+LRPCD_STD	v4.8	CTV3	X70Hc	Chlamydiosis
+LRPCD_STD	v4.8	CTV3	A9820	Chronic gonococcal bartholinitis
+LRPCD_STD	v4.8	CTV3	A9835	Chronic gonococcal cervicitis
+LRPCD_STD	v4.8	CTV3	A9831	Chronic gonococcal cystitis
+LRPCD_STD	v4.8	CTV3	A9836	Chronic gonococcal endometritis
+LRPCD_STD	v4.8	CTV3	A9833	Chronic gonococcal epididymo-orchitis
+LRPCD_STD	v4.8	CTV3	A9832	Chronic gonococcal prostatitis
+LRPCD_STD	v4.8	CTV3	A9837	Chronic gonococcal salpingitis
+LRPCD_STD	v4.8	CTV3	A9834	Chronic gonococcal seminal vesiculitis
+LRPCD_STD	v4.8	CTV3	A9821	Chronic gonococcal urethritis
+LRPCD_STD	v4.8	CTV3	A9822	Chronic gonococcal vulvovaginitis
+LRPCD_STD	v4.8	CTV3	A982.	Chronic gonorrhoea lower genitourinary tract
+LRPCD_STD	v4.8	CTV3	A982z	Chronic gonorrhoea of lower genitourinary tract NOS
+LRPCD_STD	v4.8	CTV3	A983.	Chronic gonorrhoea of upper genitourinary tract
+LRPCD_STD	v4.8	CTV3	A983z	Chronic gonorrhoea of upper genitourinary tract NOS
+LRPCD_STD	v4.8	CTV3	XaPLW	Chronic hepatitis annual review
+LRPCD_STD	v4.8	CTV3	X306l	Chronic non-A non-B hepatitis
+LRPCD_STD	v4.8	CTV3	A9830	Chronic unspecified gonorrhoea of upper genitourinary tract
+LRPCD_STD	v4.8	CTV3	X306h	Chronic viral hepatitis
+LRPCD_STD	v4.8	CTV3	X306i	Chronic viral hepatitis B
+LRPCD_STD	v4.8	CTV3	X306j	Chronic viral hepatitis B with hepatitis D
+LRPCD_STD	v4.8	CTV3	A7071	Chronic viral hepatitis B without delta-agent
+LRPCD_STD	v4.8	CTV3	X306k	Chronic viral hepatitis C
+LRPCD_STD	v4.8	CTV3	X701S	Clutton's joint
+LRPCD_STD	v4.8	CTV3	Xa0Qy	Complicated donovanosis
+LRPCD_STD	v4.8	CTV3	X408D	Condyloma acuminata of vulva
+LRPCD_STD	v4.8	CTV3	X70MK	Condylomata lata
+LRPCD_STD	v4.8	CTV3	Xa0Ae	Congenital acquired immune deficiency syndrome
+LRPCD_STD	v4.8	CTV3	Q3106	Congenital chlamydial pneumonia
+LRPCD_STD	v4.8	CTV3	Q4091	Congenital hepatitis B infection
+LRPCD_STD	v4.8	CTV3	Xa0ty	Congenital hepatitis C infection
+LRPCD_STD	v4.8	CTV3	Q4020	Congenital herpes simplex infection
+LRPCD_STD	v4.8	CTV3	Xa0Af	Congenital human immunodeficiency virus positive status syndrome
+LRPCD_STD	v4.8	CTV3	Xa0Ah	Congenital non-A non-B hepatitis infection
+LRPCD_STD	v4.8	CTV3	A90..	Congenital syphilis
+LRPCD_STD	v4.8	CTV3	A90z.	Congenital syphilis NOS
+LRPCD_STD	v4.8	CTV3	A900.	Congenital syphilis: [early forms - named variants]
+LRPCD_STD	v4.8	CTV3	XaE6R	Congenital syphilitic chorioretinitis
+LRPCD_STD	v4.8	CTV3	XM1OJ	Congenital syphilitic chronic coryza
+LRPCD_STD	v4.8	CTV3	A9041	Congenital syphilitic encephalitis
+LRPCD_STD	v4.8	CTV3	A9050	Congenital syphilitic gumma
+LRPCD_STD	v4.8	CTV3	XM1OI	Congenital syphilitic hepatomegaly
+LRPCD_STD	v4.8	CTV3	F0074	Congenital syphilitic meningitis
+LRPCD_STD	v4.8	CTV3	XM1OH	Congenital syphilitic osteochondritis
+LRPCD_STD	v4.8	CTV3	XM1OG	Congenital syphilitic pemphigus
+LRPCD_STD	v4.8	CTV3	XM1OK	Congenital syphilitic periostitis
+LRPCD_STD	v4.8	CTV3	Xa0BL	Congenital syphilitic rhinitis
+LRPCD_STD	v4.8	CTV3	XM1OF	Congenital syphilitic splenomegaly
+LRPCD_STD	v4.8	CTV3	Q409.	Congenital viral hepatitis
+LRPCD_STD	v4.8	CTV3	Q409z	Congenital viral hepatitis NOS
+LRPCD_STD	v4.8	CTV3	XaZOl	Consultation for complex sexual health need
+LRPCD_STD	v4.8	CTV3	Xa1pL	Contact of sexually transmissible disorder
+LRPCD_STD	v4.8	CTV3	X70MO	Corona veneris
+LRPCD_STD	v4.8	CTV3	XaPLz	Counselling for genital herpes screening
+LRPCD_STD	v4.8	CTV3	X4029	Cryotherapy of vulval wart
+LRPCD_STD	v4.8	CTV3	77324	Cryotherapy to perianal warts
+LRPCD_STD	v4.8	CTV3	X70N8	Cutaneous gonorrhoea
+LRPCD_STD	v4.8	CTV3	A7852	Cytomegalovirus hepatitis
+LRPCD_STD	v4.8	CTV3	X70LT	Digitate wart
+LRPCD_STD	v4.8	CTV3	XaAj3	Discharge by genitourinary medicine physician
+LRPCD_STD	v4.8	CTV3	XaAk5	Discharge by genitourinary nurse
+LRPCD_STD	v4.8	CTV3	XaAmB	Discharge from genitourinary medicine service
+LRPCD_STD	v4.8	CTV3	XaZHM	Discussion about human immunodeficiency virus post exposure prophylaxis
+LRPCD_STD	v4.8	CTV3	XE0S2	Donovanosis
+LRPCD_STD	v4.8	CTV3	X70Nt	Donovanosis - anogenital ulcer
+LRPCD_STD	v4.8	CTV3	X70Nu	Donovanosis - inguinal lesion
+LRPCD_STD	v4.8	CTV3	X70Nv	Donovanosis - non-genital lesion
+LRPCD_STD	v4.8	CTV3	X70Nw	Donovanosis contact
+LRPCD_STD	v4.8	CTV3	X70M8	Early congenital syphilis
+LRPCD_STD	v4.8	CTV3	A901.	Early congenital syphilis - latent
+LRPCD_STD	v4.8	CTV3	A902.	Early congenital syphilis NOS
+LRPCD_STD	v4.8	CTV3	XE0Ri	Early congenital syphilis with symptoms
+LRPCD_STD	v4.8	CTV3	X70No	Early lymphogranuloma venereum
+LRPCD_STD	v4.8	CTV3	A91..	Early symptomatic syphilis
+LRPCD_STD	v4.8	CTV3	XaZIw	Education about prevention of sexually transmitted disease
+LRPCD_STD	v4.8	CTV3	F0332	Encephalitis due to syphilis unspecified
+LRPCD_STD	v4.8	CTV3	XaIOG	Endocervical chlamydia swab
+LRPCD_STD	v4.8	CTV3	X00k9	Endocochlear syphilis
+LRPCD_STD	v4.8	CTV3	X70LY	Epidermodysplasia verruciformis
+LRPCD_STD	v4.8	CTV3	Xa7OL	Excision of penile warts
+LRPCD_STD	v4.8	CTV3	X70LO	Facial wart
+LRPCD_STD	v4.8	CTV3	XM1BN	False-positive serological test for syphilis
+LRPCD_STD	v4.8	CTV3	X762X	Fear of contracting HIV infection
+LRPCD_STD	v4.8	CTV3	K40y1	Female chlamydial pelvic inflammatory disease
+LRPCD_STD	v4.8	CTV3	K44..	Female gonococcal pelvic inflammatory disease
+LRPCD_STD	v4.8	CTV3	Xa6qD	Female perineal wart
+LRPCD_STD	v4.8	CTV3	K40y0	Female syphilitic pelvic inflammatory disease
+LRPCD_STD	v4.8	CTV3	X70LS	Filiform wart
+LRPCD_STD	v4.8	CTV3	X406Q	Fitz-Hugh-Curtis syndrome
+LRPCD_STD	v4.8	CTV3	XaFuE	Fluorescent treponemal antibody absorption IgG level
+LRPCD_STD	v4.8	CTV3	XaFuF	Fluorescent treponemal antibody absorption IgM level
+LRPCD_STD	v4.8	CTV3	X77bm	Fluorescent treponemal antibody test
+LRPCD_STD	v4.8	CTV3	XE0Rs	General paresis of the insane
+LRPCD_STD	v4.8	CTV3	A541.	Genital herpes
+LRPCD_STD	v4.8	CTV3	A541z	Genital herpes simplex NOS
+LRPCD_STD	v4.8	CTV3	XaPEC	Genital herpes simplex type 1 infection
+LRPCD_STD	v4.8	CTV3	XaPED	Genital herpes simplex type 2 infection
+LRPCD_STD	v4.8	CTV3	X70JW	Genital herpes simplex virus contact
+LRPCD_STD	v4.8	CTV3	XE2vG	Genital herpes unspecified
+LRPCD_STD	v4.8	CTV3	A5410	Genital herpes unspecified (& [simplex group])
+LRPCD_STD	v4.8	CTV3	X70NX	Genital mycoplasma infection
+LRPCD_STD	v4.8	CTV3	X70Nn	Genital trichomoniasis contact
+LRPCD_STD	v4.8	CTV3	XE0RT	Genital warts
+LRPCD_STD	v4.8	CTV3	XaDbk	Genitourinary chlamydia infection
+LRPCD_STD	v4.8	CTV3	XaC7I	Genitourinary medicine service
+LRPCD_STD	v4.8	CTV3	X70Lc	Giant condyloma acuminata
+LRPCD_STD	v4.8	CTV3	A9870	Gonococcal anal infection
+LRPCD_STD	v4.8	CTV3	A9850	Gonococcal arthritis
+LRPCD_STD	v4.8	CTV3	XM0CA	Gonococcal arthritis dermatitis syndrome
+LRPCD_STD	v4.8	CTV3	X70Mn	Gonococcal Bartholin's gland abscess
+LRPCD_STD	v4.8	CTV3	A9852	Gonococcal bursitis
+LRPCD_STD	v4.8	CTV3	X70N9	Gonococcal cellulitis
+LRPCD_STD	v4.8	CTV3	XaIx2	Gonococcal cervical swab
+LRPCD_STD	v4.8	CTV3	X407O	Gonococcal cervicitis
+LRPCD_STD	v4.8	CTV3	X00Zn	Gonococcal conjunctivitis
+LRPCD_STD	v4.8	CTV3	X70Mq	Gonococcal Cowperitis
+LRPCD_STD	v4.8	CTV3	K1545	Gonococcal cystitis
+LRPCD_STD	v4.8	CTV3	G5112	Gonococcal endocarditis
+LRPCD_STD	v4.8	CTV3	X4075	Gonococcal endometritis
+LRPCD_STD	v4.8	CTV3	A9842	Gonococcal endophthalmia
+LRPCD_STD	v4.8	CTV3	X400Z	Gonococcal epididymitis
+LRPCD_STD	v4.8	CTV3	X400g	Gonococcal epididymo-orchitis
+LRPCD_STD	v4.8	CTV3	A984.	Gonococcal eye infection
+LRPCD_STD	v4.8	CTV3	A984z	Gonococcal eye infection NOS
+LRPCD_STD	v4.8	CTV3	X70N0	Gonococcal female pelvic infection
+LRPCD_STD	v4.8	CTV3	X306a	Gonococcal hepatitis
+LRPCD_STD	v4.8	CTV3	A98..	Gonococcal infection
+LRPCD_STD	v4.8	CTV3	XE0Rz	Gonococcal infection of other site NOS
+LRPCD_STD	v4.8	CTV3	A98y.	Gonococcal infection of other specified sites
+LRPCD_STD	v4.8	CTV3	XE0S0	Gonococcal infections NOS
+LRPCD_STD	v4.8	CTV3	A9841	Gonococcal iridocyclitis
+LRPCD_STD	v4.8	CTV3	XE0Rx	Gonococcal joint infection NOS
+LRPCD_STD	v4.8	CTV3	A9843	Gonococcal keratitis
+LRPCD_STD	v4.8	CTV3	A98y0	Gonococcal keratosis
+LRPCD_STD	v4.8	CTV3	X70Ms	Gonococcal Littre's gland abscess
+LRPCD_STD	v4.8	CTV3	X70Mr	Gonococcal Littritis
+LRPCD_STD	v4.8	CTV3	X501h	Gonococcal lymphangitis of penis
+LRPCD_STD	v4.8	CTV3	F0070	Gonococcal meningitis
+LRPCD_STD	v4.8	CTV3	X70Mu	Gonococcal paraurethral gland abscess
+LRPCD_STD	v4.8	CTV3	XaB63	Gonococcal pelvic peritonitis
+LRPCD_STD	v4.8	CTV3	X70Mw	Gonococcal penile fistula
+LRPCD_STD	v4.8	CTV3	A98y2	Gonococcal pericarditis
+LRPCD_STD	v4.8	CTV3	X406R	Gonococcal perihepatitis
+LRPCD_STD	v4.8	CTV3	A98y5	Gonococcal peritonitis
+LRPCD_STD	v4.8	CTV3	X30P8	Gonococcal periurethral gland abscess
+LRPCD_STD	v4.8	CTV3	A986.	Gonococcal pharyngitis
+LRPCD_STD	v4.8	CTV3	A987.	Gonococcal proctitis
+LRPCD_STD	v4.8	CTV3	A987z	Gonococcal proctitis NOS
+LRPCD_STD	v4.8	CTV3	K2144	Gonococcal prostatitis
+LRPCD_STD	v4.8	CTV3	A9871	Gonococcal rectal infection
+LRPCD_STD	v4.8	CTV3	X406K	Gonococcal salpingitis
+LRPCD_STD	v4.8	CTV3	Xa89S	Gonococcal seminal vesiculitis
+LRPCD_STD	v4.8	CTV3	X70Mo	Gonococcal Skenitis
+LRPCD_STD	v4.8	CTV3	A9853	Gonococcal spondylitis
+LRPCD_STD	v4.8	CTV3	XaIx3	Gonococcal swab
+LRPCD_STD	v4.8	CTV3	X70N7	Gonococcal synovitis
+LRPCD_STD	v4.8	CTV3	A9851	Gonococcal synovitis &/or tenosynovitis
+LRPCD_STD	v4.8	CTV3	XE0Rw	Gonococcal synovitis or tenosynovitis
+LRPCD_STD	v4.8	CTV3	X707x	Gonococcal tenosynovitis
+LRPCD_STD	v4.8	CTV3	X406V	Gonococcal tubo-ovarian abscess
+LRPCD_STD	v4.8	CTV3	X70Mp	Gonococcal Tysonitis
+LRPCD_STD	v4.8	CTV3	X30P7	Gonococcal urethral abscess
+LRPCD_STD	v4.8	CTV3	XaIxB	Gonococcal urethral swab
+LRPCD_STD	v4.8	CTV3	X30Oz	Gonococcal urethritis
+LRPCD_STD	v4.8	CTV3	X407p	Gonococcal vulvovaginitis
+LRPCD_STD	v4.8	CTV3	A985z	Gonococcal: [joint infection NOS] or [rheumatism]
+LRPCD_STD	v4.8	CTV3	A98yz	Gonococcal: [OS infection NOS] or [septicaemia] or [aemia NOS]
+LRPCD_STD	v4.8	CTV3	A98yy	Gonococcal: [other infection of OS site] or [hepatitis] or [perihepatitis] or [abscess] or [cellulitis]
+LRPCD_STD	v4.8	CTV3	65Q8.	Gonorrhoea carrier
+LRPCD_STD	v4.8	CTV3	Xa0Qw	Gonorrhoea contact
+LRPCD_STD	v4.8	CTV3	L171z	Gonorrhoea during pregnancy, childbirth or the puerperium NOS
+LRPCD_STD	v4.8	CTV3	43E6.	Gonorrhoea infect. titre test
+LRPCD_STD	v4.8	CTV3	XaLI4	Gonorrhoea screening counselling
+LRPCD_STD	v4.8	CTV3	XaLHo	Gonorrhoea screening declined
+LRPCD_STD	v4.8	CTV3	XaLor	Gonorrhoea test equivocal
+LRPCD_STD	v4.8	CTV3	XaLoq	Gonorrhoea test negative
+LRPCD_STD	v4.8	CTV3	XaLos	Gonorrhoea test positive
+LRPCD_STD	v4.8	CTV3	X70Mm	Gonorrhoea with local complication
+LRPCD_STD	v4.8	CTV3	X70MX	Gummatous neurosyphilis
+LRPCD_STD	v4.8	CTV3	XaZDB	H/O hepatitis C antiviral drug therapy
+LRPCD_STD	v4.8	CTV3	XM1XA	H/O sexually transmitted infection
+LRPCD_STD	v4.8	CTV3	1415.	H/O: [venereal disease] or [STD]
+LRPCD_STD	v4.8	CTV3	XaXJw	H/O: chlamydia infection
+LRPCD_STD	v4.8	CTV3	XaaEh	H/O: genital herpes
+LRPCD_STD	v4.8	CTV3	XaaEg	H/O: genital warts
+LRPCD_STD	v4.8	CTV3	XaXJx	H/O: gonorrhoea
+LRPCD_STD	v4.8	CTV3	XaZwu	H/O: syphilis
+LRPCD_STD	v4.8	CTV3	XaZxn	H/O: trichomoniasis
+LRPCD_STD	v4.8	CTV3	XE2td	H/O: venereal disease
+LRPCD_STD	v4.8	CTV3	X70LP	Hand wart
+LRPCD_STD	v4.8	CTV3	XaEGL	Hand warts
+LRPCD_STD	v4.8	CTV3	XaEOL	HBeAg antibody level
+LRPCD_STD	v4.8	CTV3	XaEOM	HBsAg antibody level
+LRPCD_STD	v4.8	CTV3	XaEOH	Hepatitis A antibody test
+LRPCD_STD	v4.8	CTV3	XaEMG	Hepatitis A IgM antibody test
+LRPCD_STD	v4.8	CTV3	XaEKW	Hepatitis antibody test
+LRPCD_STD	v4.8	CTV3	XaEGC	Hepatitis B antibody present
+LRPCD_STD	v4.8	CTV3	Xa9L6	Hepatitis B antigen
+LRPCD_STD	v4.8	CTV3	X77bi	Hepatitis B antigen screening
+LRPCD_STD	v4.8	CTV3	X306n	Hepatitis B carrier
+LRPCD_STD	v4.8	CTV3	Xa1pO	Hepatitis B contact
+LRPCD_STD	v4.8	CTV3	XaFuU	Hepatitis B core antibody level
+LRPCD_STD	v4.8	CTV3	XaQe4	Hepatitis B core antibody positive
+LRPCD_STD	v4.8	CTV3	XaEOm	Hepatitis B core antigen test
+LRPCD_STD	v4.8	CTV3	XaFuT	Hepatitis B core IgM level
+LRPCD_STD	v4.8	CTV3	Xabp7	Hepatitis B deoxyribonucleic acid detection assay
+LRPCD_STD	v4.8	CTV3	XaFuV	Hepatitis B e antibody level
+LRPCD_STD	v4.8	CTV3	X80t5	Hepatitis B e antigen
+LRPCD_STD	v4.8	CTV3	XaILx	Hepatitis B e antigen level
+LRPCD_STD	v4.8	CTV3	XaEM4	Hepatitis B e antigen test
+LRPCD_STD	v4.8	CTV3	XE2ww	Hepatitis B immune
+LRPCD_STD	v4.8	CTV3	43B6.	Hepatitis B non-immune
+LRPCD_STD	v4.8	CTV3	XaIrP	Hepatitis B nucleic acid detection
+LRPCD_STD	v4.8	CTV3	Xab7p	Hepatitis B nucleic acid detection assay
+LRPCD_STD	v4.8	CTV3	6828.	Hepatitis B screening
+LRPCD_STD	v4.8	CTV3	XaLTv	Hepatitis B screening counselling
+LRPCD_STD	v4.8	CTV3	XaLND	Hepatitis B screening declined
+LRPCD_STD	v4.8	CTV3	XaPLp	Hepatitis B screening negative
+LRPCD_STD	v4.8	CTV3	XaLFK	Hepatitis B screening offered
+LRPCD_STD	v4.8	CTV3	XaPEy	Hepatitis B screening positive
+LRPCD_STD	v4.8	CTV3	68280	Hepatitis B screening required
+LRPCD_STD	v4.8	CTV3	XaEXZ	Hepatitis B screening test
+LRPCD_STD	v4.8	CTV3	XaFuR	Hepatitis B surface antibody level
+LRPCD_STD	v4.8	CTV3	X80t6	Hepatitis B surface antigen
+LRPCD_STD	v4.8	CTV3	XaFuS	Hepatitis B surface antigen level
+LRPCD_STD	v4.8	CTV3	XaLQM	Hepatitis B surface antigen negative
+LRPCD_STD	v4.8	CTV3	43B4.	Hepatitis B surface antigen positive
+LRPCD_STD	v4.8	CTV3	XaMEk	Hepatitis B treatment drugs Band 1
+LRPCD_STD	v4.8	CTV3	XaMBL	Hepatitis B viral load
+LRPCD_STD	v4.8	CTV3	A70z0	Hepatitis C
+LRPCD_STD	v4.8	CTV3	XaIM5	Hepatitis C antibody level
+LRPCD_STD	v4.8	CTV3	XaEOG	Hepatitis C antibody test
+LRPCD_STD	v4.8	CTV3	XaFE0	Hepatitis C antibody test negative
+LRPCD_STD	v4.8	CTV3	XaFDz	Hepatitis C antibody test positive
+LRPCD_STD	v4.8	CTV3	XaILw	Hepatitis C antigen level
+LRPCD_STD	v4.8	CTV3	XaYbg	Hepatitis C antigen negative
+LRPCD_STD	v4.8	CTV3	XaYbh	Hepatitis C antigen positive
+LRPCD_STD	v4.8	CTV3	Xaa9D	Hepatitis C antiviral treatment completed
+LRPCD_STD	v4.8	CTV3	X306o	Hepatitis C carrier
+LRPCD_STD	v4.8	CTV3	XaLGb	Hepatitis C contact
+LRPCD_STD	v4.8	CTV3	XaZ5P	Hepatitis C genotype 1
+LRPCD_STD	v4.8	CTV3	XaZ5Q	Hepatitis C genotype 2
+LRPCD_STD	v4.8	CTV3	XaZ5S	Hepatitis C genotype 3
+LRPCD_STD	v4.8	CTV3	XaZ5T	Hepatitis C genotype 4
+LRPCD_STD	v4.8	CTV3	XaZ5U	Hepatitis C genotype 5
+LRPCD_STD	v4.8	CTV3	XaZ5V	Hepatitis C genotype 6
+LRPCD_STD	v4.8	CTV3	XaEMF	Hepatitis C IgG level
+LRPCD_STD	v4.8	CTV3	Xa0v1	Hepatitis C non-immune
+LRPCD_STD	v4.8	CTV3	XaILY	Hepatitis C nucleic acid detection
+LRPCD_STD	v4.8	CTV3	Xab7q	Hepatitis C nucleic acid detection assay
+LRPCD_STD	v4.8	CTV3	XaFuW	Hepatitis C PCR
+LRPCD_STD	v4.8	CTV3	XaFuX	Hepatitis C recombinant immunoblot assay
+LRPCD_STD	v4.8	CTV3	XaJh4	Hepatitis C screening
+LRPCD_STD	v4.8	CTV3	XaLTu	Hepatitis C screening counselling
+LRPCD_STD	v4.8	CTV3	XaLNE	Hepatitis C screening declined
+LRPCD_STD	v4.8	CTV3	XaPLZ	Hepatitis C screening negative
+LRPCD_STD	v4.8	CTV3	XaNPZ	Hepatitis C screening not offered
+LRPCD_STD	v4.8	CTV3	XaLDh	Hepatitis C screening offered
+LRPCD_STD	v4.8	CTV3	XaPLl	Hepatitis C screening positive
+LRPCD_STD	v4.8	CTV3	XaIrY	Hepatitis C viral load
+LRPCD_STD	v4.8	CTV3	XaOvh	Hepatitis C viral ribonucleic acid polymerase chain reaction negative
+LRPCD_STD	v4.8	CTV3	XaXBp	Hepatitis C viral ribonucleic acid polymerase chain reaction positive
+LRPCD_STD	v4.8	CTV3	X73lC	Hepatitis C virus
+LRPCD_STD	v4.8	CTV3	XaIrZ	Hepatitis C virus genotype
+LRPCD_STD	v4.8	CTV3	XSAvo	Hepatitis C virus RNA assay
+LRPCD_STD	v4.8	CTV3	XaesZ	Hepatitis D IgM antibody detection assay
+LRPCD_STD	v4.8	CTV3	XaIyW	Hepatitis D nucleic acid detection
+LRPCD_STD	v4.8	CTV3	Xab7r	Hepatitis D nucleic acid detection assay
+LRPCD_STD	v4.8	CTV3	XaMCO	Hepatitis D serology
+LRPCD_STD	v4.8	CTV3	X306d	Hepatitis D superinfection of hepatitis B carrier
+LRPCD_STD	v4.8	CTV3	XaDq4	Hepatitis E antigen
+LRPCD_STD	v4.8	CTV3	43B5.	Hepatitis e antigen present
+LRPCD_STD	v4.8	CTV3	XaIyX	Hepatitis G serology
+LRPCD_STD	v4.8	CTV3	J6311	Hepatitis in cytomegalic inclusion virus
+LRPCD_STD	v4.8	CTV3	J6321	Hepatitis in late syphilis
+LRPCD_STD	v4.8	CTV3	J6322	Hepatitis in secondary syphilis
+LRPCD_STD	v4.8	CTV3	A7054	Hepatitis non-A non-B
+LRPCD_STD	v4.8	CTV3	XaPE9	Hepatitis status 6 months post treatment
+LRPCD_STD	v4.8	CTV3	XaFuZ	Herpes simplex antibody level
+LRPCD_STD	v4.8	CTV3	XaFua	Herpes simplex antigen (EIA)
+LRPCD_STD	v4.8	CTV3	XabpB	Herpes simplex deoxyribonucleic acid detection assay
+LRPCD_STD	v4.8	CTV3	XaJJL	Herpes simplex IgG level
+LRPCD_STD	v4.8	CTV3	XaIRy	Herpes simplex IgM level
+LRPCD_STD	v4.8	CTV3	F0113	Herpes simplex meningitis
+LRPCD_STD	v4.8	CTV3	XaILZ	Herpes simplex nucleic acid detection
+LRPCD_STD	v4.8	CTV3	Xab7K	Herpes simplex nucleic acid detection assay
+LRPCD_STD	v4.8	CTV3	XaFuY	Herpes simplex polymerase chain reaction
+LRPCD_STD	v4.8	CTV3	XabpC	Herpes simplex type 1 deoxyribonucleic acid detection assay
+LRPCD_STD	v4.8	CTV3	XabpD	Herpes simplex type 2 deoxyribonucleic acid detection assay
+LRPCD_STD	v4.8	CTV3	XaKFg	Herpes simplex virus isolation
+LRPCD_STD	v4.8	CTV3	XaN6T	Herpes simplex virus type 1 nucleic acid detection
+LRPCD_STD	v4.8	CTV3	Xab7O	Herpes simplex virus type 1 nucleic acid detection assay
+LRPCD_STD	v4.8	CTV3	XaN6U	Herpes simplex virus type 2 nucleic acid detection
+LRPCD_STD	v4.8	CTV3	Xab7P	Herpes simplex virus type 2 nucleic acid detection assay
+LRPCD_STD	v4.8	CTV3	A5414	Herpesviral infection of perianal skin and rectum
+LRPCD_STD	v4.8	CTV3	A5413	Herpetic infection of penis
+LRPCD_STD	v4.8	CTV3	A5412	Herpetic ulceration of vulva
+LRPCD_STD	v4.8	CTV3	Xa0bj	Herpetic vesicle in vagina
+LRPCD_STD	v4.8	CTV3	A5411	Herpetic vulvovaginitis
+LRPCD_STD	v4.8	CTV3	XaLow	History of hepatitis B
+LRPCD_STD	v4.8	CTV3	XaILa	HIV 1 nucleic acid detection
+LRPCD_STD	v4.8	CTV3	Xab7y	HIV 1 nucleic acid detection assay
+LRPCD_STD	v4.8	CTV3	XaFuK	HIV 1 PCR
+LRPCD_STD	v4.8	CTV3	XabpK	HIV 1 provirus deoxyribonucleic acid detection assay
+LRPCD_STD	v4.8	CTV3	XabpM	HIV 1 ribonucleic acid detection assay
+LRPCD_STD	v4.8	CTV3	XaFuN	HIV antibody/antigen (Duo)
+LRPCD_STD	v4.8	CTV3	XE1Uo	HIV contact (& [AIDS])
+LRPCD_STD	v4.8	CTV3	XaEC3	HIV counselling
+LRPCD_STD	v4.8	CTV3	A7896	HIV disease resulting in Burkitt's lymphoma
+LRPCD_STD	v4.8	CTV3	A7892	HIV disease resulting in candidiasis
+LRPCD_STD	v4.8	CTV3	A7891	HIV disease resulting in cytomegaloviral disease
+LRPCD_STD	v4.8	CTV3	A7895	HIV disease resulting in Kaposi's sarcoma
+LRPCD_STD	v4.8	CTV3	A7899	HIV disease resulting in lymphoid interstitial pneumonitis
+LRPCD_STD	v4.8	CTV3	A7894	HIV disease resulting in multiple infections
+LRPCD_STD	v4.8	CTV3	A7898	HIV disease resulting in multiple malignant neoplasms
+LRPCD_STD	v4.8	CTV3	A7890	HIV disease resulting in mycobacterial infection
+LRPCD_STD	v4.8	CTV3	A7897	HIV disease resulting in other types of non-Hodgkin's lymphoma
+LRPCD_STD	v4.8	CTV3	A7893	HIV disease resulting in Pneumocystis carinii pneumonia
+LRPCD_STD	v4.8	CTV3	43C2.	HIV negative
+LRPCD_STD	v4.8	CTV3	XaFuO	HIV p24 antigen level
+LRPCD_STD	v4.8	CTV3	43C3.	HIV positive
+LRPCD_STD	v4.8	CTV3	XE0pl	HIV risk lifestyle
+LRPCD_STD	v4.8	CTV3	6827.	HIV screening
+LRPCD_STD	v4.8	CTV3	XaLIE	HIV screening counselling
+LRPCD_STD	v4.8	CTV3	XaLI7	HIV screening declined
+LRPCD_STD	v4.8	CTV3	XaIon	HIV screening test
+LRPCD_STD	v4.8	CTV3	XaKEv	HIV serology
+LRPCD_STD	v4.8	CTV3	Xa0v3	HIV status
+LRPCD_STD	v4.8	CTV3	XaDvy	HIV test offered
+LRPCD_STD	v4.8	CTV3	XaFuL	HIV viral load
+LRPCD_STD	v4.8	CTV3	XaEQb	HIV1 antibody level
+LRPCD_STD	v4.8	CTV3	XaEME	HIV2 antibody level
+LRPCD_STD	v4.8	CTV3	X00cZ	HIV-associated retinitis
+LRPCD_STD	v4.8	CTV3	Xa1k3	HIV-related gut disease - cause unknown
+LRPCD_STD	v4.8	CTV3	Xa1k1	HIV-related sclerosing cholangitis
+LRPCD_STD	v4.8	CTV3	XaIV7	HPV - Human papillomavirus test consent given
+LRPCD_STD	v4.8	CTV3	XaIV8	HPV - Human papillomavirus test declined
+LRPCD_STD	v4.8	CTV3	XaIVB	HPV - Human papillomavirus test negative
+LRPCD_STD	v4.8	CTV3	XaIVA	HPV - Human papillomavirus test positive
+LRPCD_STD	v4.8	CTV3	XaIaM	HSV IgM level
+LRPCD_STD	v4.8	CTV3	XaFuP	HTLV 1 antibody level
+LRPCD_STD	v4.8	CTV3	XaILb	HTLV 1 nucleic acid detection
+LRPCD_STD	v4.8	CTV3	Xab7z	HTLV 1 nucleic acid detection assay
+LRPCD_STD	v4.8	CTV3	XabpO	HTLV 1 provirus deoxyribonucleic acid detection assay
+LRPCD_STD	v4.8	CTV3	XabpP	HTLV 1 ribonucleic acid detection assay
+LRPCD_STD	v4.8	CTV3	XaIM6	HTLV 2 antibody level
+LRPCD_STD	v4.8	CTV3	XaIMB	HTLV 2 nucleic acid detection
+LRPCD_STD	v4.8	CTV3	Xab80	HTLV 2 nucleic acid detection assay
+LRPCD_STD	v4.8	CTV3	XabpQ	HTLV 2 provirus deoxyribonucleic acid detection assay
+LRPCD_STD	v4.8	CTV3	XabpR	HTLV 2 ribonucleic acid detection assay
+LRPCD_STD	v4.8	CTV3	Xab81	HTLV nucleic acid detection assay
+LRPCD_STD	v4.8	CTV3	XabpS	HTLV provirus deoxyribonucleic acid detection assay
+LRPCD_STD	v4.8	CTV3	XabpU	HTLV ribonucleic acid detection assay
+LRPCD_STD	v4.8	CTV3	43CZ.	HTLV-3 antibody NOS
+LRPCD_STD	v4.8	CTV3	XaMB0	Human herpes virus 6 nucleic acid detection
+LRPCD_STD	v4.8	CTV3	Xab7t	Human herpes virus 6 nucleic acid detection assay
+LRPCD_STD	v4.8	CTV3	XaMB2	Human herpes virus 7 nucleic acid detection
+LRPCD_STD	v4.8	CTV3	Xab7u	Human herpes virus 7 nucleic acid detection assay
+LRPCD_STD	v4.8	CTV3	XaMB3	Human herpes virus 8 nucleic acid detection
+LRPCD_STD	v4.8	CTV3	Xab7x	Human herpes virus 8 nucleic acid detection assay
+LRPCD_STD	v4.8	CTV3	XaJGg	Human herpes virus serology
+LRPCD_STD	v4.8	CTV3	XabpF	Human herpesvirus 6 deoxyribonucleic acid detection assay
+LRPCD_STD	v4.8	CTV3	XabpG	Human herpesvirus 7 deoxyribonucleic acid detection assay
+LRPCD_STD	v4.8	CTV3	XabpH	Human herpesvirus 8 deoxyribonucleic acid detection assay
+LRPCD_STD	v4.8	CTV3	A789.	Human immunodef virus resulting in other disease
+LRPCD_STD	v4.8	CTV3	X70O5	Human immunodeficiency viral myelitis
+LRPCD_STD	v4.8	CTV3	XaQOu	Human immunodeficiency virus annual review
+LRPCD_STD	v4.8	CTV3	XaFuM	Human immunodeficiency virus antibody level
+LRPCD_STD	v4.8	CTV3	X76za	Human immunodeficiency virus antibody titre
+LRPCD_STD	v4.8	CTV3	XaLu9	Human immunodeficiency virus blood test
+LRPCD_STD	v4.8	CTV3	XaLHr	Human immunodeficiency virus contact
+LRPCD_STD	v4.8	CTV3	XabfF	Human immunodeficiency virus drug resistance test
+LRPCD_STD	v4.8	CTV3	X303J	Human immunodeficiency virus enteropathy
+LRPCD_STD	v4.8	CTV3	XabpJ	Human immunodeficiency virus IgG avidity
+LRPCD_STD	v4.8	CTV3	X70M6	Human immunodeficiency virus infection
+LRPCD_STD	v4.8	CTV3	A7883	Human immunodeficiency virus infection constitutional disease
+LRPCD_STD	v4.8	CTV3	Xaapz	Human immunodeficiency virus infection monitoring first telephone invitation
+LRPCD_STD	v4.8	CTV3	Xaapx	Human immunodeficiency virus infection monitoring invitation
+LRPCD_STD	v4.8	CTV3	XaaqE	Human immunodeficiency virus infection monitoring second telephone invitation
+LRPCD_STD	v4.8	CTV3	Xaapy	Human immunodeficiency virus infection monitoring telephone invitation
+LRPCD_STD	v4.8	CTV3	XaaqF	Human immunodeficiency virus infection monitoring third telephone invitation
+LRPCD_STD	v4.8	CTV3	X70O1	Human immunodeficiency virus infection wasting syndrome
+LRPCD_STD	v4.8	CTV3	A7882	Human immunodeficiency virus infection with persistent generalised lymphadenopathy
+LRPCD_STD	v4.8	CTV3	A7885	Human immunodeficiency virus infection with secondary clinical infectious disease
+LRPCD_STD	v4.8	CTV3	XaQOt	Human immunodeficiency virus monitoring
+LRPCD_STD	v4.8	CTV3	X001h	Human immunodeficiency virus myelitis
+LRPCD_STD	v4.8	CTV3	X709a	Human immunodeficiency virus myopathy
+LRPCD_STD	v4.8	CTV3	X70O6	Human immunodeficiency virus neuropathy
+LRPCD_STD	v4.8	CTV3	X80t8	Human immunodeficiency virus p24 antigen
+LRPCD_STD	v4.8	CTV3	XaQOv	Human immunodeficiency virus positive general health check service declined
+LRPCD_STD	v4.8	CTV3	XaMBF	Human immunodeficiency virus proviral deoxyribonucleic acid polymerase chain reaction
+LRPCD_STD	v4.8	CTV3	XaMBK	Human immunodeficiency virus ribonucleic acid/deoxyribonucleic acid ratio
+LRPCD_STD	v4.8	CTV3	43C..	Human immunodeficiency virus test
+LRPCD_STD	v4.8	CTV3	XaLot	Human immunodeficiency virus test equivocal
+LRPCD_STD	v4.8	CTV3	Xabnk	Human immunodeficiency virus type 1 subtype identification
+LRPCD_STD	v4.8	CTV3	XaO9K	Human immunodeficiency virus viral load by log rank
+LRPCD_STD	v4.8	CTV3	A7884	Human immunodeficiency virus with neurological disease
+LRPCD_STD	v4.8	CTV3	A788y	Human immunodeficiency virus with other clinical findings
+LRPCD_STD	v4.8	CTV3	A7886	Human immunodeficiency virus with secondary cancers
+LRPCD_STD	v4.8	CTV3	X20Q9	Human immunodeficiency virus-associated periodontitis
+LRPCD_STD	v4.8	CTV3	X001B	Human immunodefiency virus encephalitis
+LRPCD_STD	v4.8	CTV3	X001C	Human immunodefiency virus leucoencephalopathy
+LRPCD_STD	v4.8	CTV3	XabpX	Human papilloma virus deoxyribonucleic acid detection assay
+LRPCD_STD	v4.8	CTV3	X70LN	Human papilloma virus infection
+LRPCD_STD	v4.8	CTV3	XE0RS	Human papilloma virus infection of skin
+LRPCD_STD	v4.8	CTV3	XaLTM	Human papilloma virus nucleic acid detection
+LRPCD_STD	v4.8	CTV3	Xab7T	Human papilloma virus nucleic acid detection assay
+LRPCD_STD	v4.8	CTV3	XaMCp	Human T-lymphotropic virus (1&2) serology
+LRPCD_STD	v4.8	CTV3	XaMAy	Human T-lymphotropic virus nucleic acid detection
+LRPCD_STD	v4.8	CTV3	A9051	Hutchinson's incisors
+LRPCD_STD	v4.8	CTV3	X70MG	Hutchinson's triad
+LRPCD_STD	v4.8	CTV3	4JK22	HVS culture - trichomonas vaginalis
+LRPCD_STD	v4.8	CTV3	XaXtm	In-house genitourinary medicine
+LRPCD_STD	v4.8	CTV3	XaXwt	In-house genitourinary medicine discharge
+LRPCD_STD	v4.8	CTV3	XaXto	In-house genitourinary medicine first appointment
+LRPCD_STD	v4.8	CTV3	XaXws	In-house genitourinary medicine follow-up appointment
+LRPCD_STD	v4.8	CTV3	X70MA	Juvenile general paresis
+LRPCD_STD	v4.8	CTV3	A904.	Juvenile neurosyphilis
+LRPCD_STD	v4.8	CTV3	A904z	Juvenile neurosyphilis NOS
+LRPCD_STD	v4.8	CTV3	X7020	Juvenile Reiter's syndrome
+LRPCD_STD	v4.8	CTV3	X70MB	Juvenile tabes dorsalis
+LRPCD_STD	v4.8	CTV3	X70MC	Juvenile taboparesis
+LRPCD_STD	v4.8	CTV3	F4A54	Keratitis due to syphilis
+LRPCD_STD	v4.8	CTV3	X4028	Laser destruction of vulval wart
+LRPCD_STD	v4.8	CTV3	XE0Ro	Late cardiovascular syphilis
+LRPCD_STD	v4.8	CTV3	XE0Rj	Late congenital neurosyphilis
+LRPCD_STD	v4.8	CTV3	X70MF	Late congenital neurovascular syphilis
+LRPCD_STD	v4.8	CTV3	X70M9	Late congenital syphilis
+LRPCD_STD	v4.8	CTV3	A906.	Late congenital syphilis - latent
+LRPCD_STD	v4.8	CTV3	X000T	Late congenital syphilitic meningitis
+LRPCD_STD	v4.8	CTV3	A9053	Late congenital syphilitic oculopathy
+LRPCD_STD	v4.8	CTV3	X00AT	Late congenital syphilitic polyneuropathy
+LRPCD_STD	v4.8	CTV3	A96..	Late latent syphilis
+LRPCD_STD	v4.8	CTV3	X70Np	Late lymphogranuloma venereum
+LRPCD_STD	v4.8	CTV3	XE0Rq	Late quaternary neurosyphilis
+LRPCD_STD	v4.8	CTV3	A95z.	Late symptomatic syphilis NOS
+LRPCD_STD	v4.8	CTV3	XSCCR	Late syphilis
+LRPCD_STD	v4.8	CTV3	K0y0.	Late syphilis of kidney
+LRPCD_STD	v4.8	CTV3	A970.	Late syphilis unspecified
+LRPCD_STD	v4.8	CTV3	X001I	Late syphilitic encephalitis
+LRPCD_STD	v4.8	CTV3	A92..	Latent early syphilis
+LRPCD_STD	v4.8	CTV3	A92z.	Latent early syphilis NOS
+LRPCD_STD	v4.8	CTV3	X70Nq	Latent lymphogranuloma venereum
+LRPCD_STD	v4.8	CTV3	A971.	Latent syphilis unspecified
+LRPCD_STD	v4.8	CTV3	XaLI0	Low vaginal swab for chlamydia taken by patient
+LRPCD_STD	v4.8	CTV3	H57y5	Lung disease with syphilis
+LRPCD_STD	v4.8	CTV3	X2070	Lymphoedema due to lymphogranuloma venereum
+LRPCD_STD	v4.8	CTV3	A991.	Lymphogranuloma venereum
+LRPCD_STD	v4.8	CTV3	XE2s7	Lymphogranuloma venereum antigen skin test
+LRPCD_STD	v4.8	CTV3	X70Nr	Lymphogranuloma venereum contact
+LRPCD_STD	v4.8	CTV3	X503J	Maculae ceruleae - disorder
+LRPCD_STD	v4.8	CTV3	X70ML	Macular syphilide
+LRPCD_STD	v4.8	CTV3	L1711	Maternal gonorrhoea during pregnancy - baby delivered
+LRPCD_STD	v4.8	CTV3	L1713	Maternal gonorrhoea during pregnancy - baby not yet delivered
+LRPCD_STD	v4.8	CTV3	L171.	Maternal gonorrhoea during pregnancy, childbirth and the puerperium
+LRPCD_STD	v4.8	CTV3	L1712	Maternal gonorrhoea in the puerperium - baby delivered during current episode of care
+LRPCD_STD	v4.8	CTV3	L1714	Maternal gonorrhoea in the puerperium - baby delivered during previous episode of care
+LRPCD_STD	v4.8	CTV3	L1710	Maternal gonorrhoea, unspecified whether during pregnancy or the puerperium
+LRPCD_STD	v4.8	CTV3	L1701	Maternal syphilis during pregnancy - baby delivered
+LRPCD_STD	v4.8	CTV3	L1703	Maternal syphilis during pregnancy - baby not yet delivered
+LRPCD_STD	v4.8	CTV3	L170.	Maternal syphilis during pregnancy, childbirth and the puerperium
+LRPCD_STD	v4.8	CTV3	L170z	Maternal syphilis during pregnancy, childbirth or the puerperium NOS
+LRPCD_STD	v4.8	CTV3	L1702	Maternal syphilis in the puerperium - baby delivered during current episode of care
+LRPCD_STD	v4.8	CTV3	L1704	Maternal syphilis in the puerperium - baby delivered during previous episode of care
+LRPCD_STD	v4.8	CTV3	L1700	Maternal syphilis, unspecified whether during pregnancy or the puerperium
+LRPCD_STD	v4.8	CTV3	F0072	Meningitis due to neurosyphilis
+LRPCD_STD	v4.8	CTV3	X70Mc	Meningovascular syphilis - quaternary stage
+LRPCD_STD	v4.8	CTV3	X20Oo	Moon's molars
+LRPCD_STD	v4.8	CTV3	X70LW	Mosaic plantar wart
+LRPCD_STD	v4.8	CTV3	XaYVx	Mother hepatitis B positive
+LRPCD_STD	v4.8	CTV3	X400A	Mycoplasma balanitis
+LRPCD_STD	v4.8	CTV3	X70LX	Myrmecia plantar wart
+LRPCD_STD	v4.8	CTV3	X00lS	Nasal syphilis
+LRPCD_STD	v4.8	CTV3	Xaes9	Neisseria gonorrhoeae microscopy
+LRPCD_STD	v4.8	CTV3	XaILd	Neisseria gonorrhoeae nucleic acid detection
+LRPCD_STD	v4.8	CTV3	Xab8G	Neisseria gonorrhoeae nucleic acid detection assay
+LRPCD_STD	v4.8	CTV3	XaFuy	Neisseria gonorrhoeae polymerase chain reaction
+LRPCD_STD	v4.8	CTV3	Xa0Av	Neonatal chlamydial dacryocystitis
+LRPCD_STD	v4.8	CTV3	X70NS	Neonatal chlamydial infection
+LRPCD_STD	v4.8	CTV3	X100O	Neonatal chlamydial pneumonia
+LRPCD_STD	v4.8	CTV3	XE1ez	Neonatal dacryocystitis or conjunctivitis due to chlamydiae
+LRPCD_STD	v4.8	CTV3	A9840	Neonatal gonococcal conjunctivitis
+LRPCD_STD	v4.8	CTV3	X70Mj	Neonatal gonococcal infection
+LRPCD_STD	v4.8	CTV3	X407q	Neonatal gonococcal vulvovaginitis
+LRPCD_STD	v4.8	CTV3	X00B7	Neuropathy due to human immunodeficiency virus
+LRPCD_STD	v4.8	CTV3	A94..	Neurosyphilis
+LRPCD_STD	v4.8	CTV3	XE0U0	Neurosyphilis (& [GPI] or [tabes dorsalis])
+LRPCD_STD	v4.8	CTV3	A94z.	Neurosyphilis NOS
+LRPCD_STD	v4.8	CTV3	X70Na	Nonspecific genital infection contact
+LRPCD_STD	v4.8	CTV3	A994.	Nonspecific urethritis
+LRPCD_STD	v4.8	CTV3	65VE.	Notification of AIDS
+LRPCD_STD	v4.8	CTV3	2BG3.	O/E - Argyll Robertson pupils
+LRPCD_STD	v4.8	CTV3	XaZDE	On hepatitis C treatment plan
+LRPCD_STD	v4.8	CTV3	X20RM	Oral syphilis
+LRPCD_STD	v4.8	CTV3	XE0Ru	Other and unspecified syphilis
+LRPCD_STD	v4.8	CTV3	A95..	Other forms of late syphilis with symptoms
+LRPCD_STD	v4.8	CTV3	A918.	Other forms of secondary syphilis
+LRPCD_STD	v4.8	CTV3	A98y4	Other gonococcal heart disease
+LRPCD_STD	v4.8	CTV3	XE0Ry	Other gonococcal infection of other specified site
+LRPCD_STD	v4.8	CTV3	A905.	Other late congenital syphilis
+LRPCD_STD	v4.8	CTV3	A905z	Other late congenital syphilis NOS
+LRPCD_STD	v4.8	CTV3	L1723	Other maternal venereal disease during pregnancy - baby not yet delivered
+LRPCD_STD	v4.8	CTV3	L172z	Other maternal venereal disease during pregnancy, childbirth or the puerperium NOS
+LRPCD_STD	v4.8	CTV3	L1724	Other maternal venereal disease during the puerperium - baby delivered during previous episode of care
+LRPCD_STD	v4.8	CTV3	L1721	Other maternal venereal disease in pregnancy - baby delivered
+LRPCD_STD	v4.8	CTV3	L1722	Other maternal venereal disease in the puerperium - baby delivered during current episode of care
+LRPCD_STD	v4.8	CTV3	L1720	Other maternal venereal disease, unspecified whether during pregnancy or the puerperium
+LRPCD_STD	v4.8	CTV3	L172.	Other maternal venereal diseases during pregnancy, childbirth and the puerperium
+LRPCD_STD	v4.8	CTV3	A912.	Other primary syphilis
+LRPCD_STD	v4.8	CTV3	A912z	Other primary syphilis NOS
+LRPCD_STD	v4.8	CTV3	A918z	Other secondary syphilis NOS
+LRPCD_STD	v4.8	CTV3	A93y.	Other specified cardiovascular system syphilis
+LRPCD_STD	v4.8	CTV3	A93yz	Other specified cardiovascular system syphilis NOS
+LRPCD_STD	v4.8	CTV3	Q409y	Other specified congenital viral hepatitis
+LRPCD_STD	v4.8	CTV3	A95y.	Other specified late syphilis
+LRPCD_STD	v4.8	CTV3	A94y.	Other specified neurosyphilis
+LRPCD_STD	v4.8	CTV3	A94yz	Other specified neurosyphilis NOS
+LRPCD_STD	v4.8	CTV3	AD1y.	Other specified site trichomonas
+LRPCD_STD	v4.8	CTV3	A9y..	Other specified syphilis or other venereal diseases
+LRPCD_STD	v4.8	CTV3	A99y.	Other specified venereal diseases
+LRPCD_STD	v4.8	CTV3	A78y.	Other specified viral and chlamydial diseases
+LRPCD_STD	v4.8	CTV3	A78yz	Other specified viral and chlamydial diseases NOS
+LRPCD_STD	v4.8	CTV3	A704.	Other specified viral hepatitis with coma
+LRPCD_STD	v4.8	CTV3	A704z	Other specified viral hepatitis with hepatic coma NOS
+LRPCD_STD	v4.8	CTV3	A705.	Other specified viral hepatitis without coma
+LRPCD_STD	v4.8	CTV3	A705z	Other specified viral hepatitis without mention of hepatic coma NOS
+LRPCD_STD	v4.8	CTV3	A7y..	Other specified viral or chlamydial diseases
+LRPCD_STD	v4.8	CTV3	XE0U2	Other syphilis
+LRPCD_STD	v4.8	CTV3	K17y.	Other urethritis
+LRPCD_STD	v4.8	CTV3	K17yz	Other urethritis NOS
+LRPCD_STD	v4.8	CTV3	A99..	Other venereal diseases
+LRPCD_STD	v4.8	CTV3	Xa3eB	Other venereal/spirochaete disease
+LRPCD_STD	v4.8	CTV3	A7...	Other viral and chlamydial diseases
+LRPCD_STD	v4.8	CTV3	A7z..	Other viral or chlamydial disease NOS
+LRPCD_STD	v4.8	CTV3	A78..	Other viral or chlamydial diseases
+LRPCD_STD	v4.8	CTV3	XE0Tg	Other viral warts
+LRPCD_STD	v4.8	CTV3	X402J	Painting of female perineal warts
+LRPCD_STD	v4.8	CTV3	77325	Painting of perianal warts
+LRPCD_STD	v4.8	CTV3	7D035	Painting of vulval warts
+LRPCD_STD	v4.8	CTV3	X70MN	Papular syphilide
+LRPCD_STD	v4.8	CTV3	A941.	Paresis: [general neurosyphilis & GPI] or [tabo]
+LRPCD_STD	v4.8	CTV3	8CAE.	Patient advised about the risks of HIV
+LRPCD_STD	v4.8	CTV3	XaKz0	Patient advised to notify sexual partners of sexual transmitted infection
+LRPCD_STD	v4.8	CTV3	XaPDq	Patient reviewed following treatment for sexually transmitted disease
+LRPCD_STD	v4.8	CTV3	4JK80	Penile swab culture positive
+LRPCD_STD	v4.8	CTV3	4JK8.	Penile swab taken
+LRPCD_STD	v4.8	CTV3	X70Nf	Penile warts
+LRPCD_STD	v4.8	CTV3	XE0RU	Perianal warts
+LRPCD_STD	v4.8	CTV3	X307Y	Pericellular fibrosis of congenital syphilis
+LRPCD_STD	v4.8	CTV3	Xa6qC	Perineal wart
+LRPCD_STD	v4.8	CTV3	J5501	Peritonitis - syphilitic
+LRPCD_STD	v4.8	CTV3	X70LQ	Periungual wart
+LRPCD_STD	v4.8	CTV3	XaaNI	Pharyngeal lymphogranuloma venereum
+LRPCD_STD	v4.8	CTV3	XE2xh	Phthiriasis pubis
+LRPCD_STD	v4.8	CTV3	AD22.	Phthirus/pediculus pubis - pubic lice - crabs (& infestation)
+LRPCD_STD	v4.8	CTV3	X70LV	Plane wart
+LRPCD_STD	v4.8	CTV3	A7811	Plantar wart
+LRPCD_STD	v4.8	CTV3	XaXU9	Post exposure prophylaxis after sexual exposure
+LRPCD_STD	v4.8	CTV3	X701X	Post-dysenteric Reiter's disease
+LRPCD_STD	v4.8	CTV3	XE1DP	Post-genitourinary infection reactive arthritis
+LRPCD_STD	v4.8	CTV3	X701Z	Post-genitourinary infection Reiter's disease
+LRPCD_STD	v4.8	CTV3	N0381	Post-infective arthropathy in syphilis
+LRPCD_STD	v4.8	CTV3	XE0yG	Pregnancy with venereal disease (& [gonorrhoea] or [syphilis])
+LRPCD_STD	v4.8	CTV3	A911.	Primary anal syphilis
+LRPCD_STD	v4.8	CTV3	X70JU	Primary anogenital herpes
+LRPCD_STD	v4.8	CTV3	A9120	Primary breast syphilis
+LRPCD_STD	v4.8	CTV3	X70MI	Primary extragenital syphilis
+LRPCD_STD	v4.8	CTV3	A9121	Primary finger syphilis
+LRPCD_STD	v4.8	CTV3	A910.	Primary genital syphilis
+LRPCD_STD	v4.8	CTV3	A9122	Primary lip syphilis
+LRPCD_STD	v4.8	CTV3	XE0Rk	Primary syphilis
+LRPCD_STD	v4.8	CTV3	X40Fc	Primary syphilis of nipple
+LRPCD_STD	v4.8	CTV3	A9123	Primary tonsil syphilis
+LRPCD_STD	v4.8	CTV3	8HVP.	Private referral to venereologist
+LRPCD_STD	v4.8	CTV3	X70MP	Pustular syphilide
+LRPCD_STD	v4.8	CTV3	Xa0kV	Quaternary syphilis
+LRPCD_STD	v4.8	CTV3	X78il	Queyrat's erythroplasia
+LRPCD_STD	v4.8	CTV3	XaX4G	Rapid human immunodeficiency virus antibody test
+LRPCD_STD	v4.8	CTV3	XE0Rl	Rash of secondary syphilis
+LRPCD_STD	v4.8	CTV3	XaaNJ	Rectal lymphogranuloma venereum
+LRPCD_STD	v4.8	CTV3	X70JV	Recurrent anogenital herpes
+LRPCD_STD	v4.8	CTV3	XaPER	Recurrent genital herpes simplex type 1 infection
+LRPCD_STD	v4.8	CTV3	XaPES	Recurrent genital herpes simplex type 2 infection
+LRPCD_STD	v4.8	CTV3	Xaa9L	Recurrent genital warts
+LRPCD_STD	v4.8	CTV3	XaAa7	Referral by genitourinary medicine physician
+LRPCD_STD	v4.8	CTV3	XaAb4	Referral by genitourinary nurse
+LRPCD_STD	v4.8	CTV3	XaYnd	Referral to community human immunodeficiency virus nurse specialist
+LRPCD_STD	v4.8	CTV3	XaAcf	Referral to genitourinary medicine service
+LRPCD_STD	v4.8	CTV3	XaAgw	Referral to genitourinary nurse
+LRPCD_STD	v4.8	CTV3	XaAfz	Referral to genitourinary physician
+LRPCD_STD	v4.8	CTV3	XaJcA	Referral to sexually transmitted infections clinic
+LRPCD_STD	v4.8	CTV3	A993.	Reiter's disease
+LRPCD_STD	v4.8	CTV3	XaMEl	Respiratory syncytial virus treatment and Hepatitis C treatment drugs Band 1
+LRPCD_STD	v4.8	CTV3	A7y01	Retrovirus as the cause of diseases classified to other chapters
+LRPCD_STD	v4.8	CTV3	A798.	Retrovirus infection
+LRPCD_STD	v4.8	CTV3	X70MM	Roseola
+LRPCD_STD	v4.8	CTV3	A94y6	Rupture of syphilitic cerebral aneurysm
+LRPCD_STD	v4.8	CTV3	X70MT	Secondary neurosyphilis
+LRPCD_STD	v4.8	CTV3	X70MJ	Secondary syphilis
+LRPCD_STD	v4.8	CTV3	A9130	Secondary syphilis of anus
+LRPCD_STD	v4.8	CTV3	XM1OL	Secondary syphilis of bone
+LRPCD_STD	v4.8	CTV3	A9131	Secondary syphilis of mouth
+LRPCD_STD	v4.8	CTV3	A9132	Secondary syphilis of pharynx
+LRPCD_STD	v4.8	CTV3	A9133	Secondary syphilis of skin
+LRPCD_STD	v4.8	CTV3	A913.	Secondary syphilis of skin and mucous membrane
+LRPCD_STD	v4.8	CTV3	A913z	Secondary syphilis of skin or mucus membranes NOS
+LRPCD_STD	v4.8	CTV3	A9134	Secondary syphilis of tonsils
+LRPCD_STD	v4.8	CTV3	XM1OM	Secondary syphilis of viscera
+LRPCD_STD	v4.8	CTV3	A916.	Secondary syphilis of viscera &/or bone
+LRPCD_STD	v4.8	CTV3	A916z	Secondary syphilis of viscera and bone NOS
+LRPCD_STD	v4.8	CTV3	XE0Rm	Secondary syphilis of viscera or bone
+LRPCD_STD	v4.8	CTV3	A9135	Secondary syphilis of vulva
+LRPCD_STD	v4.8	CTV3	A917.	Secondary syphilis relapse
+LRPCD_STD	v4.8	CTV3	A9151	Secondary syphilitic chorioretinitis
+LRPCD_STD	v4.8	CTV3	A9161	Secondary syphilitic hepatitis
+LRPCD_STD	v4.8	CTV3	A9152	Secondary syphilitic iridocyclitis
+LRPCD_STD	v4.8	CTV3	A914.	Secondary syphilitic lymphadenopathy
+LRPCD_STD	v4.8	CTV3	F0075	Secondary syphilitic meningitis
+LRPCD_STD	v4.8	CTV3	A9160	Secondary syphilitic periostitis
+LRPCD_STD	v4.8	CTV3	A915z	Secondary syphilitic uveitis NOS
+LRPCD_STD	v4.8	CTV3	XaZxo	Seen by community HIV (human immunodeficiency virus) nurse
+LRPCD_STD	v4.8	CTV3	XaASy	Seen by genitourinary medicine physician
+LRPCD_STD	v4.8	CTV3	XaATx	Seen by genitourinary nurse
+LRPCD_STD	v4.8	CTV3	XaZJg	Serologic test for herpes simplex
+LRPCD_STD	v4.8	CTV3	A920.	Serological relapse after treatment of latent early syphilis
+LRPCD_STD	v4.8	CTV3	XE0TY	Serum hepatitis
+LRPCD_STD	v4.8	CTV3	XaLHk	Sexual contact with high risk partner
+LRPCD_STD	v4.8	CTV3	N011z	Sexually acquired reactive arthropathy NOS
+LRPCD_STD	v4.8	CTV3	N011x	Sexually acquired reactive arthropathy of multiple sites
+LRPCD_STD	v4.8	CTV3	N011y	Sexually acquired reactive arthropathy of other specified site
+LRPCD_STD	v4.8	CTV3	N0117	Sexually acquired reactive arthropathy of the ankle and foot
+LRPCD_STD	v4.8	CTV3	N0113	Sexually acquired reactive arthropathy of the forearm
+LRPCD_STD	v4.8	CTV3	N0114	Sexually acquired reactive arthropathy of the hand
+LRPCD_STD	v4.8	CTV3	N0116	Sexually acquired reactive arthropathy of the lower leg
+LRPCD_STD	v4.8	CTV3	N0115	Sexually acquired reactive arthropathy of the pelvic region and thigh
+LRPCD_STD	v4.8	CTV3	N0111	Sexually acquired reactive arthropathy of the shoulder region
+LRPCD_STD	v4.8	CTV3	N0112	Sexually acquired reactive arthropathy of the upper arm
+LRPCD_STD	v4.8	CTV3	N0110	Sexually acquired reactive arthropathy of unspecified site
+LRPCD_STD	v4.8	CTV3	Xa86V	Sexually transmissible disease
+LRPCD_STD	v4.8	CTV3	Xaa3V	Sexually transmitted infection in-house follow-up
+LRPCD_STD	v4.8	CTV3	6832.	Sexually transmitted infection screening
+LRPCD_STD	v4.8	CTV3	XaZGw	Sexually transmitted infection screening offered
+LRPCD_STD	v4.8	CTV3	XE254	SH-antigen (hepatitis B) test
+LRPCD_STD	v4.8	CTV3	43B3.	SH-antigen negative
+LRPCD_STD	v4.8	CTV3	43BZ.	SH-antigen test NOS
+LRPCD_STD	v4.8	CTV3	XaKAL	Specialised sexual health enhanced service completed
+LRPCD_STD	v4.8	CTV3	XaKA6	Specialised sexual health enhanced services administration
+LRPCD_STD	v4.8	CTV3	XE0U6	Spirochaete disease: [other venereal] or [Vincent's angina] or [chancroid] or [leptospirosis] or [lymphogranuloma venereum] or [trench mouth] or [Weil's disease] or [Yaws]
+LRPCD_STD	v4.8	CTV3	X70LR	Subungual wart
+LRPCD_STD	v4.8	CTV3	X70M7	Syphilis
+LRPCD_STD	v4.8	CTV3	XE0Rh	Syphilis and other venereal diseases
+LRPCD_STD	v4.8	CTV3	X76zW	Syphilis antibody titre
+LRPCD_STD	v4.8	CTV3	Xa0Qx	Syphilis contact
+LRPCD_STD	v4.8	CTV3	F0331	Syphilis encephalitis (& congenital)
+LRPCD_STD	v4.8	CTV3	XaFvU	Syphilis IgG level
+LRPCD_STD	v4.8	CTV3	XE24x	Syphilis infectious titre test
+LRPCD_STD	v4.8	CTV3	438..	Syphilis infectious titre test (& [TPI] or [VDRL] or [Wassermann's])
+LRPCD_STD	v4.8	CTV3	A97z.	Syphilis NOS
+LRPCD_STD	v4.8	CTV3	A955.	Syphilis of bone
+LRPCD_STD	v4.8	CTV3	X40Fb	Syphilis of breast
+LRPCD_STD	v4.8	CTV3	A9572	Syphilis of bursa
+LRPCD_STD	v4.8	CTV3	A954.	Syphilis of kidney
+LRPCD_STD	v4.8	CTV3	A953.	Syphilis of liver
+LRPCD_STD	v4.8	CTV3	A951.	Syphilis of lung
+LRPCD_STD	v4.8	CTV3	A956.	Syphilis of muscle
+LRPCD_STD	v4.8	CTV3	A9570	Syphilis of synovium
+LRPCD_STD	v4.8	CTV3	A957.	Syphilis of synovium, tendon or bursa
+LRPCD_STD	v4.8	CTV3	A957z	Syphilis of synovium, tendon or bursa NOS
+LRPCD_STD	v4.8	CTV3	A9571	Syphilis of tendon
+LRPCD_STD	v4.8	CTV3	A9z..	Syphilis or venereal disease NOS
+LRPCD_STD	v4.8	CTV3	XaPE7	Syphilis screen 1 year post treatment
+LRPCD_STD	v4.8	CTV3	XaPDs	Syphilis screen 3 months post treatment
+LRPCD_STD	v4.8	CTV3	XaPE6	Syphilis screen 6 months post treatment
+LRPCD_STD	v4.8	CTV3	XaLTt	Syphilis screening counselling
+LRPCD_STD	v4.8	CTV3	XaLNB	Syphilis screening declined
+LRPCD_STD	v4.8	CTV3	XaLN9	Syphilis screening offered
+LRPCD_STD	v4.8	CTV3	X77bl	Syphilis serology
+LRPCD_STD	v4.8	CTV3	Xa0Qz	Syphilis suspected on epidemiological grounds
+LRPCD_STD	v4.8	CTV3	4381.	Syphilis titre test negative
+LRPCD_STD	v4.8	CTV3	XE24z	Syphilis titre test NOS
+LRPCD_STD	v4.8	CTV3	4382.	Syphilis titre test positive
+LRPCD_STD	v4.8	CTV3	438Z.	Syphilis titre test: [NOS] or [TPHA]
+LRPCD_STD	v4.8	CTV3	A94y5	Syphilitic acoustic neuritis
+LRPCD_STD	v4.8	CTV3	Xa97h	Syphilitic acoustic neuritis - quaternary stage
+LRPCD_STD	v4.8	CTV3	A9181	Syphilitic alopecia
+LRPCD_STD	v4.8	CTV3	X205A	Syphilitic aneurysm
+LRPCD_STD	v4.8	CTV3	G717.	Syphilitic aortic aneurysm
+LRPCD_STD	v4.8	CTV3	Xa9EK	Syphilitic aortic regurgitation
+LRPCD_STD	v4.8	CTV3	G767.	Syphilitic aortitis
+LRPCD_STD	v4.8	CTV3	N2227	Syphilitic bursitis
+LRPCD_STD	v4.8	CTV3	X00E1	Syphilitic cerebral arteritis
+LRPCD_STD	v4.8	CTV3	XaE64	Syphilitic chorioretinitis
+LRPCD_STD	v4.8	CTV3	X70MZ	Syphilitic coronary artery disease
+LRPCD_STD	v4.8	CTV3	X00lv	Syphilitic crinkle nose
+LRPCD_STD	v4.8	CTV3	A94y2	Syphilitic disseminated retinochoroiditis
+LRPCD_STD	v4.8	CTV3	A94y0	Syphilitic encephalitis
+LRPCD_STD	v4.8	CTV3	XE0Rp	Syphilitic endocarditis
+LRPCD_STD	v4.8	CTV3	Xa0kU	Syphilitic endocarditis of aortic valve
+LRPCD_STD	v4.8	CTV3	A932z	Syphilitic endocarditis of heart valve NOS
+LRPCD_STD	v4.8	CTV3	A9321	Syphilitic endocarditis of mitral valve
+LRPCD_STD	v4.8	CTV3	A9324	Syphilitic endocarditis of pulmonary valve
+LRPCD_STD	v4.8	CTV3	A9323	Syphilitic endocarditis of tricuspid valve
+LRPCD_STD	v4.8	CTV3	A9320	Syphilitic endocarditis of unspecified valve
+LRPCD_STD	v4.8	CTV3	A950.	Syphilitic episcleritis
+LRPCD_STD	v4.8	CTV3	X70MW	Syphilitic gumma
+LRPCD_STD	v4.8	CTV3	X20RN	Syphilitic gumma of oral cavity
+LRPCD_STD	v4.8	CTV3	A903.	Syphilitic interstitial keratitis
+LRPCD_STD	v4.8	CTV3	X70MS	Syphilitic leukoderma
+LRPCD_STD	v4.8	CTV3	Xa7pz	Syphilitic meningitis
+LRPCD_STD	v4.8	CTV3	X70MQ	Syphilitic mucosal ulceration
+LRPCD_STD	v4.8	CTV3	A93y1	Syphilitic myocarditis
+LRPCD_STD	v4.8	CTV3	A94y3	Syphilitic optic atrophy
+LRPCD_STD	v4.8	CTV3	X20Qi	Syphilitic oral leukoplakia
+LRPCD_STD	v4.8	CTV3	X20RO	Syphilitic oral snail track ulcer
+LRPCD_STD	v4.8	CTV3	A94y1	Syphilitic parkinsonism
+LRPCD_STD	v4.8	CTV3	A93y0	Syphilitic pericarditis
+LRPCD_STD	v4.8	CTV3	A952.	Syphilitic peritonitis
+LRPCD_STD	v4.8	CTV3	X70Md	Syphilitic polyneuropathy
+LRPCD_STD	v4.8	CTV3	J615F	Syphilitic portal cirrhosis
+LRPCD_STD	v4.8	CTV3	K2142	Syphilitic prostatitis
+LRPCD_STD	v4.8	CTV3	A94y4	Syphilitic retrobulbar neuritis
+LRPCD_STD	v4.8	CTV3	A9052	Syphilitic saddle nose
+LRPCD_STD	v4.8	CTV3	A9150	Syphilitic uveitis unspecified
+LRPCD_STD	v4.8	CTV3	X200g	Syphilitic valve disease
+LRPCD_STD	v4.8	CTV3	Xa3eA	Syphilitic/venereal/spirochaetal disease
+LRPCD_STD	v4.8	CTV3	A932.	Syphilitic: [endocarditis] or [valve disease]
+LRPCD_STD	v4.8	CTV3	X70N5	Systemic gonococcal infection
+LRPCD_STD	v4.8	CTV3	XE0Rr	Tabes dorsalis
+LRPCD_STD	v4.8	CTV3	X702Q	Tabetic joint
+LRPCD_STD	v4.8	CTV3	X70Mb	Tabo paresis
+LRPCD_STD	v4.8	CTV3	XaE4c	Taking penile swab
+LRPCD_STD	v4.8	CTV3	X70MV	Tertiary syphilis
+LRPCD_STD	v4.8	CTV3	XaE6S	Tertiary syphilitic chorioretinitis
+LRPCD_STD	v4.8	CTV3	XaXhF	Throat swab for chlamydia
+LRPCD_STD	v4.8	CTV3	XaXhK	Throat swab for gonorrhoea
+LRPCD_STD	v4.8	CTV3	XaK9j	Total treponema antibody level
+LRPCD_STD	v4.8	CTV3	6826.	Trachoma screening
+LRPCD_STD	v4.8	CTV3	XaPNc	Treatment of recurrent genital herpes
+LRPCD_STD	v4.8	CTV3	XaZ17	Treponema pallidum deoxyribonucleic acid detection
+LRPCD_STD	v4.8	CTV3	XaYs4	Treponema pallidum detection by nucleic acid amplification test
+LRPCD_STD	v4.8	CTV3	XaIQH	Treponema pallidum ELISA negative
+LRPCD_STD	v4.8	CTV3	XaIQI	Treponema pallidum ELISA positive
+LRPCD_STD	v4.8	CTV3	XaJN0	Treponema pallidum gelatin agglutination test
+LRPCD_STD	v4.8	CTV3	XE24y	Treponema pallidum haemaglutination test
+LRPCD_STD	v4.8	CTV3	XaFvc	Treponema pallidum IgG level
+LRPCD_STD	v4.8	CTV3	XaFvd	Treponema pallidum IgM level
+LRPCD_STD	v4.8	CTV3	X77bn	Treponema pallidum immobilisation test
+LRPCD_STD	v4.8	CTV3	Xaes8	Treponema pallidum microscopy
+LRPCD_STD	v4.8	CTV3	XaIvX	Treponema pallidum particle agglutination test
+LRPCD_STD	v4.8	CTV3	XaDvT	Treponema pallidum particle inhibition test
+LRPCD_STD	v4.8	CTV3	XaIM8	Treponema pallidum reagin antibody level
+LRPCD_STD	v4.8	CTV3	XaNMb	Treponema pallidum total antibodies measurement
+LRPCD_STD	v4.8	CTV3	XaIaD	Treponema screening test
+LRPCD_STD	v4.8	CTV3	X4009	Trichomonal balanoposthitis
+LRPCD_STD	v4.8	CTV3	K1547	Trichomonal cystitis
+LRPCD_STD	v4.8	CTV3	K2146	Trichomonal prostatitis
+LRPCD_STD	v4.8	CTV3	AD102	Trichomonal urethritis
+LRPCD_STD	v4.8	CTV3	Xa0Er	Trichomonal vaginitis
+LRPCD_STD	v4.8	CTV3	AD101	Trichomonal vaginitis &/or vulvovaginitis
+LRPCD_STD	v4.8	CTV3	X4085	Trichomonal vulvitis
+LRPCD_STD	v4.8	CTV3	XE0Sc	Trichomonal vulvovaginitis
+LRPCD_STD	v4.8	CTV3	A063.	Trichomonas hominis infection
+LRPCD_STD	v4.8	CTV3	AD1z.	Trichomonas NOS
+LRPCD_STD	v4.8	CTV3	XaLHy	Trichomonas not seen
+LRPCD_STD	v4.8	CTV3	XaIot	Trichomonas screening test
+LRPCD_STD	v4.8	CTV3	XaLHx	Trichomonas seen
+LRPCD_STD	v4.8	CTV3	XaLGz	Trichomonas vaginalis contact
+LRPCD_STD	v4.8	CTV3	AD1..	Trichomoniasis
+LRPCD_STD	v4.8	CTV3	XaAPP	Under care of genitourinary medicine physician
+LRPCD_STD	v4.8	CTV3	XaAQa	Under care of genitourinary nurse
+LRPCD_STD	v4.8	CTV3	A9040	Unspecified juvenile neurosyphilis
+LRPCD_STD	v4.8	CTV3	A907.	Unspecified late congenital syphilis
+LRPCD_STD	v4.8	CTV3	A919.	Unspecified secondary syphilis
+LRPCD_STD	v4.8	CTV3	XE0Sb	Unspecified urogenital trichomonas
+LRPCD_STD	v4.8	CTV3	A781z	Unspecified viral warts
+LRPCD_STD	v4.8	CTV3	XaIOH	Urethral chlamydia swab
+LRPCD_STD	v4.8	CTV3	4JK10	Urethral swab culture positive
+LRPCD_STD	v4.8	CTV3	K17y1	Urethral syndrome NOS
+LRPCD_STD	v4.8	CTV3	K17y0	Urethritis unspecified
+LRPCD_STD	v4.8	CTV3	XaKIG	Urine chlamydia trachomatis test negative
+LRPCD_STD	v4.8	CTV3	XaKID	Urine chlamydia trachomatis test positive
+LRPCD_STD	v4.8	CTV3	XaPDu	Urine neisseria gonorrhoeae test negative
+LRPCD_STD	v4.8	CTV3	XaPDt	Urine neisseria gonorrhoeae test positive
+LRPCD_STD	v4.8	CTV3	XaJny	Urine screen for chlamydia
+LRPCD_STD	v4.8	CTV3	XaPLq	Urine screen for gonorrhoea
+LRPCD_STD	v4.8	CTV3	AD10.	Urogenital trichomonas
+LRPCD_STD	v4.8	CTV3	AD10z	Urogenital trichomonas NOS
+LRPCD_STD	v4.8	CTV3	A915.	Uveitis due to secondary syphilis
+LRPCD_STD	v4.8	CTV3	X001i	Vacuolar myelopathy
+LRPCD_STD	v4.8	CTV3	XM1V5	VDRL (syphilis) titre
+LRPCD_STD	v4.8	CTV3	XaFvf	VDRL titre
+LRPCD_STD	v4.8	CTV3	Xa0GZ	Venereal disease
+LRPCD_STD	v4.8	CTV3	65Q9.	Venereal disease carrier NOS
+LRPCD_STD	v4.8	CTV3	XE1Sq	Venereal disease contact
+LRPCD_STD	v4.8	CTV3	65P7.	Venereal disease contact (& [gonorrhoea] or [syphilis])
+LRPCD_STD	v4.8	CTV3	XM0tH	Venereal disease in pregnancy
+LRPCD_STD	v4.8	CTV3	A99z.	Venereal disease NOS
+LRPCD_STD	v4.8	CTV3	4384.	Venereal diseases research laboratory test
+LRPCD_STD	v4.8	CTV3	Xa3eC	Venereal/spirochaete disease NOS
+LRPCD_STD	v4.8	CTV3	A7810	Verruca vulgaris
+LRPCD_STD	v4.8	CTV3	A702.	Viral hepatitis B with coma
+LRPCD_STD	v4.8	CTV3	A7040	Viral hepatitis C with coma
+LRPCD_STD	v4.8	CTV3	A7050	Viral hepatitis C without mention of hepatic coma
+LRPCD_STD	v4.8	CTV3	65Q7.	Viral hepatitis carrier
+LRPCD_STD	v4.8	CTV3	Xa1pM	Viral hepatitis contact
+LRPCD_STD	v4.8	CTV3	XaJeA	Viral hepatitis screening test
+LRPCD_STD	v4.8	CTV3	XaYbp	Viral hepatitis with hepatic coma
+LRPCD_STD	v4.8	CTV3	XaYbq	Viral hepatitis without hepatic coma
+LRPCD_STD	v4.8	CTV3	A703.	Viral serum hepatitis B
+LRPCD_STD	v4.8	CTV3	XE0Te	Viral warts (& [condyloma acuminatum])
+LRPCD_STD	v4.8	CTV3	X408C	Vulval warts
+LRPCD_STD	v4.8	CTV3	A7813	Warts: [perianal] or [anal]
+LRPCD_STD	v4.8	CTV3	A781.	Warts: [viral] or [verrucae]
+LRPCD_STD	v4.8	CTV3	4383.	Wassermann reaction

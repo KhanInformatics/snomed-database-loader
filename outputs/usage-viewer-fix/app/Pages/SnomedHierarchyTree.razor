@@ -1,0 +1,423 @@
+@page "/snomed-hierarchy-tree"
+@using Syncfusion.Blazor.Navigations
+
+<style>
+    .hierarchy-container {
+        padding: 20px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    
+    .page-title {
+        color: #2c3e50;
+        margin-bottom: 10px;
+    }
+    
+    .page-subtitle {
+        color: #7f8c8d;
+        margin-bottom: 20px;
+    }
+    
+    .focus-node {
+        background: linear-gradient(135deg, #51cf66 0%, #40c057 100%);
+        color: white;
+        padding: 12px 20px;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 1.1em;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 8px rgba(81, 207, 102, 0.3);
+    }
+    
+    .focus-node .code {
+        font-size: 0.85em;
+        opacity: 0.9;
+        font-weight: normal;
+    }
+    
+    .tree-section {
+        margin-bottom: 30px;
+    }
+    
+    .section-header {
+        font-size: 1.1em;
+        font-weight: 600;
+        color: #495057;
+        padding: 10px 0;
+        border-bottom: 2px solid #e9ecef;
+        margin-bottom: 15px;
+    }
+    
+    .section-header .count {
+        color: #868e96;
+        font-weight: normal;
+        font-size: 0.9em;
+    }
+    
+    .e-treeview .e-list-item {
+        padding: 2px 0;
+    }
+    
+    .e-treeview .e-text-content {
+        padding: 8px 12px;
+        border-radius: 6px;
+        transition: background-color 0.2s;
+    }
+    
+    .e-treeview .e-text-content:hover {
+        background-color: #f8f9fa;
+    }
+    
+    .tree-node {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .node-badge {
+        display: inline-block;
+        padding: 2px 8px;
+        border-radius: 4px;
+        font-size: 0.75em;
+        font-weight: 600;
+        min-width: 70px;
+        text-align: center;
+    }
+    
+    .badge-parent {
+        background-color: #74c0fc;
+        color: #1864ab;
+    }
+    
+    .badge-ancestor {
+        background-color: #efd46e;
+        color: #805b10;
+    }
+    
+    .badge-root {
+        background-color: #ff6b6b;
+        color: #fff;
+    }
+    
+    .node-name {
+        font-weight: 500;
+        color: #343a40;
+    }
+    
+    .node-code {
+        color: #868e96;
+        font-size: 0.85em;
+        font-family: 'Consolas', monospace;
+    }
+    
+    .legend {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        padding: 15px;
+        background: #f8f9fa;
+        border-radius: 8px;
+    }
+    
+    .legend-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    .stats-bar {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 20px;
+        padding: 15px;
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        border-radius: 8px;
+    }
+    
+    .stat-item {
+        text-align: center;
+    }
+    
+    .stat-value {
+        font-size: 1.5em;
+        font-weight: 700;
+        color: #495057;
+    }
+    
+    .stat-label {
+        font-size: 0.85em;
+        color: #868e96;
+    }
+    
+    .shared-note {
+        font-size: 0.8em;
+        color: #868e96;
+        font-style: italic;
+        margin-left: 10px;
+    }
+</style>
+
+<div class="hierarchy-container">
+    <h2 class="page-title">SNOMED CT Hierarchy - Tree View</h2>
+    <p class="page-subtitle">Collapsible tree showing ancestor pathways to Pneumonia</p>
+    
+    <div class="focus-node">
+        <div>🎯 Pneumonia (disorder)</div>
+        <div class="code">SNOMED CT: 233604007</div>
+    </div>
+    
+    <div class="stats-bar">
+        <div class="stat-item">
+            <div class="stat-value">2</div>
+            <div class="stat-label">Direct Parents</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-value">28</div>
+            <div class="stat-label">Total Ancestors</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-value">3</div>
+            <div class="stat-label">Major Branches</div>
+        </div>
+    </div>
+    
+    <div class="legend">
+        <div class="legend-item">
+            <span class="node-badge badge-root">Root</span>
+            <span>Top-level concept</span>
+        </div>
+        <div class="legend-item">
+            <span class="node-badge badge-parent">Parent</span>
+            <span>Direct parent of Pneumonia</span>
+        </div>
+        <div class="legend-item">
+            <span class="node-badge badge-ancestor">Ancestor</span>
+            <span>Higher-level ancestor</span>
+        </div>
+    </div>
+    
+    <div class="tree-section">
+        <div class="section-header">
+            📤 Pathway 1: Infectious disease of lung 
+            <span class="count">(Disease → Infectious → Lung)</span>
+        </div>
+        <SfTreeView TValue="TreeNode" ExpandOn="ExpandAction.Click">
+            <TreeViewFieldsSettings TValue="TreeNode" 
+                                    Id="Id" 
+                                    ParentID="ParentId" 
+                                    Text="Name" 
+                                    HasChildren="HasChild" 
+                                    Expanded="Expanded"
+                                    DataSource="@pathway1Nodes">
+            </TreeViewFieldsSettings>
+            <TreeViewTemplates TValue="TreeNode">
+                <NodeTemplate>
+                    <div class="tree-node">
+                        <span class="node-badge @GetBadgeClass(context.NodeType)">@context.NodeType</span>
+                        <span class="node-name">@context.Name</span>
+                        <span class="node-code">@context.Code</span>
+                        @if (!string.IsNullOrEmpty(context.Note))
+                        {
+                            <span class="shared-note">@context.Note</span>
+                        }
+                    </div>
+                </NodeTemplate>
+            </TreeViewTemplates>
+        </SfTreeView>
+    </div>
+    
+    <div class="tree-section">
+        <div class="section-header">
+            📤 Pathway 2: Pneumonitis 
+            <span class="count">(Inflammatory → Respiratory)</span>
+        </div>
+        <SfTreeView TValue="TreeNode" ExpandOn="ExpandAction.Click">
+            <TreeViewFieldsSettings TValue="TreeNode" 
+                                    Id="Id" 
+                                    ParentID="ParentId" 
+                                    Text="Name" 
+                                    HasChildren="HasChild" 
+                                    Expanded="Expanded"
+                                    DataSource="@pathway2Nodes">
+            </TreeViewFieldsSettings>
+            <TreeViewTemplates TValue="TreeNode">
+                <NodeTemplate>
+                    <div class="tree-node">
+                        <span class="node-badge @GetBadgeClass(context.NodeType)">@context.NodeType</span>
+                        <span class="node-name">@context.Name</span>
+                        <span class="node-code">@context.Code</span>
+                        @if (!string.IsNullOrEmpty(context.Note))
+                        {
+                            <span class="shared-note">@context.Note</span>
+                        }
+                    </div>
+                </NodeTemplate>
+            </TreeViewTemplates>
+        </SfTreeView>
+    </div>
+    
+    <div class="tree-section">
+        <div class="section-header">
+            📤 Pathway 3: Anatomical (Finding of trunk) 
+            <span class="count">(Trunk → Thorax → Lung)</span>
+        </div>
+        <SfTreeView TValue="TreeNode" ExpandOn="ExpandAction.Click">
+            <TreeViewFieldsSettings TValue="TreeNode" 
+                                    Id="Id" 
+                                    ParentID="ParentId" 
+                                    Text="Name" 
+                                    HasChildren="HasChild" 
+                                    Expanded="Expanded"
+                                    DataSource="@pathway3Nodes">
+            </TreeViewFieldsSettings>
+            <TreeViewTemplates TValue="TreeNode">
+                <NodeTemplate>
+                    <div class="tree-node">
+                        <span class="node-badge @GetBadgeClass(context.NodeType)">@context.NodeType</span>
+                        <span class="node-name">@context.Name</span>
+                        <span class="node-code">@context.Code</span>
+                        @if (!string.IsNullOrEmpty(context.Note))
+                        {
+                            <span class="shared-note">@context.Note</span>
+                        }
+                    </div>
+                </NodeTemplate>
+            </TreeViewTemplates>
+        </SfTreeView>
+    </div>
+</div>
+
+@code {
+    private List<TreeNode> pathway1Nodes = new();
+    private List<TreeNode> pathway2Nodes = new();
+    private List<TreeNode> pathway3Nodes = new();
+    
+    protected override void OnInitialized()
+    {
+        BuildPathway1();
+        BuildPathway2();
+        BuildPathway3();
+    }
+    
+    private void BuildPathway1()
+    {
+        // Pathway 1: Infectious disease of lung
+        // Clinical finding → Disease → Infectious disease → Resp infection → Lower resp infection → Infectious disease of lung → PNEUMONIA
+        pathway1Nodes = new List<TreeNode>
+        {
+            new TreeNode { Id = "p1", Name = "Infectious disease of lung", Code = "128601007", NodeType = "Parent", HasChild = true, Expanded = true },
+            
+            // Via Lower respiratory infection
+            new TreeNode { Id = "a1", ParentId = "p1", Name = "Lower respiratory tract infection", Code = "50417007", NodeType = "Ancestor", HasChild = true, Expanded = true },
+            new TreeNode { Id = "a2", ParentId = "a1", Name = "Respiratory tract infection", Code = "275498002", NodeType = "Ancestor", HasChild = true },
+            new TreeNode { Id = "a3", ParentId = "a2", Name = "Infectious disease", Code = "40733004", NodeType = "Ancestor", HasChild = true },
+            new TreeNode { Id = "a4", ParentId = "a3", Name = "Disease", Code = "64572001", NodeType = "Ancestor", HasChild = true },
+            new TreeNode { Id = "a5", ParentId = "a4", Name = "Clinical finding", Code = "404684003", NodeType = "Root", HasChild = false },
+            
+            // Also: Resp tract infection ← Disorder of resp system
+            new TreeNode { Id = "a6", ParentId = "a2", Name = "Disorder of respiratory system", Code = "50043002", NodeType = "Ancestor", HasChild = true },
+            new TreeNode { Id = "a7", ParentId = "a6", Name = "Disorder of body system", Code = "362965005", NodeType = "Ancestor", HasChild = true },
+            new TreeNode { Id = "a8", ParentId = "a7", Name = "Disease", Code = "64572001", NodeType = "Ancestor", HasChild = false, Note = "(shared)" },
+            
+            // Via Disorder of lung
+            new TreeNode { Id = "b1", ParentId = "p1", Name = "Disorder of lung", Code = "19829001", NodeType = "Ancestor", HasChild = true, Expanded = true, Note = "(shared with Pathway 3)" },
+            new TreeNode { Id = "b2", ParentId = "b1", Name = "Disorder of lower respiratory tract", Code = "128272009", NodeType = "Ancestor", HasChild = true },
+            new TreeNode { Id = "b3", ParentId = "b2", Name = "Disorder of respiratory system", Code = "50043002", NodeType = "Ancestor", HasChild = false, Note = "(shared)" },
+            
+            // Lower resp infection ← Disorder of lower resp tract
+            new TreeNode { Id = "b4", ParentId = "a1", Name = "Disorder of lower respiratory tract", Code = "128272009", NodeType = "Ancestor", HasChild = false, Note = "(shared)" },
+            
+            // Lower resp infection ← Lower resp finding
+            new TreeNode { Id = "c1", ParentId = "a1", Name = "Lower respiratory tract finding", Code = "301226008", NodeType = "Ancestor", HasChild = true },
+            new TreeNode { Id = "c2", ParentId = "c1", Name = "Respiratory finding", Code = "106048009", NodeType = "Ancestor", HasChild = true },
+            new TreeNode { Id = "c3", ParentId = "c2", Name = "Clinical finding", Code = "404684003", NodeType = "Root", HasChild = false },
+        };
+    }
+    
+    private void BuildPathway2()
+    {
+        // Pathway 2: Pneumonitis (Inflammatory pathway)
+        pathway2Nodes = new List<TreeNode>
+        {
+            new TreeNode { Id = "p2", Name = "Pneumonitis", Code = "205237003", NodeType = "Parent", HasChild = true, Expanded = true },
+            
+            // Via Inflammatory disorder of lower respiratory tract
+            new TreeNode { Id = "d1", ParentId = "p2", Name = "Inflammatory disorder of lower respiratory tract", Code = "128997002", NodeType = "Ancestor", HasChild = true, Expanded = true },
+            new TreeNode { Id = "d2", ParentId = "d1", Name = "Inflammatory disorder of respiratory tract", Code = "363180009", NodeType = "Ancestor", HasChild = true },
+            new TreeNode { Id = "d3", ParentId = "d2", Name = "Inflammatory disorder of respiratory system", Code = "373405005", NodeType = "Ancestor", HasChild = true },
+            new TreeNode { Id = "d4", ParentId = "d3", Name = "Inflammation of specific body systems", Code = "363171009", NodeType = "Ancestor", HasChild = true },
+            new TreeNode { Id = "d5", ParentId = "d4", Name = "Disorder of body system", Code = "362965005", NodeType = "Ancestor", HasChild = true },
+            new TreeNode { Id = "d6", ParentId = "d5", Name = "Disease", Code = "64572001", NodeType = "Ancestor", HasChild = true },
+            new TreeNode { Id = "d7", ParentId = "d6", Name = "Clinical finding", Code = "404684003", NodeType = "Root", HasChild = false },
+            
+            // Also via Inflammation of specific body organs
+            new TreeNode { Id = "e1", ParentId = "p2", Name = "Inflammation of specific body organs", Code = "363169009", NodeType = "Ancestor", HasChild = true, Expanded = true },
+            new TreeNode { Id = "e2", ParentId = "e1", Name = "Inflammation of specific body structures", Code = "363170005", NodeType = "Ancestor", HasChild = true },
+            new TreeNode { Id = "e3", ParentId = "e2", Name = "Inflammatory disorder", Code = "128139000", NodeType = "Ancestor", HasChild = true },
+            new TreeNode { Id = "e4", ParentId = "e3", Name = "Disease", Code = "64572001", NodeType = "Ancestor", HasChild = false, Note = "(shared)" },
+            
+            // Pneumonitis ← Disorder of lung (shared with Pathway 1)
+            new TreeNode { Id = "f1", ParentId = "p2", Name = "Disorder of lung", Code = "19829001", NodeType = "Ancestor", HasChild = false, Note = "(shared with Pathway 1)" },
+        };
+    }
+    
+    private void BuildPathway3()
+    {
+        // Pathway 3: Anatomical pathway (Finding of trunk → Thorax → Lung)
+        pathway3Nodes = new List<TreeNode>
+        {
+            // Disorder of lung as starting point (connects to both parents)
+            new TreeNode { Id = "g0", Name = "Disorder of lung", Code = "19829001", NodeType = "Ancestor", HasChild = true, Expanded = true, Note = "(connects to both parents)" },
+            
+            // Via Lung finding
+            new TreeNode { Id = "g1", ParentId = "g0", Name = "Lung finding", Code = "301230006", NodeType = "Ancestor", HasChild = true, Expanded = true },
+            new TreeNode { Id = "g2", ParentId = "g1", Name = "Lower respiratory tract finding", Code = "301226008", NodeType = "Ancestor", HasChild = true },
+            new TreeNode { Id = "g3", ParentId = "g2", Name = "Respiratory finding", Code = "106048009", NodeType = "Ancestor", HasChild = true },
+            new TreeNode { Id = "g4", ParentId = "g3", Name = "Clinical finding", Code = "404684003", NodeType = "Root", HasChild = false },
+            
+            // Via Disorder of thorax
+            new TreeNode { Id = "h1", ParentId = "g0", Name = "Disorder of thorax", Code = "118946009", NodeType = "Ancestor", HasChild = true, Expanded = true },
+            
+            // Disorder of thorax ← Finding of thoracic cavity
+            new TreeNode { Id = "h2", ParentId = "h1", Name = "Finding of thoracic cavity", Code = "298705000", NodeType = "Ancestor", HasChild = true },
+            new TreeNode { Id = "h3", ParentId = "h2", Name = "Finding of upper trunk", Code = "609623002", NodeType = "Ancestor", HasChild = true },
+            new TreeNode { Id = "h4", ParentId = "h3", Name = "Finding of trunk", Code = "302292003", NodeType = "Ancestor", HasChild = true },
+            new TreeNode { Id = "h5", ParentId = "h4", Name = "Clinical finding", Code = "404684003", NodeType = "Root", HasChild = false },
+            
+            // Disorder of thorax ← Disorder of thoracic segment
+            new TreeNode { Id = "i1", ParentId = "h1", Name = "Disorder of thoracic segment of trunk", Code = "609622007", NodeType = "Ancestor", HasChild = true },
+            new TreeNode { Id = "i2", ParentId = "i1", Name = "Disorder of trunk", Code = "128121009", NodeType = "Ancestor", HasChild = true },
+            new TreeNode { Id = "i3", ParentId = "i2", Name = "Finding of trunk", Code = "302292003", NodeType = "Ancestor", HasChild = false, Note = "(shared)" },
+            
+            // Disorder of thoracic segment ← Finding of upper trunk
+            new TreeNode { Id = "i4", ParentId = "i1", Name = "Finding of upper trunk", Code = "609623002", NodeType = "Ancestor", HasChild = false, Note = "(shared)" },
+            
+            // Lung finding ← Disorder of thorax
+            new TreeNode { Id = "j1", ParentId = "g1", Name = "Disorder of thorax", Code = "118946009", NodeType = "Ancestor", HasChild = false, Note = "(shared)" },
+        };
+    }
+    
+    private string GetBadgeClass(string nodeType)
+    {
+        return nodeType switch
+        {
+            "Parent" => "badge-parent",
+            "Ancestor" => "badge-ancestor",
+            "Root" => "badge-root",
+            _ => "badge-ancestor"
+        };
+    }
+    
+    public class TreeNode
+    {
+        public string Id { get; set; } = "";
+        public string? ParentId { get; set; }
+        public string Name { get; set; } = "";
+        public string Code { get; set; } = "";
+        public string NodeType { get; set; } = "";
+        public string? Note { get; set; }
+        public bool HasChild { get; set; }
+        public bool Expanded { get; set; }
+    }
+}

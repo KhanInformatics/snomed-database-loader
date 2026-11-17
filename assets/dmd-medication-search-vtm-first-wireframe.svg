@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="560" viewBox="0 0 820 560" role="img" aria-labelledby="title desc">
+  <title id="title">VTM-first medication search wireframe</title>
+  <desc id="desc">Medication search for amox showing Virtual Therapeutic Moiety first, product counts, generic products second, and ingredient search collapsed under Advanced.</desc>
+  <style>
+    .label { font: 700 22px Arial, Helvetica, sans-serif; fill: #17212f; }
+    .input { font: 400 22px Arial, Helvetica, sans-serif; fill: #17212f; }
+    .section { font: 700 20px Arial, Helvetica, sans-serif; fill: #263142; }
+    .row { font: 400 21px Arial, Helvetica, sans-serif; fill: #17212f; }
+    .muted { font: 400 18px Arial, Helvetica, sans-serif; fill: #5d6878; }
+    .count { font: 700 17px Arial, Helvetica, sans-serif; fill: #24507a; }
+    .advanced { font: 700 19px Arial, Helvetica, sans-serif; fill: #334155; }
+  </style>
+  <rect width="820" height="560" rx="18" fill="#f5f7fb"/>
+  <rect x="70" y="48" width="680" height="492" rx="10" fill="#ffffff" stroke="#cfd8e3" stroke-width="2"/>
+  <text x="110" y="94" class="label">Medication</text>
+  <rect x="110" y="118" width="600" height="50" rx="5" fill="#ffffff" stroke="#228be6" stroke-width="4"/>
+  <text x="132" y="151" class="input">amox</text>
+
+  <line x1="110" y1="196" x2="710" y2="196" stroke="#e5eaf0" stroke-width="2"/>
+  <text x="110" y="228" class="section">Virtual Therapeutic Moiety</text>
+
+  <rect x="110" y="248" width="600" height="54" rx="6" fill="#f8fafc"/>
+  <text x="136" y="282" class="row">Amoxicillin</text>
+  <rect x="568" y="259" width="118" height="32" rx="16" fill="#e9f2fb"/>
+  <text x="588" y="281" class="count">15 products</text>
+
+  <rect x="110" y="306" width="600" height="54" rx="6" fill="#ffffff"/>
+  <text x="136" y="340" class="row">Co-amoxiclav</text>
+  <rect x="568" y="317" width="118" height="32" rx="16" fill="#e9f2fb"/>
+  <text x="588" y="339" class="count">16 products</text>
+
+  <line x1="110" y1="386" x2="710" y2="386" stroke="#e5eaf0" stroke-width="2"/>
+  <text x="110" y="418" class="section">Generic Products <tspan class="muted">(specific formulations)</tspan></text>
+  <text x="136" y="456" class="row">Amoxicillin 500mg capsules</text>
+  <text x="136" y="492" class="row">Co-Amoxiclav 1000mg Infusion Bag</text>
+
+  <line x1="110" y1="510" x2="710" y2="510" stroke="#e5eaf0" stroke-width="2"/>
+  <polygon points="116,520 128,527 116,534" fill="#334155"/>
+  <text x="142" y="535" class="advanced">Advanced: search by ingredient</text>
+</svg>

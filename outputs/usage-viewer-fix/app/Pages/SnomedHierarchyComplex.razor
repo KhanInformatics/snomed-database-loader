@@ -1,0 +1,619 @@
+@page "/snomed-hierarchy-complex"
+@using Syncfusion.Blazor.Inputs
+@using Syncfusion.Blazor.Diagram
+@using Syncfusion.Blazor.Buttons
+@using ButtonChangeArgs = Syncfusion.Blazor.Buttons.ChangeEventArgs<bool>
+
+<PageTitle>SNOMED CT Complex Hierarchy</PageTitle>
+
+<!-- Page Header Section -->
+<div class="page-header-wrapper">
+    <div class="page-header">
+        <div class="page-header-content">
+            <div class="page-header-main">
+                <h4 class="page-title mb-1">SNOMED CT Complex Hierarchy: Pneumonia (233604007)</h4>
+                <p class="page-subtitle mb-0">ComplexHierarchicalTree layout optimized for polyhierarchy visualization</p>
+            </div>
+            <div class="page-header-actions">
+                <span class="badge bg-primary me-2">28 Ancestors</span>
+                <span class="badge bg-success me-2">Multiple Parents Supported</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid" style="margin-top: 0; padding-top: 1rem;">
+    <!-- Controls -->
+    <div class="row mb-3">
+        <div class="col-md-8">
+            <div class="card" style="box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                <div class="card-body py-2">
+                    <div class="d-flex flex-wrap gap-4 align-items-center">
+                        <div class="d-flex align-items-center">
+                            <label class="form-label small mb-0 me-2">Orientation:</label>
+                            <div class="btn-group btn-group-sm">
+                                <button class="btn @(OrientationType == LayoutOrientation.TopToBottom ? "btn-primary" : "btn-outline-secondary")" @onclick="ToptoBottomClick" title="Top to Bottom">
+                                    <i class="fas fa-arrow-down"></i> TB
+                                </button>
+                                <button class="btn @(OrientationType == LayoutOrientation.LeftToRight ? "btn-primary" : "btn-outline-secondary")" @onclick="LefttoRightClick" title="Left to Right">
+                                    <i class="fas fa-arrow-right"></i> LR
+                                </button>
+                                <button class="btn @(OrientationType == LayoutOrientation.BottomToTop ? "btn-primary" : "btn-outline-secondary")" @onclick="BottomtoTopClick" title="Bottom to Top">
+                                    <i class="fas fa-arrow-up"></i> BT
+                                </button>
+                                <button class="btn @(OrientationType == LayoutOrientation.RightToLeft ? "btn-primary" : "btn-outline-secondary")" @onclick="RighttoLeftClick" title="Right to Left">
+                                    <i class="fas fa-arrow-left"></i> RL
+                                </button>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <label class="form-label small mb-0 me-2">H-Spacing:</label>
+                            <SfNumericTextBox TValue="int" @bind-Value="@HorizontalSpacing" Min="20" Max="100" Step="10" Width="80px" CssClass="form-control-sm"></SfNumericTextBox>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <label class="form-label small mb-0 me-2">V-Spacing:</label>
+                            <SfNumericTextBox TValue="int" @bind-Value="@VerticalSpacing" Min="20" Max="100" Step="10" Width="80px" CssClass="form-control-sm"></SfNumericTextBox>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" @bind="IsSamePoint" id="samePointCheck">
+                            <label class="form-check-label small" for="samePointCheck">Same Point (reduce crossings)</label>
+                        </div>
+                        <button class="btn btn-sm btn-outline-primary" @onclick="FitToPage">
+                            <i class="fas fa-expand me-1"></i> Fit
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" style="box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                <div class="card-body py-2">
+                    <div class="d-flex flex-wrap gap-3 align-items-center justify-content-center">
+                        <div class="d-flex align-items-center">
+                            <div style="width: 16px; height: 16px; background-color: #ff6b6b; border-radius: 3px; margin-right: 6px;"></div>
+                            <small>Root</small>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div style="width: 16px; height: 16px; background-color: #f3904a; border-radius: 3px; margin-right: 6px;"></div>
+                            <small>L1 Branch</small>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div style="width: 16px; height: 16px; background-color: #efd46e; border-radius: 3px; margin-right: 6px;"></div>
+                            <small>Ancestor</small>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div style="width: 16px; height: 16px; background-color: #74c0fc; border-radius: 3px; margin-right: 6px;"></div>
+                            <small>Immediate Parent</small>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div style="width: 16px; height: 16px; background-color: #51cf66; border-radius: 3px; margin-right: 6px;"></div>
+                            <small><strong>PNEUMONIA</strong></small>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div style="width: 16px; height: 16px; background-color: #659be5; border-radius: 3px; margin-right: 6px;"></div>
+                            <small>Child</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Diagram -->
+    <div class="row">
+        <div class="col-12">
+            <div class="card" style="box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                <div class="card-header bg-light py-2 d-flex justify-content-between align-items-center">
+                    <h6 class="mb-0 small">
+                        <i class="fas fa-project-diagram me-2"></i>
+                        SNOMED CT Polyhierarchy - ComplexHierarchicalTree Layout
+                    </h6>
+                    <span class="badge bg-info">@DataSource.Count nodes</span>
+                </div>
+                <div class="card-body p-0">
+                    <SfDiagramComponent @ref="@Diagram" 
+                                       Created="OnCreated" 
+                                       Height="700px" 
+                                       NodeCreating="@OnNodeCreating" 
+                                       ConnectorCreating="@OnConnectorCreating" 
+                                       InteractionController="@DiagramInteractions.ZoomPan">
+                        <ScrollSettings @bind-ScrollLimit="@ScrollLimit"></ScrollSettings>
+                        <DataSourceSettings ID="Id" ParentID="ReportingPerson" DataSource="DataSource"></DataSourceSettings>
+                        <Layout @bind-Type="@LayoutStyle" 
+                                @bind-VerticalSpacing="@VerticalSpacing" 
+                                @bind-SamePoint="@IsSamePoint" 
+                                @bind-HorizontalSpacing="@HorizontalSpacing" 
+                                @bind-Orientation="@OrientationType" 
+                                HorizontalAlignment="@HorizontalAlignment" 
+                                VerticalAlignment="@VerticalAlignment">
+                            <LayoutMargin @bind-Top="@TopPosition" @bind-Bottom="@BottomPosition" @bind-Right="@RightPosition" @bind-Left="@LeftPosition"></LayoutMargin>
+                        </Layout>
+                        <SnapSettings Constraints="SnapConstraints.None"></SnapSettings>
+                    </SfDiagramComponent>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Info Panel -->
+    <div class="row mt-3">
+        <div class="col-12">
+            <div class="card" style="box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                <div class="card-body py-2">
+                    <p class="small mb-0 text-muted">
+                        <i class="fas fa-info-circle me-1"></i>
+                        <strong>ComplexHierarchicalTree</strong> layout is optimized for polyhierarchies where nodes can have multiple parents. 
+                        This is ideal for SNOMED CT's IS-A relationships. Toggle <strong>"Same Point"</strong> to route connectors through shared points and reduce line crossings.
+                        Adjust spacing to optimize the layout.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code
+{
+    ScrollLimitMode ScrollLimit { get; set; } = ScrollLimitMode.Diagram;
+    private bool IsSamePoint { get; set; } = true;
+    public SfDiagramComponent? Diagram;
+    public LayoutOrientation OrientationType = LayoutOrientation.TopToBottom;
+    public LayoutType LayoutStyle = LayoutType.ComplexHierarchicalTree;
+    public HorizontalAlignment HorizontalAlignment = HorizontalAlignment.Center;
+    public VerticalAlignment VerticalAlignment = VerticalAlignment.Top;
+    public int HorizontalSpacing { get; set; } = 80;  // Increased spacing
+    public int VerticalSpacing { get; set; } = 80;    // Increased spacing
+    public double TopPosition { get; set; } = 50;
+    public double BottomPosition { get; set; } = 50;
+    public double RightPosition { get; set; } = 50;
+    public double LeftPosition { get; set; } = 50;
+
+    private void OnNodeCreating(IDiagramObject obj)
+    {
+        Node? node = obj as Node;
+        SnomedHierarchyItem? item = node!.Data as SnomedHierarchyItem;
+        
+        // Size based on whether it's the focus node
+        node.Width = item!.IsFocus ? 180 : 150;
+        node.Height = item.IsFocus ? 60 : 50;
+        
+        node.Shape = new BasicShape() 
+        { 
+            Type = Syncfusion.Blazor.Diagram.NodeShapes.Basic, 
+            Shape = NodeBasicShapes.Rectangle, 
+            CornerRadius = item.IsFocus ? 10 : 6 
+        };
+        
+        node.Style = new ShapeStyle() 
+        { 
+            Fill = item.FillColor, 
+            StrokeWidth = item.IsFocus ? 3 : 1, 
+            StrokeColor = item.BorderColor 
+        };
+
+        // Add annotation with concept name
+        node.Annotations = new DiagramObjectCollection<ShapeAnnotation>()
+        {
+            new ShapeAnnotation()
+            {
+                Content = item.Label,
+                Style = new TextStyle()
+                {
+                    Color = "white",
+                    FontSize = item.IsFocus ? 11 : 9,
+                    Bold = item.IsFocus,
+                    TextWrapping = Syncfusion.Blazor.Diagram.TextWrap.Wrap
+                }
+            }
+        };
+    }
+
+    private void OnConnectorCreating(IDiagramObject connector1)
+    {
+        Connector? connector = (connector1 as Connector);
+        connector!.Type = ConnectorSegmentType.Orthogonal;
+        connector.CornerRadius = 10;
+        
+        // Add padding to keep connector lines away from node edges
+        connector.SourcePadding = 10;
+        connector.TargetPadding = 10;
+        
+        connector.Style = new ShapeStyle()
+        {
+            StrokeColor = "#6d6d6d",
+            StrokeWidth = 1
+        };
+        connector.TargetDecorator!.Height = 8;
+        connector.TargetDecorator.Width = 8;
+        connector.TargetDecorator.Style = new ShapeStyle()
+        {
+            Fill = "#6d6d6d",
+            StrokeColor = "#6d6d6d"
+        };
+    }
+
+    private void OnCreated()
+    {
+        FitOptions options = new FitOptions() { Mode = FitMode.Both, Region = DiagramRegion.Content };
+        Diagram!.FitToPage(options);
+    }
+
+    private void FitToPage()
+    {
+        FitOptions options = new FitOptions() { Mode = FitMode.Both, Region = DiagramRegion.Content };
+        Diagram!.FitToPage(options);
+    }
+
+    private void ToptoBottomClick() => OrientationType = LayoutOrientation.TopToBottom;
+    private void LefttoRightClick() => OrientationType = LayoutOrientation.LeftToRight;
+    private void RighttoLeftClick() => OrientationType = LayoutOrientation.RightToLeft;
+    private void BottomtoTopClick() => OrientationType = LayoutOrientation.BottomToTop;
+
+    public class SnomedHierarchyItem
+    {
+        public string? Id { get; set; }
+        public string? Label { get; set; }
+        public string? ConceptId { get; set; }
+        public string? FillColor { get; set; }
+        public string? BorderColor { get; set; }
+        public bool IsFocus { get; set; } = false;
+        public List<string>? ReportingPerson { get; set; }  // Parent IDs (supports multiple)
+    }
+
+    // PNEUMONIA HIERARCHY - Structured into 3 vertical pathways to minimize crossings:
+    // LEFT: Inflammatory pathway | CENTRE: Trunk/Anatomical pathway | RIGHT: Respiratory/Infectious pathway
+    public List<SnomedHierarchyItem> DataSource = new List<SnomedHierarchyItem>()
+    {
+        // ===== ROOT =====
+        new SnomedHierarchyItem() { 
+            Id = "404684003", 
+            ConceptId = "404684003",
+            Label = "Clinical finding", 
+            FillColor = "#ff6b6b", 
+            BorderColor = "#c92a2a" 
+        },
+
+        // ===== LEVEL 1: Three main branches (Left→Right) =====
+        // LEFT: Disease (leads to inflammatory)
+        new SnomedHierarchyItem() { 
+            Id = "64572001", 
+            ConceptId = "64572001",
+            Label = "Disease", 
+            FillColor = "#f3904a", 
+            BorderColor = "#d3722e",
+            ReportingPerson = new List<string>() { "404684003" }
+        },
+        // CENTRE: Finding of trunk (anatomical pathway)
+        new SnomedHierarchyItem() { 
+            Id = "302292003", 
+            ConceptId = "302292003",
+            Label = "Finding of trunk", 
+            FillColor = "#f3904a", 
+            BorderColor = "#d3722e",
+            ReportingPerson = new List<string>() { "404684003" }
+        },
+        // RIGHT: Respiratory finding
+        new SnomedHierarchyItem() { 
+            Id = "106048009", 
+            ConceptId = "106048009",
+            Label = "Respiratory finding", 
+            FillColor = "#f3904a", 
+            BorderColor = "#d3722e",
+            ReportingPerson = new List<string>() { "404684003" }
+        },
+
+        // ===== LEVEL 2: Disease branches =====
+        // LEFT: Inflammatory disorder
+        new SnomedHierarchyItem() { 
+            Id = "128139000", 
+            ConceptId = "128139000",
+            Label = "Inflammatory disorder", 
+            FillColor = "#efd46e", 
+            BorderColor = "#d6b123",
+            ReportingPerson = new List<string>() { "64572001" }
+        },
+        // CENTRE: Disorder of body system
+        new SnomedHierarchyItem() { 
+            Id = "362965005", 
+            ConceptId = "362965005",
+            Label = "Disorder of body system", 
+            FillColor = "#efd46e", 
+            BorderColor = "#d6b123",
+            ReportingPerson = new List<string>() { "64572001" }
+        },
+        // RIGHT: Infectious disease
+        new SnomedHierarchyItem() { 
+            Id = "40733004", 
+            ConceptId = "40733004",
+            Label = "Infectious disease", 
+            FillColor = "#efd46e", 
+            BorderColor = "#d6b123",
+            ReportingPerson = new List<string>() { "64572001" }
+        },
+
+        // ===== LEVEL 2: Trunk branches =====
+        // CENTRE: Finding upper trunk
+        new SnomedHierarchyItem() { 
+            Id = "609623002", 
+            ConceptId = "609623002",
+            Label = "Finding upper trunk", 
+            FillColor = "#efd46e", 
+            BorderColor = "#d6b123",
+            ReportingPerson = new List<string>() { "302292003" }
+        },
+        // CENTRE: Disorder of trunk
+        new SnomedHierarchyItem() { 
+            Id = "128121009", 
+            ConceptId = "128121009",
+            Label = "Disorder of trunk", 
+            FillColor = "#efd46e", 
+            BorderColor = "#d6b123",
+            ReportingPerson = new List<string>() { "302292003" }
+        },
+
+        // ===== LEVEL 3: LEFT - Inflammatory pathway =====
+        new SnomedHierarchyItem() { 
+            Id = "363170005", 
+            ConceptId = "363170005",
+            Label = "Inflammation of structures", 
+            FillColor = "#efd46e", 
+            BorderColor = "#d6b123",
+            ReportingPerson = new List<string>() { "128139000" }
+        },
+        new SnomedHierarchyItem() { 
+            Id = "363171009", 
+            ConceptId = "363171009",
+            Label = "Inflammation of systems", 
+            FillColor = "#efd46e", 
+            BorderColor = "#d6b123",
+            ReportingPerson = new List<string>() { "362965005" }
+        },
+
+        // ===== LEVEL 3: CENTRE - Trunk/Thoracic pathway =====
+        new SnomedHierarchyItem() { 
+            Id = "298705000", 
+            ConceptId = "298705000",
+            Label = "Finding thoracic region", 
+            FillColor = "#efd46e", 
+            BorderColor = "#d6b123",
+            ReportingPerson = new List<string>() { "609623002" }
+        },
+        new SnomedHierarchyItem() { 
+            Id = "609622007", 
+            ConceptId = "609622007",
+            Label = "Disorder thoracic segment", 
+            FillColor = "#efd46e", 
+            BorderColor = "#d6b123",
+            ReportingPerson = new List<string>() { "609623002", "128121009" }
+        },
+
+        // ===== LEVEL 3: RIGHT - Respiratory pathway =====
+        new SnomedHierarchyItem() { 
+            Id = "50043002", 
+            ConceptId = "50043002",
+            Label = "Disorder resp system", 
+            FillColor = "#efd46e", 
+            BorderColor = "#d6b123",
+            ReportingPerson = new List<string>() { "362965005", "106048009" }
+        },
+
+        // ===== LEVEL 4: LEFT - Inflammatory =====
+        new SnomedHierarchyItem() { 
+            Id = "363169009", 
+            ConceptId = "363169009",
+            Label = "Inflammation of organs", 
+            FillColor = "#efd46e", 
+            BorderColor = "#d6b123",
+            ReportingPerson = new List<string>() { "363170005" }
+        },
+        new SnomedHierarchyItem() { 
+            Id = "373405005", 
+            ConceptId = "373405005",
+            Label = "Inflammatory resp system", 
+            FillColor = "#efd46e", 
+            BorderColor = "#d6b123",
+            ReportingPerson = new List<string>() { "363171009" }
+        },
+
+        // ===== LEVEL 4: CENTRE - Thorax =====
+        new SnomedHierarchyItem() { 
+            Id = "118946009", 
+            ConceptId = "118946009",
+            Label = "Disorder of thorax", 
+            FillColor = "#efd46e", 
+            BorderColor = "#d6b123",
+            ReportingPerson = new List<string>() { "298705000", "609622007" }
+        },
+        new SnomedHierarchyItem() { 
+            Id = "301230006", 
+            ConceptId = "301230006",
+            Label = "Lung finding", 
+            FillColor = "#efd46e", 
+            BorderColor = "#d6b123",
+            ReportingPerson = new List<string>() { "298705000", "118946009" }
+        },
+
+        // ===== LEVEL 4: RIGHT - Respiratory/Infectious =====
+        new SnomedHierarchyItem() { 
+            Id = "128272009", 
+            ConceptId = "128272009",
+            Label = "Disorder lower resp", 
+            FillColor = "#efd46e", 
+            BorderColor = "#d6b123",
+            ReportingPerson = new List<string>() { "50043002" }
+        },
+        new SnomedHierarchyItem() { 
+            Id = "275498002", 
+            ConceptId = "275498002",
+            Label = "Resp tract infection", 
+            FillColor = "#efd46e", 
+            BorderColor = "#d6b123",
+            ReportingPerson = new List<string>() { "40733004", "50043002" }
+        },
+
+        // ===== LEVEL 5: LEFT - Inflammatory =====
+        new SnomedHierarchyItem() { 
+            Id = "363180009", 
+            ConceptId = "363180009",
+            Label = "Inflammatory resp tract", 
+            FillColor = "#efd46e", 
+            BorderColor = "#d6b123",
+            ReportingPerson = new List<string>() { "373405005" }
+        },
+
+        // ===== LEVEL 5: CENTRE - Lower respiratory finding =====
+        new SnomedHierarchyItem() { 
+            Id = "301226008", 
+            ConceptId = "301226008",
+            Label = "Lower resp finding", 
+            FillColor = "#efd46e", 
+            BorderColor = "#d6b123",
+            ReportingPerson = new List<string>() { "106048009", "301230006" }
+        },
+
+        // ===== LEVEL 5: RIGHT - Infectious =====
+        new SnomedHierarchyItem() { 
+            Id = "50417007", 
+            ConceptId = "50417007",
+            Label = "Lower resp infection", 
+            FillColor = "#efd46e", 
+            BorderColor = "#d6b123",
+            ReportingPerson = new List<string>() { "275498002", "128272009", "301226008" }
+        },
+
+        // ===== LEVEL 6: LEFT - Inflammatory lower resp =====
+        new SnomedHierarchyItem() { 
+            Id = "128997002", 
+            ConceptId = "128997002",
+            Label = "Inflammatory lower resp", 
+            FillColor = "#efd46e", 
+            BorderColor = "#d6b123",
+            ReportingPerson = new List<string>() { "363180009" }
+        },
+
+        // ===== LEVEL 6: CENTRE - Disorder of lung =====
+        new SnomedHierarchyItem() { 
+            Id = "19829001", 
+            ConceptId = "19829001",
+            Label = "Disorder of lung", 
+            FillColor = "#efd46e", 
+            BorderColor = "#d6b123",
+            ReportingPerson = new List<string>() { "128272009", "118946009", "301230006" }
+        },
+
+        // ===== LEVEL 7: Two immediate parents =====
+        // LEFT: Pneumonitis (inflammatory parent)
+        new SnomedHierarchyItem() { 
+            Id = "205237003", 
+            ConceptId = "205237003",
+            Label = "Pneumonitis", 
+            FillColor = "#74c0fc", 
+            BorderColor = "#1971c2",
+            ReportingPerson = new List<string>() { "19829001", "128997002", "363169009" }
+        },
+        // RIGHT: Infectious disease of lung
+        new SnomedHierarchyItem() { 
+            Id = "128601007", 
+            ConceptId = "128601007",
+            Label = "Infectious disease of lung", 
+            FillColor = "#74c0fc", 
+            BorderColor = "#1971c2",
+            ReportingPerson = new List<string>() { "19829001", "50417007" }
+        },
+
+        // ===== TARGET: PNEUMONIA =====
+        new SnomedHierarchyItem() { 
+            Id = "233604007", 
+            ConceptId = "233604007",
+            Label = "PNEUMONIA", 
+            FillColor = "#51cf66", 
+            BorderColor = "#2f9e44",
+            IsFocus = true,
+            ReportingPerson = new List<string>() { "205237003", "128601007" }
+        },
+
+        // ===== DESCENDANTS =====
+        new SnomedHierarchyItem() { 
+            Id = "53084003", 
+            ConceptId = "53084003",
+            Label = "Bacterial pneumonia", 
+            FillColor = "#659be5", 
+            BorderColor = "#3a6eb5",
+            ReportingPerson = new List<string>() { "233604007" }
+        },
+        new SnomedHierarchyItem() { 
+            Id = "75570004", 
+            ConceptId = "75570004",
+            Label = "Viral pneumonia", 
+            FillColor = "#659be5", 
+            BorderColor = "#3a6eb5",
+            ReportingPerson = new List<string>() { "233604007" }
+        },
+        new SnomedHierarchyItem() { 
+            Id = "233613009", 
+            ConceptId = "233613009",
+            Label = "Fungal pneumonia", 
+            FillColor = "#659be5", 
+            BorderColor = "#3a6eb5",
+            ReportingPerson = new List<string>() { "233604007" }
+        },
+        new SnomedHierarchyItem() { 
+            Id = "396285007", 
+            ConceptId = "396285007",
+            Label = "Bronchopneumonia", 
+            FillColor = "#659be5", 
+            BorderColor = "#3a6eb5",
+            ReportingPerson = new List<string>() { "233604007" }
+        },
+        new SnomedHierarchyItem() { 
+            Id = "278516003", 
+            ConceptId = "278516003",
+            Label = "Lobar pneumonia", 
+            FillColor = "#659be5", 
+            BorderColor = "#3a6eb5",
+            ReportingPerson = new List<string>() { "233604007" }
+        },
+        new SnomedHierarchyItem() { 
+            Id = "422588002", 
+            ConceptId = "422588002",
+            Label = "Aspiration pneumonia", 
+            FillColor = "#659be5", 
+            BorderColor = "#3a6eb5",
+            ReportingPerson = new List<string>() { "233604007" }
+        },
+
+        // Grandchildren
+        new SnomedHierarchyItem() { 
+            Id = "233607000", 
+            ConceptId = "233607000",
+            Label = "Pneumococcal pneumonia", 
+            FillColor = "#8dbe6c", 
+            BorderColor = "#489911",
+            ReportingPerson = new List<string>() { "53084003" }
+        },
+        new SnomedHierarchyItem() { 
+            Id = "22754005", 
+            ConceptId = "22754005",
+            Label = "Staphylococcal pneumonia", 
+            FillColor = "#8dbe6c", 
+            BorderColor = "#489911",
+            ReportingPerson = new List<string>() { "53084003" }
+        },
+        new SnomedHierarchyItem() { 
+            Id = "195911009", 
+            ConceptId = "195911009",
+            Label = "Varicella pneumonia", 
+            FillColor = "#8dbe6c", 
+            BorderColor = "#489911",
+            ReportingPerson = new List<string>() { "75570004" }
+        },
+        new SnomedHierarchyItem() { 
+            Id = "195899007", 
+            ConceptId = "195899007",
+            Label = "Influenza with pneumonia", 
+            FillColor = "#8dbe6c", 
+            BorderColor = "#489911",
+            ReportingPerson = new List<string>() { "75570004" }
+        }
+    };
+}

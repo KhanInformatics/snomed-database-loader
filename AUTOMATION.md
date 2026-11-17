@@ -223,6 +223,7 @@ snomed-database-loader/
 │   ├── Check-NewDMDRelease.ps1     # Check TRUD for new releases
 │   ├── Download-DMDReleases.ps1    # Download from TRUD
 │   ├── Validate-RandomSamples.ps1  # Validate XML vs DB
+│   ├── Validate-PackPrices.ps1     # Exact AMPP price / VMPP tariff validation every week
 │   └── StandaloneImports/
 │       └── Run-AllImports.ps1      # Import all DMD data
 │
@@ -241,6 +242,21 @@ snomed-database-loader/
 ---
 
 ## Configuration
+
+### dm+d pack pricing checks
+
+The dm+d import includes `ampp_price` and `vmpp_drugtariffinfo`. The pricing
+importer creates these tables additively for existing databases and refreshes
+both from each full release in one transaction. Release tracking is updated only
+after an exact pricing validation succeeds.
+
+The weekly run validates all pricing rows and fields against the local main XML
+release even when no new release is found. Both tables appear in table statistics;
+missing tables, missing/extra rows, stale values or invalid references cause a
+failed step. No additional configuration is required. An existing installation
+can be backfilled with `DMD/StandaloneImports/Import-PackPrices.ps1 -XmlPath <full-release-folder>`.
+See [pack pricing](DMD/README.md#pack-prices-and-drug-tariff) for connection
+parameters, data semantics and validation commands.
 
 ### Config/TerminologyConfig.json
 
@@ -262,7 +278,6 @@ snomed-database-loader/
         "snomedMonolith": 1799,
         "snomedUkPrimaryCare": 659,
         "snomedUkDrugExtension": 105,
-        "snomedInternational": 4,
         "dmdMain": 24,
         "dmdBonus": 25,
         "dmwb": 98
@@ -477,6 +492,45 @@ Contains:
 | "PCD tables missing" | Run `Load-PCD-Refset-Content.ps1` in MSSQL/ first |
 | "PCD source files not found" | Ensure PCD .txt files exist in `C:\SNOMEDCT\Downloads\` |
 
+### Azure SQL reporting firewall failure
+
+If every terminology section passed but the error says `Client with IP address
+'...' is not allowed to access the server`, the imports completed and the Azure
+SQL report export was blocked. An enabled Azure SQL export is required, so the
+overall result remains failed until reporting succeeds.
+
+Test the configured reporting connection from the scheduled-task machine and
+Windows account, without importing terminology or inserting a report:
+
+```powershell
+.\Export-ReportToAzure.ps1 -ConnectionTestOnly -ConfigPath .\Config\TerminologyConfig.json
+```
+
+In Azure Portal, open the configured logical SQL server, then **Networking**.
+Update the rule for the scheduled-task machine to the client IPv4 address from
+the latest SQL error, using that same address for both the start and end of the
+range. A browser on another network may show a different client IP.
+
+Alternatively, use Azure CLI with an account permitted to manage that server:
+
+```powershell
+az sql server firewall-rule update --subscription "<subscription-id>" `
+    --resource-group "<resource-group>" --server "<sql-server-name>" `
+    --name "<existing-machine-rule>" `
+    --start-ip-address "<current-client-ip>" --end-ip-address "<current-client-ip>"
+```
+
+Allow up to five minutes for the rule to take effect, then repeat the connection
+test. Confirmed firewall denials stop immediately with the server/IP and repair
+guidance; transient failures such as a serverless database resuming still use
+the configured retries. The script does not alter Azure firewall rules. If the
+machine's public IP changes again, update its rule again or arrange stable
+outbound addressing. See Microsoft's [Azure SQL firewall guidance](https://learn.microsoft.com/en-us/azure/azure-sql/database/firewall-configure?view=azuresql).
+
+Successful connection testing does not republish a previous failed report. The
+next scheduled run will export its own results; reimporting successful releases
+with `-Force` is unnecessary for this firewall repair.
+
 ### Manual Recovery
 
 If an automated run fails:
@@ -557,3 +611,18 @@ cd ..\MSSQL
 | | | - Azure Blob Storage JSON dashboard export |
 | | | - Azure SQL reporting tables (dmwb_updates, pcd_validations) |
 | | | - Updated email report with DMWB and PCD sections |
+# Weekly website reporting
+
+The website's Server Status page now uses static reports published through
+GitHub Actions. See [GITHUB-REPORTING.md](GITHUB-REPORTING.md) for setup, replay,
+validation and the replacement of the Azure SQL/Blob reporting exports. Existing
+terminology imports and other applications using Azure remain independent.
+
+The static report deployment was verified on 7 September 2026. GitHub reporting
+is enabled in the local configuration; Azure SQL and Blob report exports are
+disabled. Installation and scheduled credential checks succeeded on 8 September
+2026 at 15:24 UK time, with the next run recorded as 12 September at 12:00 UK time.
+The successful preflight verified GitHub publishing permission, TRUD credential
+access and local SQL access under the scheduled account. Direct task inspection
+from an unelevated session is denied by Windows; the installation and preflight
+records are stored privately in the terminology log directory.

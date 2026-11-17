@@ -1,0 +1,801 @@
+@page "/usage-viewer-syncfusion"
+@inject AzureFunctionService AzureFunctionService
+@inject IJSRuntime JSRuntime
+@implements IAsyncDisposable
+
+@using System.Globalization
+@using System.Text
+
+@using Syncfusion.Blazor
+@using Syncfusion.Blazor.Grids
+@using Syncfusion.Blazor.Buttons
+@using Syncfusion.Blazor.Inputs
+@using Syncfusion.Blazor.Popups
+
+<PageTitle>Primary Care SNOMED CT Usage Data Viewer - Syncfusion</PageTitle>
+
+<!-- Page Header Section - positioned to align with sidebar -->
+<div class="page-header-wrapper">
+    <div class="page-header">        <div class="page-header-content">
+            <div class="page-header-main">
+                <h4 class="page-title mb-1">Primary Care SNOMED CT Usage Data Viewer</h4>
+                <p class="page-subtitle mb-0">Query SNOMED CT concept usage statistics from 2011-12 through 2025-26 (NHS England Data)</p>
+            </div>            <div class="page-header-actions">
+                <span class="created-by">Created by Imran Khan</span>
+                <a href="https://github.com" target="_blank" class="github-link">
+                    <i class="fab fa-github fa-lg"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid usage-viewer"><!-- Search Section -->
+    <p class="small text-muted mb-2">
+        Latest release: <a href="https://digital.nhs.uk/data-and-information/publications/statistical/mi-snomed-code-usage-in-primary-care/2025-26" target="_blank" rel="noopener noreferrer">2025-26</a>, covering 1 August 2025 to 31 July 2026 (England).
+    </p>
+    <div class="content-section">
+        <div class="row mb-3">
+            <div class="col-12">
+                <div class="card usage-search-card">                    <div class="card-body">
+                        <div class="row align-items-start">
+                            <div class="col-md-8">
+                                <label for="usage-concept-search" class="form-label fw-bold mb-1">Search by SNOMED CT code or term</label>
+                                <div class="usage-concept-search">
+                                    <input id="usage-concept-search" @ref="conceptSearchInput" class="form-control"
+                                           value="@conceptQuery" @oninput="OnConceptQueryInput" @onkeydown="OnConceptQueryKeyDown"
+                                           @onfocus="OnConceptQueryFocus" @onblur="DismissSuggestions"
+                                           disabled="@isLoading" maxlength="100" autocomplete="off" spellcheck="false"
+                                           placeholder="Start typing a code or term, e.g. acid reflux"
+                                           role="combobox" aria-autocomplete="list" aria-haspopup="listbox"
+                                           aria-expanded="@(suggestions.Count > 0 ? "true" : "false")"
+                                           aria-controls="usage-concept-suggestions" aria-activedescendant="@ActiveSuggestionId"
+                                           aria-describedby="usage-concept-help usage-concept-status" />
+                                    @if (suggestions.Count > 0)
+                                    {
+                                        <ul id="usage-concept-suggestions" class="usage-suggestions" role="listbox" aria-label="SNOMED CT concepts in the usage dataset">
+                                            @for (var index = 0; index < suggestions.Count; index++)
+                                            {
+                                                var suggestionIndex = index;
+                                                var suggestion = suggestions[index];
+                                                <li id="usage-suggestion-@index" role="option"
+                                                    aria-selected="@(activeSuggestionIndex == index ? "true" : "false")"
+                                                    class="usage-suggestion @(activeSuggestionIndex == index ? "active" : "")"
+                                                    title="@suggestion.Description"
+                                                    @onpointerdown="KeepSearchFocus" @onpointerdown:preventDefault="true"
+                                                    @onmousedown="KeepSearchFocus" @onmousedown:preventDefault="true"
+                                                    @onclick="() => SelectSuggestion(suggestionIndex)">
+                                                    <span class="usage-suggestion-description">@suggestion.Description</span>
+                                                    <span class="usage-suggestion-code">@suggestion.ConceptId</span>
+                                                </li>
+                                            }
+                                        </ul>
+                                    }
+                                </div>
+                                <small id="usage-concept-help" class="form-text text-muted d-block">
+                                    Type 3+ characters; select a concept, then SEARCH.
+                                    <span class="text-nowrap">↑/↓ browse · Enter select · Esc close.</span>
+                                </small>
+                                <div id="usage-concept-status" class="small text-muted mt-1" role="status" aria-live="polite">
+                                    @(isLoadingSuggestions ? "Finding matching concepts…" : suggestionMessage)
+                                </div>
+                                <label for="snomedCodes" class="form-label fw-bold mt-2 mb-1">SNOMED CT codes to compare</label>
+                                <textarea id="snomedCodes" class="form-control snomed-textarea" rows="1"
+                                          @bind="searchCodes" @bind:event="oninput" disabled="@isLoading"
+                                          placeholder="Enter SNOMED CT codes"
+                                          aria-describedby="usage-codes-help"></textarea>
+                                <small id="usage-codes-help" class="form-text text-muted">Add several concepts or paste multiple codes separated by commas.</small>
+                            </div>
+                            <div class="col-md-4 usage-templates">
+                                <!-- Quick search templates -->
+                                <div class="mb-2">
+                                    <div class="d-flex align-items-center gap-2 mb-1">
+                                        <span class="fw-bold text-muted">Quick Search Templates:</span>
+                                        <SfTooltip Target="#template-info-icon" 
+                                                  Content="Click any template below to populate the search field with codes, then click SEARCH to view usage data."
+                                                  Position="Position.BottomCenter">
+                                            <i id="template-info-icon" class="fas fa-info-circle text-muted" style="font-size: 0.9rem; cursor: help;"></i>
+                                        </SfTooltip>
+                                    </div>
+                                    <div class="d-flex flex-column" style="gap: 0.15rem;">
+                                        <SfButton @onclick="() => SetExampleCodes(ExampleType.TopUsed2025)"
+                                                 CssClass="e-link e-small text-start">
+                                            Most commonly used SNOMED codes 2025-26 (100 codes)
+                                        </SfButton>
+                                        <SfButton @onclick="() => SetExampleCodes(ExampleType.Multiple)" 
+                                                 CssClass="e-link e-small text-start">
+                                            Multiple codes
+                                        </SfButton>
+                                        <SfButton @onclick="() => SetExampleCodes(ExampleType.BodyMass)" 
+                                                 CssClass="e-link e-small text-start">
+                                            698065002 |Acid reflux (finding)|
+                                        </SfButton>
+                                        <SfButton @onclick="() => SetExampleCodes(ExampleType.CellCount)" 
+                                                 CssClass="e-link e-small text-start">
+                                            1022541000000102 |Total white cell count (observable entity)|
+                                        </SfButton>
+                                    </div>
+                                </div>
+                                <!-- Search buttons moved below examples -->
+                                <div class="d-flex gap-2 mt-2">
+                                    <SfButton @onclick="SearchUsageData" 
+                                             Disabled="@isLoading"
+                                             CssClass="e-primary">
+                                        @if (isLoading)
+                                        {
+                                            <span class="spinner-border spinner-border-sm me-2" role="status"></span>
+                                        }
+                                        SEARCH
+                                    </SfButton>
+                                    <SfButton @onclick="ClearData" 
+                                             Disabled="@isLoading"
+                                             CssClass="e-outline">
+                                        CLEAR
+                                    </SfButton>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Usage Scale Legend -->
+    @if (usageResults != null && usageResults.Any())
+    {
+        <div class="row mb-2">
+            <div class="col-12">
+                <div class="d-flex flex-wrap align-items-center gap-2">
+                    <span class="fw-bold">Usage Scale:</span>
+                    <div class="d-flex flex-wrap align-items-center gap-2">
+                        <span class="badge" style="background-color: #e8f4f8; color: #2c5aa0; border: 1px solid #b8dce8;">Very Low (1-100)</span>
+                        <span class="badge" style="background-color: #d4f1d4; color: #1e7e34; border: 1px solid #a3d9a3;">Low (101-1,000)</span>
+                        <span class="badge" style="background-color: #fff3cd; color: #856404; border: 1px solid #f6e0a6;">Medium (1,001-10,000)</span>
+                        <span class="badge" style="background-color: #f8d7da; color: #721c24; border: 1px solid #f1b0b7;">High (10,001-100,000)</span>
+                        <span class="badge" style="background-color: #f9c6d1; color: #721c24; border: 1px solid #f1b0b7;">Very High (100,001+)</span>
+                        <span class="badge" style="background-color: #eee8f8; color: #563d7c; border: 1px solid #d4c5eb;">Suppressed (1-4)</span>
+                        <span class="badge bg-light text-muted border">No Data</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+    <!-- Error Display -->
+    @if (!string.IsNullOrEmpty(errorMessage))
+    {
+        <div class="alert alert-danger" role="alert">
+            <i class="fas fa-exclamation-triangle me-2"></i>
+            <strong>Error:</strong> @errorMessage
+        </div>
+    }    <!-- Results Section with Syncfusion Grid -->
+    @if (usageResults != null && usageResults.Any())
+    {
+        <div class="row">
+            <div class="col-12">
+                <div class="card usage-results">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <span class="fw-bold">Results: @usageResults.Count result(s) found</span>
+                        <SfButton @onclick="ExportToCsv" 
+                                 CssClass="e-outline e-small">
+                            <i class="fas fa-download me-1"></i>Export CSV
+                        </SfButton>
+                    </div>
+                    <div class="card-body p-0">                        @try
+                        {
+                            @if (usageResults != null && usageResults.Count > 0)
+                            {
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-hover">
+                                        <thead class="table-dark">
+                                            <tr>
+                                                <th>SNOMED CT Code</th>
+                                                <th>Procedure Description</th>
+                                                <th>2025-26</th>
+                                                <th>2024-25</th>
+                                                <th>2023-24</th>
+                                                <th>2022-23</th>
+                                                <th>2021-22</th>
+                                                <th>2020-21</th>
+                                                <th>2019-20</th>
+                                                <th>2018-19</th>
+                                                <th>2017-18</th>
+                                                <th>2016-17</th>
+                                                <th>2015-16</th>
+                                                <th>2014-15</th>
+                                                <th>2013-14</th>
+                                                <th>2012-13</th>
+                                                <th>2011-12</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var item in usageResults)
+                                            {
+                                                <tr>
+                                                    <td><strong>@item.ConceptId</strong> <span class="text-muted small">(@item.GeographicCoverage)</span></td>
+                                                    <td><span class="procedure-description">@item.Procedure</span></td>
+                                                    <td><span style="@GetCellStyle(item.Usage_2025_26)" class="usage-cell">@FormatNumber(item.Usage_2025_26)</span></td>
+                                                    <td><span style="@GetCellStyle(item.Usage_2024_25)" class="usage-cell">@FormatNumber(item.Usage_2024_25)</span></td>
+                                                    <td><span style="@GetCellStyle(item.Usage_2023_24)" class="usage-cell">@FormatNumber(item.Usage_2023_24)</span></td>
+                                                    <td><span style="@GetCellStyle(item.Usage_2022_23)" class="usage-cell">@FormatNumber(item.Usage_2022_23)</span></td>
+                                                    <td><span style="@GetCellStyle(item.Usage_2021_22)" class="usage-cell">@FormatNumber(item.Usage_2021_22)</span></td>
+                                                    <td><span style="@GetCellStyle(item.Usage_2020_21)" class="usage-cell">@FormatNumber(item.Usage_2020_21)</span></td>
+                                                    <td><span style="@GetCellStyle(item.Usage_2019_20)" class="usage-cell">@FormatNumber(item.Usage_2019_20)</span></td>
+                                                    <td><span style="@GetCellStyle(item.Usage_2018_19)" class="usage-cell">@FormatNumber(item.Usage_2018_19)</span></td>
+                                                    <td><span style="@GetCellStyle(item.Usage_2017_18)" class="usage-cell">@FormatNumber(item.Usage_2017_18)</span></td>
+                                                    <td><span style="@GetCellStyle(item.Usage_2016_17)" class="usage-cell">@FormatNumber(item.Usage_2016_17)</span></td>
+                                                    <td><span style="@GetCellStyle(item.Usage_2015_16)" class="usage-cell">@FormatNumber(item.Usage_2015_16)</span></td>
+                                                    <td><span style="@GetCellStyle(item.Usage_2014_15)" class="usage-cell">@FormatNumber(item.Usage_2014_15)</span></td>
+                                                    <td><span style="@GetCellStyle(item.Usage_2013_14)" class="usage-cell">@FormatNumber(item.Usage_2013_14)</span></td>
+                                                    <td><span style="@GetCellStyle(item.Usage_2012_13)" class="usage-cell">@FormatNumber(item.Usage_2012_13)</span></td>
+                                                    <td><span style="@GetCellStyle(item.Usage_2011_12)" class="usage-cell">@FormatNumber(item.Usage_2011_12)</span></td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="alert alert-info">No data to display</div>
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            <div class="alert alert-danger">
+                                <strong>Grid Error:</strong> @ex.Message
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    }    else if (hasSearched && !isLoading && string.IsNullOrEmpty(errorMessage))
+    {
+        <div class="alert alert-info">
+            <i class="fas fa-info-circle me-2"></i>
+            No usage data found for the provided SNOMED CT codes. Please verify the codes and try again.
+        </div>
+    }
+    </div>
+</div>
+
+<style>    /* Ensure the page header wrapper respects the sidebar */
+    .page-header-wrapper {
+        /* Remove all padding and margin to align with sidebar */
+        padding: 0;
+        margin: 0;
+        border-bottom: 1px solid #dee2e6; /* Match sidebar header separator */
+        background-color: #f8f9fa; /* Match sidebar header background */
+    }.page-header {
+        /* Match sidebar header exactly */
+        padding: 15px; /* Match sidebar header padding */
+        height: 42px !important; /* Fixed height to match sidebar header */
+        min-height: 42px !important; /* Ensure minimum height */
+        max-height: 42px !important; /* Ensure maximum height */
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        max-width: 100%;
+        margin: 0; /* Remove auto margins */
+    }    .page-header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%; /* Ensure full width */
+        flex-wrap: nowrap; /* Prevent wrapping to keep items on same line */
+    }
+
+    .page-header-main {
+        flex-grow: 1;
+        min-width: 0; /* Prevent title cutoff by allowing shrinking */
+        margin-right: 20px; /* Add space between title and actions */
+    }.page-title {
+        font-size: 1.1rem; /* Reduced from 1.5rem for better fit */
+        font-weight: 500;
+        color: #333;
+        white-space: nowrap; /* Prevent wrapping to avoid squashing */
+        overflow: hidden; /* Hide overflow if necessary */
+        text-overflow: ellipsis; /* Add ellipsis for long text */
+        margin: 0; /* Remove default margins */
+        line-height: 1.1; /* Tighter line height for compact header */
+    }    .page-subtitle {
+        font-size: 0.75rem; /* Reduced from 0.9rem for better fit */
+        color: #6c757d;
+        margin: 0; /* Remove default margins */
+        line-height: 1.1; /* Tighter line height */
+        white-space: nowrap; /* Prevent wrapping */
+        overflow: hidden; /* Hide overflow if necessary */
+        text-overflow: ellipsis; /* Add ellipsis for long text */
+    }    .page-header-actions {
+        display: flex;
+        align-items: center;
+        gap: 15px; /* Increased spacing between action items */
+        flex-shrink: 0; /* Prevent actions from shrinking too much */
+        margin-left: auto; /* Ensure it stays on the right */
+        justify-content: flex-end; /* Align content to the right */
+        min-width: fit-content; /* Ensure it takes minimum required space */
+    }
+
+    .created-by {
+        font-size: 0.8rem;
+        color: #6c757d;
+        font-style: italic;
+        white-space: nowrap; /* Prevent wrapping */
+    }    .github-link {
+        display: inline-flex;
+        align-items: center;
+        padding: 5px;
+        border-radius: 4px;
+        transition: background-color 0.2s;
+    }
+
+    .github-link:hover {
+        background-color: #f8f9fa;
+        text-decoration: none;
+    }
+
+    .github-link i {
+        color: #333; /* GitHub icon color */
+    }
+    .github-link:hover i {
+        color: #000; /* Darker on hover */
+    }
+
+    /* Style the SNOMED browser button */
+    .btn-primary {
+        background-color: #0d6efd;
+        border-color: #0d6efd;
+        font-size: 0.8rem;
+        padding: 4px 8px;
+        white-space: nowrap;
+    }
+
+    .btn-primary:hover {
+        background-color: #0b5ed7;
+        border-color: #0a58ca;
+    }    /* Responsive adjustments for smaller screens */
+    @@media (max-width: 768px) {
+        .page-header-content {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .page-header-actions {
+            margin-top: 10px;
+            width: 100%;
+            justify-content: flex-start;
+            margin-left: 0; /* Reset margin on mobile */
+        }
+        .page-title {
+            font-size: 1.25rem;
+        }
+        .page-header-main {
+            margin-right: 0; /* Remove margin on mobile */
+        }
+    }
+
+    /* Ensure proper alignment on larger screens */
+    @@media (min-width: 769px) {
+        .page-header-content {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .page-header-actions {
+            margin-left: auto;
+            justify-content: flex-end;
+        }
+    }
+
+    .snomed-textarea {
+        font-family: 'Courier New', monospace !important;
+        font-size: 0.9rem;
+        border: 2px solid #e0e6ed;
+        border-radius: 6px;
+        padding: 8px 12px;
+    }
+    .snomed-textarea:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+    .table-hover tbody tr:hover {
+        background-color: #f8f9fa !important;
+    }
+    .usage-cell {
+        padding: 4px;
+        border-radius: 3px;
+        font-weight: 500;
+        text-align: center;
+        min-height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* Make description text darker and bolder */
+    .procedure-description {
+        color: #343a40 !important;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    /* Reduce space between table rows */
+    .table > :not(caption) > * > * {
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+    .table {
+        margin-bottom: 0;
+    }
+</style>
+
+@code {
+    private string searchCodes = "";
+    private List<SnomedUsageData>? usageResults;
+    private bool isLoading = false;
+    private bool hasSearched = false;
+    private string errorMessage = "";
+    private string conceptQuery = "";
+    private List<SnomedUsageSuggestion> suggestions = new();
+    private int activeSuggestionIndex = -1;
+    private bool isLoadingSuggestions;
+    private string suggestionMessage = "";
+    private CancellationTokenSource? suggestionCancellation;
+    private ElementReference conceptSearchInput;
+    private IJSObjectReference? searchModule;
+    private bool scrollActiveSuggestion;
+    private bool disposed;
+    private string? ActiveSuggestionId => activeSuggestionIndex >= 0 ? $"usage-suggestion-{activeSuggestionIndex}" : null;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            searchModule = await JSRuntime.InvokeAsync<IJSObjectReference>("import", "./js/usageSearch.js");
+            if (disposed)
+            {
+                await searchModule.DisposeAsync();
+                return;
+            }
+            await searchModule.InvokeVoidAsync("attach", conceptSearchInput);
+        }
+        if (scrollActiveSuggestion && searchModule != null)
+        {
+            scrollActiveSuggestion = false;
+            await searchModule.InvokeVoidAsync("scrollToOption", ActiveSuggestionId);
+        }
+    }
+
+    private async Task OnConceptQueryInput(Microsoft.AspNetCore.Components.ChangeEventArgs args)
+    {
+        conceptQuery = args.Value?.ToString() ?? "";
+        await LoadSuggestions();
+    }
+
+    private Task OnConceptQueryFocus() => LoadSuggestions();
+
+    private async Task LoadSuggestions()
+    {
+        DismissSuggestions();
+        var query = conceptQuery.Trim();
+        if (query.Length < 3 || disposed || isLoading)
+        {
+            return;
+        }
+
+        using var cancellation = new CancellationTokenSource();
+        suggestionCancellation = cancellation;
+        var token = cancellation.Token;
+        isLoadingSuggestions = true;
+        try
+        {
+            await Task.Delay(300, token);
+            var matches = await AzureFunctionService.GetUsageSuggestionsAsync(query, token);
+            if (!token.IsCancellationRequested && !disposed)
+            {
+                suggestions = matches;
+                suggestionMessage = matches.Count == 0
+                    ? "No matching concepts in the usage dataset. Try another term or enter a code below."
+                    : $"{matches.Count} suggestions. Select a concept to add its code.";
+            }
+        }
+        catch (OperationCanceledException) when (token.IsCancellationRequested)
+        {
+            // A newer query, selection, blur or navigation superseded this request.
+        }
+        catch (Exception)
+        {
+            if (!token.IsCancellationRequested && !disposed)
+            {
+                suggestionMessage = "Suggestions are temporarily unavailable. You can still enter SNOMED CT codes below.";
+            }
+        }
+        finally
+        {
+            if (ReferenceEquals(suggestionCancellation, cancellation))
+            {
+                suggestionCancellation = null;
+                isLoadingSuggestions = false;
+            }
+        }
+    }
+
+    private void DismissSuggestions()
+    {
+        suggestionCancellation?.Cancel();
+        suggestionCancellation = null;
+        suggestions.Clear();
+        activeSuggestionIndex = -1;
+        isLoadingSuggestions = false;
+        suggestionMessage = "";
+    }
+
+    private async Task OnConceptQueryKeyDown(KeyboardEventArgs args)
+    {
+        if (args.Key == "Escape")
+        {
+            DismissSuggestions();
+        }
+        else if (args.Key is "ArrowDown" or "ArrowUp")
+        {
+            if (suggestions.Count == 0)
+            {
+                await LoadSuggestions();
+            }
+            if (suggestions.Count > 0)
+            {
+                activeSuggestionIndex = args.Key == "ArrowDown"
+                    ? (activeSuggestionIndex + 1) % suggestions.Count
+                    : (activeSuggestionIndex <= 0 ? suggestions.Count - 1 : activeSuggestionIndex - 1);
+                scrollActiveSuggestion = true;
+            }
+        }
+        else if (args.Key == "Enter")
+        {
+            if (activeSuggestionIndex >= 0)
+            {
+                SelectSuggestion(activeSuggestionIndex);
+            }
+            else if (IsCompleteCode(conceptQuery.Trim()))
+            {
+                AddConceptCode(conceptQuery.Trim());
+            }
+            else if (suggestions.Count > 0)
+            {
+                activeSuggestionIndex = 0;
+                scrollActiveSuggestion = true;
+                suggestionMessage = "Press Enter to add the highlighted concept, or use the arrow keys to choose another.";
+            }
+        }
+    }
+
+    private static bool IsCompleteCode(string value) => value.Length is >= 6 and <= 18
+        && value.All(character => character is >= '0' and <= '9');
+
+    private void SelectSuggestion(int index)
+    {
+        if (index >= 0 && index < suggestions.Count)
+        {
+            AddConceptCode(suggestions[index].ConceptId);
+        }
+    }
+
+    private void KeepSearchFocus() { }
+
+    private void AddConceptCode(string code)
+    {
+        var codes = searchCodes.Split(new[] { ',', ';', '\r', '\n', '\t', ' ' },
+            StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
+        var alreadyAdded = codes.Contains(code, StringComparer.Ordinal);
+        searchCodes = string.Join(", ", codes.Append(code).Distinct(StringComparer.Ordinal));
+        conceptQuery = "";
+        DismissSuggestions();
+        suggestionMessage = alreadyAdded ? $"{code} is already in the list." : $"Added {code}. Add another concept or click SEARCH.";
+        errorMessage = "";
+    }
+
+    public enum ExampleType
+    {
+        BodyMass,
+        CellCount,
+        Multiple,
+        TopUsed2025
+    }
+
+    private async Task SearchUsageData()
+    {
+        if (isLoading)
+        {
+            return;
+        }
+
+        if (!string.IsNullOrWhiteSpace(conceptQuery))
+        {
+            if (!IsCompleteCode(conceptQuery.Trim()))
+            {
+                errorMessage = "Select a suggested concept, or enter a complete SNOMED CT code before searching.";
+                return;
+            }
+            AddConceptCode(conceptQuery.Trim());
+        }
+        DismissSuggestions();
+
+        usageResults = null;
+        hasSearched = false;
+        errorMessage = "";
+
+        var codes = searchCodes.Split(
+            new[] { ',', ';', '\r', '\n', '\t', ' ' },
+            StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
+
+        if (codes.Length == 0)
+        {
+            errorMessage = "Please enter at least one SNOMED CT code.";
+            return;
+        }
+
+        var invalidCodes = codes.Where(code => code.Any(character => character is < '0' or > '9'))
+            .Distinct(StringComparer.Ordinal).ToArray();
+        if (invalidCodes.Length > 0)
+        {
+            errorMessage = $"Invalid SNOMED CT code(s): {string.Join(", ", invalidCodes)}";
+            return;
+        }
+
+        isLoading = true;
+
+        try
+        {
+            usageResults = await AzureFunctionService.GetUsageDataAsync(
+                string.Join(',', codes.Distinct(StringComparer.Ordinal)));
+            hasSearched = true;
+        }
+        catch (ArgumentException ex)
+        {
+            errorMessage = ex.Message;
+        }
+        catch (Exception ex)
+        {
+            errorMessage = "The usage data could not be loaded. Please try again.";
+            usageResults = null;
+            Console.WriteLine($"SearchUsageData Error: {ex}");
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private void ClearData()
+    {
+        conceptQuery = "";
+        DismissSuggestions();
+        searchCodes = "";
+        usageResults = null;
+        errorMessage = "";
+        hasSearched = false;
+    }
+
+    private void SetExampleCodes(ExampleType type)
+    {
+        conceptQuery = "";
+        DismissSuggestions();
+        searchCodes = type switch
+        {
+            ExampleType.BodyMass => "698065002",
+            ExampleType.CellCount => "1022541000000102",
+            ExampleType.Multiple => "182836005,88551000000109,93311000000106,1239511000000100,394720003,391156007,279681000000105,413974004,415693003,870661000000100,922731000000106,394725008,413143000,473226007,401062003,712761000000103,287031000000100,803361000000109,938551000000108,858091000000102,769063007,772741000000105,394724007,473225006,810241000000107,381231000000106,381291000000107,381351000000107,1106111000000108,718017007,381261000000101,381321000000102,1079381000000109,1811000124107,965871000000101,473231009,395005007,792951000000100,473223004,1841000124106,753951000000101,473219007,1103191000000105,1089291000000107,473221002,473227003,473235000,473230005,473220001,473228008,428911000124108,473234001,473224005,473233007,473232002,1831000124101,1156698007,6021000124103",
+            ExampleType.TopUsed2025 => "279991000000102,184103008,423876004,1068881000000101,72313002,1091811000000102,60621009,27113001,1000731000000107,1000661000000107,1000651000000109,1000821000000103,313334002,1022431000000105,1022541000000102,1022651000000100,1022551000000104,1022491000000106,78564009,1022581000000105,1022451000000103,1022471000000107,1022561000000101,1022591000000107,1022571000000108,1000621000000104,1022291000000105,1018251000000107,163020007,1022441000000101,25721000000107,196411000000103,401271004,999791000000106,997531000000108,1101161000000100,1011481000000105,1000951000000103,248333004,1022481000000109,1022791000000101,997591000000109,993501000000105,266919005,1005681000000107,1000811000000109,717371000000107,1005671000000105,1015681000000109,1006191000000106,1005691000000109,185317003,1000971000000107,37351000000107,182836005,203031000000107,386472008,183049006,993381000000106,1005661000000103,1001231000000108,1022461000000100,394837003,428481002,364712009,1022191000000100,182771004,185210004,993391000000108,993411000000108,1020291000000106,1000691000000101,37331000000100,431314004,11429006,307818003,314530002,250171008,25611000000107,1484831000000102,935051000000108,8517006,281399006,270426007,370822003,1023491000000104,225390008,222711000000102,1001371000000100,993481000000101,864411000000101,185305000,751481000000104,198291000000105,77248004,225323000,310375005,182888003,14734007,999691000000104",
+            _ => ""
+        };
+    }
+
+    private string GetCellStyle(long value)
+    {
+        // Color palette based on screenshot
+        if (value == -1) return "background-color: #eee8f8; color: #563d7c; border: 1px solid #d4c5eb; padding: 4px; border-radius: 3px;"; // Suppressed 1-4
+        if (value == 0) return "background-color: #f8f9fa; color: #6c757d; border: 1px solid #e9ecef; padding: 4px; border-radius: 3px;"; // No Data
+        if (value <= 100) return "background-color: #e8f4f8; color: #2c5aa0; border: 1px solid #b8dce8; padding: 4px; border-radius: 3px;"; // Very Low
+        if (value <= 1000) return "background-color: #d4f1d4; color: #1e7e34; border: 1px solid #a3d9a3; padding: 4px; border-radius: 3px;"; // Low
+        if (value <= 10000) return "background-color: #fff3cd; color: #856404; border: 1px solid #f6e0a6; padding: 4px; border-radius: 3px;"; // Medium
+        if (value <= 100000) return "background-color: #f8d7da; color: #721c24; border: 1px solid #f1b0b7; padding: 4px; border-radius: 3px;"; // High
+        return "background-color: #f9c6d1; color: #721c24; border: 1px solid #f1b0b7; padding: 4px; border-radius: 3px;"; // Very High
+    }
+
+    private string FormatNumber(long value)
+    {
+        return value == -1 ? "*" : value.ToString("N0", CultureInfo.CurrentCulture);
+    }
+
+    private async Task ExportToCsv()
+    {
+        if (usageResults == null || !usageResults.Any())
+            return;
+
+        try
+        {
+            var csvContent = new StringBuilder();
+            csvContent.AppendLine("SNOMED CT Code,Procedure,Geographic Coverage,2025-26,2024-25,2023-24,2022-23,2021-22,2020-21,2019-20,2018-19,2017-18,2016-17,2015-16,2014-15,2013-14,2012-13,2011-12");
+            foreach (var item in usageResults)
+            {
+                csvContent.Append(EscapeCsv(item.ConceptId)).Append(',')
+                    .Append(EscapeCsv(item.Procedure)).Append(',')
+                    .Append(EscapeCsv(item.GeographicCoverage));
+
+                var values = new[]
+                {
+                    item.Usage_2025_26,
+                    item.Usage_2024_25, item.Usage_2023_24, item.Usage_2022_23, item.Usage_2021_22,
+                    item.Usage_2020_21, item.Usage_2019_20, item.Usage_2018_19, item.Usage_2017_18,
+                    item.Usage_2016_17, item.Usage_2015_16, item.Usage_2014_15, item.Usage_2013_14,
+                    item.Usage_2012_13, item.Usage_2011_12
+                };
+                foreach (var value in values)
+                {
+                    csvContent.Append(',').Append(value == -1 ? "*" : value.ToString(CultureInfo.InvariantCulture));
+                }
+                csvContent.AppendLine();
+            }
+
+            await JSRuntime.InvokeVoidAsync("downloadFile", "snomed-usage-data.csv", csvContent.ToString(), "text/csv");
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Export failed: {ex.Message}";
+        }
+    }
+
+    private static string EscapeCsv(string? value)
+    {
+        return "\"" + (value ?? string.Empty).Replace("\"", "\"\"") + "\"";
+    }
+
+    public async ValueTask DisposeAsync()
+    {
+        disposed = true;
+        DismissSuggestions();
+        if (searchModule != null)
+        {
+            await searchModule.InvokeVoidAsync("detach", conceptSearchInput);
+            await searchModule.DisposeAsync();
+        }
+    }
+}
+
+<style>
+    .snomed-textarea {
+        font-family: 'Courier New', monospace !important;
+        font-size: 0.9rem;
+        border: 2px solid #e0e6ed;
+        border-radius: 6px;
+        padding: 8px 12px;
+    }
+    .snomed-textarea:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+    .table-hover tbody tr:hover {
+        background-color: #f8f9fa !important;
+    }
+    .usage-cell {
+        padding: 4px;
+        border-radius: 3px;
+        font-weight: 500;
+        text-align: center;
+        min-height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* Make description text darker and bolder */
+    .procedure-description {
+        color: #343a40 !important;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    /* Reduce space between table rows */
+    .table > :not(caption) > * > * {
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+    .table {
+        margin-bottom: 0;
+    }
+</style>

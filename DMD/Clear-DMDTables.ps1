@@ -22,6 +22,8 @@ Write-Host "`nClearing tables..." -ForegroundColor Cyan
 # Order matters - child tables first, then parent tables
 $tables = @(
     "gtin",
+    "ampp_price",
+    "vmpp_drugtariffinfo",
     "dmd_bnf",
     "dmd_atc",
     "dmd_snomed",

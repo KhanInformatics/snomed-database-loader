@@ -1,0 +1,19 @@
+@* Loading Spinner Component *@
+
+@if (IsLoading)
+{
+    <div class="d-flex justify-content-center align-items-center p-3">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">@LoadingText</span>
+        </div>
+        @if (!string.IsNullOrEmpty(LoadingText))
+        {
+            <span class="ms-2">@LoadingText</span>
+        }
+    </div>
+}
+
+@code {
+    [Parameter] public bool IsLoading { get; set; }
+    [Parameter] public string LoadingText { get; set; } = "Loading...";
+}

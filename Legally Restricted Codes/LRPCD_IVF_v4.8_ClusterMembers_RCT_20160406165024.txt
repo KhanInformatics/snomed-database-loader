@@ -1,0 +1,53 @@
+CLUSTER	VERSION	SCHEME	CODE	TERM
+LRPCD_IVF	v4.8	RCT	14e..	History of in-vitro fertilisation
+LRPCD_IVF	v4.8	RCT	7C263	Percutaneous epididymal sperm aspiration
+LRPCD_IVF	v4.8	RCT	7C264	Micro-epididymal sperm aspiration
+LRPCD_IVF	v4.8	RCT	7C265	Testicular sperm extraction
+LRPCD_IVF	v4.8	RCT	7E0A.	Introduction of gamete into uterine cavity
+LRPCD_IVF	v4.8	RCT	7E0A0	Implantation of fertilised egg into uterus
+LRPCD_IVF	v4.8	RCT	7E0A1	Intracervical artificial insemination
+LRPCD_IVF	v4.8	RCT	7E0A2	Intrauterine artificial insemination
+LRPCD_IVF	v4.8	RCT	7E0A3	Intrauterine insemination with superovulation using partner sperm
+LRPCD_IVF	v4.8	RCT	7E0A4	Intrauterine insemination with superovulation using donor sperm
+LRPCD_IVF	v4.8	RCT	7E0A5	Intrauterine insemination without superovulation using partner sperm
+LRPCD_IVF	v4.8	RCT	7E0A6	Intrauterine insemination without superovulation using donor sperm
+LRPCD_IVF	v4.8	RCT	7E0A7	Transfer of embryo to uterus
+LRPCD_IVF	v4.8	RCT	7E0Ay	Other specified introduction of gamete into uterine cavity
+LRPCD_IVF	v4.8	RCT	7E0Az	Introduction of gamete into uterine cavity NOS
+LRPCD_IVF	v4.8	RCT	7E0J.	Other introduction of gamete into uterine cavity
+LRPCD_IVF	v4.8	RCT	7E0J0	Transmyometrial transfer of embryo to uterus
+LRPCD_IVF	v4.8	RCT	7E1F2	Endoscopic intrafallopian transfer of gamete
+LRPCD_IVF	v4.8	RCT	7E24.	Oocyte recovery
+LRPCD_IVF	v4.8	RCT	7E240	Endoscopic transurethral ultrasound directed oocyte recovery
+LRPCD_IVF	v4.8	RCT	7E241	Endoscopic transvesical oocyte recovery
+LRPCD_IVF	v4.8	RCT	7E242	Laparoscopic oocyte recovery
+LRPCD_IVF	v4.8	RCT	7E243	Transvaginal oocyte recovery
+LRPCD_IVF	v4.8	RCT	7E24y	Other specified oocyte recovery
+LRPCD_IVF	v4.8	RCT	7E24z	Oocyte recovery NOS
+LRPCD_IVF	v4.8	RCT	7M0h.	In vitro fertilisation (IVF)
+LRPCD_IVF	v4.8	RCT	7M0h0	IVF with donor sperm
+LRPCD_IVF	v4.8	RCT	7M0h1	IVF with donor eggs
+LRPCD_IVF	v4.8	RCT	7M0h2	IVF with intracytoplasmic sperm injection (ICSI)
+LRPCD_IVF	v4.8	RCT	7M0h3	IVF with intracytoplasmic sperm injection (ICSI) and donor egg
+LRPCD_IVF	v4.8	RCT	7M0h4	IVF with pre-implantation for genetic diagnosis
+LRPCD_IVF	v4.8	RCT	7M0h5	IVF with surrogacy
+LRPCD_IVF	v4.8	RCT	7M0hy	Other specified in vitro fertilisation (IVF)
+LRPCD_IVF	v4.8	RCT	7M0hz	In vitro fertilisation (IVF) NOS
+LRPCD_IVF	v4.8	RCT	8C81.	Artificial insemination
+LRPCD_IVF	v4.8	RCT	8C84.	In vitro fertilisation procedure
+LRPCD_IVF	v4.8	RCT	8C85.	Gamete intrafallopian transfer
+LRPCD_IVF	v4.8	RCT	8C8Z.	Treatment for infertility NOS
+LRPCD_IVF	v4.8	RCT	Kyu9H	[X]Other complications associated with artificial fertilization
+LRPCD_IVF	v4.8	RCT	Kyu9P	[X]Complication associated with artificial fertilization, unspecified
+LRPCD_IVF	v4.8	RCT	SP0D.	Complications associated with artificial fertilization
+LRPCD_IVF	v4.8	RCT	SP0D0	Infection associated with artificial insemination
+LRPCD_IVF	v4.8	RCT	SP0D1	Hyperstimulation of ovaries
+LRPCD_IVF	v4.8	RCT	SP0D2	Complications of attempted introduction of fertilizes ovum following in vitro fertilization
+LRPCD_IVF	v4.8	RCT	SP0D3	Complications of attempted introduction of embryo in embryo transfer
+LRPCD_IVF	v4.8	RCT	SP0DX	Complication associated with artificial fertilization, unspecified
+LRPCD_IVF	v4.8	RCT	ZV261	[V]Artificial insemination NOS
+LRPCD_IVF	v4.8	RCT	ZV265	[V]Artificial insemination from husband
+LRPCD_IVF	v4.8	RCT	ZV266	[V]Artificial insemination from donor
+LRPCD_IVF	v4.8	RCT	ZV267	[V]In vitro fertilization
+LRPCD_IVF	v4.8	RCT	ZV268	[V]Other assisted fertilization methods
+LRPCD_IVF	v4.8	RCT	ZVu21	[X]Other assisted fertilization methods

@@ -1,0 +1,101 @@
+.usage-viewer {
+    margin-top: 0;
+    padding-top: 0.5rem;
+}
+
+.usage-search-card .card-body {
+    padding: 0.75rem;
+}
+
+.usage-search-card .snomed-textarea {
+    min-height: 2.25rem;
+    padding: 4px 8px;
+    resize: vertical;
+}
+
+#usage-concept-status:empty {
+    display: none;
+}
+
+.usage-templates ::deep .e-btn.e-link {
+    padding: 2px 0;
+    min-height: 0;
+    max-width: 100%;
+    white-space: normal;
+    text-align: left;
+}
+
+.usage-results th,
+.usage-results td {
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.usage-concept-search {
+    position: relative;
+}
+
+.usage-suggestions {
+    position: absolute;
+    z-index: 1050;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: 20rem;
+    overflow-y: auto;
+    margin: 0.25rem 0 0;
+    padding: 0.25rem 0;
+    list-style: none;
+    background: #fff;
+    border: 1px solid #b8c5d6;
+    border-radius: 0.375rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.usage-suggestion {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    min-height: 2rem;
+    padding: 0.3rem 0.65rem;
+    cursor: pointer;
+    border-bottom: 1px solid #edf0f4;
+}
+
+.usage-suggestion:last-child {
+    border-bottom: 0;
+}
+
+.usage-suggestion:hover,
+.usage-suggestion.active {
+    background: #e8f1ff;
+    box-shadow: inset 3px 0 #005eb8;
+}
+
+.usage-suggestion-description {
+    flex: 1;
+    min-width: 0;
+    color: #212529;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.usage-suggestion-code {
+    flex: none;
+    white-space: nowrap;
+    color: #4c6272;
+    font-family: monospace;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 767.98px) {
+    .usage-templates {
+        margin-top: 0.5rem;
+    }
+
+    .usage-suggestion {
+        min-height: 44px;
+        gap: 0.5rem;
+    }
+}

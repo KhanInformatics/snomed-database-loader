@@ -1,0 +1,375 @@
+@page "/readv2-search"
+@inject ReadV2ApiService ReadV2Service
+@inject IJSRuntime JS
+
+<div class="page-header">
+    <div class="page-header-content">
+        <h1><i class="fas fa-search"></i> READ v2 Search</h1>
+        <p class="page-subtitle">Search READ v2 clinical codes by term, code, or prefix</p>
+    </div>
+</div>
+
+<div class="readv2-search-container">
+    @* ── Search Bar ── *@
+    <div class="search-form-card">
+        <div class="search-row">
+            <div class="search-input-group">
+                <input type="text" class="form-control form-control-lg" placeholder="Search terms or codes..."
+                       @bind="searchQuery" @bind:event="oninput" @onkeydown="HandleKeyDown" />
+            </div>
+            <div class="search-type-group">
+                <select class="form-select" @bind="searchType">
+                    <option value="partial">Partial Match</option>
+                    <option value="exact_code">Exact Code</option>
+                    <option value="exact_term">Exact Term</option>
+                    <option value="prefix">Code Prefix</option>
+                    <option value="fuzzy">Fuzzy Match</option>
+                </select>
+            </div>
+            <button class="btn btn-primary btn-lg" @onclick="ExecuteSearch" disabled="@isSearching">
+                @if (isSearching)
+                {
+                    <span class="spinner-border spinner-border-sm" role="status"></span>
+                }
+                else
+                {
+                    <i class="fas fa-search"></i>
+                }
+                Search
+            </button>
+        </div>
+
+        @* ── Filters ── *@
+        <div class="filter-row">
+            <div class="filter-group">
+                <label class="filter-label">Status:</label>
+                <select class="form-select form-select-sm" @bind="statusFilter">
+                    <option value="">All</option>
+                    <option value="active">Active Only</option>
+                    <option value="inactive">Inactive Only</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label class="filter-label">Chapter:</label>
+                <select class="form-select form-select-sm" @bind="chapterFilter">
+                    <option value="">All Chapters</option>
+                    @foreach (var ch in chapterOptions)
+                    {
+                        <option value="@ch.Key">@ch.Key - @ch.Value</option>
+                    }
+                </select>
+            </div>
+            <div class="filter-group">
+                <label class="filter-label">Mappings:</label>
+                <select class="form-select form-select-sm" @bind="mappingFilter">
+                    <option value="">All</option>
+                    <option value="mapped">Mapped Only</option>
+                    <option value="unmapped">Unmapped Only</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label class="filter-label">Max Results:</label>
+                <select class="form-select form-select-sm" @bind="maxResults">
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                    <option value="200">200</option>
+                    <option value="500">500</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    @* ── Results ── *@
+    @if (searchResponse != null)
+    {
+        <div class="results-header">
+            <div class="results-summary">
+                <strong>@searchResponse.TotalCount.ToString("N0")</strong> results for
+                "<em>@searchResponse.SearchTerm</em>"
+                <span class="text-muted">(@searchResponse.SearchTimeMs ms)</span>
+            </div>
+            <div class="results-actions">
+                <button class="btn btn-sm btn-outline-success" @onclick="ExportCsv" title="Export to CSV">
+                    <i class="fas fa-file-csv"></i> Export CSV
+                </button>
+            </div>
+        </div>
+
+        @if (searchResponse.Results.Count == 0)
+        {
+            <div class="alert alert-info">
+                <i class="fas fa-info-circle"></i> No results found. Try a different search term or adjust filters.
+            </div>
+        }
+        else
+        {
+            <div class="results-table-wrapper">
+                <table class="table table-hover readv2-results-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 100px;">Code</th>
+                            <th>Preferred Term</th>
+                            <th style="width: 90px;">Status</th>
+                            <th style="width: 80px;">Chapter</th>
+                            <th style="width: 100px;">Mappings</th>
+                            <th style="width: 80px;">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var result in searchResponse.Results)
+                        {
+                            <tr class="@(result.IsActive ? "" : "row-inactive") @(result.ReadCode == selectedCode ? "row-selected" : "")"
+                                @onclick="() => SelectResult(result)">
+                                <td><code class="readcode">@result.ReadCode</code></td>
+                                <td>@result.PreferredTerm</td>
+                                <td>
+                                    <span class="badge @(result.IsActive ? "bg-success" : "bg-danger") badge-sm">
+                                        @result.StatusDescription
+                                    </span>
+                                </td>
+                                <td><span class="badge bg-secondary badge-sm">@result.Chapter</span></td>
+                                <td>
+                                    @if (result.HasMappings)
+                                    {
+                                        <span class="badge bg-info badge-sm"><i class="fas fa-link"></i> Mapped</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="text-muted">—</span>
+                                    }
+                                </td>
+                                <td>
+                                    <a href="/readv2-browser" class="btn btn-sm btn-outline-primary" title="Open in browser"
+                                       @onclick:preventDefault @onclick="() => ViewInBrowser(result.ReadCode)">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+    }
+
+    @* ── Detail Panel (inline) ── *@
+    @if (selectedDetail != null)
+    {
+        <div class="search-detail-card">
+            <div class="detail-header">
+                <div class="detail-code-badge @(selectedDetail.IsActive ? "badge-active" : "badge-inactive")">
+                    @selectedDetail.ReadCode
+                </div>
+                <div class="detail-title">
+                    <h5>@selectedDetail.PreferredTerm</h5>
+                    <div class="detail-meta">
+                        <span class="badge @(selectedDetail.IsActive ? "bg-success" : "bg-danger")">@selectedDetail.StatusDescription</span>
+                        <span class="badge bg-secondary">Level @selectedDetail.Level</span>
+                    </div>
+                </div>
+                <button class="btn btn-sm btn-outline-secondary" @onclick="() => { selectedDetail = null; selectedCode = null; }" title="Close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <div class="detail-body-grid">
+                @* Terms *@
+                <div class="detail-section">
+                    <h6><i class="fas fa-tags"></i> Terms</h6>
+                    @foreach (var term in selectedDetail.Terms)
+                    {
+                        <div class="term-item">
+                            <span class="badge @(term.IsPreferred ? "bg-primary" : "bg-secondary") badge-sm">@term.TermTypeDescription</span>
+                            <span>@term.Term60</span>
+                            <code class="text-muted ms-1">@term.TermId</code>
+                        </div>
+                    }
+                </div>
+
+                @* Parents *@
+                @if (selectedDetail.Parents.Any())
+                {
+                    <div class="detail-section">
+                        <h6><i class="fas fa-arrow-up"></i> Parents</h6>
+                        @foreach (var parent in selectedDetail.Parents)
+                        {
+                            <div class="related-code-inline">
+                                <code>@parent.ReadCode</code> @parent.PreferredTerm
+                            </div>
+                        }
+                    </div>
+                }
+
+                @* Children *@
+                @if (selectedDetail.DirectChildren.Any())
+                {
+                    <div class="detail-section">
+                        <h6><i class="fas fa-arrow-down"></i> Children (@selectedDetail.DirectChildren.Count)</h6>
+                        @foreach (var child in selectedDetail.DirectChildren.Take(20))
+                        {
+                            <div class="related-code-inline">
+                                <span class="@(child.IsActive ? "status-active" : "status-inactive")">●</span>
+                                <code>@child.ReadCode</code> @child.PreferredTerm
+                            </div>
+                        }
+                        @if (selectedDetail.DirectChildren.Count > 20)
+                        {
+                            <p class="text-muted">... and @(selectedDetail.DirectChildren.Count - 20) more</p>
+                        }
+                    </div>
+                }
+
+                @* Mappings *@
+                @if (selectedDetail.Mappings.Any())
+                {
+                    <div class="detail-section">
+                        <h6><i class="fas fa-exchange-alt"></i> Mappings</h6>
+                        @foreach (var map in selectedDetail.Mappings)
+                        {
+                            <div class="mapping-item">
+                                <span class="badge bg-info badge-sm">@map.TargetSystem</span>
+                                <code>@map.TargetCode</code>
+                                @if (!string.IsNullOrEmpty(map.TargetDescription))
+                                {
+                                    <span class="text-muted">— @map.TargetDescription</span>
+                                }
+                            </div>
+                        }
+                    </div>
+                }
+            </div>
+        </div>
+    }
+</div>
+
+@code {
+    private string searchQuery = "";
+    private string searchType = "partial";
+    private string statusFilter = "";
+    private string chapterFilter = "";
+    private string mappingFilter = "";
+    private int maxResults = 100;
+    private bool isSearching;
+    private ReadV2SearchResponse? searchResponse;
+    private ReadV2ConceptDetail? selectedDetail;
+    private string? selectedCode;
+
+    private Dictionary<string, string> chapterOptions = new()
+    {
+        ["0"] = "Occupations",
+        ["1"] = "History/symptoms",
+        ["2"] = "Examination/Signs",
+        ["3"] = "Diagnostic procedures",
+        ["4"] = "Laboratory procedures",
+        ["5"] = "Radiology",
+        ["6"] = "Preventive procedures",
+        ["7"] = "Operations/procedures",
+        ["8"] = "Other therapeutic",
+        ["9"] = "Administration",
+        ["A"] = "Infectious diseases",
+        ["B"] = "Neoplasms",
+        ["C"] = "Endocrine/metabolic",
+        ["D"] = "Blood diseases",
+        ["E"] = "Mental disorders",
+        ["F"] = "Nervous system",
+        ["G"] = "Circulatory system",
+        ["H"] = "Respiratory system",
+        ["J"] = "Digestive system",
+        ["K"] = "Genitourinary system",
+        ["L"] = "Pregnancy/childbirth",
+        ["M"] = "Skin diseases",
+        ["N"] = "Musculoskeletal",
+        ["P"] = "Congenital anomalies",
+        ["Q"] = "Perinatal conditions",
+        ["R"] = "Symptoms/signs",
+        ["S"] = "Injury/poisoning",
+        ["T"] = "Causes of injury",
+        ["U"] = "External causes",
+        ["Z"] = "Unspecified conditions",
+        ["a"] = "GI drugs",
+        ["b"] = "CV drugs",
+        ["c"] = "Respiratory drugs",
+        ["d"] = "CNS drugs",
+        ["e"] = "Infection drugs",
+        ["f"] = "Endocrine drugs",
+        ["g"] = "Obs/gynae drugs",
+        ["h"] = "Chemo/immunosuppressant",
+        ["i"] = "Haematology/dietetic",
+        ["j"] = "MSK drugs",
+        ["k"] = "Eye drugs",
+        ["l"] = "ENT drugs",
+        ["m"] = "Skin drugs",
+        ["n"] = "Immunology/vaccines",
+        ["o"] = "Anaesthetic drugs",
+        ["p"] = "Appliances",
+        ["q"] = "Incontinence appliances",
+        ["r"] = "Appliances(2)",
+        ["s"] = "Stoma appliances",
+        ["u"] = "Contrast media",
+        ["y"] = "Drug release admin"
+    };
+
+    private async Task HandleKeyDown(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter")
+            await ExecuteSearch();
+    }
+
+    private async Task ExecuteSearch()
+    {
+        if (string.IsNullOrWhiteSpace(searchQuery) || searchQuery.Length < 2) return;
+
+        isSearching = true;
+        selectedDetail = null;
+        selectedCode = null;
+        StateHasChanged();
+
+        bool? activeOnly = statusFilter switch
+        {
+            "active" => true,
+            "inactive" => false,
+            _ => null
+        };
+
+        bool? mappedOnly = mappingFilter switch
+        {
+            "mapped" => true,
+            "unmapped" => false,
+            _ => null
+        };
+
+        searchResponse = await ReadV2Service.SearchAsync(
+            searchQuery, searchType, activeOnly,
+            string.IsNullOrEmpty(chapterFilter) ? null : chapterFilter,
+            mappedOnly, maxResults);
+
+        isSearching = false;
+    }
+
+    private async Task SelectResult(ReadV2SearchResult result)
+    {
+        selectedCode = result.ReadCode;
+        StateHasChanged();
+        selectedDetail = await ReadV2Service.GetConceptDetailAsync(result.ReadCode);
+    }
+
+    private async Task ExportCsv()
+    {
+        if (searchResponse == null || string.IsNullOrWhiteSpace(searchQuery)) return;
+
+        bool? activeOnly = statusFilter switch { "active" => true, "inactive" => false, _ => null };
+        bool? mappedOnly = mappingFilter switch { "mapped" => true, "unmapped" => false, _ => null };
+
+        var url = ReadV2Service.GetExportUrl(searchQuery, searchType, activeOnly,
+            string.IsNullOrEmpty(chapterFilter) ? null : chapterFilter, mappedOnly, 5000);
+
+        await JS.InvokeVoidAsync("open", url, "_blank");
+    }
+
+    private void ViewInBrowser(string readCode)
+    {
+        // Navigate to the browser page - could use NavigationManager but simple approach
+        // For now, just select it in the detail panel
+        _ = SelectResult(new ReadV2SearchResult { ReadCode = readCode });
+    }
+}

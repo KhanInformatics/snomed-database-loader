@@ -1,5 +1,5 @@
  v   # PCD Data Import Validation Script
-$server = "localhost"
+$server = "SILENTPRIORY\SQLEXPRESS"
 $database = "SNOMEDCT"
 
 Write-Host "PCD Data Import Validation Report" -ForegroundColor Green
@@ -8,11 +8,11 @@ Write-Host ""
 
 # Define validation targets
 $targets = @(
-    @{ File = "C:\SNOMEDCT\Downloads\20250521_PCD_Refset_Content_by_Output_V2.txt"; Table = "PCD_Refset_Content_by_Output" },
-    @{ File = "C:\SNOMEDCT\Downloads\20250521_PCD_Refset_Content_V2.txt"; Table = "PCD_Refset_Content_V2" },
-    @{ File = "C:\SNOMEDCT\Downloads\20250521_PCD_Ruleset_Full_Name_Mappings_V2.txt"; Table = "PCD_Ruleset_Full_Name_Mappings_V2" },
-    @{ File = "C:\SNOMEDCT\Downloads\20250521_PCD_Service_Full_Name_Mappings_V2.txt"; Table = "PCD_Service_Full_Name_Mappings_V2" },
-    @{ File = "C:\SNOMEDCT\Downloads\20250521_PCD_Output_Descriptions_V2.txt"; Table = "PCD_Output_Descriptions_V2" }
+    @{ File = "C:\SNOMEDCT\CurrentReleases\uk_sct2pc_61.0.0_20260424000000Z\20260424_PCD_Refset_Content_by_Output_V2.txt"; Table = "PCD_Refset_Content_by_Output" },
+    @{ File = "C:\SNOMEDCT\CurrentReleases\uk_sct2pc_61.0.0_20260424000000Z\20260424_PCD_Refset_Content_V2.txt"; Table = "PCD_Refset_Content_V2" },
+    @{ File = "C:\SNOMEDCT\CurrentReleases\uk_sct2pc_61.0.0_20260424000000Z\20260424_PCD_Ruleset_Full_Name_Mappings_V2.txt"; Table = "PCD_Ruleset_Full_Name_Mappings_V2" },
+    @{ File = "C:\SNOMEDCT\CurrentReleases\uk_sct2pc_61.0.0_20260424000000Z\20260424_PCD_Service_Full_Name_Mappings_V2.txt"; Table = "PCD_Service_Full_Name_Mappings_V2" },
+    @{ File = "C:\SNOMEDCT\CurrentReleases\uk_sct2pc_61.0.0_20260424000000Z\20260424_PCD_Output_Descriptions_V2.txt"; Table = "PCD_Output_Descriptions_V2" }
 )
 
 $successCount = 0

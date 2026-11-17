@@ -28,12 +28,10 @@ if (-not $apiKey) {
 # - Monolith: Item number 1799 (UK Edition combined - includes International + UK Extension)
 # - UK Primary Care: Item number 659
 # - UK Drug Extension: Item number 105
-# - International Edition: Item number 4 (standalone International SNOMED CT)
 $items = @(
     @{ Name = "SnomedCT_Monolith"; ItemNumber = "1799" },
     @{ Name = "SnomedCT_UKPrimaryCare"; ItemNumber = "659" },
-    @{ Name = "SnomedCT_UKDrugExtension"; ItemNumber = "105" },
-    @{ Name = "SnomedCT_International"; ItemNumber = "4" }
+    @{ Name = "SnomedCT_UKDrugExtension"; ItemNumber = "105" }
 )
 
 # Base API URL for TRUD
@@ -67,7 +65,8 @@ foreach ($item in $items) {
     try {
         $response = Invoke-RestMethod -Uri $url -Method Get -ErrorAction Stop
     } catch {
-        Write-Error "Error retrieving release for ${itemName}: $($_.Exception.Message)"
+        $safeError = $_.Exception.Message.Replace($apiKey, '<redacted>')
+        Write-Error "Error retrieving release for ${itemName}: $safeError"
         continue
     }
     
@@ -81,14 +80,16 @@ foreach ($item in $items) {
     $releaseUrl = $release.archiveFileUrl
     $releaseFileName = $release.archiveFileName
     Write-Host "Latest release for ${itemName}: $($release.name) released on $($release.releaseDate)"
-    Write-Host "Downloading ${releaseFileName} from ${releaseUrl}..."
+    # The authenticated URL embeds the TRUD API key; never write it to logs.
+    Write-Host "Downloading ${releaseFileName} from TRUD..."
 
     # Download the release file
     $localFilePath = Join-Path $downloadDir $releaseFileName
     try {
         Invoke-WebRequest -Uri $releaseUrl -OutFile $localFilePath -ErrorAction Stop
     } catch {
-        Write-Error "Error downloading ${releaseFileName}: $($_.Exception.Message)"
+        $safeError = $_.Exception.Message.Replace($apiKey, '<redacted>')
+        Write-Error "Error downloading ${releaseFileName}: $safeError"
         continue
     }
     Write-Host "Downloaded file saved to: $localFilePath"

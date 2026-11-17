@@ -1,0 +1,888 @@
+@page "/cluster-search"
+@inject AzureFunctionService AzureFunctionService
+@inject IJSRuntime JSRuntime
+
+@using Syncfusion.Blazor
+@using Syncfusion.Blazor.Grids
+@using Syncfusion.Blazor.Buttons
+@using Syncfusion.Blazor.Inputs
+@using StaticBlazorSnomed.Models
+@using System.Text.Json
+
+<PageTitle>Primary Care Domain Reference Sets Cluster Search</PageTitle>
+
+<!-- Page Header Section - positioned to align with sidebar -->
+<div class="page-header-wrapper">
+    <div class="page-header">
+        <div class="page-header-content">
+            <div class="page-header-main">
+                <h4 class="page-title mb-1">Primary Care Domain Ref Sets Cluster Search</h4>
+                <p class="page-subtitle mb-0">Return SNOMEDCT codes by cluster ID using PCD refsets</p>
+            </div>
+            <div class="page-header-actions">
+                <span class="created-by">Created by Imran Khan</span>
+                <a href="https://github.com" target="_blank" class="github-link">
+                    <i class="fab fa-github fa-lg"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid" style="margin-top: 0; padding-top: 1rem;">
+    <!-- Search Section -->
+    <div class="content-section">
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <div class="card border-primary search-card" style="box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <div class="card-header bg-primary text-white py-2">
+                        <h6 class="mb-0 small">Search SNOMED Codes</h6>
+                    </div>
+                    <div class="card-body py-3">
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold mb-2">Search Terms:</label>
+                            <textarea @bind="SearchTermsInputValue" 
+                                     @bind:event="oninput"
+                                     placeholder="Enter multiple Cluster IDs or PCD Refset IDs (one per line)&#10;e.g., ADDISONS_COD&#10;SMOK_COD&#10;999017291000230101"
+                                     class="form-control search-input-textarea"
+                                     rows="4"></textarea>
+                            <small class="form-text text-muted mt-1 d-block">
+                                Enter one or more terms (one per line). Mix Cluster IDs and PCD Refset IDs as needed.
+                                @if (string.IsNullOrEmpty(SearchTermsInputValue))
+                                {
+                                    <br><span class="text-muted">Try: </span>
+                                    <a href="#" @onclick="@(() => SetExampleTerms())" @onclick:preventDefault="true" class="example-link">Load Examples</a>
+                                }
+                            </small>
+                            
+                            <!-- Search Terms Status Summary -->
+                            @if (searchTermsList != null && searchTermsList.Any())
+                            {
+                                <div class="mt-2 p-2 rounded bg-light border">
+                                    <div class="d-flex flex-wrap gap-1">
+                                        @foreach (var term in searchTermsList)
+                                        {
+                                            <span class="badge @GetTermSummaryBadgeClass(term) small">
+                                                @term.Term
+                                                @if (term.IsSearching)
+                                                {
+                                                    <i class="spinner-border spinner-border-sm ms-1" style="width: 0.6rem; height: 0.6rem;"></i>
+                                                }
+                                                else if (term.ResultCount.HasValue)
+                                                {
+                                                    <span class="ms-1">(@term.ResultCount)</span>
+                                                }
+                                                else if (!string.IsNullOrEmpty(term.ErrorMessage))
+                                                {
+                                                    <i class="fas fa-exclamation-triangle ms-1"></i>
+                                                }
+                                            </span>
+                                        }
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                        <div class="d-flex gap-2 mt-3">
+                            <SfButton @onclick="SearchMultipleClusters" 
+                                     Disabled="@(isLoading || !HasValidSearchTerms())"
+                                     CssClass="e-primary"
+                                     IconCss="e-icons e-search">
+                                @if (isLoading)
+                                {
+                                    <span class="spinner-border spinner-border-sm me-2" role="status"></span>
+                                }
+                                SEARCH ALL
+                            </SfButton>
+                            <SfButton @onclick="ClearResults" 
+                                     CssClass="e-outline"
+                                     IconCss="e-icons e-clear">
+                                CLEAR
+                            </SfButton>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <!-- Cluster Information Panel -->
+                @if (allClusterResults != null && allClusterResults.Any())
+                {
+                    var uniqueClusters = allClusterResults
+                        .GroupBy(r => r.ClusterId)
+                        .Select(g => g.First())
+                        .OrderBy(r => r.ClusterId)
+                        .ToList();
+                    
+                    <div class="card border-success info-card" style="box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <div class="card-header bg-success text-white py-2">
+                            <h6 class="mb-0 small">Cluster Information (@uniqueClusters.Count cluster(s))</h6>
+                        </div>
+                        <div class="card-body py-3" style="max-height: 300px; overflow-y: auto;">
+                            @foreach (var cluster in uniqueClusters)
+                            {
+                                var clusterCodeCount = allClusterResults.Count(r => r.ClusterId == cluster.ClusterId);
+                                <div class="mb-2 p-2 rounded border border-light bg-light d-flex justify-content-between align-items-center">
+                                    <div class="flex-grow-1 me-2">
+                                        <div class="d-flex align-items-center">
+                                            <strong class="small text-primary me-2">@cluster.ClusterId</strong>
+                                            <span class="badge bg-primary small me-2">@clusterCodeCount codes</span>
+                                            <span class="small text-truncate" style="max-width: 200px;" title="@cluster.ClusterDescription">@cluster.ClusterDescription</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex-shrink-0">
+                                        <span class="font-monospace small text-muted">@cluster.PcdRefsetId</span>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                }
+                else if (searchTermsList != null && searchTermsList.Any())
+                {
+                    <!-- Search Terms Status Panel when no results -->
+                    <div class="card border-info info-card" style="box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <div class="card-header bg-info text-white py-2">
+                            <h6 class="mb-0 small">Search Status (@searchTermsList.Count term(s))</h6>
+                        </div>
+                        <div class="card-body py-3" style="max-height: 300px; overflow-y: auto;">
+                            @foreach (var term in searchTermsList)
+                            {
+                                <div class="d-flex justify-content-between align-items-center mb-2 p-2 rounded @GetTermStatusClass(term)">
+                                    <div class="flex-grow-1">
+                                        <div class="fw-bold small">@term.Term</div>
+                                        <div class="text-muted small">@GetTermTypeDisplay(term)</div>
+                                    </div>
+                                    <div class="flex-shrink-0">
+                                        @if (term.IsSearching)
+                                        {
+                                            <div class="spinner-border spinner-border-sm text-primary" role="status"></div>
+                                        }
+                                        else if (term.ResultCount.HasValue)
+                                        {
+                                            <span class="badge @GetResultBadgeClass(term.ResultCount.Value)">
+                                                @term.ResultCount codes
+                                            </span>
+                                        }
+                                        else if (!string.IsNullOrEmpty(term.ErrorMessage))
+                                        {
+                                            <span class="badge bg-danger" title="@term.ErrorMessage">Error</span>
+                                        }
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <!-- Invisible placeholder to maintain layout -->
+                    <div class="card border-transparent info-card" style="visibility: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <div class="card-header bg-secondary text-white py-2">
+                            <h6 class="mb-0 small">Cluster Information</h6>
+                        </div>
+                        <div class="card-body py-3">
+                            <div class="mb-2 p-2 rounded">
+                                <div class="fw-bold small">Placeholder</div>
+                                <div class="text-muted small">Placeholder type</div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+
+    <!-- Loading indicator -->
+    @if (isLoading)
+    {
+        <div class="text-center py-4">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <p class="mt-2 text-muted">Searching cluster data...</p>
+        </div>
+    }
+
+    <!-- Error Display -->
+    @if (!string.IsNullOrEmpty(errorMessage))
+    {
+        <div class="alert alert-danger" role="alert">
+            <i class="fas fa-exclamation-triangle me-2"></i>
+            <strong>Error:</strong> @errorMessage
+        </div>
+    }
+
+    <!-- Results Section with Syncfusion Grid -->
+    @if (allClusterResults != null && allClusterResults.Any())
+    {
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <span class="fw-bold">Results: @allClusterResults.Count SNOMED code(s) found from @GetSearchedTermsCount() term(s)</span>
+                        <SfButton @onclick="ExportToCsv" 
+                                 CssClass="e-outline e-small">
+                            <i class="fas fa-download me-1"></i>Export CSV
+                        </SfButton>
+                    </div>
+                    <div class="card-body p-0">
+                        <SfGrid DataSource="@allClusterResults" 
+                                AllowPaging="true" 
+                                AllowSorting="true" 
+                                AllowFiltering="true"
+                                PageSize="50"
+                                AllowExcelExport="true"
+                                AllowPdfExport="true"
+                                Height="calc(100vh - 350px)"
+                                @ref="clusterGrid">
+                            <GridPageSettings PageSize="50" PageSizes="@(new string[] { "25", "50", "100", "200" })"></GridPageSettings>
+                            <GridFilterSettings Type="FilterType.Menu"></GridFilterSettings>
+                            <GridColumns>
+                                <GridColumn Field="ClusterId" HeaderText="Cluster ID" Width="150px" TextAlign="TextAlign.Left"></GridColumn>
+                                <GridColumn Field="ClusterDescription" HeaderText="Cluster Description" Width="250px" TextAlign="TextAlign.Left"></GridColumn>
+                                <GridColumn Field="SnomedCode" HeaderText="SNOMED Code" Width="150px" TextAlign="TextAlign.Left"></GridColumn>
+                                <GridColumn Field="SnomedCodeDescription" HeaderText="SNOMED Description" Width="400px" TextAlign="TextAlign.Left"></GridColumn>
+                                <GridColumn Field="PcdRefsetId" HeaderText="PCD Refset ID" Width="180px" TextAlign="TextAlign.Left"></GridColumn>
+                            </GridColumns>
+                        </SfGrid>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+    else if (!isLoading && string.IsNullOrEmpty(errorMessage) && HasSearchTerms() && searchPerformed)
+    {
+        <div class="alert alert-info" role="alert">
+            <i class="fas fa-info-circle me-2"></i>
+            No SNOMED codes found from the search terms.
+        </div>
+    }
+</div>
+
+@code {
+    private string searchTermsInput = "";
+    private string _searchTermsInputValue = "";
+    public string SearchTermsInputValue
+    {
+        get => _searchTermsInputValue;
+        set
+        {
+            _searchTermsInputValue = value;
+            searchTermsInput = value;
+            ParseSearchTerms();
+        }
+    }
+    private string searchTerm = "";
+    private string clusterId = "";
+    private string refsetId = "";
+    private List<ClusterSearchResult> clusterResults = new();
+    private List<ClusterSearchResult> allClusterResults = new();
+    private List<SearchTermInfo> searchTermsList = new();
+    private bool isLoading = false;
+    private string errorMessage = "";
+    private SfGrid<ClusterSearchResult>? clusterGrid;
+    private string validationMessage = "";
+    private bool isValidInput = false;
+    private SearchType currentSearchType = SearchType.None;
+    private bool searchPerformed = false;
+
+    public class SearchTermInfo
+    {
+        public string Term { get; set; } = "";
+        public SearchType Type { get; set; }
+        public bool IsSearching { get; set; }
+        public int? ResultCount { get; set; }
+        public string? ErrorMessage { get; set; }
+        public List<ClusterSearchResult> Results { get; set; } = new();
+    }
+
+    public enum SearchType
+    {
+        None,
+        ClusterId,
+        RefsetId,
+        Invalid
+    }
+
+    private void ParseSearchTerms()
+    {
+        searchTermsList.Clear();
+        
+        if (string.IsNullOrWhiteSpace(searchTermsInput))
+        {
+            return;
+        }
+
+        var lines = searchTermsInput.Split(new[] { '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
+        
+        foreach (var line in lines)
+        {
+            var term = line.Trim();
+            if (!string.IsNullOrWhiteSpace(term))
+            {
+                var searchTermInfo = new SearchTermInfo
+                {
+                    Term = term,
+                    Type = GetSearchType(term)
+                };
+                searchTermsList.Add(searchTermInfo);
+            }
+        }
+    }
+
+    private SearchType GetSearchType(string term)
+    {
+        if (IsValidPcdRefsetId(term))
+            return SearchType.RefsetId;
+        else if (IsValidClusterId(term))
+            return SearchType.ClusterId;
+        else
+            return SearchType.Invalid;
+    }
+
+    private void SetExampleTerms()
+    {
+        SearchTermsInputValue = "ADDISONS_COD\nSMOK_COD\n999017291000230101\nDEMCPRVW_COD";
+        errorMessage = "";
+        searchPerformed = false;
+    }
+
+    private bool HasValidSearchTerms()
+    {
+        return searchTermsList.Any(t => t.Type != SearchType.Invalid);
+    }
+
+    private bool HasSearchTerms()
+    {
+        return searchTermsList.Any();
+    }
+
+    private string GetTermStatusClass(SearchTermInfo term)
+    {
+        if (term.IsSearching)
+            return "bg-light border-primary";
+        else if (!string.IsNullOrEmpty(term.ErrorMessage))
+            return "bg-light border-danger";
+        else if (term.ResultCount.HasValue)
+            return "bg-light border-success";
+        else
+            return "bg-light border-secondary";
+    }
+
+    private string GetTermTypeDisplay(SearchTermInfo term)
+    {
+        return term.Type switch
+        {
+            SearchType.ClusterId => "Cluster ID",
+            SearchType.RefsetId => "PCD Refset ID",
+            SearchType.Invalid => "Invalid format",
+            _ => "Unknown"
+        };
+    }
+
+    private string GetResultBadgeClass(int count)
+    {
+        return count > 0 ? "bg-success" : "bg-warning";
+    }
+
+    private string GetTermSummaryBadgeClass(SearchTermInfo term)
+    {
+        if (term.IsSearching)
+            return "bg-primary text-white";
+        else if (!string.IsNullOrEmpty(term.ErrorMessage))
+            return "bg-danger text-white";
+        else if (term.ResultCount.HasValue)
+            return term.ResultCount.Value > 0 ? "bg-success text-white" : "bg-warning text-dark";
+        else if (term.Type == SearchType.Invalid)
+            return "bg-secondary text-white";
+        else
+            return "bg-light text-dark";
+    }
+
+    private int GetSearchedTermsCount()
+    {
+        return searchTermsList.Count(t => t.Type != SearchType.Invalid);
+    }
+
+    private void ValidateSearchTerm()
+    {
+        if (string.IsNullOrWhiteSpace(searchTerm))
+        {
+            currentSearchType = SearchType.None;
+            validationMessage = "Enter either a Cluster ID or PCD Refset ID";
+            isValidInput = false;
+            return;
+        }
+
+        // Check if it's a valid PCD Refset ID (18 digits starting with 999)
+        if (IsValidPcdRefsetId(searchTerm))
+        {
+            currentSearchType = SearchType.RefsetId;
+            validationMessage = "Valid PCD Refset ID format";
+            isValidInput = true;
+            refsetId = searchTerm;
+            clusterId = "";
+        }
+        // Check if it's a valid Cluster ID (non-empty, non-numeric)
+        else if (IsValidClusterId(searchTerm))
+        {
+            currentSearchType = SearchType.ClusterId;
+            validationMessage = "Valid Cluster ID format";
+            isValidInput = true;
+            clusterId = searchTerm;
+            refsetId = "";
+        }
+        else
+        {
+            currentSearchType = SearchType.Invalid;
+            validationMessage = "Invalid format. Enter a Cluster ID (e.g., ADDISONS_COD) or PCD Refset ID (18 digits starting with 999)";
+            isValidInput = false;
+            clusterId = "";
+            refsetId = "";
+        }
+    }
+
+    private bool IsValidPcdRefsetId(string input)
+    {
+        return !string.IsNullOrWhiteSpace(input) &&
+               input.Length == 18 &&
+               input.StartsWith("999") &&
+               input.All(char.IsDigit);
+    }
+
+    private bool IsValidClusterId(string input)
+    {
+        return !string.IsNullOrWhiteSpace(input) &&
+               !input.All(char.IsDigit); // Not all digits (to distinguish from refset ID)
+    }
+
+    private bool IsValidSearchTerm()
+    {
+        return isValidInput && !string.IsNullOrWhiteSpace(searchTerm);
+    }
+
+    private string GetSearchInputCssClass()
+    {
+        if (string.IsNullOrWhiteSpace(searchTerm))
+            return "search-input";
+
+        return currentSearchType switch
+        {
+            SearchType.ClusterId => "search-input border-success",
+            SearchType.RefsetId => "search-input border-success",
+            SearchType.Invalid => "search-input border-danger",
+            _ => "search-input"
+        };
+    }
+
+    private string GetValidationTextClass()
+    {
+        return currentSearchType switch
+        {
+            SearchType.ClusterId => "text-success",
+            SearchType.RefsetId => "text-success",
+            SearchType.Invalid => "text-danger",
+            _ => "text-muted"
+        };
+    }
+
+    private string GetValidationMessage()
+    {
+        return string.IsNullOrWhiteSpace(validationMessage) ? "Enter either a Cluster ID or PCD Refset ID" : validationMessage;
+    }    private async Task SearchMultipleClusters()
+    {
+        if (!HasValidSearchTerms())
+        {
+            errorMessage = "Please enter at least one valid search term";
+            return;
+        }
+
+        try
+        {
+            isLoading = true;
+            errorMessage = "";
+            allClusterResults.Clear();
+            searchPerformed = true;
+
+            // Reset all search states
+            foreach (var term in searchTermsList.Where(t => t.Type != SearchType.Invalid))
+            {
+                term.IsSearching = true;
+                term.ResultCount = null;
+                term.ErrorMessage = null;
+                term.Results.Clear();
+            }
+
+            StateHasChanged();
+
+            // Search each term individually
+            var searchTasks = searchTermsList
+                .Where(t => t.Type != SearchType.Invalid)
+                .Select(term => SearchSingleTerm(term))
+                .ToList();
+
+            await Task.WhenAll(searchTasks);
+
+            // Combine all results
+            foreach (var term in searchTermsList.Where(t => t.Type != SearchType.Invalid))
+            {
+                allClusterResults.AddRange(term.Results);
+            }
+
+            StateHasChanged();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error details: {ex}");
+            errorMessage = $"Error searching: {ex.Message}";
+            allClusterResults.Clear();
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private async Task SearchSingleTerm(SearchTermInfo searchTerm)
+    {
+        try
+        {
+            string url;
+            List<ClusterSearchResult>? results = null;
+
+            if (searchTerm.Type == SearchType.RefsetId)
+            {
+                url = $"getsnomedcodesbypcdrefsetid?pcdrefsetid={Uri.EscapeDataString(searchTerm.Term)}";
+                Console.WriteLine($"Searching by Refset ID: {searchTerm.Term}");
+                results = await AzureFunctionService.CallAzureFunctionAsync<List<ClusterSearchResult>>(url);
+            }
+            else if (searchTerm.Type == SearchType.ClusterId)
+            {
+                url = $"getsnomedcodesbyclusterid?clusterid={Uri.EscapeDataString(searchTerm.Term)}";
+                Console.WriteLine($"Searching by Cluster ID: {searchTerm.Term}");
+                results = await AzureFunctionService.CallAzureFunctionAsync<List<ClusterSearchResult>>(url);
+            }
+
+            searchTerm.Results = results ?? new List<ClusterSearchResult>();
+            searchTerm.ResultCount = searchTerm.Results.Count;
+            Console.WriteLine($"Results for {searchTerm.Term}: {searchTerm.ResultCount}");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error searching {searchTerm.Term}: {ex.Message}");
+            searchTerm.ErrorMessage = ex.Message;
+            searchTerm.Results = new List<ClusterSearchResult>();
+            searchTerm.ResultCount = 0;
+        }
+        finally
+        {
+            searchTerm.IsSearching = false;
+        }
+    }
+
+    private async Task SearchCluster()
+    {
+        // Validate the search term first
+        ValidateSearchTerm();
+        
+        if (!IsValidSearchTerm())
+        {
+            errorMessage = "Please enter a valid cluster ID or PCD refset ID";
+            return;
+        }
+
+        try
+        {
+            isLoading = true;
+            errorMessage = "";
+            clusterResults.Clear();
+            searchPerformed = true;
+            
+            string url;
+            List<ClusterSearchResult>? results = null;
+
+            // Determine which search to perform based on validation
+            if (currentSearchType == SearchType.RefsetId)
+            {
+                // Search by Refset ID
+                url = $"getsnomedcodesbypcdrefsetid?pcdrefsetid={Uri.EscapeDataString(refsetId)}";
+                Console.WriteLine($"Searching by Refset ID: {refsetId}");
+                Console.WriteLine($"Azure Function URL endpoint: {url}");
+                Console.WriteLine($"Full URL will be: https://snomed-viewer-function.azurewebsites.net/api/{url}");
+                results = await AzureFunctionService.CallAzureFunctionAsync<List<ClusterSearchResult>>(url);
+                Console.WriteLine($"Results count: {results?.Count ?? 0}");
+            }
+            else if (currentSearchType == SearchType.ClusterId)
+            {
+                // Search by Cluster ID
+                url = $"getsnomedcodesbyclusterid?clusterid={Uri.EscapeDataString(clusterId)}";
+                Console.WriteLine($"Searching by Cluster ID: {clusterId}");
+                Console.WriteLine($"Azure Function URL endpoint: {url}");
+                Console.WriteLine($"Full URL will be: https://snomed-viewer-function.azurewebsites.net/api/{url}");
+                results = await AzureFunctionService.CallAzureFunctionAsync<List<ClusterSearchResult>>(url);
+                Console.WriteLine($"Results count: {results?.Count ?? 0}");
+            }
+
+            if (results != null)
+            {
+                clusterResults = results;
+            }
+            else
+            {
+                clusterResults = new List<ClusterSearchResult>();
+            }
+
+            StateHasChanged();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error details: {ex}");
+            errorMessage = $"Error searching: {ex.Message}";
+            clusterResults.Clear();
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private void SetClusterId(string newClusterId)
+    {
+        searchTerm = newClusterId;
+        ValidateSearchTerm();
+        errorMessage = "";
+        searchPerformed = false;
+    }
+
+    private void ClearResults()
+    {
+        SearchTermsInputValue = "";
+        searchTerm = "";
+        clusterId = "";
+        refsetId = "";
+        clusterResults.Clear();
+        allClusterResults.Clear();
+        searchTermsList.Clear();
+        errorMessage = "";
+        validationMessage = "";
+        isValidInput = false;
+        currentSearchType = SearchType.None;
+        searchPerformed = false;
+    }    private string GetSearchCriteriaText()
+    {
+        if (currentSearchType == SearchType.RefsetId && !string.IsNullOrWhiteSpace(refsetId))
+        {
+            return $"for refset ID \"{refsetId}\"";
+        }
+        else if (currentSearchType == SearchType.ClusterId && !string.IsNullOrWhiteSpace(clusterId))
+        {
+            return $"for cluster ID \"{clusterId}\"";
+        }
+        return "";
+    }
+
+    private async Task ExportToCsv()
+    {
+        if (allClusterResults == null || !allClusterResults.Any())
+            return;
+
+        try
+        {
+            var csvContent = "Cluster ID,Cluster Description,SNOMED Code,SNOMED Description,PCD Refset ID\n";
+            
+            foreach (var item in allClusterResults)
+            {
+                // Force SNOMED codes to be treated as text by prefixing with = and wrapping in quotes
+                csvContent += $"\"{item.ClusterId}\",\"{item.ClusterDescription}\",=\"{item.SnomedCode}\",\"{item.SnomedCodeDescription}\",=\"{item.PcdRefsetId}\"\n";
+            }
+
+            await JSRuntime.InvokeVoidAsync("downloadFile", "snomed-cluster-data.csv", csvContent, "text/csv");
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Export failed: {ex.Message}";
+        }
+    }
+}
+
+<style>
+    /* Ensure the page header wrapper respects the sidebar */
+    .page-header-wrapper {
+        padding: 0;
+        margin: 0;
+        border-bottom: 1px solid #dee2e6;
+        background-color: #f8f9fa;
+    }
+    .page-header {
+        padding: 15px;
+        height: 42px !important;
+        min-height: 42px !important;
+        max-height: 42px !important;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        max-width: 100%;
+        margin: 0;
+    }
+    .page-header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+    .page-header-main {
+        flex-grow: 1;
+        min-width: 0;
+        margin-right: 20px;
+    }
+    .page-title {
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: #333;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 0;
+        line-height: 1.1;
+    }
+    .page-subtitle {
+        font-size: 0.75rem;
+        color: #6c757d;
+        margin: 0;
+        line-height: 1.1;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .page-header-actions {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        flex-shrink: 0;
+        margin-left: auto;
+        justify-content: flex-end;
+        min-width: fit-content;
+    }
+    .created-by {
+        font-size: 0.8rem;
+        color: #6c757d;
+        font-style: italic;
+        white-space: nowrap;
+    }
+    .github-link {
+        display: inline-flex;
+        align-items: center;
+        padding: 5px;
+        border-radius: 4px;
+        transition: background-color 0.2s;
+    }
+    .github-link:hover {
+        background-color: #f8f9fa;
+        text-decoration: none;
+    }
+    .github-link i {
+        color: #333;
+    }
+    .github-link:hover i {
+        color: #000;
+    }
+    .btn-primary {
+        background-color: #0d6efd;
+        border-color: #0d6efd;
+        font-size: 0.8rem;
+        padding: 4px 8px;
+        white-space: nowrap;
+    }
+    .btn-primary:hover {
+        background-color: #0b5ed7;
+        border-color: #0a58ca;
+    }
+    .search-input {
+        font-family: 'Courier New', monospace !important;
+        font-size: 0.9rem;
+        border: 2px solid #e0e6ed;
+        border-radius: 6px;
+        padding: 8px 12px;
+        transition: border-color 0.3s ease;
+    }
+    .search-input:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+    .search-input.border-success {
+        border-color: #28a745 !important;
+    }
+    .search-input.border-danger {
+        border-color: #dc3545 !important;
+    }
+    
+    .search-input-textarea {
+        font-family: 'Courier New', monospace !important;
+        font-size: 0.9rem;
+        border: 2px solid #e0e6ed;
+        border-radius: 6px;
+        padding: 8px 12px;
+        transition: border-color 0.3s ease;
+        resize: vertical;
+        min-height: 100px;
+    }
+    .search-input-textarea:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+    
+    /* Card styling improvements */
+    .search-card, .info-card {
+        min-height: fit-content;
+        transition: box-shadow 0.3s ease;
+    }
+    
+    .search-card:hover, .info-card:hover {
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
+    }
+    
+    /* Transparent border for invisible placeholder */
+    .border-transparent {
+        border-color: transparent !important;
+    }
+    .cluster-input {
+        font-family: 'Courier New', monospace !important;
+        font-size: 0.9rem;
+        border: 2px solid #e0e6ed;
+        border-radius: 6px;
+        padding: 8px 12px;
+    }
+    .cluster-input:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+    .table-hover tbody tr:hover {
+        background-color: #f8f9fa !important;
+    }
+    /* Make description text darker and bolder */
+    .procedure-description {
+        color: #343a40 !important;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    /* Reduce space between table rows */
+    .table > :not(caption) > * > * {
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+    .table {
+        margin-bottom: 0;
+    }
+    
+    /* Example link styling */
+    .example-link {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: 500;
+    }
+    
+    .example-link:hover {
+        color: #0056b3;
+        text-decoration: underline;
+    }
+</style>
+</div>
